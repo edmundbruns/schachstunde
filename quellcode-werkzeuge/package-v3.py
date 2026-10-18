@@ -14,10 +14,12 @@ index=index[:index.index('<script src="runtime-data.js">')]+'<script type="modul
 index=index.replace('assets/Chess_nlt45.svg',figures['Chess_nlt45.svg'])
 licensebody=re.sub(r'^.*?</style>','',(r/'LICENSES.html').read_text()).replace('</html>','')
 index=index.replace('<p><a href="LICENSES.html" target="_blank">Alle Einzelquellen, Mitwirkenden und Softwarelizenzen</a></p>','<details><summary>Alle Einzelquellen und Lizenzdetails</summary>'+licensebody+'</details>')
-(r/'Ludgerus-Schachwerkstatt.html').write_text(index)
-with zipfile.ZipFile(r/'Ludgerus-Schachwerkstatt.zip','w',zipfile.ZIP_DEFLATED) as z:
+(r/'SchachStunde.html').write_text(index)
+(r/'Ludgerus-Schachwerkstatt.html').write_text('<!doctype html><html lang="de"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=SchachStunde.html"><title>SchachStunde</title><p>Die Datei heißt jetzt <a href="SchachStunde.html">SchachStunde.html</a>.</p></html>')
+with zipfile.ZipFile(r/'SchachStunde.zip','w',zipfile.ZIP_DEFLATED) as z:
  for p in r.rglob('*'):
-  if p.is_file() and p.suffix!='.zip':z.write(p,p.name if p.name in ['Ludgerus-Schachwerkstatt.html','LICENSES.html','START.md','PRUEFBERICHT.md'] else 'website/'+str(p.relative_to(r)))
+  if p.is_file() and p.suffix!='.zip' and p.name!='Ludgerus-Schachwerkstatt.html':z.write(p,p.name if p.name in ['SchachStunde.html','LICENSES.html','START.html','PRUEFBERICHT.md'] else 'website/'+str(p.relative_to(r)))
  z.write(r/'LICENSES.html','website/LICENSES.html')
+ z.write(r/'START.html','website/START.html')
  for p in Path('.').iterdir():
-  if p.name in ['package-v3.py','dependencies.py','fetch.py','validate.mjs','test-simple.mjs','test-units.mjs','test-labyrinth.mjs','test-support.mjs','test-pdf.mjs','test-fachlich.mjs']:z.write(p,'quellcode-werkzeuge/'+p.name)
+  if p.name in ['package-v3.py','dependencies.py','fetch.py','validate.mjs','test-simple.mjs','test-units.mjs','test-labyrinth.mjs','test-support.mjs','test-pdf.mjs','test-fachlich.mjs','gen-docs.mjs']:z.write(p,'quellcode-werkzeuge/'+p.name)

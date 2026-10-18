@@ -1,4 +1,4 @@
-# Fachliche Anregungen für die Ludgerus-Schachwerkstatt
+# Fachliche Anregungen für SchachStunde
 
 Stand: 17. Oktober 2026. Eigene Einschätzung anhand der unten genannten öffentlich zugänglichen Quellen. Keine vollständige Buchrezension und keine fachliche Zertifizierung.
 
