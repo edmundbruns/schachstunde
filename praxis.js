@@ -1,0 +1,122 @@
+/* Praxiswissen: gemischte Gruppen, Stunde 0, Jahresplan mit Diplom-Bezug, Spielphasen, Glossar. © Dr. Edmund Bruns */
+window.Praxis=(()=>{
+const C=window.PlannerCore,U=window.LessonUnits,LM=window.LessonModel;
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+// Profi-Aufgabe: Parallelaufgabe zum selben Thema für Vereinskinder und Starke. Konkrete Stellungen mit chess.js geprüft.
+const PROFI={
+coordinates:['Blindfeld: Dein Partner nennt ein Feld, du sagst ohne Brett, ob es hell oder dunkel ist. Findest du eine Regel?','Zähle a=1 bis h=8 und addiere die Reihe. Ist die Summe ungerade, ist das Feld hell; a1 (1+1=2) ist dunkel, h1 (8+1=9) hell.'],
+moves:['Springertour: Bringe einen Springer von a1 nach h8. Wie viele Züge brauchst du mindestens? Schreibe den Weg auf.','Mindestens 6 Züge, zum Beispiel a1–b3–c5–d7–f6–g8? Nein: g8 ist nicht h8. Ein richtiger Weg: a1–c2–e3–f5–g7–e6? Mit dem Lehrbrett prüfen; jeder Weg mit 6 Zügen zählt, z. B. a1–b3–d4–f5–g7–e6–… nicht gültig. Gültig: a1–c2–d4–e6–f8–g6–h8.'],
+pawn:['Baue eine Stellung mit je drei weißen und drei schwarzen Bauern, in der kein Bauer ziehen oder schlagen kann.','Zum Beispiel a4/a5, c4/c5, e4/e5: Jeder Bauer ist blockiert, und schräg steht nichts zum Schlagen.'],
+defend:['Baue eine Stellung, in der ein Bauer zweimal angegriffen und nur einmal gedeckt ist. Rechne aus, was nach allen Schlägen übrig bleibt.','Offene Konstruktion. Prüfen: Angreifer und Verteidiger zählen, den Abtausch mit Figurenwerten bis zum Ende rechnen.'],
+check:['Weiß: Kg1, Bauern f2, g2, h2, Läufer d3. Schwarz: Kg8, Turm a1. Weiß steht im Schach. Welche Abwehr bleibt?','Nur Dazwischenziehen: Lf1 oder Lb1. Der König hat kein Fluchtfeld, und der Turm a1 kann nicht geschlagen werden.'],
+mateIn1:['Konstruiere ein Grundreihenmatt mit höchstens sechs Figuren. Dein Partner muss den Mattzug finden.','Offene Konstruktion. Prüfen: Nach dem Zug steht der König im Schach und hat weder Flucht, Schlag noch Dazwischenziehen.'],
+fairplay:['Übernimm die Rolle der Schiedsrichterin oder des Schiedsrichters: Schreibe zwei Regeln für eine faire Partie auf und erkläre sie einem Anfängerpaar.','Beobachten: Die Regeln sind konkret (z. B. „Erst denken, dann berühren“) und werden freundlich erklärt.'],
+hangingPiece:['Suche in einer eigenen Partie oder in Aufgabe 6 eine Figur, die öfter angegriffen als gedeckt ist. Rechne den Abtausch bis zum Ende.','Offene Aufgabe. Prüfen: Reihenfolge der Schläge vom billigsten Angreifer an; Saldo mit Figurenwerten.'],
+fork:['Stelle eine schwarze Dame und einen schwarzen Turm so, dass ein weißer Springer sie von zwei verschiedenen Feldern aus gabeln könnte.','Offene Konstruktion. Prüfen: Beide Gabelfelder sind Springerfelder zu beiden Zielen und für Schwarz nicht sofort schlagbar.'],
+pin:['Baue eine Fesselung, die der Gegner mit einem Gegenangriff auflösen kann. Zeige die Auflösung am Brett.','Offene Konstruktion. Typische Auflösungen: eine Figur dazwischenstellen, den Fessler angreifen oder mit Schach Zeit gewinnen.'],
+opening:['Spiele die ersten sechs Züge der Italienischen Partie (1. e4 e5 2. Sf3 Sc6 3. Lc4 Lc5) und erkläre zu jedem weißen Zug ein Eröffnungsprinzip.','e4: Mitte; Sf3: Entwicklung mit Angriff auf e5; Lc4: Entwicklung mit Blick auf f7. Danach ist die kurze Rochade möglich.'],
+endgame:['Weiß: Ke1, Bauer h2. Schwarz: Kb5. Wer gewinnt mit Weiß am Zug, wer mit Schwarz am Zug? Achtung, Doppelschritt!','Weiß am Zug: h4! Das Quadrat h4, d4, d8, h8 erreicht der König b5 nicht, Weiß wandelt um. Schwarz am Zug: Kc5. Beim Doppelschritt das Quadrat ab h3 denken; der König holt den Bauern ein.'],
+discoveredAttack:['Baue eine Abzugsstellung, in der die wegziehende Figur selbst eine Figur schlägt.','Offene Konstruktion. Prüfen: Nach dem Zug greifen zwei Figuren an, und der Schlag ist legal.'],
+mateIn2:['Nimm Aufgabe 6: Suche alle schwarzen Antworten auf den Schlüsselzug und prüfe, ob jede ins Matt führt.','Mit dem Lehrbrett jede Antwort durchspielen. Matt in zwei gilt nur, wenn keine Antwort entkommt.'],
+calculation:['Notiere für Aufgabe 6 drei Kandidaten und zu jedem die stärkste Antwort. Begründe deine Wahl schriftlich.','Bewertet wird die Begründung: Kandidaten, Gegenantwort, Vergleich.'],
+planning:['Spiele aus Aufgabe 1 gegen deinen Partner fünf Züge nach deinem Plan. Notiere danach, was der Gegner verhindert hat.','Offene Aufgabe. Prüfen: Plan vorher notiert, Abweichung durch die Gegenantwort erkannt.'],
+rookend:['Spiele Aufgabe 2 gegen deinen Partner mit Schachuhr (je 3 Minuten). Prüfe danach: Hat der aktivere Turm gewonnen?','Offene Aufgabe. Im Gespräch Aktivität und Grundreihe am eigenen Partieverlauf zeigen.'],
+castling:['Weiß: Ke1, Ta1, Th1. Schwarz: Ke8, Läufer c4. Welche Rochade ist erlaubt? Begründe.','Nur die lange Rochade. Der Läufer c4 greift f1 an, über das der König bei der kurzen Rochade ziehen müsste.'],
+promotion:['Weiß: Kc6, Bauer c7. Schwarz: Ka7. Weiß am Zug. Warum wäre c8=D ein Fehler? Finde eine bessere Umwandlung.','c8=D ist Patt. Besser c8=T: Schwarz hat nur Ka6, danach setzt Ta8 matt.'],
+stalemate:['Baue mit König und Dame gegen König ein Patt. Verschiebe dann genau eine Figur, sodass Matt entsteht.','Offene Konstruktion. Prüfen: Patt ohne Schach und ohne legalen Zug; danach Schach ohne Abwehr.'],
+notation:['Notiere eine eigene Kurzpartie mit mindestens zehn Halbzügen. Dein Partner spielt sie fehlerfrei nach.','Prüfen: Figurenbuchstaben, Zielfelder, x und + richtig; die Partie lässt sich nachspielen.'],
+enpassant:['Finde eine Stellung, in der en passant der einzige legale Zug ist. Tipp: Ein Doppelschritt kann Schach geben.','Möglich, wenn der Doppelschritt Schach gibt und der König kein Fluchtfeld hat. Mit dem Lehrbrett prüfen.'],
+doublecheck:['Baue ein Doppelschach, das zugleich Matt ist.','Offene Konstruktion. Prüfen: Zwei Schachgeber, und der König hat kein sicheres Feld.'],
+exchange:['Rechne Aufgabe 6 so lange weiter, bis keiner mehr sinnvoll schlagen kann. Wann sollte man aufhören zu tauschen?','Aufhören, wenn der nächste Schlag mehr kostet als er bringt. Saldo nach jedem Schritt notieren.'],
+'maze-basic':['Zeichne ein Labyrinth, in dem der Turm genau vier Züge braucht. Dein Partner prüft.','Prüfen: Kein Weg mit weniger als vier Zügen, mindestens ein Weg mit vier.'],
+'maze-build':['Zeichne ein Labyrinth, in dem der Springer schneller ans Ziel kommt als der Turm.','Prüfen: Für beide Figuren den kürzesten Weg zählen.'],
+'maze-deep':['Zeichne ein Labyrinth, in dem ein erlaubter Schlag den Weg um zwei Züge verkürzt.','Prüfen: kürzester Weg mit und ohne Schlag zählen.']};
+PROFI.moves[1]='Mindestens 6 Züge, zum Beispiel a1–c2–d4–e6–f8–g6–h8. Jeder Weg mit 6 Zügen ist richtig; mit dem Lehrbrett prüfen.';
+
+const PAIR=[
+['Spielphase: ähnlich stark','Partien möglichst zwischen ähnlich starken Kindern. Sonst mit Vorgabe: Das stärkere Kind spielt ohne Dame oder mit halber Bedenkzeit.'],
+['Übung: Prüfer statt Vorsager','Stärkere Kinder dürfen mit Anfängern arbeiten, aber nur mit Auftrag: Sie prüfen mit dem Denkweg und fragen „Welcher Schritt fehlt?“. Sie sagen nicht vor.'],
+['Profi-Aufgabe statt Hilfslehrer','Vereinskinder sind nicht dauerhaft Helfer. Wer Aufgabe 2 ohne Hilfe löst, geht direkt zu Teil C und zur Profi-Aufgabe.'],
+['Paare wechseln','Jede Stunde neue Paare, etwa nach Losen oder Geburtsmonat. So entstehen keine festen Rollen.'],
+['Ungerade Anzahl','Eine Dreiergruppe: zwei spielen, eine Person ist Schiedsrichter und wechselt nach jeder Partie. Oder die Lehrkraft spielt mit.']];
+const PAIR_SHORT='Spielphase in ähnlich starken Paaren. In der Übung prüfen Stärkere als Prüfer, ohne vorzusagen.';
+
+function enrich(plan){for(const s of plan.sessions){const t=s.topic||plan.settings.topic,p=PROFI[t];if(p&&!s.profi&&!s.stunde0)s.profi={task:p[0],answer:p[1]};if(!s.mixed)s.mixed=PAIR_SHORT}return plan}
+
+// Stunde 0
+const S0={id:'unit-stunde0',title:'Stunde 0: Ankommen, Brett und Rituale',level:'Anfänger',topics:['coordinates'],duration:45,prior:'Keine Schachkenntnisse nötig. Für die allererste Stunde einer neuen Gruppe.',goal:'Das Brett richtig hinlegen, die Grundstellung mit Partnerkontrolle aufbauen und die Rituale der AG kennen.',focus:'discover'};
+const start='rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1';
+const S0tasks=[[start,'Ist dieses Brett richtig aufgebaut? Woran erkennst du es?','Ja. Rechts unten liegt ein helles Feld (h1), die weiße Dame steht auf d1, ihrer Farbe, der König daneben auf e1.'],
+['rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR w - - 0 1','Bei Weiß stimmt etwas nicht. Finde den Aufbaufehler.','Dame und König sind vertauscht. Die weiße Dame gehört auf das helle Feld d1, der König auf e1.'],
+['rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RBNQKNBR w - - 0 1','Finde den Aufbaufehler bei Weiß.','Springer und Läufer sind vertauscht. Neben den Türmen stehen die Springer, daneben die Läufer.'],
+['k7/8/8/8/8/8/8/RNBQK3 w - - 0 1','Benenne die weißen Figuren von a1 bis e1.','Turm, Springer, Läufer, Dame, König.'],
+['rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1','Ein Bauer ist schon gezogen. Wie viele Figuren hat jede Seite, wie viele davon sind Bauern?','Jede Seite hat 16 Figuren, davon 8 Bauern. Der Bauer e4 ist nur gezogen, nicht verschwunden.'],
+['rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQ - 0 1','Bei Schwarz stimmt etwas nicht. Finde den Fehler.','Bei Schwarz sind Dame und König vertauscht. Die schwarze Dame gehört auf das dunkle Feld d8, der König auf e8.'],
+['rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/NRBKQBNR w - - 0 1','Lerncheck: In diesem Aufbau stecken zwei Fehler bei Weiß. Finde beide.','Turm und Springer am linken Rand sind vertauscht (a1/b1), Dame und König ebenfalls (d1/e1).']
+].map(([fen,work,answer],i)=>({id:'stunde0-'+i,fen,work,answer,source:'Eigene Aufgabe zur Grundstellung, mit chess.js geprüft.'}));
+function stunde0(plan){const s=plan.sessions[0],g=LM.games.pawn;s.stunde0=true;plan.title=S0.title;plan.goal=S0.goal;plan.unitId=S0.id;s.title=S0.title;s.goal=S0.goal;s.childGoal='Heute lernst du, das Schachbrett richtig aufzubauen.';s.exercises=S0tasks.map(x=>({...x}));s.denkweg='Brett drehen (rechts unten hell) → Bauernreihe → Türme in die Ecken → Springer → Läufer → Dame auf ihre Farbe → König';s.knobel='Warum steht die weiße Dame auf einem hellen Feld und die schwarze auf einem dunklen?';
+s.merksatz='Rechts unten liegt ein helles Feld. Die Dame steht auf ihrer Farbe, der König daneben. Bei „Stopp“ sind die Hände weg von den Figuren.';
+s.success=['Ich lege das Brett richtig hin und baue die Grundstellung ohne Hilfe auf.','Ich kenne das Stopp-Signal und halte es ein.','Ich spiele den Bauernkrieg nach den Regeln.'];
+s.reserveFast='Bauernkrieg mit Springern: Jede Seite bekommt zusätzlich zwei Springer. Arbeitsblatt als Brett-Detektiv.';s.reserveShort='Rituale kürzer üben, den Bauernkrieg nicht streichen: Das erste Spiel ist das Ziel der Stunde.';
+s.outlook='Nächstes Mal: Brett und Koordinaten. Jedes Feld hat einen Namen.';delete s.profi;
+const P=[
+['Einstieg · Kennenlernen',8,'Plenum','discussion','Namensrunde: Name und Lieblingsfigur oder „Ich spiele schon: ja, ein bisschen, nein“ mit dem Daumen. Ziel der AG in einem Satz. Vereinskinder merken (für die Paarbildung).','Sich vorstellen, Vorerfahrung mit dem Daumen zeigen.','Namen bekannt, Vorerfahrung sichtbar.','Namensschilder',[]],
+['Erarbeitung · Brett aufbauen',15,'Plenum, dann Partnerarbeit','demo','Am Demobrett Schritt für Schritt vormachen, alle bauen mit: Brett drehen, bis rechts unten ein helles Feld liegt. Bauernreihe, Türme in die Ecken, Springer, Läufer, Dame auf ihre Farbe, König daneben. Nach jedem Schritt kontrolliert der Partner.','Schritt für Schritt mitbauen; der Partner kontrolliert. Vereinskinder bauen allein und prüfen danach ein Nachbarbrett.','Alle Bretter in richtiger Grundstellung.','Demobrett, ein Brett pro Paar, Aufgaben 1 bis 3',[0,1,2]],
+['Rituale einüben',5,'Plenum','discussion','Drei Rituale vereinbaren und einmal üben: Stopp-Signal (Hand hoch, Hände weg von den Figuren), leise Stimme am Brett, Aufräumen nach Plan (je 16 Figuren zählen). Als Plakat an die Tafel.','Stopp-Signal einmal ausprobieren, die Rituale mit eigenen Worten wiederholen.','Drei Rituale an der Tafel.','Plakat oder Tafel',[]],
+['Übung · Erstes Spiel',10,'Partnerspiel','mini','Bauernkrieg erklären und eine Minute vormachen: Bauern ziehen gerade, schlagen schräg, vom Start zwei Felder. '+g[2]+' Danach Farben tauschen. Ähnlich starke Paare; Vereinskinder spielen gegeneinander.','Bauernkrieg spielen, nach jeder Partie Farben tauschen und Hand geben.','Erstes Spiel nach Regeln gespielt.','Ein Brett pro Paar in Startstellung „Bauernkrieg“',[]],
+['Lerncheck',4,'Partnerarbeit','confidence','Ein Kind baut die Grundstellung allein auf, das andere prüft mit dem Merksatz, dann wechseln. Die Lehrkraft prüft drei Bretter.','Allein aufbauen, Partner prüft; mit dem Daumen die eigene Sicherheit zeigen.','Lernstand je Kind.','Bretter, Lerncheck-Zettel (optional)',[6]],
+['Ausblick & Aufräumen',3,'Plenum','','Aufräum-Ritual üben: Figuren zählen, Bretter stapeln. Ausblick: Nächstes Mal hat jedes Feld einen Namen.','Figuren zählen und einsortieren.','Material vollständig.','',[]]];
+const old=s.phases;s.phases=P.map(([name,duration,social,method,teacher,learners,result,material,ids],i)=>{const base=old[Math.min(i,old.length-1)]||{};const ph={...base,id:(base.id||'s0')+'-'+i,name,duration,social,method,teacher,learners,result,goal:result,material,diff:'',check:'',notes:'',exerciseIds:ids,puzzleIds:[],scan_teacher:teacher,scan_learners:learners,scan_result:result};delete ph.contrast;delete ph.game;if(i===3)ph.game={title:g[0],fen:g[1],rules:g[2],observe:g[3]};return ph});
+const sich=s.phases[2];sich.scan_result=s.merksatz;s.secureProduct='';s.mixed='Vereinskinder bauen allein auf und prüfen danach ein Nachbarbrett. Im Bauernkrieg spielen sie gegeneinander.';return plan}
+
+// Jahresplan mit Bezug zum Ludgerus-Schachdiplom (Bronze, Silber, Gold)
+const YEAR=[
+['Bronze: Brett, Figuren, Schach und Matt','Ludgerus-Schachdiplom Bronze',[
+['unit-stunde0','Stunde 0: Ankommen, Brett und Rituale','Bronze 1'],['unit-coordinates','Brett und Koordinaten','Bronze 1'],['unit-moves','Figurenwege entdecken','Bronze 2'],['unit-maze-basic','Figurenlabyrinth · Grundlagen','Bronze 2'],['unit-pawn','Bauern ziehen und schlagen','Bronze 2'],['unit-exchange','Abtausch und Figurenwerte','Bronze 2'],['unit-check','Schach erkennen und abwehren','Bronze 3'],['unit-mateIn1','Matt in einem Zug','Bronze 3'],['unit-fairplay','Erste Spiele und Fairplay','Bronze 4'],['unit-maze-build','Figurenlabyrinth · Wege vergleichen','Bronze 2 (Vertiefung)'],['','Spielstunde: Rutschsystem ohne Rangliste','Bronze 4'],['','Bronze-Diplom online, danach Lerncheck-Wiederholung','Bronze']]],
+['Silber: Sonderregeln und erste Taktik','Ludgerus-Schachdiplom Silber',[
+['unit-defend','Angreifen und decken','Silber 1'],['unit-hangingPiece','Ungedeckte Figuren','Silber 1'],['unit-castling','Rochade sicher prüfen','Silber 2'],['unit-promotion','Bauernumwandlung','Silber 2'],['unit-enpassant','En passant verstehen','Silber 2'],['unit-stalemate','Patt und Matt unterscheiden','Silber 2'],['unit-notation','Züge lesen und notieren','Silber 2'],['','Spielstunde: Partien notieren','Silber 2'],['unit-fork','Gabel und Doppelangriff','Silber 3'],['unit-pin','Fesselung nutzen','Silber 3'],['unit-discoveredAttack','Abzugsangriff','Silber 4'],['unit-doublecheck','Doppelschach abwehren','Silber 4'],['unit-endgame','Bauernendspiele verstehen','Silber 1 (starke Bauern)'],['','Silber-Diplom online und Turnier','Silber']]],
+['Gold: Mattführung, Eröffnung, Rechnen','Ludgerus-Schachdiplom Gold',[
+['unit-opening','Sinnvoll eröffnen','Gold 2'],['unit-rookend','Turmendspiel: Aktivität','Gold 4 (Grundreihenmatt)'],['unit-mateIn2','Matt in zwei Zügen','Gold 1 bis 3'],['unit-maze-deep','Figurenlabyrinth · Planen und Schlagen','Ergänzung'],['unit-calculation','Kandidaten und Varianten','Gold 3'],['unit-planning','Vom Stellungsbild zum Plan','Ausblick Diplom 4 und 5'],['','Spielstunde mit Schachuhr','Gold'],['','Wiederholung nach den Lerncheck-Ergebnissen','Gold'],['','Gold-Diplom und Abschlusstest','Gold'],['','Abschlussturnier und Urkunden','']]]];
+
+const GLOSS={
+'Leitfrage':'Die eine Frage, um die sich die Stunde dreht. Sie steht im Einstieg an der Tafel und wird am Ende beantwortet.',
+'Kontrastpaar':'Zwei fast gleiche Stellungen mit unterschiedlicher Antwort. Der kleine Unterschied macht die Regel sichtbar.',
+'Denkweg':'Feste Reihenfolge von Prüfschritten zum Thema, etwa Angreifer → Verteidiger → Rückschlag. Steht an der Tafel und auf dem Arbeitsblatt.',
+'Merksatz':'Das Ergebnis der Stunde in ein bis drei Sätzen. Wird in der Sicherung gemeinsam formuliert und notiert.',
+'Lerncheck':'Kurze Aufgabe ohne Hilfe am Ende der Stunde. Zeigt, wer das Ziel erreicht hat.',
+'Sicherung':'Phase, in der das Gelernte festgehalten wird: häufigsten Fehler besprechen, Merksatz an die Tafel.',
+'Erarbeitung':'Phase, in der die neue Idee gemeinsam entdeckt und der Denkweg gezeigt wird.',
+'Einstieg':'Die ersten Minuten: ankommen, neugierig machen, Leitfrage stellen.',
+'Informativ':'Einstiegsart: Du stellst das Thema direkt vor. Gut für neue Regeln.',
+'Problemorientiert':'Einstiegsart: Eine knifflige Stellung wirft eine Frage auf, die die Stunde klärt.',
+'Assoziativ':'Einstiegsart: Die Kinder sammeln zuerst, was ihnen zum Thema einfällt, ohne Bewertung.',
+'Spielerisch':'Einstiegsart: Ein kurzes Spiel führt zum Thema.',
+'Differenzierung':'Unterschiedliche Aufgaben und Hilfen für unterschiedlich weite Kinder.',
+'Expertenaufgabe':'Die schwierigere Aufgabe 6 auf dem Arbeitsblatt für Schnelle.',
+'Profi-Aufgabe':'Parallelaufgabe zum selben Thema für Vereinskinder und Starke. Lösung in der Handreichung.',
+'Hilfekarten':'Gestufte Tipps (Stufe 1 bis 3), die Kinder erst nach einem eigenen Versuch umdrehen.',
+'Plenum':'Alle arbeiten gemeinsam mit der Lehrkraft.',
+'Partnerarbeit':'Zu zweit mit Rollen: A löst, B prüft mit dem Denkweg, dann Wechsel.',
+'Sozialform':'Wer mit wem arbeitet: allein, zu zweit, in der Gruppe oder alle zusammen.',
+'Demobrett':'Großes Wandbrett oder Beamer-Bild, auf dem alle dieselbe Stellung sehen.',
+'Lehrbrett':'Das digitale Brett in diesem Programm. Es prüft Züge und zeigt Lösungen, ideal am Beamer.',
+'Rutschsystem':'Turnierform: Wer gewinnt, rückt ein Brett nach oben, wer verliert, nach unten. Keine Rangliste nötig.',
+'Handreichung':'Lehrkraftseite im PDF mit allen Lösungen, Kontrastpaar und Spielregeln.'};
+function glossify(root){if(!root)return;const terms=Object.keys(GLOSS);const done=new Set();const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement&&!n.parentElement.closest('.gl,button,textarea,input,select,option,script,style,summary,label')?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT});const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
+for(const node of nodes){for(const term of terms){if(done.has(term))continue;const re=new RegExp('(^|[^A-Za-zÄÖÜäöüß-])('+term+')(?![A-Za-zÄÖÜäöüß])','i');const m=re.exec(node.nodeValue);if(!m)continue;const at=m.index+m[1].length,len=m[2].length;const after=node.splitText(at);after.splitText(len);const span=document.createElement('span');span.className='gl';span.tabIndex=0;span.dataset.tip=GLOSS[term];span.textContent=after.nodeValue;after.replaceWith(span);done.add(term);break}}}
+
+function sec(id,title,body){return `<section class="praxissec" id="${id}"><h3>${esc(title)}</h3>${body}</section>`}
+function html(){const toc=[['px-start','Erste Stunde'],['px-mixed','Gemischte Gruppen'],['px-play','Spielphasen'],['px-year','Jahresplan'],['px-gloss','Glossar']];
+const first=`<p>Die erste Stunde mit einer neuen Gruppe braucht mehr Zeit für Ankommen und Aufbau. Die fertige <b>Stunde 0</b> plant 8 Minuten Kennenlernen, 15 Minuten Brett aufbauen, 5 Minuten Rituale und ein erstes Spiel ein.</p><button type="button" class="primary" data-praxisunit="unit-stunde0">Stunde 0 öffnen</button><h4>Drei Rituale von Anfang an</h4><ul><li><b>Stopp-Signal:</b> Hand hoch, Hände weg von den Figuren, Blick nach vorn.</li><li><b>Aufbau-Ritual:</b> Rechts unten hell, Dame auf ihre Farbe, Partner kontrolliert.</li><li><b>Aufräum-Ritual:</b> Je 16 Figuren zählen, dann einsortieren.</li></ul>`;
+const mixed=`<p>Anfänger und Vereinskinder in einer Gruppe sind der Normalfall. Fünf Regeln helfen:</p><ol>${PAIR.map(([a,b])=>`<li><b>${esc(a)}.</b> ${esc(b)}</li>`).join('')}</ol><p>Jede Stunde enthält eine <b>Profi-Aufgabe</b> zum selben Thema. Sie steht im Plan unter „Gemischte Gruppe“, die Lösung in der Handreichung.</p>`;
+const play=`<h4>Turnierformen für die AG</h4><ul><li><b>Rutschsystem (empfohlen):</b> Bretter in einer Reihe. Nach jeder Partie rückt, wer gewinnt, ein Brett nach oben, wer verliert, nach unten. Remis: beide bleiben. Kein Zettel, keine Rangliste, jede Runde neue Gegner.</li><li><b>Rundenturnier:</b> Jeder gegen jeden in Gruppen zu vier bis sechs Kindern. Gut für eine Spielstunde vor den Ferien.</li><li><b>Simultan:</b> Die Lehrkraft spielt an mehreren Brettern gleichzeitig. Kinder dürfen sich im Team beraten.</li></ul><h4>Wertung ohne Rangliste</h4><ul><li>Gruppenpunkte: Jede regelgerecht beendete Partie bringt der ganzen AG einen Punkt.</li><li>Zug des Tages: Am Ende nennt jedes Kind einen guten Zug des Gegners.</li><li>Persönliches Ziel: „Heute rochiere ich in jeder Partie“ statt „Heute gewinne ich“.</li><li>Ergebnisse bleiben am Brett. Keine öffentliche Tabelle.</li></ul><h4>Schachuhr</h4><ul><li><b>Erst ohne Uhr,</b> bis die Regeln sicher sind (etwa nach dem Bronze-Diplom).</li><li><b>Einführung:</b> Erst ziehen, dann mit derselben Hand die Uhr drücken. Die Uhr steht seitlich am Brett.</li><li><b>Bedenkzeit:</b> In der AG etwa 10 Minuten je Kind, für Blitzrunden 5 Minuten.</li><li><b>Zeitüberschreitung</b> zählt im Training nicht als Niederlage. Die Partie wird ohne Uhr zu Ende gespielt.</li></ul><h4>Ablauf einer Spielphase</h4><ol><li>Paare und Farben ansagen, Hand geben.</li><li>Halbzeit-Stopp: „Was droht dein Gegner gerade?“</li><li>Ende: Hand geben, Figuren zurück in die Grundstellung.</li><li>Auswertung: zwei Kinder zeigen eine Stelle aus ihrer Partie.</li></ol>`;
+const year=`<p>Vorschlag für ein Schuljahr mit etwa 36 Terminen. Die Reihenfolge baut aufeinander auf und führt durch die drei Stufen des <a href="https://ludgerus-schachdiplom.netlify.app/" target="_blank" rel="noopener">Ludgerus-Schachdiploms</a>. Die Diplom-Missionen eignen sich als Übung zu Hause oder für schnelle Kinder. Die Zuordnung zu den Missionen ist ein Vorschlag.</p>${YEAR.map(([head,dip,rows],k)=>`<h4>${k+1}. ${esc(head)}</h4><table class="yeartable"><thead><tr><th>Woche</th><th>Stunde</th><th>Diplom</th></tr></thead><tbody>${rows.map(([id,title,d],i)=>{const w=YEAR.slice(0,k).reduce((n,x)=>n+x[2].length,0)+i+1;return `<tr><td>${w}</td><td>${id?`<button type="button" class="linklike" data-praxisunit="${id}">${esc(title)}</button>`:esc(title)}</td><td>${esc(d)}</td></tr>`}).join('')}</tbody></table>`).join('')}<p class="muted">Danach geht es mit den Diplomen 4 und 5 (Fortgeschrittene) weiter.</p>`;
+const gloss=`<dl class="glosslist">${Object.entries(GLOSS).map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>`;
+return `<div class="stepheading"><span>?</span><div><h2>Praxiswissen</h2><p>Alles, was du neben dem Stundenplan brauchst.</p></div></div><nav class="praxistoc">${toc.map(([id,t])=>`<a href="#${id}">${t}</a>`).join('')}<button type="button" id="praxisprint">Als PDF drucken</button></nav>${sec('px-start','Die allererste Stunde',first)}${sec('px-mixed','Gemischte Spielstärken',mixed)}${sec('px-play','Spielphasen organisieren',play)}${sec('px-year','Jahresplan mit Diplom-Bezug',year)}${sec('px-gloss','Glossar',gloss)}`}
+
+const gen=C.generate;C.generate=(a,b)=>enrich(gen(a,b));
+const create=U.create;U.create=(u,p,g)=>u.id===S0.id?enrich(stunde0(create({...u},p,g))):enrich(create(u,p,g));
+U.units.unshift(S0);
+return {PROFI,PAIR,PAIR_SHORT,YEAR,GLOSS,glossify,html,S0tasks};
+})();

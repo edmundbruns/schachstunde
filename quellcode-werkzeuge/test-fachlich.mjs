@@ -1,5 +1,5 @@
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert/strict';import {Chess} from './dist/assets/chess.mjs';
-const ctx={window:{},console,atob};vm.createContext(ctx);for(const f of ['runtime-data','planner-core','curriculum','lesson-units','next-topics','quality','labyrinth','method-catalog','teaching-support'])vm.runInContext(fs.readFileSync('dist/'+f+'.js','utf8'),ctx);
+const ctx={window:{},console,atob};vm.createContext(ctx);for(const f of ['runtime-data','planner-core','curriculum','lesson-units','next-topics','quality','labyrinth','method-catalog','teaching-support','praxis'])vm.runInContext(fs.readFileSync('dist/'+f+'.js','utf8'),ctx);
 const W=ctx.window,C=W.PlannerCore,U=W.LessonUnits,R=W.LessonRefinement.own,Q=W.PlanningQuality.own,E=W.PlanningExtensions.exercises,pz=JSON.parse(fs.readFileSync('dist/assets/puzzles.json'));
 const play=(fen,sans)=>{const g=new Chess(fen);for(const m of sans)g.move(m);return g};
 const canTake=(g,sq)=>g.moves({verbose:true}).some(m=>m.to===sq);
@@ -42,7 +42,7 @@ console.log('Fachprüfung: Endspiel-Zugrecht, Turmendspiel ohne Grundreihenmatt,
 
 // Stundenmodell: Zeit, Spielphase, gestufte Übung, Hilfen, Aufhänger, Reflexion
 const M=W.LessonModel;for(const g of Object.values(M.games)){const x=new Chess(g[1]);assert(!x.inCheck());assert(!new Chess(g[1].replace(' w ',' b ')).inCheck())}
-for(const u of U.units){const p=U.create(u,pz);for(const s of p.sessions){if(!M.games[s.topic])continue;const by=n=>s.phases.find(ph=>ph.name===n||ph.name.startsWith(n));
+for(const u of U.units){const p=U.create(u,pz);for(const s of p.sessions){if(!M.games[s.topic]||s.stunde0)continue;const by=n=>s.phases.find(ph=>ph.name===n||ph.name.startsWith(n));
  assert.equal(s.phases.reduce((n,x)=>n+x.duration,0),s.duration);if(s.duration>=45)assert(by('Einstieg').duration>=7,u.id+' Einstieg mit Ankommen zu kurz');assert(!s.phases.some(ph=>ph.name==='Aufbau'));
  assert(by('Übung').game&&!s.phases.some(ph=>ph.name==='Anwendung')&&s.phases.length===6,u.id+' Spiel in der Übung, sechs Phasen');assert(by('Übung').learners.includes('Expertenaufgabe'));assert(by('Einstieg').teacher.includes('Aufhänger'));
  assert(by('Lerncheck').learners.includes('Daumen'));if(by('Ergebnissicherung'))assert(by('Ergebnissicherung').teacher.startsWith('Fehler der Stunde'));
@@ -92,4 +92,11 @@ assert(M.find(m=>m.id==='repair').quickSteps[0].includes('g1'));assert(M.find(m=
 for(const x of R.fork.filter(x=>x.lines))for(const l of x.lines){const g=new Chess(x.fen);for(const u of l)assert(g.move({from:u.slice(0,2),to:u.slice(2,4)}),x.id+' '+u);assert(g.history({verbose:true}).at(-1).captured,x.id)}
 console.log('Methodenbeispiele und Gabel-Lösungsfolgen geprüft')}
 // Roter Faden: Merksatz, Lernende-Kriterien, Leitfrage im Einstieg und im Abschluss
-{let n=0;for(const unit of U.units){for(const s of U.create(unit,pz).sessions){if(/^maze/.test(s.topic))continue;n++;assert(s.merksatz&&s.merksatz.length>40,s.topic+' Merksatz');assert(s.success[0].startsWith('Ich '),s.topic+' Kriterium');const e=s.phases.find(p=>p.name.startsWith('Einstieg')),c=s.phases.at(-1),q=W.LessonRefinement.rows[s.topic][0];assert(e.scan_teacher.includes(q),s.topic+' Leitfrage Einstieg');assert(c.scan_teacher.includes(q),s.topic+' Leitfrage Abschluss');assert(!/Zuerst die Erkenntnis/.test(c.scan_teacher));const ue=s.phases.find(p=>p.name.startsWith('Übung'));assert(ue.scan_learners.includes('Aufgabe 3 und 4'),s.topic)}}console.log(n+' Schachtermine: Merksatz, Ich-Kriterium und Leitfrage von Einstieg bis Abschluss geprüft')}
+{let n=0;for(const unit of U.units){for(const s of U.create(unit,pz).sessions){if(/^maze/.test(s.topic)||s.stunde0)continue;n++;assert(s.merksatz&&s.merksatz.length>40,s.topic+' Merksatz');assert(s.success[0].startsWith('Ich '),s.topic+' Kriterium');const e=s.phases.find(p=>p.name.startsWith('Einstieg')),c=s.phases.at(-1),q=W.LessonRefinement.rows[s.topic][0];assert(e.scan_teacher.includes(q),s.topic+' Leitfrage Einstieg');assert(c.scan_teacher.includes(q),s.topic+' Leitfrage Abschluss');assert(!/Zuerst die Erkenntnis/.test(c.scan_teacher));const ue=s.phases.find(p=>p.name.startsWith('Übung'));assert(ue.scan_learners.includes('Aufgabe 3 und 4'),s.topic)}}console.log(n+' Schachtermine: Merksatz, Ich-Kriterium und Leitfrage von Einstieg bis Abschluss geprüft')}
+// Praxiswissen: Stunde 0, Profi-Aufgaben, Jahresplan
+{const PX=W.Praxis;for(const x of PX.S0tasks)new Chess(x.fen);const s0=U.create(U.units.find(u=>u.id==='unit-stunde0'),pz).sessions[0];assert.equal(s0.phases.length,6);assert.equal(s0.phases.reduce((n,p)=>n+p.duration,0),45);assert(s0.phases[1].duration>=15);assert(s0.phases[3].game);assert(!s0.profi);assert.equal(new Set(s0.exercises.map(x=>x.fen.split(' ')[0])).size,7);
+for(const unit of U.units){for(const s of U.create(unit,pz).sessions){assert(s.mixed,unit.id);if(!s.stunde0)assert(s.profi&&s.profi.task&&s.profi.answer,unit.id+' Profi')}}
+const ids=new Set(U.units.map(u=>u.id));let n=0;for(const [,,rows] of PX.YEAR)for(const [id] of rows){n++;if(id)assert(ids.has(id),id)}assert(n>=34&&n<=38,'Wochen '+n);
+const topics=new Set(PX.YEAR.flatMap(x=>x[2]).map(r=>r[0]).filter(Boolean));for(const u of U.units.filter(u=>u.id.startsWith('unit-')))assert(topics.has(u.id),'Jahresplan fehlt '+u.id);
+const play=(fen,ms)=>{const g=new Chess(fen);for(const m of ms)g.move(m);return g};assert.deepEqual(new Chess('6k1/8/8/8/8/3B4/5PPP/r5K1 w - - 0 1').moves().sort(),['Bb1','Bf1']);assert.deepEqual(new Chess('4k3/8/8/8/2b5/8/8/R3K2R w KQ - 0 1').moves().filter(m=>m[0]==='O'),['O-O-O']);assert(play('8/k1P5/2K5/8/8/8/8/8 w - - 0 1',['c8=R','Ka6','Ra8#']).isCheckmate());
+console.log('Stunde 0, Profi-Aufgaben aller Themen und Jahresplan ('+n+' Wochen) geprüft')}

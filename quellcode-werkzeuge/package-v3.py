@@ -8,7 +8,7 @@ index=(r/'index.html').read_text().replace('<link rel="stylesheet" href="style.c
 engine=re.sub(r'export \{[^}]+\};','',(r/'assets/chess.mjs').read_text());engine=re.sub(r'//# sourceMappingURL=.*','',engine)
 app=re.sub(r'^import .*?;\n','',(r/'app.js').read_text());app=app.replace("fetch('./assets/puzzles.json').then(r=>{if(!r.ok)throw Error();return r.json()})",'Promise.resolve('+(r/'assets/puzzles.json').read_text()+')')
 vendors={p.name:base64.b64encode(p.read_bytes()).decode() for p in (r/'vendor').iterdir() if p.suffix in ['.js','.mjs']}
-prelude='window.PLANNER_LICENSE='+json.dumps((r/'LICENSES.html').read_text())+';\n'+'window.VENDOR_DATA='+json.dumps(vendors)+';\n'+ '\n'.join((r/f).read_text() for f in ['runtime-data.js','planner-core.js','curriculum.js','lesson-units.js','next-topics.js','quality.js','labyrinth.js','method-catalog.js','teaching-support.js','teacher-board.js','planner-ui.js'])
+prelude='window.PLANNER_LICENSE='+json.dumps((r/'LICENSES.html').read_text())+';\n'+'window.VENDOR_DATA='+json.dumps(vendors)+';\n'+ '\n'.join((r/f).read_text() for f in ['runtime-data.js','planner-core.js','curriculum.js','lesson-units.js','next-topics.js','quality.js','labyrinth.js','method-catalog.js','teaching-support.js','praxis.js','teacher-board.js','planner-ui.js'])
 bundle=prelude+'\n'+engine+'\n'+app
 index=index[:index.index('<script src="runtime-data.js">')]+'<script type="module">'+bundle+'</script></body></html>'
 index=index.replace('assets/Chess_nlt45.svg',figures['Chess_nlt45.svg'])
