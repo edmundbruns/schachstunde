@@ -1,6 +1,6 @@
 # SchachStunde
 
-Schachunterricht einfach planen: Unterrichtseinheiten auswählen, Verlaufsplan anpassen und die ganze Stunde mit Arbeitsblättern als PDF oder Word ausgeben.
+Schachunterricht einfach planen: Unterrichtseinheiten auswählen, Verlaufsplan anpassen und die ganze Stunde mit Arbeitsblättern als PDF ausgeben.
 
 - **Online starten:** `index.html` (GitHub Pages)
 - **Offline:** `Ludgerus-Schachwerkstatt.html` herunterladen und im Browser öffnen

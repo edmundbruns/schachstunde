@@ -7,7 +7,7 @@ Die Datei SchachStunde.html direkt im Browser öffnen. Sie enthält die Anwendun
 1. Zuerst eine der drei Niveaustufen wählen, dann ein passendes Thema anklicken. Alter, Dauer und Gruppengröße anpassen.
 2. Bei Bedarf zusätzliche Angaben aufklappen: Ausstattung, Ziele, Unterrichtsreihe oder eigene Grundlagen.
 3. Einstieg und Schwerpunkt auswählen. Planung erstellen. Die Verlaufstabelle zeigt konkrete Handlungen, Arbeitsaufträge, Methode und Sozialform. Über Anpassen jede Phase bearbeiten. Zeiten werden neu berechnet.
-4. Plan drucken, über den Browser als PDF speichern oder als bearbeitbare Word-Datei herunterladen.
+4. „Stunde als PDF (Plan + Arbeitsblätter)“ wählen und im Druckdialog „Als PDF speichern“. Das Paket enthält: Verlaufsplan (1 Seite quer), Arbeitsblatt Teil A–D (1 Seite), Lerncheck 2× A5 zum Schneiden und die Lehrkraft-Handreichung mit Lösungsübersicht. Eine Word-Ausgabe gibt es nicht mehr.
 
 Phasen lassen sich hinzufügen, kopieren, löschen und über Schaltflächen oder Ziehen verschieben. Änderungen können rückgängig gemacht werden. Weitere Planungsaktionen enthalten Duplikate und Terminverwaltung. Vier Beispielplanungen erleichtern den Einstieg.
 
