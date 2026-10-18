@@ -1,0 +1,2 @@
+import fs from 'node:fs';
+globalThis.DOMMatrix=class{};const pdf=await import('./dist/vendor/pdf.mjs');pdf.GlobalWorkerOptions.workerSrc=new URL('./dist/vendor/pdf.worker.mjs',import.meta.url).href;const d=await pdf.getDocument({data:new Uint8Array(fs.readFileSync('/tmp/schach-test.pdf')),isEvalSupported:false}).promise;const page=await d.getPage(1);const text=(await page.getTextContent()).items.map(x=>x.str).join(' ');if(!text.includes('Gabeln erkennen'))throw Error('PDF not extracted');console.log('PDF-Textschicht erfolgreich gelesen:',text);await d.destroy();
