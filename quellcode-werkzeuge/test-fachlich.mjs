@@ -61,7 +61,7 @@ assert(!play(fen('hangingPiece',0),['Rxd4']).moves().some(m=>m.includes('xd4'))&
 assert(!new Chess(fen('pin',0)).moves({square:'e7'}).length&&new Chess(fen('pin',1)).moves({square:'e7'}).length);
 assert(can(fen('castling',0),'e1','g1')&&!can(fen('castling',1),'e1','g1'));assert(can(fen('promotion',0),'a7','a8','q')&&!new Chess(fen('promotion',1)).moves({verbose:true}).some(m=>m.promotion));
 assert(new Chess(fen('stalemate',0)).isCheckmate()&&new Chess(fen('stalemate',1)).isStalemate());assert(can(fen('enpassant',0),'e5','d6')&&!can(fen('enpassant',1),'e5','d6'));
-assert(can(fen('doublecheck',0),'a7','e7')&&!can(fen('doublecheck',1),'a7','e7'));
+assert(can(fen('doublecheck',0),'b7','e7')&&!can(fen('doublecheck',1),'b7','e7'));
 assert(!play(fen('exchange',0),['Qxc3']).moves().some(m=>m.includes('xc3'))&&play(fen('exchange',1),['Qxc3']).moves().includes('dxc3'));
 assert(!play(fen('endgame',0),['a5','Ke5','a6','Kd6','a7','Kc7','a8=Q']).moves({verbose:true}).some(m=>m.to==='a8')&&play(fen('endgame',1),['Ke5','a5','Kd6','a6','Kc7','a7','Kb7','a8=Q+']).moves().includes('Kxa8'));
 assert(play(fen('rookend',0),['Rb7','Ra1+','Rb1','Rxb1#']).isCheckmate()&&!play(fen('rookend',1),['Rb7','Ra1+','Kh2']).isGameOver());

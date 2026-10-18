@@ -23,3 +23,14 @@ function openBoard(tasks,work,back){boardContext={tasks,work};loadBoardTask(0)}
 const plannerApp=window.initPlanner({Chess,esc,puzzles:()=>puzzles,printContent,boardHTML,deSAN,tips,openBoard});window.workshopAPI={planner:plannerApp};
 app.innerHTML='<p>Stundenplaner wird geladen …</p>';
 fetch('./assets/puzzles.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(p=>{puzzles=p;plannerApp.render()}).catch(()=>{app.innerHTML='<h2>Aufgabenmaterial nicht geladen</h2><p>Bitte die Seite neu laden oder die vollständige Offline-HTML-Datei aus dem Paket verwenden.</p><button id="reload">Erneut laden</button>';$('#reload').onclick=()=>location.reload()});
+
+/* Tastatur am Brett: Fokus bleibt nach dem Neuzeichnen auf dem Feld, Pfeiltasten wandern über das Brett. © Dr. Edmund Bruns */
+(()=>{const SEL='[data-bsq],[data-labsq]',key=el=>el?.dataset?.bsq?'bsq':el?.dataset?.labsq?'labsq':null;let last=null,onBoard=false;
+const grid=el=>{const box=el.closest('#teacherboard,.labtargets')||el.parentElement;return [...box.querySelectorAll(SEL)]};
+const rove=()=>{const all=[...document.querySelectorAll(SEL)];if(!all.length)return;const cur=last&&document.querySelector(`[data-${last.k}="${last.sq}"]`)||all[0];for(const b of all)b.tabIndex=b===cur?0:-1};
+document.addEventListener('focusin',e=>{const k=key(e.target);if(k){last={k,sq:e.target.dataset[k]};onBoard=true;rove()}});
+document.addEventListener('focusout',e=>{if(e.relatedTarget&&!key(e.relatedTarget))onBoard=false});
+document.addEventListener('keydown',e=>{const k=key(e.target),d={ArrowLeft:-1,ArrowRight:1,ArrowUp:-8,ArrowDown:8}[e.key];if(!k||d===undefined)return;const g=grid(e.target),i=g.indexOf(e.target),j=i+d;if(i<0||j<0||j>=g.length||(Math.abs(d)===1&&Math.floor(j/8)!==Math.floor(i/8)))return;e.preventDefault();g[j].focus()});
+const restore=()=>{rove();if(!onBoard||!last)return;const a=document.activeElement;if(a&&a!==document.body&&a.isConnected)return;document.querySelector(`[data-${last.k}="${last.sq}"]`)?.focus({preventScroll:true})};
+const start=()=>{const app=document.getElementById('app');if(app&&typeof MutationObserver!=='undefined')new MutationObserver(restore).observe(app,{childList:true,subtree:true})};
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start()})();

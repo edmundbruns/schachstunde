@@ -19,3 +19,13 @@ console.log('Speicher: beschädigte Einzelplanung aussortiert, 150 Planungen beh
 {const off=fs.readFileSync('dist/SchachStunde.html','utf8');assert(off.includes('id="startguide"'));assert(!/href="(START|SchachStunde)\.(html|zip)"/.test(off));assert(off.includes('window.PLANNER_START='));
 const api=window.workshopAPI.planner;api.render();click('#newplan');$('#f_group').value='12';$('#planform').onsubmit({preventDefault(){}});const html=api.packageHTML();assert(/Vorbereiten:/.test(html)&&/6 Bretter/.test(html)&&/12 Arbeitsblätter/.test(html),'Stückzahlen');assert(/Mini-Spiel zu zweit/.test(document.body.textContent));
 console.log('Offline-Datei ohne tote Links, Kurzanleitung eingebettet; Stückzahlen und Mini-Spiel für Schnelle im Plan.')}
+// Schritt 7: Importprüfung mit deutschen Meldungen, Bestand unverändert
+{const api=window.workshopAPI.planner,n0=api.getDatabase().plans.length,raw0=mem.get('ludgerus-planner-v3');
+const C=window.PlannerCore,pz=JSON.parse(fs.readFileSync('dist/assets/puzzles.json'));const good=C.generate({...C.defaultSettings(),topic:'mateIn1'},pz);
+const mk=f=>{const p=JSON.parse(JSON.stringify(good));f(p);return JSON.stringify({version:3,plans:[p]})};
+const cases=[['',/leer/],['{kaputt',/nicht lesbar/],['[]',/Keine gültige SchachStunde-Sicherung/],['{"version":3,"plans":[{}]}',/Unvollständige Planung/],
+[mk(p=>p.sessions[0].exercises='x'),/Aufgaben eines Termins/],[mk(p=>p.sessions[0].exercises[0]={fen:5}),/Aufgaben eines Termins/],[mk(p=>p.sessions[0].phases[0].exerciseIds=[99]),/fehlende Aufgabe/],
+[mk(p=>p.settings.group=99),/Gruppengröße: Bitte eine ganze Zahl von 1 bis 60/],[mk(p=>p.sessions[0].phases[0].teacher=5),/Textfeld.*Lehrkraft/],[mk(p=>p.sessions[0].checkId=7),/Lerncheck-Aufgabe/]];
+for(const [txt,re] of cases){await window.eval?.('0');await $('#restore').onchange({target:{files:[{size:txt.length,text:async()=>txt}],value:''}});const msg=$('#plannerstatus').textContent;assert(re.test(msg),'Meldung für '+txt.slice(0,40)+': '+msg);assert(/Import fehlgeschlagen/.test(msg)&&/bleiben unverändert/.test(msg));assert(!/[A-Z][a-z]+Error|undefined|Unexpected|JSON/.test(msg),'technische Meldung: '+msg);assert.equal(api.getDatabase().plans.length,n0);assert.equal(mem.get('ludgerus-planner-v3'),raw0)}
+for(const topic of Object.keys(C.topics))for(const duration of [30,45,90])C.checkBackup({version:3,plans:[C.generate({...C.defaultSettings(),topic,duration},pz)]});
+console.log('Import: leere, unlesbare und strukturell falsche Dateien mit deutschen Meldungen abgewiesen, Bestand unverändert; alle erzeugten Pläne bestehen die Prüfung.')}
