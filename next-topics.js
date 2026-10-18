@@ -30,7 +30,7 @@ const castle=[
 ['k3r3/8/8/8/8/8/8/4K2R w K - 0 1','Weiß steht auf der e-Linie im Schach. Darf die Rochade helfen?','Nein. Aus einem Schachgebot darf der König nicht rochieren.',[],['e1g1']],
 ['k4r2/8/8/8/8/8/8/4K2R w K - 0 1','Der schwarze Turm greift f1 an. Ist die kurze Rochade erlaubt?','Nein. Der König darf das angegriffene Durchgangsfeld f1 nicht überschreiten.',[],['e1g1']],
 ['k5r1/8/8/8/8/8/8/4K2R w K - 0 1','Der schwarze Turm greift g1 an. Darf Weiß kurz rochieren?','Nein. Der König würde auf einem angegriffenen Feld landen.',[],['e1g1']],
-['4k3/8/8/8/8/8/8/4K2R w - - 0 1','Der König war bereits auf f1 und ist zurück nach e1 gezogen. Darf er jetzt rochieren?','Nein. Das Rochaderecht ist nach einem Königszug dauerhaft verloren.',[],['e1g1']],
+['4k3/8/8/8/8/8/6P1/4K2R w - - 0 1','Der König war bereits auf f1 und ist zurück nach e1 gezogen. Darf er jetzt rochieren?','Nein. Das Rochaderecht ist nach einem Königszug dauerhaft verloren.',[],['e1g1']],
 ['4k3/8/8/8/8/8/8/R3K3 w Q - 0 1','Lerncheck: König und Turm haben nicht gezogen. Prüfe die lange Rochade und nenne beide Zielfelder.','Erlaubt: König nach c1, Turm nach d1. b1, c1 und d1 sind frei; e1, d1 und c1 sind nicht angegriffen.',['e1c1'],[]]
 ];exercises.castling=castle.map((r,i)=>task('castling',i,...r));
 exercises.promotion=[
@@ -41,7 +41,7 @@ exercises.promotion=[
 ['8/5P1k/8/8/8/8/8/4K3 w - - 0 1','Welche Umwandlung gibt sofort Schach? Prüfe Dame und Springer.','f8=S+ greift den König h7 an. Eine Dame auf f8 gibt hier kein Schach. Die stärkste Figur ist nicht immer die beste Wahl.',['f7f8n','f7f8q']],
 ['8/k1P5/2K5/8/8/8/8/8 w - - 0 1','Vertiefung: Vergleiche c8=D und c8=T. Was passiert jeweils mit Schwarz?','c8=D ist Patt: Schwarz hat keinen legalen Zug, die Partie endet remis. Nach c8=T kann Schwarz Ka6 ziehen, die Partie läuft weiter und Weiß gewinnt mit Turm und König.',['c7c8q','c7c8r']],
 ['r7/1P6/8/8/k7/8/8/4K3 w - - 0 1','Lerncheck: Nenne zwei verschiedene Umwandlungszüge des Bauern b7 und die vier wählbaren Figuren.','b8 (Zug) und bxa8 (Schlagumwandlung), jeweils in Dame, Turm, Läufer oder Springer, zum Beispiel b8=D oder bxa8=D.',['b7b8q','b7a8q']]
-].map(([fen,work,answer,checks,forbidden=[]],i)=>task('promotion',i,fen,work,answer,checks,forbidden));
+].map(([fen,work,answer,checks,forbidden=[]],i)=>({...task('promotion',i,fen,work,answer,checks,forbidden),...(i===4?{solution:['f7f8n']}:{})}));
 const stale=[
 ['k7/8/1QK5/8/8/8/8/8 b - - 0 1','Patt','Kein Schach; a7, b7 und b8 sind angegriffen. Schwarz hat keinen legalen Zug.'],
 ['k7/1Q6/2K5/8/8/8/8/8 b - - 0 1','Matt','Der König steht durch Db7 im Schach und hat keine legale Abwehr.'],

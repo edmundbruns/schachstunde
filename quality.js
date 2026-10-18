@@ -18,7 +18,7 @@ const methodRows=[
 function ex(topic,i,fen,work,answer,checks=[],forbidden=[]){return {id:topic+'-'+i,fen,work,answer,checks,forbidden,source:'Eigene didaktische Regelübung. Angegebene Züge mit chess.js geprüft. Keine übernommene Taktikaufgabe.'}}
 const own={};const ep=[
 ['4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 1','Schwarz zog gerade d7–d5. Darf e5 en passant schlagen?','Ja: e5xd6 en passant. Der schwarze Bauer d5 wird entfernt.',['e5d6'],[]],
-['4k3/8/8/3pP3/8/8/8/4K3 w - - 0 1','Der Doppelschritt d7–d5 liegt bereits einen Zug zurück. Darf e5 jetzt en passant schlagen?','Nein. Das unmittelbare Schlagrecht ist verfallen.',[],['e5d6']],
+['4k3/8/8/5pP1/8/8/8/4K3 w - - 0 1','Der Doppelschritt f7–f5 liegt bereits einen Zug zurück. Darf g5 jetzt en passant schlagen?','Nein. Das unmittelbare Schlagrecht ist verfallen.',[],['e5d6']],
 ['4k3/8/8/4P3/3p4/8/8/4K3 w - - 0 1','Schwarz zog d5–d4, nur ein Feld. Darf e5 en passant schlagen?','Nein. Es gab keinen unmittelbar vorausgehenden Doppelschritt auf ein benachbartes Feld.',[],['e5d6']],
 ['4k3/8/8/8/3Pp3/8/8/4K3 b - d3 0 1','Weiß zog gerade d2–d4. Zeige den erlaubten En-passant-Schlag für Schwarz.','e4xd3 en passant; der weiße Bauer d4 verschwindet.',['e4d3'],[]],
 ['k3r3/8/8/3pP3/8/8/8/4K3 w - d6 0 1','Schwarz zog d7–d5. Darf e5 schlagen, obwohl der Turm e8 auf den König e1 zielt?','Nein. e5xd6 würde die e-Linie öffnen und den eigenen König ins Schach stellen.',[],['e5d6']],

@@ -73,3 +73,14 @@ for(const u of U.units){const p=U.create(u,pz);for(const s of p.sessions){const 
  assert.equal(s.phases.reduce((n,x)=>n+x.duration,0),s.duration)}}
 const mb=U.create(U.units.find(x=>x.id==='unit-maze-build'),pz).sessions[0];assert.equal(mb.phases.map(x=>x.duration).join('/'),'7/5/15/5/8/5');
 console.log('Kompakter Verlaufsplan: keine wiederholten Material-, Differenzierungs- und Prüftexte, Kurztexte je Phase, Labyrinth 7/5/15/5/8/5 geprüft.');
+// Neue, unterschiedliche Stellungen: Zugfolgen aus den Lösungstexten
+{const d=R.defend,o=R.opening,e=R.endgame,r=R.rookend,p=R.planning;
+assert(canTake(play(d[1].fen,['dxe4']),'e4'));assert(canTake(play(d[2].fen,['fxg4']),'g4'));assert(canTake(play(d[3].fen,['cxd4']),'d4'));assert(canTake(play(d[4].fen,['Nxe4']),'e4'));assert(!canTake(play(d[5].fen,['dxe4']),'e4'));
+assert(canTake(play(o[3].fen,['Nxe5']),'e5'));
+assert(play(e[4].fen,['Kd5','h5','Ke6','h6','Kf7','h7','Kg7','h8=Q+','Kxh8']).board().flat().filter(Boolean).length===2);assert(!canTake(play(e[4].fen.replace(' b ',' w '),['h5','Kd6','h6','Ke7','h7','Kf7','h8=Q']),'h8'));
+assert.deepEqual(new Chess(r[3].fen).moves(),['Kh2']);for(const x of r)assert(!new Chess(x.fen).isGameOver());
+assert(canTake(play(p[4].fen,['Be3']),'f3'));
+const all=Object.values(R).flat().concat(Object.values(U.own).flat());for(const x of all){const g=new Chess(x.fen),legal=g.moves({verbose:true}).map(m=>m.from+m.to+(m.promotion||''));for(const c of [...(x.checks||[]),...(x.solution||[])])assert(legal.includes(c),x.id+' '+c);for(const sq of x.targets||[])assert(g.get(sq)&&g.get(sq).color!==g.turn(),x.id+' '+sq)}
+console.log('Unterschiedliche Stellungen und hinterlegte Lösungszüge geprüft')}
+// Mindestens sechs unterschiedliche Aufgaben je Thema (Arbeitsblatt mit 6 Aufgaben)
+{const seen={};for(const unit of U.units){for(const s of U.create(unit,pz).sessions){if(seen[s.topic])continue;const ex=s.exercises?.length?s.exercises:[...(s.puzzleIds||[]),s.checkId].filter(Boolean).map(id=>({PuzzleId:id}));const key=e=>e.PuzzleId||(e.fen?e.fen.split(' ')[0]+(s.topic==='endgame'?' '+e.fen.split(' ')[1]:''):JSON.stringify(e));seen[s.topic]=1;assert(ex.length>=6,s.topic);assert.equal(new Set(ex.slice(0,6).map(key)).size,6,s.topic)}}console.log(Object.keys(seen).length+' Themen: je mindestens sechs unterschiedliche Aufgaben geprüft')}
