@@ -100,3 +100,10 @@ const ids=new Set(U.units.map(u=>u.id));let n=0;for(const [,,rows] of PX.YEAR)fo
 const topics=new Set(PX.YEAR.flatMap(x=>x[2]).map(r=>r[0]).filter(Boolean));for(const u of U.units.filter(u=>u.id.startsWith('unit-')))assert(topics.has(u.id),'Jahresplan fehlt '+u.id);
 const play=(fen,ms)=>{const g=new Chess(fen);for(const m of ms)g.move(m);return g};assert.deepEqual(new Chess('6k1/8/8/8/8/3B4/5PPP/r5K1 w - - 0 1').moves().sort(),['Bb1','Bf1']);assert.deepEqual(new Chess('4k3/8/8/8/2b5/8/8/R3K2R w KQ - 0 1').moves().filter(m=>m[0]==='O'),['O-O-O']);assert(play('8/k1P5/2K5/8/8/8/8/8 w - - 0 1',['c8=R','Ka6','Ra8#']).isCheckmate());
 console.log('Stunde 0, Profi-Aufgaben aller Themen und Jahresplan ('+n+' Wochen) geprüft')}
+// Offene Aufgaben: vollständige Lösungsmengen statt Beispielzüge
+{const SOL=W.Praxis.SOLUTIONS,all={};for(const pool of [U.own,R,Q,E])for(const arr of Object.values(pool))for(const x of arr)if(x&&x.id)all[x.id]=x;
+for(const [id,list] of Object.entries(SOL)){assert(all[id],id);const legal=new Chess(all[id].fen).moves({verbose:true}).map(m=>m.from+m.to+(m.promotion||''));for(const c of list)assert(legal.includes(c),id+' '+c)}
+const has=(id,c)=>SOL[id].includes(c);assert(has('moves-4','d1d3')&&has('moves-4','d1h5')&&SOL['moves-4'].length===17);assert(has('fork-own-5','a1a2')&&!has('fork-own-5','a1c1'));
+for(const [id,bad] of [['planning-refined-2','c1h6'],['planning-refined-6','c8f5'],['planning-refined-6','c8h3'],['opening-refined-6','f1a6']])assert(!has(id,bad),id+' '+bad);
+assert(has('promotion-1','a7a8r')&&has('promotion-6','b7a8n')&&has('opening-refined-2','f8d6'));
+console.log('Offene Aufgaben: '+Object.keys(SOL).length+' vollständige Lösungsmengen geprüft')}
