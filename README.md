@@ -1,0 +1,2 @@
+# schachstunde
+Schachunterricht einfach planen.
