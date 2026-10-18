@@ -16,3 +16,6 @@ const before=mem.get('ludgerus-planner-v3-rettung');click('#newplan');$('#planfo
 // Obergrenze
 const C=window.PlannerCore;assert.equal(C.MAX_PLANS,300);assert.throws(()=>C.checkBackup({version:3,plans:Array(301).fill(0)}),/Mehr als 300/);
 console.log('Speicher: beschädigte Einzelplanung aussortiert, 150 Planungen behalten, Rohdaten als Rettungsdatei, Obergrenze 300 einheitlich geprüft');
+{const off=fs.readFileSync('dist/SchachStunde.html','utf8');assert(off.includes('id="startguide"'));assert(!/href="(START|SchachStunde)\.(html|zip)"/.test(off));assert(off.includes('window.PLANNER_START='));
+const api=window.workshopAPI.planner;api.render();click('#newplan');$('#f_group').value='12';$('#planform').onsubmit({preventDefault(){}});const html=api.packageHTML();assert(/Vorbereiten:/.test(html)&&/6 Bretter/.test(html)&&/12 Arbeitsblätter/.test(html),'Stückzahlen');assert(/Mini-Spiel zu zweit/.test(document.body.textContent));
+console.log('Offline-Datei ohne tote Links, Kurzanleitung eingebettet; Stückzahlen und Mini-Spiel für Schnelle im Plan.')}
