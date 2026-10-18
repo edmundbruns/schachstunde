@@ -84,3 +84,10 @@ const all=Object.values(R).flat().concat(Object.values(U.own).flat());for(const 
 console.log('Unterschiedliche Stellungen und hinterlegte Lösungszüge geprüft')}
 // Mindestens sechs unterschiedliche Aufgaben je Thema (Arbeitsblatt mit 6 Aufgaben)
 {const seen={};for(const unit of U.units){for(const s of U.create(unit,pz).sessions){if(seen[s.topic])continue;const ex=s.exercises?.length?s.exercises:[...(s.puzzleIds||[]),s.checkId].filter(Boolean).map(id=>({PuzzleId:id}));const key=e=>e.PuzzleId||(e.fen?e.fen.split(' ')[0]+(s.topic==='endgame'?' '+e.fen.split(' ')[1]:''):JSON.stringify(e));seen[s.topic]=1;assert(ex.length>=6,s.topic);assert.equal(new Set(ex.slice(0,6).map(key)).size,6,s.topic)}}console.log(Object.keys(seen).length+' Themen: je mindestens sechs unterschiedliche Aufgaben geprüft')}
+// Methodenbeispiele passen zur angezeigten Stellung; eigene Gabelaufgaben haben geprüfte Lösungsfolgen
+{const T=W.TeachingSupport,M=C.methods;const ex=id=>T.example(M.find(m=>m.id===id),pz);
+const has=(id,sq,type,color)=>{const x=ex(id),p=new Chess(x.fen).get(sq);assert(p&&p.type===type&&p.color===color,id+' '+sq)};
+has('repair','g1','n','w');has('worked','d3','p','b');has('worked','e2','p','w');has('koffer-schachpuzzlebild','d2','p','b');has('debate','a1','r','w');has('retrieval','a7','p','w');has('koffer-kopfstand','f5','k','b');has('koffer-kopfstand','a5','p','w');
+assert(M.find(m=>m.id==='repair').quickSteps[0].includes('g1'));assert(M.find(m=>m.id==='debate').quickSteps[0].includes('Ta2'));
+for(const x of R.fork.filter(x=>x.lines))for(const l of x.lines){const g=new Chess(x.fen);for(const u of l)assert(g.move({from:u.slice(0,2),to:u.slice(2,4)}),x.id+' '+u);assert(g.history({verbose:true}).at(-1).captured,x.id)}
+console.log('Methodenbeispiele und Gabel-Lösungsfolgen geprüft')}
