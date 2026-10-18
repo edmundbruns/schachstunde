@@ -13,3 +13,9 @@ assert.equal(s.phases.reduce((a,x)=>a+x.duration,0),duration,topic+pi+duration);
 if(f==='under'){assert(/Wiederholung/.test(e.scan_teacher),topic);assert(/freiwillig/.test(u.scan_learners),topic);assert.equal(s.entryType,'informative')}
 if(f==='over'){assert(/Profi-Aufgabe/.test(u.scan_learners),topic)}if(f==='mixed')assert(/Paare nach Spielstärke/.test(u.scan_teacher),topic);if(f!=='fit')assert(s.fitNote);m++}}
 console.log(m+' Pläne: Anpassung an das Vorwissen geprüft',JSON.stringify(kinds));
+// Einzelförderung
+{const U=ctx.window.LessonUnits;const bad=/\bPaar|Partner|[Zz]u zweit|A löst|\bKinder\b|Jedes Kind|Nachbarpaar|Gruppe gegen/;let k=0;const chk=p=>{for(const s of p.sessions)for(const ph of s.phases)for(const f of ['teacher','learners','result','material','social','scan_teacher','scan_learners','scan_result']){assert(!bad.test(ph[f]||''),f+': '+String(ph[f]).slice(0,160));}k++};
+for(const topic of topics)for(const entry of ['problem','informative','associative','playful'])for(const boards of [true,false]){const st=C.defaultSettings();chk(C.generate({...st,topic,group:1,entry,equipment:{...st.equipment,boards}},pz))}
+for(const u of U.units)chk(U.create(u,pz,1));console.log(k+' Pläne für ein Kind: keine Partner- oder Gruppenaufträge')}
+// Gewählte Methode erscheint im Übungsablauf
+{let k=0;for(const m of C.methods.filter(m=>!m.tabletopOnly).slice(0,63)){const st=C.defaultSettings();const p=C.generate({...st,topic:'fork',duration:60,method:m.id,methodChosen:m.id,equipment:{...st.equipment,space:true}},pz);const s=p.sessions[0];const ph=s.phases.find(x=>x.method===m.id);assert(ph,'Methode fehlt '+m.id);assert(ph.scan_teacher.includes(m.name),m.id);assert(s.methodNote);k++}console.log(k+' gewählte Methoden stehen sichtbar im Übungsablauf')}

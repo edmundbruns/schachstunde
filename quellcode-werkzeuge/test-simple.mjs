@@ -60,3 +60,10 @@ assert($('#teacherboard .moving-piece'));
 click('#flipboard');assert(!$('#teacherboard .moving-piece'));
 assert.notEqual($('[data-bsq="e5"] img').style.visibility,'hidden');
 console.log('Animationsebene, Wiederherstellung der Figur und Abbruch beim Brettdrehen geprüft.');
+{tb.show(pb.PuzzleId);const st=$('#fenvalue').value;const g=new Chess(st);const m1=g.move({from:seq[0].slice(0,2),to:seq[0].slice(2,4),promotion:seq[0][4]});const m2=g.move({from:seq[1].slice(0,2),to:seq[1].slice(2,4),promotion:seq[1][4]});
+click('[data-bsq="'+seq[0].slice(0,2)+'"]');click('[data-bsq="'+seq[0].slice(2,4)+'"]');assert($('#teacherboard .moving-piece'),'eigener Zug wird animiert');
+click('#flipboard');click('#cleararrows');
+for(let k=0;k<12;k++){await new Promise(r=>setTimeout(r,500));lastAnimation.onfinish()}
+assert(document.querySelector('[data-bsq="'+seq[1].slice(2,4)+'"] img'),'Gegenzug ausgeführt');assert(!$('#movefeedback').textContent.includes('Gegenzug folgt'),'keine hängende Ansage');
+console.log('Brett drehen und Markierungen löschen während der Zugbewegung: Gegenzug folgt trotzdem.')}
+{window.workshopAPI.planner.render();click('#newplan');click('[data-level="Grundkenntnisse"]');click('[data-topic="fork"]');$('#planform').onsubmit({preventDefault(){}});const html=window.workshopAPI.planner.packageHTML();assert(html.includes('Zusatzaufgaben aus echten Partien'));{for(const z of ['Z1','Z2','Z3'])assert(html.includes('<b>'+z+'</b></td>'),'Lösung '+z+' fehlt')}console.log('Druckpaket Gabel: Lösungen der Zusatzaufgaben Z1 bis Z3 in der Handreichung.')}
