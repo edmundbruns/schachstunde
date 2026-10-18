@@ -91,3 +91,4 @@ body:has(#teacherboard) .boardlead .boardturn{display:block;margin-top:18px;padd
 @media(max-width:800px){.lessonflow,.lessonflow tbody,.lessonflow tr,.lessonflow td{display:block;width:100%}.lessonflow colgroup,.lessonflow thead{display:none}.lessonflow tr[data-flow]{border:1px solid #2f3a3d;margin-top:14px;padding:0}.lessonflow tr[data-flow]>td{border:0;border-bottom:1px solid #d5dcdd;display:block}.lessonflow tr[data-flow]>td:first-child{background:#f3f5f5}.planfoot .reservegrid{grid-template-columns:1fr}}
 .lessonflow .editrow:not(:has(>td>.phasecard[open])){display:none}
 .scanhead .plansession{margin:0 0 8px;font-size:17px}.plantools{margin-top:18px}
+.planfoot+.row,.plantools+.row{margin-top:18px}
