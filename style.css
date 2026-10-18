@@ -92,3 +92,5 @@ body:has(#teacherboard) .boardlead .boardturn{display:block;margin-top:18px;padd
 .lessonflow .editrow:not(:has(>td>.phasecard[open])){display:none}
 .scanhead .plansession{margin:0 0 8px;font-size:17px}.plantools{margin-top:18px}
 .planfoot+.row,.plantools+.row{margin-top:18px}
+.novicebox{background:#fff;border:1px solid #cfd6d8;border-left:5px solid #176575;border-radius:8px;padding:16px 20px;margin:0 0 22px}.novicebox>summary{font-weight:700;font-size:17px;cursor:pointer;color:#14213d}.novicesteps{margin:14px 0 14px 20px;padding:0;line-height:1.55}.novicesteps li{margin:6px 0}.novicetips{margin-top:14px;border-top:1px solid #e1e6e7;padding-top:10px}.novicetips summary{font-weight:650;cursor:pointer}.novicetips ol{margin:10px 0 6px 20px;padding:0;line-height:1.5}.novicetips li{margin:5px 0}
+.merkbox{border:1px solid #9fb9e8;border-left:5px solid #2b6cd4;background:#eef4ff;border-radius:6px;padding:8px 12px!important;margin:6px 0 12px!important}
