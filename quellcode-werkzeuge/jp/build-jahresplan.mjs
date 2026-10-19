@@ -50,10 +50,15 @@ for(const [w,F] of Object.entries(FIXED)){if(!LESSONS.find(x=>x.week===+w))err('
  if(F.phasen.length!==6)err(`W${w}: sechs Phasen erwartet`);
  for(const p of F.phasen){if(!p.ablauf?.length||!p.kinder||!p.titel)err(`W${w} ${p.name}: Text fehlt`);if(!p.links?.length)err(`W${w} ${p.name}: kein Material-Link`);
   for(const l of p.links){if(l.art==='feld'&&!F.feld?.[l.set])err(`W${w}: Feldaufgaben ${l.set} fehlen`);if(l.art==='brett'&&Array.isArray(l.aufgaben))for(const k of l.aufgaben)resolve(k)}}
+ const key=t=>t.targets?[...t.targets].sort().join(','):'offen:'+t.frage;
+ const six=(set,von,bis,wo)=>{const list=(F.feld[set]||[]).slice((von||1)-1,bis||undefined);if(list.length!==6)err(`W${w} ${wo}: ${set} hat ${list.length} statt 6 Aufgaben`);
+  const seen=new Map();list.forEach((t,i)=>{for(const k of [key(t)+'|'+(t.fen||''),t.frage]){if(seen.has(k))err(`W${w} ${wo}: ${set}${(von||1)+i} wiederholt ${seen.get(k)}`);seen.set(k,set+((von||1)+i))}})};
+ for(const p of F.phasen)for(const l of p.links){if(l.art==='feld')six(l.set,l.von,l.bis,'Lehrbrett '+p.name);if(l.art==='druck'&&l.was.startsWith('feld:'))six(l.was.slice(5),0,0,'Blatt '+l.label)}
+ if(F.geschichte)six('S',0,0,'Fragen zur Geschichte');
  for(const [set,list] of Object.entries(F.feld||{}))list.forEach((t,i)=>{const id=`W${w} ${set}${i+1}`;if(!t.frage||!t.antwort||t.hilfe?.length!==2)err(id+': Frage, Antwort oder zwei Hilfen fehlen');
   if(t.targets)for(const q of t.targets)if(!SQ.test(q))err(id+': Feld '+q);
   if(t.fen){const rows=t.fen.split('/');if(rows.length!==8||rows.some(r=>[...r].reduce((n,c)=>n+(/\d/.test(c)?+c:1),0)!==8))err(id+': Stellung ungültig');
-   const occ=new Set();rows.forEach((r,ri)=>{let f=0;for(const c of r){if(/\d/.test(c))f+=+c;else{occ.add('abcdefgh'[f]+(8-ri));f++}}});if(t.targets&&/Figur|Türme|Läufer/.test(t.frage))for(const q of t.targets)if(!occ.has(q))err(id+': Zielfeld '+q+' ohne Figur')}})
+   const occ=new Set();rows.forEach((r,ri)=>{let f=0;for(const c of r){if(/\d/.test(c))f+=+c;else{occ.add('abcdefgh'[f]+(8-ri));f++}}});if(t.targets&&!t.leer&&/Figur|Türme|Läufer/.test(t.frage))for(const q of t.targets)if(!occ.has(q))err(id+': Zielfeld '+q+' ohne Figur')}})
  for(const k of F.arbeitsheft||[])for(const q of [...Object.keys(k.fill||{}),...Object.keys(k.label||{}),...Object.keys(k.loesung?.fill||{})])if(!SQ.test(q))err(`W${w} Arbeitsheft: Feld ${q}`);
  if(F.audio&&!fs.existsSync(path.join(dist,F.audio)))err(`W${w}: Audio fehlt`);
  for(const p of F.phasen)for(const l of p.links)if(l.art==='druck'&&l.was.startsWith('feld:')&&!F.feld[l.was.slice(5)])err(`W${w}: Druck ${l.was}`)}
