@@ -43,11 +43,18 @@ for(const L of LESSONS){
  if(L.week>1){const earlier=new Set(LESSONS.filter(x=>x.week<L.week).flatMap(x=>PH.filter(p=>p!=='lerncheck'&&p!=='ausblick').flatMap(p=>x[p].aufgaben)));
   for(const k of L.ausblick.aufgaben)if(!earlier.has(k))err(`W${L.week}: Ausblick-Aufgabe ${k} stammt nicht aus einer früheren Stunde`)}
  seenWeek[L.week]=true}
-// Feste Stundenverläufe für das Praxiswissen
-for(const [w,F] of Object.entries(FIXED)){const L=LESSONS.find(x=>x.week===+w);if(!L){err('Fester Verlauf ohne Woche '+w);continue}
- const sum=F.phasen.reduce((n,p)=>n+p.min,0);if(sum!==F.dauer)err(`W${w}: Phasen ergeben ${sum} statt ${F.dauer} Minuten`);
- for(const p of F.phasen){if(!p.ablauf||!p.kinder||!p.titel)err(`W${w} ${p.phase}: Text fehlt`);if(!p.links?.length)err(`W${w} ${p.phase}: kein Material-Link`);
-  for(const l of p.links)if(l.art==='brett'&&Array.isArray(l.aufgaben))for(const k of l.aufgaben)resolve(k)}}
+// Feste Stunden für das Praxiswissen
+const SQ=/^[a-h][1-8]$/;
+for(const [w,F] of Object.entries(FIXED)){if(!LESSONS.find(x=>x.week===+w))err('Feste Stunde ohne Woche '+w);
+ for(const f of ['thema','lernziel','leitfrage','umfang'])if(!F[f])err(`W${w}: ${f} fehlt`);
+ if(F.phasen.length!==6)err(`W${w}: sechs Phasen erwartet`);
+ for(const p of F.phasen){if(!p.ablauf?.length||!p.kinder||!p.titel)err(`W${w} ${p.name}: Text fehlt`);if(!p.links?.length)err(`W${w} ${p.name}: kein Material-Link`);
+  for(const l of p.links){if(l.art==='feld'&&!F.feld?.[l.set])err(`W${w}: Feldaufgaben ${l.set} fehlen`);if(l.art==='brett'&&Array.isArray(l.aufgaben))for(const k of l.aufgaben)resolve(k)}}
+ for(const [set,list] of Object.entries(F.feld||{}))list.forEach((t,i)=>{const id=`W${w} ${set}${i+1}`;if(!t.frage||!t.antwort||t.hilfe?.length!==2)err(id+': Frage, Antwort oder zwei Hilfen fehlen');
+  if(t.targets)for(const q of t.targets)if(!SQ.test(q))err(id+': Feld '+q);
+  if(t.fen){const rows=t.fen.split('/');if(rows.length!==8||rows.some(r=>[...r].reduce((n,c)=>n+(/\d/.test(c)?+c:1),0)!==8))err(id+': Stellung ungültig');
+   const occ=new Set();rows.forEach((r,ri)=>{let f=0;for(const c of r){if(/\d/.test(c))f+=+c;else{occ.add('abcdefgh'[f]+(8-ri));f++}}});if(t.targets&&/Figur|Türme|Läufer/.test(t.frage))for(const q of t.targets)if(!occ.has(q))err(id+': Zielfeld '+q+' ohne Figur')}})
+ if(F.arbeitsheft)F.arbeitsheftData=F.arbeitsheft.map(p=>'data:image/jpeg;base64,'+fs.readFileSync(path.join(dist,p)).toString('base64'))}
 // Lerncheck-Aufgaben nirgends sonst im Jahr
 const lcAll=LESSONS.flatMap(L=>L.lerncheck.aufgaben.map(k=>[k,L.week]));
 for(const [k,w] of lcAll)for(const L of LESSONS)for(const p of PH)if(!(L.week===w&&p==='lerncheck')&&L[p].aufgaben.includes(k))err(`Lerncheck ${k} (W${w}) taucht in W${L.week} ${p} auf`);
