@@ -2,7 +2,7 @@
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert';
 import {Chess} from './dist/assets/chess.mjs';
 const ctx={window:{},console,atob,Chess};vm.createContext(ctx);
-for(const f of ['runtime-data','planner-core','curriculum','lesson-units','next-topics','quality','labyrinth','method-catalog','teaching-support','praxis'])vm.runInContext(fs.readFileSync('dist/'+f+'.js','utf8'),ctx);
+for(const f of ['runtime-data','planner-core','curriculum','lesson-units','next-topics','quality','labyrinth','method-catalog','teaching-support','praxis','diplom-lessons'])vm.runInContext(fs.readFileSync('dist/'+f+'.js','utf8'),ctx);
 const C=ctx.window.PlannerCore,pz=JSON.parse(fs.readFileSync('dist/assets/puzzles.json'));
 const base=n=>n.split(' · ')[0];let n=0,std=0;
 for(const topic of Object.keys(C.topics))for(const entry of ['problem','informative','associative','playful'])for(const group of [1,12])for(const duration of [30,90]){
@@ -22,7 +22,7 @@ assert(std>n*0.8,'Zeitmodell greift bei Standardstunden ('+std+'/'+n+')');
 // Hinweis gemischte Gruppe passt zu Dauer und Ausstattung
 const d0=C.defaultSettings();for(const [duration,boards,re] of [[30,true,/^Partnerarbeit in ähnlich/],[30,false,/^Arbeitsblatt in ähnlich starken Paaren, Vorführen am Demobrett/],[45,false,/^Spiel am Demobrett/],[45,true,/^Spielphase in ähnlich/]]){const s=C.generate({...d0,topic:'fork',duration,prior:'mixed',group:12,equipment:{...d0.equipment,boards}},pz).sessions[0];assert(re.test(s.mixed),duration+'/'+boards+': '+s.mixed);if(duration===30)assert(!/Spielphase/.test(s.mixed))}
 // Figurenwege, 30 Minuten, Anfänger: nur Turm und Läufer
-{const s=C.generate({...d0,topic:'moves',duration:30,level:'Anfänger'},pz).sessions[0];const piecesOf=f=>f.split(' ')[0].replace(/[^a-zA-Z]/g,'');for(const i of [3,4,5,6])assert(s.exercises[i].id==='moves-short-'+i,'Aufgabe '+(i+1)+' nur Turm/Läufer');for(const i of [2,3,4,5,6])assert(!/[QNK]/.test(piecesOf(s.exercises[i].fen).replace('K','')),'keine weiße Dame oder Springer in Aufgabe '+(i+1));const txt=JSON.stringify({...s,exercises:[],profi:null,focusNote:'',timeNote:''});assert(!/Dame beides|Springer im L-Sprung|Nur der Springer/.test(txt),'keine Dame/Springer-Regeln im Plan');assert(/nur Turm und Läufer/.test(s.timeNote));
+{const s=C.generate({...d0,topic:'moves',duration:30,level:'Anfänger'},pz).sessions[0];const piecesOf=f=>f.split(' ')[0].replace(/[^a-zA-Z]/g,'');for(const i of [0,1,2,3,4,5,6])assert(!/[QN]/.test(piecesOf(s.exercises[i].fen)),'Aufgabe '+(i+1)+' nur Turm/Läufer');for(const i of [2,3,4,5,6])assert(!/[QNK]/.test(piecesOf(s.exercises[i].fen).replace('K','')),'keine weiße Dame oder Springer in Aufgabe '+(i+1));const txt=JSON.stringify({...s,exercises:[],profi:null,focusNote:'',timeNote:''});assert(!/Dame beides|Springer im L-Sprung|Nur der Springer/.test(txt),'keine Dame/Springer-Regeln im Plan');assert(/nur Turm und Läufer/.test(s.timeNote));
 const l=C.generate({...d0,topic:'moves',duration:45,level:'Anfänger'},pz).sessions[0];assert(/Springer/.test(l.exercises[6].work),'45 Minuten unverändert')}
 console.log('Hinweis für gemischte Gruppen passt zu Dauer und Ausstattung; Figurenwege in 30 Minuten für Anfänger nur mit Turm und Läufer.');
 console.log(n+' Pläne mit 30 und 90 Minuten: Summe stimmt; 30 Min. ohne Spiel mit vorbereiteten Brettern, Einstieg ≥4 und Erarbeitung ≥6; 90 Min. mit zweiter Übungsrunde nach der Sicherung, Lerncheck ≤8 ('+std+' Standardstunden).');

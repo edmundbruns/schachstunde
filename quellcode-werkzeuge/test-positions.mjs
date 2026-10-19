@@ -2,7 +2,7 @@
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert';
 import {Chess,validateFen} from './dist/assets/chess.mjs';
 const ctx={window:{},console,atob,Chess};vm.createContext(ctx);
-for(const f of ['runtime-data','planner-core','curriculum','lesson-units','next-topics','quality','labyrinth','method-catalog','teaching-support','praxis'])vm.runInContext(fs.readFileSync('dist/'+f+'.js','utf8'),ctx);
+for(const f of ['runtime-data','planner-core','curriculum','lesson-units','next-topics','quality','labyrinth','method-catalog','teaching-support','praxis','diplom-lessons'])vm.runInContext(fs.readFileSync('dist/'+f+'.js','utf8'),ctx);
 const W=ctx.window,C=W.PlannerCore,U=W.LessonUnits,pz=JSON.parse(fs.readFileSync('dist/assets/puzzles.json'));
 const FENRE=/^([rnbqkpRNBQKP1-8]+\/){7}[rnbqkpRNBQKP1-8]+ [wb] (-|[KQkq]+) (-|[a-h][36]) \d+ \d+$/;const items=new Map();
 const add=(src,o)=>{if(!o||typeof o.fen!=='string'||!FENRE.test(o.fen.trim()))return;const k=o.fen+'|'+(o.id||'');if(!items.has(k))items.set(k,{src,...o})};

@@ -8,7 +8,7 @@ index=(r/'index.html').read_text().replace('<link rel="stylesheet" href="style.c
 engine=re.sub(r'export \{[^}]+\};','',(r/'assets/chess.mjs').read_text());engine=re.sub(r'//# sourceMappingURL=.*','',engine)
 app=re.sub(r'^import .*?;\n','',(r/'app.js').read_text());app=app.replace("fetch('./assets/puzzles.json').then(r=>{if(!r.ok)throw Error();return r.json()})",'Promise.resolve('+(r/'assets/puzzles.json').read_text()+')')
 vendors={}  # Offline-Datei ohne Zusatzbibliotheken: Word-Export und Dokumentimport sind in der Oberfläche nicht aktiv.
-prelude='window.PLANNER_LICENSE='+json.dumps((r/'LICENSES.html').read_text())+';\n'+'window.PLANNER_START='+json.dumps((r/'START.html').read_text())+';\n'+'window.VENDOR_DATA='+json.dumps(vendors)+';\n'+ '\n'.join((r/f).read_text() for f in ['runtime-data.js','planner-core.js','curriculum.js','lesson-units.js','next-topics.js','quality.js','labyrinth.js','method-catalog.js','teaching-support.js','praxis.js','teacher-board.js','planner-ui.js'])
+prelude='window.PLANNER_LICENSE='+json.dumps((r/'LICENSES.html').read_text())+';\n'+'window.PLANNER_START='+json.dumps((r/'START.html').read_text())+';\n'+'window.VENDOR_DATA='+json.dumps(vendors)+';\n'+ '\n'.join((r/f).read_text() for f in ['runtime-data.js','planner-core.js','curriculum.js','lesson-units.js','next-topics.js','quality.js','labyrinth.js','method-catalog.js','teaching-support.js','praxis.js','diplom-lessons.js','teacher-board.js','planner-ui.js'])
 bundle=prelude+'\n'+engine+'\n'+app
 index=index[:index.index('<script src="runtime-data.js">')]+'<script type="module">'+bundle+'</script></body></html>'
 index=index.replace('assets/Chess_nlt45.svg',figures['Chess_nlt45.svg'])
@@ -26,4 +26,4 @@ with zipfile.ZipFile(r/'SchachStunde.zip','w',zipfile.ZIP_DEFLATED) as z:
  z.write(r/'LICENSES.html','website/LICENSES.html')
  z.write(r/'START.html','website/START.html')
  for p in Path('.').iterdir():
-  if p.name in ['package-v3.py','dependencies.py','fetch.py','validate.mjs','test-simple.mjs','test-units.mjs','test-labyrinth.mjs','test-support.mjs','test-pdf.mjs','test-fachlich.mjs','test-entry.mjs','test-storage.mjs','test-positions.mjs','test-tactics.mjs','test-time.mjs','test-keyboard.cjs','engine-check.mjs','fetch-puzzles.py','select-puzzles.mjs','run-tests.sh','gen-docs.mjs']:z.write(p,'quellcode-werkzeuge/'+p.name)
+  if p.name in ['package-v3.py','dependencies.py','fetch.py','validate.mjs','test-simple.mjs','test-units.mjs','test-labyrinth.mjs','test-support.mjs','test-pdf.mjs','test-fachlich.mjs','test-entry.mjs','test-storage.mjs','test-positions.mjs','test-tactics.mjs','test-time.mjs','test-diplom.mjs','test-keyboard.cjs','engine-check.mjs','fetch-puzzles.py','select-puzzles.mjs','run-tests.sh','gen-docs.mjs']:z.write(p,'quellcode-werkzeuge/'+p.name)

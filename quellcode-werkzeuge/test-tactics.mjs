@@ -2,14 +2,14 @@
 import fs from 'node:fs';import vm from 'node:vm';import assert from 'node:assert';
 import {Chess} from './dist/assets/chess.mjs';
 const ctx={window:{},console,atob,Chess};vm.createContext(ctx);
-for(const f of ['runtime-data','planner-core','curriculum','lesson-units','next-topics','quality','labyrinth','method-catalog','teaching-support','praxis'])vm.runInContext(fs.readFileSync('dist/'+f+'.js','utf8'),ctx);
+for(const f of ['runtime-data','planner-core','curriculum','lesson-units','next-topics','quality','labyrinth','method-catalog','teaching-support','praxis','diplom-lessons'])vm.runInContext(fs.readFileSync('dist/'+f+'.js','utf8'),ctx);
 const C=ctx.window.PlannerCore,pz=JSON.parse(fs.readFileSync('dist/assets/puzzles.json'));
 const byId=Object.fromEntries(pz.map(p=>[p.PuzzleId,p]));
 const pieces=fen=>fen.split(' ')[0].replace(/[^a-zA-Z]/g,'').length;
 const TACT=['mateIn1','hangingPiece','pin','discoveredAttack','mateIn2','calculation'];
 let n=0;
 for(const topic of TACT)for(const level of ['Anfänger','Grundkenntnisse','Fortgeschrittene'])for(const duration of [30,45,60,90]){
-  const p=C.generate({...C.defaultSettings(),topic,level,duration},pz),s=p.sessions[0];
+  const p=C.generate({...C.defaultSettings(),topic,level,duration},pz),s=p.sessions[0];if(s.diplom)continue;
   assert(Array.isArray(s.exercises)&&s.exercises.length===7,topic+': sieben Aufgaben');
   assert.equal(s.checkId,null);assert.equal(s.puzzleIds.length,0);
   for(const i of [0,1])assert(pieces(s.exercises[i].fen)<=10,topic+' Aufgabe '+(i+1)+' hat mehr als 10 Figuren');
