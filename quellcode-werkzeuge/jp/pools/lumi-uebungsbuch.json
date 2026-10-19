@@ -1,0 +1,742 @@
+[
+ {
+  "n": 0,
+  "fen": "7k/3n4/8/8/1q1R1bp1/8/8/3R3K w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Txb4"
+  ],
+  "note": "Könige ergänzt (h8, h1)",
+  "erlaubt": [
+   "d4b4"
+  ],
+  "sf": {
+   "best": "d4b4",
+   "score": "cp 526"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 0"
+ },
+ {
+  "n": 1,
+  "fen": "r1bqkbnr/p1p2ppp/1pnp4/1B2p3/4P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 1",
+  "typ": "zug",
+  "san": [
+   "Lxc6+"
+  ],
+  "erlaubt": [
+   "b5c6"
+  ],
+  "sf": {
+   "best": "b5c6",
+   "score": "cp 634"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 1"
+ },
+ {
+  "n": 2,
+  "fen": "r2q1rk1/2p2ppp/pbnpbn2/1p1Pp1B1/4P3/2P2N2/PPB2PPP/RN1Q1RK1 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "dxc6",
+   "dxe6"
+  ],
+  "frage": "Springer",
+  "erlaubt": [
+   "d5c6",
+   "d5e6"
+  ],
+  "sf": {
+   "best": "g1h1",
+   "score": "cp 420"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 2"
+ },
+ {
+  "n": 3,
+  "fen": "r2q1rk1/1pp1bppp/p1n1b3/3pP3/5B1n/2NQ1N2/PPB2PPP/R4RK1 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Sxd5"
+  ],
+  "erlaubt": [
+   "d3h7"
+  ],
+  "sf": {
+   "best": "d3h7",
+   "score": "mate 1"
+  },
+  "note": "Dxh7 ist sogar Matt (Lumi-Antwort: Bauer)",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 3"
+ },
+ {
+  "n": 4,
+  "fen": "1kr1r3/pp3pp1/2pN3p/2P2b2/1P5P/P5P1/5P2/3R1RK1 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Sxf5"
+  ],
+  "erlaubt": [
+   "d6f5"
+  ],
+  "sf": {
+   "best": "d6f5",
+   "score": "cp 538"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 4"
+ },
+ {
+  "n": 5,
+  "fen": "3rr1k1/pp3pp1/7p/2n5/8/P3P3/5PPP/1R2R1K1 w - - 0 1",
+  "typ": "frage",
+  "antwort": "Schwarz (Springer mehr)",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 5"
+ },
+ {
+  "n": 6,
+  "fen": "6k1/pp3pp1/7p/2n5/3N4/P3PB2/5PPP/6K1 w - - 0 1",
+  "typ": "feld",
+  "feld": "f3",
+  "antwort": "Läufer f3",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 6"
+ },
+ {
+  "n": 7,
+  "fen": "3Q4/2p2pqk/1p1n2b1/p7/2N4P/1P1B2P1/P1P4K/8 w - - 0 1",
+  "typ": "frage",
+  "antwort": "Weiß (ein Bauer mehr)",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 7"
+ },
+ {
+  "n": 9,
+  "fen": "r3r1k1/1p1q1bpp/1bpp1p2/p2P4/Q1P2N2/5P2/1P3BPP/2R1R1K1 w - - 0 1",
+  "typ": "frage",
+  "antwort": "Schwarz (ein Bauer mehr)",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 9"
+ },
+ {
+  "n": 11,
+  "fen": "6k1/3bb1P1/2p2nKp/p1Bp1P2/1p1P1NP1/1P3B2/P7/6r1 w - - 0 1",
+  "typ": "frage",
+  "antwort": "Schwarz (Turm gegen Bauern)",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 11"
+ },
+ {
+  "n": 13,
+  "fen": "5rk1/p1R2pp1/7p/8/8/P7/5PPP/6K1 b - - 0 1",
+  "typ": "frage",
+  "antwort": "ja, Bauer a7 wird bedroht",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 13"
+ },
+ {
+  "n": 15,
+  "fen": "r2qkbnr/ppp2ppp/2npb3/1B2p3/3PP3/2P2N2/PP3PPP/RNBQK2R b KQkq - 0 1",
+  "typ": "drohung",
+  "drohung": [
+   "d5"
+  ],
+  "san": [
+   "Ld7"
+  ],
+  "erlaubt": [
+   "e6d7"
+  ],
+  "sf": {
+   "best": "e6d7",
+   "score": "cp -86"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 15"
+ },
+ {
+  "n": 18,
+  "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 0 1",
+  "typ": "drohung",
+  "drohung": [
+   "Dxf7#"
+  ],
+  "san": [
+   "g6"
+  ],
+  "erlaubt": [
+   "g7g6"
+  ],
+  "sf": {
+   "best": "g7g6",
+   "score": "cp 28"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 18"
+ },
+ {
+  "n": 21,
+  "fen": "r3r1k1/2p2np1/1b3p1p/pN6/1pP2BP1/1P2PP2/P4K2/R3R3 b - - 0 1",
+  "typ": "drohung",
+  "drohung": [
+   "Sxc7",
+   "Lxc7"
+  ],
+  "san": [
+   "Se5"
+  ],
+  "erlaubt": [
+   "f7e5"
+  ],
+  "sf": {
+   "best": "f7e5",
+   "score": "cp -36"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 21"
+ },
+ {
+  "n": 23,
+  "fen": "1k6/1p3p2/pnp1r1p1/7p/7P/2P1N1P1/PR3P2/6K1 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Txb6"
+  ],
+  "erlaubt": [
+   "b2b6"
+  ],
+  "sf": {
+   "best": "b2b6",
+   "score": "cp 360"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 23"
+ },
+ {
+  "n": 24,
+  "fen": "r4rk1/p4pp1/1pqb1n1p/8/2Pp4/1P2N1BQ/P4PPP/1R3RK1 b - - 0 1",
+  "typ": "zug",
+  "san": [
+   "dxe3"
+  ],
+  "erlaubt": [
+   "d4e3"
+  ],
+  "sf": {
+   "best": "d4e3",
+   "score": "cp 537"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 24"
+ },
+ {
+  "n": 25,
+  "fen": "rk6/1p3pp1/r1p2nqp/8/3P4/2N4P/R1P2PP1/1R3QK1 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Txa6"
+  ],
+  "erlaubt": [
+   "a2a6"
+  ],
+  "sf": {
+   "best": "a2a6",
+   "score": "cp 558"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 25"
+ },
+ {
+  "n": 26,
+  "fen": "rk6/1p3pp1/r1p2nqp/8/3P4/2N4P/R1P2PP1/1R3QK1 b - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Txa2"
+  ],
+  "erlaubt": [
+   "a6a2"
+  ],
+  "sf": {
+   "best": "a6a2",
+   "score": "cp 417"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 26"
+ },
+ {
+  "n": 27,
+  "fen": "r4rk1/1p3pbp/5np1/2pP4/1p2P3/1RnP1NP1/N4PBP/K3R3 b - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Sxa2"
+  ],
+  "erlaubt": [
+   "a8a2",
+   "c3a2"
+  ],
+  "sf": {
+   "best": "a8a2",
+   "score": "mate 1"
+  },
+  "note": "Txa2 ist Matt",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 27"
+ },
+ {
+  "n": 28,
+  "fen": "r1r3k1/1p3pp1/p5np/b6R/2P5/3PBPN1/4P1P1/2R3K1 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Txa5"
+  ],
+  "erlaubt": [
+   "h5a5"
+  ],
+  "sf": {
+   "best": "h5a5",
+   "score": "cp 555"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 28"
+ },
+ {
+  "n": 30,
+  "fen": "7r/kp4p1/p1p2p2/7p/3q1Q2/6P1/PPP5/1K3R2 b - - 0 1",
+  "typ": "frage",
+  "antwort": "richtig, Schwarz sollte die Damen tauschen",
+  "san": [
+   "Dxf4"
+  ],
+  "erlaubt": [
+   "d4f4"
+  ],
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 30"
+ },
+ {
+  "n": 33,
+  "fen": "6k1/1p2ppp1/4q2p/8/8/8/1P2P1QP/7K b - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Dc6"
+  ],
+  "erlaubt": [
+   "e6c6"
+  ],
+  "sf": {
+   "best": "e6f6",
+   "score": "cp 495"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 33"
+ },
+ {
+  "n": 36,
+  "fen": "1r6/kq4p1/pp6/8/8/1P5P/P1Q2PP1/2R3K1 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Dc7"
+  ],
+  "erlaubt": [
+   "c2c7"
+  ],
+  "sf": {
+   "best": "c2c3",
+   "score": "cp 469"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 36"
+ },
+ {
+  "n": 37,
+  "fen": "r2n2k1/pb2rpp1/1p2pq1p/8/PP6/3PNP2/2Q2BPP/R4R1K b - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Tc8"
+  ],
+  "erlaubt": [
+   "a8c8"
+  ],
+  "sf": {
+   "best": "a8c8",
+   "score": "cp 45"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 37"
+ },
+ {
+  "n": 38,
+  "fen": "2r3k1/p6q/1p2p2p/3p2pP/1P4P1/PQP2P2/4P2R/5K2 b - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Dc7"
+  ],
+  "erlaubt": [
+   "h7c7"
+  ],
+  "sf": {
+   "best": "h7g7",
+   "score": "cp 0"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 38"
+ },
+ {
+  "n": 39,
+  "fen": "8/1kr4b/pp6/8/RPP5/P7/K7/B7 b - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Lc2"
+  ],
+  "erlaubt": [
+   "h7c2"
+  ],
+  "sf": {
+   "best": "h7c2",
+   "score": "cp 421"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 39"
+ },
+ {
+  "n": 40,
+  "fen": "1kr1r3/1pp2p1p/pq3bpB/8/2P5/1P3Q1P/P4PP1/1R3RK1 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Le3"
+  ],
+  "erlaubt": [
+   "h6e3"
+  ],
+  "sf": {
+   "best": "h6e3",
+   "score": "cp 38"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 40"
+ },
+ {
+  "n": 41,
+  "fen": "7q/kp6/p3R3/n2B3p/2P3pP/3p2P1/3P1P1K/8 b - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Dc8",
+   "Db2"
+  ],
+  "erlaubt": [
+   "h8c8",
+   "h8b2"
+  ],
+  "sf": {
+   "best": "h8b2",
+   "score": "cp 583"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 41"
+ },
+ {
+  "n": 42,
+  "fen": "r2q1rk1/5pp1/5n1p/1p1p4/2p2P2/4QN1P/PPP3P1/1KR2R2 b - - 0 1",
+  "typ": "zweizug",
+  "san": [
+   "Da5",
+   "Dxa2#"
+  ],
+  "fen2": "r4rk1/5pp1/5n1p/qp1p4/2p2P2/4QN1P/PPP3P1/1KR2R2 b - - 1 2",
+  "erlaubt": [
+   "d8a5"
+  ],
+  "erlaubt2": [
+   "a5a2"
+  ],
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 42"
+ },
+ {
+  "n": 43,
+  "fen": "r3r1k1/p4p1p/np4p1/4N3/5P2/6P1/PP5P/KR4R1 b - - 0 1",
+  "typ": "zweizug",
+  "san": [
+   "Sb4",
+   "Sc2#"
+  ],
+  "fen2": "r3r1k1/p4p1p/1p4p1/4N3/1n3P2/6P1/PP5P/KR4R1 b - - 1 2",
+  "erlaubt": [
+   "a6b4"
+  ],
+  "erlaubt2": [
+   "b4c2"
+  ],
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 43"
+ },
+ {
+  "n": 44,
+  "fen": "3r1rk1/2p1bppp/p3pn2/1pP5/1P2B2q/P1N5/2Q2PPP/3R1RK1 b - - 0 1",
+  "typ": "zweizug",
+  "san": [
+   "Sg4",
+   "Dxh2#"
+  ],
+  "fen2": "3r1rk1/2p1bppp/p3p3/1pP5/1P2B1nq/P1N5/2Q2PPP/3R1RK1 b - - 1 2",
+  "erlaubt": [
+   "f6g4"
+  ],
+  "erlaubt2": [
+   "h4h2"
+  ],
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 44"
+ },
+ {
+  "n": 45,
+  "fen": "4kb2/8/1n2K3/4NPN1/8/1n6/7r/3R4 w - - 0 1",
+  "typ": "zweizug",
+  "san": [
+   "f6",
+   "f7#"
+  ],
+  "fen2": "4kb2/8/1n2KP2/4N1N1/8/1n6/7r/3R4 w - - 0 1",
+  "erlaubt": [
+   "f5f6"
+  ],
+  "erlaubt2": [
+   "f6f7"
+  ],
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 45"
+ },
+ {
+  "n": 46,
+  "fen": "2kr2r1/p2pb1p1/1p2np2/8/1P5P/PB4B1/2P2P2/R4RK1 w - - 0 1",
+  "typ": "zweizug",
+  "san": [
+   "Lc4",
+   "La6#"
+  ],
+  "fen2": "2kr2r1/p2pb1p1/1p2np2/8/1PB4P/P5B1/2P2P2/R4RK1 w - - 1 1",
+  "erlaubt": [
+   "b3c4"
+  ],
+  "erlaubt2": [
+   "c4a6"
+  ],
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 46"
+ },
+ {
+  "n": 47,
+  "fen": "5k2/2q5/8/8/3r4/8/8/7K w - - 0 1",
+  "typ": "feld",
+  "feld": "e6",
+  "antwort": "weißer Springer auf e6 (Gabel)",
+  "note": "Weißer König ergänzt (h1)",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 47"
+ },
+ {
+  "n": 48,
+  "fen": "8/2q5/8/8/5k2/8/5PK1/8 w - - 0 1",
+  "typ": "feld",
+  "feld": [
+   "g3",
+   "h2"
+  ],
+  "antwort": "Dame oder Läufer auf g3 oder h2 (Spieß)",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 48"
+ },
+ {
+  "n": 49,
+  "fen": "r1bqkbnr/1pp2ppp/2np4/pB2p3/4P3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 1",
+  "typ": "feld",
+  "feld": "d5",
+  "antwort": "weißer Bauer auf d5 (Fesselung)",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 49"
+ },
+ {
+  "n": 50,
+  "fen": "8/4k3/5n2/6B1/8/8/4K3/8 w - - 0 1",
+  "typ": "feld",
+  "feld": "e5",
+  "antwort": "weißer Bauer auf e5 (Fesselung)",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 50"
+ },
+ {
+  "n": 51,
+  "fen": "8/p6k/1b4pp/6r1/8/6q1/5PP1/6K1 w - - 0 1",
+  "typ": "feld",
+  "feld": "f7",
+  "antwort": "weiße Dame auf f7 (Dauerschach)",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 51"
+ },
+ {
+  "n": 52,
+  "fen": "1R3nk1/R7/8/8/8/8/8/6K1 b - - 0 1",
+  "typ": "feld",
+  "feld": "f8",
+  "antwort": "Springer f8 wegnehmen",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 52"
+ },
+ {
+  "n": 53,
+  "fen": "5rk1/p4ppQ/1p1bqn2/2p5/2P5/1P3N2/P1B2PPP/5RK1 b - - 0 1",
+  "typ": "feld",
+  "feld": "f6",
+  "antwort": "Springer f6 wegnehmen",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 53"
+ },
+ {
+  "n": 54,
+  "fen": "krr5/ppN5/5p2/5np1/2P4p/1P6/P4PPP/2R2RK1 b - - 0 1",
+  "typ": "feld",
+  "feld": "c8",
+  "antwort": "Turm c8 wegnehmen",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 54"
+ },
+ {
+  "n": 55,
+  "fen": "r1bqkb1r/pppp1Qpp/2n4n/4p3/2B1P3/8/PPPP1PPP/RNB1K1NR b KQkq - 0 1",
+  "typ": "feld",
+  "feld": "h6",
+  "antwort": "Springer h6 wegnehmen",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 55"
+ },
+ {
+  "n": 56,
+  "fen": "1k1Q4/8/1K6/8/7b/8/8/8 b - - 0 1",
+  "typ": "feld",
+  "feld": "h4",
+  "antwort": "Läufer h4 wegnehmen",
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 56"
+ },
+ {
+  "n": 57,
+  "fen": "8/3r4/5k2/3bp3/3p4/2pN1P2/1NP3PP/3R2K1 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Sa4"
+  ],
+  "erlaubt": [
+   "b2a4"
+  ],
+  "sf": {
+   "best": "b2a4",
+   "score": "cp 529"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 57"
+ },
+ {
+  "n": 58,
+  "fen": "r1r2qk1/pbp2ppp/1p6/8/P7/1P1Q2P1/2P2PBP/2KRR3 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Lxb7"
+  ],
+  "erlaubt": [
+   "g2b7"
+  ],
+  "sf": {
+   "best": "g2b7",
+   "score": "cp 523"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 58"
+ },
+ {
+  "n": 59,
+  "fen": "8/5k2/8/8/7b/6N1/8/4K3 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Kf2"
+  ],
+  "erlaubt": [
+   "e1f2"
+  ],
+  "sf": {
+   "best": "e1e2",
+   "score": "cp 0"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 59"
+ },
+ {
+  "n": 60,
+  "fen": "2kr1r2/ppp3pB/2n2p2/4p3/2P5/1P6/P1n2PPP/RN3RK1 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Lxc2"
+  ],
+  "erlaubt": [
+   "h7c2"
+  ],
+  "sf": {
+   "best": "h7f5",
+   "score": "cp 360"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 60"
+ },
+ {
+  "n": 61,
+  "fen": "1k6/1pp2b2/2np4/8/r3N2K/8/1PP2P2/4BR2 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "f3"
+  ],
+  "erlaubt": [
+   "f2f3"
+  ],
+  "sf": {
+   "best": "f2f3",
+   "score": "cp -105"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 61"
+ },
+ {
+  "n": 62,
+  "fen": "1krn4/1bp2p1p/1p3qp1/8/5B2/2P3NP/QP3PP1/R5K1 b - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Sc6"
+  ],
+  "erlaubt": [
+   "d8c6"
+  ],
+  "sf": {
+   "best": "d8c6",
+   "score": "cp 13"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 62"
+ },
+ {
+  "n": 63,
+  "fen": "1k4r1/2p5/1p6/p4bp1/6p1/P1P3P1/1P4PK/5BR1 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Th1"
+  ],
+  "erlaubt": [
+   "g1h1"
+  ],
+  "sf": {
+   "best": "g1h1",
+   "score": "cp -98"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 63"
+ },
+ {
+  "n": 64,
+  "fen": "1k5r/pbp5/1p6/5p2/1P4p1/P1P3P1/1R3P2/5BK1 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Lg2"
+  ],
+  "erlaubt": [
+   "f1g2"
+  ],
+  "sf": {
+   "best": "f1g2",
+   "score": "cp -43"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 64"
+ },
+ {
+  "n": 65,
+  "fen": "1r3b1k/p1n3pp/1p6/2p2P2/P1B4N/1P1P2P1/5K2/7R b - - 0 1",
+  "typ": "zug",
+  "san": [
+   "h6"
+  ],
+  "erlaubt": [
+   "h7h6"
+  ],
+  "sf": {
+   "best": "g7g5",
+   "score": "cp -207"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 65"
+ },
+ {
+  "n": 66,
+  "fen": "1k6/p1p5/1p1b4/1N4p1/R5P1/P1P2p2/1P2rP2/7K w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Sxd6"
+  ],
+  "erlaubt": [
+   "b5d6"
+  ],
+  "sf": {
+   "best": "b5d6",
+   "score": "cp -165"
+  },
+  "quelle": "Lumi Übungsbuch (sg95nU) Aufgabe 66"
+ }
+]

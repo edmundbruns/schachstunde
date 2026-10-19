@@ -109,3 +109,12 @@ body:has(#teacherboard) .boardlead .boardturn{display:block;margin-top:18px;padd
 #levelchoices [aria-pressed="true"] small{color:#d6e6e3!important}
 
 .promopick button{margin:4px 4px 0 0;display:inline-flex;align-items:center;gap:4px}.promopick button img,.promopick button svg{width:28px;height:28px}
+/* Jahresplan mit Material-Pools · © Dr. Edmund Bruns */
+.jp-intro{background:#eef3f2;border-radius:8px;padding:8px 14px;margin:8px 0}
+.jp-meta{border-collapse:collapse;margin:8px 0 14px;width:100%}.jp-meta th{text-align:left;width:8.5rem;padding:4px 8px;color:#176575;vertical-align:top}.jp-meta td{padding:4px 8px}.jp-meta tr+tr{border-top:1px solid #e3e8ef}
+.jp-phase{border:1px solid #d5dbe6;border-radius:8px;margin:10px 0;padding:6px 12px;background:#fff}.jp-phase>summary{cursor:pointer;padding:4px 0}.jp-phase h5{margin:10px 0 4px}
+.jp-list{list-style:none;padding:0;margin:6px 0;display:grid;gap:8px}
+.jp-bs{border-left:4px solid #176575;background:#f7f9fc;border-radius:6px;padding:6px 10px}.jp-bs p{margin:3px 0 0 1.6rem}.jp-art{font-size:.8rem;background:#dbeeee;color:#14535f;border-radius:10px;padding:1px 8px;margin-left:4px}.jp-min{font-size:.85rem;color:#5a6478;margin-left:4px}.jp-who{font-weight:600;color:#3b4660}.jp-mat{color:#5a6478;font-size:.9rem}
+.jp-task{padding:4px 0;border-bottom:1px dashed #e3e8ef}.jp-task label{display:inline}.jp-src{font-size:.8rem;color:#667;margin-left:1.6rem}.jp-board{margin-left:6px;padding:2px 10px;font-size:.85rem}
+.jp-mine{border:2px solid #176575;border-radius:10px;padding:8px 14px;margin:16px 0;background:#f4faf9}
+@media (max-width:600px){.jp-meta th{width:6rem}.jp-bs p,.jp-src{margin-left:0}}

@@ -1,0 +1,140 @@
+[
+ {
+  "n": "F1",
+  "fen": "r4rk1/2N2ppp/5n2/8/8/7P/5PP1/4RRK1 w - - 0 1",
+  "typ": "zug",
+  "san": [
+   "Sxa8"
+  ],
+  "antwort": "Guter Tausch: Springer (3) gegen Turm (5)",
+  "beispiel": true,
+  "erlaubt": [
+   "c7a8"
+  ],
+  "sf": {
+   "best": "c7a8",
+   "score": "cp 343"
+  },
+  "quelle": "Lumi Guter oder schlechter Tausch (F6ynhe)"
+ },
+ {
+  "n": "F3",
+  "fen": "4r1k1/4qppp/8/6n1/8/2N5/PPPQ4/2KR4 w - - 0 1",
+  "typ": "frage",
+  "san": [
+   "Dxg5"
+  ],
+  "antwort": "Schlechter Tausch: Dxg5 Dxg5, Dame (9) gegen Springer (3)",
+  "beispiel": true,
+  "erlaubt": [
+   "d2g5"
+  ],
+  "sf": {
+   "best": "a2a4",
+   "score": "cp 49"
+  },
+  "quelle": "Lumi Guter oder schlechter Tausch (F6ynhe)"
+ },
+ {
+  "n": "F6",
+  "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 1",
+  "typ": "frage",
+  "san": [
+   "Sxe5"
+  ],
+  "antwort": "Schlechter Tausch: Sxe5 Sxe5",
+  "erlaubt": [
+   "f3e5"
+  ],
+  "sf": {
+   "best": "f1b5",
+   "score": "cp 44"
+  },
+  "quelle": "Lumi Guter oder schlechter Tausch (F6ynhe)"
+ },
+ {
+  "n": "F8",
+  "fen": "3rr1k1/5ppp/8/8/8/8/PPP5/1KRQ4 w - - 0 1",
+  "typ": "frage",
+  "san": [
+   "Dxd8"
+  ],
+  "antwort": "Schlechter Tausch: Dxd8 Txd8",
+  "erlaubt": [
+   "d1d8"
+  ],
+  "sf": {
+   "best": "d1f3",
+   "score": "cp 575"
+  },
+  "quelle": "Lumi Guter oder schlechter Tausch (F6ynhe)"
+ },
+ {
+  "n": "F10",
+  "fen": "r1b1kbnr/pppp1ppp/2n1q3/4p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 0 1",
+  "typ": "frage",
+  "san": [
+   "Lxe6"
+  ],
+  "antwort": "Guter Tausch: Läufer (3) gegen Dame (9)",
+  "erlaubt": [
+   "c4e6"
+  ],
+  "sf": {
+   "best": "c4e6",
+   "score": "cp 654"
+  },
+  "quelle": "Lumi Guter oder schlechter Tausch (F6ynhe)"
+ },
+ {
+  "n": "F12",
+  "fen": "r1b1kb1r/pp3ppp/1qn1p1n1/2ppP3/3P2Q1/1PPB4/P3NPPP/RNB1K2R w KQkq - 0 1",
+  "typ": "frage",
+  "san": [
+   "Dxg6"
+  ],
+  "antwort": "Schlechter Tausch: Dxg6 hxg6",
+  "erlaubt": [
+   "g4g6"
+  ],
+  "sf": {
+   "best": "e1g1",
+   "score": "cp 0"
+  },
+  "quelle": "Lumi Guter oder schlechter Tausch (F6ynhe)"
+ },
+ {
+  "n": "F14",
+  "fen": "rnbqkb1r/pp1ppppp/5n2/2p1P3/8/8/PPPP1PPP/RNBQKBNR w KQkq - 0 1",
+  "typ": "frage",
+  "san": [
+   "exf6"
+  ],
+  "antwort": "Guter Tausch: Bauer schlägt Springer",
+  "erlaubt": [
+   "e5f6"
+  ],
+  "sf": {
+   "best": "e5f6",
+   "score": "cp 346"
+  },
+  "quelle": "Lumi Guter oder schlechter Tausch (F6ynhe)"
+ },
+ {
+  "n": "F16",
+  "fen": "rn1qkb1r/ppp1nppp/3p4/4pb2/2B1P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 0 1",
+  "typ": "frage",
+  "san": [
+   "exf5"
+  ],
+  "antwort": "Guter Tausch: Bauer schlägt Läufer",
+  "erlaubt": [
+   "e4f5"
+  ],
+  "sf": {
+   "best": "e4f5",
+   "score": "cp 472"
+  },
+  "quelle": "Lumi Guter oder schlechter Tausch (F6ynhe)"
+ }
+]

@@ -1,0 +1,641 @@
+[
+ {
+  "slide": 2,
+  "img": "../lumi/img/UcS_fF/images_image-OEzIJRL6-WjzYiPsm-bGfpRWbo-32Ir5YHF-txU6v4VG-oy1UxEA4-R9v5dOVN.png",
+  "sol": [
+   "Tf8#"
+  ],
+  "turn": "w",
+  "fen": "1k6/4R3/8/8/8/8/5R2/5K2 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug in der Kurznotation ein. Vergiss dabei die Raute als Mattzeichen nicht! \n\n(Beispiel: Ta1#)",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 3,
+  "img": "../lumi/img/UcS_fF/images_image-QdvyEfgm-BXENZefx-GGiTPMSv-6FxUfvZ8-LTYjLBZE-gE3MBOOJ-BNaekfT0.png",
+  "sol": [
+   "Th7#"
+  ],
+  "turn": "w",
+  "fen": "8/2b3R1/8/8/7k/8/6R1/3K4 w - - 0 1",
+  "conf": 29.202001304433608,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ },
+ {
+  "slide": 4,
+  "img": "../lumi/img/UcS_fF/images_image-LDaa1l32-_K3v5hOm-Fn0mmH_--PWsYr1XP-m3eYkmiU-bKXTss5K-c9x2RhfP.png",
+  "sol": [
+   "Kg2#"
+  ],
+  "turn": "w",
+  "fen": "8/8/8/7k/8/6RK/8/7R w - - 0 1",
+  "conf": 123.65429512325869,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 5,
+  "img": "../lumi/img/UcS_fF/images_image-rKNYGMRb-ZyI91Kf5-Y2nIm1hl-Ej0owBPG-GGwJvCEK-9rZOuwvu-KSpLUIOe.png",
+  "sol": [
+   "Tg6#"
+  ],
+  "turn": "w",
+  "fen": "8/8/R7/8/4K1k1/8/8/7R w - - 0 1",
+  "conf": 123.65429512325869,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 6,
+  "img": "../lumi/img/UcS_fF/images_image-C_mHbBUA-6dnUy4bR-GFghx4FX-5DuDDt0T-naxpAWHs-YRRZMPep-5tdG7sOc.png",
+  "sol": [
+   "Th6#"
+  ],
+  "turn": "w",
+  "fen": "7k/5K2/4R3/8/8/8/8/8 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 7,
+  "img": "../lumi/img/UcS_fF/images_image-a6Qm3H2G-1ObO0x0M-P6dFmuZc-nvEXI06K-FtPYLCIa-XfgI4ukk-veWcEjf4.png",
+  "sol": [
+   "Th7#"
+  ],
+  "turn": "w",
+  "fen": "8/5R2/5K2/7k/6p1/8/8/8 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 8,
+  "img": "../lumi/img/UcS_fF/images_image-NC6BAKha-crtenhWt-o4JG6ZBv-4DiP5A5Z-032OrAPK-Yl1WsxuD-BdWTDm5h.png",
+  "sol": [
+   "Th8#"
+  ],
+  "turn": "w",
+  "fen": "2R5/5K2/7k/8/7P/8/8/8 w - - 0 1",
+  "conf": 0.08276429452898526,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ },
+ {
+  "slide": 9,
+  "img": "../lumi/img/UcS_fF/images_image-3N9UgwMA-KutQYoaf-IC8nH44D-wUfE2cCR-y1YUN6g1-oV2TrBsn-3F4GSm8w.png",
+  "sol": [
+   "Ta4#"
+  ],
+  "turn": "w",
+  "fen": "8/8/2K5/k7/7R/1P6/8/8 w - - 0 1",
+  "conf": 64.72499016135379,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 10,
+  "img": "../lumi/img/UcS_fF/images_image-_GT3usmh-bo-ris-9-wlTjCVN5-gbJVr4X3-ub2Gt4Or-SVmiGLNa-JDAIgdwS.png",
+  "sol": [
+   "Dh3#"
+  ],
+  "turn": "w",
+  "fen": "8/3Q4/5K2/7k/8/8/8/8 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 11,
+  "img": "../lumi/img/UcS_fF/images_image-JyZ13P4l-KZGRJ5N1-Bh3ChBmp-wanmPF9S-M40umLtI-EUWF8ity-N4168fhc.png",
+  "sol": [
+   "Db2#"
+  ],
+  "turn": "w",
+  "fen": "8/8/8/8/8/2K5/6Q1/1k6 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 12,
+  "img": "../lumi/img/UcS_fF/images_image-ho1H_96v-7hcf39kF-k28tmtLZ-rfd12K0X-2u5EKehS-KLhhBuSH.png",
+  "sol": [
+   "Le5#"
+  ],
+  "turn": "w",
+  "fen": "1B5k/5K2/7p/8/8/3B4/8/8 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 13,
+  "img": "../lumi/img/UcS_fF/images_image-zVxvVnNH-EXaQ1-iD-BarRG7s1-rgSxKCOD-NtgUbmn8-olIxGF6J.png",
+  "sol": [
+   "Lf6#"
+  ],
+  "turn": "w",
+  "fen": "6bk/7p/8/8/7B/7K/8/8 w - - 0 1",
+  "conf": 12.973385636889986,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ },
+ {
+  "slide": 14,
+  "img": "../lumi/img/UcS_fF/images_image-LMZb-VNj-8FUldXRL-ZisdFkLl-Noe731xk-S98Eehlj-LIO2fuI6.png",
+  "sol": [
+   "Sf7#"
+  ],
+  "turn": "w",
+  "fen": "6rk/6pp/3N1p2/8/8/6PP/6K1/8 w - - 0 1",
+  "conf": 0.08276429452898526,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ },
+ {
+  "slide": 15,
+  "img": "../lumi/img/UcS_fF/images_image-X4GG6ItK-7begUbFQ-frDGK5kw-aRXBn8ca-hfvVahGZ-3ulVflM9.png",
+  "sol": [
+   "Dg7#"
+  ],
+  "turn": "w",
+  "fen": "7k/1Q6/8/5N2/8/8/6K1/8 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 16,
+  "img": "../lumi/img/UcS_fF/images_image-YDZlFfhA-TptiUeiz-GRKFB4Nr-yobLDO5L-tVStAnnv-FNJxD5x4.png",
+  "sol": [
+   "Da6#"
+  ],
+  "turn": "w",
+  "fen": "k7/8/8/8/5B2/8/6K1/5Q2 w - - 0 1",
+  "conf": 123.65429512325869,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 17,
+  "img": "../lumi/img/UcS_fF/images_image-xZRKTLxy-KrZiGc4x-meE8kmCO-myywvVW2-4bk2Bx9e-W2ZJX92A.png",
+  "sol": [
+   "Lh6#"
+  ],
+  "turn": "w",
+  "fen": "5k2/8/4Q3/8/8/8/6K1/2B5 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 18,
+  "img": "../lumi/img/UcS_fF/images_image-sJcS6CPB-C5OCSUpP-JSwt72tu-YrxyFEC2-rrRyZtNb-djKv7i7p.png",
+  "sol": [
+   "Sf7#"
+  ],
+  "turn": "w",
+  "fen": "7k/8/3N2Q1/8/8/8/6K1/8 w - - 0 1",
+  "conf": 80.5818543159213,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 19,
+  "img": "../lumi/img/UcS_fF/images_image-wmYMF02r-ilSnbvac-7hoEyuy3-arKG2bEN-lHCShIuw-o5Wn2lF6.png",
+  "sol": [
+   "Le4#"
+  ],
+  "turn": "w",
+  "fen": "8/7B/8/8/8/6Q1/3K4/7k w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 20,
+  "img": "../lumi/img/UcS_fF/images_image-cAR-gtCw-RDHSM8iU-DBlCLMnB-DjbyZWHO-eYZO6MZS-OPeDywo0.png",
+  "sol": [
+   "Tb8#"
+  ],
+  "turn": "w",
+  "fen": "6k1/5p1p/6pB/8/8/8/6K1/1R6 w - - 0 1",
+  "conf": 123.65429512325869,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 21,
+  "img": "../lumi/img/UcS_fF/images_image-zMSB3l4j-aivNsA1i-vmovK5Wf-rNcRWdHt-GvdOkeEA-uJNtrIB6.png",
+  "sol": [
+   "Te8#"
+  ],
+  "turn": "w",
+  "fen": "5k2/6p1/6Bp/8/6P1/7P/6K1/4R3 w - - 0 1",
+  "conf": 64.72499016135379,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 22,
+  "img": "../lumi/img/UcS_fF/images_image-82nG_RFh-gH7JSKsy-hu42viTd-iPN2hSUu-hroOyCCp-suCAE5Zi.png",
+  "sol": [
+   "Tb8#"
+  ],
+  "turn": "w",
+  "fen": "6k1/1R4p1/6P1/8/8/8/6K1/8 w - - 0 1",
+  "conf": 64.72499016135379,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 23,
+  "img": "../lumi/img/UcS_fF/images_image-TgZzu2ht-_SGqmD0N-OrfvaOku-rEbWbYUK-h2OrinhG-r3nfRtc2.png",
+  "sol": [
+   "Tg8#"
+  ],
+  "turn": "w",
+  "fen": "7k/5K1p/8/8/8/8/6R1/8 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 24,
+  "img": "../lumi/img/UcS_fF/images_image-0lbnFcnM-3mV3S-BB-sdjyeprc-Nueljtd0-CeFSx9rA-YJ4gACJk.png",
+  "sol": [
+   "Th8#"
+  ],
+  "turn": "w",
+  "fen": "R7/5p1k/5Bp1/7p/8/7K/8/8 w - - 0 1",
+  "conf": 123.65429512325869,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 25,
+  "img": "../lumi/img/UcS_fF/images_image-bjIPqkvF-vAGwGmFn-t1STJert-OeJt4iRf-cM8P3vKe-ubm01rho.png",
+  "sol": [
+   "Lh6#"
+  ],
+  "turn": "w",
+  "fen": "5k2/3K1p2/3P4/8/8/6R1/3B4/8 w - - 0 1",
+  "conf": 0.08276429452898526,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ },
+ {
+  "slide": 26,
+  "img": "../lumi/img/UcS_fF/images_image-_2I2ajRc-XmTZOMfb-DW23Vxph-RSADkejg-Nj485v98-vkUNxNLp.png",
+  "sol": [
+   "Tc8#"
+  ],
+  "turn": "w",
+  "fen": "3k4/8/5K2/8/8/7B/8/2R5 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 27,
+  "img": "../lumi/img/UcS_fF/images_image-w2aH3n3l--3qc2oXu-BmvPjUjd-nxpOcxEu-AsAf2yZf-rEYdXK2g.png",
+  "sol": [
+   "Tc8#"
+  ],
+  "turn": "w",
+  "fen": "3k4/N7/4K3/8/8/8/8/2R5 w - - 0 1",
+  "conf": 80.5818543159213,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 28,
+  "img": "../lumi/img/UcS_fF/images_image-IfEguYKd-MMRzolFY-Ih5nYyci-CvLnhuoW-oyZZ78TE-GefcRcWu.png",
+  "sol": [
+   "Tg8#"
+  ],
+  "turn": "w",
+  "fen": "4k3/8/3K4/8/6R1/1B6/8/8 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 29,
+  "img": "../lumi/img/UcS_fF/images_image-0uOp3NYH-kA8dum__-SmEhc5Zi-Lb0dYZRb-JToyJXOx-cGE6OsmK.png",
+  "sol": [
+   "Tg8#"
+  ],
+  "turn": "w",
+  "fen": "7k/4K3/5N2/8/6R1/8/8/8 w - - 0 1",
+  "conf": 80.5818543159213,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 30,
+  "img": "../lumi/img/UcS_fF/images_image-lhfiIb2z-xYiiqBh_-tHlHsWVp-nE5iL6N1-sgxmJtyF-aWOeTHEa.png",
+  "sol": [
+   "Tb8#"
+  ],
+  "turn": "w",
+  "fen": "k7/P7/8/8/6K1/8/5B2/1R6 w - - 0 1",
+  "conf": 0.08276429452898526,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ },
+ {
+  "slide": 31,
+  "img": "../lumi/img/UcS_fF/images_image-xBn3K9TF-fHLVW9yh-0vIXOTuE-BdtUtOiu-Gx4TeIKy-1GAgyP9H.png",
+  "sol": [
+   "Lf6#"
+  ],
+  "turn": "w",
+  "fen": "7k/7p/8/6B1/6R1/8/6K1/8 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 32,
+  "img": "../lumi/img/UcS_fF/images_image-K8EumOMN-lHkYFzXC-XyjU4PuO-ATRFxTu9-y3t1n4l0-KyEGlyNx.png",
+  "sol": [
+   "Lg6#"
+  ],
+  "turn": "w",
+  "fen": "2R5/5Bpk/7p/7P/8/7P/6K1/8 w - - 0 1",
+  "conf": 64.72499016135379,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 33,
+  "img": "../lumi/img/UcS_fF/images_image-qr8p5sJI-qnaUNWm9-cZpSX4Fk-b4LsAWi0-PBngOWsv-ikLgTbe7.png",
+  "sol": [
+   "Dg8#"
+  ],
+  "turn": "w",
+  "fen": "7k/6p1/7p/3Q4/8/1B6/6K1/8 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 34,
+  "img": "../lumi/img/UcS_fF/images_image-yZDLrmBu-jeqd2NXh-kXVw6d2a-fKLxX38x-IWj0AlMT-NOBudU5B.png",
+  "sol": [
+   "Th8#"
+  ],
+  "turn": "w",
+  "fen": "1R6/7k/6pp/8/8/2B5/6K1/8 w - - 0 1",
+  "conf": 123.65429512325869,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 35,
+  "img": "../lumi/img/UcS_fF/images_image-np7as_KB-d6fUxa6w-8kjhvtm7-IjFapp9R-8iwTh2Kw-CCs1Y3Ct.png",
+  "sol": [
+   "b5#"
+  ],
+  "turn": "w",
+  "fen": "8/p7/k1K5/p6p/1P6/P7/8/8 w - - 0 1",
+  "conf": 0.08276429452898526,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ },
+ {
+  "slide": 36,
+  "img": "../lumi/img/UcS_fF/images_image-EAIjJU4k-o-yPaEgJ-YrB6Ow4F-n3F2kgB6-6Cin8gps-6v6vFJkw.png",
+  "sol": [
+   "Txf8#/Tf8#"
+  ],
+  "turn": "w",
+  "fen": "1R3bk1/5p1p/6pB/8/8/8/6K1/8 w - - 0 1",
+  "conf": 29.202001304433608,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ },
+ {
+  "slide": 37,
+  "img": "../lumi/img/UcS_fF/images_image-k1G18aWy-3gbMERwK-PXomVkVJ-sFoXwxLN-oV743lvZ-ZMkZyWLV.png",
+  "sol": [
+   "Dd6#"
+  ],
+  "turn": "w",
+  "fen": "7R/3k4/8/2Q1P3/8/1K6/8/8 w - - 0 1",
+  "conf": 0.08276429452898526,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ },
+ {
+  "slide": 38,
+  "img": "../lumi/img/UcS_fF/images_image-96QE7uBK-HPV5dpyh-8UNOB8wc-s7kgxRuY-e50ZaLLk-0VAmDTEF.png",
+  "sol": [
+   "Dg7#"
+  ],
+  "turn": "w",
+  "fen": "4r1k1/5p1p/6pB/8/8/2Q3PP/5PK1/8 w - - 0 1",
+  "conf": 0.08276429452898526,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ },
+ {
+  "slide": 39,
+  "img": "../lumi/img/UcS_fF/images_image-TchJhmg_-ihwcs2Uk-fm2ycTTc-wCdLeEZ7-HkyTO3SO-4CFYJwEb.png",
+  "sol": [
+   "Ld6#"
+  ],
+  "turn": "w",
+  "fen": "1B6/8/8/8/8/k7/2Q3K1/8 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 40,
+  "img": "../lumi/img/UcS_fF/images_image-URIEI_Fi-bttcuxzb-0vm8J6aS-EorZ69WF-X9KTH8uJ-P3Njye64.png",
+  "sol": [
+   "Df5#"
+  ],
+  "turn": "w",
+  "fen": "5B2/8/8/7k/8/7K/8/5Q2 w - - 0 1",
+  "conf": 123.65429512325869,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 41,
+  "img": "../lumi/img/UcS_fF/images_image-Q09RHZUJ-mH_2WEre-7LK1n33O-YTcea3In-GuTjE7BI-EHxs8Ln1.png",
+  "sol": [
+   "Dg7#"
+  ],
+  "turn": "w",
+  "fen": "8/7k/8/5N2/8/8/1Q4K1/8 w - - 0 1",
+  "conf": 123.65429512325869,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 42,
+  "img": "../lumi/img/UcS_fF/images_image-4zSXcqYN-nokJICPw-ePtrBjHm-IpsUpw7f-9NMRZoAk-DnpJMTyU.png",
+  "sol": [
+   "Sc6#"
+  ],
+  "turn": "w",
+  "fen": "kNQ5/8/8/8/8/8/6K1/8 w - - 0 1",
+  "conf": 80.5818543159213,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 43,
+  "img": "../lumi/img/UcS_fF/images_image-KpwhpN1l-UOSQNTsH-TjuonO8D-c43pMR7H-VKE7CjR6-jdwisCKs.png",
+  "sol": [
+   "Dc7#"
+  ],
+  "turn": "w",
+  "fen": "1k6/7Q/4N3/8/8/5B2/6K1/8 w - - 0 1",
+  "conf": 101.91573623528645,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 44,
+  "img": "../lumi/img/UcS_fF/images_image-qerZ8yUn-IqP84MEK-peHIEGmJ-lk4r6npb-j6s44mYB-SldfCvNT.png",
+  "sol": [
+   "Dg6#"
+  ],
+  "turn": "w",
+  "fen": "8/8/7k/7P/8/6Q1/6K1/8 w - - 0 1",
+  "conf": 64.72499016135379,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "visuell": true
+ },
+ {
+  "slide": 45,
+  "img": "../lumi/img/UcS_fF/images_image-GZeSj9nP-RJgzNfsS-Ea4hF5gb-xHlTrm7d-HrhAC4CU-jboAO73S.png",
+  "sol": [
+   "Txh7#/Th7#"
+  ],
+  "turn": "w",
+  "fen": "6rk/QR5p/6p1/8/8/8/6K1/8 w - - 0 1",
+  "conf": 33.26403898689732,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ },
+ {
+  "slide": 46,
+  "img": "../lumi/img/UcS_fF/images_image-OEK9uQo_-D7twgNYO-RkNCPA4A-onJGhA6c-RDSFDpT4-HS8OR5XX.png",
+  "sol": [
+   "Lf6#"
+  ],
+  "turn": "w",
+  "fen": "5rk1/5pBp/8/4P3/8/6R1/6K1/8 w - - 0 1",
+  "conf": 0.08276429452898526,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein.",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ },
+ {
+  "slide": 47,
+  "img": "../lumi/img/UcS_fF/images_image-wk0x38QA-YMi5MCls-VgcYF0kv-JnF66NkF-FwJPwNat-4Z0yNMFF.png",
+  "sol": [
+   "Tg5#"
+  ],
+  "turn": "w",
+  "fen": "6R1/8/7n/7k/7P/6P1/6K1/8 w - - 0 1",
+  "conf": 0.08276429452898526,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ },
+ {
+  "slide": 48,
+  "img": "../lumi/img/UcS_fF/images_image-hFCSFX7T-l-CjtUWl-cBFShc8M-6FsuTBO5-BANjfYi4-EVNl88Ls.png",
+  "sol": [
+   "Dh7#"
+  ],
+  "turn": "w",
+  "fen": "8/8/8/6Nk/7P/6K1/2Q5/8 w - - 0 1",
+  "conf": 0.08276429452898526,
+  "text": "Weiß ist am Zug, finde bitte das einzügige Matt und trage den Zug ein",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ },
+ {
+  "slide": 49,
+  "img": "../lumi/img/UcS_fF/images_image-KiNTmWEN-QPCnB8Qs-4uJNDebM-RaZcWRjj-i39p1ak6-0Hy97vg2.png",
+  "sol": [
+   "Dg8#"
+  ],
+  "turn": "w",
+  "fen": "5k2/4b2B/8/8/8/1Q6/6K1/8 w - - 0 1",
+  "conf": 29.202001304433608,
+  "text": "Weiß ist am Zug, fidne bitte das einzügige Matt und trage den Zug ein",
+  "check": "MATT",
+  "manual": true,
+  "visuell": true
+ }
+]

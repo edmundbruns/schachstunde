@@ -1,0 +1,175 @@
+[
+ {
+  "n": "Kh18PK-3",
+  "fen": "8/3p4/8/8/1P1R4/8/8/K6k w - - 0 1",
+  "thema": "Turm Zugweite",
+  "auftrag": "Auf wie viele Felder kann der weiße Turm (inklusive Schlagzüge) ziehen?",
+  "loesung": "11 Felder",
+  "note": "Könige ergänzt (a1, h1)",
+  "legal": true,
+  "status": "",
+  "mates": [],
+  "quelle": "Lumi Test Kurs I (Kh18PK)"
+ },
+ {
+  "n": "Kh18PK-4",
+  "fen": "8/1k1q4/1p6/8/8/3N4/5K2/8 w - - 0 1",
+  "thema": "Springer Angriff sicheres Feld",
+  "auftrag": "Von welchem sicheren Feld aus kann der weiße Springer die schwarze Dame angreifen?",
+  "loesung": "Sd3-e5",
+  "erlaubt": [
+   "d3e5"
+  ],
+  "verboten": [
+   "d3c5"
+  ],
+  "legal": true,
+  "status": "",
+  "mates": [],
+  "quelle": "Lumi Test Kurs I (Kh18PK)"
+ },
+ {
+  "n": "Kh18PK-5",
+  "fen": "8/4K3/1R6/8/8/2Q5/8/7k b - - 0 1",
+  "thema": "Springer Gabel Feld finden",
+  "auftrag": "Auf welches Feld musst du einen schwarzen Springer setzen, damit er alle weißen Figuren angreift?",
+  "loesung": "d5",
+  "note": "Schwarzer König ergänzt (h1); Feldaufgabe",
+  "legal": true,
+  "status": "",
+  "mates": [],
+  "quelle": "Lumi Test Kurs I (Kh18PK)"
+ },
+ {
+  "n": "Kh18PK-7",
+  "fen": "8/2k2p2/8/1P6/2N5/2P5/1K6/1Q6 w - - 0 1",
+  "thema": "Schach geben",
+  "auftrag": "Welche weiße Figur kann den schwarzen König angreifen?",
+  "loesung": "b5-b6+",
+  "erlaubt": [
+   "b5b6"
+  ],
+  "legal": true,
+  "status": "",
+  "mates": [],
+  "quelle": "Lumi Test Kurs I (Kh18PK)"
+ },
+ {
+  "n": "Kh18PK-8",
+  "fen": "3k4/8/2K5/8/8/7Q/1b6/8 w - - 0 1",
+  "thema": "Matt in 1",
+  "auftrag": "Setze mit einem Zug matt.",
+  "loesung": "Dh3-d7#",
+  "erlaubt": [
+   "h3d7"
+  ],
+  "legal": true,
+  "status": "",
+  "mates": [
+   "Qd7#"
+  ],
+  "quelle": "Lumi Test Kurs I (Kh18PK)"
+ },
+ {
+  "n": "Kh18PK-9",
+  "fen": "8/8/2n2k2/8/1b6/2K5/8/8 w - - 0 1",
+  "thema": "Schach abwehren gedeckte Figur",
+  "auftrag": "Darf der weiße König den Läufer b4 schlagen?",
+  "loesung": "Nein, der Springer c6 deckt b4.",
+  "verboten": [
+   "c3b4"
+  ],
+  "legal": true,
+  "status": "schach",
+  "mates": [],
+  "quelle": "Lumi Test Kurs I (Kh18PK)"
+ },
+ {
+  "n": "Kh18PK-10",
+  "fen": "6k1/r2p2pp/4b3/N7/8/8/1P1R1P2/5K2 w - - 0 1",
+  "thema": "Figur decken",
+  "auftrag": "Der Springer a5 wird vom Turm angegriffen. Wie rettest du ihn?",
+  "loesung": "b2-b4",
+  "erlaubt": [
+   "b2b4"
+  ],
+  "legal": true,
+  "status": "",
+  "mates": [],
+  "quelle": "Lumi Test Kurs I (Kh18PK)"
+ },
+ {
+  "n": "Kh18PK-11",
+  "fen": "5bk1/5ppp/8/N1r3Q1/8/8/5PPP/2B2K2 b - - 0 1",
+  "thema": "Wertvollste Figur schlagen",
+  "auftrag": "Schwarz kann drei Figuren schlagen. Welche ist die beste?",
+  "loesung": "Tc5xg5 (Dame)",
+  "erlaubt": [
+   "c5g5"
+  ],
+  "legal": true,
+  "status": "",
+  "mates": [],
+  "quelle": "Lumi Test Kurs I (Kh18PK)"
+ },
+ {
+  "n": "Kh18PK-12",
+  "fen": "rb6/kpP5/p7/B7/8/8/5PPP/6K1 w - - 0 1",
+  "thema": "Unterverwandlung Matt",
+  "auftrag": "Weiß ist am Zug. Finde den besten Zug.",
+  "loesung": "c7-c8=S#",
+  "erlaubt": [
+   "c7c8n"
+  ],
+  "legal": true,
+  "status": "",
+  "mates": [
+   "c8=N#"
+  ],
+  "quelle": "Lumi Test Kurs I (Kh18PK)"
+ },
+ {
+  "n": "Kh18PK-13",
+  "fen": "2k5/1R4R1/8/8/8/8/8/6K1 w - - 0 1",
+  "thema": "Matt in 2 Turmwalze",
+  "auftrag": "Matt in zwei Zügen. Wie lautet der erste Zug?",
+  "loesung": "Tb7-f7 oder Turm b7 entlang der b-Linie",
+  "erlaubt": [
+   "b7b1",
+   "b7b2",
+   "b7b3",
+   "b7b4",
+   "b7b5",
+   "b7b6",
+   "b7d7",
+   "b7f7",
+   "g1f1",
+   "g1f2",
+   "g1g2",
+   "g1h1",
+   "g1h2",
+   "g7f7",
+   "g7h7"
+  ],
+  "legal": true,
+  "status": "",
+  "mates": [],
+  "quelle": "Lumi Test Kurs I (Kh18PK)",
+  "note": "Stockfish: 15 erste Züge führen zum Matt in 2"
+ },
+ {
+  "n": "Kh18PK-14",
+  "fen": "1n6/k6p/8/PP2q3/8/5B2/2pp1P2/5Q1K b - - 0 1",
+  "thema": "Matt in 1 nach Fehler",
+  "auftrag": "Schwarz zieht d2-d1=D. Wie bestrafst du das?",
+  "loesung": "nach d1=D: b5-b6#",
+  "legal": true,
+  "status": "",
+  "mates": [],
+  "quelle": "Lumi Test Kurs I (Kh18PK)",
+  "fen_nach": "1n6/k6p/8/PP2q3/8/5B2/2p2P2/3q1Q1K w - - 0 1",
+  "erlaubt": [
+   "b5b6"
+  ]
+ }
+]
