@@ -30,55 +30,64 @@ function weekHTML(w){const F=D.fixed[w];
  <table class="jp-flow"><thead><tr><th>Phase</th><th>So läuft die Stunde</th><th>Material</th></tr></thead><tbody>${rows}</tbody></table>
  ${F.geschichte?`<details class="jp-story"><summary>Geschichte „${esc(F.geschichte.titel)}“ zum Vorlesen</summary>${F.geschichte.text.map(t=>`<p>${esc(t)}</p>`).join('')}</details>`:''}
  <p class="muted">Quellen: ${esc(F.quelle)}.</p><div class="row"><button type="button" class="primary" id="jpprint">Stunde drucken / PDF</button></div></div>`}
-// ---------- Vorlesen ----------
-let speaking=false;
-function speak(F,btn){const S=window.speechSynthesis;if(!S||typeof SpeechSynthesisUtterance==='undefined'){alertBox('Dein Browser kann nicht vorlesen. Den Text findest du unter „Geschichte zum Vorlesen“.');return}
- if(speaking){S.cancel();speaking=false;btn.innerHTML='<span aria-hidden="true">🔊</span> Geschichte anhören';return}
- const u=new SpeechSynthesisUtterance(F.geschichte.titel+'. '+F.geschichte.text.join(' '));u.lang='de-DE';u.rate=0.92;const v=S.getVoices().find(x=>/^de/i.test(x.lang));if(v)u.voice=v;
- u.onend=()=>{speaking=false;btn.innerHTML='<span aria-hidden="true">🔊</span> Geschichte anhören'};speaking=true;btn.innerHTML='<span aria-hidden="true">⏹</span> Vorlesen stoppen';S.cancel();S.speak(u)}
+// ---------- Geschichte anhören ----------
+let player=null;
+function speak(F,btn){const label=on=>btn.innerHTML=`<span aria-hidden="true">${on?'⏹':'🔊'}</span> ${on?'Anhören stoppen':'Geschichte anhören'}`;
+ if(player&&!player.paused){player.pause();player.currentTime=0;label(false);return}
+ if(F.audio){player=player||new Audio(F.audio);player.onended=()=>label(false);player.play().then(()=>label(true)).catch(()=>alertBox('Die Audiodatei konnte nicht abgespielt werden.'));return}
+ alertBox('Für diese Stunde gibt es keine Audiodatei.')}
 function alertBox(t){const s=document.getElementById('jpnote');if(s)s.textContent=t}
-// ---------- Lehrbrett für Feldaufgaben ----------
+// ---------- Lehrbrett für Feldaufgaben (Aussehen wie das Lehrbrett) ----------
 let FB=null;
-function fbOpen(w,set,start,bis){const F=D.fixed[w];let list=F.feld[set].map((t,i)=>({...t,label:set+(i+1)}));if(bis)list=list.slice(0,bis);FB={w,list,i:start||0,marks:new Set(),shown:false,msg:'',kind:'info',hints:0};fbRender()}
-function fbBoard(t,interactive){const pos=placement(t.fen);const m=interactive?FB.marks:new Set();const sol=interactive&&FB.shown&&t.targets?new Set(t.targets):new Set();
- let h='<div class="jp-board'+''+'" role="grid" aria-label="Schachbrett">';
- for(let r=8;r>=1;r--){h+=interactive?`<button type="button" class="jp-lab jp-rank" data-jprank="${r}" aria-label="Reihe ${r} markieren">${r}</button>`:`<span class="jp-lab">${r}</span>`;
-  for(const f of FILES){const sq=f+r,dark=(FILES.indexOf(f)+r)%2===1;const isDark=t.flip?!dark:dark;const p=pos[sq];
-   const cls='jp-sq'+(isDark?' dark':'')+(m.has(sq)?' marked':'')+(sol.has(sq)?' sol':'');
-   h+=interactive?`<button type="button" class="${cls}" data-labsq="${sq}" aria-pressed="${m.has(sq)}" aria-label="${sq}${p?', '+pieceName(p):''}">${p?img(p):''}</button>`:`<span class="${cls}">${p?img(p):''}</span>`}}
- h+='<span></span>'+[...FILES].map(f=>interactive?`<button type="button" class="jp-lab jp-file" data-jpfile="${f}" aria-label="${f}-Linie markieren">${f}</button>`:`<span class="jp-lab">${f}</span>`).join('')+'</div>';return h}
+function fbOpen(w,set,start,bis){const F=D.fixed[w];let list=F.feld[set].map((t,i)=>({...t,label:set+(i+1)}));if(bis)list=list.slice(0,bis);FB={w,list,i:start||0,marks:new Set(),undo:[],shown:false,msg:'',kind:'info',hints:0};fbRender()}
+function boardMarkup(t,o){const pos=placement(t.fen),m=o.marks||new Set(),sol=o.sol||new Set(),fill=o.fill||{},lab=o.label||{};const btn=!!o.interactive;
+ const letters='<div class="file-labels">'+[...FILES].map(f=>btn?`<button type="button" class="jp-lab" data-jpfile="${f}" aria-label="${f}-Linie markieren">${f}</button>`:`<span>${f}</span>`).join('')+'</div>';
+ const nums='<div class="rank-labels">'+[8,7,6,5,4,3,2,1].map(r=>btn?`<button type="button" class="jp-lab" data-jprank="${r}" aria-label="Reihe ${r} markieren">${r}</button>`:`<span>${r}</span>`).join('')+'</div>';
+ let h=`<div class="boardframe"><div></div>${letters}<div></div>${nums}<div class="arrowboard"><div class="board">`;
+ for(let r=8;r>=1;r--)for(const f of FILES){const sq=f+r;let dark=(FILES.indexOf(f)+r)%2===1;if(t.flip)dark=!dark;const p=pos[sq];
+  const cls=`sq ${dark?'dark':''} ${m.has(sq)?'marked':''} ${sol.has(sq)?'solution':''}`;const st=fill[sq]?` style="box-shadow:inset 0 0 0 100px ${fill[sq]}"`:'';const tx=lab[sq]?`<em class="jp-sqlabel">${esc(lab[sq])}</em>`:'';
+  h+=btn?`<button type="button" class="${cls}" data-bsq="${sq}" aria-pressed="${m.has(sq)}" aria-label="${sq}, ${p?pieceName(p):'leer'}">${p?img(p):''}</button>`:`<span class="${cls}"${st}>${p?img(p):''}${tx}</span>`}
+ return h+`</div></div>${nums}<div></div>${letters}<div></div></div>`}
 function fbRender(){const t=FB.list[FB.i];const host=document.getElementById('plannerbody');
- host.innerHTML=`<div class="jp-fb"><div class="row"><button type="button" id="fbback">← Zurück zu Woche ${FB.w}</button></div><h3>Lehrbrett</h3><div class="jp-fbgrid"><div>${fbBoard(t,true)}</div><div class="jp-fbside">
- ${FB.list.length>1?`<div class="row taskchoices">${FB.list.map((x,i)=>`<button type="button" data-fbtask="${i}" aria-pressed="${i===FB.i}">${esc(x.label)}</button>`).join('')}</div>`:''}
- <p class="jp-fbq"><b>${esc(t.label)}:</b> ${esc(t.frage)}</p><p class="muted">Felder anklicken zum Markieren. Ein Klick auf eine Zahl oder einen Buchstaben am Rand markiert die ganze Reihe oder Linie.</p>
- <div class="row"><button type="button" class="primary" id="fbcheck">Prüfen</button><button type="button" id="fbclear">Markierungen löschen</button></div>
- <div class="row"><button type="button" id="fbhint">${FB.hints<2?'Hilfe '+(FB.hints+1):'Keine weitere Hilfe'}</button><button type="button" id="fbsol">Lösung zeigen</button>${FB.i<FB.list.length-1?'<button type="button" id="fbnext">Nächste Aufgabe →</button>':''}</div>
- ${t.hilfe.slice(0,FB.hints).map((h,i)=>`<p class="jp-hint">Hilfe ${i+1}: ${esc(h)}</p>`).join('')}
- <p id="fbmsg" class="movefeedback ${FB.kind}" role="status">${esc(FB.msg||'Markiere die gesuchten Felder.')}</p></div></div></div>`;
- const toggle=sqs=>{const all=sqs.every(q=>FB.marks.has(q));for(const q of sqs)all?FB.marks.delete(q):FB.marks.add(q);FB.shown=false;FB.msg='';FB.kind='info';fbRender()};
- host.querySelectorAll('[data-labsq]').forEach(b=>b.onclick=()=>toggle([b.dataset.labsq]));
+ host.innerHTML=`<div class="jp-fb"><h2>Lehrbrett</h2><div class="training"><div><div id="movefeedback" class="movefeedback ${FB.kind}" role="status" aria-live="polite">${esc(FB.msg||'Felder anklicken zum Markieren.')}</div><div id="teacherboard">${boardMarkup(t,{interactive:true,marks:FB.marks,sol:FB.shown&&t.targets?new Set(t.targets):null})}</div>
+ <div class="row"><button type="button" id="fbundo" ${FB.undo.length?'':'disabled'}>← Zurück</button><button type="button" id="fbclear">Markierungen löschen</button></div><p class="muted">Ein Klick auf eine Zahl oder einen Buchstaben am Rand markiert die ganze Reihe oder Linie.</p></div>
+ <aside class="side"><section class="boardcontext"><button type="button" id="fbback">← Zurück zu Woche ${FB.w}</button>${FB.list.length>1?`<div class="row taskchoices">${FB.list.map((x,i)=>`<button type="button" data-fbtask="${i}" aria-pressed="${i===FB.i}">${esc(x.label)}</button>`).join('')}</div>`:''}</section>
+ <h3>${esc(t.label)}</h3><p class="jp-fbq">${esc(t.frage)}</p>
+ <div class="row"><button type="button" class="primary" id="fbcheck">Prüfen</button><button type="button" id="fbhint" ${FB.hints>=2?'disabled':''}>Hilfe ${Math.min(FB.hints+1,2)}</button><button type="button" id="fbsol">Lösung zeigen</button>${FB.i<FB.list.length-1?'<button type="button" id="fbnext">Nächste Aufgabe →</button>':''}</div>
+ ${t.hilfe.slice(0,FB.hints).map((h,i)=>`<p class="jp-hint">Hilfe ${i+1}: ${esc(h)}</p>`).join('')}</aside></div></div>`;
+ const set=(msg,kind)=>{FB.msg=msg;FB.kind=kind||'info'};
+ const toggle=sqs=>{FB.undo.push(new Set(FB.marks));const all=sqs.every(q=>FB.marks.has(q));for(const q of sqs)all?FB.marks.delete(q):FB.marks.add(q);FB.shown=false;set('');fbRender()};
+ const fresh=i=>{FB.i=i;FB.marks=new Set();FB.undo=[];FB.shown=false;FB.hints=0;set('');fbRender()};
+ host.querySelectorAll('[data-bsq]').forEach(b=>b.onclick=()=>toggle([b.dataset.bsq]));
  host.querySelectorAll('[data-jprank]').forEach(b=>b.onclick=()=>toggle([...FILES].map(f=>f+b.dataset.jprank)));
  host.querySelectorAll('[data-jpfile]').forEach(b=>b.onclick=()=>toggle([1,2,3,4,5,6,7,8].map(r=>b.dataset.jpfile+r)));
- host.querySelectorAll('[data-fbtask]').forEach(b=>b.onclick=()=>{FB.i=+b.dataset.fbtask;FB.marks=new Set();FB.shown=false;FB.msg='';FB.kind='info';FB.hints=0;fbRender()});
- document.getElementById('fbclear').onclick=()=>{FB.marks=new Set();FB.shown=false;FB.msg='Alle Markierungen gelöscht.';FB.kind='info';fbRender()};
+ host.querySelectorAll('[data-fbtask]').forEach(b=>b.onclick=()=>fresh(+b.dataset.fbtask));
+ document.getElementById('fbundo').onclick=()=>{if(FB.undo.length){FB.marks=FB.undo.pop();FB.shown=false;set('Letzte Markierung zurückgenommen.');fbRender()}};
+ document.getElementById('fbclear').onclick=()=>{FB.undo.push(new Set(FB.marks));FB.marks=new Set();FB.shown=false;set('Alle Markierungen gelöscht.');fbRender()};
  document.getElementById('fbhint').onclick=()=>{if(FB.hints<2)FB.hints++;fbRender()};
- document.getElementById('fbsol').onclick=()=>{FB.shown=true;FB.msg='Lösung: '+t.antwort;FB.kind='info';fbRender()};
- const nx=document.getElementById('fbnext');if(nx)nx.onclick=()=>{FB.i++;FB.marks=new Set();FB.shown=false;FB.msg='';FB.kind='info';FB.hints=0;fbRender()};
- document.getElementById('fbcheck').onclick=()=>{if(!t.targets){FB.msg='Offene Aufgabe: Besprecht eure Markierungen. Beispiel: '+t.antwort;FB.kind='info';fbRender();return}
+ document.getElementById('fbsol').onclick=()=>{FB.shown=true;set('Lösung: '+t.antwort);fbRender()};
+ const nx=document.getElementById('fbnext');if(nx)nx.onclick=()=>fresh(FB.i+1);
+ document.getElementById('fbcheck').onclick=()=>{if(!t.targets){set('Offene Aufgabe: Besprecht eure Markierungen. Beispiel: '+t.antwort);fbRender();return}
   const want=new Set(t.targets),got=FB.marks;const hit=[...got].filter(q=>want.has(q)).length,extra=[...got].filter(q=>!want.has(q)).length,miss=want.size-hit;
-  if(!miss&&!extra){FB.msg='✓ Richtig! '+t.antwort;FB.kind='good'}else if(!want.size){FB.msg='✗ Hier ist alles richtig aufgebaut. Lösche die Markierungen.';FB.kind='bad'}
-  else{FB.msg=`✗ Noch nicht ganz: ${hit} von ${want.size} richtig`+(extra?`, ${extra} Feld${extra>1?'er':''} zu viel`:'')+'. Versuche es noch einmal oder nimm eine Hilfe.';FB.kind='bad'}fbRender()};
+  if(!miss&&!extra)set('✓ Richtig! '+t.antwort,'good');else if(!want.size)set('✗ Hier ist alles richtig aufgebaut. Lösche die Markierungen.','bad');
+  else set(`✗ Noch nicht ganz: ${hit} von ${want.size} richtig`+(extra?`, ${extra} Feld${extra>1?'er':''} zu viel`:'')+'. Versuche es noch einmal oder nimm eine Hilfe.','bad');fbRender()};
  document.getElementById('fbback').onclick=()=>{const w=FB.w;FB=null;show(w)}}
-// ---------- Drucken ----------
+// ---------- Drucken (im Stil der SchachStunde-Arbeitsblätter) ----------
 const head=(t,sub,fields)=>`<div class="ws-head"><div><h1>${esc(t)}</h1><p>${esc(sub)}</p></div>${fields?'<div class="ws-fields"><span>Name<i></i></span><span>Datum<i class="s"></i></span></div>':''}</div>`;
-const PCSS='<style>.jp-board{display:grid;grid-template-columns:14px repeat(8,1fr);width:62mm;font:8pt system-ui;gap:0}.jp-board .jp-lab{display:flex;align-items:center;justify-content:center;color:#556}.jp-sq{aspect-ratio:1;background:#eef1f6;display:flex;align-items:center;justify-content:center;border:0}.jp-sq.dark{background:#8d9fc7}.jp-sq img{width:88%;height:88%}.jp-print-img{display:block;max-width:100%;max-height:118mm;margin:4mm auto;border:1px solid #d5dbe6}.jp-poster li{font-size:15pt;margin:4mm 0}.jp-poster h2{font-size:18pt}.jp-qcard{border:1px solid #d5dbe6;border-radius:6px;padding:3mm;margin:0 0 4mm;display:grid;grid-template-columns:64mm 1fr;gap:4mm;break-inside:avoid}</style>';
+const PCSS='<style>.jp-sqlabel{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:700 7.5pt system-ui;color:#8a1f4f;white-space:nowrap;z-index:2;text-shadow:0 0 2px #fff,0 0 2px #fff}.jp-heft .ws-grid{grid-template-columns:1fr 1fr;gap:3mm}.jp-heft .ws-card-body{display:block}.jp-heft .ws-diag{display:flex;justify-content:center;padding-top:2.5mm}.jp-heft .boardframe{width:50mm!important}.jp-heft .ws-card p{margin:1.5mm 0 0;font-size:8.3pt;line-height:1.3}.jp-heft .ws-card{break-inside:avoid}.jp-poster li{font-size:15pt;margin:4mm 0}.jp-poster h2{font-size:18pt}.jp-story p{font-size:12pt;line-height:1.6}.sq{position:relative;overflow:visible}.jp-heft .board{overflow:visible}</style>';
 const paper=q=>q.replace(/Klicke (.*?) an\b/g,'Kreise $1 ein').replace(/drücke „Prüfen“ ohne Markierung/,'schreibe „alles richtig“').replace(/^Markiere /,'Male aus: ').replace(/^Zeige /,'Kreise ein: ');
+const diag=(t,o)=>`<div class="ws-diag">${boardMarkup(t,o||{})}</div>`;
+const card=(label,t,prompt)=>`<div class="ws-card"><div class="ws-card-head"><b>${esc(label)}</b></div><div class="ws-card-body">${diag(t)}<div class="ws-answer"><p class="ws-prompt">${esc(prompt)}</p><p class="ws-label">Meine Antwort:</p><div class="ws-line"></div><div class="ws-line"></div></div></div></div>`;
 function printFeld(B,w,set,titleText,sub){const F=D.fixed[w],list=F.feld[set];
- const cards=list.map((t,i)=>`<div class="jp-qcard">${fbBoard(t,false)}<div><p><b>${esc(set+(i+1))}:</b> ${esc(paper(t.frage))}</p><p class="ws-label">Meine Antwort:</p><div class="ws-line"></div><div class="ws-line"></div></div></div>`).join('');
- return B.sheetCSS(titleText)+PCSS+`<section class="ws-page">${head(titleText,sub,true)}${cards}</section><section class="ws-page">${head('Lösungen',titleText+' · für die Lehrkraft')}<ol>${list.map(t=>`<li>${esc(t.antwort)}</li>`).join('')}</ol><p class="ws-src">© Dr. Edmund Bruns</p></section>`}
-function printRegeln(B,w){const F=D.fixed[w];return B.sheetCSS('AG-Regeln')+PCSS+`<section class="ws-page jp-poster">${head('Unsere Schach-AG','Regeln und Rituale')}<h2>Unsere Regeln</h2><ol>${F.regeln.map(r=>`<li>${esc(r)}</li>`).join('')}</ol><h2>Unsere Rituale</h2><table class="ws-table"><tbody>${F.rituale.map(([a,b])=>`<tr><td><b>${esc(a)}</b></td><td>${esc(b)}</td></tr>`).join('')}</tbody></table><p class="ws-src">Nach dem AG-Konzept von edmundbruns.com · © Dr. Edmund Bruns</p></section>`}
-function printGeschichte(B,w){const F=D.fixed[w];return B.sheetCSS('Geschichte')+PCSS+`<section class="ws-page">${head(F.geschichte.titel,'Geschichte zum Vorlesen · Woche '+w)}${F.geschichte.text.map(t=>`<p style="font-size:12pt;line-height:1.6">${esc(t)}</p>`).join('')}<h2 class="ws-part">Fragen zur Geschichte</h2><ol>${F.feld.S.map(t=>`<li>${esc(t.frage)}<br><i>${esc(t.antwort)}</i></li>`).join('')}</ol><p class="ws-src">© Dr. Edmund Bruns</p></section>`}
-function printHeft(B,w){const F=D.fixed[w],imgs=F.arbeitsheftData||F.arbeitsheft;let h='';for(let i=0;i<imgs.length;i+=2)h+=`<section class="ws-page">${i===0?head('Arbeitsheft Schachbrett','Woche '+w,true):''}${imgs.slice(i,i+2).map(s=>`<img class="jp-print-img" alt="Seite aus dem Arbeitsheft Schachbrett" src="${s}">`).join('')}</section>`;return B.sheetCSS('Arbeitsheft Schachbrett')+PCSS+h}
+ return B.sheetCSS(titleText)+PCSS+`<section class="ws-page">${head(titleText,sub,true)}<div class="ws-grid">${list.map((t,i)=>card(set+(i+1),t,paper(t.frage))).join('')}</div></section><section class="ws-page">${head('Lösungen: '+titleText,'Woche '+w+' · für die Lehrkraft')}<div class="ws-grid">${list.map((t,i)=>`<div class="ws-card"><div class="ws-card-head"><b>${esc(set+(i+1))}</b></div><div class="ws-card-body">${diag(t,{sol:new Set(t.targets||[])})}<div class="ws-answer"><p>${esc(t.antwort)}</p></div></div></div>`).join('')}</div><p class="ws-src">© Dr. Edmund Bruns</p></section>`}
+function printHeft(B,w){const F=D.fixed[w],K=F.arbeitsheft;
+ const c=(k,sol)=>{const s=sol&&k.loesung;return `<div class="ws-card"><div class="ws-card-head"><b>${esc(k.titel)}</b></div><div class="ws-card-body">${diag({},{fill:s?s.fill:(k.aufgabe?{}:k.fill),label:s?s.label:(k.aufgabe?{}:k.label)})}<p>${esc(s?s.text:k.text)}</p>${k.aufgabe&&!s?'<div class="ws-line"></div><div class="ws-line"></div>':''}</div></div>`};
+ return B.sheetCSS('Arbeitsheft Schachbrett')+PCSS+`<section class="ws-page jp-heft">${head('Arbeitsheft Schachbrett','Woche '+w,true)}<div class="ws-grid">${K.map(k=>c(k,false)).join('')}</div></section><section class="ws-page jp-heft">${head('Lösungen: Arbeitsheft Schachbrett','Woche '+w+' · für die Lehrkraft')}<div class="ws-grid">${K.filter(k=>k.loesung).map(k=>c(k,true)).join('')}</div><p class="ws-src">© Dr. Edmund Bruns</p></section>`}
+function printRegeln(B,w){const F=D.fixed[w];return B.sheetCSS('AG-Regeln')+PCSS+`<section class="ws-page jp-poster">${head('Unsere Schach-AG','Regeln und Rituale')}<h2>Unsere Regeln</h2><ol>${F.regeln.map(r=>`<li>${esc(r)}</li>`).join('')}</ol><h2>Unsere Rituale</h2><table class="ws-table"><tbody>${F.rituale.map(([a,b])=>`<tr><td><b>${esc(a)}</b></td><td>${esc(b)}</td></tr>`).join('')}</tbody></table><p class="ws-src">© Dr. Edmund Bruns</p></section>`}
+function printGeschichte(B,w){const F=D.fixed[w],Q=F.feld.S;
+ return B.sheetCSS('Geschichte')+PCSS+`<section class="ws-page jp-story">${head(F.geschichte.titel,'Geschichte zum Vorlesen · Woche '+w)}${F.geschichte.text.map(t=>`<p>${esc(t)}</p>`).join('')}<p class="ws-src">© Dr. Edmund Bruns</p></section>
+ <section class="ws-page">${head('Fragen zur Geschichte „'+F.geschichte.titel+'“','Arbeitsblatt Woche '+w,true)}${diag({fen:Q[0].fen})}<ol>${Q.map(t=>`<li><p class="ws-prompt">${esc(paper(t.frage))}</p><div class="ws-line"></div><div class="ws-line"></div></li>`).join('')}</ol></section>
+ <section class="ws-page">${head('Lösungen: Fragen zur Geschichte','Woche '+w+' · für die Lehrkraft')}<ol>${Q.map(t=>`<li>${esc(t.antwort)}</li>`).join('')}</ol><p class="ws-src">© Dr. Edmund Bruns</p></section>`}
 function printStunde(B,w){const F=D.fixed[w];
  const rows=F.phasen.map((p,i)=>`<tr><td><b>${NR[i]} Phase</b><br>(${esc(p.name)})</td><td><b>${esc(p.titel)}</b>${p.ablauf.map(a=>`<br>${esc(a)}`).join('')}<br><i>Kinder: ${esc(p.kinder)}</i></td><td>${p.links.map(x=>esc(x.label)).join('<br>')}</td></tr>`).join('');
  const sets=Object.entries(F.feld).map(([s,list])=>`<h2 class="ws-part">Lehrbrett ${esc(s)}</h2><ol>${list.map(t=>`<li><b>${esc(t.frage)}</b><br>${esc(t.antwort)}</li>`).join('')}</ol>`).join('');
@@ -89,7 +98,7 @@ function show(w){const B=B0,F=D.fixed[w];document.getElementById('plannerbody').
  document.querySelectorAll('[data-jplink]').forEach(b=>b.onclick=()=>{const [pi,li]=b.dataset.jplink.split('|').map(Number);const x=F.phasen[pi].links[li];
   if(x.art==='feld')fbOpen(w,x.set,0,x.bis);
   else if(x.art==='audio')speak(F,b);
-  else if(x.art==='druck'){const m={regeln:()=>printRegeln(B,w),geschichte:()=>printGeschichte(B,w),arbeitsheft:()=>printHeft(B,w),grundstellung:()=>printFeld(B,w,'G','Fehler in der Grundstellung','Arbeitsblatt Woche '+w),lerncheck:()=>printFeld(B,w,'L','Lerncheck','Woche '+w+' · allein lösen')}[x.was];if(m)B.printContent(m())}});
+  else if(x.art==='druck'){const k=x.was;const html=k.startsWith('feld:')?printFeld(B,w,k.slice(5),k==='feld:L'?'Lerncheck':x.label.replace(/^Arbeitsblatt:\s*/,''),'Woche '+w+(k==='feld:L'?' · allein lösen':'')):({regeln:()=>printRegeln(B,w),geschichte:()=>printGeschichte(B,w),arbeitsheft:()=>printHeft(B,w)}[k]||(()=>''))();if(html)B.printContent(html)}});
  document.querySelectorAll('[data-jpweek]').forEach(b=>b.onclick=()=>show(+b.dataset.jpweek));
  document.getElementById('jpback').onclick=()=>{try{window.speechSynthesis?.cancel()}catch(e){}B.back();setTimeout(()=>document.getElementById('px-year')?.scrollIntoView(),0)};
  document.getElementById('jpprint').onclick=()=>B.printContent(printStunde(B,w));scrollTo(0,0)}

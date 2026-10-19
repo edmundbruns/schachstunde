@@ -5,7 +5,7 @@
 const HP='https://www.edmundbruns.com/schach/';
 export const URLS={
 brettvideo:'https://www.youtube.com/watch?v=vKapJK-OoNc',agkonzept:HP+'schachlehrende/ag-konzept/',entwuerfe:HP+'schachlehrende/stundenentwuerfe/',
-online:'https://edmundbruns.github.io/Schach-grundregeln/',feldraten:'https://edmundbruns.github.io/feldraten/'};
+online:'https://edmundbruns.github.io/Schach-grundregeln/',schiffe:'https://schachkicker.de/wp-content/uploads/2025/10/Schiffe-versenken-mit-Schachfiguren.pdf',feldraten:'https://edmundbruns.github.io/feldraten/'};
 const START='rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR';
 const range=(files,ranks)=>[...files].flatMap(f=>[...ranks].map(r=>f+r));
 export const FIXED={
@@ -21,7 +21,7 @@ export const FIXED={
    'Rituale besprechen und einmal üben: Stopp-Signal: Du hebst den rechten Arm. Alle heben ebenfalls den Arm, schauen nach vorn, stellen das Spielen ein und lassen die Figuren los. Aufbau-Ritual: Rechts unten ist hell, die Dame steht auf ihrer Farbe, der Partner kontrolliert. Aufräum-Ritual: Je 16 Figuren zählen, dann einsortieren.',
    'Erklärvideo „Das Schachbrett“ zeigen. Danach am Lehrbrett A1 bis A3 gemeinsam lösen: Felder benennen, Reihe und Linie.'],
   kinder:'Ich stelle mich mit meiner Figur vor, kenne die AG-Regeln und reagiere auf das Stopp-Signal.',
-  links:[{art:'video',label:'Erklärvideo „Das Schachbrett“',url:URLS.brettvideo},{art:'druck',label:'Plakat: AG-Regeln und Rituale',was:'regeln'},{art:'feld',label:'Lehrbrett: Schachbrett A1 bis A3',set:'A',bis:3},{art:'info',label:'AG-Konzept',url:URLS.agkonzept}]},
+  links:[{art:'video',label:'Erklärvideo „Das Schachbrett“',url:URLS.brettvideo},{art:'druck',label:'Plakat: AG-Regeln und Rituale',was:'regeln'},{art:'feld',label:'Lehrbrett: Schachbrett A1 bis A3',set:'A',bis:3}]},
  {name:'Erarbeitung',titel:'Die Grundstellung: Geschichte „Die Schachburg“',
   ablauf:['Lies die Geschichte vor oder spiele sie ab. Baue dabei am Demobrett oder Lehrbrett Figur für Figur auf: erst die Türme, dann Springer, Läufer, Dame und König, zum Schluss die Bauern.','Die Kinder bauen auf ihrem eigenen Brett mit. Merksatz: „Rechts unten ist hell. Die Dame steht auf ihrer Farbe.“'],
   kinder:'Ich höre die Geschichte und baue die Figuren in der richtigen Reihenfolge auf.',
@@ -29,7 +29,7 @@ export const FIXED={
  {name:'Übung',titel:'Arbeitsheft Schachbrett und Fehler in der Grundstellung finden',
   ablauf:['Die Kinder arbeiten zu zweit im Arbeitsheft Schachbrett. Dieselben Aufgaben stehen am Lehrbrett (A1 bis A9) zum gemeinsamen Vergleichen.','Danach Fehlersuche am Lehrbrett (G1 bis G4): Liegt das Brett falsch herum? Sind Dame und König vertauscht? Stehen Läufer und Springer falsch? Die Kinder klicken die falschen Figuren an.'],
   kinder:'Ich löse das Arbeitsheft mit meinem Partner und finde Fehler in der Grundstellung.',
-  links:[{art:'druck',label:'Arbeitsheft Schachbrett',was:'arbeitsheft'},{art:'feld',label:'Lehrbrett: Arbeitsheft A1 bis A9',set:'A'},{art:'druck',label:'Arbeitsblatt: Fehler in der Grundstellung',was:'grundstellung'},{art:'feld',label:'Lehrbrett: Fehler finden G1 bis G4',set:'G'}]},
+  links:[{art:'druck',label:'Arbeitsheft Schachbrett',was:'arbeitsheft'},{art:'feld',label:'Lehrbrett: Arbeitsheft A1 bis A9',set:'A'},{art:'druck',label:'Arbeitsblatt: Fehler in der Grundstellung',was:'feld:G'},{art:'feld',label:'Lehrbrett: Fehler finden G1 bis G4',set:'G'}]},
  {name:'Sicherung',titel:'Fragen zur Geschichte',
   ablauf:['Stelle die Fragen zur Geschichte. Die Kinder antworten und zeigen am Lehrbrett die passenden Figuren (S1 bis S5).','Zum Schluss sprechen alle den Merksatz.'],
   kinder:'Ich beantworte die Fragen zur Geschichte und zeige die Figuren.',
@@ -37,7 +37,7 @@ export const FIXED={
  {name:'Lerncheck',titel:'Drei Aufgaben allein',
   ablauf:['Jedes Kind löst L1 bis L3 allein. Am Lehrbrett kannst du die Lösungen anschließend gemeinsam zeigen.'],
   kinder:'Ich löse allein, ohne Hilfe.',
-  links:[{art:'druck',label:'Lerncheck-Zettel',was:'lerncheck'},{art:'feld',label:'Lehrbrett: Lerncheck L1 bis L3',set:'L'}]},
+  links:[{art:'druck',label:'Lerncheck-Zettel',was:'feld:L'},{art:'feld',label:'Lehrbrett: Lerncheck L1 bis L3',set:'L'}]},
  {name:'Abschluss und Ausblick',titel:'Aufräum-Ritual und Ausblick',
   ablauf:['Stopp-Signal geben. Aufräum-Ritual: Jedes Paar zählt seine 32 Figuren, je 16 pro Farbe, und sortiert sie ein.','Ausblick: Nächstes Mal geht es mit den Feldern weiter, und wir spielen Schiffe versenken auf dem Schachbrett.'],
   kinder:'Ich zähle meine Figuren und räume vollständig auf.',
@@ -49,7 +49,14 @@ export const FIXED={
   'Alle Bewohner der Burg brauchen etwas zu essen. Dafür sorgen die Bauern. Weil viele satt werden müssen, gibt es acht Bauern. Sie stehen in einer Reihe direkt vor den anderen Figuren und beschützen die Burg.']},
  regeln:['Berührt, geführt. Losgelassen ist gezogen.','Wir sprechen leise, an den Brettern wird nicht kommentiert.','Vor und nach jeder Partie geben wir uns die Hand.','Wer verliert, darf traurig sein. Wer gewinnt, bleibt fair.','Nach der Partie räumen wir das Brett vollständig auf.'],
  rituale:[['Stopp-Signal','Die Lehrkraft hebt den rechten Arm. Alle heben den Arm, schauen nach vorn, hören auf zu spielen und lassen die Figuren los.'],['Aufbau-Ritual','Rechts unten ist hell. Die Dame steht auf ihrer Farbe. Der Partner kontrolliert.'],['Aufräum-Ritual','Je 16 Figuren zählen, dann einsortieren.']],
- arbeitsheft:[1,2,3,4,5,6].map(n=>'assets/jahresplan/schachbrett-'+n+'.jpg'),
+ audio:'assets/jahresplan/schachburg.mp3',
+ arbeitsheft:[
+  {titel:'Das Schachbrett',label:{f7:'f7',b4:'b4'},fill:{f7:'rgba(236,206,40,.72)',b4:'rgba(236,206,40,.72)'},text:'Jedes Feld auf dem Schachbrett hat eine bestimmte Bezeichnung. Sie ergibt sich aus den Koordinaten am Rand. Es wird immer erst der Buchstabe und dann die Zahl genannt.'},
+  {titel:'Reihen und Linien',fill:Object.fromEntries([...range('abcdefgh','7'),...range('g','12345678')].map(q=>[q,'rgba(236,206,40,.72)'])),label:{d7:'7. Reihe',g4:'g-Linie'},text:'Ein Schachbrett besteht aus 8 Reihen (1 bis 8) und 8 Linien (a bis h). Hier sind die 7. Reihe und die g-Linie markiert.'},
+  {titel:'Zentrum und Diagonalen',fill:Object.fromEntries([...['d4','e4','d5','e5'],...['a5','b6','c7','d8'],...['f8','g7','h6']].map(q=>[q,'rgba(236,206,40,.72)'])),label:{e4:'Zentrum',a5:'a5',d8:'d8',f8:'f8',h6:'h6'},text:'Neben den Reihen und Linien gibt es das Zentrum (d4, e4, d5, e5) und verschiedene Diagonalen, hier a5 bis d8 und f8 bis h6.'},
+  {titel:'Damenflügel und Königsflügel',fill:Object.fromEntries([...range('abcd','12345678').map(q=>[q,'rgba(236,206,40,.72)']),...range('efgh','12345678').map(q=>[q,'rgba(40,150,110,.6)'])]),label:{b4:'Damenflügel',f4:'Königsflügel'},text:'Das Schachbrett ist unterteilt in den Damenflügel (a- bis d-Linie) und den Königsflügel (e- bis h-Linie).'},
+  {titel:'Aufgabe 1',aufgabe:true,text:'Zeichne das Zentrum, vier Diagonalen, eine Reihe und zwei Linien ein und benenne sie.',loesung:{fill:Object.fromEntries([...['d4','e4','d5','e5'],...range('abcdefgh','3'),...range('c','12345678'),...range('f','12345678')].map(q=>[q,'rgba(236,206,40,.72)'])),text:'Beispiel: Zentrum d4, e4, d5, e5; 3. Reihe; c-Linie und f-Linie; Diagonalen zum Beispiel a1 bis h8, h1 bis a8, a5 bis d8, f8 bis h6. Jede richtige Auswahl zählt.'}},
+  {titel:'Aufgabe 2',aufgabe:true,text:'Markiere folgende Felder: a2, b6, h3, g5, f8, c4, c7, d1, e6. Benenne die vier Zentrumsfelder.',loesung:{fill:Object.fromEntries(['a2','b6','h3','g5','f8','c4','c7','d1','e6'].map(q=>[q,'rgba(236,206,40,.72)'])),label:{a2:'a2',b6:'b6',h3:'h3',g5:'g5',f8:'f8',c4:'c4',c7:'c7',d1:'d1',e6:'e6'},text:'Die Zentrumsfelder heißen d4, e4, d5 und e5.'}}],
  feld:{
  B:[{frage:'Erzähle die Geschichte und klicke dabei die Felder an: erst die Türme, dann Springer, Läufer, Dame und König, zum Schluss die Bauern. „Markierungen löschen“ macht das Brett wieder frei.',fen:START,targets:null,antwort:'Türme in den Ecken, daneben die Springer, daneben die Läufer, in der Mitte Dame und König, davor acht Bauern. Die Dame steht auf ihrer Farbe.',hilfe:['Die Türme stehen in den Ecken der Burg.','Die Dame steht auf ihrer Farbe.']}],
  A:[{frage:'Zeige f7 und b4. Erst kommt der Buchstabe, dann die Zahl.',targets:['f7','b4'],antwort:'f7: Linie f, Reihe 7. b4: Linie b, Reihe 4.',hilfe:['Suche zuerst den Buchstaben unten am Rand.','Gehe dann nach oben bis zur Zahl.'],seite:1},
@@ -73,6 +80,50 @@ export const FIXED={
  L:[{frage:'Klicke alle Figuren an, die falsch stehen.',fen:'rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR',targets:['d8','e8'],antwort:'Bei Schwarz sind Dame und König vertauscht. Die schwarze Dame gehört auf das dunkle Feld d8.',hilfe:['Vergleiche Weiß und Schwarz.','Die Dame steht auf ihrer Farbe.']},
   {frage:'Zeige e4, a8 und h1.',targets:['e4','a8','h1'],antwort:'e4: Linie e, Reihe 4. a8: oben links. h1: unten rechts, ein helles Feld.',hilfe:['Erst der Buchstabe, dann die Zahl.','h1 ist das Feld rechts unten.']},
   {frage:'Wo stehen die Läufer? Klicke alle vier Läufer an.',fen:START,targets:['c1','f1','c8','f8'],antwort:'c1, f1, c8 und f8. Sie stehen neben den Springern.',hilfe:['Die Läufer bringen Nachrichten.','Sie stehen neben den Springern.']}]}}
+,2:{thema:'Übungsstunde: Felder sicher finden und benennen mit Schiffe versenken',
+ lernziel:'Ich kann jedes Feld auf dem Schachbrett schnell finden und richtig benennen.',
+ leitfrage:'Wie finde ich jedes Feld schnell, und wie sage ich anderen genau, welches Feld ich meine?',
+ umfang:'Der Inhalt ist für ca. 45 Minuten ausgelegt.',
+ quelle:'Stundenentwurf 1 (Felder auf Zuruf), Schiffe versenken mit Schachfiguren und Variante „Königliche Rettung“ (nach einer Idee von Walter Rädler), Training Feldraten, Ludgerus-Schachdiplom Bronze 1',
+ phasen:[
+ {name:'Einstieg',titel:'Rituale wiederholen, Felder auf Zuruf',
+  ablauf:['Stopp-Signal einmal üben: Du hebst den rechten Arm, alle heben den Arm, schauen nach vorn und lassen die Figuren los. Danach das Aufbau-Ritual: Rechts unten ist hell.','Felder auf Zuruf: Du nennst ein Feld, die Kinder zeigen es mit dem Finger auf ihrem Brett. Dann umgekehrt: Du zeigst am Lehrbrett ein Feld (W1 bis W4), die Kinder rufen den Namen.'],
+  kinder:'Ich zeige das genannte Feld und nenne den Namen eines gezeigten Feldes.',
+  links:[{art:'feld',label:'Lehrbrett: Aufwärmen W1 bis W4',set:'W'},{art:'blatt',label:'Training Feldraten',url:URLS.feldraten}]},
+ {name:'Erarbeitung',titel:'Spielregeln „Schiffe versenken mit Schachfiguren“',
+  ablauf:['Erkläre die Regeln am Lehrbrett: Jedes Kind versteckt auf seinem Brett drei Figuren als Schiffe: einen Bauern, einen Läufer (eine verkürzte Diagonale, vier Felder lang) und einen Springer (seine Zielfelder als Kreise). Zwischen zwei Figuren bleibt mindestens ein Feld frei.','Abwechselnd wird ein Feld geraten, zum Beispiel „e4“. Treffer: X eintragen, noch einmal raten. Kein Treffer: W für Wasser, dann ist der andere dran. Sind alle Felder einer Figur getroffen, heißt es „Figur versenkt!“.'],
+  kinder:'Ich kenne die Spielregeln und weiß, wie ich ein Feld genau ansage.',
+  links:[{art:'blatt',label:'Arbeitsblatt Schiffe versenken (PDF)',url:URLS.schiffe},{art:'feld',label:'Lehrbrett: Beispielfeld zeigen',set:'W',bis:1}]},
+ {name:'Übung',titel:'Schiffe versenken zu zweit',
+  ablauf:['Die Kinder spielen zu zweit Schiffe versenken. Jeder hat zwei Bretter auf dem Arbeitsblatt: links das eigene, rechts das Brett für die Schüsse auf den Gegner.','Wer schnell fertig ist, spielt die kooperative Variante „Königliche Rettung“ mit dir: Du versteckst einen König, die Kinder finden ihn mit möglichst wenigen Ja-Nein-Fragen, zum Beispiel „Steht der König auf der e-Linie?“.'],
+  kinder:'Ich sage jedes Feld richtig an und trage Treffer und Wasser ein.',
+  links:[{art:'blatt',label:'Arbeitsblatt Schiffe versenken (PDF)',url:URLS.schiffe}]},
+ {name:'Sicherung',titel:'Arbeitsblatt „Felder sicher finden“',
+  ablauf:['Die Kinder lösen das Arbeitsblatt allein oder zu zweit. Anschließend vergleicht ihr am Lehrbrett (F1 bis F6).','Merksatz: „Erst der Buchstabe, dann die Zahl.“'],
+  kinder:'Ich löse das Arbeitsblatt und vergleiche mit dem Lehrbrett.',
+  links:[{art:'druck',label:'Arbeitsblatt: Felder sicher finden',was:'feld:F'},{art:'feld',label:'Lehrbrett: F1 bis F6',set:'F'}]},
+ {name:'Lerncheck',titel:'Drei Aufgaben allein',
+  ablauf:['Jedes Kind löst L1 bis L3 allein. Danach zeigst du die Lösungen am Lehrbrett.'],
+  kinder:'Ich löse allein, ohne Hilfe.',
+  links:[{art:'druck',label:'Lerncheck-Zettel',was:'feld:L'},{art:'feld',label:'Lehrbrett: Lerncheck L1 bis L3',set:'L'}]},
+ {name:'Abschluss und Ausblick',titel:'Feldraten-Blitzrunde und Aufräumen',
+  ablauf:['Blitzrunde mit dem Training Feldraten am Beamer: Ein Feld erscheint, die ganze Gruppe ruft den Namen.','Aufräum-Ritual. Ausblick: Nächstes Mal lernen wir die ersten Figuren ziehen, den Turm und den Läufer.'],
+  kinder:'Ich rufe die Feldnamen mit und räume auf.',
+  links:[{art:'blatt',label:'Training Feldraten',url:URLS.feldraten}]}],
+ feld:{
+ W:[{frage:'Zeige e4.',targets:['e4'],antwort:'e4: Linie e, Reihe 4.',hilfe:['Suche unten den Buchstaben e.','Gehe dann hoch bis Reihe 4.']},
+  {frage:'Zeige h1. Welche Farbe hat das Feld?',targets:['h1'],antwort:'h1 ist das Feld rechts unten. Es ist hell.',hilfe:['h1 liegt in einer Ecke.','Merksatz: Rechts unten ist hell.']},
+  {frage:'Zeige a8 und d5.',targets:['a8','d5'],antwort:'a8 ist die Ecke oben links. d5 ist ein Zentrumsfeld.',hilfe:['a8 liegt in einer Ecke.','Erst der Buchstabe, dann die Zahl.']},
+  {frage:'Zeige c2, f6 und g3.',targets:['c2','f6','g3'],antwort:'c2, f6 und g3 sind markiert.',hilfe:['Arbeite Feld für Feld.','Erst der Buchstabe, dann die Zahl.']}],
+ F:[{frage:'Markiere alle dunklen Felder in Reihe 1.',targets:['a1','c1','e1','g1'],antwort:'a1, c1, e1 und g1.',hilfe:['Reihe 1 ist ganz unten.','Rechts unten (h1) ist hell, also ist a1 dunkel.']},
+  {frage:'Markiere die vier Zentrumsfelder.',targets:['d4','e4','d5','e5'],antwort:'d4, e4, d5 und e5.',hilfe:['Das Zentrum liegt genau in der Mitte.','Es sind vier Felder.']},
+  {frage:'Markiere die beiden Grundreihen.',targets:[...range('abcdefgh','1'),...range('abcdefgh','8')],antwort:'Reihe 1 (Weiß) und Reihe 8 (Schwarz).',hilfe:['Dort stehen am Anfang die großen Figuren.','Tipp: Klicke auf die Zahlen am Rand.']},
+  {frage:'Markiere die lange Diagonale von a1 nach h8.',targets:['a1','b2','c3','d4','e5','f6','g7','h8'],antwort:'a1, b2, c3, d4, e5, f6, g7, h8.',hilfe:['Eine Diagonale läuft schräg über Felder gleicher Farbe.','Von a1 aus immer ein Feld nach rechts und eins nach oben.']},
+  {frage:'Welches Feld liegt direkt über d4, welches direkt darunter? Markiere beide.',targets:['d5','d3'],antwort:'d5 liegt darüber, d3 darunter.',hilfe:['Darüber heißt: Zahl plus eins.','Darunter heißt: Zahl minus eins.']},
+  {frage:'Markiere b6, g2, c5 und h3. Welche zwei Felder sind hell?',targets:['b6','g2','c5','h3'],antwort:'g2 und h3 sind hell, b6 und c5 sind dunkel.',hilfe:['Erst der Buchstabe, dann die Zahl.','Zähle von h1 aus: h1 ist hell.']}],
+ L:[{frage:'Markiere c7, d1 und e6.',targets:['c7','d1','e6'],antwort:'c7, d1 und e6.',hilfe:['Erst der Buchstabe, dann die Zahl.','d1 liegt in der untersten Reihe.']},
+  {frage:'Markiere die g-Linie.',targets:range('g','12345678'),antwort:'g1 bis g8.',hilfe:['Eine Linie steht senkrecht.','Klicke auf das g am Rand.']},
+  {frage:'Markiere die Diagonale von a5 nach d8.',targets:['a5','b6','c7','d8'],antwort:'a5, b6, c7, d8.',hilfe:['Eine Diagonale läuft schräg.','Von a5 immer ein Feld nach rechts und eins nach oben.']}]}}
 };
 export const YEAR=[['Brett, Figuren, Schach und Matt',[1,11]],['Sonderregeln, Notation und erste Taktik',[12,26]],['Mattführung, Eröffnung und Endspiel',[27,36]]];
 export const LATER=[

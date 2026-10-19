@@ -18,6 +18,8 @@ ONLINE='https://edmundbruns.github.io/schachstunde/'
 for old,new in [('<a href="SchachStunde.zip" download="SchachStunde.zip">','<a href="'+ONLINE+'SchachStunde.zip" target="_blank" rel="noopener">'),('<a href="SchachStunde.html" download="SchachStunde.html">','<a href="'+ONLINE+'SchachStunde.html" target="_blank" rel="noopener">'),('<a href="START.html" target="_blank" rel="noopener">Kurzanleitung</a>','<a href="#" id="startguide">Kurzanleitung</a>')]:
  assert old in index,old
  index=index.replace(old,new)
+for mp3 in (r/'assets/jahresplan').glob('*.mp3'):
+ index=index.replace('assets/jahresplan/'+mp3.name,datauri(mp3,'audio/mpeg'))
 (r/'SchachStunde.html').write_text(index)
 (r/'Ludgerus-Schachwerkstatt.html').write_text('<!doctype html><html lang="de"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=SchachStunde.html"><title>SchachStunde</title><p>Die Datei heißt jetzt <a href="SchachStunde.html">SchachStunde.html</a>.</p></html>')
 with zipfile.ZipFile(r/'SchachStunde.zip','w',zipfile.ZIP_DEFLATED) as z:
