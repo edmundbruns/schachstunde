@@ -2,7 +2,7 @@
 // © Dr. Edmund Bruns
 import fs from 'node:fs';import vm from 'node:vm';import path from 'node:path';import {fileURLToPath} from 'node:url';
 import {Chess} from '../dist/assets/chess.mjs';
-import {EXTRA,M1_WORK,M1_HINTS,DL_HINTS} from './tasks-bronze.mjs';import {LESSONS,LINKS} from './lessons-bronze.mjs';
+import {EXTRA,M1_WORK,M1_HINTS,DL_HINTS} from './tasks-bronze.mjs';import {LESSONS,LINKS} from './lessons-bronze.mjs';import {FIXED,YEAR,LATER,URLS} from './fixed-bronze.mjs';
 const here=path.dirname(fileURLToPath(import.meta.url)),dist=path.join(here,'../dist');
 const ctx={window:{},console};vm.createContext(ctx);
 for(const f of ['runtime-data','planner-core','curriculum','lesson-units','next-topics','quality','labyrinth','method-catalog','teaching-support','praxis','diplom-lessons'])vm.runInContext(fs.readFileSync(path.join(dist,f+'.js'),'utf8'),ctx);
@@ -43,10 +43,15 @@ for(const L of LESSONS){
  if(L.week>1){const earlier=new Set(LESSONS.filter(x=>x.week<L.week).flatMap(x=>PH.filter(p=>p!=='lerncheck'&&p!=='ausblick').flatMap(p=>x[p].aufgaben)));
   for(const k of L.ausblick.aufgaben)if(!earlier.has(k))err(`W${L.week}: Ausblick-Aufgabe ${k} stammt nicht aus einer früheren Stunde`)}
  seenWeek[L.week]=true}
+// Feste Stundenverläufe für das Praxiswissen
+for(const [w,F] of Object.entries(FIXED)){const L=LESSONS.find(x=>x.week===+w);if(!L){err('Fester Verlauf ohne Woche '+w);continue}
+ const sum=F.phasen.reduce((n,p)=>n+p.min,0);if(sum!==F.dauer)err(`W${w}: Phasen ergeben ${sum} statt ${F.dauer} Minuten`);
+ for(const p of F.phasen){if(!p.ablauf||!p.kinder||!p.titel)err(`W${w} ${p.phase}: Text fehlt`);if(!p.links?.length)err(`W${w} ${p.phase}: kein Material-Link`);
+  for(const l of p.links)if(l.art==='brett'&&Array.isArray(l.aufgaben))for(const k of l.aufgaben)resolve(k)}}
 // Lerncheck-Aufgaben nirgends sonst im Jahr
 const lcAll=LESSONS.flatMap(L=>L.lerncheck.aufgaben.map(k=>[k,L.week]));
 for(const [k,w] of lcAll)for(const L of LESSONS)for(const p of PH)if(!(L.week===w&&p==='lerncheck')&&L[p].aufgaben.includes(k))err(`Lerncheck ${k} (W${w}) taucht in W${L.week} ${p} auf`);
-const out={version:1,links:LINKS,lessons:LESSONS,tasks:Object.fromEntries(Object.entries(TASKS).map(([k,t])=>[k,{id:t.id,fen:t.fen,work:t.work,answer:t.answer,checks:t.checks||[],forbidden:t.forbidden||[],strict:!!t.strict,open:!!t.open,hints:t.hints,src:t.src,umgebaut:!!t.umgebaut}])),collect:COLLECT};
+const out={version:2,links:LINKS,urls:URLS,fixed:FIXED,year:YEAR,later:LATER,lessons:LESSONS,tasks:Object.fromEntries(Object.entries(TASKS).map(([k,t])=>[k,{id:t.id,fen:t.fen,work:t.work,answer:t.answer,checks:t.checks||[],forbidden:t.forbidden||[],strict:!!t.strict,open:!!t.open,hints:t.hints,src:t.src,umgebaut:!!t.umgebaut}])),collect:COLLECT};
 const report={tasks:Object.keys(TASKS).length,lessons:LESSONS.length,errors,umgebaut:Object.values(TASKS).filter(t=>t.umgebaut).map(t=>t.key)};
 fs.writeFileSync(path.join(here,'report-bronze.json'),JSON.stringify(report,null,1));
 if(errors.length){console.error(errors.join('\n'));console.error(errors.length+' Fehler');process.exit(1)}
