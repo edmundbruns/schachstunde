@@ -57,7 +57,10 @@ function angriff(B,sq){const p=B[sq],t=p.toLowerCase(),f0='abcdefgh'.indexOf(sq[
  if(STEP[t]){for(const [df,dr] of STEP[t]){const q=sqAt(f0+df,r0+dr);if(q)out.push(q)}return out}
  for(const [df,dr] of DIRS[t]){let f=f0+df,r=r0+dr,q;while((q=sqAt(f,r))){out.push(q);if(B[q])break;f+=df;r+=dr}}return out}
 function angegriffen(B,weissGreiftAn){const s=new Set();for(const [q,p] of Object.entries(B))if(isW(p)===weissGreiftAn)for(const x of angriff(B,q))s.add(x);return s}
-function ziele(fen,sq){const B=boardOf(fen),p=B[sq];if(!p||p.toLowerCase()==='p')return null;const w=isW(p);
+function bauerZiele(B,sq){const p=B[sq],w=isW(p),d=w?1:-1,f0='abcdefgh'.indexOf(sq[0]),r0=+sq[1],out=[];const one=sqAt(f0,r0+d);
+ if(one&&!B[one]){out.push(one);const two=sqAt(f0,r0+2*d);if(r0===(w?2:7)&&two&&!B[two])out.push(two)}
+ for(const q of angriff(B,sq))if(B[q]&&isW(B[q])!==w)out.push(q);return out}
+function ziele(fen,sq){const B=boardOf(fen),p=B[sq];if(!p)return null;if(p.toLowerCase()==='p')return bauerZiele(B,sq);const w=isW(p);
  let z=angriff(B,sq).filter(q=>!B[q]||isW(B[q])!==w);
  if(p.toLowerCase()==='k'){const C={...B};delete C[sq];const att=angegriffen(C,!w);z=z.filter(q=>!att.has(q))}return z}
 function pruefZiele(fen,P){const B=boardOf(fen);
@@ -67,6 +70,10 @@ function pruefZiele(fen,P){const B=boardOf(fen);
  if(P.farbe){const dk=q=>('abcdefgh'.indexOf(q[0])+ +q[1])%2;return [...'abcdefgh'].map(f=>f+P.reihe).filter(q=>q!==P.farbe&&dk(q)===dk(P.farbe))}
  if(P.verboten){const k=P.verboten,frei=new Set(ziele(fen,k));return angriff(B,k).filter(q=>!(B[q]&&isW(B[q])===isW(B[k]))&&!frei.has(q))}
  if(P.erreichen){const w=P.weiss!==false;return Object.keys(B).filter(q=>isW(B[q])===w&&(ziele(fen,q)||[]).includes(P.erreichen))}
+ const bauern=()=>Object.keys(B).filter(q=>B[q]==='P');
+ if(P.doppelschritt)return bauern().filter(q=>ziele(fen,q).some(x=>+x[1]===+q[1]+2));
+ if(P.umwandeln)return bauern().filter(q=>ziele(fen,q).some(x=>x[1]==='8'));
+ if(P.blockiert)return bauern().filter(q=>!ziele(fen,q).length);
  if(P.ueber){const [von,nach]=P.ueber,p=B[von];return ziele(fen,von).filter(x=>{const C={...B};delete C[von];C[x]=p;return angriff(C,x).includes(nach)&&!C[nach]})}
  return null}
 for(const [w,F] of Object.entries(FIXED)){if(!LESSONS.find(x=>x.week===+w))err('Feste Stunde ohne Woche '+w);
