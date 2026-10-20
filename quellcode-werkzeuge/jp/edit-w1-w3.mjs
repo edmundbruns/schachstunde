@@ -20,6 +20,7 @@ F[1].hinweise.kuerzen='Die Fehlersuche am Lehrbrett auf G1 bis G3 kürzen, die A
  p.links.splice(1,0,{art:'video',label:'Spielidee: Aufbau-Challenge (Video)',url:URLS.aufbauChallenge})}
 {const p=ph(1,'Sicherung');p.ablauf[1]='Zwei oder drei Fragen zur Schachburg (S1 bis S6) mündlich stellen. Frage nach: „Woran erkennst du, dass die Dame richtig steht?“ Alle sprechen den Merksatz.'}
 {const p=ph(1,'Lerncheck');p.ablauf[0]='Aufbaukarten umdrehen. Kind A baut die Grundstellung ohne Vorlage auf, Kind B schaut nur zu. Danach wechseln die Rollen.'}
+ph(1,'Abschluss und Ausblick').links=[{art:'druck',label:'Plakat: Regeln und Rituale (Aufräum-Ritual)',was:'regeln'}];
 F[1].quelle=F[1].quelle+', Spielidee „Aufbau-Challenge“ (Deutsche Schulschachstiftung)';
 // ---------- Woche 2 ----------
 Object.assign(F[2],{vorwissen:'Grundstellung und Merksatz „Rechts unten ist hell“ (Woche 1).',

@@ -107,47 +107,88 @@ function printUebersicht(B,w){const F=D.fixed[w];
 function druckHTML(B,w,x){const k=x.was;if(k.startsWith('feld:'))return printFeld(B,w,k.slice(5),k==='feld:L'?'Lerncheck':x.label.replace(/^Arbeitsblatt:\s*/,''),'Woche '+w+(k==='feld:L'?' · allein lösen':''));
  return ({regeln:()=>printRegeln(B,w),geschichte:()=>printGeschichte(B,w),arbeitsheft:()=>printHeft(B,w),aufbaukarte:()=>printAufbaukarte(B,w),beobachtung:()=>printBeobachtung(B,w)}[k]||(()=>''))()}
 function materials(w){const F=D.fixed[w],seen=new Set(),out=[{id:'stunde',label:'Stundenverlauf (für die Lehrkraft)',html:B=>printStunde(B,w)},{id:'uebersicht',label:'Alle Lehrbrett-Aufgaben mit Lösungen (für die Lehrkraft)',html:B=>printUebersicht(B,w)}],ext=[];
- F.phasen.forEach(p=>p.links.forEach(x=>{if(x.art==='druck'&&!seen.has(x.was)){seen.add(x.was);out.push({id:x.was,label:x.label,html:B=>druckHTML(B,w,x)})}else if((x.art==='blatt'||x.art==='info')&&x.url)ext.push(x)}));return {out,ext}}
+ F.phasen.forEach(p=>p.links.forEach(x=>{if(x.art==='druck'&&!seen.has(x.was)){seen.add(x.was);out.push({id:x.was,label:x.label,html:B=>druckHTML(B,w,x)})}else if(x.art==='blatt'&&x.url)ext.push(x)}));return {out,ext}}
 let printY=null;
 function printKeep(B,html){printY=scrollY;const prev=window.plannerReturn;window.plannerReturn=()=>{window.plannerReturn=prev;if(document.querySelector('.jp-week')&&printY!==null){const y=printY;printY=null;requestAnimationFrame(()=>scrollTo(0,y));return true}return prev?prev():false};B.printContent(html)}
 function pickHTML(w){const {out,ext}=materials(w);return `<div class="jp-pick"><h4>Was möchtest du drucken?</h4><p class="muted">Alle Materialien dieser Stunde. Wähle aus, was du brauchst. Alles kommt in eine Druckdatei.</p>${out.map(m=>`<label><input type="checkbox" data-jpmat="${esc(m.id)}" checked> ${esc(m.label)}</label>`).join('')}${ext.length?`<p class="muted">Außerdem separat zu öffnen: ${ext.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)}</a>`).join(', ')}.</p>`:''}<div class="row"><button type="button" class="primary" id="jppickgo">Auswahl drucken / PDF</button><button type="button" id="jppickall">Alle auswählen</button><button type="button" id="jppicknone">Keine auswählen</button></div></div>`}
 // ---------- Königliche Rettung: alle gegen die Lehrkraft ----------
-const FR=[['farbe','Steht der König auf einem hellen Feld?',null,q=>(FILES.indexOf(q[0])+ +q[1])%2===0],
- ['linie','Steht der König auf der {p}-Linie?','f',(q,p)=>q[0]===p],['reihe','Steht der König auf der {p}. Reihe?','r',(q,p)=>q[1]===p],
- ['links','Steht der König links von der {p}-Linie?','f',(q,p)=>q[0]<p],['oben','Steht der König oberhalb der {p}. Reihe?','r',(q,p)=>+q[1]>+p],
- ['dame','Steht der König auf dem Damenflügel (a- bis d-Linie)?',null,q=>q[0]<='d'],['zentrum','Steht der König im Zentrum (d4, e4, d5, e5)?',null,q=>/^[de][45]$/.test(q)],
- ['rand','Steht der König auf einem Randfeld?',null,q=>/^[ah]|[18]$/.test(q)]];
-let RT=null;const ALL=[...FILES].flatMap(f=>[1,2,3,4,5,6,7,8].map(r=>f+r));
-function rtOpen(w){RT={w,y:scrollY,king:ALL[Math.floor(Math.random()*64)],gone:new Set(),undo:[],n:0,log:[],found:false,raten:false,auto:false,msg:'Der König hat sich versteckt. Stellt eine Ja/Nein-Frage.',kind:'info'};rtRender();topOfBody()}
+// Fragen der Kinder als Satz verstehen: Teile mit „oder“ vereinigen, mit „und“ schneiden, „nicht“ kehrt um
+const ALL=[...FILES].flatMap(f=>[1,2,3,4,5,6,7,8].map(r=>f+r));
+const fi=q=>FILES.indexOf(q[0]),rk=q=>+q[1],hell=q=>(fi(q)+rk(q))%2===0;
+const ORD={erst:1,zweit:2,dritt:3,viert:4,'fünft':5,fuenft:5,sechst:6,siebt:7,siebent:7,acht:8};
+function diagBetween(a,b){const df=fi(b)-fi(a),dr=rk(b)-rk(a);if(Math.abs(df)!==Math.abs(dr)||!df)return null;const out=[];for(let i=0;i<=Math.abs(df);i++)out.push(FILES[fi(a)+i*Math.sign(df)]+(rk(a)+i*Math.sign(dr)));return out}
+function features(part){let s=' '+part+' ';const found=[];const take=(re,fn)=>{s=s.replace(re,(...m)=>{const r=fn(m);if(r){found.push(r);return ' '}return m[0]})};
+ const sel=(desc,pred)=>({desc,set:new Set(ALL.filter(pred))});
+ take(/(?:diagonale|schräge)\D*?([a-h][1-8])\s*(?:bis|nach|und|-|zu)?\s*([a-h][1-8])/g,m=>{const d=diagBetween(m[1],m[2]);return d&&{desc:'Diagonale '+m[1]+' bis '+m[2],set:new Set(d)}});
+ take(/lange[nr]? diagonale[n]?/g,()=>({desc:'lange Diagonalen',set:new Set([...diagBetween('a1','h8'),...diagBetween('h1','a8')])}));
+ take(/linien? ([a-h]) ?(?:bis|-) ?([a-h])\b/g,m=>sel(m[1]+'- bis '+m[2]+'-Linie',q=>q[0]>=m[1]&&q[0]<=m[2]));
+ take(/reihen? ([1-8])\.? ?(?:bis|-) ?([1-8])\b/g,m=>sel(m[1]+'. bis '+m[2]+'. Reihe',q=>rk(q)>=+m[1]&&rk(q)<=+m[2]));
+ take(/links (?:von|neben) (?:der )?([a-h])[- ]?linie/g,m=>sel('links von der '+m[1]+'-Linie',q=>q[0]<m[1]));
+ take(/rechts (?:von|neben) (?:der )?([a-h])[- ]?linie/g,m=>sel('rechts von der '+m[1]+'-Linie',q=>q[0]>m[1]));
+ take(/(oberhalb|über|ueber|unterhalb|unter) (?:der )?([1-8])\.? ?reihe/g,m=>{const n=+m[2],up=/ob|über|ueber/.test(m[1]);return sel((up?'oberhalb':'unterhalb')+' der '+n+'. Reihe',q=>up?rk(q)>n:rk(q)<n)});
+ take(/\b([a-h])[- ]linie\b|\blinie ([a-h])\b|\b([a-h])linie\b/g,m=>{const f=m[1]||m[2]||m[3];return sel(f+'-Linie',q=>q[0]===f)});
+ take(/\b([1-8])\.? ?reihe\b|\breihe ([1-8])\b/g,m=>{const n=+(m[1]||m[2]);return sel(n+'. Reihe',q=>rk(q)===n)});
+ take(/grundreihe/g,()=>sel('Grundreihen',q=>rk(q)===1||rk(q)===8));
+ take(/erweiterte[nm]? zentrum/g,()=>sel('erweitertes Zentrum',q=>q[0]>='c'&&q[0]<='f'&&rk(q)>=3&&rk(q)<=6));
+ take(/zentrum\w*|mittelfeld\w*|\bmitte\b/g,()=>sel('Zentrum',q=>/^[de][45]$/.test(q)));
+ take(/damen(?:flügel|fluegel|seite)/g,()=>sel('Damenflügel',q=>q[0]<='d'));
+ take(/königs(?:flügel|fluegel|seite)|koenigs(?:fluegel|seite)/g,()=>sel('Königsflügel',q=>q[0]>='e'));
+ take(/eck\w*/g,()=>sel('Eckfelder',q=>/^[ah][18]$/.test(q)));
+ take(/rand\w*/g,()=>sel('Randfelder',q=>/^[ah]|[18]$/.test(q)));
+ take(/obere[nrs]? hälfte|\boben\b/g,()=>sel('obere Hälfte',q=>rk(q)>=5));
+ take(/untere[nrs]? hälfte|\bunten\b/g,()=>sel('untere Hälfte',q=>rk(q)<=4));
+ take(/linke[nrs]? hälfte|\blinks\b/g,()=>sel('linke Hälfte',q=>q[0]<='d'));
+ take(/rechte[nrs]? hälfte|\brechts\b/g,()=>sel('rechte Hälfte',q=>q[0]>='e'));
+ take(/\bhell\w*|\bweiß\w*|\bweiss\w*/g,()=>sel('helle Felder',hell));
+ take(/\bdunk(?:el|l)\w*|\bschwarz\w*/g,()=>sel('dunkle Felder',q=>!hell(q)));
+ take(/\b([a-h])([1-8])\b/g,m=>({desc:m[1]+m[2],set:new Set([m[1]+m[2]])}));
+ return found}
+function parseFrage(text){let s=String(text||'').toLowerCase().replace(/[?!,;:„“"()]/g,' ');
+ s=s.replace(/\b(erst|zweit|dritt|viert|fünft|fuenft|sechst|siebent|siebt|acht)e[nrsm]?\b/g,(m,w)=>ORD[w]+'.').replace(/\s+/g,' ');
+ const teile=s.split(/\boder\b/),parts=[],unklar=[];let set=new Set();
+ for(const t of teile){const und=t.split(/\bund\b|\bsowie\b/);let inter=null,descs=[];
+  for(const u of und){const neg=/\b(nicht|kein\w*)\b/.test(u);const f=features(u);if(!f.length){if(/[a-zäöü]{3}/.test(u.replace(/\b(steht|stehen|ist|liegt|befindet|sich|er|der|die|das|den|dem|des|könig|koenig|auf|einem|einer|eine|ein|einen|im|in|am|an|feld|felder|feldern|nicht|vielleicht|denn|da|so)\b/g,'')))unklar.push(u.trim());continue}
+   let x=f.reduce((acc,g)=>acc?new Set([...acc].filter(q=>g.set.has(q))):new Set(g.set),null);const d=f.map(g=>g.desc).join(' und ');
+   if(neg){x=new Set(ALL.filter(q=>!x.has(q)));descs.push('nicht '+d)}else descs.push(d);
+   inter=inter?new Set([...inter].filter(q=>x.has(q))):x}
+  if(inter){parts.push(descs.join(' und '));for(const q of inter)set.add(q)}}
+ return {ok:parts.length>0,set,text:parts.join(' oder '),unklar}}
+const LISTE=['Steht der König auf einem hellen Feld?','Steht der König auf dem Damenflügel?','Steht der König in der oberen Hälfte?','Steht der König im Zentrum?','Steht der König auf einem Randfeld?','Steht der König auf der e-Linie?','Steht der König auf der 4. Reihe?','Steht der König links von der e-Linie?','Steht der König oberhalb der 4. Reihe?','Steht der König auf einer der langen Diagonalen?','Steht der König auf einem Zentrumsfeld oder am Damenflügel?','Steht der König auf einem dunklen Feld und nicht am Rand?'];
+let RT=null;
+function rtOpen(w){RT={w,y:scrollY,king:ALL[Math.floor(Math.random()*64)],gone:new Set(),undo:[],n:0,log:[],found:false,raten:false,auto:false,frage:'',plan:null,msg:'Der König hat sich versteckt. Die Kinder stellen eine Ja/Nein-Frage.',kind:'info'};rtRender();topOfBody()}
 function rtRender(){const R=RT,host=document.getElementById('plannerbody');const t={fen:R.found?placementFen(R.king):''};
- const board=boardMarkup(t,{interactive:true,marks:new Set(),sol:R.found?new Set([R.king]):null}).replace(/data-bsq="([a-h][1-8])"/g,(m,q)=>m+(R.gone.has(q)?' data-gone="1"':''));
- const q0=FR.find(f=>f[0]===(R.q||'dame'));
+ const board=boardMarkup(t,{interactive:true,marks:R.plan?R.plan.set:new Set(),sol:R.found?new Set([R.king]):null}).replace(/data-bsq="([a-h][1-8])"/g,(m,q)=>m+(R.gone.has(q)?' data-gone="1"':''));
  host.innerHTML=`<div class="jp-fb jp-rt"><h2>Königliche Rettung</h2><div class="training"><div><div id="movefeedback" class="movefeedback ${R.kind}" role="status" aria-live="polite">${esc(R.msg)}</div><div id="teacherboard">${board}</div>
  <div class="row"><button type="button" id="rtundo" ${R.undo.length?'':'disabled'}>← Zurück</button><button type="button" id="rtclear">Streichungen löschen</button></div><p class="muted">${R.raten?'Ratemodus: Klicke das Feld an, auf dem ihr den König vermutet. Jeder Rateversuch zählt als Frage.':'Klicke Felder an, um sie zu streichen. Ein Klick auf eine Zahl oder einen Buchstaben streicht die ganze Reihe oder Linie.'}</p></div>
  <aside class="side"><section class="boardcontext"><button type="button" id="rtback">← Zurück zu Woche ${R.w}</button></section>
- <p>Alle gegen die Lehrkraft: Der König hat sich auf einem Feld versteckt. Stellt nacheinander Ja/Nein-Fragen und streicht nach jeder Antwort die Felder, auf denen er nicht stehen kann.</p>
+ <p>Alle gegen die Lehrkraft: Der König hat sich auf einem Feld versteckt. Die Kinder stellen nacheinander Ja/Nein-Fragen und streichen nach jeder Antwort die Felder, auf denen er nicht stehen kann.</p>
  <p class="jp-rtcount"><b>Fragen: ${R.n}</b> · noch möglich: ${64-R.gone.size} Felder</p>
- <label>Frage <select id="rtq">${FR.map(f=>`<option value="${f[0]}" ${f===q0?'selected':''}>${esc(f[1].replace('{p}','_'))}</option>`).join('')}</select></label>
- ${q0[2]?`<label>${q0[2]==='f'?'Linie':'Reihe'} <select id="rtp">${(q0[2]==='f'?[...FILES]:['1','2','3','4','5','6','7','8']).map(v=>`<option ${v===R.p?'selected':''}>${v}</option>`).join('')}</select></label>`:''}
- <div class="row"><button type="button" class="primary" id="rtask" ${R.found?'disabled':''}>Frage stellen</button><button type="button" id="rtguess" aria-pressed="${R.raten}" ${R.found?'disabled':''}>${R.raten?'Raten beenden':'Feld raten'}</button></div>
+ <label for="rtfrage">Frage der Kinder</label><div class="row jp-rtin"><input type="text" id="rtfrage" value="${esc(R.frage)}" placeholder="Frage eintippen und Enter drücken" autocomplete="off" ${R.found?'disabled':''}><button type="button" class="primary" id="rtshow" ${R.found?'disabled':''}>Felder zeigen</button></div>
+ ${R.plan?`<p class="jp-rtplan">Verstanden als: <b>${esc(R.plan.text)}</b> · ${R.plan.set.size} Felder grün markiert.${R.plan.unklar.length?` Nicht verstanden: „${esc(R.plan.unklar.join('“, „'))}“.`:''} Stimmt das?</p><div class="row"><button type="button" class="primary" id="rtanswer">Antwort zeigen</button><button type="button" id="rtcancel">Frage ändern</button></div>`:''}
+ <details class="jp-rtlist"><summary>Frage aus einer Liste wählen</summary><select id="rtq" aria-label="Frage aus der Liste"><option value="">Bitte wählen …</option>${LISTE.map(f=>`<option>${esc(f)}</option>`).join('')}</select></details>
+ <div class="row"><button type="button" id="rtguess" aria-pressed="${R.raten}" ${R.found?'disabled':''}>${R.raten?'Raten beenden':'Feld raten'}</button></div>
  <label class="jp-rtauto"><input type="checkbox" id="rtauto" ${R.auto?'checked':''}> Felder nach der Antwort automatisch streichen</label>
  ${R.log.length?`<ol class="jp-rtlog">${R.log.map(l=>`<li>${esc(l)}</li>`).join('')}</ol>`:''}
  <details><summary>Lehrkraft: König selbst verstecken</summary><p class="muted">Feld verdeckt eingeben, zum Beispiel e4. Das Feld wird nicht angezeigt.</p><div class="row"><input type="password" id="rtsecret" maxlength="2" size="4" autocomplete="off" aria-label="Versteck-Feld"><button type="button" id="rthide">Verstecken</button></div></details>
+ <details><summary>Welche Wörter versteht das Lehrbrett?</summary><p class="muted">Felder wie e4, Linie (e-Linie, Linien a bis c), Reihe (4. Reihe, vierte Reihe, Reihen 1 bis 3), hell, dunkel, Zentrum, erweitertes Zentrum, Rand, Ecke, Grundreihe, Damenflügel, Königsflügel, obere, untere, linke, rechte Hälfte, links oder rechts von der d-Linie, oberhalb oder unterhalb der 4. Reihe, lange Diagonale, Diagonale a1 bis h8. Verbinden mit „und“, „oder“, „nicht“.</p></details>
  <div class="row"><button type="button" id="rtnew">Neues Spiel (zufälliges Versteck)</button></div>
- <p class="jp-hint">Tipp: Gute Fragen streichen viele Felder auf einmal, zum Beispiel „Steht der König auf dem Damenflügel?“ Danach bleibt nur noch die Hälfte.</p></aside></div></div>`;
+ <p class="jp-hint">Tipp: Gute Fragen streichen viele Felder auf einmal. Am besten bleibt nach der Antwort nur noch die Hälfte übrig.</p></aside></div></div>`;
  host.querySelectorAll('[data-bsq]').forEach(b=>{if(b.dataset.gone)b.classList.add('gone');b.onclick=()=>R.raten?rtGuess(b.dataset.bsq):rtStrike([b.dataset.bsq])});
  host.querySelectorAll('[data-jprank]').forEach(b=>b.onclick=()=>rtStrike([...FILES].map(f=>f+b.dataset.jprank)));
  host.querySelectorAll('[data-jpfile]').forEach(b=>b.onclick=()=>rtStrike([1,2,3,4,5,6,7,8].map(r=>b.dataset.jpfile+r)));
  const $=id=>document.getElementById(id);
- $('rtq').onchange=e=>{R.q=e.target.value;R.p=null;rtRender()};if($('rtp'))$('rtp').onchange=e=>{R.p=e.target.value};
+ const zeigen=()=>{R.frage=$('rtfrage').value;const p=parseFrage(R.frage);if(!p.ok){R.plan=null;R.msg='Diese Frage verstehe ich nicht. Nutzt Wörter wie Linie, Reihe, hell, Zentrum, Damenflügel, Rand oder ein Feld wie e4.';R.kind='bad'}else{R.plan=p;R.msg='Die Felder der Frage sind grün markiert. Stimmt die Markierung, zeigt die Antwort.';R.kind='info'}rtRender();$('rtfrage')?.focus()};
+ $('rtshow').onclick=zeigen;$('rtfrage').onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();zeigen()}};
+ $('rtq').onchange=e=>{if(!e.target.value)return;$('rtfrage').value=e.target.value;zeigen()};
+ if($('rtcancel'))$('rtcancel').onclick=()=>{R.plan=null;R.msg='Frage ändern und erneut „Felder zeigen“.';R.kind='info';rtRender();$('rtfrage').focus()};
+ if($('rtanswer'))$('rtanswer').onclick=()=>{const p=R.plan,ja=p.set.has(R.king);R.n++;const q=R.frage.trim().replace(/\s*\?*$/,'?');R.log.push(q+' '+(ja?'Ja.':'Nein.'));R.msg='Frage '+R.n+': '+q+' '+(ja?'Ja.':'Nein.')+(R.auto?'':' Streicht jetzt die Felder, auf denen er nicht stehen kann.');R.kind=ja?'good':'bad';
+  if(R.auto){R.undo.push(new Set(R.gone));for(const x of ALL)if(p.set.has(x)!==ja)R.gone.add(x)}R.plan=null;R.frage='';rtRender()};
  $('rtauto').onchange=e=>{R.auto=e.target.checked};
  $('rtundo').onclick=()=>{if(R.undo.length){R.gone=R.undo.pop();rtRender()}};
  $('rtclear').onclick=()=>{R.undo.push(new Set(R.gone));R.gone=new Set();rtRender()};
- $('rtguess').onclick=()=>{R.raten=!R.raten;rtRender()};
+ $('rtguess').onclick=()=>{R.raten=!R.raten;R.plan=null;rtRender()};
  $('rtnew').onclick=()=>{const {w,y}=R;rtOpen(w);RT.y=y};
- $('rthide').onclick=()=>{const v=$('rtsecret').value.trim().toLowerCase();if(!/^[a-h][1-8]$/.test(v)){R.msg='Bitte ein Feld wie e4 eingeben.';R.kind='bad';rtRender();return}Object.assign(R,{king:v,gone:new Set(),undo:[],n:0,log:[],found:false,raten:false,msg:'Der König hat sich versteckt. Stellt eine Ja/Nein-Frage.',kind:'info'});rtRender()};
- $('rtask').onclick=()=>{const f=FR.find(x=>x[0]===(R.q||'dame'));const p=f[2]?($('rtp').value):null;const ja=f[3](R.king,p);R.n++;const text=f[1].replace('{p}',p)+' '+(ja?'Ja.':'Nein.');R.log.push(text);R.msg='Frage '+R.n+': '+text+(R.auto?'':' Streicht jetzt die Felder, auf denen er nicht stehen kann.');R.kind=ja?'good':'bad';
-  if(R.auto){R.undo.push(new Set(R.gone));for(const q of ALL)if(f[3](q,p)!==ja)R.gone.add(q)}rtRender()};
+ $('rthide').onclick=()=>{const v=$('rtsecret').value.trim().toLowerCase();if(!/^[a-h][1-8]$/.test(v)){R.msg='Bitte ein Feld wie e4 eingeben.';R.kind='bad';rtRender();return}Object.assign(R,{king:v,gone:new Set(),undo:[],n:0,log:[],found:false,raten:false,plan:null,frage:'',msg:'Der König hat sich versteckt. Die Kinder stellen eine Ja/Nein-Frage.',kind:'info'});rtRender()};
  $('rtback').onclick=()=>{const {w,y}=R;RT=null;show(w,y)}}
 function placementFen(sq){const rows=[];for(let r=8;r>=1;r--){let s='',e=0;for(const f of FILES){if(f+r===sq){if(e){s+=e;e=0}s+='K'}else e++}if(e)s+=e;rows.push(s)}return rows.join('/')}
 function rtStrike(sqs){const R=RT;R.undo.push(new Set(R.gone));const all=sqs.every(q=>R.gone.has(q));for(const q of sqs)all?R.gone.delete(q):R.gone.add(q);rtRender()}
@@ -171,5 +212,5 @@ function show(w,y){const B=B0,F=D.fixed[w];document.getElementById('plannerbody'
    const html=materials(w).out.filter(m=>ids.includes(m.id)).map(m=>m.html(B).replace(/<style>[\s\S]*?<\/style>/g,'')).join('');printKeep(B,B.sheetCSS('Woche '+w)+PCSS+html)}}};
  if(y!=null)requestAnimationFrame(()=>scrollTo(0,y));else document.querySelector('.jp-week')?.scrollIntoView({block:'start'})}
 function mount(B){B0=B;const sec=document.getElementById('px-year');if(!sec)return;sec.querySelectorAll('[data-jpweek]').forEach(b=>b.onclick=()=>show(+b.dataset.jpweek))}
-window.Jahresplan={mount,show,overviewHTML,data:D,_fb:()=>FB,_rt:()=>RT};
+window.Jahresplan={mount,show,overviewHTML,data:D,_fb:()=>FB,_rt:()=>RT,_parse:parseFrage};
 })();

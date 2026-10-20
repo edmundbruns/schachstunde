@@ -15,4 +15,9 @@ if(process.env.STOCKFISH){const ev=(fen,mv)=>{const o=execSync(`(echo "position 
  for(const [k,t] of Object.entries(D.tasks).filter(([k])=>/^(tx|k1|sg|t1)-/.test(k))){if(/^Guter Tausch/.test(t.answer)){assert(ev(t.fen,t.checks[0])>=100,k+' guter Tausch');sf++}
   if(/^Schlechter Tausch|^Nein\. .*(gibt|Dame \(9\)|Turm \(5\))/.test(t.answer)&&t.forbidden.length){const best=ev(t.fen),bad=ev(t.fen,t.forbidden[0]);assert(best-bad>=150,k+' schlechter Tausch '+best+' '+bad);sf++}}}
 for(const [w,F] of Object.entries(D.fixed)){assert.equal(F.phasen.length,6,"Woche "+w+" sechs Phasen");assert(!F.phasen.some(p=>"min" in p),"keine Zeitangaben")}
+// Königliche Rettung: Fragen der Kinder als Satz
+vm.runInContext(fs.readFileSync('dist/jahresplan.js','utf8'),ctx);const P=ctx.window.Jahresplan._parse;
+const fr=(t,n)=>{const r=P(t);assert(r.ok&&r.set.size===n,t+' → '+r.text+' '+r.set.size)};
+fr('Steht der König auf einem Zentrumsfeld oder ist er am Damenflügel?',34);fr('Steht er auf der vierten Reihe?',8);fr('Steht er auf einem dunklen Feld und nicht am Rand?',18);
+fr('Ist er links von der e-Linie und auf einem hellen Feld?',16);fr('Ist er auf der Diagonale von a1 nach h8?',8);fr('Steht er auf der b-Linie oder der 7. Reihe?',15);assert(!P('Mag der König Pizza?').ok);
 console.log(`Feste Stundenverläufe: ${Object.keys(D.fixed).length}. Jahresplan Bronze: ${D.lessons.length} Wochen, ${n} Brettaufgaben regelgerecht, Pools vollständig, Aufgabennummern stimmen`+(sf?`, ${sf} Tausch-Aussagen mit Stockfish bestätigt`:''));

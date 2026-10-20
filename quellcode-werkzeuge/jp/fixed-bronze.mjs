@@ -151,9 +151,9 @@ export const FIXED={
     "kinder": "Unser Brett ist vollständig aufgeräumt.",
     "links": [
      {
-      "art": "info",
-      "label": "Stundenentwürfe",
-      "url": "https://www.edmundbruns.com/schach/schachlehrende/stundenentwuerfe/"
+      "art": "druck",
+      "label": "Plakat: Regeln und Rituale (Aufräum-Ritual)",
+      "was": "regeln"
      }
     ]
    }
