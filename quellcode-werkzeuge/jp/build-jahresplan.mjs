@@ -46,8 +46,25 @@ for(const L of LESSONS){
 if(PLAN.length!==36||PLAN.some((r,i)=>r[0]!==i+1))err('Jahresplan: 36 fortlaufende Wochen erwartet');
 // Feste Stunden für das Praxiswissen
 const SQ=/^[a-h][1-8]$/;
+// Zugfelder für Turm, Läufer, Dame (gleitend) aus der Stellung berechnen, damit Lösungen nicht von Hand gezählt werden
+function boardOf(fen){const m={};fen.split('/').forEach((row,ri)=>{let f=0;for(const c of row){if(/\d/.test(c))f+=+c;else{m['abcdefgh'[f]+(8-ri)]=c;f++}}});return m}
+const DIRS={r:[[1,0],[-1,0],[0,1],[0,-1]],b:[[1,1],[1,-1],[-1,1],[-1,-1]]};DIRS.q=[...DIRS.r,...DIRS.b];
+function ziele(fen,sq){const B=boardOf(fen),p=B[sq];if(!p||!DIRS[p.toLowerCase()])return null;const weiss=p===p.toUpperCase(),out=[];
+ for(const [df,dr] of DIRS[p.toLowerCase()]){let f='abcdefgh'.indexOf(sq[0])+df,r=+sq[1]+dr;while(f>=0&&f<8&&r>=1&&r<=8){const q='abcdefgh'[f]+r,o=B[q];if(o){if((o===o.toUpperCase())!==weiss)out.push(q);break}out.push(q);f+=df;r+=dr}}return out}
+function pruefZiele(fen,P){const B=boardOf(fen);
+ if(P.zuege){let z=ziele(fen,P.zuege);if(P.reihe)z=z.filter(q=>+q[1]===P.reihe);return z}
+ if(P.schlaege)return [...new Set(P.schlaege.flatMap(s=>ziele(fen,s).filter(q=>B[q])))];
+ if(P.beide){const [a,b]=P.beide.map(s=>new Set(ziele(fen,s)));return [...a].filter(q=>b.has(q))}
+ if(P.farbe){const dk=q=>('abcdefgh'.indexOf(q[0])+ +q[1])%2;return [...'abcdefgh'].map(f=>f+P.reihe).filter(q=>q!==P.farbe&&dk(q)===dk(P.farbe))}
+ return null}
 for(const [w,F] of Object.entries(FIXED)){if(!LESSONS.find(x=>x.week===+w))err('Feste Stunde ohne Woche '+w);
- for(const f of ['thema','lernziel','leitfrage','umfang'])if(!F[f])err(`W${w}: ${f} fehlt`);
+ for(const f of ['thema','lernziel','leitfrage','vorwissen','umfang','nachher'])if(!F[f])err(`W${w}: ${f} fehlt`);
+ for(const f of ['hilfe','zusatz','kuerzen'])if(!F.hinweise?.[f])err(`W${w}: Hinweis ${f} fehlt`);
+ const alles=F.phasen.flatMap(p=>p.ablauf).join(' ');
+ if(!/wechseln die Rollen/.test(alles))err(`W${w}: Partnerarbeit ohne „Danach wechseln die Rollen“`);
+ if(!/Warum|Woran erkennst du/.test(alles))err(`W${w}: keine Begründungsfrage im Ablauf`);
+ for(const [set,list] of Object.entries(F.feld||{}))list.forEach((t,i)=>{if(!t.pruef)return;const z=pruefZiele(t.fen,t.pruef);if(!z){err(`W${w} ${set}${i+1}: Prüfung nicht berechenbar`);return}
+  if(t.targets==null)t.targets=z;else if([...t.targets].sort().join()!==[...z].sort().join())err(`W${w} ${set}${i+1}: Lösung ${t.targets} stimmt nicht, berechnet ${z}`);delete t.pruef});
  if(F.phasen.length!==6)err(`W${w}: sechs Phasen erwartet`);
  for(const p of F.phasen){if(!p.ablauf?.length||!p.kinder||!p.titel)err(`W${w} ${p.name}: Text fehlt`);if(!p.links?.length)err(`W${w} ${p.name}: kein Material-Link`);
   for(const l of p.links){if(l.art==='feld'&&!F.feld?.[l.set])err(`W${w}: Feldaufgaben ${l.set} fehlen`);if(l.art==='brett'&&Array.isArray(l.aufgaben))for(const k of l.aufgaben)resolve(k)}}

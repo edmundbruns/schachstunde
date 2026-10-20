@@ -68,9 +68,10 @@ Spiele und Minispiele der Schulschachstiftung, passend zum Plan:
 
 | Woche | Spiel |
 |---|---|
-| 1 | [Figurenaufstellen](https://www.youtube.com/watch?v=r5r3fYH6_WI), [Aufbau-Challenge](https://www.youtube.com/watch?v=zz0MdJ6aEg4) |
-| 2 | [Schiffe versenken](https://www.youtube.com/watch?v=4Kh3sRBwY4Q), [Kopfgeometrie](https://www.youtube.com/watch?v=-9GApX-R3Ec) |
-| 3 | [Turm: Steinchen](https://www.youtube.com/watch?v=Jd-xNNoYH-4), [Bauern gegen Turm](https://www.youtube.com/watch?v=aq0eeJh8fKc), [Labyrinth](https://www.youtube.com/watch?v=wc0kKlbhC-Y) |
+| 1 | [Aufbau-Challenge](https://www.youtube.com/watch?v=zz0MdJ6aEg4) (eingebaut) |
+| 2 | [Schiffe versenken](https://www.youtube.com/watch?v=4Kh3sRBwY4Q) (eingebaut), [Kopfgeometrie](https://www.youtube.com/watch?v=-9GApX-R3Ec) |
+| 3 | [Turm: Steinchen](https://www.youtube.com/watch?v=Jd-xNNoYH-4) (eingebaut), [Bauern gegen Turm](https://www.youtube.com/watch?v=aq0eeJh8fKc), [Labyrinth](https://www.youtube.com/watch?v=wc0kKlbhC-Y) |
+| 6 | [Figurenaufstellen](https://www.youtube.com/watch?v=r5r3fYH6_WI): Figuren nur auf nicht angegriffene Felder setzen, braucht alle Gangarten |
 | 4 | [Fang den Springer](https://www.youtube.com/watch?v=lyCmGN_bbvM), [Springer gegen Dame](https://www.youtube.com/watch?v=HZpZjOzXZ-g), [Springer tauschen die Ställe](https://www.youtube.com/watch?v=L_zhsiFww38), [Königsrennen](https://www.youtube.com/watch?v=A_k_JdwmI7g) |
 | 5, 13 | [Bauernumwandlung: Zwei verbundene Freibauern](https://www.youtube.com/watch?v=yV_RWkE4uWg), [Bauern gegen König](https://www.youtube.com/watch?v=e3eFR_N4ZEA), [Bauernlawine](https://www.youtube.com/watch?v=qHvbQKepwGE) |
 | 7 | [Punktespiel](https://www.youtube.com/watch?v=TCasLqTc5LM), [Figurenrechnen](https://www.youtube.com/watch?v=VYISRiKRun0), [Wer schlägt schneller?](https://www.youtube.com/watch?v=n9kBUEv9_V4) |
@@ -79,5 +80,7 @@ Spiele und Minispiele der Schulschachstiftung, passend zum Plan:
 | 28, 33 | [Das Treppenmatt](https://www.youtube.com/watch?v=4fmT6CoCKRw) |
 | Spielstunden | [Minischach](https://www.youtube.com/watch?v=i_DoAy9dack), [Schach Bingo](https://www.youtube.com/watch?v=CDEEqAtAKdU), [Schachmemorie](https://www.youtube.com/watch?v=oXctsV-KUis) |
 
-Vor dem Einbau jedes Video kurz ansehen: Passt es genau zum Lernziel der Stunde?
+Vor dem Einbau Titel und Beschreibung prüfen (yt-dlp mit player_client=tv_embedded liefert die Beschreibung): Passt es genau zum Lernziel der Stunde?
 Für Themen ohne passendes Video der Schulschachstiftung (z. B. Rochade, en passant, Taktik) eigene Erklärung am Lehrbrett oder geprüfte andere Quelle.
+
+Die Builder-Prüfung (jp/build-jahresplan.mjs) verlangt pro Stunde: Vorwissen, Hilfe, Zusatz, „Wenn die Zeit knapp wird“, „Für dich nach der Stunde“, den Satz „Danach wechseln die Rollen“ und eine Begründungsfrage. Zugfelder von Turm, Läufer und Dame werden mit `pruef` automatisch berechnet.

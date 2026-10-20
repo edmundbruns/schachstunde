@@ -7,7 +7,13 @@ export const URLS={
  "entwuerfe": "https://www.edmundbruns.com/schach/schachlehrende/stundenentwuerfe/",
  "online": "https://edmundbruns.github.io/Schach-grundregeln/",
  "schiffe": "https://schachkicker.de/wp-content/uploads/2025/10/Schiffe-versenken-mit-Schachfiguren.pdf",
- "feldraten": "https://edmundbruns.github.io/feldraten/"
+ "feldraten": "https://edmundbruns.github.io/feldraten/",
+ "aufbauChallenge": "https://www.youtube.com/watch?v=zz0MdJ6aEg4",
+ "schiffeVideo": "https://www.youtube.com/watch?v=4Kh3sRBwY4Q",
+ "turmVideo": "https://www.youtube.com/watch?v=x-aCYU-YhTc",
+ "laeuferVideo": "https://www.youtube.com/watch?v=SvWXmnmGeUs",
+ "steinchen": "https://www.youtube.com/watch?v=Jd-xNNoYH-4",
+ "labyrinth": "https://www.youtube.com/watch?v=wc0kKlbhC-Y"
 };
 export const FIXED={
  "1": {
@@ -15,7 +21,7 @@ export const FIXED={
   "lernziel": "Ich kenne die Regeln der AG, kann das Schachbrett richtig ausrichten und alle Figuren korrekt aufstellen.",
   "leitfrage": "Wie machen wir unser Schachbrett startklar?",
   "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
-  "quelle": "AG-Konzept (Regeln und Rituale), Stundenentwürfe 1 und 8, Geschichte „Die Schachburg“, Ludgerus-Schachdiplom Bronze 1",
+  "quelle": "AG-Konzept (Regeln und Rituale), Stundenentwürfe 1 und 8, Geschichte „Die Schachburg“, Ludgerus-Schachdiplom Bronze 1, Spielidee „Aufbau-Challenge“ (Deutsche Schulschachstiftung)",
   "phasen": [
    {
     "name": "Einstieg",
@@ -63,9 +69,10 @@ export const FIXED={
     "name": "Übung",
     "titel": "Aufbauen und prüfen mit Rollenwechsel, Fehlersuche",
     "ablauf": [
-     "Figuren abräumen. Kind A baut auf, Kind B prüft mit der Aufbaukarte. Dann tauschen. Erfahrene Kinder bauen ohne Karte.",
+     "Figuren abräumen. Kind A baut auf, Kind B prüft mit der Aufbaukarte. Danach wechseln die Rollen. Erfahrene Kinder bauen ohne Karte.",
+     "Wer sicher ist, spielt die Aufbau-Challenge: Beide bauen gleichzeitig ihre Farbe auf. Wer zuerst richtig aufgebaut hat, gewinnt. Der Partner prüft, ein Fehler kostet den Sieg.",
      "Wer fertig ist, baut zwei Fehler ein, die der Partner findet und begründet.",
-     "Zum Abschluss der Übung gemeinsam am Lehrbrett: Fehlersuche G1 bis G6."
+     "Zum Abschluss der Übung gemeinsam am Lehrbrett: Fehlersuche G1 bis G6. Frage bei jedem Fehler: „Woran erkennst du das?“"
     ],
     "kinder": "Jedes Kind hat einmal selbst aufgebaut und einmal geprüft.",
     "links": [
@@ -73,6 +80,11 @@ export const FIXED={
       "art": "druck",
       "label": "Aufbaukarte (Hilfe)",
       "was": "aufbaukarte"
+     },
+     {
+      "art": "video",
+      "label": "Spielidee: Aufbau-Challenge (Video)",
+      "url": "https://www.youtube.com/watch?v=zz0MdJ6aEg4"
      },
      {
       "art": "feld",
@@ -91,7 +103,7 @@ export const FIXED={
     "titel": "Häufigsten Fehler klären, Merksatz",
     "ablauf": [
      "Stopp-Signal. Frage: „Welcher Fehler ist euch passiert?“ Kläre den häufigsten Fehler am Lehrbrett, meist sind Dame und König vertauscht.",
-     "Zwei oder drei Fragen zur Schachburg (S1 bis S6) mündlich stellen. Alle sprechen den Merksatz."
+     "Zwei oder drei Fragen zur Schachburg (S1 bis S6) mündlich stellen. Frage nach: „Woran erkennst du, dass die Dame richtig steht?“ Alle sprechen den Merksatz."
     ],
     "kinder": "Ich kann sagen, woran ich eine richtige Grundstellung erkenne.",
     "links": [
@@ -106,7 +118,7 @@ export const FIXED={
     "name": "Lerncheck",
     "titel": "Allein aufbauen, du beobachtest",
     "ablauf": [
-     "Aufbaukarten umdrehen. Kind A baut die Grundstellung ohne Vorlage auf, Kind B schaut nur zu. Dann tauschen.",
+     "Aufbaukarten umdrehen. Kind A baut die Grundstellung ohne Vorlage auf, Kind B schaut nur zu. Danach wechseln die Rollen.",
      "Du gehst herum und notierst auf dem Beobachtungsbogen: Liegt das Brett richtig? Stehen alle Figuren richtig? Allein oder mit Hilfe? Bei Fehlern gibst du einen konkreten Tipp, zum Beispiel „Schau auf die Farbe unter deiner Dame“, und das Kind korrigiert.",
      "Optional für schnelle Kinder oder als Hausaufgabe: Lerncheck-Zettel L1 bis L6."
     ],
@@ -558,16 +570,19 @@ export const FIXED={
   },
   "hinweise": {
    "hilfe": "Aufbaukarte benutzen.",
-   "zusatz": "Zwei Fehler einbauen, die der Partner findet und begründet."
+   "zusatz": "Zwei Fehler einbauen, die der Partner findet und begründet.",
+   "kuerzen": "Die Fehlersuche am Lehrbrett auf G1 bis G3 kürzen, die Aufbau-Challenge entfällt. Lerncheck und Aufräum-Ritual bleiben."
   },
-  "regelnSpaeter": "Sobald wir Partien spielen, kommt dazu: Berührt, geführt. Losgelassen ist gezogen. Vor und nach jeder Partie geben wir uns die Hand."
+  "regelnSpaeter": "Sobald wir Partien spielen, kommt dazu: Berührt, geführt. Losgelassen ist gezogen. Vor und nach jeder Partie geben wir uns die Hand.",
+  "vorwissen": "Keins. Manche Kinder kennen die Figuren schon.",
+  "nachher": "Wer baut noch mit Aufbaukarte auf? Welche Fehler kamen oft vor, zum Beispiel Brett gedreht oder Dame und König vertauscht? Diese Kinder prüfst du in Woche 2 beim Aufbau-Ritual zuerst."
  },
  "2": {
   "thema": "Felder haben Namen: Linien, Reihen und Diagonalen, Schiffe versenken",
   "lernziel": "Ich kann jedes Feld auf dem Schachbrett schnell finden und richtig benennen.",
   "leitfrage": "Wie finde ich jedes Feld schnell, und wie sage ich anderen genau, welches Feld ich meine?",
   "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
-  "quelle": "Erklärvideo „Schach erklärt: Das Schachbrett“ (Deutsche Schulschachstiftung), Arbeitsheft Schachbrett, Stundenentwurf 1, Schiffe versenken mit Schachfiguren und „Königliche Rettung“ (nach einer Idee von Walter Rädler), Training Feldraten",
+  "quelle": "Erklärvideo „Schach erklärt: Das Schachbrett“ (Deutsche Schulschachstiftung), Arbeitsheft Schachbrett, Stundenentwurf 1, Schiffe versenken mit Schachfiguren und „Königliche Rettung“ (nach einer Idee von Walter Rädler), Training Feldraten, Spielidee „Schiffe versenken“ als Video (Deutsche Schulschachstiftung)",
   "phasen": [
    {
     "name": "Einstieg",
@@ -614,6 +629,7 @@ export const FIXED={
     "ablauf": [
      "Regeln kurz erklären: Jedes Kind versteckt drei Figuren als Schiffe, einen Bauern, einen Läufer (vier Felder lang) und einen Springer (seine Zielfelder als Kreise). Zwischen zwei Figuren bleibt ein Feld frei.",
      "Abwechselnd ein Feld ansagen, zum Beispiel „e4“. Treffer: X und noch einmal. Wasser: W, dann ist der andere dran. „Figur versenkt!“, wenn alle Felder getroffen sind.",
+     "Zweite Runde: Danach wechseln die Rollen, das andere Kind sagt zuerst an.",
      "Wer schnell fertig ist, spielt mit dir die Variante „Königliche Rettung“."
     ],
     "kinder": "Ich sage jedes Feld richtig an.",
@@ -622,6 +638,11 @@ export const FIXED={
       "art": "blatt",
       "label": "Arbeitsblatt Schiffe versenken (PDF)",
       "url": "https://schachkicker.de/wp-content/uploads/2025/10/Schiffe-versenken-mit-Schachfiguren.pdf"
+     },
+     {
+      "art": "video",
+      "label": "Spielidee: Schiffe versenken (Video)",
+      "url": "https://www.youtube.com/watch?v=4Kh3sRBwY4Q"
      }
     ]
    },
@@ -630,7 +651,7 @@ export const FIXED={
     "titel": "Arbeitsheft Schachbrett",
     "ablauf": [
      "Die Kinder lösen das Arbeitsheft Schachbrett, allein oder zu zweit.",
-     "Vergleich am Lehrbrett mit A7 bis A12."
+     "Vergleich am Lehrbrett mit A7 bis A12. Frage nach: „Woran erkennst du, ob Felder auf einer Linie oder auf einer Reihe liegen?“"
     ],
     "kinder": "Mein Arbeitsheft ist gelöst und verglichen.",
     "links": [
@@ -1077,7 +1098,8 @@ export const FIXED={
   },
   "hinweise": {
    "hilfe": "Mit dem Finger erst den Buchstaben unten, dann die Zahl am Rand suchen.",
-   "zusatz": "Variante „Königliche Rettung“ oder Aufgabe 1 im Arbeitsheft mit eigenen Diagonalen."
+   "zusatz": "Variante „Königliche Rettung“ oder Aufgabe 1 im Arbeitsheft mit eigenen Diagonalen.",
+   "kuerzen": "Die Feldraten-Blitzrunde entfällt, der Vergleich am Lehrbrett wird auf A7 bis A9 gekürzt. Lerncheck und Aufräumen bleiben."
   },
   "arbeitsheft": [
    {
@@ -1295,7 +1317,602 @@ export const FIXED={
     "Aufräum-Ritual",
     "Je 16 Figuren zählen, dann einsortieren."
    ]
-  ]
+  ],
+  "vorwissen": "Grundstellung und Merksatz „Rechts unten ist hell“ (Woche 1).",
+  "nachher": "Wer nennt noch die Zahl zuerst oder verwechselt Linie und Reihe? Diese Kinder sagen in Woche 3 die Zielfelder für Turm und Läufer an."
+ },
+ "3": {
+  "thema": "Turm und Läufer",
+  "lernziel": "Ich kann mit Turm und Läufer regelgerecht ziehen und schlagen.",
+  "leitfrage": "Wohin darf der Turm ziehen, wohin der Läufer, und was hält sie auf?",
+  "vorwissen": "Feldnamen, Linie, Reihe und Diagonale (Woche 2).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Erklärvideos „Schach erklärt: Der Turm“ und „Schach erklärt: Der Läufer“, Minispiel „Turm: Steinchen“ und „Labyrinth“ (Deutsche Schulschachstiftung). Brettaufgaben eigene Aufgaben, alle Zugfelder automatisch nachgerechnet",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Wo stehen Turm und Läufer? Linie, Reihe, Diagonale",
+    "ablauf": [
+     "Stopp-Signal kurz wiederholen. Am Lehrbrett W1 und W2: Wo stehen Turm und Läufer in der Grundstellung, auf welcher Farbe steht jeder Läufer?",
+     "W3 bis W6: Linie, Reihe und Diagonalen markieren lassen. Ziel nennen: „Heute lernt ihr, wie Turm und Läufer ziehen. Dafür braucht ihr Linie, Reihe und Diagonale.“"
+    ],
+    "kinder": "Ich zeige Linie, Reihe und Diagonale.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Erklärvideos, dann gemeinsam am Lehrbrett",
+    "ablauf": [
+     "Erklärvideo „Der Turm“ zeigen. Danach am Lehrbrett T1 bis T3: ziehen, eigene Figuren halten auf, schlagen.",
+     "Erklärvideo „Der Läufer“ zeigen. Danach T4 bis T6. Die Kinder probieren am eigenen Brett mit: Turm oder Läufer auf d4 stellen und alle Zielfelder mit dem Finger zeigen.",
+     "Merksatz: „Der Turm zieht gerade, der Läufer zieht schräg. Keiner springt über Figuren.“ Schlagen heißt: auf das Feld der gegnerischen Figur ziehen und sie vom Brett nehmen."
+    ],
+    "kinder": "Ich zeige alle Felder, auf die Turm und Läufer ziehen können.",
+    "links": [
+     {
+      "art": "video",
+      "label": "Erklärvideo „Der Turm“",
+      "url": "https://www.youtube.com/watch?v=x-aCYU-YhTc"
+     },
+     {
+      "art": "video",
+      "label": "Erklärvideo „Der Läufer“",
+      "url": "https://www.youtube.com/watch?v=SvWXmnmGeUs"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Turm und Läufer T1 bis T6",
+      "set": "T"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Zielfelder zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A stellt einen Turm oder Läufer auf und legt ein Steinchen als Ziel. Kind B erreicht das Ziel in möglichst wenigen Zügen und sagt jeden Zug an, zum Beispiel „Turm von a1 nach a5“. Danach wechseln die Rollen.",
+     "Liegt das Ziel für den Läufer auf der anderen Farbe, kommt er nie hin. Frage: „Woran erkennst du das?“",
+     "Allein: Arbeitsblatt A1 bis A6. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich sage meine Züge richtig an und löse das Arbeitsblatt.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Turm und Läufer",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6 die häufigsten Fehler besprechen: über Figuren springen, mit dem Läufer die Farbe wechseln, eigene Figuren schlagen.",
+     "Bei jeder Aufgabe nachfragen: „Warum ist der Zug falsch?“ oder „Woran erkennst du das?“ Alle sprechen den Merksatz."
+    ],
+    "kinder": "Ich kann erklären, warum ein Turm- oder Läuferzug nicht erlaubt ist.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, lässt du dir bei einigen am Brett einen Turmzug und einen Läuferzug mit Schlagen zeigen. Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich ziehe und schlage mit Turm und Läufer ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Turm: Steinchen“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Jedes Kind hat einen Turm, Weiß auf a1, Schwarz auf h8. Auf dem Brett liegen zehn Steinchen. Abwechselnd ziehen. Wer auf ein Steinchen zieht, sammelt es ein. Die Türme schlagen sich nicht. Wer am Ende mehr Steinchen hat, gewinnt.",
+     "Zweite Runde mit Läufern: Jedes Kind bekommt einen Läufer auf einer anderen Farbe. Frage: „Wer hat Vorteil, wenn mehr Steinchen auf hellen Feldern liegen? Warum?“",
+     "Rückblick: „Worauf achtest du beim Läufer?“ Aufräum-Ritual. Ausblick: Nächstes Mal kommen Dame, König und Springer."
+    ],
+    "kinder": "Ich sammle Steinchen nur mit erlaubten Zügen.",
+    "links": [
+     {
+      "art": "video",
+      "label": "Minispiel „Turm: Steinchen“ (Video)",
+      "url": "https://www.youtube.com/watch?v=Jd-xNNoYH-4"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Linie, Reihe oder Diagonale mit dem Finger nachfahren. Weniger Figuren auf das Brett stellen.",
+   "zusatz": "Das Ziel in zwei Zügen erreichen und mehrere Wege finden. Oder das Minispiel „Labyrinth“ der Schulschachstiftung mit dem Turm.",
+   "kuerzen": "„Zielfelder zu zweit“ auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
+  },
+  "nachher": "Wer lässt Turm oder Läufer noch über Figuren springen? Wer wechselt mit dem Läufer die Farbe? Diese Fehler greifst du in Woche 4 im Einstieg wieder auf.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Klicke die beiden weißen Türme an. Auf welchen Feldern stehen sie?",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+     "targets": [
+      "a1",
+      "h1"
+     ],
+     "antwort": "a1 und h1, in den Ecken.",
+     "hilfe": [
+      "Türme stehen in den Ecken der Burg.",
+      "Weiß steht unten."
+     ]
+    },
+    {
+     "frage": "Klicke die beiden weißen Läufer an. Auf welcher Farbe steht jeder?",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+     "targets": [
+      "c1",
+      "f1"
+     ],
+     "antwort": "c1 ist dunkel, f1 ist hell. Jede Seite hat einen Läufer für jede Farbe.",
+     "hilfe": [
+      "Die Läufer stehen neben den Springern.",
+      "Schau auf die Farbe unter jedem Läufer."
+     ]
+    },
+    {
+     "frage": "Markiere die d-Linie.",
+     "targets": [
+      "d1",
+      "d2",
+      "d3",
+      "d4",
+      "d5",
+      "d6",
+      "d7",
+      "d8"
+     ],
+     "antwort": "d1 bis d8. Eine Linie steht senkrecht.",
+     "hilfe": [
+      "Eine Linie steht senkrecht.",
+      "Klicke auf das d am Rand."
+     ]
+    },
+    {
+     "frage": "Markiere die 6. Reihe.",
+     "targets": [
+      "a6",
+      "b6",
+      "c6",
+      "d6",
+      "e6",
+      "f6",
+      "g6",
+      "h6"
+     ],
+     "antwort": "a6 bis h6. Eine Reihe liegt waagerecht.",
+     "hilfe": [
+      "Eine Reihe liegt waagerecht.",
+      "Klicke auf die 6 am Rand."
+     ]
+    },
+    {
+     "frage": "Markiere die Diagonale von c1 nach h6.",
+     "targets": [
+      "c1",
+      "d2",
+      "e3",
+      "f4",
+      "g5",
+      "h6"
+     ],
+     "antwort": "c1, d2, e3, f4, g5, h6. Alle Felder sind dunkel.",
+     "hilfe": [
+      "Eine Diagonale läuft schräg.",
+      "Von c1 immer ein Feld nach rechts und eins nach oben."
+     ]
+    },
+    {
+     "frage": "Markiere die Diagonale von a2 nach g8.",
+     "targets": [
+      "a2",
+      "b3",
+      "c4",
+      "d5",
+      "e6",
+      "f7",
+      "g8"
+     ],
+     "antwort": "a2, b3, c4, d5, e6, f7, g8. Alle Felder sind hell.",
+     "hilfe": [
+      "Eine Diagonale läuft schräg.",
+      "Von a2 immer ein Feld nach rechts und eins nach oben."
+     ]
+    }
+   ],
+   "T": [
+    {
+     "frage": "Der Turm steht auf d4. Markiere alle Felder, auf die er ziehen kann.",
+     "fen": "8/8/8/8/3R4/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "d4"
+     },
+     "targets": null,
+     "antwort": "14 Felder: die ganze d-Linie und die ganze 4. Reihe, ohne d4.",
+     "hilfe": [
+      "Der Turm zieht gerade, auf seiner Linie und seiner Reihe.",
+      "Tipp: Klicke auf d und 4 am Rand. Das Feld d4 selbst gehört nicht dazu."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Turm ziehen kann. Achte auf die eigenen Bauern.",
+     "fen": "8/8/8/1P6/8/8/1R2P3/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "b2"
+     },
+     "targets": null,
+     "antwort": "a2, c2, d2, b1, b3 und b4. Vor einer eigenen Figur hält der Turm an. Er darf nicht über sie springen.",
+     "hilfe": [
+      "Auf b5 und e2 stehen eigene Bauern.",
+      "Der Turm hält vor einer eigenen Figur an."
+     ]
+    },
+    {
+     "frage": "Welche schwarzen Figuren kann der Turm schlagen? Klicke sie an.",
+     "fen": "8/8/n7/8/8/2p5/8/R4b2",
+     "pruef": {
+      "schlaege": [
+       "a1"
+      ]
+     },
+     "targets": null,
+     "antwort": "a6 und f1. Der Turm zieht auf das Feld der gegnerischen Figur. Der Bauer auf c3 steht weder auf der a-Linie noch auf der 1. Reihe.",
+     "hilfe": [
+      "Suche zuerst die Linie und die Reihe des Turms.",
+      "Steht eine schwarze Figur darauf, ohne dass etwas im Weg ist?"
+     ]
+    },
+    {
+     "frage": "Der Läufer steht auf d4. Markiere alle Felder, auf die er ziehen kann.",
+     "fen": "8/8/8/8/3B4/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "d4"
+     },
+     "targets": null,
+     "antwort": "13 Felder auf den beiden Diagonalen durch d4. Alle sind dunkel wie d4.",
+     "hilfe": [
+      "Der Läufer zieht schräg.",
+      "Er bleibt immer auf seiner Farbe."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Läufer ziehen kann.",
+     "fen": "8/8/8/6p1/8/3P4/1P6/2B5",
+     "leer": true,
+     "pruef": {
+      "zuege": "c1"
+     },
+     "targets": null,
+     "antwort": "d2, e3, f4 und g5. Auf g5 schlägt er den schwarzen Bauern und bleibt dort. Nach links ist der eigene Bauer auf b2 im Weg.",
+     "hilfe": [
+      "Nach links oben steht ein eigener Bauer.",
+      "Auf g5 steht eine schwarze Figur: Dort darf er schlagen, aber nicht weiter."
+     ]
+    },
+    {
+     "frage": "Welche schwarzen Figuren kann der Läufer schlagen? Klicke sie an. Warum nicht den Bauern auf e6?",
+     "fen": "8/1r5n/4p3/8/4B3/8/2P5/8",
+     "pruef": {
+      "schlaege": [
+       "e4"
+      ]
+     },
+     "targets": null,
+     "antwort": "b7 und h7. Der Bauer auf e6 steht gerade vor dem Läufer, nicht schräg.",
+     "hilfe": [
+      "Fahre die vier Diagonalen von e4 aus ab.",
+      "Der Läufer zieht nie gerade."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Markiere alle Felder, auf die der Turm ziehen kann.",
+     "fen": "8/8/5P2/8/8/2n2R2/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "f3"
+     },
+     "targets": null,
+     "antwort": "f1, f2, f4, f5, g3, h3, e3, d3 und c3. Auf c3 schlägt er den Springer, vor f6 hält er an.",
+     "hilfe": [
+      "Linie f und Reihe 3.",
+      "Eigene Figur: anhalten. Gegnerische Figur: schlagen und anhalten."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Läufer ziehen kann. Wo muss er anhalten?",
+     "fen": "8/3p4/8/1B6/8/8/4P3/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "b5"
+     },
+     "targets": null,
+     "antwort": "a6, c6, d7, a4, c4 und d3. Auf d7 schlägt er und hält an, vor dem eigenen Bauern auf e2 hält er auch an.",
+     "hilfe": [
+      "Der Läufer auf b5 hat vier Richtungen.",
+      "Auf d7 und e2 stehen Figuren."
+     ]
+    },
+    {
+     "frage": "Der Turm auf h1 will nach a8. Das geht nicht in einem Zug. Markiere die beiden Felder, über die er in zwei Zügen hinkommt.",
+     "fen": "8/8/8/8/8/8/8/7R",
+     "leer": true,
+     "targets": [
+      "a1",
+      "h8"
+     ],
+     "antwort": "Über a1 oder über h8. a8 liegt weder auf der h-Linie noch auf der 1. Reihe, deshalb braucht der Turm zwei Züge.",
+     "hilfe": [
+      "Erst auf der Reihe, dann auf der Linie, oder umgekehrt.",
+      "Die Ecken helfen."
+     ]
+    },
+    {
+     "frage": "Der Läufer auf c1 bleibt immer auf seiner Farbe. Markiere alle Felder der 8. Reihe, die er irgendwann erreichen kann.",
+     "fen": "8/8/8/8/8/8/8/2B5",
+     "leer": true,
+     "pruef": {
+      "farbe": "c1",
+      "reihe": 8
+     },
+     "targets": [
+      "b8",
+      "d8",
+      "f8",
+      "h8"
+     ],
+     "antwort": "b8, d8, f8 und h8. c1 ist dunkel, also erreicht er nur die dunklen Felder.",
+     "hilfe": [
+      "Welche Farbe hat c1?",
+      "Auf der 8. Reihe wechseln hell und dunkel ab."
+     ]
+    },
+    {
+     "frage": "Welche schwarzen Figuren kann der Turm schlagen? Klicke sie an. Warum nicht den Läufer auf d6?",
+     "fen": "8/8/3b4/8/6p1/3P4/8/n2R3b",
+     "pruef": {
+      "schlaege": [
+       "d1"
+      ]
+     },
+     "targets": null,
+     "antwort": "a1 und h1. Den Läufer auf d6 nicht, weil der eigene Bauer auf d3 im Weg steht.",
+     "hilfe": [
+      "Prüfe die d-Linie und die 1. Reihe.",
+      "Was steht zwischen d1 und d6?"
+     ]
+    },
+    {
+     "frage": "Weiß hat Turm und Läufer. Klicke alle schwarzen Figuren an, die Weiß schlagen kann.",
+     "fen": "r7/8/2p5/3q4/R3n3/8/6B1/8",
+     "pruef": {
+      "schlaege": [
+       "a4",
+       "g2"
+      ]
+     },
+     "targets": null,
+     "antwort": "e4 und a8. Die Dame auf d5 und der Bauer auf c6 sind sicher, der Springer auf e4 steht davor.",
+     "hilfe": [
+      "Prüfe zuerst den Turm, dann den Läufer.",
+      "Der Läufer auf g2 kommt nur bis e4."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Ein Kind zieht den Turm von a1 nach a7. Klicke die Figur an, die im Weg steht. Warum ist der Zug falsch?",
+     "fen": "8/8/8/8/P7/8/8/R7",
+     "targets": [
+      "a4"
+     ],
+     "antwort": "Der eigene Bauer auf a4. Der Turm darf nicht über Figuren springen.",
+     "hilfe": [
+      "Fahre die a-Linie nach oben ab.",
+      "Was steht zwischen a1 und a7?"
+     ]
+    },
+    {
+     "frage": "Ein Kind zieht den Läufer von f1 nach f3. Das ist falsch. Markiere die Felder der 3. Reihe, die er wirklich erreichen kann.",
+     "fen": "8/8/8/8/8/8/8/5B2",
+     "leer": true,
+     "pruef": {
+      "zuege": "f1",
+      "reihe": 3
+     },
+     "targets": [
+      "d3",
+      "h3"
+     ],
+     "antwort": "d3 und h3. Gerade nach vorn zieht der Turm, der Läufer nur schräg.",
+     "hilfe": [
+      "Der Läufer zieht schräg.",
+      "Fahre beide Diagonalen von f1 bis zur 3. Reihe."
+     ]
+    },
+    {
+     "frage": "Darf der Turm eigene Figuren schlagen? Klicke alle Figuren an, die er schlagen darf.",
+     "fen": "8/4N3/8/1n2R3/8/8/4p3/8",
+     "pruef": {
+      "schlaege": [
+       "e5"
+      ]
+     },
+     "targets": null,
+     "antwort": "e2 und b5. Den eigenen Springer auf e7 darf er nicht schlagen.",
+     "hilfe": [
+      "Nur gegnerische Figuren werden geschlagen.",
+      "Schwarze Figuren sind dunkel."
+     ]
+    },
+    {
+     "frage": "Welcher Läufer kann nach h7 ziehen? Klicke ihn an. Woran erkennst du das?",
+     "fen": "8/8/8/8/8/3BB3/8/8",
+     "targets": [
+      "d3"
+     ],
+     "antwort": "Der Läufer auf d3. h7 ist hell wie d3, und die Diagonale d3, e4, f5, g6, h7 ist frei. Der Läufer auf e3 steht auf Dunkel.",
+     "hilfe": [
+      "Welche Farbe hat h7?",
+      "Ein Läufer bleibt auf seiner Farbe."
+     ]
+    },
+    {
+     "frage": "Der Läufer steht in der Ecke auf a1. Markiere alle Felder, auf die er ziehen kann.",
+     "fen": "8/8/8/8/8/8/8/B7",
+     "leer": true,
+     "pruef": {
+      "zuege": "a1"
+     },
+     "targets": null,
+     "antwort": "7 Felder, von b2 bis h8. Auf d4 in der Mitte hätte er 13. In der Mitte ist ein Läufer stärker.",
+     "hilfe": [
+      "Aus der Ecke gibt es nur eine Diagonale.",
+      "Sie führt bis h8."
+     ]
+    },
+    {
+     "frage": "Der schwarze Turm auf h8 ist am Zug. Klicke die weiße Figur an, die er schlagen kann.",
+     "fen": "2N1k2r/8/8/8/8/7B/8/8",
+     "pruef": {
+      "schlaege": [
+       "h8"
+      ]
+     },
+     "targets": null,
+     "antwort": "Den Läufer auf h3. Zum Springer auf c8 kommt er nicht, der eigene König auf e8 steht im Weg.",
+     "hilfe": [
+      "Prüfe die h-Linie und die 8. Reihe.",
+      "Was steht zwischen h8 und c8?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Markiere alle Felder, auf die der Turm auf b6 ziehen kann.",
+     "fen": "8/8/1R3p2/8/8/8/1P6/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "b6"
+     },
+     "targets": null,
+     "antwort": "b7, b8, b5, b4, b3, a6, c6, d6, e6 und f6. Auf f6 schlägt er.",
+     "hilfe": [
+      "Linie b und Reihe 6.",
+      "Vor b2 hält er an, auf f6 schlägt er."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Läufer auf e3 ziehen kann.",
+     "fen": "8/8/8/2n3P1/8/4B3/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "e3"
+     },
+     "targets": null,
+     "antwort": "f4, d4, c5, d2, c1, f2 und g1. Auf c5 schlägt er, vor g5 hält er an.",
+     "hilfe": [
+      "Vier Richtungen, alle schräg.",
+      "Eigene Figur: anhalten. Gegnerische Figur: schlagen."
+     ]
+    },
+    {
+     "frage": "Welche schwarzen Figuren kann der Läufer schlagen? Klicke sie an.",
+     "fen": "8/8/5r2/8/8/n7/1B1b4/2n5",
+     "pruef": {
+      "schlaege": [
+       "b2"
+      ]
+     },
+     "targets": null,
+     "antwort": "f6, a3 und c1. Der Läufer auf d2 steht auf der Reihe, nicht auf der Diagonale.",
+     "hilfe": [
+      "Fahre alle Diagonalen von b2 aus ab.",
+      "Nur schräg, nie gerade."
+     ]
+    },
+    {
+     "frage": "Welche schwarzen Figuren kann der Turm schlagen? Klicke sie an.",
+     "fen": "3b4/8/8/8/rP1R3n/8/3p4/3n4",
+     "pruef": {
+      "schlaege": [
+       "d4"
+      ]
+     },
+     "targets": null,
+     "antwort": "d8, h4 und d2. Den Turm auf a4 nicht, der eigene Bauer auf b4 ist im Weg. Den Springer auf d1 nicht, der Bauer auf d2 steht davor.",
+     "hilfe": [
+      "Prüfe alle vier Richtungen.",
+      "In jeder Richtung zählt nur die erste Figur."
+     ]
+    },
+    {
+     "frage": "Kann der Läufer auf f1 jemals nach f8 kommen? Wenn ja, markiere ein Feld, über das er geht. Wenn nein, markiere nichts und begründe.",
+     "fen": "8/8/8/8/8/8/8/5B2",
+     "leer": true,
+     "targets": [],
+     "antwort": "Nein. f1 ist hell, f8 ist dunkel. Ein Läufer bleibt immer auf seiner Farbe.",
+     "hilfe": [
+      "Welche Farbe haben f1 und f8?",
+      "Ein Läufer wechselt nie die Farbe."
+     ]
+    },
+    {
+     "frage": "Markiere das Feld, auf das sowohl der Turm als auch der Läufer ziehen können.",
+     "fen": "8/8/8/5B2/8/8/2R5/8",
+     "leer": true,
+     "pruef": {
+      "beide": [
+       "c2",
+       "f5"
+      ]
+     },
+     "targets": null,
+     "antwort": "c8. Der Turm kommt über die c-Linie hin, der Läufer über e6 und d7.",
+     "hilfe": [
+      "Markiere in Gedanken zuerst die Felder des Turms.",
+      "Welches davon liegt auch auf einer Diagonale des Läufers?"
+     ]
+    }
+   ]
+  }
  }
 };
 export const YEAR=[["Brett, Figuren, Schach und Matt",[1,11]],["Sonderregeln, Notation und erste Taktik",[12,26]],["Mattführung, Eröffnung und Endspiel",[27,36]]];
