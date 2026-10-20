@@ -49,13 +49,25 @@ const SQ=/^[a-h][1-8]$/;
 // Zugfelder für Turm, Läufer, Dame (gleitend) aus der Stellung berechnen, damit Lösungen nicht von Hand gezählt werden
 function boardOf(fen){const m={};fen.split('/').forEach((row,ri)=>{let f=0;for(const c of row){if(/\d/.test(c))f+=+c;else{m['abcdefgh'[f]+(8-ri)]=c;f++}}});return m}
 const DIRS={r:[[1,0],[-1,0],[0,1],[0,-1]],b:[[1,1],[1,-1],[-1,1],[-1,-1]]};DIRS.q=[...DIRS.r,...DIRS.b];
-function ziele(fen,sq){const B=boardOf(fen),p=B[sq];if(!p||!DIRS[p.toLowerCase()])return null;const weiss=p===p.toUpperCase(),out=[];
- for(const [df,dr] of DIRS[p.toLowerCase()]){let f='abcdefgh'.indexOf(sq[0])+df,r=+sq[1]+dr;while(f>=0&&f<8&&r>=1&&r<=8){const q='abcdefgh'[f]+r,o=B[q];if(o){if((o===o.toUpperCase())!==weiss)out.push(q);break}out.push(q);f+=df;r+=dr}}return out}
+const STEP={n:[[1,2],[2,1],[2,-1],[1,-2],[-1,-2],[-2,-1],[-2,1],[-1,2]],k:DIRS.q};
+const sqAt=(f,r)=>f>=0&&f<8&&r>=1&&r<=8?'abcdefgh'[f]+r:null,isW=p=>p===p.toUpperCase();
+// Felder, die eine Figur angreift (auch eigene Figuren als „gedeckt“), auf einem Brett B
+function angriff(B,sq){const p=B[sq],t=p.toLowerCase(),f0='abcdefgh'.indexOf(sq[0]),r0=+sq[1],out=[];
+ if(t==='p'){const d=isW(p)?1:-1;for(const df of [-1,1]){const q=sqAt(f0+df,r0+d);if(q)out.push(q)}return out}
+ if(STEP[t]){for(const [df,dr] of STEP[t]){const q=sqAt(f0+df,r0+dr);if(q)out.push(q)}return out}
+ for(const [df,dr] of DIRS[t]){let f=f0+df,r=r0+dr,q;while((q=sqAt(f,r))){out.push(q);if(B[q])break;f+=df;r+=dr}}return out}
+function angegriffen(B,weissGreiftAn){const s=new Set();for(const [q,p] of Object.entries(B))if(isW(p)===weissGreiftAn)for(const x of angriff(B,q))s.add(x);return s}
+function ziele(fen,sq){const B=boardOf(fen),p=B[sq];if(!p||p.toLowerCase()==='p')return null;const w=isW(p);
+ let z=angriff(B,sq).filter(q=>!B[q]||isW(B[q])!==w);
+ if(p.toLowerCase()==='k'){const C={...B};delete C[sq];const att=angegriffen(C,!w);z=z.filter(q=>!att.has(q))}return z}
 function pruefZiele(fen,P){const B=boardOf(fen);
  if(P.zuege){let z=ziele(fen,P.zuege);if(P.reihe)z=z.filter(q=>+q[1]===P.reihe);return z}
  if(P.schlaege)return [...new Set(P.schlaege.flatMap(s=>ziele(fen,s).filter(q=>B[q])))];
  if(P.beide){const [a,b]=P.beide.map(s=>new Set(ziele(fen,s)));return [...a].filter(q=>b.has(q))}
  if(P.farbe){const dk=q=>('abcdefgh'.indexOf(q[0])+ +q[1])%2;return [...'abcdefgh'].map(f=>f+P.reihe).filter(q=>q!==P.farbe&&dk(q)===dk(P.farbe))}
+ if(P.verboten){const k=P.verboten,frei=new Set(ziele(fen,k));return angriff(B,k).filter(q=>!(B[q]&&isW(B[q])===isW(B[k]))&&!frei.has(q))}
+ if(P.erreichen){const w=P.weiss!==false;return Object.keys(B).filter(q=>isW(B[q])===w&&(ziele(fen,q)||[]).includes(P.erreichen))}
+ if(P.ueber){const [von,nach]=P.ueber,p=B[von];return ziele(fen,von).filter(x=>{const C={...B};delete C[von];C[x]=p;return angriff(C,x).includes(nach)&&!C[nach]})}
  return null}
 for(const [w,F] of Object.entries(FIXED)){if(!LESSONS.find(x=>x.week===+w))err('Feste Stunde ohne Woche '+w);
  for(const f of ['thema','lernziel','leitfrage','vorwissen','umfang','nachher'])if(!F[f])err(`W${w}: ${f} fehlt`);

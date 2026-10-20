@@ -72,7 +72,7 @@ Spiele und Minispiele der Schulschachstiftung, passend zum Plan:
 | 2 | [Schiffe versenken](https://www.youtube.com/watch?v=4Kh3sRBwY4Q) (eingebaut), [Kopfgeometrie](https://www.youtube.com/watch?v=-9GApX-R3Ec) |
 | 3 | [Turm: Steinchen](https://www.youtube.com/watch?v=Jd-xNNoYH-4) (eingebaut), [Bauern gegen Turm](https://www.youtube.com/watch?v=aq0eeJh8fKc), [Labyrinth](https://www.youtube.com/watch?v=wc0kKlbhC-Y) |
 | 6 | [Figurenaufstellen](https://www.youtube.com/watch?v=r5r3fYH6_WI): Figuren nur auf nicht angegriffene Felder setzen, braucht alle Gangarten |
-| 4 | [Fang den Springer](https://www.youtube.com/watch?v=lyCmGN_bbvM), [Springer gegen Dame](https://www.youtube.com/watch?v=HZpZjOzXZ-g), [Springer tauschen die Ställe](https://www.youtube.com/watch?v=L_zhsiFww38), [Königsrennen](https://www.youtube.com/watch?v=A_k_JdwmI7g) |
+| 4 | [Fang den Springer](https://www.youtube.com/watch?v=lyCmGN_bbvM) (eingebaut), [Springer gegen Dame](https://www.youtube.com/watch?v=HZpZjOzXZ-g), [Springer tauschen die Ställe](https://www.youtube.com/watch?v=L_zhsiFww38), [Königsrennen](https://www.youtube.com/watch?v=A_k_JdwmI7g) |
 | 5, 13 | [Bauernumwandlung: Zwei verbundene Freibauern](https://www.youtube.com/watch?v=yV_RWkE4uWg), [Bauern gegen König](https://www.youtube.com/watch?v=e3eFR_N4ZEA), [Bauernlawine](https://www.youtube.com/watch?v=qHvbQKepwGE) |
 | 7 | [Punktespiel](https://www.youtube.com/watch?v=TCasLqTc5LM), [Figurenrechnen](https://www.youtube.com/watch?v=VYISRiKRun0), [Wer schlägt schneller?](https://www.youtube.com/watch?v=n9kBUEv9_V4) |
 | 8, 17 | [Matt-Challenge](https://www.youtube.com/watch?v=pTEy2s2dwNA) |

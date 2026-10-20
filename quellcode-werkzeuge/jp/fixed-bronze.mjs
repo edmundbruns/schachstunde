@@ -13,7 +13,12 @@ export const URLS={
  "turmVideo": "https://www.youtube.com/watch?v=x-aCYU-YhTc",
  "laeuferVideo": "https://www.youtube.com/watch?v=SvWXmnmGeUs",
  "steinchen": "https://www.youtube.com/watch?v=Jd-xNNoYH-4",
- "labyrinth": "https://www.youtube.com/watch?v=wc0kKlbhC-Y"
+ "labyrinth": "https://www.youtube.com/watch?v=wc0kKlbhC-Y",
+ "dameVideo": "https://www.youtube.com/watch?v=DSPy3bv5Yek",
+ "koenigVideo": "https://www.youtube.com/watch?v=-_B-l6MULxU",
+ "springerVideo": "https://www.youtube.com/watch?v=9nzY3wG0zY4",
+ "fangSpringer": "https://www.youtube.com/watch?v=lyCmGN_bbvM",
+ "koenigsrennen": "https://www.youtube.com/watch?v=A_k_JdwmI7g"
 };
 export const FIXED={
  "1": {
@@ -1915,6 +1920,585 @@ export const FIXED={
      "hilfe": [
       "Markiere in Gedanken zuerst die Felder des Turms.",
       "Welches davon liegt auch auf einer Diagonale des Läufers?"
+     ]
+    }
+   ]
+  }
+ },
+ "4": {
+  "thema": "Dame, König, Springer",
+  "lernziel": "Ich kann mit Dame, König und Springer regelgerecht ziehen und schlagen.",
+  "leitfrage": "Wie ziehen Dame, König und Springer, und was ist beim Springer und beim König besonders?",
+  "vorwissen": "Turm und Läufer ziehen und schlagen (Woche 3).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Erklärvideos „Schach erklärt: Die Dame“, „Der König“ und „Der Springer“, Minispiele „Fang den Springer“ und „Königsrennen“ (Deutsche Schulschachstiftung). Brettaufgaben eigene Aufgaben, alle Zugfelder automatisch nachgerechnet",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Turm und Läufer wiederholen, die neuen Figuren finden",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 und W2 die Fehler aus Woche 3 aufgreifen: Wohin ziehen Turm und Läufer? W5 und W6: Was können sie schlagen?",
+     "W3 und W4: Wo stehen Dame, König und Springer in der Grundstellung? Ziel nennen: „Heute lernt ihr die letzten drei Figuren, die Dame, den König und den Springer.“"
+    ],
+    "kinder": "Ich ziehe Turm und Läufer richtig und finde Dame, König und Springer.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Drei Erklärvideos, nach jedem Video zwei Aufgaben",
+    "ablauf": [
+     "Erklärvideo „Die Dame“, danach am Lehrbrett E1 und E2. Merksatz: „Die Dame zieht wie Turm und Läufer zusammen.“",
+     "Erklärvideo „Der König“, danach E3 und E4. Merksatz: „Der König zieht ein Feld in jede Richtung. Er darf nie auf ein Feld, das angegriffen ist.“",
+     "Erklärvideo „Der Springer“, danach E5 und E6. Die Kinder zeigen die Springer-Sprünge mit dem Finger am eigenen Brett: zwei gerade, eins zur Seite. Merksatz: „Der Springer springt über Figuren und wechselt bei jedem Zug die Farbe.“"
+    ],
+    "kinder": "Ich zeige die Zugfelder von Dame, König und Springer.",
+    "links": [
+     {
+      "art": "video",
+      "label": "Erklärvideo „Die Dame“",
+      "url": "https://www.youtube.com/watch?v=DSPy3bv5Yek"
+     },
+     {
+      "art": "video",
+      "label": "Erklärvideo „Der König“",
+      "url": "https://www.youtube.com/watch?v=-_B-l6MULxU"
+     },
+     {
+      "art": "video",
+      "label": "Erklärvideo „Der Springer“",
+      "url": "https://www.youtube.com/watch?v=9nzY3wG0zY4"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Dame, König, Springer E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Springer-Wege zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A stellt einen Springer und legt ein Steinchen als Ziel. Kind B bringt den Springer mit möglichst wenigen Sprüngen hin und sagt jeden Sprung an, zum Beispiel „Springer von b1 nach c3“. Danach wechseln die Rollen.",
+     "Frage zwischendurch: „Warum braucht der Springer für ein Nachbarfeld so viele Sprünge?“",
+     "Allein: Arbeitsblatt A1 bis A6. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich sage meine Springersprünge richtig an und löse das Arbeitsblatt.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Dame, König, Springer",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6 die häufigsten Fehler besprechen: König neben König, König auf ein angegriffenes Feld, Springer zieht gerade oder schräg, Dame zieht wie ein Springer.",
+     "Bei jeder Aufgabe nachfragen: „Warum darf die Figur dort nicht hin?“ oder „Woran erkennst du das?“ Alle sprechen die drei Merksätze."
+    ],
+    "kinder": "Ich kann erklären, warum ein Zug von Dame, König oder Springer nicht erlaubt ist.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, lässt du dir bei einigen am Brett einen Springerzug und einen Königszug zeigen. Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich ziehe und schlage mit Dame, König und Springer ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Fang den Springer“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Weiß hat Turm, Läufer und Springer, Schwarz nur einen Springer. Weiß versucht, den schwarzen Springer zu schlagen. Schwarz flieht und darf selbst schlagen. Wer den Springer in zehn Zügen fängt, gewinnt, sonst gewinnt Schwarz. Danach wechseln die Rollen.",
+     "Rückblick: „Was ist beim Springer anders als bei allen anderen Figuren?“ Aufräum-Ritual. Ausblick: Nächstes Mal kommt die letzte Figur, der Bauer."
+    ],
+    "kinder": "Ich ziehe im Spiel nur mit erlaubten Zügen.",
+    "links": [
+     {
+      "art": "video",
+      "label": "Minispiel „Fang den Springer“ (Video)",
+      "url": "https://www.youtube.com/watch?v=lyCmGN_bbvM"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Springer-Weg mit dem Finger zeigen: zwei gerade, eins zur Seite. Bei der Dame erst wie ein Turm, dann wie ein Läufer zählen.",
+   "zusatz": "Minispiel „Königsrennen“ der Schulschachstiftung: Beide Könige laufen zur anderen Seite, ohne sich zu berühren. Oder: Wie viele Sprünge braucht der Springer von a1 nach h8?",
+   "kuerzen": "In der Erarbeitung nur E1, E3 und E5 zeigen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
+  },
+  "nachher": "Wer zieht den Springer noch gerade oder schräg? Wer stellt den König neben den gegnerischen König? Den Springer greifst du in Woche 5 im Einstieg wieder auf.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Markiere alle Felder, auf die der Turm auf a8 ziehen kann.",
+     "fen": "R7/8/8/8/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "a8"
+     },
+     "targets": null,
+     "antwort": "14 Felder: die a-Linie von a1 bis a7 und die 8. Reihe von b8 bis h8.",
+     "hilfe": [
+      "Linie a und Reihe 8.",
+      "Tipp: Klicke auf a und 8 am Rand und nimm a8 wieder weg."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Läufer auf f1 ziehen kann.",
+     "fen": "8/8/8/8/8/8/8/5B2",
+     "leer": true,
+     "pruef": {
+      "zuege": "f1"
+     },
+     "targets": null,
+     "antwort": "e2, d3, c4, b5, a6, g2 und h3. Alle sind hell wie f1.",
+     "hilfe": [
+      "Der Läufer zieht schräg.",
+      "Von f1 gibt es zwei Diagonalen."
+     ]
+    },
+    {
+     "frage": "Klicke die weiße Dame und den weißen König an.",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+     "targets": [
+      "d1",
+      "e1"
+     ],
+     "antwort": "Die Dame steht auf d1, ihrer Farbe. Der König steht daneben auf e1.",
+     "hilfe": [
+      "Die Dame steht auf ihrer Farbe.",
+      "Der König steht neben der Dame."
+     ]
+    },
+    {
+     "frage": "Klicke alle vier Springer an.",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+     "targets": [
+      "b1",
+      "g1",
+      "b8",
+      "g8"
+     ],
+     "antwort": "b1, g1, b8 und g8, direkt neben den Türmen.",
+     "hilfe": [
+      "Die Pferde wohnen in den Türmen.",
+      "Sie stehen direkt neben den Ecken."
+     ]
+    },
+    {
+     "frage": "Welche schwarzen Figuren kann der Turm schlagen? Klicke sie an.",
+     "fen": "8/8/8/n7/8/2p5/8/R3b3",
+     "pruef": {
+      "schlaege": [
+       "a1"
+      ]
+     },
+     "targets": null,
+     "antwort": "a5 und e1. Der Bauer auf c3 steht nicht auf der Linie und nicht auf der Reihe des Turms.",
+     "hilfe": [
+      "Linie a und Reihe 1.",
+      "Ist der Weg frei?"
+     ]
+    },
+    {
+     "frage": "Welche schwarzen Figuren kann der Läufer schlagen? Klicke sie an.",
+     "fen": "8/8/8/2p5/5n2/r7/8/2B5",
+     "pruef": {
+      "schlaege": [
+       "c1"
+      ]
+     },
+     "targets": null,
+     "antwort": "a3 und f4. Der Bauer auf c5 steht gerade vor dem Läufer.",
+     "hilfe": [
+      "Der Läufer zieht schräg.",
+      "Fahre beide Diagonalen von c1 ab."
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Die Dame steht auf d4. Markiere alle Felder, auf die sie ziehen kann.",
+     "fen": "8/8/8/8/3Q4/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "d4"
+     },
+     "targets": null,
+     "antwort": "27 Felder: die d-Linie, die 4. Reihe und beide Diagonalen durch d4.",
+     "hilfe": [
+      "Erst wie ein Turm: Linie und Reihe.",
+      "Dann wie ein Läufer: beide Diagonalen."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die die Dame ziehen kann. Achte auf die anderen Figuren.",
+     "fen": "8/8/8/3p4/6n1/1P6/4P3/3Q4",
+     "leer": true,
+     "pruef": {
+      "zuege": "d1"
+     },
+     "targets": null,
+     "antwort": "a1, b1, c1, e1, f1, g1, h1, d2, d3, d4, d5 und c2. Auf d5 schlägt sie den Bauern. Vor b3 und e2 hält sie an.",
+     "hilfe": [
+      "Prüfe acht Richtungen.",
+      "Eigene Figur: anhalten. Gegnerische Figur: schlagen."
+     ]
+    },
+    {
+     "frage": "Der König steht auf e4. Markiere alle Felder, auf die er ziehen kann.",
+     "fen": "8/8/8/8/4K3/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "e4"
+     },
+     "targets": null,
+     "antwort": "8 Felder rund um e4: d3, e3, f3, d4, f4, d5, e5 und f5.",
+     "hilfe": [
+      "Der König zieht genau ein Feld.",
+      "In jede Richtung, auch schräg."
+     ]
+    },
+    {
+     "frage": "Der König steht in der Grundstellung. Wohin kann er ziehen?",
+     "fen": "8/8/8/8/8/8/3PPP2/3QKB2",
+     "leer": true,
+     "pruef": {
+      "zuege": "e1"
+     },
+     "targets": null,
+     "antwort": "Nirgendwohin. Alle Nachbarfelder sind mit eigenen Figuren besetzt. Drücke „Prüfen“ ohne Markierung.",
+     "hilfe": [
+      "Schau auf alle Nachbarfelder.",
+      "Auf eigene Figuren darf der König nicht ziehen."
+     ]
+    },
+    {
+     "frage": "Der Springer steht auf d4. Markiere alle Felder, auf die er springen kann.",
+     "fen": "8/8/8/8/3N4/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "d4"
+     },
+     "targets": null,
+     "antwort": "8 Felder: c2, e2, b3, f3, b5, f5, c6 und e6. Alle haben die andere Farbe als d4.",
+     "hilfe": [
+      "Zwei Felder gerade, dann eins zur Seite.",
+      "Die Zielfelder bilden einen Kreis um den Springer."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Springer auf g1 springen kann. Stören die Bauern?",
+     "fen": "8/8/8/8/8/7p/4PPPP/6N1",
+     "leer": true,
+     "pruef": {
+      "zuege": "g1"
+     },
+     "targets": null,
+     "antwort": "f3 und h3. Auf h3 schlägt er den schwarzen Bauern. Die Bauern auf f2, g2 und h2 stören nicht, denn der Springer springt über sie. Auf e2 steht ein eigener Bauer, dorthin darf er nicht.",
+     "hilfe": [
+      "Der Springer springt über Figuren.",
+      "Auf e2 steht ein eigener Bauer."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Markiere alle Felder, auf die die Dame ziehen kann.",
+     "fen": "8/8/2n2P2/8/8/3P1Q2/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "f3"
+     },
+     "targets": null,
+     "antwort": "f1, f2, f4, f5, g3, h3, e3, e2, d1, g2, h1, e4, d5, c6, g4 und h5. Auf c6 schlägt sie den Springer.",
+     "hilfe": [
+      "Acht Richtungen prüfen.",
+      "Vor f6 und d3 hält sie an."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der König ziehen kann.",
+     "fen": "8/8/2P5/3K4/4P3/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "d5"
+     },
+     "targets": null,
+     "antwort": "c4, d4, c5, e5, d6 und e6. Auf c6 und e4 stehen eigene Bauern.",
+     "hilfe": [
+      "Acht Nachbarfelder.",
+      "Eigene Figuren blockieren."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Springer auf b1 in der Grundstellung springen kann.",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+     "leer": true,
+     "pruef": {
+      "zuege": "b1"
+     },
+     "targets": null,
+     "antwort": "a3 und c3. Auf d2 steht ein eigener Bauer. Er springt über die Bauern hinweg.",
+     "hilfe": [
+      "Zwei nach vorn, eins zur Seite.",
+      "Auf d2 steht schon ein Bauer."
+     ]
+    },
+    {
+     "frage": "Welche schwarzen Figuren kann der Springer schlagen? Klicke sie an.",
+     "fen": "8/3r4/4q3/2n1N3/6b1/5P2/8/8",
+     "pruef": {
+      "schlaege": [
+       "e5"
+      ]
+     },
+     "targets": null,
+     "antwort": "d7 und g4. Die Dame auf e6 steht direkt neben ihm, der Springer auf c5 zwei Felder gerade daneben. Beides erreicht ein Springer nie.",
+     "hilfe": [
+      "Zeige alle acht Springerfelder.",
+      "Direkte Nachbarfelder erreicht der Springer nie."
+     ]
+    },
+    {
+     "frage": "Welche schwarzen Figuren kann die Dame schlagen? Klicke sie an. Warum nicht den Turm auf b7?",
+     "fen": "8/1r4n1/5b2/8/1P6/8/1Q2p3/8",
+     "pruef": {
+      "schlaege": [
+       "b2"
+      ]
+     },
+     "targets": null,
+     "antwort": "e2 und f6. Vor dem Turm auf b7 steht der eigene Bauer auf b4. Der Springer auf g7 steht hinter dem Läufer.",
+     "hilfe": [
+      "Prüfe die b-Linie, die 2. Reihe und die Diagonalen.",
+      "In jeder Richtung zählt nur die erste Figur."
+     ]
+    },
+    {
+     "frage": "Der Springer auf g1 will nach g5. Markiere die beiden Felder, über die er in zwei Sprüngen hinkommt.",
+     "fen": "8/8/8/8/8/8/8/6N1",
+     "leer": true,
+     "pruef": {
+      "ueber": [
+       "g1",
+       "g5"
+      ]
+     },
+     "targets": null,
+     "antwort": "f3 und h3. Von dort springt er weiter nach g5.",
+     "hilfe": [
+      "Erst zwei Felder nach vorn.",
+      "Von welchen Feldern erreicht er g5?"
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Auf welche Nachbarfelder darf der weiße König nicht ziehen, weil der schwarze König dort angreift? Markiere sie.",
+     "fen": "8/8/4k3/8/4K3/8/8/8",
+     "leer": true,
+     "pruef": {
+      "verboten": "e4"
+     },
+     "targets": null,
+     "antwort": "d5, e5 und f5. Zwei Könige dürfen nie nebeneinander stehen.",
+     "hilfe": [
+      "Welche Felder berühren beide Könige?",
+      "Sie liegen zwischen den Königen."
+     ]
+    },
+    {
+     "frage": "Ein Kind zieht den Springer von d4 nach d6. Das ist falsch. Markiere die Felder der 6. Reihe, auf die er wirklich springen kann.",
+     "fen": "8/8/8/8/3N4/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "d4",
+      "reihe": 6
+     },
+     "targets": null,
+     "antwort": "c6 und e6. Der Springer zieht nie nur gerade, er springt zwei gerade und eins zur Seite.",
+     "hilfe": [
+      "Zwei nach vorn bis d6, dann eins zur Seite.",
+      "Links oder rechts von d6."
+     ]
+    },
+    {
+     "frage": "Der Springer steht auf e4, einem hellen Feld. Markiere alle seine Zielfelder. Welche Farbe haben sie?",
+     "fen": "8/8/8/8/4N3/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "e4"
+     },
+     "targets": null,
+     "antwort": "d2, f2, c3, g3, c5, g5, d6 und f6. Alle sind dunkel. Der Springer wechselt bei jedem Sprung die Farbe.",
+     "hilfe": [
+      "Zwei gerade, eins zur Seite.",
+      "Schau auf die Farbe der Zielfelder."
+     ]
+    },
+    {
+     "frage": "Ein Kind zieht die Dame von d1 nach c3. Das ist ein Springerzug. Markiere die Felder der 3. Reihe, die die Dame wirklich erreicht.",
+     "fen": "8/8/8/8/8/8/8/3Q4",
+     "leer": true,
+     "pruef": {
+      "zuege": "d1",
+      "reihe": 3
+     },
+     "targets": null,
+     "antwort": "b3, d3 und f3. c3 und e3 erreicht nur ein Springer.",
+     "hilfe": [
+      "Die Dame zieht gerade oder schräg.",
+      "Von d1 geradeaus und auf beiden Diagonalen bis zur 3. Reihe."
+     ]
+    },
+    {
+     "frage": "Wohin darf der König ziehen? Achtung, der schwarze Turm greift die 2. Reihe an.",
+     "fen": "8/8/8/8/8/8/r7/4K3",
+     "leer": true,
+     "pruef": {
+      "zuege": "e1"
+     },
+     "targets": null,
+     "antwort": "Nur d1 und f1. Auf d2, e2 und f2 würde ihn der Turm angreifen.",
+     "hilfe": [
+      "Der König darf nie auf ein angegriffenes Feld.",
+      "Die ganze 2. Reihe ist angegriffen."
+     ]
+    },
+    {
+     "frage": "Welche weißen Figuren können in einem Zug nach f7 ziehen? Klicke sie an.",
+     "fen": "8/R7/8/3QN2B/2N5/8/5K2/8",
+     "pruef": {
+      "erreichen": "f7"
+     },
+     "targets": null,
+     "antwort": "Die Dame auf d5, der Turm auf a7, der Springer auf e5 und der Läufer auf h5. Der Springer auf c4 und der König kommen nicht hin.",
+     "hilfe": [
+      "Prüfe jede Figur nach ihrer Gangart.",
+      "Der König zieht nur ein Feld."
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Markiere alle Felder, auf die die Dame auf e5 ziehen kann.",
+     "fen": "8/4P3/8/4Q3/8/8/1b6/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "e5"
+     },
+     "targets": null,
+     "antwort": "24 Felder: die 5. Reihe ohne e5, dazu e1 bis e4 und e6 (vor e7 hält sie an). Auf den Diagonalen d4, c3 und b2 (dort schlägt sie), d6, c7, b8, f6, g7, h8 sowie f4, g3, h2.",
+     "hilfe": [
+      "Acht Richtungen.",
+      "Vor e7 hält sie an, auf b2 schlägt sie."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der König in der Ecke auf a1 ziehen kann.",
+     "fen": "8/8/8/8/8/8/8/K7",
+     "leer": true,
+     "pruef": {
+      "zuege": "a1"
+     },
+     "targets": null,
+     "antwort": "a2, b1 und b2. In der Ecke hat der König nur drei Felder.",
+     "hilfe": [
+      "Der König zieht ein Feld.",
+      "In der Ecke gibt es nur drei Nachbarfelder."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Springer in der Ecke auf h1 springen kann.",
+     "fen": "8/8/8/8/8/8/8/7N",
+     "leer": true,
+     "pruef": {
+      "zuege": "h1"
+     },
+     "targets": null,
+     "antwort": "f2 und g3. In der Ecke hat der Springer nur zwei Felder.",
+     "hilfe": [
+      "Zwei gerade, eins zur Seite.",
+      "Vom Rand aus fallen viele Felder weg."
+     ]
+    },
+    {
+     "frage": "Welche schwarzen Figuren kann der Springer schlagen? Klicke sie an.",
+     "fen": "8/8/8/1rn5/4q3/2Np4/8/8",
+     "pruef": {
+      "schlaege": [
+       "c3"
+      ]
+     },
+     "targets": null,
+     "antwort": "b5 und e4. Die Figuren auf c5 und d3 kann er nicht erreichen.",
+     "hilfe": [
+      "Zeige alle Springerfelder von c3.",
+      "Direkt daneben oder zwei gerade ohne Seitenschritt geht nicht."
+     ]
+    },
+    {
+     "frage": "Wohin darf der König ziehen? Der schwarze Turm greift an.",
+     "fen": "8/8/8/7r/3K4/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "d4"
+     },
+     "targets": null,
+     "antwort": "c3, d3, e3, c4 und e4. Die Felder der 5. Reihe greift der Turm an.",
+     "hilfe": [
+      "Welche Felder greift der Turm auf h5 an?",
+      "Die ganze 5. Reihe."
+     ]
+    },
+    {
+     "frage": "Welche weißen Figuren können in einem Zug nach d6 ziehen? Klicke sie an.",
+     "fen": "8/8/8/8/1Q2N3/3P4/7B/3R4",
+     "pruef": {
+      "erreichen": "d6"
+     },
+     "targets": null,
+     "antwort": "Die Dame auf b4, der Springer auf e4 und der Läufer auf h2. Vor dem Turm steht der eigene Bauer auf d3.",
+     "hilfe": [
+      "Prüfe jede Figur nach ihrer Gangart.",
+      "Ist der Weg frei?"
      ]
     }
    ]
