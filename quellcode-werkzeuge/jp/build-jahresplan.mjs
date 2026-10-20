@@ -74,6 +74,16 @@ function pruefZiele(fen,P){const B=boardOf(fen);
  if(P.doppelschritt)return bauern().filter(q=>ziele(fen,q).some(x=>+x[1]===+q[1]+2));
  if(P.umwandeln)return bauern().filter(q=>ziele(fen,q).some(x=>x[1]==='8'));
  if(P.blockiert)return bauern().filter(q=>!ziele(fen,q).length);
+ const eigene=w=>Object.keys(B).filter(q=>isW(B[q])===w&&B[q].toLowerCase()!=='k');
+ const gedecktQ=q=>Object.keys(B).some(r=>r!==q&&isW(B[r])===isW(B[q])&&angriff(B,r).includes(q));
+ const nach=(von,x)=>{const C={...B};const p=C[von];delete C[von];C[x]=p;return C};
+ if(P.angegriffen){const w=P.angegriffen==='w',att=angegriffen(B,!w);return eigene(w).filter(q=>att.has(q))}
+ if(P.gedeckt){const w=P.gedeckt==='w';return eigene(w).filter(gedecktQ)}
+ if(P.haengt){const w=P.haengt==='w',att=angegriffen(B,!w);return eigene(w).filter(q=>att.has(q)&&!gedecktQ(q))}
+ if(P.verteidiger){const z=P.verteidiger;return Object.keys(B).filter(r=>r!==z&&isW(B[r])===isW(B[z])&&angriff(B,r).includes(z))}
+ if(P.sicher){const v=P.sicher,w=isW(B[v]);let z=ziele(fen,v).filter(x=>!angegriffen(nach(v,x),!w).has(x));if(P.reihe)z=z.filter(q=>+q[1]===P.reihe);if(P.linie)z=z.filter(q=>q[0]===P.linie);return z}
+ if(P.deckzug){const {figuren,ziel}=P.deckzug;return [...new Set(figuren.flatMap(v=>ziele(fen,v).filter(x=>x!==ziel&&angriff(nach(v,x),x).includes(ziel))))]}
+ if(P.decker){const z=P.decker;return Object.keys(B).filter(v=>v!==z&&isW(B[v])===isW(B[z])&&ziele(fen,v).some(x=>x!==z&&angriff(nach(v,x),x).includes(z)))}
  if(P.ueber){const [von,nach]=P.ueber,p=B[von];return ziele(fen,von).filter(x=>{const C={...B};delete C[von];C[x]=p;return angriff(C,x).includes(nach)&&!C[nach]})}
  return null}
 for(const [w,F] of Object.entries(FIXED)){if(!LESSONS.find(x=>x.week===+w))err('Feste Stunde ohne Woche '+w);

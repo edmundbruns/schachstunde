@@ -20,7 +20,8 @@ export const URLS={
  "fangSpringer": "https://www.youtube.com/watch?v=lyCmGN_bbvM",
  "koenigsrennen": "https://www.youtube.com/watch?v=A_k_JdwmI7g",
  "bauerVideo": "https://www.youtube.com/watch?v=4eeLF8g6xPw",
- "bauernGegenKoenig": "https://www.youtube.com/watch?v=e3eFR_N4ZEA"
+ "bauernGegenKoenig": "https://www.youtube.com/watch?v=e3eFR_N4ZEA",
+ "figurenaufstellen": "https://www.youtube.com/watch?v=r5r3fYH6_WI"
 };
 export const FIXED={
  "1": {
@@ -3072,6 +3073,573 @@ export const FIXED={
      "hilfe": [
       "Welche Bauern stehen auf der 7. Reihe?",
       "Auch Schlagen auf die letzte Reihe zählt."
+     ]
+    }
+   ]
+  }
+ },
+ "6": {
+  "thema": "Angreifen und decken",
+  "lernziel": "Ich kann angegriffene Figuren erkennen und schützen.",
+  "leitfrage": "Welche meiner Figuren kann der Gegner im nächsten Zug schlagen, und wie rette ich sie?",
+  "vorwissen": "Alle Figuren ziehen und schlagen, auch der Bauer (Woche 3 bis 5).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Minispiel „Figurenaufstellen“ (Deutsche Schulschachstiftung). Brettaufgaben eigene Aufgaben, Angriffe, Deckungen und sichere Felder automatisch nachgerechnet",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Bauern wiederholen, dann: Was könnte geschlagen werden?",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W3 die Bauernfehler aus Woche 5 aufgreifen: schräg schlagen, Richtung von Schwarz, Umwandlung.",
+     "W4 bis W6: Welche Figur könnte im nächsten Zug geschlagen werden? Ziel nennen: „Heute lernt ihr, wann eine Figur angegriffen ist und wie ihr sie rettet.“"
+    ],
+    "kinder": "Ich erkenne, welche Figur eine andere schlagen könnte.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Angegriffen, gedeckt, hängend und drei Rettungen",
+    "ablauf": [
+     "Am Lehrbrett E1 bis E3 gemeinsam die drei Wörter klären: angegriffen heißt, der Gegner könnte die Figur im nächsten Zug schlagen. Gedeckt heißt, eine eigene Figur könnte zurückschlagen. Eine Figur hängt, wenn sie angegriffen und nicht gedeckt ist.",
+     "E4 bis E6: drei Rettungen. Wegziehen auf ein sicheres Feld, decken oder den Angreifer schlagen. Die Kinder zeigen am eigenen Brett mit dem Finger, wer wen angreift.",
+     "Merksatz: „Vor jedem Zug frage ich: Was greift mein Gegner an? Ist meine Figur gedeckt?“"
+    ],
+    "kinder": "Ich erkläre angegriffen, gedeckt und hängend an einem Beispiel.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Angreifen und decken E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Angriff oder nicht? Zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A stellt eine weiße Figur, eine schwarze Figur und eine dritte Figur auf. Kind B sagt, ob die weiße Figur angegriffen ist, ob sie gedeckt ist und wie sie zu retten wäre. Danach wechseln die Rollen.",
+     "Allein: Arbeitsblatt A1 bis A6. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich finde angegriffene und hängende Figuren und rette sie.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Angreifen und decken",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6 die häufigsten Fehler besprechen: den Bauernangriff übersehen, einen verdeckten Angriff mitzählen, den Springer vergessen, auf ein neues angegriffenes Feld flüchten.",
+     "Bei jeder Aufgabe nachfragen: „Woran erkennst du, dass die Figur angegriffen ist?“ oder „Warum ist das Feld nicht sicher?“ Alle sprechen den Merksatz."
+    ],
+    "kinder": "Ich kann begründen, ob eine Figur angegriffen, gedeckt oder sicher ist.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, fragst du einige am Brett: „Welche deiner Figuren ist angegriffen? Wie rettest du sie?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich erkenne Angriffe und rette meine Figur ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Figurenaufstellen“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Das Brett ist leer. Jedes Kind hat König, Dame, zwei Türme, zwei Läufer und zwei Springer. Abwechselnd setzt jedes Kind eine Figur auf ein freies Feld, das keine gegnerische Figur angreift. Wer zuerst alle Figuren gesetzt hat, gewinnt. Wer keine Figur mehr setzen kann, verliert. Danach wechseln die Rollen, das andere Kind beginnt.",
+     "Rückblick: „Woran erkennst du, dass ein Feld angegriffen ist?“ Aufräum-Ritual. Ausblick: Nächstes Mal lernt ihr, wie viel die Figuren wert sind und wann sich ein Tausch lohnt."
+    ],
+    "kinder": "Ich setze meine Figuren nur auf Felder, die nicht angegriffen sind.",
+    "links": [
+     {
+      "art": "video",
+      "label": "Minispiel „Figurenaufstellen“ (Video)",
+      "url": "https://www.youtube.com/watch?v=r5r3fYH6_WI"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Für jede gegnerische Figur mit dem Finger ihre Zugfelder zeigen. Bei Bauern nur schräg nach vorn.",
+   "zusatz": "Eine Stellung bauen, in der eine Figur zweimal angegriffen und einmal gedeckt ist. Was passiert, wenn der Gegner schlägt?",
+   "kuerzen": "In der Erarbeitung E2 und E6 weglassen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel wird mit weniger Figuren gespielt."
+  },
+  "nachher": "Wer übersieht noch Angriffe von Bauern oder Springern? Wer flüchtet auf ein Feld, das wieder angegriffen ist? Diese Fehler greifst du in Woche 7 beim Tauschen wieder auf.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Markiere alle Felder, auf die der Bauer auf g2 ziehen kann.",
+     "fen": "8/8/8/8/8/5bpn/6P1/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "g2"
+     },
+     "targets": null,
+     "antwort": "f3 und h3. Er schlägt schräg. Geradeaus steht der schwarze Bauer.",
+     "hilfe": [
+      "Geradeaus ist besetzt.",
+      "Schräg nach vorn stehen schwarze Figuren."
+     ]
+    },
+    {
+     "frage": "Das ist ein schwarzer Bauer. Markiere alle Felder, auf die er ziehen kann.",
+     "fen": "8/1p6/N1B5/8/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "b7"
+     },
+     "targets": null,
+     "antwort": "b6, b5, a6 und c6. Ein oder zwei Felder nach unten, schräg schlägt er.",
+     "hilfe": [
+      "Schwarz zieht nach unten.",
+      "Vom Startfeld gibt es den Doppelschritt."
+     ]
+    },
+    {
+     "frage": "Markiere das Feld, auf dem der Bauer umgewandelt werden kann.",
+     "fen": "3rn3/4P3/8/8/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "e7"
+     },
+     "targets": null,
+     "antwort": "d8. Geradeaus ist e8 besetzt, aber er schlägt den Turm auf d8 und wird dabei umgewandelt.",
+     "hilfe": [
+      "Geradeaus wird nie geschlagen.",
+      "Schräg vor ihm steht eine schwarze Figur."
+     ]
+    },
+    {
+     "frage": "Der schwarze Turm auf d8 könnte im nächsten Zug schlagen. Klicke die weiße Figur an, die er angreift.",
+     "fen": "3r4/8/8/P5B1/8/3N4/8/8",
+     "pruef": {
+      "schlaege": [
+       "d8"
+      ]
+     },
+     "targets": null,
+     "antwort": "Den Springer auf d3. Der Weg auf der d-Linie ist frei.",
+     "hilfe": [
+      "Prüfe die d-Linie und die 8. Reihe.",
+      "Steht eine weiße Figur auf dem Weg des Turms?"
+     ]
+    },
+    {
+     "frage": "Welche schwarzen Figuren greift der weiße Springer an? Klicke sie an.",
+     "fen": "8/8/3r1b2/6p1/2q1N3/8/8/8",
+     "pruef": {
+      "schlaege": [
+       "e4"
+      ]
+     },
+     "targets": null,
+     "antwort": "d6, f6 und g5. Die Dame auf c4 steht zwei Felder gerade daneben, die erreicht der Springer nicht.",
+     "hilfe": [
+      "Zeige alle acht Springerfelder.",
+      "Auf welchen steht eine schwarze Figur?"
+     ]
+    },
+    {
+     "frage": "Welche schwarzen Figuren greift der weiße Läufer an? Klicke sie an.",
+     "fen": "8/5p2/n3r3/8/2B5/8/8/8",
+     "pruef": {
+      "schlaege": [
+       "c4"
+      ]
+     },
+     "targets": null,
+     "antwort": "e6 und a6. Der Bauer auf f7 steht hinter dem Turm.",
+     "hilfe": [
+      "Fahre alle Diagonalen von c4 ab.",
+      "In jeder Richtung zählt nur die erste Figur."
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Welche weißen Figuren sind angegriffen? Klicke sie an.",
+     "fen": "5r2/8/8/8/1b3B2/2N4p/8/R7",
+     "pruef": {
+      "angegriffen": "w"
+     },
+     "targets": null,
+     "antwort": "Der Springer auf c3 (vom Läufer b4) und der Läufer auf f4 (vom Turm f8). Der Turm auf a1 ist sicher.",
+     "hilfe": [
+      "Zeige für jede schwarze Figur ihre Zugfelder.",
+      "Steht dort eine weiße Figur?"
+     ]
+    },
+    {
+     "frage": "Welche weißen Figuren sind gedeckt? Klicke sie an.",
+     "fen": "Q7/8/8/5B2/3N4/2P5/8/5R2",
+     "pruef": {
+      "gedeckt": "w"
+     },
+     "targets": null,
+     "antwort": "Der Springer auf d4 (vom Bauern c3) und der Läufer auf f5 (vom Turm f1). Gedeckt heißt: Eine eigene Figur könnte zurückschlagen.",
+     "hilfe": [
+      "Welche eigene Figur könnte auf das Feld ziehen?",
+      "Bauern decken schräg nach vorn."
+     ]
+    },
+    {
+     "frage": "Welche weiße Figur hängt, ist also angegriffen und nicht gedeckt? Klicke sie an.",
+     "fen": "1r6/8/3pb3/4N3/3P4/1B5R/P7/8",
+     "pruef": {
+      "haengt": "w"
+     },
+     "targets": null,
+     "antwort": "Der Turm auf h3. Ihn greift der Läufer e6 an, und keine weiße Figur deckt ihn. Springer e5 und Läufer b3 sind auch angegriffen, aber gedeckt.",
+     "hilfe": [
+      "Suche zuerst alle angegriffenen Figuren.",
+      "Welche davon deckt niemand?"
+     ]
+    },
+    {
+     "frage": "Rettung 1, wegziehen: Der Springer auf c3 ist angegriffen. Markiere alle sicheren Felder, auf die er springen kann.",
+     "fen": "r7/8/4p3/8/1b6/2N5/8/8",
+     "leer": true,
+     "pruef": {
+      "sicher": "c3"
+     },
+     "targets": null,
+     "antwort": "b1, b5, d1, e2 und e4. Auf a2 und a4 greift der Turm an, auf d5 der Bauer.",
+     "hilfe": [
+      "Zeige alle Springerfelder.",
+      "Streiche die Felder, die eine schwarze Figur angreift."
+     ]
+    },
+    {
+     "frage": "Rettung 2, decken: Der Läufer auf e4 wird vom schwarzen Turm angegriffen. Markiere die Felder, auf die der weiße Turm ziehen kann, um ihn zu decken.",
+     "fen": "4r3/8/8/8/4B3/8/8/R7",
+     "leer": true,
+     "pruef": {
+      "deckzug": {
+       "figuren": [
+        "a1"
+       ],
+       "ziel": "e4"
+      }
+     },
+     "targets": null,
+     "antwort": "a4 und e1. Von dort könnte der Turm auf e4 zurückschlagen.",
+     "hilfe": [
+      "Der Turm muss auf die 4. Reihe oder die e-Linie.",
+      "Der Weg bis e4 muss frei sein."
+     ]
+    },
+    {
+     "frage": "Rettung 3, Angreifer schlagen: Der schwarze Springer greift die weiße Dame an. Welche weißen Figuren können ihn schlagen? Klicke sie an.",
+     "fen": "8/8/8/8/8/2n4R/1P6/3Q4",
+     "pruef": {
+      "erreichen": "c3"
+     },
+     "targets": null,
+     "antwort": "Der Bauer auf b2 und der Turm auf h3. Am besten schlägt der Bauer, die kleinste Figur.",
+     "hilfe": [
+      "Welche weiße Figur kann nach c3 ziehen?",
+      "Der Bauer schlägt schräg."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Welche weißen Figuren sind angegriffen? Klicke sie an.",
+     "fen": "8/8/1p6/R3n2b/2B5/5N2/6P1/8",
+     "pruef": {
+      "angegriffen": "w"
+     },
+     "targets": null,
+     "antwort": "a5 (Bauer b6), f3 (Läufer h5) und c4 (Springer e5). Der Bauer auf g2 ist sicher.",
+     "hilfe": [
+      "Prüfe jede schwarze Figur.",
+      "Bauern greifen schräg nach vorn an, bei Schwarz nach unten."
+     ]
+    },
+    {
+     "frage": "Welche weißen Figuren sind gedeckt? Klicke sie an.",
+     "fen": "7Q/8/R7/8/3N4/4P1B1/5P2/8",
+     "pruef": {
+      "gedeckt": "w"
+     },
+     "targets": null,
+     "antwort": "d4 (Bauer e3), e3 und g3 (Bauer f2) sowie f2 (Läufer g3). Turm und Dame deckt niemand.",
+     "hilfe": [
+      "Bauern decken schräg nach vorn.",
+      "Welche Figur könnte zurückschlagen?"
+     ]
+    },
+    {
+     "frage": "Welche weißen Figuren hängen? Klicke sie an.",
+     "fen": "q7/1R6/4p3/3N4/2P2p2/6B1/8/8",
+     "pruef": {
+      "haengt": "w"
+     },
+     "targets": null,
+     "antwort": "b7 und g3. Den Turm greift die Dame an, den Läufer der Bauer f4. Der Springer auf d5 ist angegriffen, aber vom Bauern c4 gedeckt.",
+     "hilfe": [
+      "Erst angegriffene Figuren suchen.",
+      "Dann prüfen: Deckt sie jemand?"
+     ]
+    },
+    {
+     "frage": "Die weiße Dame ist angegriffen. Markiere alle sicheren Felder auf der d-Linie, auf die sie ziehen kann.",
+     "fen": "8/b7/2p1n3/8/3Q4/8/8/8",
+     "leer": true,
+     "pruef": {
+      "sicher": "d4",
+      "linie": "d"
+     },
+     "targets": null,
+     "antwort": "d1, d2, d3, d6 und d7. Auf d5 greift der Bauer c6 an, auf d8 der Springer e6.",
+     "hilfe": [
+      "Die Dame zieht auf der d-Linie hoch oder runter.",
+      "Welche Felder greift Schwarz an?"
+     ]
+    },
+    {
+     "frage": "Der weiße Läufer auf f5 ist angegriffen. Markiere die Felder, auf die der weiße Springer springen kann, um ihn zu decken.",
+     "fen": "5r2/8/8/5B2/8/8/2N5/8",
+     "leer": true,
+     "pruef": {
+      "deckzug": {
+       "figuren": [
+        "c2"
+       ],
+       "ziel": "f5"
+      }
+     },
+     "targets": null,
+     "antwort": "d4 und e3. Von dort könnte der Springer auf f5 zurückschlagen.",
+     "hilfe": [
+      "Zeige alle Springerfelder von c2.",
+      "Von welchem davon springt er nach f5?"
+     ]
+    },
+    {
+     "frage": "Der weiße Läufer auf c5 ist angegriffen. Welche weißen Figuren können ihn mit einem Zug decken? Klicke sie an.",
+     "fen": "2r5/8/8/2B4R/6N1/1P6/8/8",
+     "pruef": {
+      "decker": "c5"
+     },
+     "targets": null,
+     "antwort": "Der Bauer b3 (nach b4) und der Turm h5 (zum Beispiel nach d5). Der Springer auf g4 erreicht kein Feld, von dem er c5 deckt.",
+     "hilfe": [
+      "Probiere für jede weiße Figur ihre Züge.",
+      "Von wo aus könnte sie auf c5 zurückschlagen?"
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Welche weißen Figuren greift der schwarze Bauer an? Klicke sie an.",
+     "fen": "8/8/8/4p3/3NRB2/8/8/8",
+     "pruef": {
+      "schlaege": [
+       "e5"
+      ]
+     },
+     "targets": null,
+     "antwort": "d4 und f4. Den Turm auf e4 direkt vor ihm greift der Bauer nicht an, denn er schlägt nur schräg.",
+     "hilfe": [
+      "Der Bauer schlägt schräg nach vorn.",
+      "Schwarz zieht nach unten."
+     ]
+    },
+    {
+     "frage": "Greift der weiße Turm den schwarzen Springer an? Klicke alle schwarzen Figuren an, die er angreift. Wenn keine, drücke „Prüfen“ ohne Markierung.",
+     "fen": "8/n7/8/8/P7/8/8/R7",
+     "pruef": {
+      "schlaege": [
+       "a1"
+      ]
+     },
+     "targets": null,
+     "antwort": "Keine. Der eigene Bauer auf a4 steht im Weg, der Springer auf a7 ist nicht angegriffen.",
+     "hilfe": [
+      "Fahre die a-Linie hoch.",
+      "Was steht zwischen a1 und a7?"
+     ]
+    },
+    {
+     "frage": "Der schwarze Läufer kann den weißen Springer auf e5 schlagen. Welche weißen Figuren könnten dann zurückschlagen? Klicke sie an.",
+     "fen": "1b6/8/8/4N3/3P4/5P2/8/4R3",
+     "pruef": {
+      "verteidiger": "e5"
+     },
+     "targets": null,
+     "antwort": "Der Bauer d4 und der Turm e1. Der Bauer auf f3 deckt e4 und g4, nicht e5.",
+     "hilfe": [
+      "Gedeckt heißt: zurückschlagen können.",
+      "Bauern decken schräg nach vorn."
+     ]
+    },
+    {
+     "frage": "Welche weißen Figuren greift der schwarze Springer gleichzeitig an? Klicke sie an.",
+     "fen": "8/8/2B1Q3/8/3n1N2/1R6/8/8",
+     "pruef": {
+      "schlaege": [
+       "d4"
+      ]
+     },
+     "targets": null,
+     "antwort": "b3, c6 und e6. Den Springer auf f4 erreicht er nicht. Ein Springer kann viele Figuren auf einmal angreifen.",
+     "hilfe": [
+      "Zeige alle acht Springerfelder.",
+      "Auf welchen steht eine weiße Figur?"
+     ]
+    },
+    {
+     "frage": "Ein Kind zieht den angegriffenen Läufer nach g5. Dort wird er wieder angegriffen. Markiere alle sicheren Felder für den Läufer.",
+     "fen": "4r3/8/7p/8/8/4B3/8/8",
+     "leer": true,
+     "pruef": {
+      "sicher": "e3"
+     },
+     "targets": null,
+     "antwort": "Alle Läuferfelder außer g5: f4, h6, d4, c5, b6, a7, d2, c1, f2 und g1. Auf h6 schlägt er sogar den Bauern.",
+     "hilfe": [
+      "Welches Feld greift der Bauer h6 an?",
+      "Bauern greifen schräg nach unten an."
+     ]
+    },
+    {
+     "frage": "Welche weißen Figuren hängen? Klicke sie an.",
+     "fen": "7r/8/8/b7/7Q/2N1n3/1P4B1/3R4",
+     "pruef": {
+      "haengt": "w"
+     },
+     "targets": null,
+     "antwort": "g2 und h4. Der Turm auf d1 ist angegriffen, aber vom Springer c3 gedeckt. Den Springer auf c3 deckt der Bauer b2.",
+     "hilfe": [
+      "Erst alle angegriffenen Figuren suchen.",
+      "Dann prüfen: Deckt sie jemand?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Welche schwarzen Figuren greift der weiße Turm an? Klicke sie an.",
+     "fen": "8/3b4/8/8/8/P2R3n/8/3n4",
+     "pruef": {
+      "schlaege": [
+       "d3"
+      ]
+     },
+     "targets": null,
+     "antwort": "d7, h3 und d1.",
+     "hilfe": [
+      "Prüfe die d-Linie und die 3. Reihe.",
+      "In jeder Richtung zählt die erste Figur."
+     ]
+    },
+    {
+     "frage": "Welche weißen Figuren sind angegriffen? Klicke sie an.",
+     "fen": "8/8/p7/1B6/4P1N1/2n4b/8/R7",
+     "pruef": {
+      "angegriffen": "w"
+     },
+     "targets": null,
+     "antwort": "b5, g4 und e4. Der Turm auf a1 ist sicher.",
+     "hilfe": [
+      "Prüfe jede schwarze Figur.",
+      "Denk an den schwarzen Springer."
+     ]
+    },
+    {
+     "frage": "Welche weißen Figuren sind gedeckt? Klicke sie an.",
+     "fen": "8/8/8/7R/2B5/1P3N2/P7/3Q4",
+     "pruef": {
+      "gedeckt": "w"
+     },
+     "targets": null,
+     "antwort": "b3 (Bauer a2), c4 (Bauer b3) und f3 (Dame d1).",
+     "hilfe": [
+      "Welche eigene Figur könnte zurückschlagen?",
+      "Die Dame deckt schräg."
+     ]
+    },
+    {
+     "frage": "Welche weißen Figuren hängen? Klicke sie an.",
+     "fen": "5q2/7R/5n2/3p4/4N3/B2P4/8/8",
+     "pruef": {
+      "haengt": "w"
+     },
+     "targets": null,
+     "antwort": "a3 und h7. Der Springer auf e4 ist angegriffen, aber vom Bauern d3 gedeckt.",
+     "hilfe": [
+      "Erst angegriffene Figuren suchen.",
+      "Dann prüfen: Deckt sie jemand?"
+     ]
+    },
+    {
+     "frage": "Der weiße Turm ist angegriffen. Markiere alle sicheren Felder auf der 4. Reihe.",
+     "fen": "8/b7/2n5/4p3/3R4/8/8/8",
+     "leer": true,
+     "pruef": {
+      "sicher": "d4",
+      "reihe": 4
+     },
+     "targets": null,
+     "antwort": "a4, c4, e4, g4 und h4. Auf b4 greift der Springer an, auf f4 der Bauer.",
+     "hilfe": [
+      "Der Turm zieht auf der 4. Reihe.",
+      "Welche Felder greift Schwarz an?"
+     ]
+    },
+    {
+     "frage": "Der weiße Springer auf d5 wird angegriffen. Markiere die Felder, auf die ein weißer Bauer ziehen kann, um ihn zu decken.",
+     "fen": "3r4/8/8/3N4/8/2P5/4P3/8",
+     "leer": true,
+     "pruef": {
+      "deckzug": {
+       "figuren": [
+        "c3",
+        "e2"
+       ],
+       "ziel": "d5"
+      }
+     },
+     "targets": null,
+     "antwort": "c4 und e4. Von dort decken die Bauern d5 schräg.",
+     "hilfe": [
+      "Bauern decken schräg nach vorn.",
+      "Welcher Bauernzug führt neben d5?"
      ]
     }
    ]
