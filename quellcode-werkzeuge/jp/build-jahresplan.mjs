@@ -67,7 +67,7 @@ for(const [w,F] of Object.entries(FIXED)){if(!LESSONS.find(x=>x.week===+w))err('
   if(t.targets==null)t.targets=z;else if([...t.targets].sort().join()!==[...z].sort().join())err(`W${w} ${set}${i+1}: Lösung ${t.targets} stimmt nicht, berechnet ${z}`);delete t.pruef});
  if(F.phasen.length!==6)err(`W${w}: sechs Phasen erwartet`);
  for(const p of F.phasen){if(!p.ablauf?.length||!p.kinder||!p.titel)err(`W${w} ${p.name}: Text fehlt`);if(!p.links?.length)err(`W${w} ${p.name}: kein Material-Link`);
-  for(const l of p.links){if(l.art==='feld'&&!F.feld?.[l.set])err(`W${w}: Feldaufgaben ${l.set} fehlen`);if(l.art==='brett'&&Array.isArray(l.aufgaben))for(const k of l.aufgaben)resolve(k)}}
+  for(const l of p.links){if(l.art==='feld'&&!F.feld?.[l.set])err(`W${w}: Feldaufgaben ${l.set} fehlen`);if(l.art==='spiel'&&!['rettung'].includes(l.was))err(`W${w}: unbekanntes Spiel ${l.was}`);if(l.art==='brett'&&Array.isArray(l.aufgaben))for(const k of l.aufgaben)resolve(k)}}
  const key=t=>t.targets?[...t.targets].sort().join(','):'offen:'+t.frage;
  const six=(set,von,bis,wo)=>{const list=(F.feld[set]||[]).slice((von||1)-1,bis||undefined);if(list.length!==6)err(`W${w} ${wo}: ${set} hat ${list.length} statt 6 Aufgaben`);
   const seen=new Map();list.forEach((t,i)=>{for(const k of [key(t)+'|'+(t.fen||''),t.frage]){if(seen.has(k))err(`W${w} ${wo}: ${set}${(von||1)+i} wiederholt ${seen.get(k)}`);seen.set(k,set+((von||1)+i))}})};

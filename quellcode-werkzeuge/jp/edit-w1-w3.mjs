@@ -28,9 +28,11 @@ F[2].hinweise.kuerzen='Die Feldraten-Blitzrunde entfällt, der Vergleich am Lehr
 {const p=ph(2,'Übung');p.ablauf=['Regeln kurz erklären: Jedes Kind versteckt drei Figuren als Schiffe, einen Bauern, einen Läufer (vier Felder lang) und einen Springer (seine Zielfelder als Kreise). Zwischen zwei Figuren bleibt ein Feld frei.',
  'Abwechselnd ein Feld ansagen, zum Beispiel „e4“. Treffer: X und noch einmal. Wasser: W, dann ist der andere dran. „Figur versenkt!“, wenn alle Felder getroffen sind.',
  'Zweite Runde: Danach wechseln die Rollen, das andere Kind sagt zuerst an.',
- 'Wer schnell fertig ist, spielt mit dir die Variante „Königliche Rettung“.'];
- p.links.push({art:'video',label:'Spielidee: Schiffe versenken (Video)',url:URLS.schiffeVideo})}
+ 'Zum Schluss der Übung spielen alle gemeinsam gegen dich die Variante „Königliche Rettung“ am Lehrbrett: Der König versteckt sich auf einem Feld. Die Kinder stellen nacheinander Ja/Nein-Fragen, zum Beispiel „Steht der König auf dem Damenflügel?“, und streichen nach jeder Antwort die Felder, auf denen er nicht sein kann. Ziel: den König mit möglichst wenigen Fragen finden.',
+ 'Frage nach guten Fragen: „Warum streicht diese Frage so viele Felder auf einmal?“'];
+ p.links.push({art:'video',label:'Spielidee: Schiffe versenken (Video)',url:URLS.schiffeVideo},{art:'spiel',label:'Lehrbrett: Königliche Rettung (alle gegen die Lehrkraft)',was:'rettung'})}
 {const p=ph(2,'Sicherung');p.ablauf=['Die Kinder lösen das Arbeitsheft Schachbrett, allein oder zu zweit.','Vergleich am Lehrbrett mit A7 bis A12. Frage nach: „Woran erkennst du, ob Felder auf einer Linie oder auf einer Reihe liegen?“']}
+F[2].hinweise.zusatz='Eigene Ja/Nein-Fragen erfinden, die genau die Hälfte der Felder streichen. Oder Aufgabe 1 im Arbeitsheft mit eigenen Diagonalen.';
 F[2].quelle=F[2].quelle+', Spielidee „Schiffe versenken“ als Video (Deutsche Schulschachstiftung)';
 // ---------- Woche 3 ----------
 const FILES='abcdefgh';

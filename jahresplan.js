@@ -9,7 +9,7 @@ if(window.Praxis&&D.collect){window.Praxis.COLLECT=window.Praxis.COLLECT||{};for
 const NR=['1.','2.','3.','4.','5.','6.'];
 const lesson=w=>D.lessons.find(l=>l.week===+w);
 const planRow=w=>(D.plan||[]).find(x=>x[0]===+w)||[];const title=w=>D.fixed[w]?.thema||planRow(w)[1]||'';
-const ICON={video:'▶',audio:'🔊',blatt:'📄',druck:'🖨',feld:'♟',info:'ℹ'};
+const ICON={video:'▶',audio:'🔊',blatt:'📄',druck:'🖨',feld:'♟',spiel:'♚',info:'ℹ'};
 const FILES='abcdefgh';
 const PIECE={k:'König',q:'Dame',r:'Turm',b:'Läufer',n:'Springer',p:'Bauer'};
 function placement(fen){const m={};if(!fen)return m;fen.split(' ')[0].split('/').forEach((row,ri)=>{let f=0;for(const c of row){if(/\d/.test(c))f+=+c;else{m[FILES[f]+(8-ri)]=c;f++}}});return m}
@@ -26,13 +26,14 @@ function linkHTML(l,pi,li){const ic=`<span aria-hidden="true">${ICON[l.art]||''}
 const AFTER=[['Fast alle können es selbstständig.','Kurz wiederholen, dann weitergehen.'],['Einige brauchen noch Unterstützung.','Hilfe bereitlegen und gezielt mit diesen Kindern üben.'],['Viele machen denselben Fehler.','Den Punkt anders erklären und üben, den nächsten Inhalt reduzieren.']];
 function hintsHTML(F,br,cls='jp-hints'){const H=F.hinweise;if(!H)return '';return `<p${cls?` class="${cls}"`:''}><b>Hilfe:</b> ${esc(H.hilfe)}${br}<b>Zusatz:</b> ${esc(H.zusatz)}${H.kuerzen?`${br}<b>Wenn die Zeit knapp wird:</b> ${esc(H.kuerzen)}`:''}</p>`}
 function afterHTML(F,cls=''){if(!F.nachher)return '';return `<div class="${cls?'':'jp-after'}"><h4>Für dich nach der Stunde</h4><p>Was klappt schon? Was greifen wir wieder auf? ${esc(F.nachher)}</p><table${cls?` class="${cls}"`:''}><thead><tr><th>Beobachtung im Lerncheck</th><th>Für die nächste Stunde</th></tr></thead><tbody>${AFTER.map(([a,b])=>`<tr><td>${a}</td><td>${b}</td></tr>`).join('')}</tbody></table></div>`}
+const navHTML=w=>`<div class="row jp-nav"><button type="button" class="jpback">← Zum Jahresplan</button>${D.fixed[w-1]?`<button type="button" data-jpweek="${w-1}">← Woche ${w-1}</button>`:''}${D.fixed[w+1]?`<button type="button" data-jpweek="${w+1}">Woche ${w+1} →</button>`:''}</div>`;
 function weekHTML(w){const F=D.fixed[w];
  const rows=F.phasen.map((p,pi)=>`<tr><th scope="row">${NR[pi]} Phase<span class="jp-phname">(${esc(p.name)})</span></th><td><b>${esc(p.titel)}</b>${p.ablauf.map(a=>`<p>${esc(a)}</p>`).join('')}<p class="jp-kids">Ergebnis: ${esc(p.kinder)}</p></td><td class="jp-links">${p.links.map((x,li)=>linkHTML(x,pi,li)).join('')}</td></tr>`).join('');
- return `<div class="jp-week"><div class="row"><button type="button" id="jpback">← Zum Jahresplan</button>${D.fixed[w-1]?`<button type="button" data-jpweek="${w-1}">← Woche ${w-1}</button>`:''}${D.fixed[w+1]?`<button type="button" data-jpweek="${w+1}">Woche ${w+1} →</button>`:''}</div>
+ return `<div class="jp-week">${navHTML(w)}
  <table class="jp-meta"><tbody><tr><th>Thema (Woche ${w})</th><td><b>${esc(F.thema)}</b></td></tr><tr><th>Lernziel</th><td>„${esc(F.lernziel)}“</td></tr><tr><th>Leitfrage</th><td>${esc(F.leitfrage)}</td></tr>${F.vorwissen?`<tr><th>Vorwissen</th><td>${esc(F.vorwissen)}</td></tr>`:''}<tr><th>Umfang</th><td>${esc(F.umfang)}</td></tr></tbody></table>
  <table class="jp-flow"><thead><tr><th>Phase</th><th>So läuft die Stunde</th><th>Material</th></tr></thead><tbody>${rows}</tbody></table>${hintsHTML(F,'<br>')}${afterHTML(F)}
  ${F.geschichte?`<details class="jp-story"><summary>Geschichte „${esc(F.geschichte.titel)}“ zum Vorlesen</summary>${F.geschichte.text.map(t=>`<p>${esc(t)}</p>`).join('')}</details>`:''}
- <p class="muted">Quellen: ${esc(F.quelle)}.</p><div class="row"><button type="button" class="primary" id="jpprint">Stunde drucken / PDF</button></div></div>`}
+ <p class="muted">Quellen: ${esc(F.quelle)}.</p><div class="row"><button type="button" class="primary" id="jpprint" aria-expanded="false">Stunde drucken / PDF</button></div><div id="jpprintpick" hidden></div>${navHTML(w)}</div>`}
 // ---------- Geschichte anhören ----------
 let player=null;
 function speak(F,btn){const label=on=>btn.innerHTML=`<span aria-hidden="true">${on?'⏹':'🔊'}</span> ${on?'Anhören stoppen':'Geschichte anhören'}`;
@@ -42,7 +43,8 @@ function speak(F,btn){const label=on=>btn.innerHTML=`<span aria-hidden="true">${
 function alertBox(t){const s=document.getElementById('jpnote');if(s)s.textContent=t}
 // ---------- Lehrbrett für Feldaufgaben (Aussehen wie das Lehrbrett) ----------
 let FB=null;
-function fbOpen(w,set,von,bis){const F=D.fixed[w];let list=F.feld[set].map((t,i)=>({...t,label:set+(i+1)}));list=list.slice((von||1)-1,bis||undefined);FB={w,list,i:0,marks:new Set(),undo:[],shown:false,msg:'',kind:'info',hints:0};fbRender()}
+function fbOpen(w,set,von,bis){const y=scrollY;const F=D.fixed[w];let list=F.feld[set].map((t,i)=>({...t,label:set+(i+1)}));list=list.slice((von||1)-1,bis||undefined);FB={w,y,list,i:0,marks:new Set(),undo:[],shown:false,msg:'',kind:'info',hints:0};fbRender();topOfBody()}
+const topOfBody=()=>{const h=document.getElementById('plannerbody');if(h)h.scrollIntoView({block:'start'})};
 function boardMarkup(t,o){const pos=placement(t.fen),m=o.marks||new Set(),sol=o.sol||new Set(),fill=o.fill||{},lab=o.label||{};const btn=!!o.interactive;
  const letters='<div class="file-labels">'+[...FILES].map(f=>btn?`<button type="button" class="jp-lab" data-jpfile="${f}" aria-label="${f}-Linie markieren">${f}</button>`:`<span>${f}</span>`).join('')+'</div>';
  const nums='<div class="rank-labels">'+[8,7,6,5,4,3,2,1].map(r=>btn?`<button type="button" class="jp-lab" data-jprank="${r}" aria-label="Reihe ${r} markieren">${r}</button>`:`<span>${r}</span>`).join('')+'</div>';
@@ -74,10 +76,10 @@ function fbRender(){const t=FB.list[FB.i];const host=document.getElementById('pl
   const want=new Set(t.targets),got=FB.marks;const hit=[...got].filter(q=>want.has(q)).length,extra=[...got].filter(q=>!want.has(q)).length,miss=want.size-hit;
   if(!miss&&!extra)set('✓ Richtig! '+t.antwort,'good');else if(!want.size)set('✗ Hier wird nichts markiert. Lösche die Markierungen und überlege noch einmal.','bad');
   else set(`✗ Noch nicht ganz: ${hit} von ${want.size} richtig`+(extra?`, ${extra} Feld${extra>1?'er':''} zu viel`:'')+'. Versuche es noch einmal oder nimm eine Hilfe.','bad');fbRender()};
- document.getElementById('fbback').onclick=()=>{const w=FB.w;FB=null;show(w)}}
+ document.getElementById('fbback').onclick=()=>{const {w,y}=FB;FB=null;show(w,y)}}
 // ---------- Drucken (im Stil der SchachStunde-Arbeitsblätter) ----------
 const head=(t,sub,fields)=>`<div class="ws-head"><div><h1>${esc(t)}</h1><p>${esc(sub)}</p></div>${fields?'<div class="ws-fields"><span>Name<i></i></span><span>Datum<i class="s"></i></span></div>':''}</div>`;
-const PCSS='<style>.ws-page .ws-head h1{white-space:normal!important;font-size:13.5pt!important;line-height:1.2!important}.ws-page .ws-head>div:first-child{flex:1;min-width:0}.jp-sqlabel{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:700 7.5pt system-ui;color:#8a1f4f;white-space:nowrap;z-index:2;text-shadow:0 0 2px #fff,0 0 2px #fff}.jp-heft .ws-grid{grid-template-columns:1fr 1fr;gap:3mm}.jp-heft .ws-card-body{display:block}.jp-heft .ws-diag{display:flex;justify-content:center;padding-top:4mm}.jp-heft .boardframe{width:50mm!important;grid-template-rows:12px minmax(0,1fr) 12px!important}.jp-heft .file-labels{align-items:end}.ws-page .sq.solution{box-shadow:inset 0 0 0 100px rgba(232,140,40,.6)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.jp-heft .ws-card p{margin:1.5mm 0 0;font-size:8.3pt;line-height:1.3}.jp-heft .ws-card{break-inside:avoid}.jp-poster li{font-size:15pt;margin:4mm 0}.jp-poster h2{font-size:18pt}.jp-story p{font-size:12pt;line-height:1.6}.sq{position:relative;overflow:visible}.jp-heft .board{overflow:visible}</style>';
+const PCSS='<style>.ws-page .ws-head h1{white-space:normal!important;font-size:13.5pt!important;line-height:1.2!important}.ws-page .ws-head>div:first-child{flex:1;min-width:0}.jp-sqlabel{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:700 7.5pt system-ui;color:#8a1f4f;white-space:nowrap;z-index:2;text-shadow:0 0 2px #fff,0 0 2px #fff}.jp-heft .ws-grid{grid-template-columns:1fr 1fr;gap:3mm}.jp-heft .ws-card-body{display:block}.jp-heft .ws-diag{display:flex;justify-content:center;padding-top:4mm}.jp-heft .boardframe{width:50mm!important;grid-template-rows:12px minmax(0,1fr) 12px!important}.jp-heft .file-labels{align-items:end}.jp-cut .ws-grid{gap:0!important;border-top:1.5px dashed #444;border-left:1.5px dashed #444}.jp-cut .ws-card{border:0!important;border-right:1.5px dashed #444!important;border-bottom:1.5px dashed #444!important;border-radius:0!important;box-shadow:none!important;padding:3mm 4mm 4mm}.jp-cut .boardframe{width:46mm!important}.jp-cut .ws-card p{text-align:center}.ws-page .sq.solution{box-shadow:inset 0 0 0 100px rgba(232,140,40,.6)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}.jp-heft .ws-card p{margin:1.5mm 0 0;font-size:8.3pt;line-height:1.3}.jp-heft .ws-card{break-inside:avoid}.jp-poster li{font-size:15pt;margin:4mm 0}.jp-poster h2{font-size:18pt}.jp-story p{font-size:12pt;line-height:1.6}.sq{position:relative;overflow:visible}.jp-heft .board{overflow:visible}</style>';
 const paper=q=>q.replace(/(^|\. )Markiere ((?:alle |das |die beiden )Feld[^,.]*)([,.])/g,'$1Kreuze $2 an$3').replace(/Klicke (.*?) an\b/g,'Kreise $1 ein').replace(/klicke (.*?) an\b/g,'kreise $1 ein').replace(/drücke „Prüfen“ ohne Markierung/,'schreibe „alles richtig“').replace(/^Markiere /,'Male aus: ').replace(/^Zeige /,'Kreise ein: ');
 const diag=(t,o)=>`<div class="ws-diag">${boardMarkup(t,o||{})}</div>`;
 const card=(label,t,prompt)=>`<div class="ws-card"><div class="ws-card-head"><b>${esc(label)}</b></div><div class="ws-card-body">${diag(t)}<p>${esc(prompt)}</p><div class="ws-line"></div></div></div>`;
@@ -91,24 +93,83 @@ function printGeschichte(B,w){const F=D.fixed[w],Q=F.feld.S;
  return B.sheetCSS('Geschichte')+PCSS+`<section class="ws-page jp-story">${head(F.geschichte.titel,'Geschichte zum Vorlesen · Woche '+w)}${F.geschichte.text.map(t=>`<p>${esc(t)}</p>`).join('')}<p class="ws-src">${esc(F.geschichte.hinweis||'')} © Dr. Edmund Bruns</p></section>
  <section class="ws-page jp-heft">${head('Fragen zur Geschichte „'+F.geschichte.titel+'“','Arbeitsblatt Woche '+w,true)}<div class="ws-grid">${Q.map((t,i)=>card('S'+(i+1),t,paper(t.frage))).join('')}</div></section>
  <section class="ws-page">${head('Lösungen: Fragen zur Geschichte','Woche '+w+' · für die Lehrkraft')}<ol>${Q.map(t=>`<li>${esc(t.antwort)}</li>`).join('')}</ol><p class="ws-src">© Dr. Edmund Bruns</p></section>`}
-function printAufbaukarte(B,w){const START='rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR';const k=()=>`<div class="ws-card"><div class="ws-card-head"><b>Aufbaukarte: So steht die Grundstellung</b></div><div class="ws-card-body">${diag({fen:START})}<p><b>Rechts unten ist hell.</b> Die Dame steht auf ihrer Farbe.</p><p>Von links nach rechts: Turm, Springer, Läufer, Dame, König, Läufer, Springer, Turm. Davor acht Bauern.</p></div></div>`;
- return B.sheetCSS('Aufbaukarte')+PCSS+`<section class="ws-page jp-heft">${head('Aufbaukarten','Woche '+w+' · ausschneiden, eine Karte pro Paar')}<div class="ws-grid">${k()+k()+k()+k()}</div><p class="ws-cut">✂ Entlang der Rahmen ausschneiden.</p></section>`}
+function printAufbaukarte(B,w){const START='rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR';const k=()=>`<div class="ws-card"><div class="ws-card-body">${diag({fen:START})}<p><b>Rechts unten ist hell. Die Dame steht auf ihrer Farbe.</b></p><p>Turm, Springer, Läufer, Dame, König, Läufer, Springer, Turm. Davor acht Bauern.</p></div></div>`;
+ return B.sheetCSS('Aufbaukarte')+PCSS+`<section class="ws-page jp-heft jp-cut">${head('Aufbaukarten','Woche '+w+' · eine Karte pro Paar')}<div class="ws-grid">${Array.from({length:6},k).join('')}</div><p class="ws-cut">✂ Entlang der gestrichelten Linien ausschneiden.</p></section>`}
 function printBeobachtung(B,w){const rows=Array.from({length:16},()=>'<tr><td style="height:9mm"></td><td></td><td></td><td></td><td></td></tr>').join('');
  return B.sheetCSS('Beobachtungsbogen')+PCSS+`<section class="ws-page">${head('Beobachtungsbogen Lerncheck','Woche '+w+' · Grundstellung ohne Vorlage')}<table class="ws-table"><thead><tr><th style="width:38%">Name</th><th>Brett richtig</th><th>Figuren richtig</th><th>allein</th><th>mit Hilfe / weiter üben</th></tr></thead><tbody>${rows}</tbody></table><p>Ankreuzen. Bei Fehlern einen konkreten Tipp geben, zum Beispiel „Schau auf die Farbe unter deiner Dame“, dann korrigieren lassen.</p><p class="ws-src">© Dr. Edmund Bruns</p></section>`}
 function printStunde(B,w){const F=D.fixed[w];
  const rows=F.phasen.map((p,i)=>`<tr><td><b>${NR[i]} Phase</b><br>(${esc(p.name)})</td><td><b>${esc(p.titel)}</b>${p.ablauf.map(a=>`<br>${esc(a)}`).join('')}<br><i>Ergebnis: ${esc(p.kinder)}</i></td><td>${p.links.map(x=>esc(x.label)).join('<br>')}</td></tr>`).join('');
+ return B.sheetCSS('Woche '+w)+PCSS+`<section class="ws-page">${head('Woche '+w+': '+F.thema,F.umfang)}<p><b>Lernziel:</b> „${esc(F.lernziel)}“<br><b>Leitfrage:</b> ${esc(F.leitfrage)}${F.vorwissen?`<br><b>Vorwissen:</b> ${esc(F.vorwissen)}`:''}</p><table class="ws-table"><thead><tr><th>Phase</th><th>Ablauf</th><th>Material</th></tr></thead><tbody>${rows}</tbody></table>${hintsHTML(F,'<br>','')}${afterHTML(F,'ws-table')}</section>`}
+function printUebersicht(B,w){const F=D.fixed[w];
  const sets=Object.entries(F.feld).map(([s,list])=>`<h2 class="ws-part">Lehrbrett ${esc(s)}</h2><ol>${list.map(t=>`<li><b>${esc(t.frage)}</b><br>${esc(t.antwort)}</li>`).join('')}</ol>`).join('');
- return B.sheetCSS('Woche '+w)+PCSS+`<section class="ws-page">${head('Woche '+w+': '+F.thema,F.umfang)}<p><b>Lernziel:</b> „${esc(F.lernziel)}“<br><b>Leitfrage:</b> ${esc(F.leitfrage)}${F.vorwissen?`<br><b>Vorwissen:</b> ${esc(F.vorwissen)}`:''}</p><table class="ws-table"><thead><tr><th>Phase</th><th>Ablauf</th><th>Material</th></tr></thead><tbody>${rows}</tbody></table>${hintsHTML(F,'<br>','')}${afterHTML(F,'ws-table')}</section><section class="ws-page">${head('Aufgaben und Lösungen','Woche '+w+' · für die Lehrkraft')}${sets}<p class="ws-src">Quellen: ${esc(F.quelle)}. © Dr. Edmund Bruns</p></section>`}
+ return B.sheetCSS('Woche '+w)+PCSS+`<section class="ws-page">${head('Aufgaben und Lösungen','Woche '+w+' · für die Lehrkraft')}${sets}<p class="ws-src">Quellen: ${esc(F.quelle)}. © Dr. Edmund Bruns</p></section>`}
+// Ein Druckstück je Material-Link; „Stunde drucken“ sammelt alle
+function druckHTML(B,w,x){const k=x.was;if(k.startsWith('feld:'))return printFeld(B,w,k.slice(5),k==='feld:L'?'Lerncheck':x.label.replace(/^Arbeitsblatt:\s*/,''),'Woche '+w+(k==='feld:L'?' · allein lösen':''));
+ return ({regeln:()=>printRegeln(B,w),geschichte:()=>printGeschichte(B,w),arbeitsheft:()=>printHeft(B,w),aufbaukarte:()=>printAufbaukarte(B,w),beobachtung:()=>printBeobachtung(B,w)}[k]||(()=>''))()}
+function materials(w){const F=D.fixed[w],seen=new Set(),out=[{id:'stunde',label:'Stundenverlauf (für die Lehrkraft)',html:B=>printStunde(B,w)},{id:'uebersicht',label:'Alle Lehrbrett-Aufgaben mit Lösungen (für die Lehrkraft)',html:B=>printUebersicht(B,w)}],ext=[];
+ F.phasen.forEach(p=>p.links.forEach(x=>{if(x.art==='druck'&&!seen.has(x.was)){seen.add(x.was);out.push({id:x.was,label:x.label,html:B=>druckHTML(B,w,x)})}else if((x.art==='blatt'||x.art==='info')&&x.url)ext.push(x)}));return {out,ext}}
+let printY=null;
+function printKeep(B,html){printY=scrollY;const prev=window.plannerReturn;window.plannerReturn=()=>{window.plannerReturn=prev;if(document.querySelector('.jp-week')&&printY!==null){const y=printY;printY=null;requestAnimationFrame(()=>scrollTo(0,y));return true}return prev?prev():false};B.printContent(html)}
+function pickHTML(w){const {out,ext}=materials(w);return `<div class="jp-pick"><h4>Was möchtest du drucken?</h4><p class="muted">Alle Materialien dieser Stunde. Wähle aus, was du brauchst. Alles kommt in eine Druckdatei.</p>${out.map(m=>`<label><input type="checkbox" data-jpmat="${esc(m.id)}" checked> ${esc(m.label)}</label>`).join('')}${ext.length?`<p class="muted">Außerdem separat zu öffnen: ${ext.map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)}</a>`).join(', ')}.</p>`:''}<div class="row"><button type="button" class="primary" id="jppickgo">Auswahl drucken / PDF</button><button type="button" id="jppickall">Alle auswählen</button><button type="button" id="jppicknone">Keine auswählen</button></div></div>`}
+// ---------- Königliche Rettung: alle gegen die Lehrkraft ----------
+const FR=[['farbe','Steht der König auf einem hellen Feld?',null,q=>(FILES.indexOf(q[0])+ +q[1])%2===0],
+ ['linie','Steht der König auf der {p}-Linie?','f',(q,p)=>q[0]===p],['reihe','Steht der König auf der {p}. Reihe?','r',(q,p)=>q[1]===p],
+ ['links','Steht der König links von der {p}-Linie?','f',(q,p)=>q[0]<p],['oben','Steht der König oberhalb der {p}. Reihe?','r',(q,p)=>+q[1]>+p],
+ ['dame','Steht der König auf dem Damenflügel (a- bis d-Linie)?',null,q=>q[0]<='d'],['zentrum','Steht der König im Zentrum (d4, e4, d5, e5)?',null,q=>/^[de][45]$/.test(q)],
+ ['rand','Steht der König auf einem Randfeld?',null,q=>/^[ah]|[18]$/.test(q)]];
+let RT=null;const ALL=[...FILES].flatMap(f=>[1,2,3,4,5,6,7,8].map(r=>f+r));
+function rtOpen(w){RT={w,y:scrollY,king:ALL[Math.floor(Math.random()*64)],gone:new Set(),undo:[],n:0,log:[],found:false,raten:false,auto:false,msg:'Der König hat sich versteckt. Stellt eine Ja/Nein-Frage.',kind:'info'};rtRender();topOfBody()}
+function rtRender(){const R=RT,host=document.getElementById('plannerbody');const t={fen:R.found?placementFen(R.king):''};
+ const board=boardMarkup(t,{interactive:true,marks:new Set(),sol:R.found?new Set([R.king]):null}).replace(/data-bsq="([a-h][1-8])"/g,(m,q)=>m+(R.gone.has(q)?' data-gone="1"':''));
+ const q0=FR.find(f=>f[0]===(R.q||'dame'));
+ host.innerHTML=`<div class="jp-fb jp-rt"><h2>Königliche Rettung</h2><div class="training"><div><div id="movefeedback" class="movefeedback ${R.kind}" role="status" aria-live="polite">${esc(R.msg)}</div><div id="teacherboard">${board}</div>
+ <div class="row"><button type="button" id="rtundo" ${R.undo.length?'':'disabled'}>← Zurück</button><button type="button" id="rtclear">Streichungen löschen</button></div><p class="muted">${R.raten?'Ratemodus: Klicke das Feld an, auf dem ihr den König vermutet. Jeder Rateversuch zählt als Frage.':'Klicke Felder an, um sie zu streichen. Ein Klick auf eine Zahl oder einen Buchstaben streicht die ganze Reihe oder Linie.'}</p></div>
+ <aside class="side"><section class="boardcontext"><button type="button" id="rtback">← Zurück zu Woche ${R.w}</button></section>
+ <p>Alle gegen die Lehrkraft: Der König hat sich auf einem Feld versteckt. Stellt nacheinander Ja/Nein-Fragen und streicht nach jeder Antwort die Felder, auf denen er nicht stehen kann.</p>
+ <p class="jp-rtcount"><b>Fragen: ${R.n}</b> · noch möglich: ${64-R.gone.size} Felder</p>
+ <label>Frage <select id="rtq">${FR.map(f=>`<option value="${f[0]}" ${f===q0?'selected':''}>${esc(f[1].replace('{p}','_'))}</option>`).join('')}</select></label>
+ ${q0[2]?`<label>${q0[2]==='f'?'Linie':'Reihe'} <select id="rtp">${(q0[2]==='f'?[...FILES]:['1','2','3','4','5','6','7','8']).map(v=>`<option ${v===R.p?'selected':''}>${v}</option>`).join('')}</select></label>`:''}
+ <div class="row"><button type="button" class="primary" id="rtask" ${R.found?'disabled':''}>Frage stellen</button><button type="button" id="rtguess" aria-pressed="${R.raten}" ${R.found?'disabled':''}>${R.raten?'Raten beenden':'Feld raten'}</button></div>
+ <label class="jp-rtauto"><input type="checkbox" id="rtauto" ${R.auto?'checked':''}> Felder nach der Antwort automatisch streichen</label>
+ ${R.log.length?`<ol class="jp-rtlog">${R.log.map(l=>`<li>${esc(l)}</li>`).join('')}</ol>`:''}
+ <details><summary>Lehrkraft: König selbst verstecken</summary><p class="muted">Feld verdeckt eingeben, zum Beispiel e4. Das Feld wird nicht angezeigt.</p><div class="row"><input type="password" id="rtsecret" maxlength="2" size="4" autocomplete="off" aria-label="Versteck-Feld"><button type="button" id="rthide">Verstecken</button></div></details>
+ <div class="row"><button type="button" id="rtnew">Neues Spiel (zufälliges Versteck)</button></div>
+ <p class="jp-hint">Tipp: Gute Fragen streichen viele Felder auf einmal, zum Beispiel „Steht der König auf dem Damenflügel?“ Danach bleibt nur noch die Hälfte.</p></aside></div></div>`;
+ host.querySelectorAll('[data-bsq]').forEach(b=>{if(b.dataset.gone)b.classList.add('gone');b.onclick=()=>R.raten?rtGuess(b.dataset.bsq):rtStrike([b.dataset.bsq])});
+ host.querySelectorAll('[data-jprank]').forEach(b=>b.onclick=()=>rtStrike([...FILES].map(f=>f+b.dataset.jprank)));
+ host.querySelectorAll('[data-jpfile]').forEach(b=>b.onclick=()=>rtStrike([1,2,3,4,5,6,7,8].map(r=>b.dataset.jpfile+r)));
+ const $=id=>document.getElementById(id);
+ $('rtq').onchange=e=>{R.q=e.target.value;R.p=null;rtRender()};if($('rtp'))$('rtp').onchange=e=>{R.p=e.target.value};
+ $('rtauto').onchange=e=>{R.auto=e.target.checked};
+ $('rtundo').onclick=()=>{if(R.undo.length){R.gone=R.undo.pop();rtRender()}};
+ $('rtclear').onclick=()=>{R.undo.push(new Set(R.gone));R.gone=new Set();rtRender()};
+ $('rtguess').onclick=()=>{R.raten=!R.raten;rtRender()};
+ $('rtnew').onclick=()=>{const {w,y}=R;rtOpen(w);RT.y=y};
+ $('rthide').onclick=()=>{const v=$('rtsecret').value.trim().toLowerCase();if(!/^[a-h][1-8]$/.test(v)){R.msg='Bitte ein Feld wie e4 eingeben.';R.kind='bad';rtRender();return}Object.assign(R,{king:v,gone:new Set(),undo:[],n:0,log:[],found:false,raten:false,msg:'Der König hat sich versteckt. Stellt eine Ja/Nein-Frage.',kind:'info'});rtRender()};
+ $('rtask').onclick=()=>{const f=FR.find(x=>x[0]===(R.q||'dame'));const p=f[2]?($('rtp').value):null;const ja=f[3](R.king,p);R.n++;const text=f[1].replace('{p}',p)+' '+(ja?'Ja.':'Nein.');R.log.push(text);R.msg='Frage '+R.n+': '+text+(R.auto?'':' Streicht jetzt die Felder, auf denen er nicht stehen kann.');R.kind=ja?'good':'bad';
+  if(R.auto){R.undo.push(new Set(R.gone));for(const q of ALL)if(f[3](q,p)!==ja)R.gone.add(q)}rtRender()};
+ $('rtback').onclick=()=>{const {w,y}=R;RT=null;show(w,y)}}
+function placementFen(sq){const rows=[];for(let r=8;r>=1;r--){let s='',e=0;for(const f of FILES){if(f+r===sq){if(e){s+=e;e=0}s+='K'}else e++}if(e)s+=e;rows.push(s)}return rows.join('/')}
+function rtStrike(sqs){const R=RT;R.undo.push(new Set(R.gone));const all=sqs.every(q=>R.gone.has(q));for(const q of sqs)all?R.gone.delete(q):R.gone.add(q);rtRender()}
+function rtGuess(q){const R=RT;R.n++;if(q===R.king){R.found=true;R.raten=false;R.msg=`👑 Gefunden! Der König stand auf ${q}. Ihr habt ${R.n} Fragen gebraucht.`;R.kind='good';R.log.push('Raten: '+q+'? Ja, gefunden!')}else{R.undo.push(new Set(R.gone));R.gone.add(q);R.msg=`Nicht auf ${q}. Das Feld ist gestrichen.`;R.kind='bad';R.log.push('Raten: '+q+'? Nein.')}rtRender()}
 // ---------- Ablauf ----------
 let B0=null;
-function show(w){const B=B0,F=D.fixed[w];document.getElementById('plannerbody').innerHTML=weekHTML(w)+'<p id="jpnote" role="status"></p>';
+function show(w,y){const B=B0,F=D.fixed[w];document.getElementById('plannerbody').innerHTML=weekHTML(w)+'<p id="jpnote" role="status"></p>';
  document.querySelectorAll('[data-jplink]').forEach(b=>b.onclick=()=>{const [pi,li]=b.dataset.jplink.split('|').map(Number);const x=F.phasen[pi].links[li];
   if(x.art==='feld')fbOpen(w,x.set,x.von,x.bis);
+  else if(x.art==='spiel'&&x.was==='rettung')rtOpen(w);
   else if(x.art==='audio')speak(F,b);
-  else if(x.art==='druck'){const k=x.was;const html=k.startsWith('feld:')?printFeld(B,w,k.slice(5),k==='feld:L'?'Lerncheck':x.label.replace(/^Arbeitsblatt:\s*/,''),'Woche '+w+(k==='feld:L'?' · allein lösen':'')):({regeln:()=>printRegeln(B,w),geschichte:()=>printGeschichte(B,w),arbeitsheft:()=>printHeft(B,w),aufbaukarte:()=>printAufbaukarte(B,w),beobachtung:()=>printBeobachtung(B,w)}[k]||(()=>''))();if(html)B.printContent(html)}});
+  else if(x.art==='druck'){const html=druckHTML(B,w,x);if(html)printKeep(B,html)}});
  document.querySelectorAll('[data-jpweek]').forEach(b=>b.onclick=()=>show(+b.dataset.jpweek));
- document.getElementById('jpback').onclick=()=>{try{window.speechSynthesis?.cancel()}catch(e){}B.back();setTimeout(()=>document.getElementById('px-year')?.scrollIntoView(),0)};
- document.getElementById('jpprint').onclick=()=>B.printContent(printStunde(B,w));scrollTo(0,0)}
+ document.querySelectorAll('.jpback').forEach(b=>b.onclick=()=>{try{player&&player.pause()}catch(e){}B.back();setTimeout(()=>document.getElementById('px-year')?.scrollIntoView(),0)});
+ const pick=document.getElementById('jpprintpick'),pb=document.getElementById('jpprint');
+ pb.onclick=()=>{const open=pick.hidden;pick.hidden=!open;pb.setAttribute('aria-expanded',String(open));if(open&&!pick.innerHTML){pick.innerHTML=pickHTML(w);
+  const boxes=()=>[...pick.querySelectorAll('[data-jpmat]')];
+  document.getElementById('jppickall').onclick=()=>boxes().forEach(c=>c.checked=true);
+  document.getElementById('jppicknone').onclick=()=>boxes().forEach(c=>c.checked=false);
+  document.getElementById('jppickgo').onclick=()=>{const ids=boxes().filter(c=>c.checked).map(c=>c.dataset.jpmat);if(!ids.length){alertBox('Bitte mindestens ein Material auswählen.');return}
+   const html=materials(w).out.filter(m=>ids.includes(m.id)).map(m=>m.html(B).replace(/<style>[\s\S]*?<\/style>/g,'')).join('');printKeep(B,B.sheetCSS('Woche '+w)+PCSS+html)}}};
+ if(y!=null)requestAnimationFrame(()=>scrollTo(0,y));else document.querySelector('.jp-week')?.scrollIntoView({block:'start'})}
 function mount(B){B0=B;const sec=document.getElementById('px-year');if(!sec)return;sec.querySelectorAll('[data-jpweek]').forEach(b=>b.onclick=()=>show(+b.dataset.jpweek))}
-window.Jahresplan={mount,show,overviewHTML,data:D,_fb:()=>FB};
+window.Jahresplan={mount,show,overviewHTML,data:D,_fb:()=>FB,_rt:()=>RT};
 })();

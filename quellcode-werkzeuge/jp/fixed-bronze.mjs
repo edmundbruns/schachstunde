@@ -630,7 +630,8 @@ export const FIXED={
      "Regeln kurz erklären: Jedes Kind versteckt drei Figuren als Schiffe, einen Bauern, einen Läufer (vier Felder lang) und einen Springer (seine Zielfelder als Kreise). Zwischen zwei Figuren bleibt ein Feld frei.",
      "Abwechselnd ein Feld ansagen, zum Beispiel „e4“. Treffer: X und noch einmal. Wasser: W, dann ist der andere dran. „Figur versenkt!“, wenn alle Felder getroffen sind.",
      "Zweite Runde: Danach wechseln die Rollen, das andere Kind sagt zuerst an.",
-     "Wer schnell fertig ist, spielt mit dir die Variante „Königliche Rettung“."
+     "Zum Schluss der Übung spielen alle gemeinsam gegen dich die Variante „Königliche Rettung“ am Lehrbrett: Der König versteckt sich auf einem Feld. Die Kinder stellen nacheinander Ja/Nein-Fragen, zum Beispiel „Steht der König auf dem Damenflügel?“, und streichen nach jeder Antwort die Felder, auf denen er nicht sein kann. Ziel: den König mit möglichst wenigen Fragen finden.",
+     "Frage nach guten Fragen: „Warum streicht diese Frage so viele Felder auf einmal?“"
     ],
     "kinder": "Ich sage jedes Feld richtig an.",
     "links": [
@@ -643,6 +644,11 @@ export const FIXED={
       "art": "video",
       "label": "Spielidee: Schiffe versenken (Video)",
       "url": "https://www.youtube.com/watch?v=4Kh3sRBwY4Q"
+     },
+     {
+      "art": "spiel",
+      "label": "Lehrbrett: Königliche Rettung (alle gegen die Lehrkraft)",
+      "was": "rettung"
      }
     ]
    },
@@ -1098,7 +1104,7 @@ export const FIXED={
   },
   "hinweise": {
    "hilfe": "Mit dem Finger erst den Buchstaben unten, dann die Zahl am Rand suchen.",
-   "zusatz": "Variante „Königliche Rettung“ oder Aufgabe 1 im Arbeitsheft mit eigenen Diagonalen.",
+   "zusatz": "Eigene Ja/Nein-Fragen erfinden, die genau die Hälfte der Felder streichen. Oder Aufgabe 1 im Arbeitsheft mit eigenen Diagonalen.",
    "kuerzen": "Die Feldraten-Blitzrunde entfällt, der Vergleich am Lehrbrett wird auf A7 bis A9 gekürzt. Lerncheck und Aufräumen bleiben."
   },
   "arbeitsheft": [
