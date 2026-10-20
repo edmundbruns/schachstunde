@@ -2,7 +2,7 @@
 // © Dr. Edmund Bruns
 import fs from 'node:fs';import vm from 'node:vm';import path from 'node:path';import {fileURLToPath} from 'node:url';
 import {Chess} from '../dist/assets/chess.mjs';
-import {EXTRA,M1_WORK,M1_HINTS,DL_HINTS} from './tasks-bronze.mjs';import {LESSONS,LINKS} from './lessons-bronze.mjs';import {FIXED,YEAR,LATER,URLS} from './fixed-bronze.mjs';
+import {EXTRA,M1_WORK,M1_HINTS,DL_HINTS} from './tasks-bronze.mjs';import {LESSONS,LINKS} from './lessons-bronze.mjs';import {FIXED,YEAR,LATER,URLS,PLAN} from './fixed-bronze.mjs';
 const here=path.dirname(fileURLToPath(import.meta.url)),dist=path.join(here,'../dist');
 const ctx={window:{},console};vm.createContext(ctx);
 for(const f of ['runtime-data','planner-core','curriculum','lesson-units','next-topics','quality','labyrinth','method-catalog','teaching-support','praxis','diplom-lessons'])vm.runInContext(fs.readFileSync(path.join(dist,f+'.js'),'utf8'),ctx);
@@ -43,6 +43,7 @@ for(const L of LESSONS){
  if(L.week>1){const earlier=new Set(LESSONS.filter(x=>x.week<L.week).flatMap(x=>PH.filter(p=>p!=='lerncheck'&&p!=='ausblick').flatMap(p=>x[p].aufgaben)));
   for(const k of L.ausblick.aufgaben)if(!earlier.has(k))err(`W${L.week}: Ausblick-Aufgabe ${k} stammt nicht aus einer früheren Stunde`)}
  seenWeek[L.week]=true}
+if(PLAN.length!==36||PLAN.some((r,i)=>r[0]!==i+1))err('Jahresplan: 36 fortlaufende Wochen erwartet');
 // Feste Stunden für das Praxiswissen
 const SQ=/^[a-h][1-8]$/;
 for(const [w,F] of Object.entries(FIXED)){if(!LESSONS.find(x=>x.week===+w))err('Feste Stunde ohne Woche '+w);
@@ -68,7 +69,7 @@ for(const [w,F] of Object.entries(FIXED)){if(!LESSONS.find(x=>x.week===+w))err('
 // Lerncheck-Aufgaben nirgends sonst im Jahr
 const lcAll=LESSONS.flatMap(L=>L.lerncheck.aufgaben.map(k=>[k,L.week]));
 for(const [k,w] of lcAll)for(const L of LESSONS)for(const p of PH)if(!(L.week===w&&p==='lerncheck')&&L[p].aufgaben.includes(k))err(`Lerncheck ${k} (W${w}) taucht in W${L.week} ${p} auf`);
-const out={version:2,links:LINKS,urls:URLS,fixed:FIXED,year:YEAR,later:LATER,lessons:LESSONS,tasks:Object.fromEntries(Object.entries(TASKS).map(([k,t])=>[k,{id:t.id,fen:t.fen,work:t.work,answer:t.answer,checks:t.checks||[],forbidden:t.forbidden||[],strict:!!t.strict,open:!!t.open,hints:t.hints,src:t.src,umgebaut:!!t.umgebaut}])),collect:COLLECT};
+const out={version:2,links:LINKS,urls:URLS,fixed:FIXED,year:YEAR,later:LATER,plan:PLAN,lessons:LESSONS,tasks:Object.fromEntries(Object.entries(TASKS).map(([k,t])=>[k,{id:t.id,fen:t.fen,work:t.work,answer:t.answer,checks:t.checks||[],forbidden:t.forbidden||[],strict:!!t.strict,open:!!t.open,hints:t.hints,src:t.src,umgebaut:!!t.umgebaut}])),collect:COLLECT};
 const report={tasks:Object.keys(TASKS).length,lessons:LESSONS.length,errors,umgebaut:Object.values(TASKS).filter(t=>t.umgebaut).map(t=>t.key)};
 fs.writeFileSync(path.join(here,'report-bronze.json'),JSON.stringify(report,null,1));
 if(errors.length){console.error(errors.join('\n'));console.error(errors.length+' Fehler');process.exit(1)}

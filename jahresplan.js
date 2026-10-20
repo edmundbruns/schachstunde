@@ -8,7 +8,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 if(window.Praxis&&D.collect){window.Praxis.COLLECT=window.Praxis.COLLECT||{};for(const [k,v] of Object.entries(D.collect))window.Praxis.COLLECT['jp:'+k]=v}
 const NR=['1.','2.','3.','4.','5.','6.'];
 const lesson=w=>D.lessons.find(l=>l.week===+w);
-const title=w=>D.fixed[w]?.thema||lesson(w)?.title||(D.later.find(x=>x[0]===+w)||[])[1]||'';
+const planRow=w=>(D.plan||[]).find(x=>x[0]===+w)||[];const title=w=>D.fixed[w]?.thema||planRow(w)[1]||'';
 const ICON={video:'▶',audio:'🔊',blatt:'📄',druck:'🖨',feld:'♟',info:'ℹ'};
 const FILES='abcdefgh';
 const PIECE={k:'König',q:'Dame',r:'Turm',b:'Läufer',n:'Springer',p:'Bauer'};
@@ -17,8 +17,8 @@ const img=c=>{const t=c.toLowerCase(),w=c===c.toUpperCase();const src=(window.FI
 const pieceName=c=>(c===c.toUpperCase()?'weißer ':'schwarzer ')+PIECE[c.toLowerCase()];
 // ---------- Übersicht ----------
 function overviewHTML(){
- const row=w=>{const F=D.fixed[w];const ziel=F?.lernziel||lesson(w)?.ziel||'';return `<tr><td>${w}</td><td>${F?`<button type="button" class="linklike" data-jpweek="${w}">${esc(title(w))}</button>`:esc(title(w))}</td><td>${esc(ziel)}${F?'':' <span class="muted">(Stunde folgt)</span>'}</td></tr>`};
- return `<div id="jp-overview"><p>So planen erfahrene Kolleginnen und Kollegen ein Schuljahr Schach-AG: 36 Termine, jeder mit Inhalt für ca. 45 Minuten, für Grundschule und Oberschule. Gruppen mit Vorkenntnissen beginnen in Woche 12. Ein Klick auf eine Stunde zeigt ihren festen Ablauf mit Video, Arbeitsblättern und Lehrbrett.</p>${D.year.map(([name,[a,b]],k)=>`<h4>${k+1}. ${esc(name)} (Woche ${a} bis ${b})</h4><table class="yeartable"><thead><tr><th>Woche</th><th>Stunde</th><th>Lernziel</th></tr></thead><tbody>${Array.from({length:b-a+1},(_,i)=>row(a+i)).join('')}</tbody></table>`).join('')}<p class="muted">Eigene Stunden mit freier Auswahl planst du unter „Schachstunde planen“.</p></div>`}
+ const row=w=>{const F=D.fixed[w];const ziel=F?.lernziel||planRow(w)[2]||'';return `<tr><td>${w}</td><td>${F?`<button type="button" class="linklike" data-jpweek="${w}">${esc(title(w))}</button>`:esc(title(w))}</td><td>${esc(ziel)}${F?'':' <span class="muted">(Stunde folgt)</span>'}</td></tr>`};
+ return `<div id="jp-overview"><p>So planen erfahrene Kolleginnen und Kollegen ein Schuljahr Schach-AG: 36 Termine, jeder mit Inhalt für ca. 45 Minuten, für Grundschule und Oberschule. Gruppen mit Vorkenntnissen beginnen in Woche 12. Ein Klick auf eine Stunde zeigt ihren festen Ablauf mit Video, Arbeitsblättern und Lehrbrett. Ab Woche 3 endet jede Stunde mit einem kurzen Minispiel. Ein Thema darf in jüngeren Gruppen auch zwei Termine dauern.</p>${D.year.map(([name,[a,b]],k)=>`<h4>${k+1}. ${esc(name)} (Woche ${a} bis ${b})</h4><table class="yeartable"><thead><tr><th>Woche</th><th>Stunde</th><th>Lernziel</th></tr></thead><tbody>${Array.from({length:b-a+1},(_,i)=>row(a+i)).join('')}</tbody></table>`).join('')}<p class="muted">Eigene Stunden mit freier Auswahl planst du unter „Schachstunde planen“.</p></div>`}
 // ---------- Stunde ----------
 function linkHTML(l,pi,li){const ic=`<span aria-hidden="true">${ICON[l.art]||''}</span> `;
  if(l.url)return `<a class="jp-link" href="${esc(l.url)}" target="_blank" rel="noopener">${ic}${esc(l.label)}</a>`;
