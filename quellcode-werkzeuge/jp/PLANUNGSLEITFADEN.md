@@ -86,3 +86,5 @@ Für Themen ohne passendes Video der Schulschachstiftung (z. B. Rochade, en pass
 Die Builder-Prüfung (jp/build-jahresplan.mjs) verlangt pro Stunde: Vorwissen, Hilfe, Zusatz, „Wenn die Zeit knapp wird“, „Für dich nach der Stunde“, den Satz „Danach wechseln die Rollen“ und eine Begründungsfrage. Zugfelder von Turm, Läufer und Dame werden mit `pruef` automatisch berechnet.
 
 Wochen neu bauen: `sh jp/make-fixed.sh` (Grundfassung jp/fixed-bronze.basis.mjs plus edit-w*.mjs der Reihe nach).
+
+Lernfortschrittsraster: dist/raster.js (Speicher nur im Browser, Excel-Export/-Import). Browser-Test: `NODE_PATH=$(npm root -g) node test-raster.cjs [alte-tabelle.xlsx]` bei laufendem Server in dist (Port 8765). Für Silber und Gold neue Spalten in Raster.COLS ergänzen.
