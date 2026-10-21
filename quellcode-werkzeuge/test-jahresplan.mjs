@@ -13,7 +13,12 @@ for(const l of D.lessons)for(const [p,c] of Object.entries(pre))for(const b of l
 let sf=0;
 if(process.env.STOCKFISH){const ev=(fen,mv)=>{const o=execSync(`(echo "position fen ${fen}"; echo "go depth 16${mv?' searchmoves '+mv:''}"; sleep 1; echo quit) | ${process.env.STOCKFISH}`).toString();const l=o.split('\n').filter(x=>/ score /.test(x)).pop();const m=l.match(/score (cp|mate) (-?\d+)/);return m[1]==='mate'?(+m[2]>0?10000:-10000):+m[2]};
  for(const [k,t] of Object.entries(D.tasks).filter(([k])=>/^(tx|k1|sg|t1)-/.test(k))){if(/^Guter Tausch/.test(t.answer)){assert(ev(t.fen,t.checks[0])>=100,k+' guter Tausch');sf++}
-  if(/^Schlechter Tausch|^Nein\. .*(gibt|Dame \(9\)|Turm \(5\))/.test(t.answer)&&t.forbidden.length){const best=ev(t.fen),bad=ev(t.fen,t.forbidden[0]);assert(best-bad>=150,k+' schlechter Tausch '+best+' '+bad);sf++}}}
+  if(/^Schlechter Tausch|^Nein\. .*(gibt|Dame \(9\)|Turm \(5\))/.test(t.answer)&&t.forbidden.length){const best=ev(t.fen),bad=ev(t.fen,t.forbidden[0]);assert(best-bad>=150,k+' schlechter Tausch '+best+' '+bad);sf++}}
+ // Feste Stunden: Tauschaussagen mit Stockfish (nur Stellungen mit beiden Königen)
+ for(const [w,F] of Object.entries(D.fixed))for(const [set,list] of Object.entries(F.feld||{}))list.forEach((t,i)=>{if(!t.tausch||!/K/.test(t.fen)||!/k/.test(t.fen))return;const f=t.fen+' w - - 0 1',z=t.tausch.zug,id=`W${w} ${set}${i+1}`;
+  if(t.tausch.ergebnis==='gut'){const best=ev(f),e=ev(f,z);assert(e>=best-40,id+' guter Tausch '+best+' '+e)}
+  if(t.tausch.ergebnis==='schlecht'){const best=ev(f),bad=ev(f,z);assert(best-bad>=150,id+' schlechter Tausch '+best+' '+bad)}
+  if(t.tausch.ergebnis==='gleich')assert(ev(f)-ev(f,z)<150,id+' gleicher Tausch');sf++})}
 for(const [w,F] of Object.entries(D.fixed)){assert.equal(F.phasen.length,6,"Woche "+w+" sechs Phasen");assert(!F.phasen.some(p=>"min" in p),"keine Zeitangaben")}
 // Königliche Rettung: Fragen der Kinder als Satz
 vm.runInContext(fs.readFileSync('dist/jahresplan.js','utf8'),ctx);const P=ctx.window.Jahresplan._parse;

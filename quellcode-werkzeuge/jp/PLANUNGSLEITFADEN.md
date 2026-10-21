@@ -74,7 +74,7 @@ Spiele und Minispiele der Schulschachstiftung, passend zum Plan:
 | 6 | [Figurenaufstellen](https://www.youtube.com/watch?v=r5r3fYH6_WI) (eingebaut): Figuren nur auf nicht angegriffene Felder setzen, braucht alle Gangarten |
 | 4 | [Fang den Springer](https://www.youtube.com/watch?v=lyCmGN_bbvM) (eingebaut), [Springer gegen Dame](https://www.youtube.com/watch?v=HZpZjOzXZ-g), [Springer tauschen die Ställe](https://www.youtube.com/watch?v=L_zhsiFww38), [Königsrennen](https://www.youtube.com/watch?v=A_k_JdwmI7g) |
 | 5, 13 | [Bauern gegen König](https://www.youtube.com/watch?v=e3eFR_N4ZEA) (eingebaut, Woche 5), [Bauernumwandlung: Zwei verbundene Freibauern](https://www.youtube.com/watch?v=yV_RWkE4uWg), [Bauern gegen König](https://www.youtube.com/watch?v=e3eFR_N4ZEA), [Bauernlawine](https://www.youtube.com/watch?v=qHvbQKepwGE) |
-| 7 | [Punktespiel](https://www.youtube.com/watch?v=TCasLqTc5LM), [Figurenrechnen](https://www.youtube.com/watch?v=VYISRiKRun0), [Wer schlägt schneller?](https://www.youtube.com/watch?v=n9kBUEv9_V4) |
+| 7 | [Punktespiel](https://www.youtube.com/watch?v=TCasLqTc5LM) (eingebaut), [Figurenrechnen](https://www.youtube.com/watch?v=VYISRiKRun0), [Wer schlägt schneller?](https://www.youtube.com/watch?v=n9kBUEv9_V4) |
 | 8, 17 | [Matt-Challenge](https://www.youtube.com/watch?v=pTEy2s2dwNA) |
 | 12 | [Fehlersuche](https://www.youtube.com/watch?v=7OT351ZFB3o) |
 | 28, 33 | [Das Treppenmatt](https://www.youtube.com/watch?v=4fmT6CoCKRw) |
