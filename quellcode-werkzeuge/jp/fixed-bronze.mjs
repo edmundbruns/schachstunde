@@ -23,7 +23,8 @@ export const URLS={
  "bauernGegenKoenig": "https://www.youtube.com/watch?v=e3eFR_N4ZEA",
  "figurenaufstellen": "https://www.youtube.com/watch?v=r5r3fYH6_WI",
  "punktespiel": "https://www.youtube.com/watch?v=TCasLqTc5LM",
- "schachzwang": "https://www.youtube.com/watch?v=FJQpIInED9g"
+ "schachzwang": "https://www.youtube.com/watch?v=FJQpIInED9g",
+ "diplomOnline": "https://ludgerus-schachdiplom.netlify.app/"
 };
 export const FIXED={
  "1": {
@@ -6009,6 +6010,581 @@ export const FIXED={
      "hilfe": [
       "Die Dame braucht Deckung.",
       "Welches Feld deckt der Bauer h5?"
+     ]
+    }
+   ]
+  }
+ },
+ "11": {
+  "thema": "Bronze-Diplom",
+  "lernziel": "Ich kann die Bronze-Missionen allein lösen.",
+  "leitfrage": "Zeige ich am Brett und auf dem Testblatt, dass ich alle Grundregeln kann?",
+  "vorwissen": "Alle Themen der Wochen 1 bis 10.",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Ludgerus-Schachdiplom Bronze 1 bis 4 und praktischer Gelingensnachweis (ludgerus-schachdiplom.netlify.app), Lumi „Matt in einem Zug“. Übrige Testaufgaben eigene Aufgaben, alle Lösungen automatisch nachgerechnet",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Aufwärmen und Ablauf erklären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6 eine kurze Aufwärmrunde.",
+     "Ablauf erklären: Heute zeigt ihr am Brett und auf zwei Testblättern, was ihr könnt. Wer alle fünf Punkte am Brett schafft und mindestens 10 von 12 Testaufgaben, bekommt das Bronze-Diplom. Wer es heute noch nicht schafft, übt weiter und versucht es noch einmal."
+    ],
+    "kinder": "Ich weiß, wie die Diplom-Prüfung abläuft.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Generalprobe am Lehrbrett",
+    "ablauf": [
+     "Am Lehrbrett E1 bis E6 eine Generalprobe: Läufer und Farbe, Springer, schwarzer Bauer, Tauschen, Schach abwehren, Matt. Nach jeder Aufgabe zeigen alle mit Daumen hoch, Mitte oder runter, wie sicher sie sich fühlen.",
+     "Merksatz: „Ruhig lesen, mit dem Finger prüfen, dann erst antworten.“"
+    ],
+    "kinder": "Ich weiß, welche Themen ich sicher kann.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Generalprobe E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Praktischer Nachweis zu zweit und faire Partie",
+    "ablauf": [
+     "Zu zweit mit dem Prüfbogen: Kind A zeigt die Grundstellung, je einen Zug jeder Figur, Schach und Matt und die drei Rettungen. Kind B prüft. Danach wechseln die Rollen. Du gehst herum und hakst auf dem Prüfbogen ab, was jedes Kind allein zeigt.",
+     "Danach spielen beide eine kurze faire Partie mit Handschlag. Du beobachtest das Fairplay. Frage zwischendurch: „Woran erkennst du, dass das Matt ist?“",
+     "Wer Geräte hat, kann zusätzlich die Bronze-Missionen im Ludgerus-Schachdiplom online bearbeiten."
+    ],
+    "kinder": "Ich zeige am Brett alle fünf Punkte des Nachweises.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Prüfbogen: praktischer Nachweis",
+      "was": "nachweis"
+     },
+     {
+      "art": "blatt",
+      "label": "Ludgerus-Schachdiplom online (Bronze 1 bis 4)",
+      "url": "https://ludgerus-schachdiplom.netlify.app/"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Knackpunkte vor dem Test",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6 die Knackpunkte, die beim Nachweis aufgefallen sind: Brett gedreht, Bauer schlägt geradeaus, König läuft ins Schach, schlechter Tausch, Schach statt Matt, Springerschach.",
+     "Bei jeder Aufgabe nachfragen: „Warum?“ oder „Woran erkennst du das?“"
+    ],
+    "kinder": "Ich kenne die typischen Fallen vor dem Test.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Knackpunkte S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Bronze-Test: zwei Blätter mit je sechs Aufgaben",
+    "ablauf": [
+     "Jedes Kind löst allein Teil 1 (Brett, Figuren, Tauschen, A1 bis A6) und Teil 2 (Schach, Matt, L1 bis L6). Bestanden ist mit mindestens 10 von 12 Aufgaben.",
+     "Du kontrollierst mit den Lösungsblättern und besprichst falsche Aufgaben gleich mit dem Kind am Lehrbrett."
+    ],
+    "kinder": "Ich löse mindestens 10 von 12 Testaufgaben allein.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Bronze-Test Teil 1",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Teil 1 A1 bis A6",
+      "set": "A"
+     },
+     {
+      "art": "druck",
+      "label": "Bronze-Test Teil 2",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Teil 2 L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Urkunden, Rückblick, Aufräumen",
+    "ablauf": [
+     "Urkunden überreichen, alle klatschen. Wer es noch nicht geschafft hat, bekommt einen festen Termin für den zweiten Versuch und weiß, was er üben soll.",
+     "Rückblick: „Was war für dich am schwersten auf dem Weg zum Bronze-Diplom?“ Aufräum-Ritual. Ausblick: Nach dem Diplom beginnt die Silber-Stufe mit erlaubten und unerlaubten Stellungen."
+    ],
+    "kinder": "Ich weiß, was ich geschafft habe und was als Nächstes kommt.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Bronze-Urkunde (zwei pro Blatt)",
+      "was": "urkunde"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Kinder mit Leseschwierigkeiten bekommen die Testaufgaben vorgelesen. Der praktische Nachweis zählt genauso viel wie das Blatt.",
+   "zusatz": "Wer früh fertig ist, bearbeitet im Ludgerus-Schachdiplom online schon Silber 1 oder spielt eine weitere Partie.",
+   "kuerzen": "Die Generalprobe auf E4 bis E6 kürzen. Der praktische Nachweis und der Test bleiben vollständig. Wer nicht fertig wird, beendet den Test in Woche 12."
+  },
+  "nachher": "Wer hat das Diplom noch nicht? In welchem Bereich fehlen Punkte: Brett, Figuren, Tauschen, Schach oder Matt? Für diese Kinder planst du in Woche 12 eine Übungsecke mit genau diesen Aufgaben ein.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Klicke das Feld rechts unten an. Welche Farbe hat es?",
+     "leer": true,
+     "targets": [
+      "h1"
+     ],
+     "antwort": "h1. Es ist hell: Rechts unten ist hell.",
+     "hilfe": [
+      "Rechts unten liegt eine Ecke.",
+      "Merksatz: Rechts unten ist hell."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Turm ziehen kann.",
+     "fen": "8/8/8/8/8/8/4R3/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "e2"
+     },
+     "targets": null,
+     "antwort": "14 Felder: die e-Linie und die 2. Reihe, ohne e2.",
+     "hilfe": [
+      "Linie e und Reihe 2.",
+      "Das Feld e2 selbst gehört nicht dazu."
+     ]
+    },
+    {
+     "frage": "Welche schwarzen Figuren kann die Dame schlagen? Klicke sie an.",
+     "fen": "3r4/b7/8/8/3Q3n/8/8/6n1",
+     "pruef": {
+      "schlaege": [
+       "d4"
+      ]
+     },
+     "targets": null,
+     "antwort": "d8, a7, h4 und g1. Alle Wege sind frei.",
+     "hilfe": [
+      "Acht Richtungen prüfen.",
+      "Gerade und schräg."
+     ]
+    },
+    {
+     "frage": "Auf welche Felder darf der weiße König nicht, weil der schwarze König dort angreift? Markiere sie.",
+     "fen": "8/4k3/8/4K3/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "verboten": "e5"
+     },
+     "targets": null,
+     "antwort": "d6, e6 und f6. Könige stehen nie nebeneinander.",
+     "hilfe": [
+      "Welche Felder berühren beide Könige?",
+      "Sie liegen zwischen den Königen."
+     ]
+    },
+    {
+     "frage": "Welche weißen Bauern dürfen jetzt einen Doppelschritt machen? Klicke sie an.",
+     "fen": "8/8/8/8/2p5/4P3/1PP4P/8",
+     "pruef": {
+      "doppelschritt": true
+     },
+     "targets": null,
+     "antwort": "b2 und h2. Für c2 ist c4 besetzt, e3 hat schon gezogen.",
+     "hilfe": [
+      "Startfeld auf der 2. Reihe?",
+      "Beide Felder davor frei?"
+     ]
+    },
+    {
+     "frage": "Klicke die Figur an, die dem weißen König Schach gibt.",
+     "fen": "4k3/8/8/8/1q6/8/8/4K3",
+     "schach": true,
+     "pruef": {
+      "schachgeber": true
+     },
+     "targets": null,
+     "antwort": "Die Dame b4 über die Diagonale b4, c3, d2, e1.",
+     "hilfe": [
+      "Prüfe gerade und schräge Wege.",
+      "Ist der Weg zum König frei?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Der Läufer c8 bleibt auf seiner Farbe. Markiere alle Felder der 1. Reihe, die er irgendwann erreichen kann.",
+     "fen": "2b5/8/8/8/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "farbe": "c8",
+      "reihe": 1
+     },
+     "targets": null,
+     "antwort": "b1, d1, f1 und h1. c8 ist hell, also nur helle Felder.",
+     "hilfe": [
+      "Welche Farbe hat c8?",
+      "Auf der 1. Reihe wechseln hell und dunkel ab."
+     ]
+    },
+    {
+     "frage": "Welche schwarzen Figuren kann der Springer schlagen? Klicke sie an.",
+     "fen": "8/8/2r1q3/5P2/3N4/1p3b2/8/8",
+     "pruef": {
+      "schlaege": [
+       "d4"
+      ]
+     },
+     "targets": null,
+     "antwort": "b3, c6, e6 und f3. Den eigenen Bauern f5 schlägt er nicht.",
+     "hilfe": [
+      "Zeige alle acht Springerfelder.",
+      "Nur gegnerische Figuren."
+     ]
+    },
+    {
+     "frage": "Das ist ein schwarzer Bauer. Markiere alle Felder, auf die er ziehen kann.",
+     "fen": "8/4p3/3NPB2/8/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "e7"
+     },
+     "targets": null,
+     "antwort": "d6 und f6. Er schlägt schräg nach unten. Geradeaus ist e6 besetzt.",
+     "hilfe": [
+      "Schwarz zieht nach unten.",
+      "Geradeaus wird nicht geschlagen."
+     ]
+    },
+    {
+     "frage": "Welche Figur sollte Weiß schlagen? Klicke sie an.",
+     "fen": "6k1/8/2r5/8/4q3/8/1B6/4R1K1",
+     "pruef": {
+      "beste": "w"
+     },
+     "targets": null,
+     "antwort": "Die Dame e4. Sie ist ungedeckt: plus 9.",
+     "hilfe": [
+      "Welche schwarzen Figuren kann Weiß schlagen?",
+      "Welche ist am meisten wert?"
+     ]
+    },
+    {
+     "frage": "Der Springer gibt Schach. Klicke alle weißen Figuren an, die das Schach abwehren können.",
+     "fen": "4k3/8/8/8/8/R4n2/8/4K3",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Der König (er zieht weg) und der Turm a3 (er schlägt den Springer).",
+     "hilfe": [
+      "Gegen einen Springer kann man sich nicht dazwischenstellen.",
+      "Wer erreicht f3?"
+     ]
+    },
+    {
+     "frage": "Weiß setzt in einem Zug matt. Klicke das Feld an, auf das Weiß zieht.",
+     "fen": "5B2/8/8/7k/8/7K/8/5Q2",
+     "quelle": "Lumi Matt in einem Zug, Aufgabe 39",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "f5. Die Dame gibt Schach, der König h3 deckt g4, der Läufer f8 deckt g7 und h6.",
+     "hilfe": [
+      "Welche Felder decken König und Läufer?",
+      "Die Dame muss nah an den König."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Markiere die Felder e4, b7 und g2.",
+     "leer": true,
+     "targets": [
+      "e4",
+      "b7",
+      "g2"
+     ],
+     "antwort": "e4, b7 und g2. Erst der Buchstabe, dann die Zahl.",
+     "hilfe": [
+      "Erst den Buchstaben unten suchen.",
+      "Dann nach oben bis zur Zahl."
+     ]
+    },
+    {
+     "frage": "Klicke alle weißen Figuren an, die falsch stehen.",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR",
+     "targets": [
+      "d1",
+      "e1"
+     ],
+     "antwort": "Dame und König sind vertauscht. Die weiße Dame gehört auf das helle Feld d1.",
+     "hilfe": [
+      "Schau in die Mitte der 1. Reihe.",
+      "Die Dame steht auf ihrer Farbe."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Läufer ziehen kann.",
+     "fen": "8/8/8/4n3/8/2B5/8/N7",
+     "leer": true,
+     "pruef": {
+      "zuege": "c3"
+     },
+     "targets": null,
+     "antwort": "d4, e5 (dort schlägt er), b4, a5, d2, e1 und b2. Vor dem eigenen Springer a1 hält er an.",
+     "hilfe": [
+      "Vier Diagonalen.",
+      "Eigene Figur: anhalten. Gegnerische: schlagen."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Springer springen kann.",
+     "fen": "8/8/8/8/7N/5P2/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "h4"
+     },
+     "targets": null,
+     "antwort": "f5, g2 und g6. Auf f3 steht ein eigener Bauer.",
+     "hilfe": [
+      "Zwei gerade, eins zur Seite.",
+      "Am Rand fallen Felder weg."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Bauer ziehen kann.",
+     "fen": "8/8/8/8/3n4/2b5/3P4/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "d2"
+     },
+     "targets": null,
+     "antwort": "c3 und d3. Auf c3 schlägt er den Läufer. Den Doppelschritt verhindert der Springer d4.",
+     "hilfe": [
+      "Ist der Weg für den Doppelschritt frei?",
+      "Schräg schlagen."
+     ]
+    },
+    {
+     "frage": "Klicke die schwarze Figur an, die Weiß mit Gewinn schlagen kann.",
+     "fen": "4k3/8/1p1r4/2n5/4N3/8/8/4K3",
+     "pruef": {
+      "gewinn": "w"
+     },
+     "tausch": {
+      "zug": "e4d6",
+      "ergebnis": "gut"
+     },
+     "targets": null,
+     "antwort": "Den Turm d6, er ist ungedeckt: plus 5. Den Springer c5 deckt der Bauer b6, das wäre nur ein gleicher Tausch.",
+     "hilfe": [
+      "Welche Figuren erreicht der Springer e4?",
+      "Wer schlägt jeweils zurück?"
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Liegt das Brett richtig? Klicke das Eckfeld an, an dem du es erkennst.",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+     "flip": true,
+     "targets": [
+      "h1"
+     ],
+     "antwort": "Nein. Rechts unten (h1) ist dunkel. Das Brett muss gedreht werden.",
+     "hilfe": [
+      "Schau auf das Feld rechts unten.",
+      "Rechts unten ist hell."
+     ]
+    },
+    {
+     "frage": "Ein Kind schlägt mit dem Bauern geradeaus. Markiere, wohin der Bauer wirklich darf.",
+     "fen": "8/8/2pr4/2P5/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "c5"
+     },
+     "targets": null,
+     "antwort": "Nur d6. Der Bauer schlägt schräg, geradeaus ist er blockiert.",
+     "hilfe": [
+      "Geradeaus wird nicht geschlagen.",
+      "Schräg vor ihm steht eine Figur."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der König ziehen darf. Achtung, der Turm greift an.",
+     "fen": "8/8/8/8/8/8/7r/5K2",
+     "leer": true,
+     "pruef": {
+      "zuege": "f1"
+     },
+     "targets": null,
+     "antwort": "e1 und g1. Die 2. Reihe greift der Turm an.",
+     "hilfe": [
+      "Welche Felder greift der Turm an?",
+      "Die ganze 2. Reihe."
+     ]
+    },
+    {
+     "frage": "Lohnt es sich, mit der Dame den Läufer d5 zu schlagen? Klicke die Figur an, die zurückschlagen würde.",
+     "fen": "4k3/8/2p5/3b4/8/8/8/3QK3",
+     "pruef": {
+      "verteidiger": "d5"
+     },
+     "tausch": {
+      "zug": "d1d5",
+      "ergebnis": "schlecht"
+     },
+     "targets": null,
+     "antwort": "Der Bauer c6. Dame gegen Läufer, 9 gegen 3: ein schlechter Tausch.",
+     "hilfe": [
+      "Wer deckt den Läufer?",
+      "Erst rechnen, dann schlagen."
+     ]
+    },
+    {
+     "frage": "Ein Kind ruft „Matt!“. Markiere alle Felder, auf die der schwarze König fliehen kann.",
+     "fen": "R5k1/5pp1/8/8/8/8/8/6K1",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "h7. Es ist nur Schach, der König flieht nach h7.",
+     "hilfe": [
+      "Welche Felder vor dem König sind frei?",
+      "Der Bauer h7 fehlt."
+     ]
+    },
+    {
+     "frage": "Der Springer gibt Schach. Klicke alle weißen Figuren an, die das Schach abwehren können.",
+     "fen": "4k3/8/8/8/8/3n4/8/2B1K3",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Nur der König. Gegen einen Springer kann man sich nicht dazwischenstellen, und der Läufer erreicht d3 nicht.",
+     "hilfe": [
+      "Wer erreicht das Feld d3?",
+      "Kann man einen Springer sperren?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Klicke die Figur an, die dem weißen König Schach gibt.",
+     "fen": "4k3/8/8/8/8/5n2/8/4K3",
+     "schach": true,
+     "pruef": {
+      "schachgeber": true
+     },
+     "targets": null,
+     "antwort": "Der Springer f3.",
+     "hilfe": [
+      "Prüfe jede schwarze Figur.",
+      "Denk an die Springersprünge."
+     ]
+    },
+    {
+     "frage": "Der Turm greift die 2. Reihe an. Markiere alle Felder, auf die der König ziehen darf.",
+     "fen": "4k3/8/8/8/8/8/r7/4K3",
+     "leer": true,
+     "pruef": {
+      "zuege": "e1"
+     },
+     "targets": null,
+     "antwort": "d1 und f1. Die 2. Reihe ist angegriffen.",
+     "hilfe": [
+      "Der König darf nicht auf die 2. Reihe.",
+      "Zeige alle Nachbarfelder."
+     ]
+    },
+    {
+     "frage": "Der Läufer gibt Schach. Markiere das Feld, auf das der Turm ziehen kann, um sich dazwischenzustellen.",
+     "fen": "4k3/8/8/b7/8/8/8/2R1K3",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "zwischen": true
+     },
+     "targets": null,
+     "antwort": "c3. Der Turm sperrt die Diagonale. Der König könnte auch wegziehen.",
+     "hilfe": [
+      "Welche Felder liegen zwischen a5 und e1?",
+      "Welches davon erreicht der Turm?"
+     ]
+    },
+    {
+     "frage": "Die Dame gibt Schach. Klicke alle weißen Figuren an, die sie schlagen können.",
+     "fen": "4k3/8/8/8/8/2N5/4q3/4K3",
+     "schach": true,
+     "pruef": {
+      "schlagen": true
+     },
+     "targets": null,
+     "antwort": "Der Springer c3 und der König e1. Der König darf, weil die Dame ungedeckt ist.",
+     "hilfe": [
+      "Wer erreicht das Feld e2?",
+      "Ist die Dame gedeckt?"
+     ]
+    },
+    {
+     "frage": "Weiß setzt in einem Zug matt. Klicke das Feld an, auf das Weiß zieht.",
+     "fen": "k7/P7/8/8/6K1/8/5B2/1R6",
+     "quelle": "Lumi Matt in einem Zug, Aufgabe 29",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "b8. Der Turm gibt Schach. Der König kann ihn nicht schlagen, weil der Bauer a7 den Turm deckt. Den Bauern a7 deckt der Läufer f2.",
+     "hilfe": [
+      "Der Turm muss auf die 8. Reihe.",
+      "Wer deckt b8?"
+     ]
+    },
+    {
+     "frage": "Ist das Matt? Markiere alle Felder, auf die der schwarze König fliehen kann. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "R5k1/5ppp/8/8/8/8/8/6K1",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "Keins, es ist Matt. Die eigenen Bauern sperren den König ein.",
+     "hilfe": [
+      "Welche Felder vor dem König sind frei?",
+      "Kann Schwarz den Turm schlagen?"
      ]
     }
    ]
