@@ -74,7 +74,7 @@ function see(B,von,nach){const b={...B},gain=[V(b[nach])];let d=0,mover=von,side
  while(--d>0)gain[d-1]=-Math.max(-gain[d-1],gain[d]);return gain[0]}
 function schlagWerte(B,w){const out={};for(const v of Object.keys(B))if(isW(B[v])===w)for(const x of angriff(B,v))if(B[x]&&isW(B[x])!==w&&B[x].toLowerCase()!=='k'&&(B[v].toLowerCase()!=='p'||true)){const e=see(B,v,x);out[x]=Math.max(out[x]??-99,e)}return out}
 function pruefZiele(fen,P,zug){const B=boardOf(fen);
- if(P.flucht||P.zwischen||P.schlagen||P.matt||P.abwehr||P.schachgeber){let g;try{g=new Chess(fen+' '+(zug||'w')+' - - 0 1')}catch(e){return null}
+ if(P.flucht||P.zwischen||P.schlagen||P.matt||P.abwehr||P.schachgeber||P.ziehbar||P.mattfigur){let g;try{g=new Chess(fen+' '+(zug||'w')+' - - 0 1')}catch(e){return null}
   const ms=g.moves({verbose:true}),w=(zug||'w')==='w',ksq=Object.keys(B).find(q=>B[q]===(w?'K':'k'));
   const geber=Object.keys(B).filter(q=>isW(B[q])!==w&&angriff(B,q).includes(ksq));
   if(P.schachgeber)return geber;
@@ -82,6 +82,8 @@ function pruefZiele(fen,P,zug){const B=boardOf(fen);
   if(P.zwischen)return [...new Set(ms.filter(m=>m.piece!=='k'&&!geber.includes(m.to)).map(m=>m.to))];
   if(P.schlagen)return [...new Set(ms.filter(m=>geber.includes(m.to)).map(m=>m.from))];
   if(P.abwehr)return [...new Set(ms.map(m=>m.from))];
+  if(P.ziehbar)return [...new Set(ms.filter(m=>!P.typen||P.typen.includes(m.piece)).map(m=>m.from))];
+  if(P.mattfigur)return [...new Set(ms.filter(m=>{const h=new Chess(g.fen());h.move(m);return h.isCheckmate()}).map(m=>m.from))];
   if(P.matt)return [...new Set(ms.filter(m=>{const h=new Chess(g.fen());h.move(m);return h.isCheckmate()}).map(m=>m.to))]}
  if(P.zuege){let z=ziele(fen,P.zuege);if(P.reihe)z=z.filter(q=>+q[1]===P.reihe);return z}
  if(P.schlaege)return [...new Set(P.schlaege.flatMap(s=>ziele(fen,s).filter(q=>B[q])))];
@@ -126,7 +128,7 @@ for(const [w,F] of Object.entries(FIXED)){if(!LESSONS.find(x=>x.week===+w))err('
   const seen=new Map();list.forEach((t,i)=>{for(const k of [key(t)+'|'+(t.fen||''),t.frage]){if(seen.has(k))err(`W${w} ${wo}: ${set}${(von||1)+i} wiederholt ${seen.get(k)}`);seen.set(k,set+((von||1)+i))}})};
  for(const p of F.phasen)for(const l of p.links){if(l.art==='feld')six(l.set,l.von,l.bis,'Lehrbrett '+p.name);if(l.art==='druck'&&l.was.startsWith('feld:'))six(l.was.slice(5),0,0,'Blatt '+l.label)}
  if(F.geschichte)six('S',0,0,'Fragen zur Geschichte');
- for(const p of F.phasen)for(const l of p.links)if(l.art==='druck'&&!l.was.startsWith('feld:')&&!['regeln','geschichte','arbeitsheft','aufbaukarte','beobachtung','werte'].includes(l.was))err(`W${w}: unbekannter Druck ${l.was}`);
+ for(const p of F.phasen)for(const l of p.links)if(l.art==='druck'&&!l.was.startsWith('feld:')&&!['regeln','geschichte','arbeitsheft','aufbaukarte','beobachtung','werte','fairplay'].includes(l.was))err(`W${w}: unbekannter Druck ${l.was}`);
  if(F.phasen.some(p=>p.links.some(l=>l.was==='arbeitsheft'))&&!F.arbeitsheft)err(`W${w}: Arbeitsheft fehlt`);
  if(F.phasen.some(p=>p.links.some(l=>l.was==='regeln'))&&!F.regeln)err(`W${w}: Regeln fehlen`);
  for(const [set,list] of Object.entries(F.feld||{}))list.forEach((t,i)=>{const id=`W${w} ${set}${i+1}`;if(!t.frage||!t.antwort||t.hilfe?.length!==2)err(id+': Frage, Antwort oder zwei Hilfen fehlen');
