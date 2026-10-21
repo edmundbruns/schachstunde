@@ -8249,6 +8249,604 @@ export const FIXED={
     }
    ]
   }
+ },
+ "15": {
+  "thema": "En passant",
+  "lernziel": "Ich kann en passant erkennen und richtig ausführen.",
+  "leitfrage": "Wann darf ein Bauer einen anderen Bauern im Vorbeigehen schlagen?",
+  "vorwissen": "Bauernzug, Doppelschritt und Schlagen (Woche 5), Umwandlung (Woche 13).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "FIDE-Regel zum Schlagen en passant in kindgerechter Form, Ludgerus-Schachdiplom Silber (en passant). Brettaufgaben eigene Aufgaben; alle Stellungen aus echten Zugfolgen erzeugt und mit chess.js nachgerechnet",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Rochade wiederholen, dann: der Doppelschritt",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W4 die Rochade aus Woche 14 und den Doppelschritt aufgreifen.",
+     "W5 und W6: Ein schwarzer Bauer springt mit Doppelschritt neben einen weißen Bauern. Über welches Feld ist er gesprungen? Ziel nennen: „Heute lernt ihr die seltenste Bauernregel: Schlagen im Vorbeigehen, en passant.“"
+    ],
+    "kinder": "Ich erkenne einen Doppelschritt und das übersprungene Feld.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "So geht en passant, drei Bedingungen",
+    "ablauf": [
+     "Plakat „En passant“ aufhängen. Am Lehrbrett E1 und E2 zeigen: Der weiße Bauer schlägt schräg auf das übersprungene Feld, der schwarze Bauer wird vom Brett genommen. Die Kinder spielen es am eigenen Brett nach.",
+     "E3 bis E6: die Bedingungen. Der schlagende Bauer steht auf der 5. Reihe (Schwarz: 4. Reihe), der andere kam gerade mit Doppelschritt, und es muss sofort geschehen.",
+     "Merksatz: „En passant: nur gegen einen Doppelschritt, nur direkt danach.“"
+    ],
+    "kinder": "Ich führe en passant aus und nenne die drei Bedingungen.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: En passant",
+      "was": "enpassant"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: En passant E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "En-passant-Falle zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A stellt einen weißen Bauern auf die 5. Reihe und einen schwarzen Bauern auf die 7. Reihe der Nachbarlinie. Kind B zieht den schwarzen Bauern mit Doppelschritt vorbei, Kind A schlägt en passant und sagt das übersprungene Feld an. Danach wechseln die Rollen.",
+     "Frage zwischendurch: „Warum darfst du jetzt nicht mehr en passant schlagen?“",
+     "Allein: Arbeitsblatt A1 bis A6. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich schlage en passant richtig und erkenne, wann es nicht geht.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: En passant",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6 besprechen: Der Bauer landet auf dem übersprungenen Feld, nicht auf dem Feld des geschlagenen Bauern. En passant gibt es nur direkt danach, nur von der 5. Reihe, auch für Schwarz.",
+     "Bei jeder Aufgabe nachfragen: „Welche der drei Bedingungen fehlt?“ oder „Welcher Bauer verschwindet?“"
+    ],
+    "kinder": "Ich kenne die typischen Fehler bei en passant.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, lässt du dir bei einigen am Brett ein en passant vorspielen und fragst: „Welcher Bauer verschwindet?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich erkenne und spiele en passant ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Bauernkrieg mit en passant“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Jedes Kind hat nur seine acht Bauern. Wer zuerst einen Bauern umwandelt, gewinnt. Jedes en passant, das richtig gespielt wird, bringt einen Extrapunkt. Danach wechseln die Rollen, das andere Kind spielt Weiß.",
+     "Rückblick: „Auf welches Feld zieht der Bauer beim en passant?“ Aufräum-Ritual. Ausblick: Nächstes Mal geht es um Partien, die unentschieden enden: Patt und Remis."
+    ],
+    "kinder": "Ich nutze en passant im Spiel, wenn es erlaubt ist.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: En passant",
+      "was": "enpassant"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Mit dem Finger den Doppelschritt nachfahren und auf das übersprungene Feld tippen. Dorthin zieht der schlagende Bauer.",
+   "zusatz": "Eine Stellung bauen, in der zwei Bauern en passant schlagen könnten, und entscheiden, welcher besser ist.",
+   "kuerzen": "Die En-passant-Falle auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, der Bauernkrieg dauert nur fünf Minuten."
+  },
+  "nachher": "Wer stellt den Bauern beim en passant auf das falsche Feld? Wer vergisst, dass es nur direkt danach geht? Die Bauernregeln greifst du in Woche 16 bei Patt und Remis wieder auf.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Markiere alle Felder, auf die der weiße König mit einer Rochade ziehen kann.",
+     "fen": "3k4/8/8/8/8/7n/8/R3K2R",
+     "rechte": "KQ",
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "Nur c1. Der Springer h3 greift g1 an, kurz geht deshalb nicht.",
+     "hilfe": [
+      "Prüfe beide Seiten.",
+      "Wer greift ein Feld auf dem Weg des Königs an?"
+     ]
+    },
+    {
+     "frage": "Klicke die schwarze Figur an, die die lange Rochade verhindert.",
+     "fen": "3k4/8/8/7b/8/8/8/R3K3",
+     "rechte": "Q",
+     "pruef": {
+      "stoerer": "lang"
+     },
+     "targets": null,
+     "antwort": "Der Läufer h5. Er greift d1 an.",
+     "hilfe": [
+      "Über welche Felder zieht der König bei der langen Rochade?",
+      "Prüfe die Diagonalen."
+     ]
+    },
+    {
+     "frage": "Schwarz ist am Zug. Markiere das Feld, auf das der schwarze König mit einer Rochade ziehen kann.",
+     "fen": "4k2r/8/8/8/8/8/8/4K3",
+     "zug": "b",
+     "rechte": "k",
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "g8, die kurze Rochade.",
+     "hilfe": [
+      "Der König zieht zwei Felder Richtung Turm.",
+      "Schwarz rochiert auf der 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Welche weißen Bauern dürfen jetzt einen Doppelschritt machen? Klicke sie an.",
+     "fen": "8/8/8/8/3n4/6p1/1P1P2P1/8",
+     "pruef": {
+      "doppelschritt": true
+     },
+     "targets": null,
+     "antwort": "Nur b2. Für d2 ist d4 besetzt, g2 ist von g3 blockiert.",
+     "hilfe": [
+      "Startfeld auf der 2. Reihe?",
+      "Beide Felder davor frei?"
+     ]
+    },
+    {
+     "frage": "Der schwarze Bauer ist gerade mit Doppelschritt von d7 nach d5 gezogen. Klicke den weißen Bauern an, der jetzt direkt neben ihm steht.",
+     "fen": "rnbqkbnr/1pp1pppp/p7/3pP3/8/8/PPPP1PPP/RNBQKBNR",
+     "ep": "d6",
+     "zuege": "e4 a6 e5 d5",
+     "targets": [
+      "e5"
+     ],
+     "antwort": "Der Bauer e5. Er steht auf der 5. Reihe direkt neben d5.",
+     "hilfe": [
+      "Schau links und rechts neben d5.",
+      "Auf derselben Reihe."
+     ]
+    },
+    {
+     "frage": "Über welches Feld ist der schwarze Bauer beim Doppelschritt d7–d5 gesprungen? Markiere es.",
+     "fen": "rnbqkbnr/1pp1pppp/p7/3pP3/8/8/PPPP1PPP/RNBQKBNR",
+     "ep": "d6",
+     "zuege": "e4 a6 e5 d5",
+     "leer": true,
+     "targets": [
+      "d6"
+     ],
+     "antwort": "d6. Dieses Feld ist gleich wichtig: Dorthin darf Weiß en passant schlagen.",
+     "hilfe": [
+      "Zwischen d7 und d5 liegt ein Feld.",
+      "Es liegt auf der d-Linie."
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Markiere alle Felder, auf die der Bauer e5 jetzt ziehen kann.",
+     "fen": "rnbqkbnr/1pp1pppp/p7/3pP3/8/8/PPPP1PPP/RNBQKBNR",
+     "ep": "d6",
+     "zuege": "e4 a6 e5 d5",
+     "leer": true,
+     "pruef": {
+      "legal": "e5"
+     },
+     "targets": null,
+     "antwort": "e6 und d6. Auf d6 schlägt er en passant, der Bauer d5 wird vom Brett genommen.",
+     "hilfe": [
+      "Gerade nach vorn ist frei.",
+      "Denk an das übersprungene Feld."
+     ]
+    },
+    {
+     "frage": "Weiß schlägt en passant. Welcher schwarze Bauer wird vom Brett genommen? Klicke ihn an.",
+     "fen": "rnbqkbnr/1pp1pppp/p7/3pP3/8/8/PPPP1PPP/RNBQKBNR",
+     "ep": "d6",
+     "zuege": "e4 a6 e5 d5",
+     "targets": [
+      "d5"
+     ],
+     "antwort": "Der Bauer d5. Der weiße Bauer zieht nach d6, der schwarze Bauer daneben verschwindet.",
+     "hilfe": [
+      "Es ist der Bauer, der den Doppelschritt gemacht hat.",
+      "Er steht neben dem weißen Bauern."
+     ]
+    },
+    {
+     "frage": "Weiß hat nach d7–d5 zuerst den Springer gezogen, dann zog Schwarz h6. Markiere alle Felder, auf die der Bauer e5 jetzt ziehen kann.",
+     "fen": "rnbqkbnr/1pp1ppp1/p6p/3pP3/8/5N2/PPPP1PPP/RNBQKB1R",
+     "zuege": "e4 a6 e5 d5 Nf3 h6",
+     "leer": true,
+     "pruef": {
+      "legal": "e5"
+     },
+     "targets": null,
+     "antwort": "Nur e6. En passant geht nur sofort im nächsten Zug, jetzt ist es zu spät.",
+     "hilfe": [
+      "Wann darf man en passant schlagen?",
+      "Ist der Doppelschritt gerade passiert?"
+     ]
+    },
+    {
+     "frage": "Schwarz ist in zwei Einzelschritten d7–d6–d5 gezogen. Markiere alle Felder, auf die der Bauer e5 ziehen kann.",
+     "fen": "rnbqkbnr/ppp1pppp/8/3pP3/8/8/PPPP1PPP/RNBQKBNR",
+     "zuege": "e4 d6 e5 d5",
+     "leer": true,
+     "pruef": {
+      "legal": "e5"
+     },
+     "targets": null,
+     "antwort": "Nur e6. En passant gibt es nur gegen einen Doppelschritt, nicht gegen zwei einzelne Schritte.",
+     "hilfe": [
+      "Wie ist der Bauer nach d5 gekommen?",
+      "Bedingung 2 auf dem Plakat."
+     ]
+    },
+    {
+     "frage": "Schwarz ist am Zug. Weiß hat gerade e2–e4 gespielt. Markiere alle Felder, auf die der schwarze Bauer d4 ziehen kann.",
+     "fen": "rnbqkbnr/ppp1pppp/8/8/P2pP3/8/1PPP1PPP/RNBQKBNR",
+     "zug": "b",
+     "ep": "e3",
+     "zuege": "a3 d5 a4 d4 e4",
+     "leer": true,
+     "pruef": {
+      "legal": "d4"
+     },
+     "targets": null,
+     "antwort": "d3 und e3. Auf e3 schlägt Schwarz en passant. Für Schwarz ist es die 4. Reihe.",
+     "hilfe": [
+      "Schwarz zieht nach unten.",
+      "Über welches Feld ist der weiße Bauer gesprungen?"
+     ]
+    },
+    {
+     "frage": "Schwarz hat gerade d7–d5 gespielt. Klicke alle weißen Bauern an, die jetzt en passant schlagen dürfen.",
+     "fen": "rnbqkbnr/1pp1pppp/8/2PpP3/p7/8/PP1P1PPP/RNBQKBNR",
+     "ep": "d6",
+     "zuege": "e4 a6 e5 a5 c4 a4 c5 d5",
+     "pruef": {
+      "epschlaeger": true
+     },
+     "targets": null,
+     "antwort": "c5 und e5. Beide stehen auf der 5. Reihe direkt neben d5. Jeder darf nach d6 schlagen.",
+     "hilfe": [
+      "Wer steht neben d5?",
+      "Auf der 5. Reihe."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Markiere alle Felder, auf die der Bauer d5 jetzt ziehen kann.",
+     "fen": "rnbqkbnr/pppp1pp1/7p/3Pp3/8/8/PPP1PPPP/RNBQKBNR",
+     "ep": "e6",
+     "zuege": "d4 h6 d5 e5",
+     "leer": true,
+     "pruef": {
+      "legal": "d5"
+     },
+     "targets": null,
+     "antwort": "d6 und e6. Auf e6 schlägt er en passant.",
+     "hilfe": [
+      "Gerade nach vorn ist frei.",
+      "Über welches Feld ist e7–e5 gesprungen?"
+     ]
+    },
+    {
+     "frage": "Nach e7–e5 haben beide noch einen Zug gemacht. Markiere alle Felder, auf die der Bauer d5 jetzt ziehen kann.",
+     "fen": "rnbqkbnr/pppp1pp1/8/3Pp2p/8/P7/1PP1PPPP/RNBQKBNR",
+     "zuege": "d4 h6 d5 e5 a3 h5",
+     "leer": true,
+     "pruef": {
+      "legal": "d5"
+     },
+     "targets": null,
+     "antwort": "Nur d6. Für en passant ist es zu spät.",
+     "hilfe": [
+      "Ist der Doppelschritt gerade passiert?",
+      "Nur sofort danach."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Bauer g5 jetzt ziehen kann.",
+     "fen": "rnbqkbnr/1pppppp1/p7/6Pp/8/8/PPPPPP1P/RNBQKBNR",
+     "ep": "h6",
+     "zuege": "g4 a6 g5 h5",
+     "leer": true,
+     "pruef": {
+      "legal": "g5"
+     },
+     "targets": null,
+     "antwort": "g6 und h6. Auf h6 schlägt er en passant, auch am Rand geht es.",
+     "hilfe": [
+      "Wer steht neben g5?",
+      "Über welches Feld ist h7–h5 gesprungen?"
+     ]
+    },
+    {
+     "frage": "Schwarz ist am Zug. Markiere alle Felder, auf die der schwarze Bauer b4 ziehen kann.",
+     "fen": "rnbqkbnr/p1pppppp/8/8/1pP4P/8/PP1PPPP1/RNBQKBNR",
+     "zug": "b",
+     "ep": "c3",
+     "zuege": "h3 b5 h4 b4 c4",
+     "leer": true,
+     "pruef": {
+      "legal": "b4"
+     },
+     "targets": null,
+     "antwort": "b3 und c3. Auf c3 schlägt Schwarz en passant.",
+     "hilfe": [
+      "Schwarz zieht nach unten.",
+      "Über welches Feld ist c2–c4 gesprungen?"
+     ]
+    },
+    {
+     "frage": "Klicke alle weißen Bauern an, die jetzt en passant schlagen dürfen.",
+     "fen": "rnbqkbnr/1pppp1pp/8/4PpP1/p7/8/PPPP1P1P/RNBQKBNR",
+     "ep": "f6",
+     "zuege": "e4 a6 e5 a5 g4 a4 g5 f5",
+     "pruef": {
+      "epschlaeger": true
+     },
+     "targets": null,
+     "antwort": "e5 und g5. Beide stehen neben f5 auf der 5. Reihe.",
+     "hilfe": [
+      "Wer steht neben f5?",
+      "Auf der 5. Reihe."
+     ]
+    },
+    {
+     "frage": "Schwarz ist mit einem Einzelschritt nach c5 gezogen. Markiere alle Felder, auf die der Bauer b5 ziehen kann.",
+     "fen": "rnbqkbnr/pp1ppppp/8/1Pp5/8/8/P1PPPPPP/RNBQKBNR",
+     "zuege": "b4 c6 b5 c5",
+     "leer": true,
+     "pruef": {
+      "legal": "b5"
+     },
+     "targets": null,
+     "antwort": "Nur b6. Der Bauer c5 kam mit einem Einzelschritt von c6, en passant geht nicht.",
+     "hilfe": [
+      "Wie ist der Bauer nach c5 gekommen?",
+      "Nur gegen einen Doppelschritt."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Ein Kind schlägt en passant und stellt seinen Bauern auf f5. Wohin gehört er? Markiere alle Felder, auf die e5 ziehen kann.",
+     "fen": "rnbqkbnr/1pppp1pp/p7/4Pp2/8/8/PPPP1PPP/RNBQKBNR",
+     "ep": "f6",
+     "zuege": "e4 a6 e5 f5",
+     "leer": true,
+     "pruef": {
+      "legal": "e5"
+     },
+     "targets": null,
+     "antwort": "e6 und f6. Beim en passant landet der Bauer auf dem übersprungenen Feld f6, nicht auf f5.",
+     "hilfe": [
+      "Wohin schlägt ein Bauer immer?",
+      "Schräg nach vorn."
+     ]
+    },
+    {
+     "frage": "Ein Kind will en passant schlagen, aber vorher wurden zwei andere Züge gespielt. Markiere alle Felder, auf die e5 ziehen kann.",
+     "fen": "rnbqkbnr/1pppp1pp/8/p3Pp2/8/3P4/PPP2PPP/RNBQKBNR",
+     "zuege": "e4 a6 e5 f5 d3 a5",
+     "leer": true,
+     "pruef": {
+      "legal": "e5"
+     },
+     "targets": null,
+     "antwort": "Nur e6. Die Chance war nur direkt nach f7–f5.",
+     "hilfe": [
+      "Ist der Doppelschritt gerade passiert?",
+      "Bedingung 3."
+     ]
+    },
+    {
+     "frage": "Ist das en passant? Markiere alle Felder, auf die der Bauer e4 ziehen kann.",
+     "fen": "rnbqkbnr/1pp1pppp/p7/3p4/4P3/8/PPPP1PPP/RNBQKBNR",
+     "zuege": "e3 a6 e4 d5",
+     "leer": true,
+     "pruef": {
+      "legal": "e4"
+     },
+     "targets": null,
+     "antwort": "e5 und d5. Auf d5 schlägt er ganz normal, denn der schwarze Bauer steht schräg vor ihm. En passant gibt es nur von der 5. Reihe.",
+     "hilfe": [
+      "Steht der schwarze Bauer neben oder schräg vor e4?",
+      "Normales Schlagen geht schräg nach vorn."
+     ]
+    },
+    {
+     "frage": "Schwarz ist am Zug. Markiere alle Felder, auf die der schwarze Bauer e4 ziehen kann.",
+     "fen": "rnbqkbnr/pppp1ppp/8/8/P2Pp3/8/1PP1PPPP/RNBQKBNR",
+     "zug": "b",
+     "ep": "d3",
+     "zuege": "a3 e5 a4 e4 d4",
+     "leer": true,
+     "pruef": {
+      "legal": "e4"
+     },
+     "targets": null,
+     "antwort": "e3 und d3. Auch Schwarz darf en passant schlagen.",
+     "hilfe": [
+      "Schwarz zieht nach unten.",
+      "Über welches Feld ist d2–d4 gesprungen?"
+     ]
+    },
+    {
+     "frage": "Klicke alle weißen Bauern an, die jetzt en passant schlagen dürfen.",
+     "fen": "rnbqkbnr/p1ppppp1/7p/1pP5/8/8/PP1PPPPP/RNBQKBNR",
+     "ep": "b6",
+     "zuege": "c4 h6 c5 b5",
+     "pruef": {
+      "epschlaeger": true
+     },
+     "targets": null,
+     "antwort": "Nur c5. Er steht auf der 5. Reihe direkt neben b5.",
+     "hilfe": [
+      "Wer steht neben b5?",
+      "Auf der 5. Reihe."
+     ]
+    },
+    {
+     "frage": "Weiß schlägt hier en passant nach b6. Welcher Bauer verschwindet vom Brett? Klicke ihn an.",
+     "fen": "rnbqkbnr/p1ppppp1/7p/1pP5/8/8/PP1PPPPP/RNBQKBNR",
+     "ep": "b6",
+     "zuege": "c4 h6 c5 b5",
+     "targets": [
+      "b5"
+     ],
+     "antwort": "Der Bauer b5, der gerade den Doppelschritt gemacht hat.",
+     "hilfe": [
+      "Er steht neben dem weißen Bauern.",
+      "Er hat den Doppelschritt gemacht."
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Markiere alle Felder, auf die der Bauer f5 jetzt ziehen kann.",
+     "fen": "rnbqkbnr/1ppppp1p/p7/5Pp1/8/8/PPPPP1PP/RNBQKBNR",
+     "ep": "g6",
+     "zuege": "f4 a6 f5 g5",
+     "leer": true,
+     "pruef": {
+      "legal": "f5"
+     },
+     "targets": null,
+     "antwort": "f6 und g6. Auf g6 schlägt er en passant.",
+     "hilfe": [
+      "Gerade nach vorn ist frei.",
+      "Über welches Feld ist g7–g5 gesprungen?"
+     ]
+    },
+    {
+     "frage": "Nach g7–g5 haben beide noch einen Zug gemacht. Markiere alle Felder, auf die der Bauer f5 jetzt ziehen kann.",
+     "fen": "rnbqkbnr/1ppppp1p/8/p4Pp1/8/7P/PPPPP1P1/RNBQKBNR",
+     "zuege": "f4 a6 f5 g5 h3 a5",
+     "leer": true,
+     "pruef": {
+      "legal": "f5"
+     },
+     "targets": null,
+     "antwort": "Nur f6. Für en passant ist es zu spät.",
+     "hilfe": [
+      "Ist der Doppelschritt gerade passiert?",
+      "Nur sofort danach."
+     ]
+    },
+    {
+     "frage": "Schwarz ist am Zug. Markiere alle Felder, auf die der schwarze Bauer h4 ziehen kann.",
+     "fen": "rnbqkbnr/ppppppp1/8/8/2P3Pp/8/PP1PPP1P/RNBQKBNR",
+     "zug": "b",
+     "ep": "g3",
+     "zuege": "c3 h5 c4 h4 g4",
+     "leer": true,
+     "pruef": {
+      "legal": "h4"
+     },
+     "targets": null,
+     "antwort": "h3 und g3. Auf g3 schlägt Schwarz en passant.",
+     "hilfe": [
+      "Schwarz zieht nach unten.",
+      "Über welches Feld ist g2–g4 gesprungen?"
+     ]
+    },
+    {
+     "frage": "Klicke alle weißen Bauern an, die jetzt en passant schlagen dürfen.",
+     "fen": "rnbqkbnr/pp1pppp1/8/1PpP4/7p/8/P1P1PPPP/RNBQKBNR",
+     "ep": "c6",
+     "zuege": "b4 h6 b5 h5 d4 h4 d5 c5",
+     "pruef": {
+      "epschlaeger": true
+     },
+     "targets": null,
+     "antwort": "b5 und d5. Beide stehen neben c5 auf der 5. Reihe.",
+     "hilfe": [
+      "Wer steht neben c5?",
+      "Auf der 5. Reihe."
+     ]
+    },
+    {
+     "frage": "Weiß schlägt hier en passant. Welcher Bauer verschwindet vom Brett? Klicke ihn an.",
+     "fen": "rnbqkbnr/1ppp1ppp/p7/4pP2/8/8/PPPPP1PP/RNBQKBNR",
+     "ep": "e6",
+     "zuege": "f4 a6 f5 e5",
+     "targets": [
+      "e5"
+     ],
+     "antwort": "Der Bauer e5. Der weiße Bauer zieht nach e6.",
+     "hilfe": [
+      "Wer hat gerade den Doppelschritt gemacht?",
+      "Er steht neben dem weißen Bauern."
+     ]
+    },
+    {
+     "frage": "Schwarz ist mit einem Einzelschritt nach b5 gezogen. Markiere alle Felder, auf die der Bauer a5 ziehen kann.",
+     "fen": "rnbqkbnr/p1pppppp/8/Pp6/8/8/1PPPPPPP/RNBQKBNR",
+     "zuege": "a4 b6 a5 b5",
+     "leer": true,
+     "pruef": {
+      "legal": "a5"
+     },
+     "targets": null,
+     "antwort": "Nur a6. Der Bauer kam mit einem Einzelschritt von b6.",
+     "hilfe": [
+      "Wie ist der Bauer nach b5 gekommen?",
+      "Nur gegen einen Doppelschritt."
+     ]
+    }
+   ]
+  }
  }
 };
 export const YEAR=[["Brett, Figuren, Schach und Matt",[1,11]],["Sonderregeln, Notation und erste Taktik",[12,26]],["Mattführung, Eröffnung und Endspiel",[27,36]]];
