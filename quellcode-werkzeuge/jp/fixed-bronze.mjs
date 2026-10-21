@@ -25,7 +25,8 @@ export const URLS={
  "punktespiel": "https://www.youtube.com/watch?v=TCasLqTc5LM",
  "schachzwang": "https://www.youtube.com/watch?v=FJQpIInED9g",
  "diplomOnline": "https://ludgerus-schachdiplom.netlify.app/",
- "routenplaner": "https://www.youtube.com/watch?v=b9sWS-2tGws"
+ "routenplaner": "https://www.youtube.com/watch?v=b9sWS-2tGws",
+ "achtBauern": "https://www.youtube.com/watch?v=XQmXNyh_bVw"
 };
 export const FIXED={
  "1": {
@@ -7115,6 +7116,556 @@ export const FIXED={
      "hilfe": [
       "Zähle die Zugfelder beider Läufer.",
       "Wer ist eingesperrt?"
+     ]
+    }
+   ]
+  }
+ },
+ "13": {
+  "thema": "Bauernumwandlung und starke Bauern",
+  "lernziel": "Ich kann einen Bauern umwandeln und die passende Figur wählen.",
+  "leitfrage": "Welcher Bauer kommt durch, und in welche Figur verwandle ich ihn?",
+  "vorwissen": "Bauernzug, Doppelschritt und Schlagen (Woche 5), erlaubte Stellungen (Woche 12).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Ludgerus-Schachdiplom Silber (Umwandlung), Minispiel „Bauernumwandlung: Acht Bauern und eine Leichtfigur“ (Deutsche Schulschachstiftung). Brettaufgaben eigene Aufgaben; Zugfelder, Freibauern und Matts automatisch nachgerechnet",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Erlaubt oder nicht? Bauern wiederholen",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W5 die Regeln aus Woche 12 und die Bauernzüge wiederholen: Bauer auf der letzten Reihe, starke Figuren, schlagen, umwandeln.",
+     "W6 als Rätsel: „Welchen Bauern kann kein schwarzer Bauer mehr aufhalten?“ Ziel nennen: „Heute lernt ihr, welche Bauern stark sind und in welche Figur ihr sie verwandelt.“"
+    ],
+    "kinder": "Ich ziehe Bauern richtig und erkenne, welcher durchkommen kann.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Umwandeln, die richtige Figur wählen, Freibauern",
+    "ablauf": [
+     "Am Lehrbrett E1 bis E4: Umwandeln auf der letzten Reihe, auch beim Schlagen. Erlaubt sind Dame, Turm, Läufer oder Springer. Meist ist die Dame am stärksten, manchmal ist ein Springer besser, weil er sofort Schach gibt und zwei Figuren angreift.",
+     "E5 und E6: Ein Freibauer ist ein Bauer, vor dem und neben dem kein gegnerischer Bauer mehr steht. Freibauern sind stark, weil sie nur Figuren aufhalten können.",
+     "Merksätze: „Auf der letzten Reihe wird umgewandelt, meist in eine Dame.“ und „Freibauern muss man laufen lassen.“"
+    ],
+    "kinder": "Ich wandle richtig um und zeige einen Freibauern.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Umwandlung und Freibauern E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Bauernrennen zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Jedes Kind hat drei Bauern auf seiner Bauernreihe, nicht gegenüber. Wer zuerst umwandelt, sagt laut, welche Figur er wählt, und begründet. Danach wechseln die Rollen, das andere Kind beginnt.",
+     "Frage zwischendurch: „Warum ist dein Bauer ein Freibauer?“",
+     "Allein: Arbeitsblatt A1 bis A6. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich bringe einen Bauern zur Umwandlung und begründe meine Wahl.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Umwandlung und Freibauern",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6 besprechen: Bauer bleibt auf der letzten Reihe stehen, geradeaus auf ein besetztes Feld ziehen, gegnerische Bauern auf den Nachbarlinien übersehen, schwarze Bauern wandeln auf der 1. Reihe um, Umwandeln mit Schlagen und Matt.",
+     "Bei jeder Aufgabe nachfragen: „Warum ist das ein Freibauer?“ oder „Woran erkennst du, dass der Bauer nicht weiterkommt?“"
+    ],
+    "kinder": "Ich erkenne die typischen Fehler bei der Umwandlung.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, fragst du einige am Brett: „In welche Figur wandelst du um, und warum?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich wandle richtig um und finde Freibauern ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Acht Bauern und eine Leichtfigur“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Jedes Kind hat seine acht Bauern und eine Leichtfigur, also einen Springer oder einen Läufer. Wer zuerst einen Bauern umwandelt, gewinnt. Danach wechseln die Rollen, das andere Kind spielt Weiß.",
+     "Rückblick: „Woran erkennst du einen Freibauern?“ Aufräum-Ritual. Ausblick: Nächstes Mal lernt ihr die Rochade."
+    ],
+    "kinder": "Ich bringe einen Bauern durch und halte gegnerische Bauern auf.",
+    "links": [
+     {
+      "art": "video",
+      "label": "Minispiel „Acht Bauern und eine Leichtfigur“ (Video)",
+      "url": "https://www.youtube.com/watch?v=XQmXNyh_bVw"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Mit dem Finger vor dem Bauern bis zur letzten Reihe fahren und auf den beiden Nachbarlinien nachsehen, ob ein gegnerischer Bauer im Weg steht.",
+   "zusatz": "Eine Stellung bauen, in der die Umwandlung in einen Springer besser ist als in eine Dame.",
+   "kuerzen": "Das Bauernrennen entfällt, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel dauert nur fünf Minuten."
+  },
+  "nachher": "Wer vergisst noch die Nachbarlinien beim Freibauern? Wer wandelt nicht um oder wählt die falsche Figur? Das greifst du in Woche 14 bei der Rochade wieder auf, wenn die Bauern vor dem König stehen.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Klicke die Figur an, die so nie stehen kann.",
+     "fen": "4kP2/8/8/8/8/8/8/4K3",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Der Bauer f8. Auf der 8. Reihe wäre er schon umgewandelt worden.",
+     "hilfe": [
+      "Was passiert auf der letzten Reihe?",
+      "Er bleibt kein Bauer."
+     ]
+    },
+    {
+     "frage": "Welcher weiße Springer ist stärker? Klicke ihn an.",
+     "fen": "7N/8/8/4N3/8/3P4/8/8",
+     "pruef": {
+      "staerkste": "N"
+     },
+     "targets": null,
+     "antwort": "Der Springer e5 mit 7 Zugfeldern. In der Ecke h8 hat der andere nur 2.",
+     "hilfe": [
+      "Zähle die Zugfelder.",
+      "Auf d3 steht ein eigener Bauer."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Bauer ziehen kann.",
+     "fen": "8/8/8/8/8/4np2/5P2/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "f2"
+     },
+     "targets": null,
+     "antwort": "Nur e3. Geradeaus ist f3 besetzt, schräg schlägt er den Springer.",
+     "hilfe": [
+      "Geradeaus wird nicht geschlagen.",
+      "Schräg nur gegnerische Figuren."
+     ]
+    },
+    {
+     "frage": "Das ist ein schwarzer Bauer. Markiere alle Felder, auf die er ziehen kann.",
+     "fen": "8/2p5/1N6/2P5/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "c7"
+     },
+     "targets": null,
+     "antwort": "b6 und c6. Den Doppelschritt verhindert der Bauer c5, auf b6 schlägt er den Springer.",
+     "hilfe": [
+      "Schwarz zieht nach unten.",
+      "Ist c5 frei?"
+     ]
+    },
+    {
+     "frage": "Welche Bauern können im nächsten Zug umgewandelt werden? Klicke sie an.",
+     "fen": "q5nr/1P4P1/8/8/8/8/8/8",
+     "pruef": {
+      "umwandeln": true
+     },
+     "targets": null,
+     "antwort": "b7 und g7. b7 zieht nach b8 oder schlägt die Dame a8, g7 schlägt den Turm h8.",
+     "hilfe": [
+      "Welche Bauern stehen auf der 7. Reihe?",
+      "Auch Schlagen auf die letzte Reihe zählt."
+     ]
+    },
+    {
+     "frage": "Klicke den weißen Bauern an, den kein schwarzer Bauer mehr aufhalten kann.",
+     "fen": "4k3/5p2/1p6/3p4/P2P3P/8/8/4K3",
+     "pruef": {
+      "freibauer": "w"
+     },
+     "targets": null,
+     "antwort": "Der Bauer h4. Vor ihm und auf der g-Linie steht kein schwarzer Bauer. Das ist ein Freibauer.",
+     "hilfe": [
+      "Schau vor jeden Bauern und auf die Nachbarlinien.",
+      "Steht dort ein schwarzer Bauer?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Markiere das Feld, auf dem der Bauer umgewandelt wird.",
+     "fen": "8/4P3/8/8/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "e7"
+     },
+     "targets": null,
+     "antwort": "e8. Dort wird er zur Dame, zum Turm, Läufer oder Springer.",
+     "hilfe": [
+      "Ein Feld vorwärts auf die letzte Reihe.",
+      "Die 8. Reihe ist das Ziel."
+     ]
+    },
+    {
+     "frage": "Umwandeln beim Schlagen: Markiere alle Felder, auf die der Bauer ziehen kann.",
+     "fen": "1nrb4/2P5/8/8/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "c7"
+     },
+     "targets": null,
+     "antwort": "b8 und d8. Geradeaus ist c8 besetzt. Schlägt er schräg, wird er auf demselben Zug umgewandelt.",
+     "hilfe": [
+      "Geradeaus wird nie geschlagen.",
+      "Schräg stehen schwarze Figuren."
+     ]
+    },
+    {
+     "frage": "Die Dame setzt matt: Klicke das Feld an, auf dem der Bauer umgewandelt wird.",
+     "fen": "k7/2P5/1K6/8/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "c8. Die neue Dame gibt Schach über die 8. Reihe, der König b6 deckt a7 und b7. Auch ein Turm würde mattsetzen.",
+     "hilfe": [
+      "Der Bauer zieht auf die letzte Reihe.",
+      "Welche Felder deckt der weiße König?"
+     ]
+    },
+    {
+     "frage": "Der Bauer d7 ist gerade zum Springer geworden. Klicke alle schwarzen Figuren an, die der Springer angreift.",
+     "fen": "3N4/1k3q2/8/8/8/8/8/K7",
+     "zug": "b",
+     "schach": true,
+     "pruef": {
+      "schlaege": [
+       "d8"
+      ]
+     },
+     "targets": null,
+     "antwort": "Den König b7 und die Dame f7. Der Springer gibt Schach und greift die Dame an, eine Dame auf d8 hätte das nicht geschafft.",
+     "hilfe": [
+      "Zeige alle Springerfelder von d8.",
+      "Welche schwarzen Figuren stehen dort?"
+     ]
+    },
+    {
+     "frage": "Klicke den weißen Freibauern an.",
+     "fen": "4k3/1p6/8/P3p3/2P1P3/6P1/8/4K3",
+     "pruef": {
+      "freibauer": "w"
+     },
+     "targets": null,
+     "antwort": "Der Bauer g3. a5 und c4 hält der Bauer b7 auf, e4 steht vor e5. Vor g3 und auf der f- und h-Linie ist frei.",
+     "hilfe": [
+      "Prüfe für jeden Bauern drei Linien: seine eigene und die beiden daneben.",
+      "Nur Bauern vor ihm zählen."
+     ]
+    },
+    {
+     "frage": "Klicke alle weißen Freibauern an.",
+     "fen": "4k3/p7/3p3p/8/1PP2P1P/8/8/4K3",
+     "pruef": {
+      "freibauer": "w"
+     },
+     "targets": null,
+     "antwort": "Nur f4. b4 hält der Bauer a7 auf, c4 der Bauer d6, h4 der Bauer h6.",
+     "hilfe": [
+      "Prüfe die eigene Linie und die beiden Nachbarlinien.",
+      "Nur Bauern vor ihm zählen."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Welche Bauern können im nächsten Zug umgewandelt werden? Klicke sie an.",
+     "fen": "n3r3/P2P4/7P/8/8/8/8/8",
+     "pruef": {
+      "umwandeln": true
+     },
+     "targets": null,
+     "antwort": "Nur d7. Er zieht nach d8 oder schlägt den Turm e8. a7 ist blockiert, h6 ist noch zu weit weg.",
+     "hilfe": [
+      "Welche Bauern stehen auf der 7. Reihe?",
+      "Ist das Feld davor frei, oder kann er schräg schlagen?"
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Bauer ziehen kann.",
+     "fen": "4qnr1/5P2/8/8/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "f7"
+     },
+     "targets": null,
+     "antwort": "e8 und g8. Er schlägt Dame oder Turm und wird dabei umgewandelt. Geradeaus ist f8 besetzt.",
+     "hilfe": [
+      "Geradeaus ist besetzt.",
+      "Schräg stehen schwarze Figuren."
+     ]
+    },
+    {
+     "frage": "Klicke den weißen Freibauern an.",
+     "fen": "4k3/8/3p4/1p4P1/3P4/P7/8/4K3",
+     "pruef": {
+      "freibauer": "w"
+     },
+     "targets": null,
+     "antwort": "Der Bauer g5. a3 hält der Bauer b5 auf, d4 der Bauer d6.",
+     "hilfe": [
+      "Prüfe drei Linien für jeden Bauern.",
+      "Nur Bauern vor ihm zählen."
+     ]
+    },
+    {
+     "frage": "Weiß setzt durch Umwandlung matt. Klicke das Feld an.",
+     "fen": "5k2/1P6/5K2/8/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "b8. Die neue Dame oder ein Turm gibt Schach über die 8. Reihe, der König f6 deckt e7, f7 und g7.",
+     "hilfe": [
+      "Der Bauer zieht auf die letzte Reihe.",
+      "Welche Felder deckt der weiße König?"
+     ]
+    },
+    {
+     "frage": "Welche weißen Bauern kommen gar nicht mehr weiter? Klicke sie an.",
+     "fen": "8/6pr/1p4P1/1P2n3/4P3/8/8/8",
+     "pruef": {
+      "blockiert": true
+     },
+     "targets": null,
+     "antwort": "b5 und e4. Der Bauer g6 ist geradeaus blockiert, kann aber den Turm h7 schlagen.",
+     "hilfe": [
+      "Ist das Feld davor frei?",
+      "Kann er schräg etwas schlagen?"
+     ]
+    },
+    {
+     "frage": "Der Bauer ist auf e8 zum Springer geworden. Klicke alle schwarzen Figuren an, die er angreift.",
+     "fen": "4N3/2q3k1/8/8/8/8/8/K7",
+     "zug": "b",
+     "schach": true,
+     "pruef": {
+      "schlaege": [
+       "e8"
+      ]
+     },
+     "targets": null,
+     "antwort": "Den König g7 und die Dame c7. Nach dem Schach schlägt Weiß die Dame.",
+     "hilfe": [
+      "Zeige alle Springerfelder von e8.",
+      "Welche schwarzen Figuren stehen dort?"
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Ein Kind lässt den Bauern auf der 8. Reihe als Bauer stehen. Klicke die Figur an, die so nicht stehen darf.",
+     "fen": "2P1k3/8/8/8/8/8/8/4K3",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Der Bauer c8. Er muss sofort umgewandelt werden, als Bauer darf er nicht stehen bleiben.",
+     "hilfe": [
+      "Was passiert auf der letzten Reihe?",
+      "Umwandeln ist Pflicht."
+     ]
+    },
+    {
+     "frage": "Wohin kann der Bauer ziehen? Wenn nirgendwohin, drücke „Prüfen“ ohne Markierung.",
+     "fen": "3r4/3P4/8/8/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "d7"
+     },
+     "targets": null,
+     "antwort": "Nirgendwohin. Geradeaus ist d8 besetzt, und schräg steht nichts zum Schlagen.",
+     "hilfe": [
+      "Geradeaus wird nicht geschlagen.",
+      "Steht schräg vor ihm eine Figur?"
+     ]
+    },
+    {
+     "frage": "Ist der Bauer e5 ein Freibauer? Klicke alle schwarzen Bauern an, die ihn noch aufhalten können.",
+     "fen": "8/p2p4/5p1p/4P3/8/8/8/8",
+     "pruef": {
+      "aufhalter": "e5"
+     },
+     "targets": null,
+     "antwort": "d7 und f6. Sie stehen auf den Nachbarlinien vor ihm und können ihn schlagen. e5 ist also kein Freibauer.",
+     "hilfe": [
+      "Schau auf die d-, e- und f-Linie.",
+      "Nur Bauern vor ihm zählen."
+     ]
+    },
+    {
+     "frage": "Das ist ein schwarzer Bauer. Wo wird er umgewandelt? Markiere alle Felder, auf die er ziehen kann.",
+     "fen": "8/8/8/8/8/8/1p6/R1N5",
+     "leer": true,
+     "pruef": {
+      "zuege": "b2"
+     },
+     "targets": null,
+     "antwort": "b1, a1 und c1. Schwarz wandelt auf der 1. Reihe um, auch beim Schlagen.",
+     "hilfe": [
+      "Schwarz zieht nach unten.",
+      "Die 1. Reihe ist für Schwarz die letzte Reihe."
+     ]
+    },
+    {
+     "frage": "Klicke den schwarzen Freibauern an.",
+     "fen": "4k3/8/8/5p2/2p5/7p/1P2P3/4K3",
+     "pruef": {
+      "freibauer": "b"
+     },
+     "targets": null,
+     "antwort": "Der Bauer h3. c4 hält der Bauer b2 auf, f5 der Bauer e2. Für Schwarz liegt „vorn“ unten.",
+     "hilfe": [
+      "Für Schwarz zählen weiße Bauern unterhalb.",
+      "Prüfe drei Linien."
+     ]
+    },
+    {
+     "frage": "Mit welchem Zug setzt Weiß matt? Klicke das Feld an, auf das der Bauer zieht.",
+     "fen": "1r4k1/P4ppp/8/8/8/8/8/6K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "b8. Der Bauer schlägt den Turm und wird zur Dame: Matt. Zieht er nach a8, schlägt der Turm die neue Dame.",
+     "hilfe": [
+      "Geradeaus oder schräg schlagen?",
+      "Welche Umwandlung gibt Schach auf der 8. Reihe?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Welche Bauern können im nächsten Zug umgewandelt werden? Klicke sie an.",
+     "fen": "6nb/2P4P/4P3/8/8/8/8/8",
+     "pruef": {
+      "umwandeln": true
+     },
+     "targets": null,
+     "antwort": "c7 und h7. c7 zieht nach c8, h7 schlägt den Springer g8. e6 ist noch zu weit weg.",
+     "hilfe": [
+      "Welche Bauern stehen auf der 7. Reihe?",
+      "Ist das Feld davor frei, oder kann er schräg schlagen?"
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Bauer ziehen kann.",
+     "fen": "nrq5/1P6/8/8/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "zuege": "b7"
+     },
+     "targets": null,
+     "antwort": "a8 und c8. Geradeaus ist b8 besetzt, schräg schlägt er und wird umgewandelt.",
+     "hilfe": [
+      "Geradeaus ist besetzt.",
+      "Schräg stehen schwarze Figuren."
+     ]
+    },
+    {
+     "frage": "Klicke den weißen Freibauern an.",
+     "fen": "4k3/8/4p3/2p4P/4P3/1P6/8/4K3",
+     "pruef": {
+      "freibauer": "w"
+     },
+     "targets": null,
+     "antwort": "Der Bauer h5. b3 hält der Bauer c5 auf, e4 der Bauer e6.",
+     "hilfe": [
+      "Prüfe drei Linien.",
+      "Nur Bauern vor ihm zählen."
+     ]
+    },
+    {
+     "frage": "Weiß setzt durch Umwandlung matt. Klicke das Feld an.",
+     "fen": "7k/5P2/6K1/8/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "f8. Die neue Dame oder ein Turm gibt Schach über die 8. Reihe, der König g6 deckt g7 und h7.",
+     "hilfe": [
+      "Der Bauer zieht auf die letzte Reihe.",
+      "Welche Felder deckt der weiße König?"
+     ]
+    },
+    {
+     "frage": "Klicke alle schwarzen Bauern an, die den Bauern d4 noch aufhalten können.",
+     "fen": "8/4p3/2p5/1p6/3P4/8/8/8",
+     "pruef": {
+      "aufhalter": "d4"
+     },
+     "targets": null,
+     "antwort": "c6 und e7. Der Bauer b5 steht zu weit weg, auf der b-Linie.",
+     "hilfe": [
+      "Schau auf die c-, d- und e-Linie.",
+      "Nur Bauern vor ihm zählen."
+     ]
+    },
+    {
+     "frage": "Der Bauer ist auf c8 zum Springer geworden. Klicke alle schwarzen Figuren an, die er angreift.",
+     "fen": "2N5/k3q3/8/8/8/8/8/7K",
+     "zug": "b",
+     "schach": true,
+     "pruef": {
+      "schlaege": [
+       "c8"
+      ]
+     },
+     "targets": null,
+     "antwort": "Den König a7 und die Dame e7. Mit Schach und Angriff gewinnt Weiß die Dame.",
+     "hilfe": [
+      "Zeige alle Springerfelder von c8.",
+      "Welche schwarzen Figuren stehen dort?"
      ]
     }
    ]

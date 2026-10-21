@@ -114,6 +114,9 @@ function pruefZiele(fen,P,zug){const B=boardOf(fen);
   const amZug=(zug||'w')==='w',kn=ks.find(q=>isW(B[q])!==amZug);if(kn&&angegriffen(B,amZug).has(kn))out.add(kn);
   return [...out]}
  if(P.staerkste||P.schwaechste){const typ=P.staerkste||P.schwaechste,qs=Object.keys(B).filter(q=>B[q]===typ),n=q=>ziele(fen,q).length,best=(P.staerkste?Math.max:Math.min)(...qs.map(n));return qs.filter(q=>n(q)===best)}
+ const vor=(q,w)=>Object.keys(B).filter(x=>B[x]===(w?'p':'P')&&Math.abs('abcdefgh'.indexOf(x[0])-'abcdefgh'.indexOf(q[0]))<=1&&(w?+x[1]>+q[1]:+x[1]<+q[1]));
+ if(P.freibauer){const w=P.freibauer==='w';return Object.keys(B).filter(q=>B[q]===(w?'P':'p')&&!vor(q,w).length)}
+ if(P.aufhalter){const q=P.aufhalter;return vor(q,isW(B[q]))}
  if(P.ueber){const [von,nach]=P.ueber,p=B[von];return ziele(fen,von).filter(x=>{const C={...B};delete C[von];C[x]=p;return angriff(C,x).includes(nach)&&!C[nach]})}
  return null}
 for(const [w,F] of Object.entries(FIXED)){if(!PLAN.find(x=>x[0]===+w))err('Feste Stunde ohne Woche '+w);
