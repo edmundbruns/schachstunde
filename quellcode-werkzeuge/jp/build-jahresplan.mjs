@@ -107,15 +107,22 @@ function pruefZiele(fen,P,zug){const B=boardOf(fen);
  if(P.decker){const z=P.decker;return Object.keys(B).filter(v=>v!==z&&isW(B[v])===isW(B[z])&&ziele(fen,v).some(x=>x!==z&&angriff(nach(v,x),x).includes(z)))}
  if(P.gewinn){const m=schlagWerte(B,P.gewinn==='w');return Object.keys(m).filter(x=>m[x]>0)}
  if(P.beste){const m=schlagWerte(B,P.beste==='w'),best=Math.max(...Object.values(m));return Object.keys(m).filter(x=>m[x]===best)}
+ if(P.illegal){const out=new Set(),ks=Object.keys(B).filter(q=>B[q].toLowerCase()==='k');
+  for(const q of Object.keys(B))if(B[q].toLowerCase()==='p'&&/[18]/.test(q[1]))out.add(q);
+  for(const w of [true,false]){const k=ks.filter(q=>isW(B[q])===w);if(k.length>1)k.forEach(q=>out.add(q))}
+  const kw=ks.find(q=>B[q]==='K'),kb=ks.find(q=>B[q]==='k');if(kw&&kb&&Math.abs('abcdefgh'.indexOf(kw[0])-'abcdefgh'.indexOf(kb[0]))<=1&&Math.abs(+kw[1]-+kb[1])<=1){out.add(kw);out.add(kb)}
+  const amZug=(zug||'w')==='w',kn=ks.find(q=>isW(B[q])!==amZug);if(kn&&angegriffen(B,amZug).has(kn))out.add(kn);
+  return [...out]}
+ if(P.staerkste||P.schwaechste){const typ=P.staerkste||P.schwaechste,qs=Object.keys(B).filter(q=>B[q]===typ),n=q=>ziele(fen,q).length,best=(P.staerkste?Math.max:Math.min)(...qs.map(n));return qs.filter(q=>n(q)===best)}
  if(P.ueber){const [von,nach]=P.ueber,p=B[von];return ziele(fen,von).filter(x=>{const C={...B};delete C[von];C[x]=p;return angriff(C,x).includes(nach)&&!C[nach]})}
  return null}
-for(const [w,F] of Object.entries(FIXED)){if(!LESSONS.find(x=>x.week===+w))err('Feste Stunde ohne Woche '+w);
+for(const [w,F] of Object.entries(FIXED)){if(!PLAN.find(x=>x[0]===+w))err('Feste Stunde ohne Woche '+w);
  for(const f of ['thema','lernziel','leitfrage','vorwissen','umfang','nachher'])if(!F[f])err(`W${w}: ${f} fehlt`);
  for(const f of ['hilfe','zusatz','kuerzen'])if(!F.hinweise?.[f])err(`W${w}: Hinweis ${f} fehlt`);
  const alles=F.phasen.flatMap(p=>p.ablauf).join(' ');
  if(!/wechseln die Rollen/.test(alles))err(`W${w}: Partnerarbeit ohne „Danach wechseln die Rollen“`);
  if(!/Warum|Woran erkennst du/.test(alles))err(`W${w}: keine Begründungsfrage im Ablauf`);
- for(const [set,list] of Object.entries(F.feld||{}))list.forEach((t,i)=>{if(!t.fen)return;const B=boardOf(t.fen);for(const [q,p] of Object.entries(B))if(p.toLowerCase()==='k'&&angegriffen(B,!isW(p)).has(q)&&!(t.schach&&isW(p)===((t.zug||'w')==='w')))err(`W${w} ${set}${i+1}: König ${q} steht im Schach`)});
+ for(const [set,list] of Object.entries(F.feld||{}))list.forEach((t,i)=>{if(!t.fen||t.pruef?.illegal||t.illegal)return;const B=boardOf(t.fen);for(const [q,p] of Object.entries(B))if(p.toLowerCase()==='k'&&angegriffen(B,!isW(p)).has(q)&&!(t.schach&&isW(p)===((t.zug||'w')==='w')))err(`W${w} ${set}${i+1}: König ${q} steht im Schach`)});
  for(const [set,list] of Object.entries(F.feld||{}))list.forEach((t,i)=>{if(!t.tausch)return;const B=boardOf(t.fen),z=t.tausch.zug,e=see(B,z.slice(0,2),z.slice(2,4)),soll=t.tausch.ergebnis;
   if((soll==='gut'&&!(e>0))||(soll==='schlecht'&&!(e<0))||(soll==='gleich'&&e!==0))err(`W${w} ${set}${i+1}: Tausch ${z} ist ${e}, erwartet ${soll}`)});
  for(const [set,list] of Object.entries(F.feld||{}))list.forEach((t,i)=>{if(!t.pruef)return;const z=pruefZiele(t.fen,t.pruef,t.zug);if(!z){err(`W${w} ${set}${i+1}: Prüfung nicht berechenbar`);return}

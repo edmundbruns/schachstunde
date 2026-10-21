@@ -24,7 +24,8 @@ export const URLS={
  "figurenaufstellen": "https://www.youtube.com/watch?v=r5r3fYH6_WI",
  "punktespiel": "https://www.youtube.com/watch?v=TCasLqTc5LM",
  "schachzwang": "https://www.youtube.com/watch?v=FJQpIInED9g",
- "diplomOnline": "https://ludgerus-schachdiplom.netlify.app/"
+ "diplomOnline": "https://ludgerus-schachdiplom.netlify.app/",
+ "routenplaner": "https://www.youtube.com/watch?v=b9sWS-2tGws"
 };
 export const FIXED={
  "1": {
@@ -6585,6 +6586,535 @@ export const FIXED={
      "hilfe": [
       "Welche Felder vor dem König sind frei?",
       "Kann Schwarz den Turm schlagen?"
+     ]
+    }
+   ]
+  }
+ },
+ "12": {
+  "thema": "Legal oder illegal? Starke und schwache Figuren",
+  "lernziel": "Ich kann erkennen, ob eine Stellung erlaubt ist, und begründen, warum eine Figur stark ist.",
+  "leitfrage": "Kann es diese Stellung im Spiel überhaupt geben, und welche Figur hat hier am meisten Kraft?",
+  "vorwissen": "Alle Regeln der Bronze-Stufe (Woche 1 bis 11).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Ludgerus-Schachdiplom Silber (Themen erlaubte Stellungen und Figurenstärke), Lumi „Matt in einem Zug“, Minispiel „Der Routenplaner“ (Deutsche Schulschachstiftung). Übrige Brettaufgaben eigene Aufgaben; Regelverstöße und Zugfelder automatisch nachgerechnet",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Bronze-Rückblick, dann: Kann es diese Stellung geben?",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W4 eine kurze Bronze-Runde: Grundstellung, Schach, Matt, Tauschen.",
+     "W5 und W6 als Detektivfrage: „Kann es diese Stellung im Spiel geben?“ Ziel nennen: „Heute werdet ihr Regel-Detektive und lernt, welche Figuren stark und welche schwach stehen.“"
+    ],
+    "kinder": "Ich erkenne, dass manche Stellungen nicht erlaubt sind.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Vier Regeln für erlaubte Stellungen, Figuren zählen",
+    "ablauf": [
+     "Am Lehrbrett E1 bis E4 die vier Regeln erarbeiten: Kein Bauer steht auf der 1. oder 8. Reihe. Jede Farbe hat genau einen König. Die Könige stehen nie nebeneinander. Wer nicht am Zug ist, steht nicht im Schach.",
+     "E5 und E6: Starke und schwache Figuren. Die Kinder zählen die Zugfelder: Eine Figur in der Mitte hat mehr Felder als am Rand, eine eingesperrte Figur ist schwach.",
+     "Merksätze: „Erst die vier Regeln prüfen, dann sagen: erlaubt oder nicht.“ und „Ein Springer am Rand bringt Kummer und Schand.“"
+    ],
+    "kinder": "Ich nenne die vier Regeln und finde die stärkere Figur durch Zählen.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Regeln und Figurenstärke E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Detektivspiel zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A baut eine Stellung mit genau einem Regelfehler oder ganz ohne Fehler. Kind B sagt, ob sie erlaubt ist, und begründet mit einer der vier Regeln. Danach wechseln die Rollen.",
+     "Allein: Arbeitsblatt A1 bis A6. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich finde Regelfehler und begründe sie.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Legal oder illegal?",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Irrtümer klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6 besprechen: Schwarze Bauern auf der 1. Reihe, beide Könige im Schach, zwei Damen sind erlaubt, offene Diagonalen machen Läufer stark, die Dame in der Ecke, Könige nebeneinander.",
+     "Bei jeder Aufgabe nachfragen: „Welche Regel ist verletzt?“ oder „Woran erkennst du, dass die Figur stärker ist?“"
+    ],
+    "kinder": "Ich kann begründen, warum eine Stellung erlaubt ist oder nicht.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Irrtümer klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, lässt du dir bei einigen eine Stellung zeigen und fragst: „Welche der vier Regeln prüfst du zuerst?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich erkenne erlaubte Stellungen und starke Figuren ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Der Routenplaner“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Kind B stellt drei schwarze Bauern als Hindernisse auf und legt ein Steinchen als Ziel. Kind A führt einen Springer zum Ziel, ohne je auf ein Feld zu ziehen, das ein Bauer angreift. Passiert das doch, beginnt es von vorn. Gezählt werden die Züge. Danach wechseln die Rollen.",
+     "Rückblick: „Welche der vier Regeln hast du heute am häufigsten gebraucht?“ Aufräum-Ritual. Ausblick: Nächstes Mal wird ein Bauer zur Dame, die Bauernumwandlung."
+    ],
+    "kinder": "Ich führe meine Figur sicher zum Ziel.",
+    "links": [
+     {
+      "art": "video",
+      "label": "Minispiel „Der Routenplaner“ (Video)",
+      "url": "https://www.youtube.com/watch?v=b9sWS-2tGws"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Die vier Regeln als Karte neben das Brett legen und der Reihe nach abhaken. Beim Zählen der Zugfelder jedes Feld mit einem Steinchen belegen.",
+   "zusatz": "Eine Stellung bauen, die auf den ersten Blick falsch aussieht, aber erlaubt ist, zum Beispiel mit zwei Damen nach einer Umwandlung.",
+   "kuerzen": "Das Detektivspiel auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, der Routenplaner hat nur eine Runde."
+  },
+  "nachher": "Wer prüft noch nicht alle vier Regeln? Wer zählt die Zugfelder noch nicht sicher? Das Zählen greifst du in Woche 13 bei den Freibauern wieder auf: Welcher Bauer ist stark?",
+  "feld": {
+   "W": [
+    {
+     "frage": "Klicke alle schwarzen Figuren an, die falsch stehen.",
+     "fen": "rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+     "targets": [
+      "d8",
+      "e8"
+     ],
+     "antwort": "Dame und König sind vertauscht. Die schwarze Dame gehört auf das dunkle Feld d8.",
+     "hilfe": [
+      "Schau in die Mitte der 8. Reihe.",
+      "Die Dame steht auf ihrer Farbe."
+     ]
+    },
+    {
+     "frage": "Klicke die Figur an, die dem weißen König Schach gibt.",
+     "fen": "4k3/8/8/8/8/8/6n1/4K3",
+     "schach": true,
+     "pruef": {
+      "schachgeber": true
+     },
+     "targets": null,
+     "antwort": "Der Springer g2.",
+     "hilfe": [
+      "Prüfe jede schwarze Figur.",
+      "Denk an die Springersprünge."
+     ]
+    },
+    {
+     "frage": "Weiß setzt in einem Zug matt. Klicke das Feld an, auf das Weiß zieht.",
+     "fen": "8/8/8/6Nk/7P/6K1/2Q5/8",
+     "quelle": "Lumi Matt in einem Zug, Aufgabe 47",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "h7. Die Dame gibt Schach, der Springer g5 deckt sie.",
+     "hilfe": [
+      "Die Dame braucht Deckung.",
+      "Welches Feld deckt der Springer?"
+     ]
+    },
+    {
+     "frage": "Welche Figur sollte die Dame schlagen? Klicke sie an.",
+     "fen": "6k1/8/8/2r5/8/8/2Q3n1/6K1",
+     "pruef": {
+      "beste": "w"
+     },
+     "targets": null,
+     "antwort": "Den Turm c5, er ist ungedeckt: plus 5. Der Springer g2 brächte nur 3.",
+     "hilfe": [
+      "Welche schwarzen Figuren erreicht die Dame?",
+      "Welche ist mehr wert?"
+     ]
+    },
+    {
+     "frage": "Kann es diese Stellung geben? Klicke die Figur an, die so nie stehen kann.",
+     "fen": "4k3/8/8/8/8/8/8/2P1K3",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Der Bauer c1. Ein weißer Bauer steht nie auf der 1. Reihe, dort beginnt er nicht und dorthin zieht er nie.",
+     "hilfe": [
+      "Wo stehen Bauern am Anfang?",
+      "Bauern ziehen nie rückwärts."
+     ]
+    },
+    {
+     "frage": "Kann es diese Stellung geben? Klicke die Figuren an, die so nie stehen können.",
+     "fen": "8/8/8/3k4/3K4/8/8/8",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Beide Könige. Könige stehen nie nebeneinander, sie würden sich gegenseitig angreifen.",
+     "hilfe": [
+      "Wie weit stehen die Könige auseinander?",
+      "Darf ein König neben den anderen ziehen?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Regel 1: Klicke die Figur an, die so nie stehen kann.",
+     "fen": "P3k3/8/8/8/8/8/8/4K3",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Der Bauer a8. Auf der 8. Reihe wäre er längst umgewandelt worden.",
+     "hilfe": [
+      "Was passiert mit einem Bauern auf der letzten Reihe?",
+      "Er bleibt kein Bauer."
+     ]
+    },
+    {
+     "frage": "Regel 4: Weiß ist am Zug. Klicke den König an, der so nicht stehen kann.",
+     "fen": "4k3/8/8/8/8/8/8/4RK2",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Der schwarze König e8. Er steht im Schach, aber Weiß ist am Zug. Dann hätte Schwarz das Schach im letzten Zug nicht abgewehrt.",
+     "hilfe": [
+      "Wer steht im Schach?",
+      "Wer ist am Zug?"
+     ]
+    },
+    {
+     "frage": "Regel 2: Klicke alle Figuren an, die hier nicht zusammen stehen können.",
+     "fen": "4k3/8/8/8/K7/8/8/4K3",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Die beiden weißen Könige e1 und a4. Jede Farbe hat genau einen König, er kann nie geschlagen oder umgewandelt werden.",
+     "hilfe": [
+      "Zähle die Könige jeder Farbe.",
+      "Einen zweiten König gibt es nie."
+     ]
+    },
+    {
+     "frage": "Ist diese Stellung erlaubt? Wenn ja, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4k3/8/8/8/8/8/PPPPPPPP/4K3",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Ja. Acht Bauern auf der 2. Reihe und zwei Könige mit Abstand: alle vier Regeln sind erfüllt.",
+     "hilfe": [
+      "Prüfe die vier Regeln der Reihe nach.",
+      "Bauern auf der 2. Reihe sind erlaubt."
+     ]
+    },
+    {
+     "frage": "Welcher Springer ist stärker? Klicke ihn an. Zähle seine Zugfelder.",
+     "fen": "8/8/8/8/3N4/8/8/N7",
+     "pruef": {
+      "staerkste": "N"
+     },
+     "targets": null,
+     "antwort": "Der Springer d4. Er hat 8 Zugfelder, der Springer a1 in der Ecke nur 2. Ein Springer am Rand bringt Kummer und Schand.",
+     "hilfe": [
+      "Zähle für jeden Springer die Felder.",
+      "In der Mitte hat er mehr Felder."
+     ]
+    },
+    {
+     "frage": "Welcher weiße Läufer ist schwach? Klicke ihn an.",
+     "fen": "8/8/8/8/5B2/8/1P1P3P/2B5",
+     "pruef": {
+      "schwaechste": "B"
+     },
+     "targets": null,
+     "antwort": "Der Läufer c1. Die eigenen Bauern b2 und d2 sperren ihn ein, er hat kein einziges Zugfeld.",
+     "hilfe": [
+      "Zähle die Zugfelder beider Läufer.",
+      "Wer wird von den eigenen Bauern eingesperrt?"
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Klicke die Figur an, die so nie stehen kann.",
+     "fen": "4k3/8/8/8/8/8/6P1/4K2P",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Der Bauer h1. Weiße Bauern stehen nie auf der 1. Reihe.",
+     "hilfe": [
+      "Wo beginnen die weißen Bauern?",
+      "Bauern ziehen nie rückwärts."
+     ]
+    },
+    {
+     "frage": "Klicke die Figuren an, die so nie stehen können.",
+     "fen": "8/8/4k3/4K3/8/8/8/8",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Beide Könige, e5 und e6. Sie stehen nebeneinander.",
+     "hilfe": [
+      "Wie weit sind die Könige voneinander entfernt?",
+      "Könige berühren sich nie."
+     ]
+    },
+    {
+     "frage": "Weiß ist am Zug. Klicke den König an, der so nicht stehen kann.",
+     "fen": "4k3/8/8/1B6/8/8/8/4K3",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Der schwarze König e8. Der Läufer b5 gibt ihm Schach, obwohl Weiß am Zug ist.",
+     "hilfe": [
+      "Wer steht im Schach?",
+      "Wer ist am Zug?"
+     ]
+    },
+    {
+     "frage": "Ist diese Stellung erlaubt? Wenn ja, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4k3/pppppppp/8/8/8/8/PPPPPPPP/4K3",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Ja. Alle Bauern stehen auf ihren Startreihen, die Könige haben Abstand, niemand steht im Schach.",
+     "hilfe": [
+      "Prüfe die vier Regeln.",
+      "Ist eine Regel verletzt?"
+     ]
+    },
+    {
+     "frage": "Welcher weiße Turm ist stärker? Klicke ihn an.",
+     "fen": "8/8/8/8/3R4/8/P7/RN6",
+     "pruef": {
+      "staerkste": "R"
+     },
+     "targets": null,
+     "antwort": "Der Turm d4. Er hat 14 Zugfelder. Der Turm a1 ist von eigenen Figuren eingesperrt und hat keins.",
+     "hilfe": [
+      "Zähle die Zugfelder beider Türme.",
+      "Eigene Figuren sperren den Weg."
+     ]
+    },
+    {
+     "frage": "Welcher weiße Springer ist schwach? Klicke ihn an.",
+     "fen": "8/8/8/8/4N3/8/8/7N",
+     "pruef": {
+      "schwaechste": "N"
+     },
+     "targets": null,
+     "antwort": "Der Springer h1. In der Ecke hat er nur 2 Zugfelder, auf e4 sind es 8.",
+     "hilfe": [
+      "Zähle die Zugfelder.",
+      "Am Rand fallen Felder weg."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Klicke die Figur an, die so nie stehen kann.",
+     "fen": "4k3/8/8/8/8/8/8/3pK3",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Der schwarze Bauer d1. Auf der 1. Reihe wäre er schon umgewandelt worden.",
+     "hilfe": [
+      "Für Schwarz ist die 1. Reihe die letzte Reihe.",
+      "Was passiert dort mit einem Bauern?"
+     ]
+    },
+    {
+     "frage": "Beide Könige stehen im Schach. Weiß ist am Zug. Klicke den König an, der so nicht stehen kann.",
+     "fen": "4k3/8/8/8/4R3/8/8/r3K3",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Der schwarze König e8. Weiß darf im Schach stehen, denn Weiß ist am Zug. Schwarz aber hätte sein Schach im letzten Zug abwehren müssen.",
+     "hilfe": [
+      "Wer ist am Zug?",
+      "Wer durfte im Schach stehen bleiben?"
+     ]
+    },
+    {
+     "frage": "Zwei weiße Damen: Ist diese Stellung erlaubt? Wenn ja, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4k3/8/8/8/8/8/8/Q2QK3",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Ja. Ein Bauer kann sich in eine zweite Dame umwandeln.",
+     "hilfe": [
+      "Wie kann eine zweite Dame entstehen?",
+      "Denk an die Umwandlung."
+     ]
+    },
+    {
+     "frage": "Welcher weiße Läufer ist stärker? Klicke ihn an.",
+     "fen": "8/8/8/8/8/8/1B2P1P1/5B2",
+     "pruef": {
+      "staerkste": "B"
+     },
+     "targets": null,
+     "antwort": "Der Läufer b2 auf der langen Diagonale. Der Läufer f1 ist von den eigenen Bauern eingesperrt.",
+     "hilfe": [
+      "Zähle die Zugfelder beider Läufer.",
+      "Wer hat eine freie Diagonale?"
+     ]
+    },
+    {
+     "frage": "Welche weiße Dame ist stärker? Klicke sie an.",
+     "fen": "8/8/8/3Q4/8/8/1P6/QN6",
+     "pruef": {
+      "staerkste": "Q"
+     },
+     "targets": null,
+     "antwort": "Die Dame d5 mit 27 Zugfeldern. Die Dame a1 kommt nur über die a-Linie hinaus.",
+     "hilfe": [
+      "Zähle grob die Felder in alle Richtungen.",
+      "In der Mitte hat die Dame acht freie Richtungen."
+     ]
+    },
+    {
+     "frage": "Klicke die Figuren an, die so nie stehen können.",
+     "fen": "8/8/8/8/8/2k5/1K6/8",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Beide Könige, b2 und c3. Sie stehen schräg nebeneinander, auch das ist verboten.",
+     "hilfe": [
+      "Auch schräg zählt als nebeneinander.",
+      "Könige berühren sich nie."
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Klicke die Figur an, die so nie stehen kann.",
+     "fen": "1p2k3/8/8/8/8/8/8/4K3",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Der schwarze Bauer b8. Schwarze Bauern beginnen auf der 7. Reihe und ziehen nach unten, nie auf die 8. Reihe.",
+     "hilfe": [
+      "Wo beginnen die schwarzen Bauern?",
+      "In welche Richtung ziehen sie?"
+     ]
+    },
+    {
+     "frage": "Klicke die Figuren an, die so nie stehen können.",
+     "fen": "8/8/8/8/8/8/5k2/6K1",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Beide Könige, f2 und g1. Sie stehen nebeneinander.",
+     "hilfe": [
+      "Wie weit sind die Könige voneinander entfernt?",
+      "Auch schräg zählt."
+     ]
+    },
+    {
+     "frage": "Schwarz ist am Zug. Klicke den König an, der so nicht stehen kann.",
+     "fen": "4k3/8/8/8/8/8/8/r3K3",
+     "zug": "b",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Der weiße König e1. Er steht im Schach, aber Schwarz ist am Zug.",
+     "hilfe": [
+      "Wer steht im Schach?",
+      "Wer ist am Zug?"
+     ]
+    },
+    {
+     "frage": "Ist diese Stellung erlaubt? Wenn ja, drücke „Prüfen“ ohne Markierung.",
+     "fen": "8/8/8/8/3k4/8/3K4/8",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Ja. Zwischen den Königen liegt ein freies Feld, sie stehen nicht nebeneinander.",
+     "hilfe": [
+      "Prüfe den Abstand der Könige.",
+      "Ein Feld dazwischen reicht."
+     ]
+    },
+    {
+     "frage": "Welcher weiße Springer ist stärker? Klicke ihn an.",
+     "fen": "8/8/8/5N2/8/4P3/8/1N6",
+     "pruef": {
+      "staerkste": "N"
+     },
+     "targets": null,
+     "antwort": "Der Springer f5 mit 7 Zugfeldern. Der Springer b1 hat nur 3.",
+     "hilfe": [
+      "Zähle die Zugfelder beider Springer.",
+      "Auf e3 steht ein eigener Bauer."
+     ]
+    },
+    {
+     "frage": "Welcher weiße Läufer ist schwach? Klicke ihn an.",
+     "fen": "8/8/8/8/2B5/8/4P1P1/5B2",
+     "pruef": {
+      "schwaechste": "B"
+     },
+     "targets": null,
+     "antwort": "Der Läufer f1. Die eigenen Bauern e2 und g2 sperren ihn ein.",
+     "hilfe": [
+      "Zähle die Zugfelder beider Läufer.",
+      "Wer ist eingesperrt?"
      ]
     }
    ]
