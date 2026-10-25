@@ -19820,6 +19820,583 @@ export const FIXED={
     }
    ]
   }
+ },
+ "35": {
+  "thema": "Gold-Diplom und Abschlusstest",
+  "lernziel": "Ich kann die Gold-Missionen allein lösen.",
+  "leitfrage": "Zeige ich am Brett und auf dem Testblatt, dass ich Gegenangriff, Mattführungen, Verteidigung, Eröffnung, Opfer und Bauernendspiel beherrsche?",
+  "vorwissen": "Alle Themen der Wochen 27 bis 34.",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Ludgerus-Schachdiplom Gold 1 bis 4, praktischer Gelingensnachweis und Abschlusstest (ludgerus-schachdiplom.netlify.app). Lichess-Puzzles YYwMu, ASBjt und hsvXH (CC0, über die Lichess-Schnittstelle abgerufen), übrige Aufgaben eigene Aufgaben. Gefahr, Treppe, Abwehr, Entwicklung, Mattführungen, Kasten und Quadrat mit chess.js berechnet, Bauernendspiele mit Stockfish geprüft",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Gold-Mix zum Aufwärmen und Ablauf erklären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6 eine kurze Aufwärmrunde: Figur in Gefahr, Treppenschritt, Mattdrohung, Entwicklung, Damiano-Matt, Quadratregel.",
+     "Ablauf erklären: Heute zeigt ihr am Brett und auf zwei Testblättern, was ihr in der Gold-Stufe gelernt habt. Wer alle sechs Punkte am Brett schafft und mindestens 10 von 12 Testaufgaben, bekommt das Gold-Diplom. Wer schon alle drei Stufen hat, kann im Ludgerus-Schachdiplom online den Abschlusstest machen."
+    ],
+    "kinder": "Ich weiß, wie die Gold-Prüfung abläuft.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Generalprobe am Lehrbrett",
+    "ablauf": [
+     "Am Lehrbrett E1 bis E6 eine Generalprobe: Gegenangriff, Matt mit zwei Türmen, Luft machen, Opfer mit Matt, Kasten verkleinern, Opposition. Nach jeder Aufgabe zeigen alle mit Daumen hoch, Mitte oder runter, wie sicher sie sich fühlen.",
+     "Bei E6 fragen: „Woran erkennst du, wer die Opposition hat?“ Merksatz: „Erst die Drohung sehen, dann den Plan wählen, dann bis zum Ende rechnen.“"
+    ],
+    "kinder": "Ich weiß, welche Gold-Themen ich sicher kann.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Generalprobe E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Praktischer Nachweis zu zweit",
+    "ablauf": [
+     "Zu zweit mit dem Prüfbogen: Kind A rettet eine bedrohte Figur mit Gegenangriff, setzt mit zwei Türmen und mit König und Turm matt und wehrt eine Mattdrohung auf zwei Arten ab. Kind B stellt die Stellungen und prüft mit den Plakaten. Danach wechseln die Rollen.",
+     "Danach spielen beide acht Eröffnungszüge nach den Regeln und zeigen in einem Bauernendspiel die Opposition. Du gehst herum und hakst auf dem Prüfbogen ab, was jedes Kind allein zeigt.",
+     "Wer Geräte hat, kann zusätzlich die Gold-Missionen und danach den Abschlusstest im Ludgerus-Schachdiplom online bearbeiten."
+    ],
+    "kinder": "Ich zeige am Brett alle sechs Punkte des Nachweises.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Prüfbogen: praktischer Nachweis Gold",
+      "was": "nachweis"
+     },
+     {
+      "art": "blatt",
+      "label": "Ludgerus-Schachdiplom online (Gold 1 bis 4 und Abschlusstest)",
+      "url": "https://ludgerus-schachdiplom.netlify.app/"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Knackpunkte vor dem Test",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6 die Knackpunkte, die beim Nachweis aufgefallen sind: Gegenangriff auf eine zu schwache Figur, Turm zu nah am König, Luft auf ein angegriffenes Feld, Opfer ohne Keilbauer, Patt beim Turmmatt, Randbauer.",
+     "Bei jeder Aufgabe nachfragen: „Warum?“ oder „Woran erkennst du das?“"
+    ],
+    "kinder": "Ich kenne die typischen Fallen vor dem Test.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Knackpunkte S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Gold-Test: zwei Blätter mit je sechs Aufgaben",
+    "ablauf": [
+     "Jedes Kind löst allein Teil 1 (Gegenangriff, Treppenmatt, Verteidigen, Eröffnung, A1 bis A6) und Teil 2 (Opfer, Grundreihe, Turmmatt, Bauernendspiel, L1 bis L6). Bestanden ist mit mindestens 10 von 12 Aufgaben.",
+     "Du kontrollierst mit den Lösungsblättern und besprichst falsche Aufgaben gleich mit dem Kind am Lehrbrett."
+    ],
+    "kinder": "Ich löse mindestens 10 von 12 Testaufgaben allein.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Gold-Test Teil 1",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Teil 1 A1 bis A6",
+      "set": "A"
+     },
+     {
+      "art": "druck",
+      "label": "Gold-Test Teil 2",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Teil 2 L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Urkunden, Rückblick, Aufräumen",
+    "ablauf": [
+     "Urkunden überreichen, alle klatschen. Wer es noch nicht geschafft hat, bekommt einen festen Termin für den zweiten Versuch und weiß, was er üben soll.",
+     "Rückblick: „Welches Gold-Thema hat dir am meisten Spaß gemacht?“ Aufräum-Ritual. Ausblick: Nächstes Mal ist das Abschlussturnier mit Urkunden für alle."
+    ],
+    "kinder": "Ich weiß, was ich geschafft habe und was als Nächstes kommt.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Gold-Urkunde (zwei pro Blatt)",
+      "was": "urkunde"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Kinder mit Leseschwierigkeiten bekommen die Testaufgaben vorgelesen. Der praktische Nachweis zählt genauso viel wie das Blatt. Die Plakate der Wochen 27 bis 34 dürfen beim Nachweis hängen bleiben.",
+   "zusatz": "Wer früh fertig ist, macht im Ludgerus-Schachdiplom online den Abschlusstest oder spielt eine Partie mit Uhr und schreibt mit.",
+   "kuerzen": "Die Generalprobe auf E4 bis E6 kürzen, im Nachweis die Eröffnung auf sechs Züge. Der Test bleibt vollständig. Wer nicht fertig wird, beendet den Test in Woche 36."
+  },
+  "nachher": "Wer hat das Gold-Diplom noch nicht? In welchem Bereich fehlen Punkte: Mattführung, Verteidigung, Eröffnung oder Endspiel? Für diese Kinder planst du in Woche 36 vor dem Turnier eine kurze Übungsecke ein.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Aufwärmen: Welche weißen Figuren sind wirklich in Gefahr? Klicke sie an.",
+     "fen": "2r3k1/5ppp/8/3B4/1p6/2N5/5PPP/2R3K1",
+     "targets": [
+      "c3"
+     ],
+     "antwort": "Der Springer c3, ihn greift der Bauer b4 an. Der Läufer d5 und der Turm c1 werden nicht angegriffen.",
+     "hilfe": [
+      "Angegriffen und ungedeckt oder von einer billigeren Figur angegriffen?",
+      "Prüfe Bauer b4 und Turm c8."
+     ]
+    },
+    {
+     "frage": "Aufwärmen: Der Turm a5 sperrt die 5. Reihe. Klicke das Feld an, auf das der Jäger zieht.",
+     "fen": "8/8/3k4/R7/8/8/8/6RK",
+     "leer": true,
+     "targets": [
+      "g6"
+     ],
+     "antwort": "g6. Tg6+ gibt Schach auf der 6. Reihe, der Turm a5 sperrt nach unten. Der König muss auf die 7. Reihe.",
+     "hilfe": [
+      "Auf welcher Reihe steht der König?",
+      "Der Wächter bleibt stehen."
+     ]
+    },
+    {
+     "frage": "Aufwärmen: Schwarz droht Matt. Klicke das Feld an, auf dem Schwarz mattsetzen würde.",
+     "fen": "2r3k1/5ppp/8/8/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "c1"
+     ],
+     "antwort": "c1. Tc1 wäre Matt auf der Grundreihe.",
+     "hilfe": [
+      "Wohin kann der Turm c8 ziehen?",
+      "Hat der weiße König Luft?"
+     ]
+    },
+    {
+     "frage": "Aufwärmen: Klicke das Feld an, auf das Schwarz einen Springer entwickelt und dabei den Bauern e5 deckt.",
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3",
+     "leer": true,
+     "targets": [
+      "c6"
+     ],
+     "antwort": "c6. Sc6 entwickelt den Springer zur Mitte und deckt e5.",
+     "hilfe": [
+      "Welche Springerfelder decken e5?",
+      "Welches erreicht ein Springer im ersten Zug?"
+     ]
+    },
+    {
+     "frage": "Aufwärmen: Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "5rk1/5pp1/6P1/8/8/8/8/K6Q",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "h7. Das Damiano-Matt: Der Keilbauer g6 deckt die Dame.",
+     "hilfe": [
+      "Welches Feld deckt der Bauer g6?",
+      "Die Dame setzt direkt vor dem König matt."
+     ]
+    },
+    {
+     "frage": "Aufwärmen: Schwarz am Zug. Klicke das Feld an, auf das der König zieht, um den Bauern b4 aufzuhalten.",
+     "fen": "7K/8/8/8/1P6/6k1/8/8",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "f4"
+     ],
+     "antwort": "f4. Nur von f4 steht der König im Quadrat b4 bis f8. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Zeichne das Quadrat b4 bis f8.",
+      "Welches Königsfeld liegt darin?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Generalprobe Gegenangriff: Der Springer d4 wird vom Bauern e5 angegriffen. Markiere alle Felder, auf denen er sicher steht und die Dame angreift.",
+     "fen": "6k1/2q2ppp/8/4p3/3N4/8/3Q1PPP/6K1",
+     "leer": true,
+     "targets": [
+      "b5"
+     ],
+     "antwort": "b5. Von dort greift der Springer die Dame c7 an und steht sicher. Auf e6 schlägt ihn der Bauer f7.",
+     "hilfe": [
+      "Von welchen Feldern greift ein Springer c7 an?",
+      "Steht er dort sicher?"
+     ]
+    },
+    {
+     "frage": "Generalprobe zwei Türme: Klicke alle Felder an, auf denen ein Turm mattsetzt.",
+     "fen": "k7/2R5/8/8/8/8/8/6KR",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "h8. Der Turm c7 sperrt die 7. Reihe, der Turm h1 setzt auf der 8. Reihe matt.",
+     "hilfe": [
+      "Welcher Turm sperrt?",
+      "Der andere gibt Schach am Rand."
+     ]
+    },
+    {
+     "frage": "Generalprobe Verteidigen: Schwarz droht Te1#. Markiere alle Felder, auf die ein weißer Bauer ziehen kann, damit der König ein sicheres Fluchtfeld bekommt.",
+     "fen": "4r1k1/5ppp/1b6/8/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "g3",
+      "g4",
+      "h3",
+      "h4"
+     ],
+     "antwort": "g3, g4, h3 und h4. Nach f3 oder f4 wäre f2 frei, aber der Läufer b6 greift f2 an.",
+     "hilfe": [
+      "Welches Feld greift der Läufer b6 an?",
+      "Ist das neue Fluchtfeld sicher?"
+     ]
+    },
+    {
+     "frage": "Generalprobe Opfer: Weiß setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame im ersten Zug zieht.",
+     "fen": "2r3k1/5ppp/8/8/3Q4/8/5PPP/3R2K1",
+     "leer": true,
+     "targets": [
+      "d8"
+     ],
+     "antwort": "d8. Dd8+ Txd8 Txd8#. Die Dame lockt den Turm c8 weg.",
+     "hilfe": [
+      "Wer bewacht die 8. Reihe?",
+      "Wie lockt man ihn weg?"
+     ]
+    },
+    {
+     "frage": "Generalprobe Turmmatt: Markiere alle Felder, auf denen der Turm den Kasten verkleinert und sicher steht.",
+     "fen": "8/8/8/2k5/8/8/5R2/K7",
+     "leer": true,
+     "targets": [
+      "f3",
+      "f4",
+      "f6",
+      "e2",
+      "d2"
+     ],
+     "antwort": "d2, e2, f3, f4 und f6. Jeder dieser Züge macht den Kasten kleiner, ohne dass der König den Turm erreicht.",
+     "hilfe": [
+      "Zähle den Kasten vorher.",
+      "Kann der König den Turm danach schlagen?"
+     ]
+    },
+    {
+     "frage": "Generalprobe Opposition: Schwarz am Zug. Markiere alle Felder, auf die der schwarze König ziehen kann, damit Schwarz remis hält.",
+     "fen": "8/5k2/8/5PK1/8/8/8/8",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "g7"
+     ],
+     "antwort": "g7. Die Könige stehen sich gegenüber, Weiß kommt nicht weiter. Jeder andere Zug verliert. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Wo steht der weiße König?",
+      "Stell dich ihm gegenüber."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Test, echte Partie: Weiß hat Dxd5 gespielt. Schwarz gibt zuerst Schach und schlägt dann zurück. Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "r1bqk2r/pp3pbp/2n5/2PQ1p2/8/2N1PN2/PP3PPP/R3KB1R",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle YYwMu (CC0), https://lichess.org/training/YYwMu",
+     "targets": [
+      "c3"
+     ],
+     "antwort": "c3. Lxc3+ schlägt den Springer, der die Dame d5 gedeckt hat, mit Schach. So ging die Partie weiter: bxc3 Dxd5.",
+     "hilfe": [
+      "Wer deckt die weiße Dame d5?",
+      "Kann der Läufer ihn mit Schach schlagen?"
+     ]
+    },
+    {
+     "frage": "Test: Klicke alle Felder an, auf denen ein Turm mattsetzt.",
+     "fen": "1k6/7R/8/8/8/8/8/6RK",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "g8. Der Turm h7 sperrt die 7. Reihe, der Turm g1 setzt auf der 8. Reihe matt.",
+     "hilfe": [
+      "Welcher Turm sperrt die 7. Reihe?",
+      "Der andere gibt auf der 8. Reihe Schach."
+     ]
+    },
+    {
+     "frage": "Test: Schwarz droht Td1#. Markiere alle Felder, auf die der Springer b3 ziehen kann, um das Matt zu verhindern.",
+     "fen": "3r2k1/5ppp/8/8/8/1N6/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "d4",
+      "d2"
+     ],
+     "antwort": "d2 und d4. Der Springer stellt sich auf der d-Linie dazwischen.",
+     "hilfe": [
+      "Welche Felder liegen zwischen d8 und d1?",
+      "Welche erreicht der Springer b3?"
+     ]
+    },
+    {
+     "frage": "Test: Klicke alle schwarzen Springer und Läufer an, die noch nicht entwickelt sind.",
+     "fen": "rnbqk2r/ppp1bppp/4pn2/3p2B1/2PP4/2N5/PP2PPPP/R2QKBNR",
+     "rechte": "KQkq",
+     "zuege": "d4 d5 c4 e6 Nc3 Nf6 Bg5 Be7",
+     "targets": [
+      "b8",
+      "c8"
+     ],
+     "antwort": "b8 und c8. Der Springer b8 und der Läufer c8 stehen noch auf ihren Startfeldern.",
+     "hilfe": [
+      "Welche Leichtfiguren stehen noch auf der 8. Reihe?",
+      "Der Turm zählt nicht."
+     ]
+    },
+    {
+     "frage": "Test: Weiß droht Dxf7#. Markiere alle Felder, auf die der Springer g8 ziehen kann, um das Matt zu verhindern.",
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5Q2/PPPP1PPP/RNB1K1NR",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Qf3 Nc6 Bc4",
+     "leer": true,
+     "targets": [
+      "h6",
+      "f6"
+     ],
+     "antwort": "f6 und h6. Sf6 sperrt die f-Linie, Sh6 deckt f7.",
+     "hilfe": [
+      "Welche Linie nutzt die Dame f3?",
+      "Wo sperrt oder deckt der Springer?"
+     ]
+    },
+    {
+     "frage": "Test: Markiere das Feld, auf das der weiße König bei der Rochade zieht.",
+     "fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nc6 Bb5 Nf6",
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "g1. Der Weg zum Turm h1 ist frei, kein Feld ist angegriffen.",
+     "hilfe": [
+      "Welche Felder überquert der König?",
+      "Der König zieht zwei Felder."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Knackpunkt Gegenangriff: Die weiße Dame wird vom Bauern e5 angegriffen. Weiß hat nur mit Sb5 den Springer a7 angegriffen. Klicke die weiße Figur an, die Schwarz jetzt schlägt.",
+     "fen": "6k1/n4ppp/8/1N2p3/3Q4/8/5PPP/6K1",
+     "zug": "b",
+     "targets": [
+      "d4"
+     ],
+     "antwort": "Die Dame d4. Ein Gegenangriff auf eine schwächere Figur rettet die Dame nicht.",
+     "hilfe": [
+      "Was ist die Dame wert, was der Springer?",
+      "Wen greift der Bauer e5 an?"
+     ]
+    },
+    {
+     "frage": "Knackpunkt Turmmatt: Weiß hat Tc5 gespielt. Klicke die weiße Figur an, die der schwarze König jetzt schlagen kann.",
+     "fen": "8/8/3k4/2R5/8/8/8/6K1",
+     "zug": "b",
+     "targets": [
+      "c5"
+     ],
+     "antwort": "Den Turm c5. Er steht direkt neben dem König und ist ungedeckt.",
+     "hilfe": [
+      "Welche Felder berührt der König d6?",
+      "Wer deckt den Turm?"
+     ]
+    },
+    {
+     "frage": "Knackpunkt Luft: Weiß hat h3 gespielt. Klicke alle Felder an, auf denen Schwarz jetzt mattsetzt.",
+     "fen": "1b2r1k1/5ppp/8/8/8/7P/5PP1/6K1",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "e1. Te1 ist Matt. h2 ist zwar frei, aber der Läufer b8 greift es an.",
+     "hilfe": [
+      "Welches Feld greift der Läufer an?",
+      "Ist h2 sicher?"
+     ]
+    },
+    {
+     "frage": "Knackpunkt Opfer: Ohne Keilbauer. Weiß hat Dh7+ gespielt. Markiere alle Felder, auf die der schwarze König ziehen darf.",
+     "fen": "5rk1/5ppQ/8/8/8/8/8/6K1",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "h7. Der König schlägt die Dame, sie ist nicht gedeckt.",
+     "hilfe": [
+      "Wer deckt h7?",
+      "Darf der König schlagen?"
+     ]
+    },
+    {
+     "frage": "Knackpunkt Patt: Klicke alle Felder an, auf die der Turm nicht ziehen darf, weil Schwarz sonst patt wäre.",
+     "fen": "k7/2K5/8/8/8/8/8/1R6",
+     "leer": true,
+     "pruef": {
+      "patt": "b1"
+     },
+     "targets": null,
+     "antwort": "b7. Dort deckt der Turm a7 ohne Schach, b8 deckt der König: Patt. Richtig ist Ta1, das ist Matt.",
+     "hilfe": [
+      "Welches Feld bleibt dem König a8?",
+      "Nimmt der Turm es ohne Schach weg, ist es Patt."
+     ]
+    },
+    {
+     "frage": "Knackpunkt Randbauer: Weiß am Zug. Markiere alle Felder, auf die der weiße König ziehen kann, damit Weiß gewinnt. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "7k/8/6K1/7P/8/8/8/8",
+     "leer": true,
+     "targets": [],
+     "antwort": "Keins. Mit dem Randbauern hält Schwarz in der Ecke remis. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Wohin kann der schwarze König fliehen?",
+      "Gibt es eine Ecke, aus der er nicht herauskommt?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Test, echte Partie: Schwarz opfert die Dame und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "3r2k1/p3bppp/1pBq4/1P6/P7/8/1Q3PPP/2R3K1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle ASBjt (CC0), https://lichess.org/training/ASBjt",
+     "targets": [
+      "d1"
+     ],
+     "antwort": "d1. Dd1+ Txd1 Txd1#. Der Turm c1 muss schlagen, dann gehört die Grundreihe dem Turm d8.",
+     "hilfe": [
+      "Welche weiße Figur deckt d1?",
+      "Was steht hinter der Dame?"
+     ]
+    },
+    {
+     "frage": "Test: Damiano-Matt in drei Zügen. Klicke das Feld an, auf das der Turm im ersten Zug zieht.",
+     "fen": "5rk1/5pp1/6P1/8/8/8/8/2K3QR",
+     "leer": true,
+     "targets": [
+      "h8"
+     ],
+     "antwort": "h8. Th8+ Kxh8, dann Dh1+ oder Dh2+ Kg8 und Dh7#.",
+     "hilfe": [
+      "Was passiert nach einem Turmopfer mit Schach?",
+      "Wohin muss danach die Dame?"
+     ]
+    },
+    {
+     "frage": "Test, echte Partie: Weiß setzt in zwei Zügen auf der Grundreihe matt. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "6k1/pp3ppp/3p4/8/1PR5/P6P/4rPPK/8",
+     "leer": true,
+     "quelle": "Lichess-Puzzle hsvXH (CC0), https://lichess.org/training/hsvXH",
+     "targets": [
+      "c8"
+     ],
+     "antwort": "c8. Tc8+ Te8 Txe8#. Schwarz kann sich nur dazwischenstellen, dann schlägt der Turm mit Matt.",
+     "hilfe": [
+      "Ist die 8. Reihe offen?",
+      "Was kann Schwarz dazwischenstellen?"
+     ]
+    },
+    {
+     "frage": "Test: Markiere alle Felder, auf denen der Turm den Kasten verkleinert und sicher steht.",
+     "fen": "8/6k1/8/8/8/8/2R5/K7",
+     "leer": true,
+     "targets": [
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "d2",
+      "e2",
+      "f2"
+     ],
+     "antwort": "c3, c4, c5, c6, d2, e2 und f2. Jeder dieser Züge macht den Kasten kleiner, ohne dass der König den Turm erreicht.",
+     "hilfe": [
+      "Zähle den Kasten vorher.",
+      "Kann der König den Turm danach schlagen?"
+     ]
+    },
+    {
+     "frage": "Test: Schwarz am Zug. Klicke das Feld an, auf das der König zieht, um den Bauern g4 aufzuhalten.",
+     "fen": "8/8/8/8/6P1/1k6/8/K7",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "c4"
+     ],
+     "antwort": "c4. Nur von c4 steht der König im Quadrat g4 bis c8. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Zeichne das Quadrat des Bauern.",
+      "Welches Königsfeld liegt darin?"
+     ]
+    },
+    {
+     "frage": "Test: Weiß am Zug gewinnt. Markiere alle Felder, auf die der weiße König ziehen kann, damit Weiß gewinnt.",
+     "fen": "8/8/5k2/8/8/5K2/5P2/8",
+     "leer": true,
+     "targets": [
+      "e4",
+      "f4",
+      "g4"
+     ],
+     "antwort": "e4, f4 und g4. Der König geht vor seinen Bauern. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Der König gehört vor den Bauern.",
+      "Welche Felder liegen auf der 4. Reihe?"
+     ]
+    }
+   ]
+  }
  }
 };
 export const YEAR=[["Brett, Figuren, Schach und Matt",[1,11]],["Sonderregeln, Notation und erste Taktik",[12,26]],["Mattführung, Eröffnung und Endspiel",[27,36]]];
