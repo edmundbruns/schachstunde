@@ -222,7 +222,7 @@ const S0={diplom:'Bronze 1',leit:'Wie bauen wir das Brett richtig auf?',merk:'Re
  E:{t:'Begrüßen, Namen. Brett zeigen: {0}. Frage: Liegt es richtig?',l:'Namen sagen. Brett anschauen.',ids:[0,9,7,8,4,3]},
  A:{t:'Gemeinsam aufbauen. {1} und {2}: Fehler finden.',l:'Mitbauen. Fehler zeigen.',ids:[0,1,2,3,4,5]},
  R:{t:'Rituale: Hand geben, ruhig warten, Figuren einräumen.',l:'Rituale einmal üben.',ids:[0,7,8,9,10,11]},
- U:{t:'Erstes Spiel erklären und spielen lassen.',l:'Zu zweit spielen.',ids:[0,3,4,7,8,11],m:'Bretter'},
+ U:{t:'Bauernkrieg vormachen: Bauern ziehen ein Feld gerade, vom Start auch zwei, und schlagen schräg. Wer zuerst die letzte Reihe erreicht, gewinnt. Wer nicht ziehen kann, verliert. Bei Zeitnot entfällt das Spiel.',l:'Zu zweit Bauernkrieg spielen, nach jeder Partie Farben tauschen und Hand geben.',ids:[0,3,4,7,8,11],m:'Bretter in Startstellung „Bauernkrieg“'},
  L:{t:'Ein Kind baut die Grundstellung allein auf, der Partner prüft. Dann {6} zeigen.',l:'Allein aufbauen, Partner prüft. Dann wechseln.',ids:[6,1,2,5,3,4],m:'Bretter, Lehrbrett'},
  O:{t:'Was war heute neu? Aufräumen nach Ritual.',l:'Einen Satz sagen. Figuren einräumen.',ids:[9,7,8,10,11,0]}}};
 
@@ -262,7 +262,7 @@ function one(plan,st,s,si){{const topic=s.topic||st.topic;if(Array.isArray(s.exe
   if(role==='E'&&!isS0)teacher+=' Leitfrage an die Tafel: „'+(short?.leit||(base||maze).leit)+'“';
   if(role==='E'&&s.fit==='under')teacher='Wiederholung: Grundregel kurz an '+(label[0]||'Aufgabe 1')+' zeigen. '+teacher;
   if(role==='E'&&si>0)teacher='Rückblick, etwa 2 Minuten: Merksatz der letzten Stunde. '+teacher;
-  if(role==='U'&&base&&!/Aufgabe \d/.test(learners))learners=fill('{2} bis {5}: ')+learners.charAt(0).toLowerCase()+learners.slice(1);
+  if(role==='U'&&base&&!isS0&&!/Aufgabe \d/.test(learners))learners=fill('{2} bis {5}: ')+learners.charAt(0).toLowerCase()+learners.slice(1);
   if(role==='U'){if(s.fit==='under')learners+=' Expertenaufgabe freiwillig.';if(s.fit==='over')learners+=' Wer fertig ist: Profi-Aufgabe.';if(s.fit==='mixed')teacher+=' Paare nach Spielstärke bilden.'}
   if(ph.game&&!teacher.includes(ph.game.title))teacher+=' Danach Spiel „'+ph.game.title+'“.';
   if(role==='U'){const m=C.methods.find(x=>x.id===ph.method);if(m&&!teacher.includes(m.name))teacher+=' Methode: '+m.name+'.'}

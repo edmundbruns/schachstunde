@@ -162,3 +162,10 @@ body:has(#teacherboard) .boardlead .boardturn{display:block;margin-top:18px;padd
 .printview .printcontrols-bottom{margin:18px auto 30px}
 
 .board{position:relative}.diagarrows{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
+
+.resumebox{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;border:1px solid #b5c6b9;background:#edf3e9;border-radius:10px;padding:10px 14px;margin:0 0 16px}
+.savedbox{margin:0 0 16px}
+.savedplans{display:flex;flex-wrap:wrap;gap:8px}
+
+#methodcards .eyebrow,.methodtags dt,.methodtags dd,.methodselect{font-size:14px}
+#plannerbody input,#plannerbody select,#plannerbody textarea{font-size:16px}

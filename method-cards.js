@@ -422,7 +422,7 @@ window.MethodCards=[
     "how": "Zwei Spalten „richtig“ und „falsch“ vorbereiten. Kinder ordnen vorgegebene Züge oder Aussagen zur Aufgabe zu. Jede Zuordnung am Brett begründen und bei Bedarf umsortieren.",
     "attention": "Grenzfälle gemeinsam klären; die Begründung ist wichtiger als das Ablegen.",
     "material": "Druckvorlage, ein Brett und ein weißer Turm pro Paar; für Hindernisse zusätzlich ein eigener Bauer. Stifte oder Markiersteine.",
-    "example": "Turmzüge a1–a4 und a1–c3 kommen auf einem leeren Übungsbrett zu „erlaubt“ und „verboten“.",
+    "example": "Turm a1–a4, Läufer c1–h6 und Springer b1–c3 kommen zu „erlaubt“, Turm a1–c3, Läufer c1–c4 und Springer b1–b3 zu „verboten“. Jede Karte wird am leeren Übungsbrett gezeigt.",
     "group": "Denken und Austausch",
     "source": [
       {
@@ -445,7 +445,7 @@ window.MethodCards=[
       "Grundschule",
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Die Kinder kennen die Zugweise des Turms."
+    "prerequisite": "Die Kinder kennen die Zugweisen von Turm, Läufer und Springer. Wer nur den Turm kennt, bekommt nur die beiden Turmkarten."
   },
   {
     "id": "predict",
@@ -503,7 +503,7 @@ window.MethodCards=[
     "what": "Eigene Ideen werden zunächst getrennt notiert und dann zu einer Gruppenantwort zusammengeführt.",
     "how": "Vier Kinder schreiben oder zeichnen zunächst im eigenen Außenfeld. Anschließend stellen alle ihre Ideen vor. Vergleicht die Vorschläge und einigt euch auf drei konkrete Regeln für die Mitte.",
     "attention": "Erst jede Person schreiben oder zeichnen lassen.",
-    "material": "Eine Placemat-Vorlage pro Vierergruppe, möglichst A3, und vier Stifte. Zeichnen statt Schreiben ist möglich.",
+    "material": "Eine Placemat-Vorlage pro Vierergruppe und vier Stifte. Die Vorlage ist für A4 quer gesetzt. Für mehr Schreibfläche am Kopierer auf A3 vergrößern (141 %) oder im Druckdialog Papierformat A3 und „An Seite anpassen“ wählen.",
     "example": "Vier Kinder sammeln auf ihren Außenfeldern Regeln für faires Spielen; drei gemeinsame Regeln stehen in der Mitte.",
     "group": "Denken und Austausch",
     "source": [
@@ -1457,16 +1457,16 @@ window.MethodCards=[
       "Grundschule",
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Erste Erfahrungen beim gemeinsamen Schachspielen."
+    "prerequisite": "Erste Erfahrungen beim gemeinsamen Schachspielen. Lesen und Schreiben erforderlich, oder eine Person schreibt diktierte Ideen auf."
   },
   {
     "id": "koffer-rundreise",
     "name": "Von Aussage zu Aussage gehen und prüfen",
     "what": "Verteilte Aussagen werden beim Rundgang gelesen und überprüft.",
-    "how": "Lege vier Aussagen im Raum aus. Jedes Paar erhält einen Antwortzettel. Aussagen: Bauern ziehen gerade; Bauern schlagen gerade; der Start-Doppelschritt darf über eine Figur gehen; Umwandlung kann zum Springer erfolgen. Paare gehen gemeinsam alle Plätze ab, notieren stimmt oder stimmt nicht und einen Beleg. Nach zwei Minuten zum nächsten Platz gehen. Löst gemeinsam auf. Eine falsche Aussage wird richtig formuliert.",
+    "how": "Hänge die vier Aussagen aus der Vorlage im Raum auf: Der Springer darf über Figuren springen. Der Läufer kann seine Feldfarbe wechseln. Bauern schlagen gerade nach vorn. Ein Turm zieht waagerecht oder senkrecht. Jedes Paar geht mit einem Antwortzettel alle Plätze ab, notiert „stimmt“ oder „stimmt nicht“ und prüft am Brett. Nach zwei Minuten zum nächsten Platz. Zum Schluss gemeinsam auflösen und jede falsche Aussage richtig formulieren.",
     "attention": "Genug Abstand zwischen den Stationen lassen und Aussagen gemeinsam auflösen.",
     "material": "Aussagekarten aus der Vorlage, Klebematerial zum Aufhängen; Stifte und ein Brett mit Figuren zum Prüfen.",
-    "example": "Im Raum hängen „Turm zieht gerade“ und „Läufer wechselt die Farbe“. Paare notieren stimmt oder stimmt nicht.",
+    "example": "Am Platz „Der Läufer kann seine Feldfarbe wechseln“ stellt ein Paar einen Läufer auf c1, zieht ihn zweimal und notiert: stimmt nicht, er bleibt auf Schwarz.",
     "group": "Spiel und Bewegung",
     "source": [],
     "aliases": "Von Aussage zu Aussage gehen und prüfen",
@@ -1483,7 +1483,7 @@ window.MethodCards=[
       "Grundschule",
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Einige Figurennamen und Zugweisen sind bekannt; Begriffe können vorgelesen werden."
+    "prerequisite": "Die Zugweisen von Springer, Läufer, Bauer und Turm sind eingeführt. Die Aussagen können vorgelesen werden."
   },
   {
     "id": "koffer-simultan",
@@ -1758,7 +1758,7 @@ window.MethodCards=[
       "Grundschule",
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Keine besonderen Schachkenntnisse nötig; Erfahrungen können mündlich oder bildlich eingebracht werden."
+    "prerequisite": "Keine besonderen Schachkenntnisse nötig; Erfahrungen können mündlich oder bildlich eingebracht werden. Lesen und Schreiben erforderlich, oder eine Person schreibt diktierte Ideen auf."
   },
   {
     "id": "inspiration-5",
@@ -2025,7 +2025,7 @@ window.MethodCards=[
     "how": "Vier Möglichkeiten kennzeichnen. Kinder wählen eine Ecke, tauschen Gründe aus und stellen sie vor.",
     "attention": "Eine unsichere Position zulassen; räumliche Alternativen für Kinder mit Bewegungseinschränkungen anbieten.",
     "material": "Vier Figurenschilder aus der Vorlage, vier Plätze im Raum und Klebematerial.",
-    "example": "Die Ecken stehen für Turm, Läufer, Springer und Dame. „Welche Figur möchtest du besser kennenlernen?“",
+    "example": "Die Ecken stehen für Turm, Läufer, Springer und Bauer. „Welche Figur möchtest du besser kennenlernen?“",
     "source": [
       {
         "label": "Methodenkartei Oldenburg/Vechta: Vier-Ecken-Methode",
