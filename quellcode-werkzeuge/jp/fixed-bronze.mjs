@@ -16230,6 +16230,596 @@ export const FIXED={
     }
    ]
   }
+ },
+ "29": {
+  "thema": "Verteidigen: fünf Möglichkeiten, ein Matt abwehren",
+  "lernziel": "Ich kann eine Drohung erkennen und die passende Verteidigung wählen.",
+  "leitfrage": "Der Gegner droht Matt. Welche fünf Möglichkeiten habe ich, und welche passt hier?",
+  "vorwissen": "Schach abwehren (Woche 8), Gegenangriff (Woche 27), Matt mit Dame und Turm (Woche 17 und 28).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Fünf Abwehrmöglichkeiten in kindgerechter Form, Lichess-Partien zu den Puzzles Ua9A6, LJSkx, F8dll, 13z8b, G82gS, 2vcoA, tOkbo und aA6wL (CC0, jeweils die Stellung vor dem Fehler, über die Lichess-Schnittstelle abgerufen), übrige Aufgaben eigene Aufgaben. Drohungen und Abwehrzüge mit chess.js berechnet",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Was droht der Gegner?",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6: Mattfeld und Matt drohende Figur finden, Schach abwehren wiederholen, ein Grundreihenmatt aus Sicht des Angreifers, erste Abwehrzüge.",
+     "Vor jeder Aufgabe die Frage stellen: „Was würde der Gegner tun, wenn er jetzt noch einmal ziehen dürfte?“ Ziel nennen: „Heute lernt ihr fünf Möglichkeiten, ein Matt abzuwehren.“"
+    ],
+    "kinder": "Ich erkenne, wo der Gegner mattsetzen will.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Schlagen, decken, dazwischenziehen, Luft machen, König wegziehen",
+    "ablauf": [
+     "Plakat „Ein Matt abwehren“ aufhängen. Am Lehrbrett E1 bis E5 je eine Möglichkeit: den Angreifer schlagen, das Mattfeld decken, eine Figur dazwischenziehen, dem König ein Fluchtfeld schaffen, den König vorher wegziehen.",
+     "Nach jeder Aufgabe fragen: „Woran erkennst du, dass das Matt jetzt weg ist?“ E6: Manchmal ist die beste Abwehr ein eigenes Matt. Merksatz: „Erst die Drohung sehen, dann die passende Abwehr wählen. Matt geht vor.“"
+    ],
+    "kinder": "Ich nenne die fünf Möglichkeiten und zeige zu jeder ein Beispiel.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Ein Matt abwehren",
+      "was": "verteidigen"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Abwehr E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Drohung und Abwehr zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A baut eine Grundreihen-Drohung auf (König mit drei Bauern, gegnerischer Turm auf der offenen Linie). Kind B findet zwei verschiedene Abwehrzüge und nennt die Art. Danach wechseln die Rollen.",
+     "Allein: Arbeitsblatt A1 bis A6, darunter zwei Stellungen aus echten Lichess-Partien, in denen die Abwehr verpasst wurde. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich finde zu einer Drohung mehrere Abwehrzüge.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Ein Matt abwehren",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6: Dazwischenziehen auf ein angegriffenes Feld, Luft auf der falschen Seite, eine Figur schlagen und die Drohung übersehen. Dazu drei echte Partien, in denen die Abwehr verpasst wurde.",
+     "Bei jeder Aufgabe fragen: „Warum hilft dieser Zug nicht?“"
+    ],
+    "kinder": "Ich prüfe vor jedem eigenen Zug, was der Gegner droht.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, fragst du einige am Brett: „Was droht hier, und welche der fünf Möglichkeiten nutzt du?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich wehre ein Matt ohne Hilfe ab.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Drohung, Abwehr“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Kind A stellt eine Mattdrohung auf, Kind B hat 30 Sekunden für eine Abwehr und nennt die Art. Für jede richtige Art gibt es einen Punkt, für eine neue Art zwei. Danach wechseln die Rollen.",
+     "Rückblick: „Welche der fünf Möglichkeiten vergisst du am leichtesten?“ Aufräum-Ritual. Ausblick: Nächstes Mal geht es um die Eröffnungsregeln und das Schäfermatt."
+    ],
+    "kinder": "Ich nenne zu einer Drohung die passende Abwehr.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Ein Matt abwehren",
+      "was": "verteidigen"
+     },
+     {
+      "art": "blatt",
+      "label": "Ludgerus-Schachdiplom online (Gold)",
+      "url": "https://ludgerus-schachdiplom.netlify.app/"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Die Drohung zuerst mit einem Pfeil zeigen oder kurz ausführen und zurücknehmen. Dann die fünf Möglichkeiten vom Plakat der Reihe nach durchgehen.",
+   "zusatz": "Eine Stellung bauen, in der alle fünf Abwehrmöglichkeiten funktionieren. Oder in eigenen Partien nach jedem gegnerischen Zug laut fragen: „Was droht?“",
+   "kuerzen": "Die Partnerübung auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
+  },
+  "nachher": "Wer fragt schon von selbst „Was droht?“? Wer kennt nur eine oder zwei Abwehrarten? Das Grundreihenmatt in Woche 32 greift die Luft und das Decken wieder auf.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Schwarz droht Matt in einem Zug. Klicke das Feld an, auf dem Schwarz mattsetzen würde.",
+     "fen": "4r1k1/5ppp/8/8/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "e1"
+     ],
+     "antwort": "e1. Te1 wäre Matt: Der König kommt nicht von der Grundreihe weg, die eigenen Bauern sperren ihn ein.",
+     "hilfe": [
+      "Wenn Schwarz jetzt ziehen dürfte, was würde der Turm tun?",
+      "Schau auf die 1. Reihe."
+     ]
+    },
+    {
+     "frage": "Schwarz droht Matt in einem Zug. Klicke die schwarze Figur an, die mattsetzen würde.",
+     "fen": "r5k1/5ppp/3b4/8/7q/8/5PPP/R4RK1",
+     "targets": [
+      "h4"
+     ],
+     "antwort": "Die Dame h4. Dxh2 wäre Matt, der Läufer d6 deckt die Dame.",
+     "hilfe": [
+      "Welches Feld neben dem weißen König ist schwach?",
+      "Wer deckt die Dame dort?"
+     ]
+    },
+    {
+     "frage": "Wiederholung Woche 8: Schach! Klicke alle weißen Figuren an, die das Schach abwehren können.",
+     "fen": "4k3/8/8/b7/8/8/8/R1N1K3",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Der König e1 (wegziehen) und der Turm a1 (er schlägt den Läufer a5). Der Springer c1 erreicht kein Feld zwischen a5 und e1.",
+     "hilfe": [
+      "Welche Figur gibt Schach?",
+      "Wegziehen, dazwischenziehen oder schlagen."
+     ]
+    },
+    {
+     "frage": "Jetzt bist du der Angreifer: Klicke alle Felder an, auf denen Weiß mattsetzt.",
+     "fen": "6k1/5ppp/8/8/8/8/5PPP/4R1K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "e8. Te8 ist Matt, die eigenen Bauern sperren den schwarzen König ein.",
+     "hilfe": [
+      "Die 8. Reihe ist offen.",
+      "Hat der König ein Fluchtfeld?"
+     ]
+    },
+    {
+     "frage": "Schwarz droht Te1#. Markiere alle Felder, auf die ein weißer Bauer ziehen kann, damit der König ein Fluchtfeld bekommt.",
+     "fen": "4r1k1/5ppp/8/8/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "f3",
+      "f4",
+      "g3",
+      "g4",
+      "h3",
+      "h4"
+     ],
+     "antwort": "f3, f4, g3, g4, h3 und h4. Jeder Bauernzug öffnet dem König ein Feld auf der 2. Reihe.",
+     "hilfe": [
+      "Welche Felder neben dem König sind von eigenen Bauern besetzt?",
+      "Zieht ein Bauer, wird ein Feld frei."
+     ]
+    },
+    {
+     "frage": "Schwarz droht Te1#. Markiere alle Felder, auf die der Turm a3 ziehen kann, um das Matt zu verhindern.",
+     "fen": "4r1k1/5ppp/8/8/8/R7/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "a8",
+      "e3",
+      "a1"
+     ],
+     "antwort": "a1, a8 und e3. Auf a1 deckt der Turm das Mattfeld, auf e3 stellt er sich dazwischen, auf a8 fesselt er den Turm e8 an den König.",
+     "hilfe": [
+      "Welche Felder decken e1?",
+      "Wo sperrt der Turm die e-Linie?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "1. Angreifer schlagen: Schwarz droht Dxh2#. Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "r5k1/5ppp/3b4/6B1/7q/8/5PPP/R4RK1",
+     "leer": true,
+     "targets": [
+      "h4"
+     ],
+     "antwort": "h4. Lxh4 schlägt die Dame. Ohne Angreifer gibt es kein Matt.",
+     "hilfe": [
+      "Welche Figur will mattsetzen?",
+      "Kann der Läufer sie schlagen?"
+     ]
+    },
+    {
+     "frage": "2. Mattfeld decken: Schwarz droht Te1#. Markiere alle Felder, auf denen der Springer das Mattfeld e1 deckt.",
+     "fen": "4r1k1/5ppp/8/8/3N4/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "f3",
+      "c2"
+     ],
+     "antwort": "c2 und f3. Von beiden Feldern greift der Springer e1 an. Schlägt der Turm dort, schlägt der Springer zurück.",
+     "hilfe": [
+      "Von welchen Feldern greift ein Springer e1 an?",
+      "Welche davon erreicht der Springer d4?"
+     ]
+    },
+    {
+     "frage": "3. Dazwischenziehen: Schwarz droht Te1#. Klicke das Feld an, auf das der Läufer zieht, um die e-Linie zu sperren.",
+     "fen": "4r1k1/5ppp/8/8/8/8/5PPP/2B3K1",
+     "leer": true,
+     "targets": [
+      "e3"
+     ],
+     "antwort": "e3. Der Läufer stellt sich zwischen Turm und Grundreihe, er ist sicher. Ld2 wäre auch eine Abwehr: Er deckt e1.",
+     "hilfe": [
+      "Welche Felder liegen zwischen e8 und e1?",
+      "Welches erreicht der Läufer c1?"
+     ]
+    },
+    {
+     "frage": "4. Fluchtfeld schaffen: Schwarz droht Dxh2#. Markiere alle Felder, auf die der Turm f1 ziehen kann, um dem König Luft zu machen.",
+     "fen": "r5k1/5ppp/3b4/8/7q/8/5PPP/R4RK1",
+     "leer": true,
+     "targets": [
+      "e1",
+      "d1",
+      "c1",
+      "b1"
+     ],
+     "antwort": "b1, c1, d1 und e1. Zieht der Turm weg, kann der König nach f1 fliehen. Dxh2+ ist dann nur Schach.",
+     "hilfe": [
+      "Welches Feld neben dem König ist von einer eigenen Figur besetzt?",
+      "Wenn sie wegzieht, wird es frei."
+     ]
+    },
+    {
+     "frage": "5. König wegziehen: Schwarz droht Te1#. Markiere alle Felder, auf die der weiße König ziehen kann, um das Matt zu verhindern.",
+     "fen": "4r1k1/5ppp/8/8/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "f1"
+     ],
+     "antwort": "f1. Nach Te1+ schlägt der König den Turm. Auf h1 wäre Te1 trotzdem Matt.",
+     "hilfe": [
+      "Welche Felder kann der König erreichen?",
+      "Kann er auf dem neuen Feld den Turm schlagen?"
+     ]
+    },
+    {
+     "frage": "Matt geht vor: Schwarz droht Txd1#. Aber Weiß ist am Zug. Klicke alle Felder an, auf denen Weiß selbst mattsetzt.",
+     "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "d8. Txd8 ist Matt. Wer zuerst mattsetzt, braucht sich nicht zu verteidigen.",
+     "hilfe": [
+      "Prüfe vor der Abwehr eigene Mattzüge.",
+      "Die 8. Reihe ist offen."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Weiß droht Matt in einem Zug. Klicke das Feld an, auf dem Weiß mattsetzen würde.",
+     "fen": "5rk1/5ppp/8/6N1/8/3Q4/8/6K1",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "h7"
+     ],
+     "antwort": "h7. Dxh7 wäre Matt, der Springer g5 deckt die Dame, der Turm f8 versperrt das Fluchtfeld.",
+     "hilfe": [
+      "Welche weiße Figur unterstützt die Dame?",
+      "Schau auf die Diagonale der Dame."
+     ]
+    },
+    {
+     "frage": "Weiß droht Dxh7#. Schlage den Angreifer: Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "5rk1/4bppp/8/6N1/8/3Q4/8/6K1",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "g5"
+     ],
+     "antwort": "g5. Lxg5 schlägt den Springer, der die Dame decken würde. Dxh7+ ist dann nur Schach, der König schlägt die Dame.",
+     "hilfe": [
+      "Wer deckt die Dame auf h7?",
+      "Kann der Läufer ihn schlagen?"
+     ]
+    },
+    {
+     "frage": "Weiß droht Dxh7#. Decke das Mattfeld: Klicke das Feld an, auf das der Springer zieht.",
+     "fen": "5rk1/3n1ppp/8/6N1/8/3Q4/8/6K1",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "f6"
+     ],
+     "antwort": "f6. Der Springer f6 deckt h7. Schlägt die Dame dort, schlägt der Springer zurück.",
+     "hilfe": [
+      "Von welchen Feldern deckt ein Springer h7?",
+      "Welches erreicht der Springer d7?"
+     ]
+    },
+    {
+     "frage": "Weiß droht Dxh7#. Ziehe dazwischen: Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "2b2rk1/5ppp/8/6N1/8/3Q4/8/6K1",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "f5"
+     ],
+     "antwort": "f5. Der Läufer sperrt die Diagonale d3 bis h7. Auch die Bauernzüge f5 und g6 sperren sie.",
+     "hilfe": [
+      "Welche Felder liegen zwischen d3 und h7?",
+      "Welches erreicht der Läufer c8?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz droht Dxg2#. In der Partie spielte Weiß Kh2 und wurde mattgesetzt. Markiere alle Felder, auf die Weiß ziehen konnte, um das Matt zu verhindern.",
+     "fen": "4r1k1/pp3ppp/2r3q1/3p4/3N4/2P1P2b/PP3PP1/1R1Q1RK1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle Ua9A6 (CC0), https://lichess.org/training/Ua9A6",
+     "targets": [
+      "g3",
+      "g4",
+      "f3"
+     ],
+     "antwort": "f3, g3 und g4. Df3 und Dg4 decken g2, die Bauernzüge g3 und g4 sperren die g-Linie. In der Partie folgte nach Kh2 Dxg2#.",
+     "hilfe": [
+      "Wo will die Dame g6 mattsetzen?",
+      "Decken oder dazwischenziehen."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz droht Dxh2#. In der Partie spielte Weiß e4 und wurde mattgesetzt. Markiere alle Felder, auf die Weiß ziehen konnte, um das Matt zu verhindern.",
+     "fen": "r3k2r/1ppn1pp1/p2b1n1p/3pq3/1P6/P1N1PB2/1BPP1PPP/R2Q1RK1",
+     "rechte": "kq",
+     "leer": true,
+     "quelle": "Lichess-Puzzle LJSkx (CC0), https://lichess.org/training/LJSkx",
+     "targets": [
+      "g3",
+      "e1"
+     ],
+     "antwort": "e1 und g3. g3 sperrt die Diagonale des Läufers d6. Te1 macht f1 frei, dann kann der König fliehen. In der Partie folgte nach e4 Dxh2#.",
+     "hilfe": [
+      "Welche Linie nutzt der Läufer d6?",
+      "Welches Feld neben dem König ist besetzt?"
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Fehler 1: Dazwischenziehen, aber sicher. Schwarz droht Te1#. Klicke das Feld an, auf dem sich der Springer sicher dazwischenstellt.",
+     "fen": "4r1k1/5ppp/8/8/3N4/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "e2"
+     ],
+     "antwort": "e2. Auf e6 schlägt der Bauer f7 den Springer, dann droht Te1# wieder.",
+     "hilfe": [
+      "Welche Felder der e-Linie erreicht der Springer?",
+      "Wer kann ihn dort schlagen?"
+     ]
+    },
+    {
+     "frage": "Fehler 2: Luft auf der falschen Seite. Schwarz droht Te1#. Markiere alle Felder, auf die ein weißer Bauer ziehen kann, damit der König wirklich ein Fluchtfeld bekommt.",
+     "fen": "4r1k1/2b2ppp/8/8/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "f3",
+      "f4",
+      "g3",
+      "g4"
+     ],
+     "antwort": "f3, f4, g3 und g4. Nach h3 oder h4 wäre h2 frei, aber der Läufer c7 greift h2 an.",
+     "hilfe": [
+      "Welches Feld greift der Läufer c7 an?",
+      "Ist das neue Fluchtfeld sicher?"
+     ]
+    },
+    {
+     "frage": "Fehler 3: Die Drohung übersehen. Echte Partie: Weiß spielte Dxf3 und wurde mattgesetzt. Markiere alle Felder, auf die Weiß stattdessen ziehen konnte, um das Matt zu verhindern.",
+     "fen": "rn2k2r/ppp2ppp/3bpn2/1N5q/2B5/3PBb2/PPP2PPP/R2Q1RK1",
+     "rechte": "kq",
+     "leer": true,
+     "quelle": "Lichess-Puzzle F8dll (CC0), https://lichess.org/training/F8dll",
+     "targets": [
+      "d6",
+      "f4",
+      "g3",
+      "h3",
+      "h4",
+      "e1"
+     ],
+     "antwort": "d6, e1, f4, g3, h3 und h4. Sxd6+ schlägt den Läufer mit Schach. Lf4 und g3 sperren seine Diagonale, h3 und h4 sperren die h-Linie der Dame, Te1 macht f1 frei. In der Partie folgte nach Dxf3 Dxh2#.",
+     "hilfe": [
+      "Was droht die Dame h5 mit dem Läufer d6?",
+      "Schlagen, dazwischenziehen oder Luft machen."
+     ]
+    },
+    {
+     "frage": "Fehler 4: Erst die Drohung, dann schlagen. Echte Partie: Schwarz schlug mit hxg4 den Turm und wurde mattgesetzt. Markiere alle Felder, auf die Schwarz stattdessen ziehen konnte.",
+     "fen": "3q1r1k/4Np2/1p1r2p1/p5Qp/2P3RP/6P1/P7/4R1K1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 13z8b (CC0), https://lichess.org/training/13z8b",
+     "targets": [
+      "e7",
+      "h7",
+      "g7"
+     ],
+     "antwort": "e7, g7 und h7. Dxe7 schlägt den Springer, der g8 deckt. Kg7 oder Kh7 bringen den König vom Mattfeld weg und decken h6. In der Partie folgte nach hxg4 Dh6#.",
+     "hilfe": [
+      "Wo will die weiße Dame mattsetzen?",
+      "König wegziehen oder den Angreifer schlagen."
+     ]
+    },
+    {
+     "frage": "Fehler 5: Echte Partie: Weiß spielte Sec3 und wurde mattgesetzt. Markiere alle Felder, auf die Weiß stattdessen ziehen konnte, um das Matt zu verhindern.",
+     "fen": "rn2k2r/pbppb1pp/1p2p3/4Pp2/2BP1Pq1/8/PPP1N1P1/RNBQ1RK1",
+     "rechte": "kq",
+     "leer": true,
+     "quelle": "Lichess-Puzzle G82gS (CC0), https://lichess.org/training/G82gS",
+     "targets": [
+      "d5",
+      "g3",
+      "f2",
+      "f3"
+     ],
+     "antwort": "d5, f2, f3 und g3. Ld5 oder d5 sperren die Diagonale des Läufers b7, der die Dame decken würde. Tf2 deckt g2, Sg3 und g3 sperren die g-Linie, Kf2 bringt den König weg, Tf3 macht f1 frei. In der Partie folgte nach Sec3 Dxg2#.",
+     "hilfe": [
+      "Wo will die Dame g4 mattsetzen?",
+      "Wer kann g2 decken?"
+     ]
+    },
+    {
+     "frage": "Fehler 6: Echte Partie: Schwarz spielte f6 und wurde mattgesetzt. Markiere alle Felder, auf die ein schwarzer Springer oder Bauer ziehen konnte, um das Matt zu verhindern.",
+     "fen": "r2qkb1r/pp2pppp/2p5/4N3/2QPnBP1/4P2P/PP3P2/R3K2R",
+     "zug": "b",
+     "rechte": "KQkq",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 2vcoA (CC0), https://lichess.org/training/2vcoA",
+     "targets": [
+      "d6",
+      "g5",
+      "e6"
+     ],
+     "antwort": "d6, e6 und g5. Sd6 und Sg5 decken f7, e6 sperrt die Diagonale der Dame c4. In der Partie folgte nach f6 Dxf7#.",
+     "hilfe": [
+      "Wo will die Dame c4 mattsetzen?",
+      "f6 deckt das Feld f7 nicht."
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Schwarz droht Matt in einem Zug. Klicke alle Felder an, auf denen Schwarz mattsetzen würde.",
+     "fen": "6k1/5ppp/8/8/7n/5q2/5P1P/6K1",
+     "leer": true,
+     "targets": [
+      "g2",
+      "d1"
+     ],
+     "antwort": "d1 und g2. Dg2 wäre Matt, denn der Springer h4 deckt die Dame. Dd1 wäre Matt über die 1. Reihe.",
+     "hilfe": [
+      "Welche Felder neben dem König deckt der Springer h4?",
+      "Schau auch auf die 1. Reihe."
+     ]
+    },
+    {
+     "frage": "Schwarz droht Dg2#. Schlage den Angreifer: Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "6k1/5ppp/8/8/7n/5q2/4BP1P/6K1",
+     "leer": true,
+     "targets": [
+      "f3"
+     ],
+     "antwort": "f3. Lxf3 schlägt die Dame.",
+     "hilfe": [
+      "Welche Figur will mattsetzen?",
+      "Kann der Läufer sie erreichen?"
+     ]
+    },
+    {
+     "frage": "Schwarz droht Dg2# und Dxd1#. Klicke das Feld an, auf das der Springer zieht, um beide Mattfelder zu decken.",
+     "fen": "6k1/5ppp/8/8/7n/5q2/5P1P/3N2K1",
+     "leer": true,
+     "targets": [
+      "e3"
+     ],
+     "antwort": "e3. Von e3 deckt der Springer g2 und d1.",
+     "hilfe": [
+      "Von welchen Feldern deckt ein Springer g2?",
+      "Welches erreicht der Springer d1?"
+     ]
+    },
+    {
+     "frage": "Weiß droht Te8#. Markiere alle Felder, auf die ein schwarzer Bauer ziehen kann, damit der König ein sicheres Fluchtfeld bekommt.",
+     "fen": "6k1/5ppp/8/8/8/8/1B6/4R1K1",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "f6",
+      "f5",
+      "h6",
+      "h5"
+     ],
+     "antwort": "f5, f6, h5 und h6. Nach g6 oder g5 wäre g7 frei, aber der Läufer b2 greift g7 an.",
+     "hilfe": [
+      "Welches Feld greift der Läufer b2 an?",
+      "Ist das neue Fluchtfeld sicher?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz droht Tf4#. Markiere alle Felder, auf die der Springer c5 ziehen kann, um das Matt zu verhindern.",
+     "fen": "8/1R3pk1/r6p/2NpPKp1/3r2P1/8/6P1/8",
+     "leer": true,
+     "quelle": "Lichess-Puzzle tOkbo (CC0), https://lichess.org/training/tOkbo",
+     "targets": [
+      "e4",
+      "d3"
+     ],
+     "antwort": "d3 und e4. Sd3 deckt f4, Se4 sperrt die 4. Reihe zwischen d4 und f4.",
+     "hilfe": [
+      "Welche Felder decken f4?",
+      "Wo sperrt der Springer die 4. Reihe?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß droht Tcf7#. Markiere alle Felder, auf die der Turm d4 ziehen kann, um das Matt zu verhindern.",
+     "fen": "4rk2/2R3Rp/6P1/p7/3r1p2/1P3P2/6PK/8",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle aA6wL (CC0), https://lichess.org/training/aA6wL",
+     "targets": [
+      "d7"
+     ],
+     "antwort": "d7. Td7 sperrt die 7. Reihe zwischen c7 und f7. In der Partie folgte nach hxg6 Tcf7#.",
+     "hilfe": [
+      "Auf welcher Reihe will Weiß mattsetzen?",
+      "Kann der Turm dazwischenziehen?"
+     ]
+    }
+   ]
+  }
  }
 };
 export const YEAR=[["Brett, Figuren, Schach und Matt",[1,11]],["Sonderregeln, Notation und erste Taktik",[12,26]],["Mattführung, Eröffnung und Endspiel",[27,36]]];
