@@ -35,7 +35,8 @@ export const URLS={
  "lichessDiscovered": "https://lichess.org/training/discoveredAttack",
  "lichessIntermezzo": "https://lichess.org/training/intermezzo",
  "lichessPractice": "https://lichess.org/practice",
- "lichessSacrifice": "https://lichess.org/training/sacrifice"
+ "lichessSacrifice": "https://lichess.org/training/sacrifice",
+ "lichessBackRank": "https://lichess.org/training/backRankMate"
 };
 export const FIXED={
  "1": {
@@ -18031,6 +18032,611 @@ export const FIXED={
      "hilfe": [
       "Was versperrt der Dame den Weg nach h7?",
       "Wer deckt h7 außer der Dame?"
+     ]
+    }
+   ]
+  }
+ },
+ "32": {
+  "thema": "Das Grundreihenmatt",
+  "lernziel": "Ich kann ein Grundreihenmatt finden und abwehren.",
+  "leitfrage": "Warum werden Könige hinter ihren eigenen Bauern so oft mattgesetzt, und wie verhindere ich das?",
+  "vorwissen": "Ein Matt abwehren (Woche 29), Opfer und Weglocken (Woche 31), Matt mit zwei Türmen (Woche 28).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Ludgerus-Schachdiplom Gold 4 „Grundreihenmatt“, Lichess-Puzzles 1cKpu, Sq3ID, AtTyK, qxwmY, 499Jk, Lxie2, uyNqi, hUaG0, 1XA40, Gvxgh, 4Xf7o, 1tMN7, Z5awn (CC0, Thema „backRankMate“, über die Lichess-Schnittstelle abgerufen, teils die Stellung vor dem Fehler), übrige Aufgaben eigene Aufgaben. Matt, Drohung, Luft und Abwehr mit chess.js berechnet",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Der König hinter seinen Bauern",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6: ein Grundreihenmatt mit Turm und Dame, die Fluchtfelder des Königs, den Wächter der Grundreihe und eine Drohung erkennen, Luft machen.",
+     "Bei W2 fragen: „Die eigenen Bauern schützen den König. Warum werden sie hier zur Falle?“ Ziel nennen: „Heute lernt ihr, ein Grundreihenmatt zu finden und abzuwehren.“"
+    ],
+    "kinder": "Ich erkenne, wann der König auf der Grundreihe eingesperrt ist.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Angreifen: Wächter weglocken. Verteidigen: Luft und Deckung",
+    "ablauf": [
+     "Plakat „Das Grundreihenmatt“ aufhängen. Am Lehrbrett E1: ein Grundreihenmatt aus einer echten Partie. E2 und E6: Der Wächter der Grundreihe wird mit einem Damenopfer weggelockt.",
+     "E3 und E4: die Abwehr. Luft machen, aber auf ein sicheres Feld, oder die Grundreihe decken. Frage: „Warum hilft h3 hier nicht, g3 aber schon?“",
+     "E5: In einer echten Partie hat Weiß lieber eine Figur geschlagen, statt Luft zu machen. Merksatz: „Ist die Grundreihe offen, mach rechtzeitig Luft. Greifst du an, lock den Wächter weg.“"
+    ],
+    "kinder": "Ich setze auf der Grundreihe matt und weiß, wie ich mich schütze.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Das Grundreihenmatt",
+      "was": "grundreihe"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Grundreihe E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Grundreihen-Duell zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Beide Kinder haben König, drei Bauern vor dem König und zwei Türme. Wer zuerst auf der Grundreihe mattsetzt, gewinnt. Vorher darf jedes Kind einmal Luft machen. Danach wechseln die Rollen und die Farben.",
+     "Allein: Arbeitsblatt A1 bis A6, darunter vier echte Aufgaben aus Lichess-Partien. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich finde Grundreihenmatts und schütze meinen eigenen König.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Das Grundreihenmatt",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6: Luft auf ein angegriffenes Feld, eine Figur schlagen und die eigene Grundreihe vergessen, ein Wächter mit zwei Aufgaben.",
+     "Bei jeder Aufgabe fragen: „Woran erkennst du, dass deine eigene Grundreihe in Gefahr ist?“"
+    ],
+    "kinder": "Ich prüfe vor jedem Zug meine eigene Grundreihe.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, fragst du einige am Brett: „Hat dein König Luft? Wer bewacht die gegnerische Grundreihe?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich finde und verhindere ein Grundreihenmatt ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Luft oder Matt“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Jedes Kind hat König, drei Bauern und einen Turm. Wer einen Bauernzug für Luft verwendet, sagt laut „Luft“. Wer auf der Grundreihe mattsetzt, bekommt zwei Punkte. Danach wechseln die Rollen und die Farben.",
+     "Rückblick: „Wann machst du Luft, und mit welchem Bauern?“ Aufräum-Ritual. Ausblick: Nächstes Mal setzt ihr mit König und einem Turm matt."
+    ],
+    "kinder": "Ich mache rechtzeitig Luft und nutze die gegnerische Grundreihe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Das Grundreihenmatt",
+      "was": "grundreihe"
+     },
+     {
+      "art": "blatt",
+      "label": "Mehr Grundreihen-Aufgaben auf Lichess (online)",
+      "url": "https://lichess.org/training/backRankMate"
+     },
+     {
+      "art": "blatt",
+      "label": "Ludgerus-Schachdiplom online (Gold 4)",
+      "url": "https://ludgerus-schachdiplom.netlify.app/"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Die drei Bauern vor dem König mit einem Finger abdecken: Wohin kann der König jetzt? Dann fragen, welche gegnerische Figur auf die Grundreihe kommt.",
+   "zusatz": "Eine Stellung bauen, in der ein Wächter zwei Grundreihen-Felder gleichzeitig bewachen muss. Oder Lichess-Aufgaben zum Thema Grundreihenmatt lösen.",
+   "kuerzen": "Die Partnerübung auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
+  },
+  "nachher": "Wer macht von selbst rechtzeitig Luft? Wer schlägt lieber eine Figur und vergisst die eigene Grundreihe? Diese Kinder prüfen in Woche 33 vor jedem Zug laut die Grundreihe.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Klicke alle Felder an, auf denen Weiß mattsetzt.",
+     "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a8. Ta8 ist Matt. Die eigenen Bauern f7, g7 und h7 sperren den König ein.",
+     "hilfe": [
+      "Die 8. Reihe ist offen.",
+      "Kann der König nach vorn fliehen?"
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der schwarze König ziehen darf.",
+     "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "legal": "g8"
+     },
+     "targets": null,
+     "antwort": "f8 und h8. Nach vorn stehen eigene Bauern. Der König kann nur auf der Grundreihe hin und her.",
+     "hilfe": [
+      "Welche Nachbarfelder sind frei?",
+      "Die eigenen Bauern versperren den Weg."
+     ]
+    },
+    {
+     "frage": "Klicke die schwarze Figur an, die die Grundreihe bewacht.",
+     "fen": "2r3k1/5ppp/8/8/8/8/5PPP/4R1K1",
+     "targets": [
+      "c8"
+     ],
+     "antwort": "Der Turm c8. Er deckt die 8. Reihe. Te8+ wird von ihm geschlagen. Ein solcher Wächter darf nicht weggelockt werden.",
+     "hilfe": [
+      "Welche schwarze Figur kann auf e8 schlagen?",
+      "Sie steht auf der 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Schwarz droht Matt. Klicke das Feld an, auf dem Schwarz mattsetzen würde.",
+     "fen": "3r2k1/5ppp/8/8/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "d1"
+     ],
+     "antwort": "d1. Td1 wäre Matt, der weiße König ist von den eigenen Bauern eingesperrt.",
+     "hilfe": [
+      "Wohin kann der Turm d8 ziehen?",
+      "Hat der weiße König Luft?"
+     ]
+    },
+    {
+     "frage": "Weiß macht Luft: Markiere alle Felder, auf die ein weißer Bauer ziehen kann, damit der König ein Fluchtfeld bekommt.",
+     "fen": "3r2k1/5ppp/8/8/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "f3",
+      "f4",
+      "g3",
+      "g4",
+      "h3",
+      "h4"
+     ],
+     "antwort": "f3, f4, g3, g4, h3 und h4. Jeder dieser Bauernzüge macht ein Feld auf der 2. Reihe frei.",
+     "hilfe": [
+      "Welche Felder vor dem König sind besetzt?",
+      "Zieht ein Bauer, wird ein Feld frei."
+     ]
+    },
+    {
+     "frage": "Auch die Dame kann das: Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "6k1/5ppp/8/8/8/8/5PPP/3Q2K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "d8. Dd8 ist Matt über die Grundreihe.",
+     "hilfe": [
+      "Welche Reihe ist offen?",
+      "Hat der König Luft?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Echte Partie: Klicke alle Felder an, auf denen Weiß mattsetzt.",
+     "fen": "2n1Rr1k/p5pp/8/5p2/3q4/1P1P2PP/1PP3PK/R1B5",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 1cKpu (CC0), https://lichess.org/training/1cKpu",
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "f8. Txf8 ist Matt. Der Turm schlägt den Wächter f8, der König h8 hat keine Luft.",
+     "hilfe": [
+      "Welche schwarze Figur deckt die Grundreihe?",
+      "Kann der Turm e8 sie schlagen?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß lockt den Wächter weg und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame im ersten Zug zieht.",
+     "fen": "4r1k1/5ppp/8/1Q6/4r3/R7/2q3PP/4R1K1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle Sq3ID (CC0), https://lichess.org/training/Sq3ID",
+     "targets": [
+      "e8"
+     ],
+     "antwort": "e8. Dxe8+ Txe8 Txe8#. Die Dame schlägt den Turm e8, der zweite Turm muss zurückschlagen, dann ist die Grundreihe offen.",
+     "hilfe": [
+      "Welche schwarze Figur bewacht e8?",
+      "Was passiert, wenn sie schlagen muss?"
+     ]
+    },
+    {
+     "frage": "Luft auf ein sicheres Feld: Schwarz droht Te1#. Markiere alle Felder, auf die ein weißer Bauer ziehen kann, damit der König wirklich ein Fluchtfeld bekommt.",
+     "fen": "4r1k1/5ppp/3b4/8/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "f3",
+      "f4",
+      "g3",
+      "g4"
+     ],
+     "antwort": "f3, f4, g3 und g4. Nach h3 oder h4 wäre h2 frei, aber der Läufer d6 greift h2 an. g3 sperrt sogar seine Diagonale.",
+     "hilfe": [
+      "Welche Felder greift der Läufer d6 an?",
+      "Ist das neue Fluchtfeld sicher?"
+     ]
+    },
+    {
+     "frage": "Die Grundreihe decken: Schwarz droht Te1#. Klicke das Feld an, auf das der Läufer zieht, um das Mattfeld e1 zu decken.",
+     "fen": "4r1k1/5ppp/8/8/5B2/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "d2"
+     ],
+     "antwort": "d2. Der Läufer deckt e1. Schlägt der Turm dort, schlägt der Läufer zurück. Le3 wäre auch eine Abwehr: Er stellt sich dazwischen.",
+     "hilfe": [
+      "Von welchen Feldern deckt ein Läufer e1?",
+      "Welches erreicht der Läufer f4?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß schlug mit Txc1 und wurde danach auf der Grundreihe mattgesetzt. Markiere alle Felder, auf die ein weißer Bauer stattdessen ziehen konnte, um Luft zu machen.",
+     "fen": "3q2k1/1b1r1pp1/p6p/1p3Q2/4PB2/P7/1P3PPP/2r1R1K1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle Z5awn (CC0), https://lichess.org/training/Z5awn",
+     "targets": [
+      "f3",
+      "g3",
+      "g4",
+      "h3",
+      "h4"
+     ],
+     "antwort": "f3, g3, g4, h3 und h4. Jeder dieser Bauernzüge gibt dem König ein sicheres Feld. In der Partie folgte nach Txc1 Td1+ Txd1 Dxd1#.",
+     "hilfe": [
+      "Welches Feld neben dem König wird frei?",
+      "Ist es sicher?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß opfert die Dame und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "3r1r1k/pp4pp/3n2q1/6P1/4PQ2/2P5/P4R2/R5K1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle AtTyK (CC0), https://lichess.org/training/AtTyK",
+     "targets": [
+      "f8"
+     ],
+     "antwort": "f8. Dxf8+ Txf8 Txf8#. Der Turm d8 muss die Dame schlagen und verlässt dabei d8, die Grundreihe gehört danach dem Turm f2.",
+     "hilfe": [
+      "Welche schwarze Figur deckt f8?",
+      "Wer bleibt nach dem Schlagen auf der f-Linie?"
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Echte Partie: Klicke alle Felder an, auf denen Schwarz mattsetzt.",
+     "fen": "6k1/p3bpp1/1p2p2p/4P3/1P1Q4/P1R5/5PPP/3rN1K1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle qxwmY (CC0), https://lichess.org/training/qxwmY",
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "e1. Txe1 ist Matt. Der Turm schlägt den Springer e1, der weiße König hat keine Luft.",
+     "hilfe": [
+      "Welche weiße Figur steht auf der Grundreihe im Weg?",
+      "Kann der Turm sie schlagen?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß lockt den Läufer von der Grundreihe weg und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "2r3k1/5ppp/1pQ1b3/p7/3q4/PP4P1/5P1P/4R1K1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 499Jk (CC0), https://lichess.org/training/499Jk",
+     "targets": [
+      "c8"
+     ],
+     "antwort": "c8. Dxc8+ Lxc8 Te8#. Der Läufer e6 muss zurückschlagen und gibt e8 frei.",
+     "hilfe": [
+      "Welche Figur deckt e8?",
+      "Wie lockt man sie weg?"
+     ]
+    },
+    {
+     "frage": "Schwarz macht Luft: Weiß droht Te8#. Markiere alle Felder, auf die ein schwarzer Bauer ziehen kann, damit der König ein sicheres Fluchtfeld bekommt.",
+     "fen": "6k1/5ppp/8/8/8/8/5PPP/1B2R1K1",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "f6",
+      "f5",
+      "g6",
+      "g5"
+     ],
+     "antwort": "f5, f6, g5 und g6. Nach h6 oder h5 wäre h7 frei, aber der Läufer b1 greift h7 an.",
+     "hilfe": [
+      "Welches Feld greift der Läufer b1 an?",
+      "Ist das neue Fluchtfeld sicher?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz opfert die Dame und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "3r2k1/pR3ppp/3q4/2p5/4B3/P7/1PQ2PPP/6K1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle Lxie2 (CC0), https://lichess.org/training/Lxie2",
+     "targets": [
+      "d1"
+     ],
+     "antwort": "d1. Dd1+ Dxd1 Txd1#. Die weiße Dame muss schlagen, dann gehört die Grundreihe dem Turm d8.",
+     "hilfe": [
+      "Welche weiße Figur deckt d1?",
+      "Was steht hinter der schwarzen Dame?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß schlug mit Txd2 und wurde danach mattgesetzt. Markiere alle Felder, auf die ein weißer Bauer stattdessen ziehen konnte, um das Matt zu verhindern.",
+     "fen": "5rk1/8/p7/2pP4/8/3R4/3p2PP/2rR3K",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 1XA40 (CC0), https://lichess.org/training/1XA40",
+     "targets": [
+      "g3",
+      "g4",
+      "h3",
+      "h4"
+     ],
+     "antwort": "g3, g4, h3 und h4. Dann kann der König nach g2 oder h2 fliehen. In der Partie folgte nach Txd2 Tf1+ Txf1 Txf1#.",
+     "hilfe": [
+      "Welches Feld neben dem König wird frei?",
+      "Ist es sicher?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz setzt in zwei Zügen auf der Grundreihe matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "3r4/R1N3p1/1Pk4p/4P3/3q4/8/6PP/1Q5K",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle uyNqi (CC0), https://lichess.org/training/uyNqi",
+     "targets": [
+      "d1"
+     ],
+     "antwort": "d1. Dd1+ Dxd1 Txd1#. Die weiße Dame muss schlagen, danach schlägt der Turm mit Matt zurück.",
+     "hilfe": [
+      "Welche Linie gehört dem Turm d8?",
+      "Wer deckt d1?"
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Fehler 1: Luft auf ein angegriffenes Feld. Weiß hat h3 gespielt. Klicke alle Felder an, auf denen Schwarz jetzt mattsetzt.",
+     "fen": "4r1k1/5ppp/3b4/8/8/7P/5PP1/6K1",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "e1. Te1 ist Matt. h2 ist zwar frei, aber der Läufer d6 greift es an.",
+     "hilfe": [
+      "Welches Feld greift der Läufer d6 an?",
+      "Kann der König nach h2 fliehen?"
+     ]
+    },
+    {
+     "frage": "Fehler 2: Echte Partie. Schwarz spielte Td8 und wurde mit De8+ mattgesetzt. Markiere alle Felder, auf die ein schwarzer Bauer stattdessen ziehen konnte, um Luft zu machen.",
+     "fen": "5r1k/p3Q1pp/2p2p2/2P5/8/7P/3q2P1/4R2K",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle Gvxgh (CC0), https://lichess.org/training/Gvxgh",
+     "targets": [
+      "h6",
+      "h5"
+     ],
+     "antwort": "h5 und h6. Dann kann der König nach h7. Nach g6 oder g5 wäre g7 frei, aber die Dame e7 greift g7 an. In der Partie folgte nach Td8 De8+ Txe8 Txe8#.",
+     "hilfe": [
+      "Welches Feld neben dem König wird frei?",
+      "Ist es sicher?"
+     ]
+    },
+    {
+     "frage": "Fehler 3: Ein Wächter mit zwei Aufgaben. Echte Partie: Schwarz setzt in zwei Zügen matt. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "2rR4/pR3pp1/4k3/7p/1P6/4P3/P4PPP/6K1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle hUaG0 (CC0), https://lichess.org/training/hUaG0",
+     "targets": [
+      "c1"
+     ],
+     "antwort": "c1. Tc1+ Td1 Txd1#. Der weiße Turm d8 hat seine Grundreihe verlassen, um zu schlagen. Jetzt fehlt er als Wächter.",
+     "hilfe": [
+      "Wer bewacht die weiße Grundreihe?",
+      "Was kann Schwarz dazwischenstellen?"
+     ]
+    },
+    {
+     "frage": "Fehler 4: Gier. Echte Partie: Weiß hat mit Txc1 eine Figur geschlagen. Schwarz setzt in zwei Zügen matt. Klicke das Feld an, auf das der Turm d7 zieht.",
+     "fen": "3q2k1/1b1r1pp1/p6p/1p3Q2/4PB2/P7/1P3PPP/2R3K1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle Z5awn (CC0), https://lichess.org/training/Z5awn",
+     "targets": [
+      "d1"
+     ],
+     "antwort": "d1. Td1+ Txd1 Dxd1#. Weiß hatte keine Luft. Die geschlagene Figur war die Grundreihe nicht wert.",
+     "hilfe": [
+      "Welche Linie ist für die schwarzen Figuren offen?",
+      "Hat der weiße König Luft?"
+     ]
+    },
+    {
+     "frage": "Fehler 5: Echte Partie. Schwarz schlug mit Sxc8 und wurde mit Txf8# mattgesetzt. Markiere alle Felder, auf die ein schwarzer Bauer stattdessen ziehen konnte, um Luft zu machen.",
+     "fen": "2Q1Rr1k/p5pp/1n6/5p2/3q4/1P1P2PP/1PP3PK/R1B5",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 1cKpu (CC0), https://lichess.org/training/1cKpu",
+     "targets": [
+      "g6",
+      "g5",
+      "h6",
+      "h5"
+     ],
+     "antwort": "g5, g6, h5 und h6. Jeder dieser Züge gibt dem König ein Fluchtfeld auf der 7. Reihe. In der Partie folgte nach Sxc8 Txf8#.",
+     "hilfe": [
+      "Welches Feld neben dem König wird frei?",
+      "Ist es sicher?"
+     ]
+    },
+    {
+     "frage": "Fehler 6: Echte Partie: Weiß hat mit Txd2 geschlagen und keine Luft gemacht. Schwarz setzt in zwei Zügen matt. Klicke das Feld an, auf das der Turm f8 zieht.",
+     "fen": "5rk1/8/p7/2pP4/8/8/3R2PP/2rR3K",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 1XA40 (CC0), https://lichess.org/training/1XA40",
+     "targets": [
+      "f1"
+     ],
+     "antwort": "f1. Tf1+ Txf1 Txf1#. Der König h1 ist von den eigenen Bauern eingesperrt.",
+     "hilfe": [
+      "Welche Linie ist offen?",
+      "Wer kann auf f1 schlagen?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Klicke alle Felder an, auf denen Weiß mattsetzt.",
+     "fen": "6k1/5ppp/8/8/8/8/5PPP/1R4K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "b8. Tb8 ist Matt, die eigenen Bauern sperren den König ein.",
+     "hilfe": [
+      "Welche Reihe ist offen?",
+      "Kann der König nach vorn fliehen?"
+     ]
+    },
+    {
+     "frage": "Schwarz droht Matt. Klicke das Feld an, auf dem Schwarz mattsetzen würde.",
+     "fen": "1r4k1/5ppp/8/8/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "b1"
+     ],
+     "antwort": "b1. Tb1 wäre Matt, der weiße König hat keine Luft.",
+     "hilfe": [
+      "Wohin kann der Turm b8 ziehen?",
+      "Hat der weiße König Luft?"
+     ]
+    },
+    {
+     "frage": "Schwarz droht Tb1#. Markiere alle Felder, auf die der weiße König oder ein weißer Bauer ziehen kann, um das Matt zu verhindern.",
+     "fen": "1r4k1/5ppp/8/8/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "f3",
+      "f4",
+      "g3",
+      "g4",
+      "h3",
+      "h4",
+      "f1"
+     ],
+     "antwort": "f1, f3, f4, g3, g4, h3 und h4. Die Bauernzüge machen Luft, Kf1 bringt den König vom Mattfeld weg.",
+     "hilfe": [
+      "Welche Bauernzüge geben dem König Luft?",
+      "Kann der König selbst weg?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß opfert die Dame und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "3r3k/p3Q1pp/2p2p2/2P5/8/7P/3q2P1/4R2K",
+     "leer": true,
+     "quelle": "Lichess-Puzzle Gvxgh (CC0), https://lichess.org/training/Gvxgh",
+     "targets": [
+      "e8"
+     ],
+     "antwort": "e8. De8+ Txe8 Txe8#. Der Turm d8 muss schlagen, danach gehört die Grundreihe dem Turm e1.",
+     "hilfe": [
+      "Wer deckt e8?",
+      "Was steht hinter der Dame?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz lockt den Läufer weg und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "4r3/8/p1Q2P2/1p6/k1nP1B2/P7/1q3PPP/2R3K1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 4Xf7o (CC0), https://lichess.org/training/4Xf7o",
+     "targets": [
+      "c1"
+     ],
+     "antwort": "c1. Dxc1+ Lxc1 Te1#. Die Dame schlägt den Turm c1, der die Grundreihe bewacht hat. Der Läufer muss zurückschlagen, danach ist e1 frei für den Turm.",
+     "hilfe": [
+      "Wer deckt die weiße Grundreihe?",
+      "Wie lockt man ihn weg?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz setzt in einem Zug matt, sogar mit einer Umwandlung. Klicke alle Felder an, auf denen Schwarz mattsetzt.",
+     "fen": "7k/3Q2p1/1q5p/8/8/P7/3p2PP/4R2K",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 1tMN7 (CC0), https://lichess.org/training/1tMN7",
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "e1. dxe1D ist Matt. Der Bauer schlägt den Turm und wird zur Dame, der weiße König hat keine Luft.",
+     "hilfe": [
+      "Welcher Bauer kann umwandeln?",
+      "Was schlägt er dabei?"
      ]
     }
    ]
