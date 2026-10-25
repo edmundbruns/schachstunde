@@ -31,7 +31,8 @@ export const URLS={
  "schachBingo": "https://www.youtube.com/watch?v=CDEEqAtAKdU",
  "lichessPin": "https://lichess.org/training/pin",
  "lichessFork": "https://lichess.org/training/fork",
- "lichessSkewer": "https://lichess.org/training/skewer"
+ "lichessSkewer": "https://lichess.org/training/skewer",
+ "lichessDiscovered": "https://lichess.org/training/discoveredAttack"
 };
 export const FIXED={
  "1": {
@@ -13929,6 +13930,593 @@ export const FIXED={
      "hilfe": [
       "Auf welcher Reihe stehen König g5 und Turm b5?",
       "Der Turm muss auf diese Reihe."
+     ]
+    }
+   ]
+  }
+ },
+ "25": {
+  "thema": "Abzug und Abzugsschach",
+  "lernziel": "Ich kann ein Abzugsschach finden.",
+  "leitfrage": "Was passiert, wenn eine Figur wegzieht und dahinter eine andere Figur plötzlich angreift?",
+  "vorwissen": "Fesselung, Gabel und Spieß (Woche 22 bis 24), Schach abwehren (Woche 8).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Lichess-Puzzles QnoxX, CwH2x, FhuoS, AtDjZ, quvZA, wiFMN, re3V4, Ssb7C und giao8 (CC0, Thema „discoveredAttack“, über die Lichess-Schnittstelle abgerufen), übrige Brettaufgaben eigene Aufgaben. Abzugsschach, Doppelschach und Abwehr mit chess.js berechnet, die Lichess-Lösungen stammen aus der Datenbank",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Wer steht im Weg?",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6: Spieß, Fesselung und Springerzüge wiederholen.",
+     "Bei W3 und W6 fragen: „Der Springer steht dem eigenen Turm im Weg. Was passiert, wenn er wegzieht?“ Ziel nennen: „Heute lernt ihr den Abzug: Eine Figur zieht weg, und die Figur dahinter greift an.“"
+    ],
+    "kinder": "Ich erkenne, welche eigene Figur einer anderen im Weg steht.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Abzugsschach, Abzug mit Gewinn, Doppelschach",
+    "ablauf": [
+     "Plakat „Abzug und Abzugsschach“ aufhängen. Am Lehrbrett E1: Der Springer zieht weg, der Turm gibt Schach. Das ist ein Abzugsschach. Der Springer darf dabei fast überall hin.",
+     "E2 und E5: Der Springer oder Läufer zieht so weg, dass er selbst noch etwas angreift. Der Gegner muss erst das Schach abwehren, dann fällt die Figur. E3 und E4: Doppelschach, beide Figuren geben Schach. Dann hilft nur ein Königszug. Frage: „Warum kann man ein Doppelschach nicht durch Dazwischenstellen abwehren?“",
+     "E6: ein echter Abzug aus einer Lichess-Partie. Merksatz: „Die vordere Figur zieht weg und greift an, die hintere gibt Schach: Der Gegner kann nur eins retten.“"
+    ],
+    "kinder": "Ich erkläre Abzugsschach und Doppelschach.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Abzug und Abzugsschach",
+      "was": "abzug"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Abzug E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Abzug bauen zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A stellt einen Turm oder Läufer, davor eine eigene Figur und dahinter den gegnerischen König auf. Kind B sucht alle Abzugsschachs und das Feld, auf dem die vordere Figur zusätzlich etwas angreift. Danach wechseln die Rollen.",
+     "Allein: Arbeitsblatt A1 bis A6, darunter vier echte Aufgaben aus Lichess-Partien. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich finde Abzugsschachs und Abzüge mit Gewinn.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Abzug und Abzugsschach",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6: Wer auf der Linie bleibt, macht keinen Abzug. Beim Abzugsschach hilft es nichts, die gezogene Figur zu schlagen. Beim Doppelschach muss der König ziehen. Auch der Gegner kann abziehen.",
+     "Bei jeder Aufgabe fragen: „Welche Figur gibt hier eigentlich Schach?“"
+    ],
+    "kinder": "Ich unterscheide Abzugsschach und Doppelschach und wehre beide richtig ab.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, fragst du einige am Brett: „Welche Figur zieht ab, und welche greift dann an?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich finde Abzugsschach und Doppelschach ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Versteckte Batterie“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Weiß hat König, Turm e1 und Springer e4, Schwarz hat König e8, Dame und zwei Bauern. Weiß sucht einen Abzug mit Gewinn, Schwarz versucht den König vorher aus der Linie zu bringen. Danach wechseln die Rollen.",
+     "Rückblick: „Fesselung, Gabel, Spieß, Abzug: Welches Motiv findest du am leichtesten?“ Aufräum-Ritual. Ausblick: Nächstes Mal ist Wiederholung und Silber-Diplom."
+    ],
+    "kinder": "Ich nutze einen Abzug in einer Partie.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Abzug und Abzugsschach",
+      "was": "abzug"
+     },
+     {
+      "art": "blatt",
+      "label": "Mehr Abzugsaufgaben auf Lichess (online)",
+      "url": "https://lichess.org/training/discoveredAttack"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Die vordere Figur mit der Hand kurz anheben: Wen greift die Figur dahinter jetzt an? Dann überlegen, wohin die vordere Figur ziehen kann.",
+   "zusatz": "Eine Stellung bauen, in der ein Abzug gleichzeitig Schach gibt und die Dame angreift. Oder Lichess-Aufgaben zum Thema Abzug lösen.",
+   "kuerzen": "Die Partnerübung auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
+  },
+  "nachher": "Wer erkennt die versteckte Linie hinter der eigenen Figur? Wer wehrt ein Doppelschach noch falsch ab? Das wiederholst du in Woche 26 vor dem Silber-Diplom.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Wiederholung Spieß: Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "2q5/8/8/2k5/8/8/8/R5K1",
+     "leer": true,
+     "targets": [
+      "c1"
+     ],
+     "antwort": "c1. Der Turm gibt Schach auf der c-Linie, dahinter steht die Dame c8.",
+     "hilfe": [
+      "Auf welcher Linie stehen König und Dame?",
+      "Der Turm muss vor den König."
+     ]
+    },
+    {
+     "frage": "Wiederholung Fesselung: Klicke die gefesselte schwarze Figur an.",
+     "fen": "4k3/8/2n5/1B6/8/8/8/4K3",
+     "targets": [
+      "c6"
+     ],
+     "antwort": "Der Springer c6. Zieht er weg, steht der König e8 im Schach durch den Läufer b5.",
+     "hilfe": [
+      "Was steht zwischen Läufer und König?",
+      "Darf diese Figur wegziehen?"
+     ]
+    },
+    {
+     "frage": "Klicke die weiße Figur an, die zwischen dem Turm e1 und dem schwarzen König e8 steht.",
+     "fen": "4k3/8/8/8/4N3/8/8/4R1K1",
+     "targets": [
+      "e4"
+     ],
+     "antwort": "Der Springer e4. Er steht dem eigenen Turm im Weg.",
+     "hilfe": [
+      "Fahre die e-Linie von e1 nach oben ab.",
+      "Welche Figur steht im Weg?"
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Springer d4 ziehen kann.",
+     "fen": "4k3/8/8/8/3N4/8/8/4K3",
+     "leer": true,
+     "pruef": {
+      "legal": "d4"
+     },
+     "targets": null,
+     "antwort": "b3, b5, c2, c6, e2, e6, f3 und f5.",
+     "hilfe": [
+      "Zwei geradeaus, eins zur Seite.",
+      "Es sind acht Felder."
+     ]
+    },
+    {
+     "frage": "Weiß setzt in einem Zug matt. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "6k1/5ppp/8/8/8/8/5PPP/2R3K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "c8. Der Turm gibt Schach über die 8. Reihe, die eigenen Bauern sperren den König ein.",
+     "hilfe": [
+      "Die eigenen Bauern sperren den König ein.",
+      "Der Turm muss auf die 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Gleiche Idee: Wenn der Springer e4 wegzieht, wen greift der Turm e1 dann an? Klicke die schwarze Figur an.",
+     "fen": "4k3/8/8/8/4N3/8/8/4R1K1",
+     "targets": [
+      "e8"
+     ],
+     "antwort": "Den König e8. Zieht der Springer weg, gibt der Turm e1 Schach. Das ist ein Abzugsschach.",
+     "hilfe": [
+      "Hebe den Springer gedanklich hoch.",
+      "Was sieht der Turm dann auf der e-Linie?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Abzugsschach: Markiere alle Felder, auf die der Springer ziehen kann, damit der Turm Schach gibt.",
+     "fen": "4k3/8/8/4N3/8/8/8/4R1K1",
+     "leer": true,
+     "targets": [
+      "c6",
+      "d7",
+      "f7",
+      "g6",
+      "g4",
+      "f3",
+      "d3",
+      "c4"
+     ],
+     "antwort": "c4, c6, d3, d7, f3, f7, g4 und g6. Jeder Springerzug verlässt die e-Linie, dann gibt der Turm Schach.",
+     "hilfe": [
+      "Verlässt der Springer die e-Linie?",
+      "Jeder Springerzug verlässt die Linie."
+     ]
+    },
+    {
+     "frage": "Abzug mit Gewinn: Auf welchen Feldern gibt der Turm Abzugsschach und der Springer greift gleichzeitig die Dame an? Klicke sie an.",
+     "fen": "3qk3/8/8/4N3/8/8/8/4R1K1",
+     "leer": true,
+     "targets": [
+      "c6"
+     ],
+     "antwort": "Nur c6. Der Turm gibt Abzugsschach, der Springer greift die Dame d8 an. Nach der Abwehr schlägt er die Dame. Auf f7 würde der König den Springer schlagen und so gleichzeitig aus dem Schach gehen.",
+     "hilfe": [
+      "Welche Springerfelder greifen d8 an?",
+      "Erst muss Schwarz das Schach abwehren, dann fällt die Dame."
+     ]
+    },
+    {
+     "frage": "Doppelschach: Klicke alle Felder an, auf denen der Springer selbst Schach gibt und gleichzeitig der Turm Schach gibt.",
+     "fen": "1k6/8/8/8/1N6/8/1R6/6K1",
+     "leer": true,
+     "targets": [
+      "a6",
+      "c6"
+     ],
+     "antwort": "a6 und c6. Der Springer gibt Schach auf b8, und der Turm b2 gibt auch Schach. Das ist ein Doppelschach.",
+     "hilfe": [
+      "Von welchen Feldern greift ein Springer b8 an?",
+      "Der Springer muss dabei die b-Linie verlassen."
+     ]
+    },
+    {
+     "frage": "Doppelschach! Klicke alle schwarzen Figuren an, die das Schach abwehren können.",
+     "fen": "1k6/8/N7/8/8/8/1R6/6K1",
+     "zug": "b",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Nur der König b8. Zwei Schachs kann man nicht mit einem Zug dazwischen oder durch Schlagen abwehren. Der König muss ziehen.",
+     "hilfe": [
+      "Zwei Figuren geben Schach.",
+      "Kann man zwei Schachs mit einem Zug abwehren, außer mit dem König?"
+     ]
+    },
+    {
+     "frage": "Abzug mit dem Läufer: Auf welchen Feldern gibt der Turm Abzugsschach und der Läufer greift den Turm b4 an? Klicke sie an.",
+     "fen": "4k3/8/8/8/1r6/4B3/8/4R1K1",
+     "leer": true,
+     "targets": [
+      "c5",
+      "d2"
+     ],
+     "antwort": "c5 und d2. Der Turm e1 gibt Abzugsschach, der Läufer greift den Turm b4 an.",
+     "hilfe": [
+      "Welche Läuferfelder greifen b4 an?",
+      "Der Läufer muss dabei die e-Linie verlassen."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß zieht mit dem Springer ab und schlägt dabei. Klicke das Feld an, auf das der Springer zieht.",
+     "fen": "4rk2/pp1n1p2/2p3p1/3pN2p/5P2/P7/1P4P1/4R1K1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle QnoxX (CC0), https://lichess.org/training/QnoxX",
+     "targets": [
+      "d7"
+     ],
+     "antwort": "d7. Der Springer schlägt d7 und gibt Schach, der Turm e1 greift jetzt den Turm e8 an. So ging die Partie weiter: Kg7 Txe8.",
+     "hilfe": [
+      "Welche weiße Figur steht hinter dem Springer?",
+      "Der Springer soll mit Schach ziehen."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Abzug mit Gewinn: Auf welchen Feldern gibt der Turm Abzugsschach und der Springer greift den Turm g7 an? Klicke sie an.",
+     "fen": "3k4/6r1/8/8/3N4/8/8/3R3K",
+     "leer": true,
+     "targets": [
+      "e6",
+      "f5"
+     ],
+     "antwort": "e6 und f5. Der Turm d1 gibt Abzugsschach, der Springer greift den Turm g7 an.",
+     "hilfe": [
+      "Welche Springerfelder greifen g7 an?",
+      "Der Springer muss die d-Linie verlassen."
+     ]
+    },
+    {
+     "frage": "Doppelschach mit dem Läufer: Klicke alle Felder an, auf denen Läufer und Turm gleichzeitig Schach geben.",
+     "fen": "4k3/8/8/8/4B3/8/8/4R1K1",
+     "leer": true,
+     "targets": [
+      "c6",
+      "g6"
+     ],
+     "antwort": "c6 und g6. Der Läufer gibt Schach auf e8, und der Turm e1 auch. Doppelschach.",
+     "hilfe": [
+      "Von welchen Feldern greift der Läufer e8 an?",
+      "Der Läufer muss dabei die e-Linie verlassen."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß gibt Abzugsschach mit dem Läufer und gewinnt die Dame. Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "r4rk1/1bp2ppp/p2np3/1p1p4/5P2/1Pq1P3/P1BN2PP/R1Q2RK1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle CwH2x (CC0), https://lichess.org/training/CwH2x",
+     "targets": [
+      "h7"
+     ],
+     "antwort": "h7. Lxh7+ gibt Schach, danach ist die Linie der Dame c1 nach c3 offen. So ging die Partie weiter: Kxh7 Dxc3.",
+     "hilfe": [
+      "Welche weiße Figur steht hinter dem Läufer c2?",
+      "Der Läufer soll mit Schach ziehen."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß gibt Schach mit dem Läufer und öffnet dem Turm d1 die Linie. Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "1r4k1/pbb2pp1/1pq1p2p/8/1PPr1P2/P2B2NP/2Q3P1/3R1RK1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle FhuoS (CC0), https://lichess.org/training/FhuoS",
+     "targets": [
+      "h7"
+     ],
+     "antwort": "h7. Lh7+ gibt Schach, danach schlägt der Turm d1 den Turm d4. So ging die Partie weiter: Kh8 Txd4.",
+     "hilfe": [
+      "Welche weiße Figur steht hinter dem Läufer d3?",
+      "Was greift sie dann an?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz schlägt mit Schach und öffnet der Dame d8 die Linie. Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "r2qk2r/p1p3pp/1p1b1p2/3Q4/3P4/4P3/PPP3PP/RN3RK1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle AtDjZ (CC0), https://lichess.org/training/AtDjZ",
+     "targets": [
+      "h2"
+     ],
+     "antwort": "h2. Lxh2+ gibt Schach, danach schlägt die Dame d8 die Dame d5. So ging die Partie weiter: Kxh2 Dxd5.",
+     "hilfe": [
+      "Welche schwarze Figur steht hinter dem Läufer d6?",
+      "Was greift sie dann an?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz schlägt mit Schach und öffnet der Dame f7 die Linie. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "3rk3/3b1q1p/3Rp1r1/1p3p1Q/5B2/2P3PP/1P3P2/3R2K1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle quvZA (CC0), https://lichess.org/training/quvZA",
+     "targets": [
+      "g3"
+     ],
+     "antwort": "g3. Txg3+ gibt Schach, danach greift die Dame f7 die Dame h5 an. So ging die Partie weiter: fxg3 Dxh5.",
+     "hilfe": [
+      "Welche schwarze Figur steht hinter dem Turm g6?",
+      "Wen greift sie dann an?"
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Fehler 1: Auf der Linie bleiben ist kein Abzug. Markiere alle Felder, auf die der Bauer e4 ziehen kann, damit der Turm e1 Schach gibt.",
+     "fen": "4k3/8/8/3p1p2/4P3/8/8/4R1K1",
+     "leer": true,
+     "targets": [
+      "d5",
+      "f5"
+     ],
+     "antwort": "d5 und f5. Nur wenn der Bauer schräg schlägt, verlässt er die e-Linie. Zieht er nach e5, bleibt die Linie versperrt.",
+     "hilfe": [
+      "Zieht der Bauer gerade, bleibt er auf der e-Linie.",
+      "Nur wenn er schräg schlägt, öffnet er die Linie."
+     ]
+    },
+    {
+     "frage": "Fehler 2: Den Springer zu schlagen hilft nicht, der Turm gibt Schach. Schwarz ist am Zug. Klicke alle schwarzen Figuren an, die das Schach abwehren können.",
+     "fen": "4kb2/8/8/2N5/8/8/8/4R1K1",
+     "zug": "b",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Der König e8 und der Läufer f8 (Le7 dazwischen). Den Springer c5 zu schlagen hilft nicht, denn das Schach kommt vom Turm e1.",
+     "hilfe": [
+      "Welche Figur gibt Schach?",
+      "Wer kann sich dazwischenstellen?"
+     ]
+    },
+    {
+     "frage": "Auch der Gegner zieht ab. Schwarz ist am Zug. Markiere alle Felder, auf die der Springer ziehen kann, damit der Turm e8 Schach gibt.",
+     "fen": "4r1k1/8/8/4n3/8/8/8/4K3",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "c6",
+      "d7",
+      "f7",
+      "g6",
+      "g4",
+      "f3",
+      "d3",
+      "c4"
+     ],
+     "antwort": "c4, c6, d3, d7, f3, f7, g4 und g6. Auf d3 und f3 gibt der Springer sogar selbst Schach: Doppelschach.",
+     "hilfe": [
+      "Verlässt der Springer die e-Linie?",
+      "Wo gibt er sogar selbst Schach?"
+     ]
+    },
+    {
+     "frage": "Fehler 3: Beim Doppelschach hilft nur ein Königszug. Markiere alle Felder, auf die der schwarze König ziehen darf.",
+     "fen": "1k6/8/2N5/8/8/8/1R6/6K1",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "a8, c7 und c8. Das Feld a7 greift der Springer an, auf der b-Linie gibt der Turm Schach.",
+     "hilfe": [
+      "Welche Felder greifen Springer und Turm an?",
+      "Prüfe alle Nachbarfelder von b8."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz zieht den Bauern mit Schach und öffnet dem Läufer g2 die Diagonale. Klicke das Feld an, auf das der Bauer zieht.",
+     "fen": "8/8/8/3Rp1pk/8/5p2/6bP/4K3",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle wiFMN (CC0), https://lichess.org/training/wiFMN",
+     "targets": [
+      "f2"
+     ],
+     "antwort": "f2. f2+ gibt Schach, der Läufer g2 greift jetzt den Turm d5 an. So ging die Partie weiter: Kxf2 Lxd5.",
+     "hilfe": [
+      "Welche schwarze Figur steht hinter dem Bauern f3?",
+      "Wen greift sie dann an?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz gibt Abzugsschach mit dem Läufer. Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "1qrr2k1/1p3pp1/pQ1b3p/3R4/P7/1P2P2P/1B3PP1/5RK1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle re3V4 (CC0), https://lichess.org/training/re3V4",
+     "targets": [
+      "h2"
+     ],
+     "antwort": "h2. Lh2+ gibt Schach, danach schlägt der Turm d8 den Turm d5. So ging die Partie weiter: Kh1 Txd5.",
+     "hilfe": [
+      "Welche schwarze Figur steht hinter dem Läufer d6?",
+      "Was greift sie dann an?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Markiere alle Felder, auf die der Springer ziehen kann, damit der Läufer Abzugsschach gibt.",
+     "fen": "7k/8/8/8/3N4/8/1B6/6K1",
+     "leer": true,
+     "targets": [
+      "b5",
+      "c6",
+      "e6",
+      "f5",
+      "f3",
+      "e2",
+      "c2",
+      "b3"
+     ],
+     "antwort": "b3, b5, c2, c6, e2, e6, f3 und f5. Jeder Springerzug verlässt die Diagonale b2 bis h8.",
+     "hilfe": [
+      "Liegt das Zielfeld noch auf der Diagonale b2 bis h8?",
+      "Jeder Springerzug verlässt die Diagonale."
+     ]
+    },
+    {
+     "frage": "Abzug mit Gewinn: Auf welchen Feldern gibt der Läufer Abzugsschach und der Springer greift die Dame an? Klicke sie an.",
+     "fen": "7k/2q5/8/8/3N4/8/1B6/6K1",
+     "leer": true,
+     "targets": [
+      "b5",
+      "e6"
+     ],
+     "antwort": "b5 und e6. Der Läufer b2 gibt Abzugsschach, der Springer greift die Dame c7 an.",
+     "hilfe": [
+      "Welche Springerfelder greifen c7 an?",
+      "Erst Schach abwehren, dann fällt die Dame."
+     ]
+    },
+    {
+     "frage": "Doppelschach: Klicke alle Felder an, auf denen Springer und Turm gleichzeitig Schach geben.",
+     "fen": "3k4/8/8/8/3N4/8/8/3R2K1",
+     "leer": true,
+     "targets": [
+      "c6",
+      "e6"
+     ],
+     "antwort": "c6 und e6. Der Springer gibt Schach auf d8, und der Turm d1 auch. Doppelschach.",
+     "hilfe": [
+      "Von welchen Feldern greift ein Springer d8 an?",
+      "Der Springer muss die d-Linie verlassen."
+     ]
+    },
+    {
+     "frage": "Doppelschach! Klicke alle schwarzen Figuren an, die das Schach abwehren können.",
+     "fen": "3k4/1p6/2N5/8/8/8/8/3R2K1",
+     "zug": "b",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Nur der König d8. Der Bauer b7 könnte den Springer schlagen, aber der Turm d1 gäbe weiter Schach.",
+     "hilfe": [
+      "Zwei Figuren geben Schach.",
+      "Kann der Bauer helfen?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz schlägt mit dem Springer und gibt Schach. Klicke das Feld an, auf das der Springer zieht.",
+     "fen": "3k4/8/1pr2p2/p7/2nP2pP/4P1B1/5PK1/2R5",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle Ssb7C (CC0), https://lichess.org/training/Ssb7C",
+     "targets": [
+      "e3"
+     ],
+     "antwort": "e3. Sxe3+ gibt Schach, danach greift der Turm c6 den Turm c1 an. So ging die Partie weiter: fxe3 Txc1.",
+     "hilfe": [
+      "Welche schwarze Figur steht hinter dem Springer c4?",
+      "Der Springer soll mit Schach ziehen."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz schlägt mit dem Läufer und gibt Schach. Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "6k1/2p5/1pQbq1p1/5pBp/5P1P/P7/1PP3PK/8",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle giao8 (CC0), https://lichess.org/training/giao8",
+     "targets": [
+      "f4"
+     ],
+     "antwort": "f4. Lxf4+ gibt Schach, danach greift die Dame e6 die Dame c6 an. So ging die Partie weiter: Lxf4 Dxc6.",
+     "hilfe": [
+      "Welche schwarze Figur steht hinter dem Läufer d6?",
+      "Wen greift sie dann an?"
      ]
     }
    ]
