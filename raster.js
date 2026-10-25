@@ -4,7 +4,7 @@
 (function(){
 const KEY='schachstunde-raster-v1';
 const STUFEN=['nicht','teilweise','verstanden'];
-const COLS={bronze:[[1,'Brett und Grundstellung'],[2,'Felder benennen'],[3,'Turm und Läufer'],[4,'Dame, König, Springer'],[5,'Bauer'],[6,'Angreifen und decken'],[7,'Tauschen'],[8,'Schach und Matt'],[9,'Fairplay und Partie'],[11,'Bronze-Diplom']],silber:[[12,'Legal oder illegal, starke Figuren'],[13,'Umwandlung und Freibauern'],[14,'Rochade'],[15,'En passant'],[16,'Patt und Remis'],[17,'Matt mit Dame und König'],[18,'Weihnachtsturnier']]};
+const COLS={bronze:[[1,'Brett und Grundstellung'],[2,'Felder benennen'],[3,'Turm und Läufer'],[4,'Dame, König, Springer'],[5,'Bauer'],[6,'Angreifen und decken'],[7,'Tauschen'],[8,'Schach und Matt'],[9,'Fairplay und Partie'],[11,'Bronze-Diplom']],silber:[[12,'Legal oder illegal, starke Figuren'],[13,'Umwandlung und Freibauern'],[14,'Rochade'],[15,'En passant'],[16,'Patt und Remis'],[17,'Matt mit Dame und König'],[18,'Weihnachtsturnier'],[19,'Notation: Züge lesen und schreiben']]};
 const NAME={bronze:'Bronze',silber:'Silber'};const stufeVon=w=>w>11?'silber':'bronze';
 // Spaltennamen älterer Tabellen (zum Beispiel „Lernfortschrittsraster Schach“) auf Wochen abbilden
 const ALIAS={'schachbrett':[1,2],'brett':[1],'grundstellung':[1],'felder':[2],'koordinaten':[2],'bauer':[5],'turm':[3],'läufer':[3],'laeufer':[3],'dame':[4],'springer':[4],'könig':[4],'koenig':[4],'angreifen':[6],'decken':[6],'tauschen':[7],'figurenwerte':[7],'schach':[8],'matt':[8],'fairplay':[9],'partie':[9],'bronze':[11],'diplom':[11]};

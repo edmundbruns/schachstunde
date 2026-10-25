@@ -10557,6 +10557,561 @@ export const FIXED={
     }
    ]
   }
+ },
+ "19": {
+  "thema": "Notation: Züge lesen und schreiben",
+  "lernziel": "Ich kann Züge in Notation lesen und aufschreiben.",
+  "leitfrage": "Wie schreibe ich einen Zug so auf, dass jeder ihn nachspielen kann?",
+  "vorwissen": "Feldnamen (Woche 2), alle Figuren (Woche 3 bis 5), Rochade und Umwandlung (Woche 13 und 14), Weihnachtsturnier (Woche 18).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Deutsche Kurznotation nach den FIDE-Regeln (Anhang C, Figurenbuchstaben K, D, T, L, S) in kindgerechter Form, Methode Schachdiktat aus „Methoden kennenlernen“. Brettaufgaben eigene Aufgaben, jeder Zug mit chess.js nachgespielt",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Feldnamen und Figurenbuchstaben aufwärmen",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 und W2: Feldnamen und Figurenbuchstaben. Dann W3 bis W6: Ein Zug wird vorgelesen, die Kinder zeigen mit dem Finger am eigenen Brett erst die Figur, dann das Zielfeld.",
+     "Frage: „Wie könnt ihr euch eine Partie merken, damit ihr sie zu Hause nachspielen könnt?“ Ziel nennen: „Heute lernt ihr, Züge zu lesen und aufzuschreiben, wie richtige Turnierspieler.“"
+    ],
+    "kinder": "Ich kenne die Buchstaben K, D, T, L, S und alle Feldnamen.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "So schreibt man Züge",
+    "ablauf": [
+     "Plakat „So schreibt man Schach“ aufhängen. Regel: Figurenbuchstabe und Zielfeld, zum Beispiel Sf3. Ein Bauernzug hat keinen Buchstaben, zum Beispiel e4. Die Zugnummer steht vorn: 1. e4 e5.",
+     "Am Lehrbrett E1 bis E6 die Zeichen: x heißt schlägt, + heißt Schach, # heißt Matt, 0-0 und 0-0-0 sind die Rochaden, e8D ist eine Umwandlung. Können zwei gleiche Figuren auf dasselbe Feld, kommt die Linie oder Reihe dazu, zum Beispiel Tad1.",
+     "Frage bei E4: „Warum reicht hier Td1 nicht?“ Merksatz: „Erst die Figur, dann das Feld. Der Bauer hat keinen Buchstaben.“"
+    ],
+    "kinder": "Ich lese und schreibe Züge mit Figurenbuchstabe, Zielfeld und Zeichen.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: So schreibt man Schach",
+      "was": "notation"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Notation E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Schachdiktat zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit mit dem Plakat: Kind A liest die Partie vom Plakat Zug für Zug vor, Kind B spielt sie am Brett nach. Danach wechseln die Rollen, und B schreibt die eigene Partie aus Woche 18 auf, soweit sie sich erinnert.",
+     "Wer fertig ist, spielt eine kurze Partie und schreibt alle Züge auf dem Partieformular mit. Allein: Arbeitsblatt A1 bis A6. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich spiele eine aufgeschriebene Partie nach und schreibe Züge selbst auf.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Partieformular (zwei pro Blatt)",
+      "was": "partieformular"
+     },
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Notation",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Schreibfehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6: englische Buchstaben (B statt L, N statt S), Buchstabe beim Bauern, die fehlende Zahl bei zwei Türmen auf einer Linie, vergessenes x und +, Rochade als Königszug geschrieben.",
+     "Bei jedem Fehler nachfragen: „Woran erkennst du, welche Figur gemeint ist?“"
+    ],
+    "kinder": "Ich erkenne und verbessere typische Schreibfehler.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Schreibfehler S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, liest du einzelnen Kindern einen Zug vor und lässt ihn am Brett ausführen. Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich lese und schreibe Züge ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Zugdiktat-Staffel“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel in zwei Teams: Du liest einen Zug in Notation vor, je ein Kind pro Team führt ihn am Teambrett aus. Wer zuerst richtig gezogen hat, holt einen Punkt. Nach jedem Zug kommt das nächste Kind dran, so wechseln die Rollen im Team.",
+     "Rückblick: „Welches Zeichen merkst du dir heute?“ Aufräum-Ritual. Ausblick: Nächstes Mal schreibt ihr eine ganze Partie mit und spielt mit Schachuhr."
+    ],
+    "kinder": "Ich setze einen gehörten Zug schnell und richtig um.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: So schreibt man Schach",
+      "was": "notation"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Das Plakat mit den Figurenbuchstaben liegt am Brett. Erst mit dem Finger die Figur zeigen, dann das Zielfeld, dann schreiben.",
+   "zusatz": "Eine eigene Kurzpartie von acht Zügen spielen, aufschreiben und einem anderen Paar zum Nachspielen geben. Stimmt die Endstellung?",
+   "kuerzen": "Das Schachdiktat auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, die Staffel hat nur fünf Züge."
+  },
+  "nachher": "Wer verwechselt noch Figurenbuchstaben oder schreibt beim Bauern einen Buchstaben? Wer vergisst x und +? Das übst du in Woche 20 beim Mitschreiben der Partie mit Schachuhr wieder.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Wie heißen die Felder? Klicke c6, f3 und h8 an.",
+     "fen": "8/8/8/8/8/8/8/8",
+     "leer": true,
+     "targets": [
+      "c6",
+      "f3",
+      "h8"
+     ],
+     "antwort": "c6, f3 und h8: erst die Linie (Buchstabe), dann die Reihe (Zahl).",
+     "hilfe": [
+      "Erst den Buchstaben unten suchen.",
+      "Dann die Zahl am Rand."
+     ]
+    },
+    {
+     "frage": "Jede Figur hat einen Buchstaben: K, D, T, L, S. Klicke alle Figuren an, die mit T abgekürzt werden.",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+     "targets": [
+      "a1",
+      "h1",
+      "a8",
+      "h8"
+     ],
+     "antwort": "Die vier Türme a1, h1, a8 und h8. T steht für Turm.",
+     "hilfe": [
+      "K König, D Dame, T Turm, L Läufer, S Springer.",
+      "Wo stehen die Türme in der Grundstellung?"
+     ]
+    },
+    {
+     "frage": "Weiß spielt e4. Markiere Startfeld und Zielfeld.",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+     "rechte": "KQkq",
+     "targets": [
+      "e2",
+      "e4"
+     ],
+     "antwort": "e2 und e4. Ein Bauernzug hat keinen Buchstaben, nur das Zielfeld steht da.",
+     "hilfe": [
+      "Kein Buchstabe heißt: ein Bauer zieht.",
+      "Welcher Bauer kann nach e4?"
+     ]
+    },
+    {
+     "frage": "Weiß spielt Sf3. Klicke die Figur an, die zieht.",
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR",
+     "rechte": "KQkq",
+     "zuege": "e4 e5",
+     "targets": [
+      "g1"
+     ],
+     "antwort": "Der Springer g1. S steht für Springer, f3 ist das Zielfeld.",
+     "hilfe": [
+      "S heißt Springer.",
+      "Welcher weiße Springer kann nach f3?"
+     ]
+    },
+    {
+     "frage": "Schwarz spielt Sc6. Klicke die Figur an, die zieht.",
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3",
+     "targets": [
+      "b8"
+     ],
+     "antwort": "Der Springer b8. Auch Schwarz schreibt S für Springer.",
+     "hilfe": [
+      "Welcher schwarze Springer kann nach c6?",
+      "Zähle den Springersprung ab."
+     ]
+    },
+    {
+     "frage": "Weiß spielt Lc4. Markiere Startfeld und Zielfeld.",
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nc6",
+     "targets": [
+      "f1",
+      "c4"
+     ],
+     "antwort": "f1 und c4. L steht für Läufer.",
+     "hilfe": [
+      "L heißt Läufer.",
+      "Welcher weiße Läufer kann nach c4?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Weiß spielt cxd5. Das x heißt „schlägt“. Klicke den Bauern an, der schlägt.",
+     "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/2P1P3/8/PP1P1PPP/RNBQKBNR",
+     "rechte": "KQkq",
+     "zuege": "e4 d5 c4 e6",
+     "targets": [
+      "c4"
+     ],
+     "antwort": "Der Bauer c4. Beim Bauern steht vor dem x die Linie, von der er kommt. Bei exd5 hätte der Bauer e4 geschlagen.",
+     "hilfe": [
+      "Zwei Bauern können d5 schlagen.",
+      "Der Buchstabe vor dem x nennt die Linie."
+     ]
+    },
+    {
+     "frage": "Weiß spielt Dh5#. Das # heißt Matt. Markiere Startfeld und Zielfeld.",
+     "fen": "rnbqkbnr/ppppp2p/5p2/6p1/3PP3/8/PPP2PPP/RNBQKBNR",
+     "rechte": "KQkq",
+     "zuege": "e4 f6 d4 g5",
+     "targets": [
+      "d1",
+      "h5"
+     ],
+     "antwort": "d1 und h5. Die Dame gibt Schach, der schwarze König kann nicht entkommen: Matt.",
+     "hilfe": [
+      "D heißt Dame.",
+      "Von h5 sieht die Dame bis e8."
+     ]
+    },
+    {
+     "frage": "Weiß spielt 0-0. Markiere die Felder, auf denen König und Turm danach stehen.",
+     "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nc6 Bc4 Bc5",
+     "targets": [
+      "g1",
+      "f1"
+     ],
+     "antwort": "g1 und f1. 0-0 ist die kurze Rochade: König nach g1, Turm nach f1.",
+     "hilfe": [
+      "0-0 kurz, 0-0-0 lang.",
+      "Der König zieht zwei Felder zum Turm."
+     ]
+    },
+    {
+     "frage": "Weiß spielt Tad1. Beide Türme können nach d1. Klicke den Turm an, der zieht.",
+     "fen": "r4rk1/ppp2ppp/8/8/8/8/PPP2PPP/R4RK1",
+     "targets": [
+      "a1"
+     ],
+     "antwort": "Der Turm a1. Das a nach dem T sagt, von welcher Linie der Turm kommt.",
+     "hilfe": [
+      "Wer kann alles nach d1?",
+      "Der zusätzliche Buchstabe nennt die Linie."
+     ]
+    },
+    {
+     "frage": "Der Springer b1 zieht nach c3. Schreibe den Zug auf. Woran erkennt man, dass ein Springer zieht?",
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR",
+     "zuege": "e4 e5",
+     "antwort": "Sc3. S für Springer, c3 ist das Zielfeld. Am Buchstaben S erkennt man den Springer.",
+     "hilfe": [
+      "Erst der Figurenbuchstabe.",
+      "Dann das Zielfeld."
+     ]
+    },
+    {
+     "frage": "Weiß spielt e8D+. Markiere Startfeld und Zielfeld.",
+     "fen": "k7/4P3/8/8/8/8/8/4K3",
+     "targets": [
+      "e7",
+      "e8"
+     ],
+     "antwort": "e7 und e8. Der Bauer zieht nach e8 und wird zur Dame (D). Das + heißt: Sie gibt Schach.",
+     "hilfe": [
+      "Welcher Bauer erreicht die 8. Reihe?",
+      "D am Ende heißt: Umwandlung in eine Dame."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Weiß spielt Sbd2. Klicke den Springer an, der zieht.",
+     "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R",
+     "rechte": "KQkq",
+     "zuege": "d4 d5 Nf3 Nf6",
+     "targets": [
+      "b1"
+     ],
+     "antwort": "Der Springer b1. Beide Springer können nach d2, das b sagt, welcher.",
+     "hilfe": [
+      "Welche Springer können nach d2?",
+      "Der Buchstabe nach dem S nennt die Linie."
+     ]
+    },
+    {
+     "frage": "Schwarz spielt Lxf3. Markiere Startfeld und Zielfeld.",
+     "fen": "rn1qkbnr/ppp2ppp/3p4/4p3/3PP1b1/2N2N2/PPP2PPP/R1BQKB1R",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 d6 d4 Bg4 Nc3",
+     "targets": [
+      "g4",
+      "f3"
+     ],
+     "antwort": "g4 und f3. Der schwarze Läufer schlägt den Springer f3.",
+     "hilfe": [
+      "L heißt Läufer, x heißt schlägt.",
+      "Welcher schwarze Läufer erreicht f3?"
+     ]
+    },
+    {
+     "frage": "Der weiße Läufer b5 schlägt den Springer c6. Schreibe den Zug auf.",
+     "fen": "r1bqkbnr/1ppp1ppp/p1n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R",
+     "zuege": "e4 e5 Nf3 Nc6 Bb5 a6",
+     "antwort": "Lxc6. L für Läufer, x für schlägt, c6 ist das Zielfeld.",
+     "hilfe": [
+      "Figurenbuchstabe, dann x, dann Zielfeld.",
+      "Die geschlagene Figur schreibt man nicht auf."
+     ]
+    },
+    {
+     "frage": "Weiß spielt 0-0-0. Markiere die Felder, auf denen König und Turm danach stehen.",
+     "fen": "r3k2r/8/8/8/8/8/8/R3K2R",
+     "rechte": "KQkq",
+     "targets": [
+      "c1",
+      "d1"
+     ],
+     "antwort": "c1 und d1. 0-0-0 ist die lange Rochade: König nach c1, Turm nach d1.",
+     "hilfe": [
+      "Drei Nullen: lange Rochade.",
+      "Der König zieht zwei Felder nach links."
+     ]
+    },
+    {
+     "frage": "Nach 1. e4 e5 2. Sf3 Sc6 3. Lc4 Sd4 spielt Weiß 4. Sxe5. Klicke die Figur an, die schlägt.",
+     "fen": "r1bqkbnr/pppp1ppp/8/4p3/2BnP3/5N2/PPPP1PPP/RNBQK2R",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nc6 Bc4 Nd4",
+     "targets": [
+      "f3"
+     ],
+     "antwort": "Der Springer f3. Er schlägt den Bauern e5.",
+     "hilfe": [
+      "S heißt Springer.",
+      "Welcher weiße Springer erreicht e5?"
+     ]
+    },
+    {
+     "frage": "Weiß setzt in einem Zug matt. Klicke das Zielfeld an. Wie schreibst du den Zug?",
+     "fen": "7k/6pp/8/8/8/8/6PP/2R3K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "c8. Der Zug heißt Tc8#: T für Turm, c8 Zielfeld, # für Matt.",
+     "hilfe": [
+      "Der Turm muss auf die 8. Reihe.",
+      "Matt schreibt man mit #."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Ein Kind schreibt „Bf4“. Im Deutschen heißt der Läufer L. Weiß spielt Lf4: Klicke die Figur an, die zieht.",
+     "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR",
+     "rechte": "KQkq",
+     "zuege": "d4 d5",
+     "targets": [
+      "c1"
+     ],
+     "antwort": "Der Läufer c1. Richtig heißt der Zug Lf4. B ist der englische Buchstabe für Läufer (bishop).",
+     "hilfe": [
+      "L heißt Läufer.",
+      "Welcher weiße Läufer erreicht f4?"
+     ]
+    },
+    {
+     "frage": "Ein Kind schreibt „Be3“ für einen Bauernzug. Bauern haben keinen Buchstaben. Weiß spielt e3: Markiere Startfeld und Zielfeld.",
+     "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R",
+     "rechte": "KQkq",
+     "zuege": "d4 d5 Nf3 Nf6",
+     "targets": [
+      "e2",
+      "e3"
+     ],
+     "antwort": "e2 und e3. Richtig heißt der Zug nur e3.",
+     "hilfe": [
+      "Kein Buchstabe heißt: ein Bauer zieht.",
+      "Welcher Bauer kann nach e3?"
+     ]
+    },
+    {
+     "frage": "Beide Türme stehen auf der e-Linie. Weiß spielt T1e2: Klicke den Turm an, der zieht.",
+     "fen": "k7/8/8/8/4R3/8/8/4R1K1",
+     "targets": [
+      "e1"
+     ],
+     "antwort": "Der Turm e1. Stehen beide Türme auf derselben Linie, nennt die Zahl die Reihe, von der der Turm kommt.",
+     "hilfe": [
+      "Beide Türme können nach e2.",
+      "Die 1 steht für die 1. Reihe."
+     ]
+    },
+    {
+     "frage": "Ein Kind schreibt „Kc1“, als Weiß lang rochiert. Wie schreibt man die lange Rochade richtig?",
+     "fen": "r3k2r/8/8/8/8/8/8/R3K2R",
+     "antwort": "0-0-0. Die Rochade schreibt man mit Nullen, nicht als Königszug. Kurz 0-0, lang 0-0-0.",
+     "hilfe": [
+      "Wie viele Felder ist der Turm vom König entfernt?",
+      "Kurz zwei Nullen, lang drei."
+     ]
+    },
+    {
+     "frage": "Ein Kind schreibt „Lb5“ und vergisst das Schach. Richtig ist Lb5+. Markiere Startfeld und Zielfeld.",
+     "fen": "rnbqkb1r/ppp1pppp/3p1n2/8/3PP3/8/PPP2PPP/RNBQKBNR",
+     "rechte": "KQkq",
+     "zuege": "e4 d6 d4 Nf6",
+     "targets": [
+      "f1",
+      "b5"
+     ],
+     "antwort": "f1 und b5. Der Läufer gibt Schach, deshalb gehört ein + dazu: Lb5+.",
+     "hilfe": [
+      "Woran erkennst du, dass es Schach ist?",
+      "Prüfe die Diagonale von b5 nach e8."
+     ]
+    },
+    {
+     "frage": "Ein Kind schreibt „Se5“, obwohl der Springer schlägt. Weiß spielt Sxe5: Klicke die Figur an, die schlägt.",
+     "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nf6",
+     "targets": [
+      "f3"
+     ],
+     "antwort": "Der Springer f3. Er schlägt den Bauern e5, deshalb heißt der Zug Sxe5.",
+     "hilfe": [
+      "x heißt schlägt.",
+      "Welcher weiße Springer erreicht e5?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Weiß spielt Lb5. Markiere Startfeld und Zielfeld.",
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nc6",
+     "targets": [
+      "f1",
+      "b5"
+     ],
+     "antwort": "f1 und b5.",
+     "hilfe": [
+      "L heißt Läufer.",
+      "Welcher weiße Läufer erreicht b5?"
+     ]
+    },
+    {
+     "frage": "Schwarz spielt Sf6. Klicke die Figur an, die zieht.",
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3",
+     "targets": [
+      "g8"
+     ],
+     "antwort": "Der Springer g8.",
+     "hilfe": [
+      "S heißt Springer.",
+      "Welcher schwarze Springer erreicht f6?"
+     ]
+    },
+    {
+     "frage": "Weiß spielt dxe5. Klicke den Bauern an, der schlägt.",
+     "fen": "r1bqkbnr/ppp2ppp/2np4/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 d6 d4 Nc6",
+     "targets": [
+      "d4"
+     ],
+     "antwort": "Der Bauer d4. Das d vor dem x nennt seine Linie.",
+     "hilfe": [
+      "Welche Bauern können e5 schlagen?",
+      "Der Buchstabe vor dem x nennt die Linie."
+     ]
+    },
+    {
+     "frage": "Weiß spielt 0-0. Markiere die Felder, auf denen König und Turm danach stehen.",
+     "fen": "rnbqk2r/ppp1ppbp/5np1/3p4/3P4/5NP1/PPP1PPBP/RNBQK2R",
+     "rechte": "KQkq",
+     "zuege": "d4 d5 Nf3 Nf6 g3 g6 Bg2 Bg7",
+     "targets": [
+      "g1",
+      "f1"
+     ],
+     "antwort": "g1 und f1.",
+     "hilfe": [
+      "Zwei Nullen: kurze Rochade.",
+      "Wohin ziehen König und Turm?"
+     ]
+    },
+    {
+     "frage": "Der Turm a1 zieht nach d1. Schreibe den Zug auf.",
+     "fen": "4k3/8/8/8/8/8/8/R3K3",
+     "antwort": "Td1. T für Turm, d1 ist das Zielfeld.",
+     "hilfe": [
+      "Erst der Figurenbuchstabe.",
+      "Dann das Zielfeld."
+     ]
+    },
+    {
+     "frage": "Klicke das Feld an, auf dem die Dame mattsetzt. Schreibe den Zug mit # auf.",
+     "fen": "6k1/5ppp/8/8/8/8/Q4PPP/6K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a8. Der Zug heißt Da8#: D für Dame, a8 Zielfeld, # für Matt.",
+     "hilfe": [
+      "Die Dame muss auf die 8. Reihe.",
+      "Matt schreibt man mit #."
+     ]
+    }
+   ]
+  }
  }
 };
 export const YEAR=[["Brett, Figuren, Schach und Matt",[1,11]],["Sonderregeln, Notation und erste Taktik",[12,26]],["Mattführung, Eröffnung und Endspiel",[27,36]]];
