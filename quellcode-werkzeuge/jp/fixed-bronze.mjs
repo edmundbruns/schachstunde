@@ -33,7 +33,8 @@ export const URLS={
  "lichessFork": "https://lichess.org/training/fork",
  "lichessSkewer": "https://lichess.org/training/skewer",
  "lichessDiscovered": "https://lichess.org/training/discoveredAttack",
- "lichessIntermezzo": "https://lichess.org/training/intermezzo"
+ "lichessIntermezzo": "https://lichess.org/training/intermezzo",
+ "lichessPractice": "https://lichess.org/practice"
 };
 export const FIXED={
  "1": {
@@ -15649,6 +15650,582 @@ export const FIXED={
      "hilfe": [
       "Welche schwarze Figur kann Schach geben?",
       "Mit Schach gewinnt Schwarz die Zeit zum Zurückschlagen."
+     ]
+    }
+   ]
+  }
+ },
+ "28": {
+  "thema": "Matt mit zwei Türmen",
+  "lernziel": "Ich kann mit zwei Türmen nach dem Treppenprinzip mattsetzen.",
+  "leitfrage": "Wie treiben zwei Türme den König Reihe für Reihe an den Rand, ohne dass der eigene König hilft?",
+  "vorwissen": "Matt mit Dame und König (Woche 17), Patt (Woche 16), Gegenangriff und sichere Felder (Woche 27).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Treppenmatt (Wächter und Jäger) nach dem Ludgerus-Schachdiplom Gold 1, Lichess-Puzzles YOCba, HJ8H0, Lq8xP und Bsz5p (CC0, Thema „rookEndgame“, über die Lichess-Schnittstelle abgerufen), übrige Aufgaben eigene Aufgaben. Matt, Patt, Fluchtfelder und Treppenschritte mit chess.js berechnet, die Lichess-Lösungen mit Stockfish bestätigt",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Wohin darf der König?",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6: Damenmatt wiederholen, gesperrte Reihen erkennen, Fluchtfelder des Königs zählen, ein erstes Turmmatt am Rand.",
+     "Bei W4 fragen: „Ein Turm sperrt eine ganze Reihe. Was kann dann der zweite Turm tun?“ Ziel nennen: „Heute setzt ihr mit zwei Türmen matt, ganz ohne den eigenen König.“"
+    ],
+    "kinder": "Ich erkenne, welche Reihe ein Turm für den König sperrt.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Wächter und Jäger: die Treppe",
+    "ablauf": [
+     "Plakat „Matt mit zwei Türmen“ aufhängen. Am Lehrbrett E1: das Mattbild. Ein Turm sperrt die vorletzte Reihe (Wächter), der andere gibt auf der Randreihe Schach (Jäger).",
+     "E2 und E3: die Treppe. Der Jäger gibt Schach, der König muss eine Reihe zurück. Dann wird der andere Turm zum Jäger. Frage: „Warum darf der Wächter nicht gleichzeitig Schach geben?“",
+     "E4: Der König greift einen Turm an. Der Turm flieht weit weg auf derselben Reihe, damit die Sperre bleibt. E5 Matt in der Ecke, E6 eine echte Partie. Merksatz: „Einer sperrt, einer jagt. Kommt der König zu nah, geht der Turm weit weg.“"
+    ],
+    "kinder": "Ich erkläre Wächter, Jäger und die Treppe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Matt mit zwei Türmen",
+      "was": "zweitürme"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Treppenmatt E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Treppe zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A hat König und zwei Türme, Kind B nur den König in der Brettmitte. Kind A setzt mit der Treppe matt, der eigene König bleibt stehen. Kind B zählt die Züge. Danach wechseln die Rollen. Wer schafft es in weniger Zügen?",
+     "Allein: Arbeitsblatt A1 bis A6, darunter eine echte Aufgabe aus einer Lichess-Partie. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich setze mit zwei Türmen matt, ohne den König zu brauchen.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Matt mit zwei Türmen",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6: Turm zu nah am König, Schach ohne Sperre, Patt in der Ecke, der falsche Turm gibt Schach, der Turm verlässt beim Fliehen seine Reihe.",
+     "Bei jeder Aufgabe fragen: „Woran erkennst du, dass der König jetzt wieder entkommen kann?“"
+    ],
+    "kinder": "Ich vermeide die typischen Fehler beim Treppenmatt.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, fragst du einige am Brett: „Welcher Turm ist gerade Wächter, welcher Jäger?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich finde Treppenschritt und Matt ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Treppen-Rennen“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Beide bauen dieselbe Stellung auf, schwarzer König in der Mitte, zwei weiße Türme in den Ecken. Wer setzt mit weniger Zügen matt? Der Partner spielt den schwarzen König und zählt. Danach wechseln die Rollen.",
+     "Rückblick: „Was ist leichter: Damenmatt oder Matt mit zwei Türmen? Warum?“ Aufräum-Ritual. Ausblick: Nächstes Mal lernt ihr, wie man ein Matt abwehrt."
+    ],
+    "kinder": "Ich setze im Minispiel mit der Treppe matt.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Matt mit zwei Türmen",
+      "was": "zweitürme"
+     },
+     {
+      "art": "blatt",
+      "label": "Mattübungen auf Lichess (online, „Piece Checkmates“)",
+      "url": "https://lichess.org/practice"
+     },
+     {
+      "art": "blatt",
+      "label": "Ludgerus-Schachdiplom online (Gold 1)",
+      "url": "https://ludgerus-schachdiplom.netlify.app/"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Die gesperrte Reihe mit einem Lineal oder einem Stift auf dem Brett markieren. Vor jedem Zug laut sagen: „Wächter bleibt, Jäger gibt Schach.“",
+   "zusatz": "Das Treppenmatt in der anderen Richtung üben, also zum linken oder rechten Rand. Oder mit Dame und Turm statt zwei Türmen mattsetzen.",
+   "kuerzen": "Die Partnerübung auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
+  },
+  "nachher": "Wer lässt einen Turm noch zu nah am König stehen? Wer gibt Schach, ohne dass eine Reihe gesperrt ist? Das Treppenprinzip hilft in Woche 33 beim Matt mit einem Turm.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Wiederholung Damenmatt: Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "4k3/8/4K3/8/8/8/8/Q7",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a8 und h8. Die Dame gibt Schach über die 8. Reihe, der König e6 deckt d7, e7 und f7.",
+     "hilfe": [
+      "Der König e6 deckt die 7. Reihe vor dem schwarzen König.",
+      "Die Dame braucht die 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der schwarze König ziehen darf.",
+     "fen": "8/4k3/R7/8/8/8/8/K7",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "legal": "e7"
+     },
+     "targets": null,
+     "antwort": "d7, d8, e8, f7 und f8. Die 6. Reihe sperrt der Turm a6.",
+     "hilfe": [
+      "Welche Reihe sperrt der Turm?",
+      "Zeige alle Nachbarfelder von e7."
+     ]
+    },
+    {
+     "frage": "Jetzt sperren zwei Türme. Markiere alle Felder, auf die der schwarze König ziehen darf.",
+     "fen": "7R/4k3/R7/8/8/8/8/K7",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "legal": "e7"
+     },
+     "targets": null,
+     "antwort": "d7 und f7. Die 8. Reihe sperrt der Turm h8, die 6. Reihe der Turm a6.",
+     "hilfe": [
+      "Welche Reihen sind gesperrt?",
+      "Nur die 7. Reihe bleibt frei."
+     ]
+    },
+    {
+     "frage": "Der Turm a7 sperrt die 7. Reihe. Klicke alle Felder an, auf denen der zweite Turm mattsetzt.",
+     "fen": "3k4/R7/8/8/8/8/8/1R4K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "b8. Der Turm gibt Schach über die 8. Reihe, die 7. Reihe ist gesperrt.",
+     "hilfe": [
+      "Der König steht am Rand.",
+      "Welcher Turm kann auf die 8. Reihe?"
+     ]
+    },
+    {
+     "frage": "Ein Turm allein mit König: Klicke alle Felder an, auf denen der Turm mattsetzt.",
+     "fen": "6k1/8/6K1/8/8/8/8/R7",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a8. Der Turm gibt Schach über die 8. Reihe, der König g6 deckt f7, g7 und h7.",
+     "hilfe": [
+      "Wer deckt die 7. Reihe?",
+      "Der Turm braucht die 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Der Turm a4 sperrt die 4. Reihe. Klicke das Feld an, auf das der Turm h1 zieht, damit der König nach oben muss.",
+     "fen": "8/8/8/4k3/R7/8/8/6KR",
+     "leer": true,
+     "targets": [
+      "h5"
+     ],
+     "antwort": "h5. Th5+ gibt Schach auf der 5. Reihe, nach unten sperrt der Turm a4. Der König muss auf die 6. Reihe.",
+     "hilfe": [
+      "Auf welcher Reihe steht der König?",
+      "Der zweite Turm gibt dort Schach."
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Das Mattbild: Klicke alle Felder an, auf denen ein Turm mattsetzt.",
+     "fen": "1k6/6R1/8/8/8/8/8/K6R",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "h8. Der Turm h1 gibt Schach über die 8. Reihe, der Turm g7 sperrt die 7. Reihe.",
+     "hilfe": [
+      "Welcher Turm sperrt, welcher gibt Schach?",
+      "Der König steht auf der 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Treppe, Schritt 1: Der Turm a4 ist Wächter. Klicke das Feld an, auf das der Jäger zieht.",
+     "fen": "8/8/8/3k4/R7/8/8/6RK",
+     "leer": true,
+     "targets": [
+      "g5"
+     ],
+     "antwort": "g5. Tg5+ gibt Schach auf der 5. Reihe. Der König muss auf die 6. Reihe.",
+     "hilfe": [
+      "Der Jäger gibt Schach auf der Reihe des Königs.",
+      "Der Wächter bleibt stehen."
+     ]
+    },
+    {
+     "frage": "Treppe, Schritt 2: Jetzt ist der Turm h5 Wächter. Klicke das Feld an, auf das der Jäger zieht.",
+     "fen": "8/8/4k3/7R/R7/8/8/6K1",
+     "leer": true,
+     "targets": [
+      "a6"
+     ],
+     "antwort": "a6. Ta6+ gibt Schach auf der 6. Reihe, der Turm h5 sperrt nach unten. Der König muss auf die 7. Reihe.",
+     "hilfe": [
+      "Welcher Turm sperrt jetzt?",
+      "Der andere wird Jäger."
+     ]
+    },
+    {
+     "frage": "Der König greift den Turm g6 an. Markiere alle Felder, auf die der Turm weit weg ziehen kann und dabei die 6. Reihe weiter sperrt.",
+     "fen": "8/5k2/6R1/8/8/8/8/6KR",
+     "leer": true,
+     "targets": [
+      "c6",
+      "b6",
+      "a6"
+     ],
+     "antwort": "a6, b6 und c6. Dort ist der Turm mindestens drei Linien vom König entfernt. Auf d6 oder h6 greift ihn der König sofort wieder an.",
+     "hilfe": [
+      "Der Turm bleibt auf der 6. Reihe.",
+      "So weit weg, dass der König ihn nicht gleich wieder erreicht."
+     ]
+    },
+    {
+     "frage": "Matt in der Ecke: Klicke alle Felder an, auf denen ein Turm mattsetzt.",
+     "fen": "7k/1R6/8/8/8/8/8/R5K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a8. Der Turm a1 gibt Schach über die 8. Reihe, der Turm b7 sperrt g7 und h7.",
+     "hilfe": [
+      "Welche Felder sperrt der Turm b7?",
+      "Der andere Turm braucht die 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß setzt mit den Türmen in zwei Zügen matt. Klicke das Feld an, auf das der erste Turm zieht.",
+     "fen": "6k1/pp3p2/2rp1rpR/4p3/P1PpP3/1P1P2P1/2K5/7R",
+     "leer": true,
+     "quelle": "Lichess-Puzzle YOCba (CC0), https://lichess.org/training/YOCba",
+     "targets": [
+      "h8"
+     ],
+     "antwort": "h8. Th8+ Kg7, dann T1h7#. Die Türme stehen hintereinander auf der h-Linie und decken sich gegenseitig.",
+     "hilfe": [
+      "Der erste Zug gibt Schach.",
+      "Der zweite Turm deckt den ersten von hinten."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Treppe nach unten: Der Turm h5 sperrt die 5. Reihe. Klicke das Feld an, auf das der Jäger zieht.",
+     "fen": "7K/8/8/7R/4k3/8/8/R7",
+     "leer": true,
+     "targets": [
+      "a4"
+     ],
+     "antwort": "a4. Ta4+ gibt Schach auf der 4. Reihe, nach oben sperrt der Turm h5. Der König muss auf die 3. Reihe.",
+     "hilfe": [
+      "Auf welcher Reihe steht der König?",
+      "Der Wächter bleibt stehen."
+     ]
+    },
+    {
+     "frage": "Klicke alle Felder an, auf denen ein Turm mattsetzt.",
+     "fen": "6R1/8/8/4K3/8/8/7R/1k6",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "g1. Der Turm g8 gibt Schach über die 1. Reihe, der Turm h2 sperrt die 2. Reihe.",
+     "hilfe": [
+      "Welche Reihe sperrt der Turm h2?",
+      "Der andere Turm braucht die 1. Reihe."
+     ]
+    },
+    {
+     "frage": "Der König greift den Turm b4 an. Markiere alle Felder, auf die der Turm weit weg ziehen kann und dabei die 4. Reihe weiter sperrt.",
+     "fen": "7R/8/8/8/1R6/2k5/8/7K",
+     "leer": true,
+     "targets": [
+      "f4",
+      "g4",
+      "h4"
+     ],
+     "antwort": "f4, g4 und h4. Dort ist der Turm mindestens drei Linien vom König entfernt.",
+     "hilfe": [
+      "Der Turm bleibt auf der 4. Reihe.",
+      "Zähle die Linien bis zum König."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der schwarze König ziehen darf.",
+     "fen": "8/2k5/R7/8/8/8/8/1R5K",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "legal": "c7"
+     },
+     "targets": null,
+     "antwort": "c8, d7 und d8. Der Turm a6 sperrt die 6. Reihe, der Turm b1 die b-Linie.",
+     "hilfe": [
+      "Welche Reihe sperrt der Turm a6?",
+      "Welche Linie sperrt der Turm b1?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß setzt in zwei Zügen matt. Klicke das Feld an, auf das der erste Turm zieht.",
+     "fen": "5k2/3r1p1p/2RP4/6R1/r1p5/7P/6P1/7K",
+     "leer": true,
+     "quelle": "Lichess-Puzzle HJ8H0 (CC0), https://lichess.org/training/HJ8H0",
+     "targets": [
+      "c8"
+     ],
+     "antwort": "c8. Tc8+ Td8, dann Txd8#. Der Turm g5 sperrt die g-Linie, der Bauer d6 deckt den Turm.",
+     "hilfe": [
+      "Der erste Zug gibt Schach auf der 8. Reihe.",
+      "Was kann Schwarz dazwischenstellen?"
+     ]
+    },
+    {
+     "frage": "Treppe zur Seite: Der Turm d1 sperrt die d-Linie. Klicke das Feld an, auf das der Jäger zieht, damit der König nach rechts muss.",
+     "fen": "R7/8/8/8/4k3/8/8/3R3K",
+     "leer": true,
+     "targets": [
+      "e8"
+     ],
+     "antwort": "e8. Te8+ gibt Schach auf der e-Linie, die d-Linie sperrt der Turm d1. Der König muss auf die f-Linie.",
+     "hilfe": [
+      "Die Treppe geht hier über Linien statt Reihen.",
+      "Der Jäger gibt Schach auf der Linie des Königs."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Fehler 1: Der Turm steht zu nah. Weiß hat Th7+ gespielt. Klicke die weiße Figur an, die der schwarze König jetzt schlagen kann.",
+     "fen": "6k1/7R/R7/8/8/8/8/K7",
+     "zug": "b",
+     "schach": true,
+     "targets": [
+      "h7"
+     ],
+     "antwort": "Den Turm h7. Er steht direkt neben dem König und ist ungedeckt. Richtig war Ta8+ mit dem anderen Turm.",
+     "hilfe": [
+      "Welche Felder berührt der König g8?",
+      "Ist der Turm gedeckt?"
+     ]
+    },
+    {
+     "frage": "Fehler 2: Schach ohne Sperre. Markiere alle Felder, auf die der schwarze König fliehen kann.",
+     "fen": "8/8/8/4k2R/8/8/8/1R4K1",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "d4, e4, f4, d6, e6 und f6. Der Turm b1 sperrt keine Reihe, deshalb kann der König auch nach unten. Erst eine Reihe sperren, dann Schach geben.",
+     "hilfe": [
+      "Welche Reihe sperrt der Turm b1?",
+      "Der König darf nur nicht auf der 5. Reihe bleiben."
+     ]
+    },
+    {
+     "frage": "Fehler 3: Patt in der Ecke. Klicke alle Felder an, auf die der Turm a1 nicht ziehen darf, weil Schwarz sonst patt wäre.",
+     "fen": "7k/1R6/8/8/8/8/2K5/R7",
+     "leer": true,
+     "pruef": {
+      "patt": "a1"
+     },
+     "targets": null,
+     "antwort": "g1. Von dort deckt der Turm g8 ohne Schach, g7 und h7 deckt der Turm b7: Patt. Richtig ist Ta8, das ist Matt.",
+     "hilfe": [
+      "Welches Feld bleibt dem König h8 noch?",
+      "Nimmt der Turm dieses Feld ohne Schach weg, ist es Patt."
+     ]
+    },
+    {
+     "frage": "Fehler 4: Der Wächter muss stehen bleiben. Welcher Turm gibt jetzt Schach? Klicke ihn an.",
+     "fen": "8/4k3/7R/R7/8/8/8/K7",
+     "targets": [
+      "a5"
+     ],
+     "antwort": "Der Turm a5. Er gibt mit Ta7+ Schach. Der Turm h6 sperrt die 6. Reihe und bleibt stehen.",
+     "hilfe": [
+      "Welcher Turm sperrt die Reihe unter dem König?",
+      "Der andere wird Jäger."
+     ]
+    },
+    {
+     "frage": "Fehler 5: Der angegriffene Turm hat seine Reihe verlassen und steht jetzt auf d1. Markiere alle Felder, auf die der schwarze König ziehen darf.",
+     "fen": "8/8/4k3/8/8/8/8/1R1R3K",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "legal": "e6"
+     },
+     "targets": null,
+     "antwort": "e5, e7, f5, f6 und f7. Die 5. Reihe ist nicht mehr gesperrt, der König läuft nach unten. Der Turm hätte auf der 5. Reihe bleiben müssen.",
+     "hilfe": [
+      "Welche Felder greift der Turm d1 an?",
+      "Ist die 5. Reihe noch gesperrt?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz setzt in einem Zug matt. Klicke alle Felder an, auf denen ein schwarzer Turm mattsetzt.",
+     "fen": "8/3k2pr/8/P5r1/8/2R2p2/1P3R2/5K2",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle Bsz5p (CC0), https://lichess.org/training/Bsz5p",
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "h1. Th1+ gibt Schach über die 1. Reihe. Der Bauer f3 deckt e2 und g2, der Turm g5 die g-Linie, auf f2 steht ein weißer Turm.",
+     "hilfe": [
+      "Welche Felder um den König f1 sind gesperrt?",
+      "Ein Turm braucht die 1. Reihe."
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Der Turm a4 sperrt die 4. Reihe. Klicke das Feld an, auf das der Jäger zieht.",
+     "fen": "8/8/8/2k5/R7/8/8/6RK",
+     "leer": true,
+     "targets": [
+      "g5"
+     ],
+     "antwort": "g5. Tg5+ gibt Schach auf der 5. Reihe. Der König muss auf die 6. Reihe.",
+     "hilfe": [
+      "Auf welcher Reihe steht der König?",
+      "Der Wächter a4 bleibt stehen."
+     ]
+    },
+    {
+     "frage": "Klicke alle Felder an, auf denen ein Turm mattsetzt.",
+     "fen": "k7/2R5/8/8/8/8/8/6KR",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "h8. Der Turm h1 gibt Schach über die 8. Reihe, der Turm c7 sperrt a7 und b7.",
+     "hilfe": [
+      "Welche Reihe sperrt der Turm c7?",
+      "Der andere Turm braucht die 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Der König greift den Turm g5 an. Markiere alle Felder, auf die der Turm weit weg ziehen kann und dabei die 5. Reihe weiter sperrt.",
+     "fen": "8/8/5k2/6R1/8/8/8/K6R",
+     "leer": true,
+     "targets": [
+      "c5",
+      "b5",
+      "a5"
+     ],
+     "antwort": "a5, b5 und c5. Dort ist der Turm mindestens drei Linien vom König entfernt. Auf h5 greift ihn der König sofort wieder an.",
+     "hilfe": [
+      "Der Turm bleibt auf der 5. Reihe.",
+      "Zähle die Linien bis zum König."
+     ]
+    },
+    {
+     "frage": "Schach! Markiere alle Felder, auf die der schwarze König fliehen kann.",
+     "fen": "8/8/2k5/R7/8/8/8/2R4K",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "b6, b7, d6 und d7. Die c-Linie greift der Turm c1 an, die 5. Reihe sperrt der Turm a5.",
+     "hilfe": [
+      "Welche Linie greift der Turm c1 an?",
+      "Welche Reihe sperrt der Turm a5?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz setzt in einem Zug matt. Klicke alle Felder an, auf denen ein schwarzer Turm mattsetzt.",
+     "fen": "8/3k4/7R/2R5/2P5/6P1/4rr1P/2K5",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle Lq8xP (CC0), https://lichess.org/training/Lq8xP",
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "e1 und f1. Ein Turm sperrt die 2. Reihe, der andere gibt Schach über die 1. Reihe. In der Partie geschah Te1#.",
+     "hilfe": [
+      "Ein Turm sperrt die 2. Reihe.",
+      "Der andere gibt Schach auf der 1. Reihe."
+     ]
+    },
+    {
+     "frage": "Treppe zur Seite: Der Turm f1 sperrt die f-Linie. Klicke das Feld an, auf das der Jäger zieht, damit der König nach links muss.",
+     "fen": "7R/8/8/4k3/8/8/8/K4R2",
+     "leer": true,
+     "targets": [
+      "e8"
+     ],
+     "antwort": "e8. Te8+ gibt Schach auf der e-Linie, die f-Linie sperrt der Turm f1. Der König muss auf die d-Linie.",
+     "hilfe": [
+      "Auf welcher Linie steht der König?",
+      "Der Jäger gibt Schach auf dieser Linie."
      ]
     }
    ]
