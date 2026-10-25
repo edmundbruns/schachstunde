@@ -10841,9 +10841,13 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Der Springer b1 zieht nach c3. Schreibe den Zug auf. Woran erkennt man, dass ein Springer zieht?",
+     "frage": "Notiere den mit dem Pfeil eingezeichneten Zug in deutscher Kurznotation. Woran erkennt man, dass ein Springer zieht?",
      "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR",
      "zuege": "e4 e5",
+     "pfeil": [
+      "b1",
+      "c3"
+     ],
      "antwort": "Sc3. S für Springer, c3 ist das Zielfeld. Am Buchstaben S erkennt man den Springer.",
      "hilfe": [
       "Erst der Figurenbuchstabe.",
@@ -10896,9 +10900,13 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Der weiße Läufer b5 schlägt den Springer c6. Schreibe den Zug auf.",
+     "frage": "Notiere den mit dem Pfeil eingezeichneten Zug in deutscher Kurznotation.",
      "fen": "r1bqkbnr/1ppp1ppp/p1n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R",
      "zuege": "e4 e5 Nf3 Nc6 Bb5 a6",
+     "pfeil": [
+      "b5",
+      "c6"
+     ],
      "antwort": "Lxc6. L für Läufer, x für schlägt, c6 ist das Zielfeld.",
      "hilfe": [
       "Figurenbuchstabe, dann x, dann Zielfeld.",
@@ -10991,8 +10999,12 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Ein Kind schreibt „Kc1“, als Weiß lang rochiert. Wie schreibt man die lange Rochade richtig?",
+     "frage": "Ein Kind schreibt „Kc1“ für den eingezeichneten Zug. Notiere ihn richtig in deutscher Kurznotation.",
      "fen": "r3k2r/8/8/8/8/8/8/R3K2R",
+     "pfeil": [
+      "e1",
+      "c1"
+     ],
      "antwort": "0-0-0. Die Rochade schreibt man mit Nullen, nicht als Königszug. Kurz 0-0, lang 0-0-0.",
      "hilfe": [
       "Wie viele Felder ist der Turm vom König entfernt?",
@@ -11090,8 +11102,12 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Der Turm a1 zieht nach d1. Schreibe den Zug auf.",
+     "frage": "Notiere den mit dem Pfeil eingezeichneten Zug in deutscher Kurznotation.",
      "fen": "4k3/8/8/8/8/8/8/R3K3",
+     "pfeil": [
+      "a1",
+      "d1"
+     ],
      "antwort": "Td1. T für Turm, d1 ist das Zielfeld.",
      "hilfe": [
       "Erst der Figurenbuchstabe.",
@@ -11279,9 +11295,13 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Der Läufer c1 zieht nach g5. Schreibe den Zug auf.",
+     "frage": "Notiere den mit dem Pfeil eingezeichneten Zug in deutscher Kurznotation.",
      "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR",
      "zuege": "d4 d5 Nc3 Nf6",
+     "pfeil": [
+      "c1",
+      "g5"
+     ],
      "antwort": "Lg5. L für Läufer, g5 ist das Zielfeld.",
      "hilfe": [
       "Erst der Figurenbuchstabe.",
@@ -11319,10 +11339,14 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Schwarz schlägt mit dem Bauern d5 den Bauern e4. Schreibe den Zug auf.",
+     "frage": "Schwarz schlägt. Notiere den mit dem Pfeil eingezeichneten Zug in deutscher Kurznotation.",
      "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/2N5/PPPP1PPP/R1BQKBNR",
      "zug": "b",
      "zuege": "e4 d5 Nc3",
+     "pfeil": [
+      "d5",
+      "e4"
+     ],
      "antwort": "dxe4. Beim Bauern steht die Linie, von der er kommt, vor dem x.",
      "hilfe": [
       "Ein Bauer hat keinen Buchstaben.",
@@ -11433,9 +11457,13 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Die weiße Dame d1 zieht nach e2. Schreibe den Zug auf.",
+     "frage": "Notiere den mit dem Pfeil eingezeichneten Zug in deutscher Kurznotation.",
      "fen": "rnbqkb1r/pppp1ppp/8/4N3/4n3/8/PPPP1PPP/RNBQKB1R",
      "zuege": "e4 e5 Nf3 Nf6 Nxe5 Nxe4",
+     "pfeil": [
+      "d1",
+      "e2"
+     ],
      "antwort": "De2. D für Dame, e2 ist das Zielfeld.",
      "hilfe": [
       "Erst der Figurenbuchstabe.",
@@ -11570,9 +11598,13 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Beim Mitschreiben steht „Lf7“. Der Läufer hat aber geschlagen und Schach gegeben. Schreibe den Zug richtig auf.",
+     "frage": "Beim Mitschreiben steht „Lf7“ für den eingezeichneten Zug. Notiere ihn richtig in deutscher Kurznotation.",
      "fen": "r1bqkbnr/pppp1ppp/8/4p3/2BnP3/5N2/PPPP1PPP/RNBQK2R",
      "zuege": "e4 e5 Nf3 Nc6 Bc4 Nd4",
+     "pfeil": [
+      "c4",
+      "f7"
+     ],
      "antwort": "Lxf7+. Das x zeigt das Schlagen, das + das Schach.",
      "hilfe": [
       "Was fehlt für das Schlagen?",
@@ -11598,9 +11630,13 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Der Springer g1 zieht nach f3. Schreibe den Zug auf.",
+     "frage": "Notiere den mit dem Pfeil eingezeichneten Zug in deutscher Kurznotation.",
      "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR",
      "zuege": "d4 d5",
+     "pfeil": [
+      "g1",
+      "f3"
+     ],
      "antwort": "Sf3.",
      "hilfe": [
       "Erst der Figurenbuchstabe.",
@@ -11866,8 +11902,12 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Der Turm f1 zieht nach e1 und gibt Schach. Schreibe den Zug auf.",
+     "frage": "Notiere den mit dem Pfeil eingezeichneten Zug in deutscher Kurznotation.",
      "fen": "4k3/8/8/8/8/8/8/5RK1",
+     "pfeil": [
+      "f1",
+      "e1"
+     ],
      "antwort": "Te1+. T für Turm, e1 ist das Zielfeld, + für Schach.",
      "hilfe": [
       "Figurenbuchstabe, Zielfeld, Zeichen.",
@@ -12220,8 +12260,12 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Der weiße Bauer e7 zieht nach e8 und wird zur Dame. Sie gibt Schach. Schreibe den Zug auf.",
+     "frage": "Notiere den mit dem Pfeil eingezeichneten Zug in deutscher Kurznotation. Der Bauer wird zur Dame.",
      "fen": "2k5/4P3/3K4/8/8/8/8/8",
+     "pfeil": [
+      "e7",
+      "e8"
+     ],
      "antwort": "e8D+. Der Bauer zieht nach e8, wird zur Dame (D) und gibt Schach (+).",
      "hilfe": [
       "Umwandlung schreibt man mit dem Buchstaben der neuen Figur.",

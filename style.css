@@ -160,3 +160,5 @@ body:has(#teacherboard) .boardlead .boardturn{display:block;margin-top:18px;padd
 .methodselect{display:flex;align-items:center;gap:8px;font-size:12px;margin-bottom:12px}.methodselect input{width:auto;margin:0}
 
 .printview .printcontrols-bottom{margin:18px auto 30px}
+
+.board{position:relative}.diagarrows{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}

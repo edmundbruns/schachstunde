@@ -46,6 +46,7 @@ function alertBox(t){const s=document.getElementById('jpnote');if(s)s.textConten
 let FB=null;
 function fbOpen(w,set,von,bis){const y=scrollY;const F=D.fixed[w];let list=F.feld[set].map((t,i)=>({...t,label:set+(i+1)}));list=list.slice((von||1)-1,bis||undefined);FB={w,y,list,i:0,marks:new Set(),undo:[],shown:false,msg:'',kind:'info',hints:0};fbRender();topOfBody()}
 const topOfBody=()=>{const h=document.getElementById('plannerbody');if(h)h.scrollIntoView({block:'start'})};
+function pfeilSVG(p,flip){if(!p)return '';const c=q=>{let x=q.charCodeAt(0)-96.5,y=8.5-+q[1];if(flip){x=8-x;y=8-y}return [x,y]};const [x1,y1]=c(p[0]),[x2,y2]=c(p[1]),dx=x2-x1,dy=y2-y1,l=Math.hypot(dx,dy)||1,ex=x2-dx/l*.32,ey=y2-dy/l*.32;return `<svg class="diagarrows" viewBox="0 0 8 8" aria-hidden="true"><defs><marker id="jpah" markerWidth="3" markerHeight="3" refX="1.6" refY="1.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L3,1.5 L0,3 z" fill="#c0392b"/></marker></defs><line x1="${x1}" y1="${y1}" x2="${ex.toFixed(3)}" y2="${ey.toFixed(3)}" stroke="#c0392b" stroke-width=".16" stroke-linecap="round" opacity=".9" marker-end="url(#jpah)"/></svg>`}
 function boardMarkup(t,o){const pos=placement(t.fen),m=o.marks||new Set(),sol=o.sol||new Set(),fill=o.fill||{},lab=o.label||{};const btn=!!o.interactive;
  const letters='<div class="file-labels">'+[...FILES].map(f=>btn?`<button type="button" class="jp-lab" data-jpfile="${f}" aria-label="${f}-Linie markieren">${f}</button>`:`<span>${f}</span>`).join('')+'</div>';
  const nums='<div class="rank-labels">'+[8,7,6,5,4,3,2,1].map(r=>btn?`<button type="button" class="jp-lab" data-jprank="${r}" aria-label="Reihe ${r} markieren">${r}</button>`:`<span>${r}</span>`).join('')+'</div>';
@@ -53,7 +54,7 @@ function boardMarkup(t,o){const pos=placement(t.fen),m=o.marks||new Set(),sol=o.
  for(let r=8;r>=1;r--)for(const f of FILES){const sq=f+r;let dark=(FILES.indexOf(f)+r)%2===1;if(t.flip)dark=!dark;const p=pos[sq];
   const cls=`sq ${dark?'dark':''} ${m.has(sq)?'marked':''} ${sol.has(sq)?'solution':''}`;const st=fill[sq]?` style="box-shadow:inset 0 0 0 100px ${fill[sq]}"`:'';const tx=lab[sq]?`<em class="jp-sqlabel">${esc(lab[sq])}</em>`:'';
   h+=btn?`<button type="button" class="${cls}" data-bsq="${sq}" aria-pressed="${m.has(sq)}" aria-label="${sq}, ${p?pieceName(p):'leer'}">${p?img(p):''}</button>`:`<span class="${cls}"${st}>${p?img(p):''}${tx}</span>`}
- return h+`</div></div>${nums}<div></div>${letters}<div></div></div>`}
+ return h+pfeilSVG(t.pfeil,t.flip)+`</div></div>${nums}<div></div>${letters}<div></div></div>`}
 const DE={K:'K',Q:'D',R:'T',B:'L',N:'S'};const zugText=z=>z.split(' ').map((m,i)=>(i%2?'':(i/2+1)+'. ')+m.replace(/^[KQRBN]/,c=>DE[c])).join(' ');
 function fbRender(){const t=FB.list[FB.i];const host=document.getElementById('plannerbody');
  host.innerHTML=`<div class="jp-fb"><h2>Lehrbrett</h2><div class="training"><div><div id="movefeedback" class="movefeedback ${FB.kind}" role="status" aria-live="polite">${esc(FB.msg||'Felder anklicken zum Markieren.')}</div><div id="teacherboard">${boardMarkup(t,{interactive:true,marks:FB.marks,sol:FB.shown&&t.targets?new Set(t.targets):null})}</div>
