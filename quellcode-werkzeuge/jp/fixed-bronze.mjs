@@ -16820,6 +16820,642 @@ export const FIXED={
     }
    ]
   }
+ },
+ "30": {
+  "thema": "Die Eröffnungsregeln",
+  "lernziel": "Ich kann die Eröffnungsregeln anwenden und das Schäfermatt abwehren.",
+  "leitfrage": "Was tue ich in den ersten Zügen, damit meine Figuren gut stehen und mein König sicher ist?",
+  "vorwissen": "Rochade (Woche 14), Notation (Woche 19), ein Matt abwehren (Woche 29).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Eröffnungsregeln in kindgerechter Form nach dem Ludgerus-Schachdiplom Gold 2, Lichess-Partien zu den Puzzles cfpZR, 7MRYn, jzXfh, RIbCv, PuENE, 4YgRE, h48XX und 8RqML (CC0, Thema „opening“, über die Lichess-Schnittstelle abgerufen, jeweils die Stellung vor dem Fehler oder das Matt danach), übrige Aufgaben eigene Aufgaben. Drohungen, Abwehrzüge, Rochade und Entwicklung mit chess.js berechnet",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Zentrum, Entwicklung, Rochade",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6: Zentrumsfelder zeigen, unentwickelte Figuren finden, prüfen, was vor der Rochade noch weg muss, Springer zur Mitte, Schäfermatt erkennen.",
+     "Bei W5 fragen: „Warum ist f7 am Anfang so schwach?“ Ziel nennen: „Heute lernt ihr die Eröffnungsregeln und wie ihr das Schäfermatt sicher abwehrt.“"
+    ],
+    "kinder": "Ich kenne die vier Zentrumsfelder und weiß, welche Figuren ich entwickeln muss.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Die fünf Eröffnungsregeln und das Schäfermatt",
+    "ablauf": [
+     "Plakat „Die Eröffnungsregeln“ aufhängen. Am Lehrbrett E1: Zentrum mit einem Bauern besetzen. E2: Eine Leichtfigur entwickeln und dabei angreifen.",
+     "E3: Die Dame kommt zu früh und wird mit einem Bauernzug verjagt. E4: Das Schäfermatt droht. Die Kinder suchen alle Abwehrzüge. Frage: „Warum ist Sh6 oder De7 besser als ein Bauernzug, der nichts deckt?“",
+     "E5: Wohin zieht der König bei der Rochade? E6: eine echte Partie, in der die Rochade das Matt verhindert hätte. Merksatz: „Zentrum, Figuren raus, König in Sicherheit, Dame bleibt zu Hause.“"
+    ],
+    "kinder": "Ich erkläre die Eröffnungsregeln und wehre das Schäfermatt ab.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Die Eröffnungsregeln",
+      "was": "eroeffnung"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Eröffnung E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Eröffnungs-Duell zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Beide spielen die ersten acht Züge einer Partie und schreiben mit. Nach jedem Zug sagt der Partner, welche Regel der Zug erfüllt. Wer zuerst rochiert und alle vier Leichtfiguren entwickelt hat, bekommt einen Punkt. Danach wechseln die Rollen und die Farben.",
+     "Allein: Arbeitsblatt A1 bis A6, darunter zwei echte Aufgaben aus Lichess-Partien. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich entwickle meine Figuren und rochiere in den ersten Zügen.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Die Eröffnungsregeln",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     },
+     {
+      "art": "druck",
+      "label": "Partieformular zum Mitschreiben",
+      "was": "partieformular"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6: Bauern fressen statt entwickeln, die Dame zieht zu oft, der König bleibt in der Mitte. Die Aufgaben stammen aus echten Partien, in denen genau das zum Matt führte.",
+     "Bei jeder Aufgabe fragen: „Welche Eröffnungsregel wurde hier verletzt?“"
+    ],
+    "kinder": "Ich erkenne Eröffnungsfehler und weiß, welche Regel hilft.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, fragst du einige am Brett: „Welche Figur entwickelst du als Nächstes, und wann rochierst du?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich wende die Eröffnungsregeln ohne Hilfe an.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Regel-Bingo“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Eine Partie mit 10 Zügen. Für jede erfüllte Regel (Zentrumsbauer, vier Leichtfiguren entwickelt, Rochade, Dame bleibt bis Zug 6 zu Hause) gibt es einen Punkt. Wer hat nach 10 Zügen mehr Punkte? Danach wechseln die Rollen und die Farben.",
+     "Rückblick: „Welche Regel vergisst du am leichtesten?“ Aufräum-Ritual. Ausblick: Nächstes Mal geht es um Opfer und das Damiano-Matt."
+    ],
+    "kinder": "Ich spiele eine Eröffnung nach den Regeln.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Die Eröffnungsregeln",
+      "was": "eroeffnung"
+     },
+     {
+      "art": "blatt",
+      "label": "Ludgerus-Schachdiplom online (Gold 2)",
+      "url": "https://ludgerus-schachdiplom.netlify.app/"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Die fünf Regeln als Karten neben das Brett legen. Nach jedem Zug wird die passende Karte umgedreht.",
+   "zusatz": "Eine eigene Partie der letzten Wochen nachspielen und markieren, wo eine Eröffnungsregel verletzt wurde. Oder die Abwehr gegen das Schäfermatt auch für Weiß üben.",
+   "kuerzen": "Die Partnerübung auf sechs Züge kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur 8 Züge."
+  },
+  "nachher": "Wer holt die Dame noch zu früh heraus? Wer rochiert spät oder gar nicht? Diese Kinder spielen in Woche 31 die ersten Züge zuerst laut kommentiert.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Klicke die vier Zentrumsfelder an.",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+     "leer": true,
+     "targets": [
+      "d4",
+      "e4",
+      "d5",
+      "e5"
+     ],
+     "antwort": "d4, e4, d5 und e5. Wer das Zentrum beherrscht, hat mehr Platz für seine Figuren.",
+     "hilfe": [
+      "Sie liegen genau in der Mitte des Bretts.",
+      "Zwei auf der 4. und zwei auf der 5. Reihe."
+     ]
+    },
+    {
+     "frage": "Klicke alle weißen Springer und Läufer an, die noch nicht entwickelt sind.",
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nc6",
+     "targets": [
+      "b1",
+      "c1",
+      "f1"
+     ],
+     "antwort": "b1, c1 und f1. Nur der Springer f3 ist schon im Spiel.",
+     "hilfe": [
+      "Welche Figuren stehen noch auf ihrem Startfeld?",
+      "Springer und Läufer heißen Leichtfiguren."
+     ]
+    },
+    {
+     "frage": "Weiß möchte kurz rochieren. Klicke die Figuren an, die vorher noch wegziehen müssen.",
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR",
+     "rechte": "KQkq",
+     "zuege": "e4 e5",
+     "targets": [
+      "f1",
+      "g1"
+     ],
+     "antwort": "Der Läufer f1 und der Springer g1. Zwischen König und Turm müssen alle Felder frei sein.",
+     "hilfe": [
+      "Welche Felder liegen zwischen e1 und h1?",
+      "Dort darf nichts stehen."
+     ]
+    },
+    {
+     "frage": "Regel: Springer zur Mitte. Klicke die beiden Felder an, auf die die weißen Springer am besten ziehen.",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+     "leer": true,
+     "targets": [
+      "c3",
+      "f3"
+     ],
+     "antwort": "c3 und f3. Von dort greifen sie das Zentrum an. Am Rand (a3, h3) erreichen sie weniger Felder.",
+     "hilfe": [
+      "Welche Springerfelder liegen näher an der Mitte?",
+      "Springer am Rand bringt Kummer und Schand."
+     ]
+    },
+    {
+     "frage": "Weiß droht Matt in einem Zug. Klicke das Feld an, auf dem Weiß mattsetzen würde.",
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Bc4 Nc6 Qh5",
+     "leer": true,
+     "targets": [
+      "f7"
+     ],
+     "antwort": "f7. Dxf7 wäre Matt, der Läufer c4 deckt die Dame. Das ist das Schäfermatt.",
+     "hilfe": [
+      "Welches Feld greifen Dame und Läufer gemeinsam an?",
+      "Wer deckt f7 außer dem König?"
+     ]
+    },
+    {
+     "frage": "Schwarz hat die Drohung übersehen. Klicke alle Felder an, auf denen Weiß jetzt mattsetzt.",
+     "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Bc4 Nc6 Qh5 Nf6",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "f7. Dxf7 ist Matt. Der Springer f6 greift die Dame zwar an, deckt aber f7 nicht.",
+     "hilfe": [
+      "Was griff die Dame vorher schon an?",
+      "Hilft Sf6 gegen diese Drohung?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Regel 1, Zentrum: Klicke alle Felder an, auf die ein weißer Bauer ziehen kann, um ein Zentrumsfeld zu besetzen.",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
+     "leer": true,
+     "targets": [
+      "d4",
+      "e4"
+     ],
+     "antwort": "d4 und e4. Die Bauern d2 und e2 besetzen mit dem Doppelschritt das Zentrum und öffnen den Läufern den Weg.",
+     "hilfe": [
+      "Welche Zentrumsfelder erreicht ein Bauer im ersten Zug?",
+      "Doppelschritt nicht vergessen."
+     ]
+    },
+    {
+     "frage": "Regel 2, Entwicklung mit Angriff: Klicke das Feld an, auf das ein weißer Springer zieht und dabei den Bauern e5 angreift.",
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR",
+     "rechte": "KQkq",
+     "zuege": "e4 e5",
+     "leer": true,
+     "targets": [
+      "f3"
+     ],
+     "antwort": "f3. Sf3 entwickelt den Springer zur Mitte und greift e5 an. Schwarz muss reagieren.",
+     "hilfe": [
+      "Welche Springerfelder greifen e5 an?",
+      "Welches erreicht ein Springer im ersten Zug?"
+     ]
+    },
+    {
+     "frage": "Regel 3, Dame bleibt zu Hause: Die weiße Dame ist früh gekommen. Schwarz wehrt Dxf7# ab und greift dabei die Dame an. Klicke das Feld an.",
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Qh5 Nc6 Bc4",
+     "leer": true,
+     "targets": [
+      "g6"
+     ],
+     "antwort": "g6. Der Bauer sperrt die Diagonale h5 bis f7 und greift die Dame an. Sie muss schon wieder ziehen, Schwarz gewinnt Zeit.",
+     "hilfe": [
+      "Welcher Zug greift die Dame h5 an?",
+      "Sperrt er auch den Weg nach f7?"
+     ]
+    },
+    {
+     "frage": "Schäfermatt abwehren: Weiß droht Dxf7#. Markiere alle Felder, auf die Schwarz ziehen kann, um das Matt zu verhindern.",
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Bc4 Nc6 Qh5",
+     "leer": true,
+     "targets": [
+      "e7",
+      "f6",
+      "g5",
+      "h4",
+      "h6",
+      "d5",
+      "g6"
+     ],
+     "antwort": "d5, e7, f6, g5, g6, h4 und h6. De7, Df6 und Sh6 decken f7, g6 sperrt die Diagonale der Dame, d5 die des Läufers. Dg5 und Dh4 bieten den Damentausch an. Am besten sind Züge, die f7 decken und eine Figur entwickeln: Sh6 oder De7.",
+     "hilfe": [
+      "Wer kann f7 decken?",
+      "Kann eine Figur die Diagonale sperren?"
+     ]
+    },
+    {
+     "frage": "Regel 4, König in Sicherheit: Markiere das Feld, auf das der weiße König bei der Rochade zieht.",
+     "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nc6 Bc4 Bc5",
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "g1. Der König zieht zwei Felder Richtung Turm, der Turm springt nach f1. Hinter den Bauern f2, g2, h2 steht er sicher.",
+     "hilfe": [
+      "Der Weg zum Turm h1 ist frei.",
+      "Der König zieht zwei Felder."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz schlug mit dxc4 den Läufer und wurde mit Dxf7# mattgesetzt. Markiere alle Felder, auf die der schwarze König stattdessen ziehen konnte, um das Matt zu verhindern.",
+     "fen": "rnbqk2r/ppp1bppp/8/3pN3/2B5/3P4/PPP2QPP/RNB1K2R",
+     "zug": "b",
+     "rechte": "KQkq",
+     "leer": true,
+     "quelle": "Lichess-Puzzle cfpZR (CC0), https://lichess.org/training/cfpZR",
+     "targets": [
+      "g8"
+     ],
+     "antwort": "g8. Mit der Rochade steht der König auf g8, und der Turm f8 deckt f7. Nach Dxf7+ schlägt der Turm die Dame.",
+     "hilfe": [
+      "Darf Schwarz noch rochieren?",
+      "Wo steht der König nach der Rochade?"
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Weiß hat e4 gespielt. Klicke alle Felder an, auf die ein schwarzer Bauer ziehen kann, um ein Zentrumsfeld zu besetzen.",
+     "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4",
+     "leer": true,
+     "targets": [
+      "d5",
+      "e5"
+     ],
+     "antwort": "d5 und e5. Beide Doppelschritte besetzen ein Zentrumsfeld.",
+     "hilfe": [
+      "Welche Zentrumsfelder erreicht ein schwarzer Bauer?",
+      "Doppelschritt von der 7. Reihe."
+     ]
+    },
+    {
+     "frage": "Klicke alle weißen Springer und Läufer an, die noch nicht entwickelt sind.",
+     "fen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQ1RK1",
+     "rechte": "kq",
+     "zuege": "e4 e5 Nf3 Nc6 Bc4 Nf6 d3 Bc5 O-O d6",
+     "targets": [
+      "b1",
+      "c1"
+     ],
+     "antwort": "b1 und c1. Sf3, Lc4 und die Rochade sind schon gemacht. Als Nächstes Sc3 und Lg5 oder Le3.",
+     "hilfe": [
+      "Welche Leichtfiguren stehen noch auf der 1. Reihe?",
+      "Der Turm zählt nicht."
+     ]
+    },
+    {
+     "frage": "Weiß droht Dxf7#. Wehre das Matt ab und entwickle dabei einen Springer: Klicke das Feld an.",
+     "fen": "r1bqkbnr/pppp1ppp/2n5/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Bc4 Nc6 Qh5",
+     "leer": true,
+     "targets": [
+      "h6"
+     ],
+     "antwort": "h6. Sh6 deckt f7 und entwickelt den Springer. Sf6 würde f7 nicht decken.",
+     "hilfe": [
+      "Von welchem Feld deckt ein Springer f7?",
+      "Welches erreicht der Springer g8?"
+     ]
+    },
+    {
+     "frage": "Schwarz spielt 0-0. Markiere die Felder, auf denen König und Turm danach stehen.",
+     "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQ1RK1",
+     "zug": "b",
+     "rechte": "kq",
+     "zuege": "e4 e5 Nf3 Nc6 Bc4 Bc5 O-O Nf6 d3",
+     "targets": [
+      "g8",
+      "f8"
+     ],
+     "antwort": "g8 und f8. Bei der kurzen Rochade zieht der König nach g8, der Turm springt nach f8.",
+     "hilfe": [
+      "0-0 ist die kurze Rochade.",
+      "Der König zieht zwei Felder Richtung Turm h8."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz spielte Lb4 und wurde mit Dxf7# mattgesetzt. Markiere alle Felder, auf die ein schwarzer Springer oder Läufer stattdessen ziehen konnte, um das Matt zu verhindern.",
+     "fen": "1r1qkbnr/3b1ppp/2n5/3Qp3/2B5/2N1P3/PP3PPP/R1B1K2R",
+     "zug": "b",
+     "rechte": "KQk",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 7MRYn (CC0), https://lichess.org/training/7MRYn",
+     "targets": [
+      "h6",
+      "e6"
+     ],
+     "antwort": "e6 und h6. Le6 sperrt die Diagonale c4 bis f7, Sh6 deckt f7. In der Partie folgte nach Lb4 Dxf7#.",
+     "hilfe": [
+      "Wer kann f7 decken?",
+      "Kann eine Figur die Diagonale c4 bis f7 sperren?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz spielte Sd7 und wurde mit Df7# mattgesetzt. Klicke das Feld an, auf das der Läufer c8 ziehen konnte, um das Matt zu verhindern.",
+     "fen": "rnbqkb1r/ppp4p/6p1/4Np2/2QPp3/2P5/P1P2PPP/R1B1KB1R",
+     "zug": "b",
+     "rechte": "KQkq",
+     "leer": true,
+     "quelle": "Lichess-Puzzle jzXfh (CC0), https://lichess.org/training/jzXfh",
+     "targets": [
+      "e6"
+     ],
+     "antwort": "e6. Le6 sperrt die Diagonale c4 bis f7 und greift die Dame an. In der Partie folgte nach Sd7 Df7#.",
+     "hilfe": [
+      "Welche Felder liegen zwischen c4 und f7?",
+      "Welches erreicht der Läufer c8?"
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Fehler 1: Bauern fressen statt entwickeln. Schwarz hat dxc4 gespielt. Klicke alle Felder an, auf denen Weiß jetzt mattsetzt.",
+     "fen": "rnbqk2r/ppp1bppp/8/4N3/2p5/3P4/PPP2QPP/RNB1K2R",
+     "rechte": "KQkq",
+     "leer": true,
+     "quelle": "Lichess-Puzzle cfpZR (CC0), https://lichess.org/training/cfpZR",
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "f7. Dxf7 ist Matt, der Springer e5 deckt die Dame. Mit der Rochade wäre der König sicher gewesen.",
+     "hilfe": [
+      "Welche weißen Figuren greifen f7 an?",
+      "Wer deckt f7?"
+     ]
+    },
+    {
+     "frage": "Fehler 2: Die Dame zieht zu oft. Weiß droht schon wieder Dxf7#. Markiere alle Felder, auf die der Springer g8 ziehen kann, um das Matt zu verhindern.",
+     "fen": "r1bqkbnr/pppp1p1p/2n3p1/4p3/2B1P3/5Q2/PPPP1PPP/RNB1K1NR",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Qh5 Nc6 Bc4 g6 Qf3",
+     "leer": true,
+     "targets": [
+      "h6",
+      "f6"
+     ],
+     "antwort": "f6 und h6. Sf6 sperrt die f-Linie, Sh6 deckt f7. Die weiße Dame hat schon dreimal gezogen, Schwarz entwickelt dabei seine Springer.",
+     "hilfe": [
+      "Welche Linie nutzt die Dame jetzt?",
+      "Wo sperrt oder deckt der Springer?"
+     ]
+    },
+    {
+     "frage": "Fehler 3: Der König bleibt in der Mitte. Echte Partie: Weiß spielte Tc1 und wurde mit Dxf2# mattgesetzt. Markiere alle Felder, auf die ein weißer Springer stattdessen ziehen konnte, um das Matt zu verhindern.",
+     "fen": "rnb1kb1r/pp3ppp/3p4/1NqP4/4n3/5N2/PP1B1PPP/R2QKB1R",
+     "rechte": "KQkq",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 8RqML (CC0), https://lichess.org/training/8RqML",
+     "targets": [
+      "d4"
+     ],
+     "antwort": "d4. Ein Springer auf d4 sperrt die Diagonale c5 bis f2. In der Partie folgte nach Tc1 Dxf2#. Nach einer Rochade hätte der Turm f1 das Feld f2 gedeckt.",
+     "hilfe": [
+      "Welches Feld neben dem König ist schwach?",
+      "Wer kann es decken oder die Dame vertreiben?"
+     ]
+    },
+    {
+     "frage": "Fehler 4: Die Dame zu früh. Klicke die schwarze Figur an, die mit Gewinn die weiße Dame angreift.",
+     "fen": "r1bqkb1r/pppp1p1p/2n2np1/4p3/2B1P3/1Q6/PPPP1PPP/RNB1K1NR",
+     "zug": "b",
+     "targets": [
+      "c6"
+     ],
+     "antwort": "Der Springer c6. Sd4 greift die Dame b3 an und droht Sxc2+. Die weiße Dame zieht zum vierten Mal, Schwarz ist besser entwickelt.",
+     "hilfe": [
+      "Welche schwarze Figur kann mit einem Zug die Dame angreifen?",
+      "Welche droht dabei noch mehr?"
+     ]
+    },
+    {
+     "frage": "Fehler 5: Gier. Echte Partie: Weiß schlug mit fxg4 den Springer und wurde mit Dh4# mattgesetzt. Markiere alle Felder, auf die ein weißer Bauer stattdessen ziehen konnte, um das Matt zu verhindern.",
+     "fen": "r2qk2r/pp1n1ppp/3p4/3P1b2/2P1p1n1/P4P2/3BP2P/R2QKBNR",
+     "rechte": "KQkq",
+     "leer": true,
+     "quelle": "Lichess-Puzzle RIbCv (CC0), https://lichess.org/training/RIbCv",
+     "targets": [
+      "e3",
+      "h4"
+     ],
+     "antwort": "e3 und h4. Nach e3 kann der König nach e2 fliehen, h4 besetzt das Mattfeld. In der Partie folgte nach fxg4 Dh4#.",
+     "hilfe": [
+      "Welche Diagonale nutzt die Dame d8?",
+      "Welcher Bauer sperrt sie oder macht Luft?"
+     ]
+    },
+    {
+     "frage": "Fehler 6: Echte Partie: Schwarz schlug mit Sxc4 den Läufer und wurde mit Dxh7# mattgesetzt. Markiere alle Felder, auf die Schwarz stattdessen ziehen konnte, um das Matt zu verhindern.",
+     "fen": "rnbq1rk1/pppp1ppp/3n4/6N1/2B1p3/2P4Q/PPP2PPP/R1B1K2R",
+     "zug": "b",
+     "rechte": "KQ",
+     "leer": true,
+     "quelle": "Lichess-Puzzle PuENE (CC0), https://lichess.org/training/PuENE",
+     "targets": [
+      "g5",
+      "e8",
+      "h6",
+      "h5"
+     ],
+     "antwort": "e8, g5, h5 und h6. Dxg5 schlägt den Springer, der h7 deckt. h6 oder h5 sperren die h-Linie. Te8 macht f8 für den König frei. In der Partie folgte nach Sxc4 Dxh7#.",
+     "hilfe": [
+      "Welche Figuren greifen h7 an?",
+      "Schlagen, decken oder Luft machen."
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Klicke alle schwarzen Springer und Läufer an, die noch nicht entwickelt sind.",
+     "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2BPP3/2P2N2/PP3PPP/RNBQK2R",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d4",
+     "targets": [
+      "c8"
+     ],
+     "antwort": "Der Läufer c8. Die beiden Springer und der Läufer c5 sind schon entwickelt.",
+     "hilfe": [
+      "Welche Leichtfiguren stehen noch auf der 8. Reihe?",
+      "Der Turm zählt nicht."
+     ]
+    },
+    {
+     "frage": "Schwarz hat Sf6 gespielt. Klicke alle Felder an, auf denen Weiß jetzt mattsetzt.",
+     "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Qh5 Nc6 Bc4 Nf6",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "f7. Dxf7 ist das Schäfermatt, der Läufer c4 deckt die Dame.",
+     "hilfe": [
+      "Welches Feld greifen Dame und Läufer an?",
+      "Deckt Sf6 dieses Feld?"
+     ]
+    },
+    {
+     "frage": "Weiß droht Dxf7#. Markiere alle Felder, auf die der Springer g8 ziehen kann, um das Matt zu verhindern.",
+     "fen": "rnbqk1nr/pppp1ppp/8/2b1p3/2B1P3/5Q2/PPPP1PPP/RNB1K1NR",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Bc4 Bc5 Qf3",
+     "leer": true,
+     "targets": [
+      "h6",
+      "f6"
+     ],
+     "antwort": "f6 und h6. Sf6 sperrt die f-Linie, Sh6 deckt f7.",
+     "hilfe": [
+      "Welche Linie nutzt die Dame f3?",
+      "Wo sperrt oder deckt der Springer?"
+     ]
+    },
+    {
+     "frage": "Markiere das Feld, auf das der schwarze König bei der Rochade zieht.",
+     "fen": "rnbqk2r/pppp1ppp/5n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nf6 Bc4 Bc5 d3",
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "g8. Der Weg zum Turm h8 ist frei, kein Feld ist angegriffen.",
+     "hilfe": [
+      "Welche Felder überquert der König?",
+      "Der König zieht zwei Felder."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz spielte c6 und wurde mit Df7# mattgesetzt. Markiere alle Felder, auf die die schwarze Dame stattdessen ziehen konnte, um das Matt zu verhindern.",
+     "fen": "rnbq3r/ppp4k/3p2pp/2bQ4/3N4/4B3/PPP2PPP/RN3RK1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 4YgRE (CC0), https://lichess.org/training/4YgRE",
+     "targets": [
+      "e8",
+      "f8",
+      "g8",
+      "e7",
+      "f6",
+      "d7"
+     ],
+     "antwort": "d7, e7, e8, f6, f8 und g8. Von all diesen Feldern deckt die Dame f7. In der Partie folgte nach c6 Df7#.",
+     "hilfe": [
+      "Welche Felder decken f7?",
+      "Wohin kann die Dame d8 ziehen?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß spielte Sg5 und wurde mit Df2# mattgesetzt. Markiere alle Felder, auf die Weiß stattdessen ziehen konnte, um das Matt zu verhindern.",
+     "fen": "r1b1k2r/pp3ppp/1qn1p3/4P3/6P1/5Nb1/PBPPB1P1/1R1Q1K1R",
+     "rechte": "kq",
+     "leer": true,
+     "quelle": "Lichess-Puzzle h48XX (CC0), https://lichess.org/training/h48XX",
+     "targets": [
+      "d4",
+      "e1"
+     ],
+     "antwort": "d4 und e1. Sd4, Ld4 oder d4 sperren die Diagonale b6 bis f2, De1 deckt f2. In der Partie folgte nach Sg5 Df2#.",
+     "hilfe": [
+      "Welche schwarzen Figuren greifen f2 an?",
+      "Sperren oder decken."
+     ]
+    }
+   ]
+  }
  }
 };
 export const YEAR=[["Brett, Figuren, Schach und Matt",[1,11]],["Sonderregeln, Notation und erste Taktik",[12,26]],["Mattführung, Eröffnung und Endspiel",[27,36]]];
