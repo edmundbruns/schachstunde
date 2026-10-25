@@ -1,7 +1,7 @@
 // Erzeugt LICENSES.html (Quellen & Lizenzen) und START.html (Kurzanleitung) im Design der App. © Dr. Edmund Bruns
 import fs from 'node:fs';import vm from 'node:vm';
 const W='/home/claude/work/SchachStunde/website/';
-const ctx={window:{},console,atob};vm.createContext(ctx);for(const f of ['runtime-data','planner-core','curriculum','lesson-units','next-topics','quality','labyrinth','method-catalog','teaching-support','praxis','diplom-lessons'])vm.runInContext(fs.readFileSync(W+f+'.js','utf8'),ctx);
+const ctx={window:{},console,atob};vm.createContext(ctx);for(const f of ['runtime-data','planner-core','curriculum','lesson-units','next-topics','topics-jahresplan','quality','labyrinth','method-catalog','teaching-support','praxis','diplom-lessons'])vm.runInContext(fs.readFileSync(W+f+'.js','utf8'),ctx);
 const C=ctx.window.PlannerCore,U=ctx.window.LessonUnits;
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const old=fs.readFileSync(W+'LICENSES.html','utf8');
