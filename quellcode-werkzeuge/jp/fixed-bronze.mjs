@@ -29,7 +29,8 @@ export const URLS={
  "achtBauern": "https://www.youtube.com/watch?v=XQmXNyh_bVw",
  "mattChallenge": "https://www.youtube.com/watch?v=pTEy2s2dwNA",
  "schachBingo": "https://www.youtube.com/watch?v=CDEEqAtAKdU",
- "lichessPin": "https://lichess.org/training/pin"
+ "lichessPin": "https://lichess.org/training/pin",
+ "lichessFork": "https://lichess.org/training/fork"
 };
 export const FIXED={
  "1": {
@@ -12779,6 +12780,556 @@ export const FIXED={
      "hilfe": [
       "Welche Figur steht vor dem König?",
       "Wer steht auf derselben Linie dahinter?"
+     ]
+    }
+   ]
+  }
+ },
+ "23": {
+  "thema": "Gabel und Doppelangriff",
+  "lernziel": "Ich kann eine Gabel finden und ausführen.",
+  "leitfrage": "Wie greift eine Figur zwei Ziele auf einmal an, sodass der Gegner nur eins retten kann?",
+  "vorwissen": "Gangart des Springers (Woche 4), Angreifen und decken (Woche 6), Figurenwerte und Tauschen (Woche 7), Fesselung (Woche 22).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Lichess-Puzzles 05FPf, 008P4, 02qUN und 09vi3 (CC0, Thema „fork“), übrige Brettaufgaben eigene Aufgaben. Angegriffene Figuren und Gabelzüge mit chess.js berechnet, die Lichess-Lösungen stammen aus der Datenbank",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Fesselung wiederholen, Springer springen lassen",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6: Fesselung aus Woche 22, Springerzüge und angegriffene Figuren.",
+     "Bei W6 fragen: „Der Springer greift zwei Figuren an. Welche kann Schwarz retten?“ Ziel nennen: „Heute lernt ihr die Gabel: Eine Figur greift zwei Ziele gleichzeitig an.“"
+    ],
+    "kinder": "Ich finde alle Figuren, die ein Springer angreift.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Gabeln mit Springer, Bauer, Dame und König",
+    "ablauf": [
+     "Plakat „Gabel und Doppelangriff“ aufhängen. Am Lehrbrett E1: Der Springer greift zwei Figuren an. Der Gegner kann nur eine retten, die andere geht verloren.",
+     "E2 bis E5: Gabel herstellen mit Springer, Bauer, Dame und König. Am stärksten ist die Gabel mit Schach, denn dann muss der Gegner zuerst den König retten. Frage: „Warum ist eine Gabel mit Schach besonders stark?“",
+     "E6: eine echte Gabel aus einer Lichess-Partie. Merksatz: „Eine Figur, zwei Ziele: Der Gegner kann nur eins retten.“"
+    ],
+    "kinder": "Ich erkläre, warum eine Gabel Material gewinnt.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Gabel und Doppelangriff",
+      "was": "gabel"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Gabeln E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Gabeln bauen zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A stellt König, Turm und Dame des Gegners auf und einen eigenen Springer dazu. Kind B sucht das Gabelfeld und zeigt beide Ziele. Danach wechseln die Rollen.",
+     "Allein: Arbeitsblatt A1 bis A6, darunter eine echte Aufgabe aus einer Lichess-Partie. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich finde Gabelfelder für Springer, Bauer und Dame.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Gabel und Doppelangriff",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6: Eine Gabel nützt nichts, wenn die gabelnde Figur geschlagen werden kann. Gedeckte Ziele lohnen sich nur, wenn sie mehr wert sind. Bei einer Gabel mit Schach zuerst den König retten. Auch der Gegner kann gabeln.",
+     "Bei jeder Aufgabe fragen: „Woran erkennst du, ob die Gabel wirklich etwas gewinnt?“"
+    ],
+    "kinder": "Ich prüfe, ob eine Gabel sicher ist und etwas gewinnt.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, fragst du einige am Brett: „Welche zwei Ziele greift deine Figur an, und was kann der Gegner retten?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich finde und erkläre Gabeln ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Springer-Gabel“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Weiß hat König und Springer, Schwarz hat König, Turm und Dame, aber Schwarz darf nicht schlagen. Weiß versucht in fünf Zügen eine Gabel zu finden, die Dame oder Turm angreift. Danach wechseln die Rollen.",
+     "Rückblick: „Welche Figur gabelt am liebsten?“ Aufräum-Ritual. Ausblick: Nächstes Mal lernt ihr den Spieß und den Abzugsangriff."
+    ],
+    "kinder": "Ich finde in einer Partie eine Gabel.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Gabel und Doppelangriff",
+      "was": "gabel"
+     },
+     {
+      "art": "blatt",
+      "label": "Mehr Gabelaufgaben auf Lichess (online)",
+      "url": "https://lichess.org/training/fork"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Vom Springer aus alle acht Sprungfelder mit Steinen markieren. Liegen zwei wertvolle Ziele darunter?",
+   "zusatz": "Eine Stellung bauen, in der ein Bauer eine Gabel gegen Turm und Läufer macht. Oder Lichess-Aufgaben zum Thema Gabel lösen.",
+   "kuerzen": "Die Partnerübung auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
+  },
+  "nachher": "Wer findet Springergabeln schon sicher, wer übersieht Bauern- und Damengabeln? Wer prüft, ob die gabelnde Figur sicher steht? Das greifst du in Woche 24 bei Spieß und Abzugsangriff wieder auf.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Wiederholung Fesselung: Klicke die gefesselte schwarze Figur an.",
+     "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/3PP3/5N2/PPP2PPP/RNBQK2R",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 d6 Bb5+ Nc6 d4",
+     "targets": [
+      "c6"
+     ],
+     "antwort": "Der Springer c6. Zieht er weg, steht der König e8 im Schach durch den Läufer b5.",
+     "hilfe": [
+      "Welche Diagonale führt vom Läufer b5 zum König?",
+      "Was steht dazwischen?"
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Springer d4 ziehen kann.",
+     "fen": "4k3/8/8/8/3N4/8/8/4K3",
+     "leer": true,
+     "pruef": {
+      "legal": "d4"
+     },
+     "targets": null,
+     "antwort": "b5, c6, e6, f5, f3, e2, c2 und b3. Alle acht Sprungfelder sind frei.",
+     "hilfe": [
+      "Zwei Felder geradeaus, eins zur Seite.",
+      "Es sind acht Felder."
+     ]
+    },
+    {
+     "frage": "Klicke alle schwarzen Figuren an, die der Springer e5 angreift.",
+     "fen": "r3k3/5p2/2q5/4N3/8/8/8/4K3",
+     "targets": [
+      "f7",
+      "c6"
+     ],
+     "antwort": "Der Bauer f7 und die Dame c6. Der Springer greift zwei Ziele gleichzeitig an.",
+     "hilfe": [
+      "Zeige alle acht Sprungfelder.",
+      "Wo steht eine schwarze Figur?"
+     ]
+    },
+    {
+     "frage": "Schwarz ist am Zug und steht im Schach. Klicke alle schwarzen Figuren an, die das Schach abwehren können.",
+     "fen": "4k3/8/5n2/8/B7/8/8/4K3",
+     "zug": "b",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Der König e8 (wegziehen) und der Springer f6 (Sd7 dazwischen).",
+     "hilfe": [
+      "Woher kommt das Schach?",
+      "Wer kann sich dazwischenstellen?"
+     ]
+    },
+    {
+     "frage": "Klicke alle schwarzen Figuren an, die der weiße Bauer d5 angreift.",
+     "fen": "4k3/8/2n1b3/3P4/8/8/8/4K3",
+     "targets": [
+      "c6",
+      "e6"
+     ],
+     "antwort": "Der Springer c6 und der Läufer e6. Der Bauer greift beide schräg nach vorn an.",
+     "hilfe": [
+      "Ein Bauer greift schräg nach vorn an.",
+      "Welche Felder sind das?"
+     ]
+    },
+    {
+     "frage": "Klicke alle schwarzen Figuren an, die der Springer d6 angreift. Welche davon kann Schwarz retten?",
+     "fen": "k1r1q3/8/3N4/8/8/8/8/6K1",
+     "targets": [
+      "c8",
+      "e8"
+     ],
+     "antwort": "Der Turm c8 und die Dame e8. Schwarz kann nur eine Figur retten, am besten die Dame. Dann schlägt der Springer den Turm.",
+     "hilfe": [
+      "Zeige alle Sprungfelder von d6.",
+      "Wo stehen schwarze Figuren?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Der Springer d5 greift zwei Figuren gleichzeitig an. Klicke sie an.",
+     "fen": "4k3/2r1q3/8/3N4/8/8/8/6K1",
+     "targets": [
+      "c7",
+      "e7"
+     ],
+     "antwort": "Der Turm c7 und die Dame e7. Schwarz rettet die Dame, dann schlägt der Springer den Turm.",
+     "hilfe": [
+      "Zeige alle Sprungfelder von d5.",
+      "Wo stehen schwarze Figuren?"
+     ]
+    },
+    {
+     "frage": "Gabel herstellen: Klicke das Feld an, auf das der Springer zieht, um König und Turm gleichzeitig anzugreifen.",
+     "fen": "r3k3/8/8/1N6/8/8/8/4K3",
+     "leer": true,
+     "targets": [
+      "c7"
+     ],
+     "antwort": "c7. Von dort greift der Springer den König e8 und den Turm a8 an. Schwarz muss den König retten, dann fällt der Turm.",
+     "hilfe": [
+      "Von welchem Feld aus erreicht ein Springer e8 und a8?",
+      "Es ist ein Feld in der 7. Reihe."
+     ]
+    },
+    {
+     "frage": "Bauerngabel: Klicke das Feld an, auf das der Bauer zieht, um zwei Figuren anzugreifen.",
+     "fen": "4k3/8/2n1r3/8/3P4/8/8/6K1",
+     "leer": true,
+     "targets": [
+      "d5"
+     ],
+     "antwort": "d5. Der Bauer greift den Springer c6 und den Turm e6 an. Nur eine Figur kann weg.",
+     "hilfe": [
+      "Ein Bauer greift schräg nach vorn an.",
+      "Wohin muss er, damit c6 und e6 schräg vor ihm liegen?"
+     ]
+    },
+    {
+     "frage": "Damengabel: Klicke alle Felder an, auf die die Dame zieht, um den König und den ungedeckten Turm gleichzeitig anzugreifen.",
+     "fen": "r5k1/6pp/8/8/8/8/8/3Q2K1",
+     "leer": true,
+     "targets": [
+      "d5"
+     ],
+     "antwort": "d5. Die Dame gibt Schach und greift den Turm a8 an. Nach dem Königszug schlägt sie den Turm.",
+     "hilfe": [
+      "Die Dame muss Schach geben und den Turm angreifen.",
+      "Welche Felder liegen auf einer Linie mit a8 und g8?"
+     ]
+    },
+    {
+     "frage": "Auch der König kann gabeln. Klicke das Feld an, auf das der König zieht, um beide schwarzen Figuren anzugreifen.",
+     "fen": "8/8/8/8/2n1n3/8/2K5/k7",
+     "leer": true,
+     "targets": [
+      "d3"
+     ],
+     "antwort": "d3. Der König greift beide Springer an, keiner ist gedeckt. Schwarz kann nur einen retten.",
+     "hilfe": [
+      "Der König greift alle Nachbarfelder an.",
+      "Welches Feld grenzt an c4 und e4?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz hat Td5 gespielt. Weiß gabelt mit Schach. Klicke das Feld an, auf das der Springer zieht.",
+     "fen": "6k1/2p5/6P1/1p1r1NP1/5P2/2b5/3p4/3B2K1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 05FPf (CC0), https://lichess.org/training/05FPf",
+     "targets": [
+      "e7"
+     ],
+     "antwort": "e7. Der Springer gibt Schach und greift den Turm d5 an. So ging die Partie weiter: Kg7 Sxd5.",
+     "hilfe": [
+      "Der Springer muss den König g8 und den Turm d5 angreifen.",
+      "Wo steht ein Springer, der beide erreicht?"
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Klicke das Feld an, auf das der Springer zieht, um König und Dame gleichzeitig anzugreifen.",
+     "fen": "6k1/8/8/3q1N2/8/8/8/6K1",
+     "leer": true,
+     "targets": [
+      "e7"
+     ],
+     "antwort": "e7. Der Springer gibt Schach und greift die Dame d5 an. Die Dame kann e7 nicht schlagen.",
+     "hilfe": [
+      "Von welchem Feld erreicht ein Springer g8 und d5?",
+      "Ist das Feld sicher?"
+     ]
+    },
+    {
+     "frage": "Bauerngabel: Klicke das Feld an, auf das der Bauer zieht.",
+     "fen": "4k3/8/8/3r1n2/8/4P3/8/4K3",
+     "leer": true,
+     "targets": [
+      "e4"
+     ],
+     "antwort": "e4. Der Bauer greift Turm d5 und Springer f5 an und steht dort sicher.",
+     "hilfe": [
+      "Wohin muss der Bauer, damit d5 und f5 schräg vor ihm liegen?",
+      "Steht er dort sicher?"
+     ]
+    },
+    {
+     "frage": "Damengabel: Klicke alle Felder an, auf die die Dame zieht, um zwei Figuren mit Gewinn anzugreifen.",
+     "fen": "1k6/8/8/n6b/8/8/8/4Q1K1",
+     "leer": true,
+     "targets": [
+      "b4",
+      "e5"
+     ],
+     "antwort": "b4 und e5. Von dort gibt die Dame Schach und greift den ungedeckten Springer a5 an.",
+     "hilfe": [
+      "Welche schwarzen Figuren sind ungedeckt?",
+      "Von welchem Feld greift die Dame beide an?"
+     ]
+    },
+    {
+     "frage": "Klicke alle schwarzen Figuren an, die der Springer f7 angreift.",
+     "fen": "r2qk2r/5N2/8/8/8/8/8/4K3",
+     "targets": [
+      "d8",
+      "h8"
+     ],
+     "antwort": "Die Dame d8 und der Turm h8. Auch e5, g5, d6 und h6 erreicht er, dort steht aber nichts.",
+     "hilfe": [
+      "Zeige alle Sprungfelder von f7.",
+      "Ist auch der König dabei?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß hat Kd2 gezogen. Schwarz gabelt mit Schach. Klicke das Feld an, auf das der Springer zieht.",
+     "fen": "8/4k3/1p1p4/rP2p1p1/P2nP1P1/3B4/3K4/R7",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 008P4 (CC0), https://lichess.org/training/008P4",
+     "targets": [
+      "b3"
+     ],
+     "antwort": "b3. Der Springer gibt Schach und greift den Turm a1 an. So ging die Partie weiter: Kc3 Sxa1.",
+     "hilfe": [
+      "Der Springer soll den König d2 und den Turm a1 angreifen.",
+      "Welches Feld erreicht beide?"
+     ]
+    },
+    {
+     "frage": "Turmgabel: Klicke alle Felder an, auf die der Turm zieht, um zwei ungedeckte Figuren anzugreifen.",
+     "fen": "6k1/8/1n4b1/8/8/8/8/3R2K1",
+     "leer": true,
+     "targets": [
+      "d6"
+     ],
+     "antwort": "d6. Der Turm greift auf der 6. Reihe den Springer b6 und den Läufer g6 an, beide sind ungedeckt.",
+     "hilfe": [
+      "Auf welcher Reihe stehen beide Figuren?",
+      "Der Turm muss auf diese Reihe."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Fehler 1: Der Springer gabelt König und Turm, steht aber unsicher. Schwarz ist am Zug. Klicke alle schwarzen Figuren an, die den Springer c7 schlagen können.",
+     "fen": "r3k3/1qN5/8/8/8/8/8/4K3",
+     "zug": "b",
+     "schach": true,
+     "targets": [
+      "b7"
+     ],
+     "antwort": "Die Dame b7. Sie schlägt den Springer, die Gabel ist dahin. Eine Gabel nützt nur, wenn die Gabelfigur sicher steht.",
+     "hilfe": [
+      "Wer greift c7 an?",
+      "Eine Gabel nützt nichts, wenn die Gabelfigur verloren geht."
+     ]
+    },
+    {
+     "frage": "Fehler 2: Gedeckte Ziele lohnen nicht immer. Klicke alle Felder an, auf denen der Springer eine Gabel mit Gewinn macht. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4k3/1p1p4/2r1b3/8/8/8/3N4/4K3",
+     "leer": true,
+     "targets": [],
+     "antwort": "Keins. Turm c6 und Läufer e6 sind beide von Bauern gedeckt. Der Springer würde für einen Läufer getauscht und danach selbst geschlagen.",
+     "hilfe": [
+      "Sind die Ziele gedeckt?",
+      "Ein Springer gewinnt gegen einen gedeckten Läufer nichts."
+     ]
+    },
+    {
+     "frage": "Gabel mit Schach: Schwarz muss zuerst den König retten. Markiere alle Felder, auf die der schwarze König ziehen darf.",
+     "fen": "r3k3/2N5/8/8/8/8/8/4K3",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "d7, d8, e7, f7 und f8. Zuerst rettet Schwarz den König, danach schlägt der Springer den Turm a8.",
+     "hilfe": [
+      "Woher kommt das Schach?",
+      "Danach schlägt der Springer den Turm."
+     ]
+    },
+    {
+     "frage": "Auch der Gegner gabelt. Schwarz ist am Zug. Klicke das Feld an, auf das der schwarze Springer zieht, um König und Turm anzugreifen.",
+     "fen": "4k3/8/8/8/1n6/8/8/R3K3",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "c2"
+     ],
+     "antwort": "c2. Der schwarze Springer gibt Schach und greift den Turm a1 an.",
+     "hilfe": [
+      "Welches Feld erreicht e1 und a1?",
+      "Ist das Feld sicher?"
+     ]
+    },
+    {
+     "frage": "Fehler 3: Die Dame greift zwei Figuren an, aber beide sind gedeckt. Klicke alle Felder an, auf denen die Dame eine Gabel mit Gewinn macht. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4k3/3p1p2/2n1n3/8/8/8/8/2Q1K3",
+     "leer": true,
+     "targets": [],
+     "antwort": "Keins. Beide Springer sind von Bauern gedeckt. Die Dame würde nur einen Springer gegen sich selbst tauschen.",
+     "hilfe": [
+      "Sind die Springer gedeckt?",
+      "Darf die Dame auf das Feld, ohne geschlagen zu werden?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz hat Lh3 gespielt. Weiß gabelt mit Schach. Klicke das Feld an, auf das der Springer zieht.",
+     "fen": "7r/ppp1k1p1/7p/4N3/8/2P4b/P1P2P1P/2KR4",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 02qUN (CC0), https://lichess.org/training/02qUN",
+     "targets": [
+      "g6"
+     ],
+     "antwort": "g6. Der Springer gibt Schach und greift den Turm h8 an. So ging die Partie weiter: Kf6 Sxh8.",
+     "hilfe": [
+      "Der Springer soll den König e7 und den Turm h8 angreifen.",
+      "Welches Feld erreicht beide?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Klicke das Feld an, auf das der Springer zieht, um König und Turm gleichzeitig anzugreifen.",
+     "fen": "4k3/7r/8/8/4N3/8/8/4K3",
+     "leer": true,
+     "targets": [
+      "f6"
+     ],
+     "antwort": "f6. Der Springer gibt Schach und greift den Turm h7 an.",
+     "hilfe": [
+      "Von welchem Feld erreicht ein Springer e8 und h7?",
+      "Ist das Feld sicher?"
+     ]
+    },
+    {
+     "frage": "Bauerngabel: Klicke das Feld an, auf das der Bauer zieht.",
+     "fen": "4k3/8/8/1r1n4/8/2P5/8/4K3",
+     "leer": true,
+     "targets": [
+      "c4"
+     ],
+     "antwort": "c4. Der Bauer greift Turm b5 und Springer d5 an. Vom Startfeld darf er zwei Felder ziehen.",
+     "hilfe": [
+      "Wohin muss der Bauer, damit b5 und d5 schräg vor ihm liegen?",
+      "Ein Bauer zieht vom Startfeld auch zwei Felder."
+     ]
+    },
+    {
+     "frage": "Klicke alle schwarzen Figuren an, die der Springer e6 angreift.",
+     "fen": "3r2k1/2p5/4N3/8/3b4/8/8/4K3",
+     "targets": [
+      "d8",
+      "c7",
+      "d4"
+     ],
+     "antwort": "Der Turm d8, der Bauer c7 und der Läufer d4.",
+     "hilfe": [
+      "Zeige alle Sprungfelder von e6.",
+      "Wo stehen schwarze Figuren?"
+     ]
+    },
+    {
+     "frage": "Damengabel: Klicke alle Felder an, auf die die Dame zieht, um den König und den ungedeckten Läufer gleichzeitig anzugreifen.",
+     "fen": "7k/b7/8/8/8/8/5PPP/3Q2K1",
+     "leer": true,
+     "targets": [
+      "a1"
+     ],
+     "antwort": "a1. Die Dame gibt auf der langen Diagonale Schach und greift auf der a-Linie den Läufer a7 an. Auf d4 könnte der Läufer sie schlagen.",
+     "hilfe": [
+      "Die Dame muss Schach geben und den Läufer angreifen.",
+      "Welches Feld liegt auf einer Linie mit h8 und a7?"
+     ]
+    },
+    {
+     "frage": "Gabel mit Schach: Weiß muss zuerst den König retten. Markiere alle Felder, auf die der weiße König ziehen darf.",
+     "fen": "4k3/8/8/8/8/8/2n5/R3K3",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "d1, d2, e2, f1 und f2. Erst den König retten, dann schlägt der Springer den Turm a1.",
+     "hilfe": [
+      "Woher kommt das Schach?",
+      "Danach schlägt der Springer den Turm."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz hat Lxf4+ gespielt. Weiß gabelt mit Schach. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "1k3r2/1p2Q3/p1q5/3p4/3P1b2/2P1N3/1P1K4/8",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 09vi3 (CC0), https://lichess.org/training/09vi3",
+     "targets": [
+      "f8"
+     ],
+     "antwort": "f8. Die Dame schlägt den Turm, gibt Schach und greift den Läufer f4 an. So ging die Partie weiter: Ka7 Dxf4.",
+     "hilfe": [
+      "Die Dame soll den König b8 und den Läufer f4 angreifen.",
+      "Die Dame darf dabei sogar schlagen."
      ]
     }
    ]
