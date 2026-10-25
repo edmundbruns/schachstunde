@@ -22,7 +22,7 @@ function loadBoardTask(i){boardContext.active=i;const t=boardContext.tasks[i];if
 function openBoard(tasks,work,back,backLabel){boardContext={tasks,work,back,backLabel};loadBoardTask(0)}
 const plannerApp=window.initPlanner({Chess,esc,puzzles:()=>puzzles,printContent,boardHTML,deSAN,tips,openBoard});window.workshopAPI={planner:plannerApp};
 app.innerHTML='<p>Stundenplaner wird geladen …</p>';
-fetch('./assets/puzzles.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(p=>{puzzles=p;plannerApp.render()}).catch(()=>{app.innerHTML='<h2>Aufgabenmaterial nicht geladen</h2><p>Bitte die Seite neu laden oder die vollständige Offline-HTML-Datei aus dem Paket verwenden.</p><button id="reload">Erneut laden</button>';$('#reload').onclick=()=>location.reload()});
+fetch('./assets/puzzles.json').then(r=>{if(!r.ok)throw Error();return r.json()}).then(p=>{puzzles=p;(plannerApp.start||plannerApp.render)()}).catch(()=>{app.innerHTML='<h2>Aufgabenmaterial nicht geladen</h2><p>Bitte die Seite neu laden oder die vollständige Offline-HTML-Datei aus dem Paket verwenden.</p><button id="reload">Erneut laden</button>';$('#reload').onclick=()=>location.reload()});
 
 /* Tastatur am Brett: Fokus bleibt nach dem Neuzeichnen auf dem Feld, Pfeiltasten wandern über das Brett. © Dr. Edmund Bruns */
 (()=>{const SEL='[data-bsq],[data-labsq]',key=el=>el?.dataset?.bsq?'bsq':el?.dataset?.labsq?'labsq':null;let last=null,onBoard=false;
