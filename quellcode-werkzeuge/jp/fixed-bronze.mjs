@@ -11827,7 +11827,7 @@ export const FIXED={
     "titel": "Siegerehrung, Urkunden, Aufräumen",
     "ablauf": [
      "Siegerehrung: die Schulmeisterin oder der Schulmeister bekommt die Siegerurkunde, alle anderen eine Teilnahmeurkunde. Jedes Kind nennt sein persönliches Ziel und ob es geklappt hat. Keine Gesamtrangliste vorlesen.",
-     "Minispiel zum Schluss, 3 Minuten: Die neue Meisterin oder der neue Meister spielt ein Simultan gegen zwei Teams, die Teams beraten sich leise. Aufräum-Ritual, Uhren auf 0. Ausblick: Nächstes Mal beginnt Gold mit der Fesselung."
+     "Minispiel zum Schluss, 3 Minuten: Die neue Meisterin oder der neue Meister spielt ein Simultan gegen zwei Teams, die Teams beraten sich leise. Aufräum-Ritual, Uhren auf 0. Ausblick: Nächstes Mal geht es in der Silber-Stufe mit der Taktik weiter, zuerst mit der Fesselung."
     ],
     "kinder": "Ich gratuliere fair und nenne, was mir in der Meisterschaft gelungen ist.",
     "links": [
@@ -11844,7 +11844,7 @@ export const FIXED={
    "zusatz": "Wer an Brett 1 gewinnt, darf die eigene Finalpartie anhand des Partieformulars am Lehrbrett vorspielen. Die anderen suchen den Zug des Tages.",
    "kuerzen": "Nur zwei Runden spielen, die zweite ist die Finalrunde. Die Erarbeitung auf E1, E2 und E4 kürzen. Lerncheck-Zettel, Siegerehrung und Aufräumen bleiben, das Simultan entfällt."
   },
-  "nachher": "Wer konnte schon vollständig mitschreiben? Wer hat die Uhr richtig bedient? Welche Fehler kamen in den Partien häufig vor? Das nimmst du mit in die Gold-Stunden ab Woche 22, die mit Taktik beginnen.",
+  "nachher": "Wer konnte schon vollständig mitschreiben? Wer hat die Uhr richtig bedient? Welche Fehler kamen in den Partien häufig vor? Das nimmst du mit in die Taktik-Stunden ab Woche 22.",
   "feld": {
    "W": [
     {
@@ -12290,7 +12290,7 @@ export const FIXED={
     "titel": "Wer steht auf der Linie?",
     "ablauf": [
      "Stopp-Signal. Am Lehrbrett W1 bis W6 aufwärmen: Linien und Diagonalen von Läufer, Turm und Dame, dazu Angreifen und Decken.",
-     "Bei W2 fragen: „Der Springer c6 ist frei. Darf er ziehen?“ Kurz vermuten lassen, nicht auflösen. Ziel nennen: „Heute lernt ihr die Fesselung kennen. Sie ist das erste Taktikmotiv von Gold.“"
+     "Bei W2 fragen: „Der Springer c6 ist frei. Darf er ziehen?“ Kurz vermuten lassen, nicht auflösen. Ziel nennen: „Heute lernt ihr die Fesselung kennen. Sie ist das erste Taktikmotiv in Silber.“"
     ],
     "kinder": "Ich erkenne, welche Figuren auf einer Linie zwischen Angreifer und König stehen.",
     "links": [
@@ -14517,6 +14517,577 @@ export const FIXED={
      "hilfe": [
       "Welche schwarze Figur steht hinter dem Läufer d6?",
       "Wen greift sie dann an?"
+     ]
+    }
+   ]
+  }
+ },
+ "26": {
+  "thema": "Wiederholung und Silber-Diplom",
+  "lernziel": "Ich kann die Silber-Missionen allein lösen.",
+  "leitfrage": "Zeige ich am Brett und auf dem Testblatt, dass ich Sonderregeln, Notation, Damenmatt und die ersten Taktiken kann?",
+  "vorwissen": "Alle Themen der Wochen 12 bis 25: Sonderregeln, Patt, Damenmatt, Notation, Turnierregeln, Fesselung, Gabel, Spieß und Abzug.",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Ludgerus-Schachdiplom Silber 1 bis 4 und praktischer Gelingensnachweis (ludgerus-schachdiplom.netlify.app). Lichess-Puzzles S9LN9, fqmVE, 46xjk, qF2SP und K27v5 (CC0, über die Lichess-Schnittstelle abgerufen), übrige Aufgaben eigene Aufgaben. Alle Lösungen mit chess.js nachgerechnet, die Lichess-Lösungen stammen aus der Datenbank",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Silber-Mix zum Aufwärmen und Ablauf erklären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6 eine kurze Aufwärmrunde: unmögliche Stellung, Freibauer, Umwandlung, Rochade, en passant, Fesselung.",
+     "Ablauf erklären: Heute zeigt ihr am Brett und auf zwei Testblättern, was ihr in der Silber-Stufe gelernt habt. Wer alle sechs Punkte am Brett schafft und mindestens 10 von 12 Testaufgaben, bekommt das Silber-Diplom. Wer es heute noch nicht schafft, übt weiter und versucht es noch einmal."
+    ],
+    "kinder": "Ich weiß, wie die Silber-Prüfung abläuft.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Generalprobe am Lehrbrett",
+    "ablauf": [
+     "Am Lehrbrett E1 bis E6 eine Generalprobe: Patt vermeiden, Damenmatt, einen Zug notieren, Gabel, Spieß, Doppelschach. Nach jeder Aufgabe zeigen alle mit Daumen hoch, Mitte oder runter, wie sicher sie sich fühlen.",
+     "Bei E1 fragen: „Woran erkennst du, dass es Patt und nicht Matt wäre?“ Merksatz: „Erst prüfen, ob es Schach ist, dann zählen, ob der König noch ein Feld hat.“"
+    ],
+    "kinder": "Ich weiß, welche Silber-Themen ich sicher kann.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Generalprobe E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Praktischer Nachweis zu zweit",
+    "ablauf": [
+     "Zu zweit mit dem Prüfbogen: Kind A zeigt beide Rochaden und nennt die Bedingungen, zeigt en passant und eine Umwandlung und setzt mit Dame und König gegen den König matt. Kind B prüft mit dem Plakat. Danach wechseln die Rollen.",
+     "Danach spielen beide fünf Züge und schreiben sie mit. Zum Schluss stellt jedes Kind eine Fesselung, eine Gabel oder einen Spieß auf und erklärt sie. Du gehst herum und hakst auf dem Prüfbogen ab, was jedes Kind allein zeigt.",
+     "Wer Geräte hat, kann zusätzlich die Silber-Missionen im Ludgerus-Schachdiplom online bearbeiten."
+    ],
+    "kinder": "Ich zeige am Brett alle sechs Punkte des Nachweises.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Prüfbogen: praktischer Nachweis Silber",
+      "was": "nachweis"
+     },
+     {
+      "art": "druck",
+      "label": "Partieformular zum Mitschreiben",
+      "was": "partieformular"
+     },
+     {
+      "art": "blatt",
+      "label": "Ludgerus-Schachdiplom online (Silber 1 bis 4)",
+      "url": "https://ludgerus-schachdiplom.netlify.app/"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Knackpunkte vor dem Test",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6 die Knackpunkte, die beim Nachweis aufgefallen sind: Rochade nach einem Königszug, en passant nur sofort, Patt statt Matt, gefesselter Springer, Bauernschlag notieren, Doppelschach abwehren.",
+     "Bei jeder Aufgabe nachfragen: „Warum?“ oder „Woran erkennst du das?“"
+    ],
+    "kinder": "Ich kenne die typischen Fallen vor dem Test.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Knackpunkte S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Silber-Test: zwei Blätter mit je sechs Aufgaben",
+    "ablauf": [
+     "Jedes Kind löst allein Teil 1 (Sonderregeln und Notation, A1 bis A6) und Teil 2 (Matt und Taktik, L1 bis L6). Teil 2 enthält vier Aufgaben aus echten Lichess-Partien. Bestanden ist mit mindestens 10 von 12 Aufgaben.",
+     "Du kontrollierst mit den Lösungsblättern und besprichst falsche Aufgaben gleich mit dem Kind am Lehrbrett."
+    ],
+    "kinder": "Ich löse mindestens 10 von 12 Testaufgaben allein.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Silber-Test Teil 1",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Teil 1 A1 bis A6",
+      "set": "A"
+     },
+     {
+      "art": "druck",
+      "label": "Silber-Test Teil 2",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Teil 2 L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Urkunden, Rückblick, Aufräumen",
+    "ablauf": [
+     "Urkunden überreichen, alle klatschen. Wer es noch nicht geschafft hat, bekommt einen festen Termin für den zweiten Versuch und weiß, was er üben soll.",
+     "Rückblick: „Was war für dich am schwersten auf dem Weg zum Silber-Diplom?“ Aufräum-Ritual. Ausblick: Nächstes Mal beginnt die Gold-Stufe mit dem Gegenangriff."
+    ],
+    "kinder": "Ich weiß, was ich geschafft habe und was als Nächstes kommt.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Silber-Urkunde (zwei pro Blatt)",
+      "was": "urkunde"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Kinder mit Leseschwierigkeiten bekommen die Testaufgaben vorgelesen. Der praktische Nachweis zählt genauso viel wie das Blatt. Das Plakat zur Rochade und zum Damenmatt darf beim Nachweis hängen bleiben.",
+   "zusatz": "Wer früh fertig ist, bearbeitet im Ludgerus-Schachdiplom online schon Gold 1 oder spielt eine Partie mit Schachuhr und schreibt mit.",
+   "kuerzen": "Die Generalprobe auf E4 bis E6 kürzen, das Mitschreiben im Nachweis auf drei Züge. Der Test bleibt vollständig. Wer nicht fertig wird, beendet den Test in Woche 27."
+  },
+  "nachher": "Wer hat das Silber-Diplom noch nicht? In welchem Bereich fehlen Punkte: Sonderregeln, Notation, Damenmatt oder Taktik? Für diese Kinder planst du in Woche 27 eine Übungsecke mit genau diesen Aufgaben ein.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Aufwärmen: Klicke die Figur an, die in einer echten Partie so nie stehen kann.",
+     "fen": "1P2k3/8/8/8/2p5/8/8/4K3",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Der Bauer b8. Ein weißer Bauer auf der 8. Reihe wird sofort umgewandelt, er bleibt dort nie als Bauer stehen.",
+     "hilfe": [
+      "Wo werden Bauern umgewandelt?",
+      "Schau auf die 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Aufwärmen: Klicke den weißen Freibauern an.",
+     "fen": "6k1/p6p/8/8/1P6/4P3/6P1/6K1",
+     "pruef": {
+      "freibauer": "w"
+     },
+     "targets": null,
+     "antwort": "Der Bauer e3. Vor ihm und auf der d- und f-Linie steht kein schwarzer Bauer. b4 hält der Bauer a7 auf, g2 der Bauer h7.",
+     "hilfe": [
+      "Prüfe drei Linien: die eigene und die beiden daneben.",
+      "Nur Bauern vor ihm zählen."
+     ]
+    },
+    {
+     "frage": "Aufwärmen: Welche weißen Bauern können im nächsten Zug umgewandelt werden? Klicke sie an.",
+     "fen": "2b1q3/2P2P2/8/7P/8/8/8/k5K1",
+     "pruef": {
+      "umwandeln": true
+     },
+     "targets": null,
+     "antwort": "Nur f7. Er zieht nach f8 oder schlägt die Dame e8. c7 ist blockiert und kann nichts schlagen, h5 ist zu weit weg.",
+     "hilfe": [
+      "Welche Bauern stehen auf der 7. Reihe?",
+      "Ist das Feld davor frei, oder kann er schräg schlagen?"
+     ]
+    },
+    {
+     "frage": "Aufwärmen: Markiere alle Felder, auf die der weiße König mit einer Rochade ziehen darf.",
+     "fen": "4k3/8/8/8/2b5/8/8/R3K2R",
+     "rechte": "KQ",
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "Nur c1. Der Läufer c4 greift f1 an, über ein angegriffenes Feld darf der König nicht ziehen. Die lange Rochade ist erlaubt.",
+     "hilfe": [
+      "Welche Felder greift der Läufer c4 an?",
+      "Der König darf nicht über ein angegriffenes Feld ziehen."
+     ]
+    },
+    {
+     "frage": "Aufwärmen: Schwarz hat gerade b7–b5 gespielt. Klicke alle weißen Bauern an, die jetzt en passant schlagen dürfen.",
+     "fen": "rnbqkbnr/p1ppppp1/8/PpP5/7p/8/1P1PPPPP/RNBQKBNR",
+     "ep": "b6",
+     "zuege": "a4 h6 a5 h5 c4 h4 c5 b5",
+     "pruef": {
+      "epschlaeger": true
+     },
+     "targets": null,
+     "antwort": "a5 und c5. Beide stehen auf der 5. Reihe direkt neben b5 und dürfen nach b6 schlagen.",
+     "hilfe": [
+      "Wer steht neben b5?",
+      "Auf der 5. Reihe."
+     ]
+    },
+    {
+     "frage": "Aufwärmen: Klicke die gefesselte schwarze Figur an.",
+     "fen": "4k3/3n4/8/8/B7/8/8/6K1",
+     "targets": [
+      "d7"
+     ],
+     "antwort": "Der Springer d7. Zieht er weg, steht der König e8 im Schach durch den Läufer a4.",
+     "hilfe": [
+      "Was steht zwischen dem Läufer und dem König?",
+      "Darf diese Figur wegziehen?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Generalprobe Patt: Klicke alle Felder an, auf die die Dame nicht ziehen darf, weil Schwarz sonst patt wäre.",
+     "fen": "k7/8/2K5/8/8/8/7Q/8",
+     "leer": true,
+     "pruef": {
+      "patt": "h2"
+     },
+     "targets": null,
+     "antwort": "c7. Von dort deckt die Dame a7 und b8, b7 deckt der König c6. Schwarz stünde nicht im Schach und hätte keinen Zug: Patt.",
+     "hilfe": [
+      "Welches Feld des schwarzen Königs ist noch frei?",
+      "Von welchen Feldern deckt die Dame dieses Feld, ohne Schach zu geben?"
+     ]
+    },
+    {
+     "frage": "Generalprobe Damenmatt: Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "4k3/8/4K3/8/8/8/8/7Q",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a8 und h8. Die Dame gibt Schach über die 8. Reihe, der König e6 deckt d7, e7 und f7.",
+     "hilfe": [
+      "Der König e6 deckt d7, e7 und f7.",
+      "Die Dame braucht die 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Notiere den mit dem Pfeil eingezeichneten Zug in deutscher Kurznotation.",
+     "fen": "r1bqkbnr/1ppp1ppp/p1n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R",
+     "zuege": "e4 e5 Nf3 Nc6 Bb5 a6",
+     "pfeil": [
+      "b5",
+      "c6"
+     ],
+     "antwort": "Lxc6. L für Läufer, x für schlagen, c6 ist das Zielfeld.",
+     "hilfe": [
+      "Welche Figur zieht?",
+      "Wird dabei geschlagen?"
+     ]
+    },
+    {
+     "frage": "Generalprobe Gabel: Klicke das Feld an, auf das der Springer zieht und zwei Figuren angreift.",
+     "fen": "2r1k3/8/8/1N6/8/8/8/4K3",
+     "leer": true,
+     "targets": [
+      "d6"
+     ],
+     "antwort": "d6. Sd6+ gibt Schach und greift den Turm c8 an. Der Springer steht dort sicher.",
+     "hilfe": [
+      "Welche Felder greifen den König e8 an?",
+      "Welches davon greift auch den Turm c8 an?"
+     ]
+    },
+    {
+     "frage": "Generalprobe Spieß: Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "6q1/8/8/3k4/8/8/8/3B3K",
+     "leer": true,
+     "targets": [
+      "b3"
+     ],
+     "antwort": "b3. Lb3+ gibt Schach, nach dem Königszug schlägt der Läufer die Dame g8. Auf c4 würde der König den Läufer schlagen.",
+     "hilfe": [
+      "Auf welcher Diagonale stehen König und Dame?",
+      "Der Läufer muss vor den König, aber nicht direkt daneben."
+     ]
+    },
+    {
+     "frage": "Generalprobe Doppelschach: Klicke das Feld an, auf das der Läufer zieht, damit Läufer und Turm gleichzeitig Schach geben.",
+     "fen": "7k/8/8/8/7B/8/8/6KR",
+     "leer": true,
+     "targets": [
+      "f6"
+     ],
+     "antwort": "f6. Der Läufer gibt Schach über g7, der Turm h1 auf der h-Linie: Doppelschach.",
+     "hilfe": [
+      "Der Läufer muss die h-Linie verlassen.",
+      "Von welchem Feld greift er h8 an?"
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Test: Klicke die Figur an, die in einer echten Partie so nie stehen kann.",
+     "fen": "4k1p1/8/8/8/3P4/8/8/4K3",
+     "pruef": {
+      "illegal": true
+     },
+     "targets": null,
+     "antwort": "Der Bauer g8. Ein schwarzer Bauer beginnt auf der 7. Reihe und zieht nach unten. Auf die 8. Reihe kommt er nie.",
+     "hilfe": [
+      "In welche Richtung zieht ein schwarzer Bauer?",
+      "Wo beginnen die schwarzen Bauern?"
+     ]
+    },
+    {
+     "frage": "Test: Welche weißen Bauern können im nächsten Zug umgewandelt werden? Klicke sie an.",
+     "fen": "nr2b3/1P2P3/7k/8/6P1/8/8/7K",
+     "pruef": {
+      "umwandeln": true
+     },
+     "targets": null,
+     "antwort": "Nur b7. Er schlägt den Springer a8. e7 ist blockiert und hat nichts zu schlagen, g4 ist zu weit weg.",
+     "hilfe": [
+      "Welche Bauern stehen auf der 7. Reihe?",
+      "Auch Schlagen auf die letzte Reihe zählt."
+     ]
+    },
+    {
+     "frage": "Test: Markiere alle Felder, auf die der weiße König mit einer Rochade ziehen darf.",
+     "fen": "1r2k3/8/8/8/8/8/8/R3K2R",
+     "rechte": "KQ",
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "c1 und g1. Der Turm b8 greift b1 an, aber über b1 zieht nur der Turm, nicht der König. Beide Rochaden sind erlaubt.",
+     "hilfe": [
+      "Welche Felder überquert der König?",
+      "Ein angegriffenes Feld neben dem Turm stört nicht."
+     ]
+    },
+    {
+     "frage": "Test: Schwarz hat gerade b7–b5 gespielt. Klicke alle weißen Bauern an, die jetzt en passant schlagen dürfen.",
+     "fen": "rnbqkbnr/2p1pppp/8/ppPpP3/8/8/PP1P1PPP/RNBQKBNR",
+     "ep": "b6",
+     "zuege": "e4 d5 e5 a6 c4 a5 c5 b5",
+     "pruef": {
+      "epschlaeger": true
+     },
+     "targets": null,
+     "antwort": "Nur c5. Er steht neben b5. Der Bauer d5 kam schon früher, deshalb darf e5 ihn nicht mehr en passant schlagen.",
+     "hilfe": [
+      "Welcher schwarze Bauer hat gerade den Doppelschritt gemacht?",
+      "En passant geht nur sofort."
+     ]
+    },
+    {
+     "frage": "Test: Klicke alle Felder an, auf die der Turm nicht ziehen darf, weil Schwarz sonst patt wäre.",
+     "fen": "k7/2K5/8/8/8/8/8/1R6",
+     "leer": true,
+     "pruef": {
+      "patt": "b1"
+     },
+     "targets": null,
+     "antwort": "b7. Dort nimmt der Turm a7 weg, ohne Schach zu geben, b8 und b7 deckt der König c7: Patt. Richtig wäre Ta1, das ist Matt.",
+     "hilfe": [
+      "Welches Feld des schwarzen Königs ist noch frei?",
+      "Der Turm darf dieses Feld nicht ohne Schach wegnehmen."
+     ]
+    },
+    {
+     "frage": "Test: Schwarz spielt 0-0-0. Markiere die Felder, auf denen König und Turm danach stehen.",
+     "fen": "r3kbnr/pppq1ppp/2n1p3/3p1b2/3P1B2/2N1P3/PPPQ1PPP/R3KBNR",
+     "rechte": "KQkq",
+     "zuege": "d4 d5 Nc3 Nc6 Bf4 Bf5 Qd2 Qd7 e3 e6",
+     "targets": [
+      "c1",
+      "d1"
+     ],
+     "antwort": "c8 und d8. 0-0-0 ist die lange Rochade: König nach c8, Turm nach d8.",
+     "hilfe": [
+      "0-0 kurz, 0-0-0 lang.",
+      "Der König zieht zwei Felder zum Turm a8."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Knackpunkt Rochade: Der weiße König hat schon einmal gezogen und ist zurückgekehrt. Markiere die Zielfelder einer Rochade. Wenn keine, drücke „Prüfen“ ohne Markierung.",
+     "fen": "r3k2r/8/8/8/8/8/8/R3K2R",
+     "rechte": "kq",
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "Keine. Wer schon mit dem König gezogen hat, darf nie mehr rochieren, auch wenn der König wieder auf e1 steht.",
+     "hilfe": [
+      "Hat der König schon gezogen?",
+      "Bedingung 1 auf dem Plakat."
+     ]
+    },
+    {
+     "frage": "Knackpunkt en passant: Schwarz hat d7–d5 schon früher gespielt, gerade eben a6–a5. Klicke alle weißen Bauern an, die jetzt en passant schlagen dürfen. Wenn keine, drücke „Prüfen“ ohne Markierung.",
+     "fen": "rnbqkbnr/1pp1pppp/8/p2pP3/8/7P/PPPP1PP1/RNBQKBNR",
+     "zuege": "e4 d5 e5 a6 h3 a5",
+     "pruef": {
+      "epschlaeger": true
+     },
+     "targets": null,
+     "antwort": "Keine. En passant geht nur direkt nach dem Doppelschritt. Der Bauer d5 steht schon länger dort.",
+     "hilfe": [
+      "Welcher Bauer hat gerade gezogen?",
+      "Hat er einen Doppelschritt neben einem weißen Bauern gemacht?"
+     ]
+    },
+    {
+     "frage": "Knackpunkt Patt: Schwarz ist am Zug und steht nicht im Schach. Markiere alle Felder, auf die der schwarze König ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "7k/5Q2/6K1/8/8/8/8/8",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "legal": "h8"
+     },
+     "targets": null,
+     "antwort": "Keins. Schwarz steht nicht im Schach und hat keinen Zug: Patt, also Remis. Weiß hätte mit Dg7 oder Df8 mattsetzen können.",
+     "hilfe": [
+      "Steht der König im Schach?",
+      "Prüfe g8, g7 und h7."
+     ]
+    },
+    {
+     "frage": "Knackpunkt Fesselung: Markiere alle Felder, auf die der Springer e4 ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4r1k1/8/8/8/4N3/8/8/4K3",
+     "leer": true,
+     "pruef": {
+      "legal": "e4"
+     },
+     "targets": null,
+     "antwort": "Keins. Der Turm e8 fesselt den Springer an den König e1. Jeder Springerzug verlässt die e-Linie.",
+     "hilfe": [
+      "Was steht hinter dem Springer?",
+      "Verlässt ein Springerzug die e-Linie?"
+     ]
+    },
+    {
+     "frage": "Knackpunkt Notation: Weiß spielt exd5. Markiere Startfeld und Zielfeld.",
+     "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR",
+     "rechte": "KQkq",
+     "zuege": "e4 d5",
+     "targets": [
+      "e4",
+      "d5"
+     ],
+     "antwort": "e4 und d5. Beim Bauernschlag steht zuerst die Linie, von der der Bauer kommt, dann x und das Zielfeld.",
+     "hilfe": [
+      "Der Buchstabe e nennt die Linie des Bauern.",
+      "x heißt schlagen."
+     ]
+    },
+    {
+     "frage": "Knackpunkt Doppelschach: Schwarz ist am Zug. Klicke alle schwarzen Figuren an, die das Schach abwehren können.",
+     "fen": "4k3/8/8/1B6/8/2q5/8/4R1K1",
+     "zug": "b",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Nur der König e8. Die Dame könnte den Turm e1 schlagen, aber der Läufer b5 gäbe weiter Schach. Beim Doppelschach muss der König ziehen.",
+     "hilfe": [
+      "Welche zwei Figuren geben Schach?",
+      "Kann ein Zug beide Schachs beenden?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Test: Matt mit Dame und König. Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "k7/8/1K6/8/8/8/8/3Q4",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "d8. Die Dame gibt Schach über die 8. Reihe und deckt b8, a7 und b7 deckt der König b6.",
+     "hilfe": [
+      "Der König b6 deckt a7 und b7.",
+      "Welches Feld bleibt dem König a8 noch?"
+     ]
+    },
+    {
+     "frage": "Test, echte Partie: Schwarz hat Sf3+ gespielt. Warum kann Weiß den Springer nicht mit dem Bauern schlagen? Klicke die gefesselte weiße Figur an.",
+     "fen": "2r2rk1/pp3ppp/5nq1/3p4/3Np3/P3Pn1P/1PPQ1PP1/2NR1RK1",
+     "schach": true,
+     "quelle": "Lichess-Puzzle S9LN9 (CC0), https://lichess.org/training/S9LN9",
+     "targets": [
+      "g2"
+     ],
+     "antwort": "Der Bauer g2. Die Dame g6 fesselt ihn an den König g1, deshalb darf er den Springer f3 nicht schlagen. So ging die Partie weiter: Kh1 Sxd2, Schwarz gewann die Dame.",
+     "hilfe": [
+      "Welche schwarze Figur steht auf der g-Linie?",
+      "Was steht zwischen ihr und dem König g1?"
+     ]
+    },
+    {
+     "frage": "Test, echte Partie: Weiß greift mit dem Springer König und Turm gleichzeitig an. Klicke das Feld an, auf das der Springer zieht.",
+     "fen": "8/4pk2/8/4B3/5P1p/5N1r/4K3/8",
+     "leer": true,
+     "quelle": "Lichess-Puzzle fqmVE (CC0), https://lichess.org/training/fqmVE",
+     "targets": [
+      "g5"
+     ],
+     "antwort": "g5. Sg5+ gibt Schach und greift den Turm h3 an. So ging die Partie weiter: Kg6 Sxh3.",
+     "hilfe": [
+      "Der Springer soll mit Schach ziehen.",
+      "Welches Springerfeld greift auch h3 an?"
+     ]
+    },
+    {
+     "frage": "Test, echte Partie: Weiß gewinnt mit einem Spieß den Turm. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "1R6/8/5p2/4p1k1/4P3/5P1K/8/6r1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 46xjk (CC0), https://lichess.org/training/46xjk",
+     "targets": [
+      "g8"
+     ],
+     "antwort": "g8. Tg8+ gibt Schach auf der g-Linie, dahinter steht der Turm g1. So ging die Partie weiter: Kh6 Txg1.",
+     "hilfe": [
+      "Auf welcher Linie stehen König und Turm?",
+      "Der Turm muss vor den König."
+     ]
+    },
+    {
+     "frage": "Test, echte Partie: Schwarz zieht den Läufer mit Schach weg und öffnet der Dame d8 die 8. Reihe. Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "Q1bq1rk1/p5p1/1p2p2p/5pP1/3N1P2/2P4R/P1P1K3/R7",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle qF2SP (CC0), https://lichess.org/training/qF2SP",
+     "targets": [
+      "a6"
+     ],
+     "antwort": "a6. La6+ gibt Schach, danach schlägt die Dame d8 die Dame a8. So ging die Partie weiter: Kd2 Dxa8.",
+     "hilfe": [
+      "Was steht zwischen der Dame d8 und der weißen Dame a8?",
+      "Der Läufer soll mit Schach ziehen."
+     ]
+    },
+    {
+     "frage": "Test, echte Partie: Schwarz setzt in einem Zug matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "rnb1kb1r/pp1p1ppp/2p1p3/4P3/3PnP1q/3B4/PPP3PP/RNBQ1KNR",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle K27v5 (CC0), https://lichess.org/training/K27v5",
+     "targets": [
+      "f2"
+     ],
+     "antwort": "f2. Df2# ist Matt. Der Springer e4 deckt die Dame, der König f1 hat kein freies Feld.",
+     "hilfe": [
+      "Die Dame braucht eine Deckung.",
+      "Welche Felder neben dem König f1 sind frei?"
      ]
     }
    ]

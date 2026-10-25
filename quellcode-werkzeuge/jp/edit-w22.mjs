@@ -1,4 +1,4 @@
-// Woche 22 „Die Fesselung“ (Beginn Gold) als feste Stunde anlegen. Reihenfolge: edit-w1-w3.mjs bis edit-w21.mjs, dann diese Datei.
+// Woche 22 „Die Fesselung“ (Beginn Taktik in Silber) als feste Stunde anlegen. Reihenfolge: edit-w1-w3.mjs bis edit-w21.mjs, dann diese Datei.
 // Zugfelder werden in build-jahresplan.mjs über „pruef“ berechnet. © Dr. Edmund Bruns
 import fs from 'node:fs';import {Chess} from '../dist/assets/chess.mjs';import path from 'node:path';import {fileURLToPath} from 'node:url';
 const here=path.dirname(fileURLToPath(import.meta.url)),file=path.join(here,'fixed-bronze.mjs');
@@ -54,7 +54,7 @@ F[22]={thema:'Die Fesselung',
  phasen:[
  {name:'Einstieg',titel:'Wer steht auf der Linie?',
   ablauf:['Stopp-Signal. Am Lehrbrett W1 bis W6 aufwärmen: Linien und Diagonalen von Läufer, Turm und Dame, dazu Angreifen und Decken.',
-   'Bei W2 fragen: „Der Springer c6 ist frei. Darf er ziehen?“ Kurz vermuten lassen, nicht auflösen. Ziel nennen: „Heute lernt ihr die Fesselung kennen. Sie ist das erste Taktikmotiv von Gold.“'],
+   'Bei W2 fragen: „Der Springer c6 ist frei. Darf er ziehen?“ Kurz vermuten lassen, nicht auflösen. Ziel nennen: „Heute lernt ihr die Fesselung kennen. Sie ist das erste Taktikmotiv in Silber.“'],
   kinder:'Ich erkenne, welche Figuren auf einer Linie zwischen Angreifer und König stehen.',
   links:[{art:'feld',label:'Lehrbrett: Aufwärmen W1 bis W6',set:'W'}]},
  {name:'Erarbeitung',titel:'Gefesselt an den König oder an die Dame',
