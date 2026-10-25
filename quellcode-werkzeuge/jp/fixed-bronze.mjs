@@ -27,7 +27,8 @@ export const URLS={
  "diplomOnline": "https://ludgerus-schachdiplom.netlify.app/",
  "routenplaner": "https://www.youtube.com/watch?v=b9sWS-2tGws",
  "achtBauern": "https://www.youtube.com/watch?v=XQmXNyh_bVw",
- "mattChallenge": "https://www.youtube.com/watch?v=pTEy2s2dwNA"
+ "mattChallenge": "https://www.youtube.com/watch?v=pTEy2s2dwNA",
+ "schachBingo": "https://www.youtube.com/watch?v=CDEEqAtAKdU"
 };
 export const FIXED={
  "1": {
@@ -9977,6 +9978,581 @@ export const FIXED={
      "hilfe": [
       "Greift die Dame h1 an?",
       "Hat der König ein freies Feld?"
+     ]
+    }
+   ]
+  }
+ },
+ "18": {
+  "thema": "Weihnachtsturnier",
+  "lernziel": "Ich kann ein Turnier fair zu Ende spielen.",
+  "leitfrage": "Wie spiele ich mehrere Partien hintereinander ruhig, fair und bis zum Schluss?",
+  "vorwissen": "Fairplay (Woche 9), Aufsteiger-Runde (Woche 10), Rochade, en passant, Patt und Damenmatt (Woche 14 bis 17).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Turnierform Rutschsystem und Wertung ohne Rangliste aus dem Praxiswissen (Spielphasen organisieren), FIDE-Regeln in kindgerechter Form (berührt, geführt; Patt; Rochade; en passant). Brettaufgaben eigene Aufgaben, alle Lösungen mit chess.js nachgerechnet",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Schnellrunde und persönliches Turnierziel",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6 eine Schnellrunde zu Matt, Damenmatt, Schach abwehren, ungedeckten Figuren, Rochade und Patt. Die Kinder zeigen zuerst mit dem Finger am eigenen Brett.",
+     "Jedes Kind wählt ein persönliches Ziel und schreibt es auf seine Turnierkarte, zum Beispiel „Ich prüfe vor jedem Zug, was mein Gegner droht“. Ziel nennen: „Heute spielt ihr ein Weihnachtsturnier. Gewonnen hat die ganze AG, wenn viele Partien fair zu Ende gespielt werden.“"
+    ],
+    "kinder": "Ich kenne mein persönliches Ziel für das Turnier.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Schnellrunde W1 bis W6",
+      "set": "W"
+     },
+     {
+      "art": "druck",
+      "label": "Turnierkarten (vier pro Blatt)",
+      "was": "turnierkarte"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Turnierablauf und Turnierregeln",
+    "ablauf": [
+     "Plakat „Sternenbaum“ aufhängen. Rutschsystem mit zwei Paaren vormachen: Bretter nummerieren, Brett 1 ist oben. Wer gewinnt, rückt ein Brett nach oben, wer verliert, eins nach unten. Remis oder nicht beendet: Weiß rückt nach oben, Schwarz nach unten. Jede Runde dauert 8 Minuten.",
+     "Am Lehrbrett E1 bis E6 die Turnierregeln: berührt, geführt; König nie neben König; Patt ist remis; im Schach erst das Schach abwehren; vor einem Remisangebot selbst nach Matt suchen; bei Rundenende zählt nur, was auf dem Brett steht.",
+     "Merksatz: „Hand geben, leise spielen, berührt, geführt, Ergebnis melden, Figuren aufbauen.“ Frage: „Warum rückt bei Remis Weiß nach oben?“ (Damit alle wissen, wohin, ohne Streit.)"
+    ],
+    "kinder": "Ich erkläre den Turnierablauf und die wichtigsten Turnierregeln.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Sternenbaum und Turnierregeln",
+      "was": "sternbaum"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Turnierregeln E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Turnierrunden 1 und 2",
+    "ablauf": [
+     "Runde 1 und Runde 2 im Rutschsystem, je 8 Minuten. Vor jeder Partie Hand geben, danach Ergebnis auf der Turnierkarte eintragen. In der zweiten Runde wechseln die Farben. Danach wechseln die Rollen auch beim Melden: Wer in Runde 1 das Ergebnis gemeldet hat, baut in Runde 2 die Figuren auf.",
+     "Jede regelgerecht beendete Partie bringt einen Stern am Sternenbaum. Wer früh fertig ist, löst die Weihnachtsrätsel A1 bis A6."
+    ],
+    "kinder": "Ich spiele meine Partien fair zu Ende und trage das Ergebnis ein.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Weihnachtsrätsel",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Weihnachtsrätsel A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Halbzeit-Stopp: Streitfälle klären",
+    "ablauf": [
+     "Stopp-Signal. Frage an alle: „Was droht dein Gegner gerade?“ Dann am Lehrbrett S1 bis S6 typische Streitfälle aus Turnieren: Ist das wirklich Matt? Patt ist kein Sieg. Rochade im Schach. En passant nur sofort. Das übersehene Schach.",
+     "Bei jedem Fall nachfragen: „Woran erkennst du, wer recht hat?“ Regel: Bei Streit Hand heben, die Lehrkraft entscheidet, die Stellung bleibt stehen."
+    ],
+    "kinder": "Ich kläre einen Streitfall mit der passenden Regel.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Streitfälle S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Runde 3 und Schiedsrichter-Zettel",
+    "ablauf": [
+     "Runde 3 im Rutschsystem, 8 Minuten. Du beobachtest mit der Turnierkarte im Kopf: Hand geben, berührt, geführt, Partie zu Ende spielen, Ergebnis melden.",
+     "Wer fertig ist, löst den Schiedsrichter-Zettel L1 bis L6 allein. Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich entscheide sechs Turnierfälle ohne Hilfe richtig.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel: Schiedsrichter",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Sterne zählen, Weihnachts-Simultan, Aufräumen",
+    "ablauf": [
+     "Sterne am Sternenbaum zählen: Wie viele Partien hat die AG heute fair beendet? Jedes Kind nennt einen guten Zug seines Gegners (Zug des Tages). Keine Rangliste vorlesen.",
+     "Minispiel Weihnachts-Simultan, 5 Minuten: Die Lehrkraft spielt an drei Brettern gegen Teams, die Kinder beraten sich leise. Weitere Spielidee der Schulschachstiftung: Schach Bingo (Video, vorher selbst ansehen). Aufräum-Ritual. Ausblick: Nach den Ferien lernt ihr, Züge aufzuschreiben."
+    ],
+    "kinder": "Ich nenne einen guten Zug meines Gegners.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Sternenbaum und Turnierregeln",
+      "was": "sternbaum"
+     },
+     {
+      "art": "video",
+      "label": "Spielidee „Schach Bingo“ der Schulschachstiftung (Video)",
+      "url": "https://www.youtube.com/watch?v=CDEEqAtAKdU"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Unsichere Kinder spielen Runde 1 am untersten Brett neben dir. Die Turnierkarte mit den Regeln liegt neben dem Brett.",
+   "zusatz": "Wer zwei Partien gewonnen hat, spielt in Runde 3 mit Vorgabe: ohne Dame oder nur mit halber Zeit. Oder: Die eigene Partie aufschreiben, so gut es geht.",
+   "kuerzen": "Nur zwei Turnierrunden spielen und die Erarbeitung auf E1, E3 und E4 kürzen. Lerncheck, Sterne zählen und Aufräumen bleiben, das Simultan entfällt."
+  },
+  "nachher": "Wer hat sich an „berührt, geführt“ gehalten, wer nicht? Welche Streitfälle gab es? Wer hat seine Partie vor Rundenende aufgegeben oder abgebrochen? Das greifst du in Woche 19 bei der Notation und in Woche 20 bei den Turnierregeln mit Schachuhr wieder auf.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Weiß setzt in einem Zug matt. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a8. Grundreihenmatt: Die eigenen Bauern sperren den schwarzen König ein.",
+     "hilfe": [
+      "Die eigenen Bauern sperren den König ein.",
+      "Der Turm muss auf die 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Damenmatt: Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "7k/8/6K1/8/8/8/8/4Q3",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "e8. Die Dame gibt Schach über die 8. Reihe, der König g6 deckt g7 und h7.",
+     "hilfe": [
+      "Der König g6 deckt g7 und h7.",
+      "Die Dame muss Schach geben."
+     ]
+    },
+    {
+     "frage": "Weiß steht im Schach. Klicke alle weißen Figuren an, mit denen Weiß das Schach abwehren kann.",
+     "fen": "4r1k1/8/8/8/8/2N5/8/4KB2",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Der König e1 (wegziehen), der Springer c3 (Se2 oder Se4 dazwischen) und der Läufer f1 (Le2 dazwischen).",
+     "hilfe": [
+      "Wegziehen, dazwischenstellen oder schlagen.",
+      "Wer kann auf e2, e3 oder e4?"
+     ]
+    },
+    {
+     "frage": "Klicke alle schwarzen Figuren an, die angegriffen und nicht gedeckt sind.",
+     "fen": "r5k1/pp3ppp/n7/1B2b3/8/5N2/PP3PPP/4K2R",
+     "pruef": {
+      "haengt": "b"
+     },
+     "targets": null,
+     "antwort": "Der Läufer e5. Der Springer f3 greift ihn an, und keine schwarze Figur deckt ihn. Den Springer a6 deckt der Bauer b7.",
+     "hilfe": [
+      "Welche weißen Figuren greifen an?",
+      "Wer deckt die angegriffene Figur?"
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der weiße König mit einer Rochade ziehen darf.",
+     "fen": "r3k2r/8/8/8/2b5/8/8/R3K2R",
+     "rechte": "KQkq",
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "Nur c1. Kurz geht nicht, weil der Läufer c4 das Feld f1 angreift. Über ein angegriffenes Feld darf der König nicht ziehen.",
+     "hilfe": [
+      "Über welche Felder zieht der König?",
+      "Wen greift der Läufer c4 an?"
+     ]
+    },
+    {
+     "frage": "Achtung Patt: Klicke alle Felder an, auf die die Dame nicht ziehen darf.",
+     "fen": "7k/8/6K1/8/8/8/8/1Q6",
+     "leer": true,
+     "pruef": {
+      "patt": "b1"
+     },
+     "targets": null,
+     "antwort": "a2 und b3. Von dort deckt die Dame g8, der König g6 deckt g7 und h7. Kein Schach und kein Zug: Patt.",
+     "hilfe": [
+      "Welcher Damenzug nimmt dem König das letzte Feld, ohne Schach zu geben?",
+      "Der König g6 deckt g7 und h7."
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Berührt, geführt: Du hast den Springer b1 berührt. Markiere alle Felder, auf die er jetzt ziehen muss.",
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR",
+     "leer": true,
+     "pruef": {
+      "legal": "b1"
+     },
+     "targets": null,
+     "antwort": "a3 und c3. Berührt, geführt: Wer eine eigene Figur berührt, muss mit ihr ziehen, wenn sie einen erlaubten Zug hat.",
+     "hilfe": [
+      "Wer eine eigene Figur berührt, muss sie ziehen, wenn es geht.",
+      "Springer: zwei geradeaus, eins zur Seite."
+     ]
+    },
+    {
+     "frage": "Ein Kind will mit dem König nach vorn. Markiere alle Felder, auf die der weiße König ziehen darf.",
+     "fen": "8/8/4k3/8/4K3/8/8/8",
+     "leer": true,
+     "pruef": {
+      "legal": "e4"
+     },
+     "targets": null,
+     "antwort": "d4, d3, e3, f3 und f4. Die Felder d5, e5 und f5 greift der schwarze König an. Ein König darf nie neben den anderen König.",
+     "hilfe": [
+      "Ein König darf nie neben den anderen König.",
+      "Welche Felder greift der König e6 an?"
+     ]
+    },
+    {
+     "frage": "Weiß ist am Zug. Klicke die Figur an, die dem weißen König Schach gibt. Wenn keine, drücke „Prüfen“ ohne Markierung.",
+     "fen": "8/8/8/8/8/5k2/5p2/5K2",
+     "pruef": {
+      "schachgeber": true
+     },
+     "targets": null,
+     "antwort": "Keine. Weiß steht nicht im Schach und kann nicht ziehen: Patt. Die Partie ist remis, beide bekommen einen halben Punkt.",
+     "hilfe": [
+      "Steht der König im Schach?",
+      "Hat Weiß noch einen erlaubten Zug?"
+     ]
+    },
+    {
+     "frage": "Erst das Schach abwehren: Markiere alle Felder, auf die der weiße König ziehen kann. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "k7/8/8/8/1b6/8/5PPP/4K3",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "d1, e2 und f1. Das Feld d2 greift der Läufer an. Keine andere weiße Figur kann dazwischen, also muss der König ziehen.",
+     "hilfe": [
+      "Woher kommt das Schach?",
+      "Kann eine andere Figur dazwischen?"
+     ]
+    },
+    {
+     "frage": "Dein Gegner bietet Remis an. Prüfe zuerst: Klicke alle Felder an, auf denen Weiß in einem Zug mattsetzt. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "6k1/r4ppp/8/8/8/8/1Q3PPP/6K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "b8. Die Dame gibt Schach über die 8. Reihe, der Turm a7 kann nicht dazwischen. Vor einem Remis immer zuerst nach Matt suchen.",
+     "hilfe": [
+      "Suche Schachgebote.",
+      "Kann der König fliehen?"
+     ]
+    },
+    {
+     "frage": "Rundenende! Es zählt, was auf dem Brett steht. Klicke alle schwarzen Figuren an, die Weiß mit Gewinn schlagen kann.",
+     "fen": "r3k3/pp3ppp/2n5/3q4/3N4/2N5/PP3PPP/4K2R",
+     "pruef": {
+      "gewinn": "w"
+     },
+     "targets": null,
+     "antwort": "Die Dame d5. Der Springer c3 schlägt sie, und keine schwarze Figur deckt d5. Bei Rundenende zählt nur, was auf dem Brett steht.",
+     "hilfe": [
+      "Welche schwarzen Figuren stehen auf einem Feld, das Weiß angreift?",
+      "Wer kann zurückschlagen?"
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Weiß setzt in einem Zug matt. Klicke das Feld an, auf das Weiß zieht.",
+     "fen": "7k/4P3/6K1/8/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "e8. Der Bauer wandelt um, Dame oder Turm geben Schach über die 8. Reihe. Der König g6 deckt g7 und h7.",
+     "hilfe": [
+      "Der Bauer wird umgewandelt.",
+      "Der König g6 deckt g7 und h7."
+     ]
+    },
+    {
+     "frage": "Klicke alle schwarzen Figuren an, die Weiß mit Gewinn schlagen kann.",
+     "fen": "2r3k1/5ppp/p7/1n6/8/2B5/1Q3PPP/6K1",
+     "pruef": {
+      "gewinn": "w"
+     },
+     "targets": null,
+     "antwort": "Der Bauer g7. Der Läufer c3 schlägt ihn, und der König darf nicht zurückschlagen, weil die Dame b2 dahinter g7 angreift. Den Springer b5 deckt der Bauer a6.",
+     "hilfe": [
+      "Welche Figuren stehen ungedeckt?",
+      "Zähle die Figurenwerte."
+     ]
+    },
+    {
+     "frage": "Klicke alle weißen Figuren an, die angegriffen und nicht gedeckt sind.",
+     "fen": "r1b1k3/ppp2ppp/8/4q3/8/2N2B2/P1P3PP/R5K1",
+     "pruef": {
+      "haengt": "w"
+     },
+     "targets": null,
+     "antwort": "Der Springer c3. Die Dame e5 greift ihn an, und keine weiße Figur deckt ihn, seit der Bauer b2 fehlt.",
+     "hilfe": [
+      "Was greift die Dame e5 an?",
+      "Wer deckt die weißen Figuren?"
+     ]
+    },
+    {
+     "frage": "Klicke alle Felder an, auf denen die Dame pattsetzen würde.",
+     "fen": "k7/8/1K6/8/8/8/8/3Q4",
+     "leer": true,
+     "pruef": {
+      "patt": "d1"
+     },
+     "targets": null,
+     "antwort": "d6. Von dort deckt die Dame b8, der König b6 deckt a7 und b7. Kein Schach und kein Zug: Patt.",
+     "hilfe": [
+      "Der König b6 deckt a7 und b7.",
+      "Welcher Damenzug deckt b8, ohne Schach zu geben?"
+     ]
+    },
+    {
+     "frage": "Klicke alle weißen Bauern an, die jetzt en passant schlagen dürfen. Wenn keiner, drücke „Prüfen“ ohne Markierung.",
+     "fen": "rnbqkbnr/1pp1pppp/8/p2pP3/2P5/8/PP1P1PPP/RNBQKBNR",
+     "ep": "d6",
+     "zuege": "e4 a6 e5 a5 c4 d5",
+     "pruef": {
+      "epschlaeger": true
+     },
+     "targets": null,
+     "antwort": "Nur e5. Der Bauer d7 hat gerade einen Doppelschritt nach d5 gemacht, e5 steht direkt daneben. Der Bauer c4 steht auf der 4. Reihe und darf nicht en passant schlagen.",
+     "hilfe": [
+      "Welcher schwarze Bauer hat gerade einen Doppelschritt gemacht?",
+      "Wer steht direkt daneben?"
+     ]
+    },
+    {
+     "frage": "Matt in einem Zug mit der Dame: Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "5rk1/5p1p/5PpQ/8/8/8/8/6K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "g7. Die Dame gibt Schach und ist vom Bauern f6 gedeckt. Der König hat kein Feld.",
+     "hilfe": [
+      "Die Dame steht schon nah am König.",
+      "Wer deckt die Dame?"
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Was droht dein Gegner? Schwarz ist am Zug. Klicke alle Felder an, auf denen Schwarz in einem Zug mattsetzt.",
+     "fen": "r5k1/5ppp/8/8/8/8/5PPP/6K1",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a1. Der schwarze Turm gibt Schach über die 1. Reihe, die eigenen Bauern sperren den weißen König ein. Diese Drohung muss Weiß jetzt verhindern.",
+     "hilfe": [
+      "Die weißen Bauern sperren den König ein.",
+      "Die 1. Reihe ist offen."
+     ]
+    },
+    {
+     "frage": "Ein Kind ruft „Matt!“. Markiere alle Felder, auf die der schwarze König ziehen kann. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4R1k1/5pp1/7p/8/8/8/8/6K1",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "h7. Der Bauer h6 hat dieses Feld frei gemacht. Also kein Matt, die Partie geht weiter.",
+     "hilfe": [
+      "Prüfe alle Nachbarfelder von g8.",
+      "Der Bauer h6 hat ein Feld frei gemacht."
+     ]
+    },
+    {
+     "frage": "Ein Kind sagt: „Gewonnen!“ Schwarz ist am Zug. Klicke die Figur an, die dem schwarzen König Schach gibt. Wenn keine, drücke „Prüfen“ ohne Markierung.",
+     "fen": "7k/5K2/6Q1/8/8/8/8/8",
+     "zug": "b",
+     "pruef": {
+      "schachgeber": true
+     },
+     "targets": null,
+     "antwort": "Keine. Schwarz steht nicht im Schach und kann nicht ziehen: Patt. Das ist kein Sieg, sondern remis.",
+     "hilfe": [
+      "Steht der König im Schach?",
+      "Kann Schwarz ziehen?"
+     ]
+    },
+    {
+     "frage": "Darf Weiß jetzt rochieren? Markiere alle Felder, auf die der König mit einer Rochade ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4r1k1/8/8/8/8/8/8/R3K2R",
+     "rechte": "KQ",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "Keins. Der König steht im Schach. Im Schach ist keine Rochade erlaubt.",
+     "hilfe": [
+      "Steht der König im Schach?",
+      "Rochade ist kein Mittel gegen Schach."
+     ]
+    },
+    {
+     "frage": "Streitfall en passant: Klicke alle weißen Bauern an, die jetzt en passant schlagen dürfen. Wenn keiner, drücke „Prüfen“ ohne Markierung.",
+     "fen": "rnbqkbnr/1pp1p1pp/p7/3pPp2/8/7P/PPPP1PP1/RNBQKBNR",
+     "zuege": "e4 d5 e5 f5 h3 a6",
+     "pruef": {
+      "epschlaeger": true
+     },
+     "targets": null,
+     "antwort": "Keiner. Schwarz hat f7–f5 gespielt, danach kamen h3 und a6. En passant geht nur im direkt folgenden Zug.",
+     "hilfe": [
+      "Wann hat Schwarz den Doppelschritt gemacht?",
+      "En passant geht nur im direkt folgenden Zug."
+     ]
+    },
+    {
+     "frage": "Das übersehene Schach: Weiß steht im Schach. Klicke alle weißen Figuren an, die das Schach abwehren können.",
+     "fen": "6k1/8/8/8/1b6/8/5PPP/1N2K2R",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Der König e1 (wegziehen) und der Springer b1 (Sc3 oder Sd2 dazwischen). Wer das Schach übersieht und anders zieht, macht einen illegalen Zug, er wird zurückgenommen.",
+     "hilfe": [
+      "Woher kommt das Schach?",
+      "Wegziehen, dazwischenstellen oder schlagen."
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Weiß setzt in einem Zug matt. Klicke alle Felder an, auf die die Dame dafür ziehen kann.",
+     "fen": "2k5/8/2K5/8/8/8/8/5Q2",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "f8. Die Dame gibt Schach über die 8. Reihe, der König c6 deckt b7, c7 und d7.",
+     "hilfe": [
+      "Die Dame muss Schach geben.",
+      "Der König c6 deckt b7, c7 und d7."
+     ]
+    },
+    {
+     "frage": "Klicke alle Felder an, auf denen die Dame pattsetzen würde.",
+     "fen": "7k/5K2/8/8/8/8/8/4Q3",
+     "leer": true,
+     "pruef": {
+      "patt": "e1"
+     },
+     "targets": null,
+     "antwort": "e4 und b1. Von dort deckt die Dame h7, der König f7 deckt g7 und g8. Kein Schach: Patt.",
+     "hilfe": [
+      "Der König f7 deckt g7 und g8.",
+      "Welcher Damenzug nimmt h7, ohne Schach zu geben?"
+     ]
+    },
+    {
+     "frage": "Weiß steht im Schach. Klicke alle weißen Figuren an, die das Schach abwehren können.",
+     "fen": "3qk3/8/8/8/8/4B3/2P2PPP/3K1N2",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Der Läufer e3 (Ld2 oder Ld4 dazwischen), der König d1 (wegziehen) und der Springer f1 (Sd2 dazwischen).",
+     "hilfe": [
+      "Woher kommt das Schach?",
+      "Wer kann dazwischen oder schlagen?"
+     ]
+    },
+    {
+     "frage": "Klicke alle schwarzen Figuren an, die Weiß mit Gewinn schlagen kann.",
+     "fen": "4k3/1p3ppp/8/3n4/8/2BR4/5PPP/6K1",
+     "pruef": {
+      "gewinn": "w"
+     },
+     "targets": null,
+     "antwort": "Der Springer d5 und der Bauer g7. Beide sind angegriffen und nicht gedeckt.",
+     "hilfe": [
+      "Welche Figuren greift Weiß an?",
+      "Wer ist gedeckt?"
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der weiße König mit einer Rochade ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "1r2k3/8/8/8/8/8/8/R3K2R",
+     "rechte": "KQ",
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "g1 und c1. Der Turm b8 greift nur b1 an. Über b1 zieht bei der langen Rochade nur der Turm, nicht der König. Das ist erlaubt.",
+     "hilfe": [
+      "Über welche Felder zieht der König?",
+      "Wen greift der Turm b8 an?"
+     ]
+    },
+    {
+     "frage": "Ist das Matt? Markiere alle Felder, auf die der schwarze König ziehen kann. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "1R4k1/5ppp/8/8/8/8/8/6K1",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "Keins. Der Turm gibt Schach, die eigenen Bauern sperren den König ein: Matt.",
+     "hilfe": [
+      "Steht der König im Schach?",
+      "Kann ein Bauer vorher ein Feld frei machen?"
      ]
     }
    ]

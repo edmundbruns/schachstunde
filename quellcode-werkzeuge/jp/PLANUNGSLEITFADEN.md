@@ -78,7 +78,7 @@ Spiele und Minispiele der Schulschachstiftung, passend zum Plan:
 | 8, 17 | [Matt-Challenge](https://www.youtube.com/watch?v=pTEy2s2dwNA) |
 | 12 | [Fehlersuche](https://www.youtube.com/watch?v=7OT351ZFB3o) |
 | 28, 33 | [Das Treppenmatt](https://www.youtube.com/watch?v=4fmT6CoCKRw) |
-| Spielstunden | [Minischach](https://www.youtube.com/watch?v=i_DoAy9dack), [Schach Bingo](https://www.youtube.com/watch?v=CDEEqAtAKdU), [Schachmemorie](https://www.youtube.com/watch?v=oXctsV-KUis) |
+| 18, Spielstunden | [Minischach](https://www.youtube.com/watch?v=i_DoAy9dack), [Schach Bingo](https://www.youtube.com/watch?v=CDEEqAtAKdU), [Schachmemorie](https://www.youtube.com/watch?v=oXctsV-KUis) |
 
 Vor dem Einbau Titel und Beschreibung prüfen (yt-dlp mit player_client=tv_embedded liefert die Beschreibung): Passt es genau zum Lernziel der Stunde?
 Für Themen ohne passendes Video der Schulschachstiftung (z. B. Rochade, en passant, Taktik) eigene Erklärung am Lehrbrett oder geprüfte andere Quelle.
