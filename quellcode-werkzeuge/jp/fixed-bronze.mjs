@@ -18641,6 +18641,611 @@ export const FIXED={
     }
    ]
   }
+ },
+ "33": {
+  "thema": "Matt mit einem Turm",
+  "lernziel": "Ich kann mit König und Turm mattsetzen.",
+  "leitfrage": "Wie arbeiten König und Turm zusammen, damit der gegnerische König am Rand mattgesetzt wird?",
+  "vorwissen": "Matt mit Dame und König (Woche 17), Matt mit zwei Türmen (Woche 28), Patt (Woche 16).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Kastenmethode für König und Turm in kindgerechter Form, Lichess-Puzzles QKwbJ, UDaGv und QPQiC (CC0, Thema „rookEndgame“, über die Lichess-Schnittstelle abgerufen), übrige Aufgaben eigene Aufgaben. Kasten, sichere Turmzüge, Annäherung, Zwingzüge, Matt und Patt mit chess.js berechnet",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Ein Turm sperrt, der König hilft",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6: Treppenmatt mit zwei Türmen wiederholen, Fluchtfelder neben einem Turm, den Kasten zeigen, das Mattbild mit einem Turm, die Opposition und eine Pattfalle.",
+     "Bei W1 fragen: „Mit zwei Türmen braucht ihr den König nicht. Was ändert sich, wenn nur ein Turm da ist?“ Ziel nennen: „Heute setzt ihr mit König und Turm matt.“"
+    ],
+    "kinder": "Ich erkenne den Kasten, in dem der Turm den König einsperrt.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Die Kastenmethode in vier Schritten",
+    "ablauf": [
+     "Plakat „Matt mit einem Turm“ aufhängen. Am Lehrbrett E1: das Mattbild. Die Könige stehen sich gegenüber, der Turm gibt am Rand Schach.",
+     "E2: Der Turm verkleinert den Kasten, ohne dass der König ihn schlagen kann. E3: Kann der Turm nicht weiter, kommt der eigene König näher. E4: Greift der König den Turm an, flieht er weit weg auf derselben Linie.",
+     "E5: Der Zwingzug. Der Turm nimmt dem König seine Felder, dann muss er in die Opposition. E6: eine echte Partie. Frage: „Warum braucht der Turm hier die Hilfe des Königs?“ Merksatz: „Turm sperrt, König kommt, Turm schließt den Kasten.“"
+    ],
+    "kinder": "Ich erkläre die Schritte der Kastenmethode.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Matt mit einem Turm",
+      "was": "einturm"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Kastenmethode E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Turmmatt zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A hat König und Turm, Kind B nur den König in der Brettmitte. Kind A setzt mit der Kastenmethode matt, Kind B zählt die Züge und achtet auf Patt. Danach wechseln die Rollen. Wer schafft es in weniger als 20 Zügen?",
+     "Allein: Arbeitsblatt A1 bis A6, darunter eine echte Aufgabe aus einer Lichess-Partie. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich setze mit König und Turm matt.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Matt mit einem Turm",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6: Turm zu nah am König, Patt in der Ecke, Schach zur falschen Zeit, den Kasten wieder öffnen, den Turm mit dem König decken.",
+     "Bei jeder Aufgabe fragen: „Woran erkennst du, dass der Kasten jetzt größer geworden ist?“"
+    ],
+    "kinder": "Ich vermeide Patt und lasse meinen Turm nicht ungedeckt.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, fragst du einige am Brett: „Wie groß ist der Kasten, und wie wird er kleiner?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich setze mit König und Turm ohne Hilfe matt.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Kasten-Rennen“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Beide bauen dieselbe Stellung auf (weißer König e1, Turm a1, schwarzer König e5). Wer setzt in weniger Zügen matt? Der Partner spielt den schwarzen König und zählt. Danach wechseln die Rollen.",
+     "Rückblick: „Was ist schwerer, Damenmatt oder Turmmatt, und warum?“ Aufräum-Ritual. Ausblick: Nächstes Mal geht es um Bauernendspiele und die Opposition."
+    ],
+    "kinder": "Ich setze im Minispiel mit der Kastenmethode matt.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Matt mit einem Turm",
+      "was": "einturm"
+     },
+     {
+      "art": "blatt",
+      "label": "Mattübungen auf Lichess (online, „Piece Checkmates“)",
+      "url": "https://lichess.org/practice"
+     },
+     {
+      "art": "blatt",
+      "label": "Ludgerus-Schachdiplom online (Gold 4)",
+      "url": "https://ludgerus-schachdiplom.netlify.app/"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Den Kasten mit vier Stiften oder Bauernsteinen auf dem Brett markieren. Nach jedem Turmzug zählen die Kinder die Felder im Kasten.",
+   "zusatz": "Die Mattführung aus einer Ecke heraus und gegen den König in der Brettmitte üben. Oder mit Uhr: In zwei Minuten mattsetzen.",
+   "kuerzen": "Die Partnerübung auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
+  },
+  "nachher": "Wer setzt schon sicher matt? Wer gibt nur Schach, ohne den Kasten zu verkleinern? Diese Kinder üben in Woche 34 vor dem Bauernendspiel das Turmmatt noch einmal am Lehrbrett.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Wiederholung Woche 28: Klicke alle Felder an, auf denen ein Turm mattsetzt.",
+     "fen": "6k1/R7/8/8/8/8/8/1R4K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "b8. Der Turm a7 sperrt die 7. Reihe, der Turm b1 setzt auf der 8. Reihe matt.",
+     "hilfe": [
+      "Welcher Turm sperrt?",
+      "Der andere gibt Schach am Rand."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der schwarze König ziehen darf.",
+     "fen": "8/8/8/3k4/8/8/4R3/K7",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "legal": "d5"
+     },
+     "targets": null,
+     "antwort": "c4, c5, c6, d4 und d6. Die e-Linie greift der Turm an.",
+     "hilfe": [
+      "Welche Linie greift der Turm e2 an?",
+      "Prüfe alle Nachbarfelder von d5."
+     ]
+    },
+    {
+     "frage": "Der Kasten: Markiere alle Felder, in denen der Turm den schwarzen König einsperrt.",
+     "fen": "8/1k6/8/3R4/8/8/8/K7",
+     "leer": true,
+     "targets": [
+      "a6",
+      "a7",
+      "a8",
+      "b6",
+      "b7",
+      "b8",
+      "c6",
+      "c7",
+      "c8"
+     ],
+     "antwort": "a6, a7, a8, b6, b7, b8, c6, c7 und c8. Der Turm sperrt die d-Linie und die 5. Reihe, der König bleibt in diesem Kasten mit 9 Feldern.",
+     "hilfe": [
+      "Welche Linie und welche Reihe sperrt der Turm?",
+      "Der Kasten liegt auf der Seite des Königs."
+     ]
+    },
+    {
+     "frage": "Das Mattbild: Klicke alle Felder an, auf denen der Turm mattsetzt.",
+     "fen": "3k4/8/3K4/8/8/8/8/7R",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "h8. Die Könige stehen sich gegenüber, der Turm gibt Schach über die 8. Reihe. Der weiße König deckt c7, d7 und e7.",
+     "hilfe": [
+      "Wer deckt die 7. Reihe?",
+      "Der Turm braucht die 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Opposition: Klicke das Feld an, auf das der weiße König zieht, damit sich die Könige direkt gegenüberstehen.",
+     "fen": "3k4/8/8/3K4/8/8/8/7R",
+     "leer": true,
+     "targets": [
+      "d6"
+     ],
+     "antwort": "d6. Zwischen den Königen ist dann genau ein Feld frei. Jetzt kann der Turm auf der 8. Reihe mattsetzen.",
+     "hilfe": [
+      "Auf welcher Linie steht der schwarze König?",
+      "Ein Feld Abstand zwischen den Königen."
+     ]
+    },
+    {
+     "frage": "Pattfalle: Klicke alle Felder an, auf die der Turm nicht ziehen darf, weil Schwarz sonst patt wäre.",
+     "fen": "7k/5K2/8/8/8/8/8/6R1",
+     "leer": true,
+     "pruef": {
+      "patt": "g1"
+     },
+     "targets": null,
+     "antwort": "g7. Der Turm deckt dann h7 und g8 ohne Schach, g7 deckt der König f7: Patt. Richtig ist Th1, das ist Matt.",
+     "hilfe": [
+      "Welches Feld bleibt dem König h8?",
+      "Nimmt der Turm es ohne Schach weg, ist es Patt."
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "1. Das Mattbild: Klicke alle Felder an, auf denen der Turm mattsetzt.",
+     "fen": "6k1/8/6K1/8/8/8/8/R7",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a8. Die Könige stehen sich gegenüber, der Turm setzt am Rand matt.",
+     "hilfe": [
+      "Wer deckt f7, g7 und h7?",
+      "Welche Reihe braucht der Turm?"
+     ]
+    },
+    {
+     "frage": "2. Kasten verkleinern: Klicke das Feld an, auf das der Turm zieht, damit der Kasten kleiner wird und der Turm sicher steht.",
+     "fen": "8/8/2k5/8/8/3R4/8/6K1",
+     "leer": true,
+     "targets": [
+      "d4"
+     ],
+     "antwort": "d4. Der Kasten schrumpft von 15 auf 12 Felder. Auf d5 würde der König den Turm schlagen.",
+     "hilfe": [
+      "Zähle die Felder im Kasten.",
+      "Kann der König den Turm danach schlagen?"
+     ]
+    },
+    {
+     "frage": "3. Der König kommt: Der Turm kann nicht weiter. Markiere alle Felder, auf denen der weiße König näher an den schwarzen König kommt.",
+     "fen": "8/8/2k5/8/3R4/8/8/6K1",
+     "leer": true,
+     "targets": [
+      "f2",
+      "g2"
+     ],
+     "antwort": "f2 und g2. Der König muss mithelfen, sonst kann der Turm den Kasten nicht schließen.",
+     "hilfe": [
+      "Zähle die Schritte bis zum schwarzen König.",
+      "Welche Züge verkürzen den Abstand?"
+     ]
+    },
+    {
+     "frage": "4. Turm in Gefahr: Der König greift den Turm g6 an. Markiere alle Felder, auf die der Turm weit weg ziehen kann und die 6. Reihe weiter sperrt.",
+     "fen": "8/5k2/6R1/8/8/8/8/K7",
+     "leer": true,
+     "targets": [
+      "c6",
+      "b6",
+      "a6"
+     ],
+     "antwort": "a6, b6 und c6. Der Turm bleibt auf der 6. Reihe und ist weit genug vom König entfernt.",
+     "hilfe": [
+      "Der Turm bleibt auf der 6. Reihe.",
+      "Mindestens drei Linien Abstand."
+     ]
+    },
+    {
+     "frage": "5. Zwingzug: Weiß setzt in zwei Zügen matt. Klicke das Feld an, auf das der Turm zieht, ohne Schach zu geben.",
+     "fen": "2k5/8/1K6/8/8/8/8/R7",
+     "leer": true,
+     "targets": [
+      "d1"
+     ],
+     "antwort": "d1. Der Turm sperrt die d-Linie. Schwarz muss Kb8 spielen, dann stehen sich die Könige gegenüber, und Td8 ist Matt.",
+     "hilfe": [
+      "Welche Felder hat der schwarze König?",
+      "Nimm ihm eines weg, sodass er in die Opposition muss."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Klicke alle Felder an, auf denen Weiß mattsetzt.",
+     "fen": "8/8/r7/3p1p1p/3P1P2/p3PKPk/8/R7",
+     "leer": true,
+     "quelle": "Lichess-Puzzle QKwbJ (CC0), https://lichess.org/training/QKwbJ",
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "h1. Th1 ist Matt. Der König f3 und die Bauern nehmen dem schwarzen König alle Felder.",
+     "hilfe": [
+      "Welche Felder um h3 deckt der König f3?",
+      "Der Turm braucht die h-Linie."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Klicke alle Felder an, auf denen der Turm mattsetzt.",
+     "fen": "8/8/8/k1K5/8/8/8/7R",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a1. Die Könige stehen sich auf der 5. Reihe gegenüber, der Turm setzt auf der a-Linie matt.",
+     "hilfe": [
+      "Hier steht der König am linken Rand.",
+      "Der Turm braucht die a-Linie."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder des Kastens, in dem der schwarze König eingesperrt ist.",
+     "fen": "8/8/8/8/5R2/6k1/8/1K6",
+     "leer": true,
+     "targets": [
+      "g1",
+      "g2",
+      "g3",
+      "h1",
+      "h2",
+      "h3"
+     ],
+     "antwort": "g1, g2, g3, h1, h2 und h3. Der Turm sperrt die f-Linie und die 4. Reihe.",
+     "hilfe": [
+      "Welche Linie und welche Reihe sperrt der Turm f4?",
+      "Der Kasten liegt auf der Seite des Königs."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf denen der Turm den Kasten verkleinert und sicher steht.",
+     "fen": "8/1k6/8/8/8/8/4R3/K7",
+     "leer": true,
+     "targets": [
+      "e3",
+      "e4",
+      "e5",
+      "e6",
+      "d2",
+      "c2"
+     ],
+     "antwort": "c2, d2, e3, e4, e5 und e6. Jeder dieser Züge macht den Kasten kleiner, ohne dass der König den Turm erreicht.",
+     "hilfe": [
+      "Zähle den Kasten vorher: a bis d, Reihe 3 bis 8.",
+      "Kann der König den Turm danach schlagen?"
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf denen der weiße König näher an den schwarzen König kommt.",
+     "fen": "8/2k5/8/1R6/8/8/8/6K1",
+     "leer": true,
+     "targets": [
+      "f2",
+      "g2",
+      "h2"
+     ],
+     "antwort": "f2, g2 und h2. Alle drei verkürzen den Abstand. Am besten zieht der König in Richtung c-Linie.",
+     "hilfe": [
+      "Zähle die Schritte bis c7.",
+      "Welche Züge verkürzen den Abstand?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Klicke alle Felder an, auf denen Schwarz mattsetzt.",
+     "fen": "2r5/8/8/8/5kPK/7P/8/6R1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle UDaGv (CC0), https://lichess.org/training/UDaGv",
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "h8. Th8 ist Matt. Der König f4 deckt g3, g4 und g5, die Bauern sperren h3 und g4.",
+     "hilfe": [
+      "Welche Felder um h4 deckt der König f4?",
+      "Der Turm braucht die h-Linie."
+     ]
+    },
+    {
+     "frage": "Zwingzug: Weiß setzt in zwei Zügen matt. Klicke das Feld an, auf das der Turm zieht, ohne Schach zu geben.",
+     "fen": "2k5/8/1K6/8/8/8/8/4R3",
+     "leer": true,
+     "targets": [
+      "d1"
+     ],
+     "antwort": "d1. Der Turm sperrt die d-Linie. Schwarz muss Kb8 spielen, dann stehen sich die Könige gegenüber und Td8 ist Matt.",
+     "hilfe": [
+      "Welche Felder hat der schwarze König?",
+      "Nimm ihm eines weg."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Fehler 1: Turm zu nah. Weiß hat Td5 gespielt. Klicke die weiße Figur an, die der schwarze König jetzt schlagen kann.",
+     "fen": "8/8/2k5/3R4/8/8/8/6K1",
+     "zug": "b",
+     "targets": [
+      "d5"
+     ],
+     "antwort": "Den Turm d5. Er steht direkt neben dem König, und der eigene König ist zu weit weg. Richtig war Td4.",
+     "hilfe": [
+      "Welche Felder berührt der König c6?",
+      "Wer deckt den Turm?"
+     ]
+    },
+    {
+     "frage": "Fehler 2: Patt in der Ecke. Klicke alle Felder an, auf die der Turm nicht ziehen darf, weil Schwarz sonst patt wäre.",
+     "fen": "k7/2K5/8/8/8/8/8/1R6",
+     "leer": true,
+     "pruef": {
+      "patt": "b1"
+     },
+     "targets": null,
+     "antwort": "b7. Von dort deckt der Turm a7, ohne Schach zu geben, b8 deckt der König c7: Patt. Richtig ist Ta1, das ist Matt.",
+     "hilfe": [
+      "Welches Feld bleibt dem König a8?",
+      "Nimmt der Turm es ohne Schach weg, ist es Patt."
+     ]
+    },
+    {
+     "frage": "Fehler 3: Schach zur falschen Zeit. Weiß hat Th8+ gespielt, aber die Könige stehen nicht gegenüber. Markiere alle Felder, auf die der schwarze König fliehen kann.",
+     "fen": "3k3R/8/4K3/8/8/8/8/8",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "c7. Der König entkommt aus dem Kasten. Erst muss der weiße König in die Opposition, dann gibt der Turm Schach.",
+     "hilfe": [
+      "Welche Felder deckt der König e6?",
+      "Ist c7 angegriffen?"
+     ]
+    },
+    {
+     "frage": "Fehler 4: Den Kasten öffnen. Der Turm hat die d-Linie verlassen und steht jetzt auf h4. Markiere alle Felder, auf die der schwarze König ziehen darf.",
+     "fen": "8/8/2k5/8/7R/8/8/6K1",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "legal": "c6"
+     },
+     "targets": null,
+     "antwort": "b5, b6, b7, c5, c7, d5, d6 und d7. Die 4. Reihe bleibt gesperrt, aber die d-Linie ist offen. Der Kasten ist viel größer geworden.",
+     "hilfe": [
+      "Welche Linie war vorher gesperrt?",
+      "Welche Felder sind jetzt neu?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Klicke alle Felder an, auf denen Weiß mattsetzt.",
+     "fen": "8/2p2p2/2p4p/r1P5/4PK1k/1p6/1R6/8",
+     "leer": true,
+     "quelle": "Lichess-Puzzle QPQiC (CC0), https://lichess.org/training/QPQiC",
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "h2. Th2 ist Matt. Der König f4 deckt g3, g4 und g5, der Turm die ganze h-Linie.",
+     "hilfe": [
+      "Welche Felder um h4 deckt der König f4?",
+      "Der Turm braucht die h-Linie."
+     ]
+    },
+    {
+     "frage": "Fehler 5: Den Turm hängen lassen. Der schwarze König greift den Turm e4 an. Markiere alle Felder, auf die der weiße König ziehen kann, um den Turm zu decken.",
+     "fen": "8/8/8/3k4/4R3/8/5K2/8",
+     "leer": true,
+     "targets": [
+      "e3",
+      "f3"
+     ],
+     "antwort": "e3 und f3. Von dort deckt der König den Turm, und der Kasten bleibt geschlossen.",
+     "hilfe": [
+      "Welche Felder grenzen an e4?",
+      "Welche erreicht der König f2?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Klicke alle Felder an, auf denen der Turm mattsetzt.",
+     "fen": "8/8/8/8/8/2K5/7R/2k5",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "h1. Die Könige stehen sich gegenüber, der Turm setzt auf der 1. Reihe matt.",
+     "hilfe": [
+      "Wer deckt die 2. Reihe vor dem schwarzen König?",
+      "Der Turm braucht die 1. Reihe."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder des Kastens, in dem der schwarze König eingesperrt ist.",
+     "fen": "8/8/8/5k2/3R4/8/8/K7",
+     "leer": true,
+     "targets": [
+      "e5",
+      "e6",
+      "e7",
+      "e8",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "g5",
+      "g6",
+      "g7",
+      "g8",
+      "h5",
+      "h6",
+      "h7",
+      "h8"
+     ],
+     "antwort": "e5 bis h8: alle Felder rechts der d-Linie und oberhalb der 4. Reihe, zusammen 16 Felder.",
+     "hilfe": [
+      "Welche Linie und welche Reihe sperrt der Turm d4?",
+      "Der Kasten liegt auf der Seite des Königs."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf denen der Turm den Kasten verkleinert und sicher steht.",
+     "fen": "8/8/8/8/2R5/8/6k1/K7",
+     "leer": true,
+     "targets": [
+      "d4",
+      "e4",
+      "f4",
+      "c3"
+     ],
+     "antwort": "c3, d4, e4 und f4. Jeder dieser Züge macht den Kasten kleiner, ohne dass der König den Turm erreicht.",
+     "hilfe": [
+      "Zähle den Kasten vorher.",
+      "Kann der König den Turm danach schlagen?"
+     ]
+    },
+    {
+     "frage": "Weiß setzt in zwei Zügen matt. Klicke das Feld an, auf das der Turm zieht, ohne Schach zu geben.",
+     "fen": "5k2/8/6K1/8/8/8/8/7R",
+     "leer": true,
+     "targets": [
+      "e1"
+     ],
+     "antwort": "e1. Der Turm sperrt die e-Linie. Schwarz muss Kg8 spielen, dann stehen sich die Könige gegenüber und Te8 ist Matt.",
+     "hilfe": [
+      "Welche Felder hat der schwarze König?",
+      "Nimm ihm eines weg."
+     ]
+    },
+    {
+     "frage": "Der schwarze König greift den Turm d4 an. Markiere alle Felder, auf die der weiße König ziehen kann, um den Turm zu decken.",
+     "fen": "8/8/8/8/3R4/2k2K2/8/8",
+     "leer": true,
+     "targets": [
+      "e4",
+      "e3"
+     ],
+     "antwort": "e3 und e4. Von dort deckt der König den Turm.",
+     "hilfe": [
+      "Welche Felder grenzen an d4?",
+      "Welche erreicht der König f3?"
+     ]
+    },
+    {
+     "frage": "Klicke alle Felder an, auf die der Turm nicht ziehen darf, weil Schwarz sonst patt wäre.",
+     "fen": "7k/5K2/8/6R1/8/8/8/8",
+     "leer": true,
+     "pruef": {
+      "patt": "g5"
+     },
+     "targets": null,
+     "antwort": "g7. Von dort deckt der Turm g8 und h7 ohne Schach, g7 deckt der König f7: Patt. Richtig ist Th5, das ist Matt.",
+     "hilfe": [
+      "Welches Feld bleibt dem König h8?",
+      "Nimmt der Turm es ohne Schach weg, ist es Patt."
+     ]
+    }
+   ]
+  }
  }
 };
 export const YEAR=[["Brett, Figuren, Schach und Matt",[1,11]],["Sonderregeln, Notation und erste Taktik",[12,26]],["Mattführung, Eröffnung und Endspiel",[27,36]]];
