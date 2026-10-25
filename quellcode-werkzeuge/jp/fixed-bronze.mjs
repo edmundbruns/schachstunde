@@ -26,7 +26,8 @@ export const URLS={
  "schachzwang": "https://www.youtube.com/watch?v=FJQpIInED9g",
  "diplomOnline": "https://ludgerus-schachdiplom.netlify.app/",
  "routenplaner": "https://www.youtube.com/watch?v=b9sWS-2tGws",
- "achtBauern": "https://www.youtube.com/watch?v=XQmXNyh_bVw"
+ "achtBauern": "https://www.youtube.com/watch?v=XQmXNyh_bVw",
+ "mattChallenge": "https://www.youtube.com/watch?v=pTEy2s2dwNA"
 };
 export const FIXED={
  "1": {
@@ -9404,6 +9405,578 @@ export const FIXED={
      "hilfe": [
       "Steht der König im Schach?",
       "Kann er die Dame schlagen?"
+     ]
+    }
+   ]
+  }
+ },
+ "17": {
+  "thema": "Matt mit Dame und König",
+  "lernziel": "Ich kann mit Dame und König mattsetzen, ohne Patt.",
+  "leitfrage": "Wie sperrt die Dame den König ein, und wann darf sie mattsetzen?",
+  "vorwissen": "Gangart der Dame (Woche 4), Schach und Matt (Woche 8), Patt (Woche 16).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Klassische Kastenmethode des Damenmatts in kindgerechter Form, Ludgerus-Schachdiplom Silber (Matt mit Dame). Brettaufgaben eigene Aufgaben; Matt, Patt, Fluchtfelder und Kastengröße mit chess.js nachgerechnet",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Patt oder Matt? Kurz wiederholen",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 und W2: Ein Damenzug setzt matt, ein anderer setzt patt. Wer findet beide?",
+     "W3 bis W6 zügig: Gangart der Dame, kleiner Kasten, Matt mit gedeckter Dame. Ziel nennen: „Heute lernt ihr, wie Dame und König gemeinsam aus jeder Stellung mattsetzen, ohne aus Versehen Patt zu machen.“"
+    ],
+    "kinder": "Ich erinnere mich: Matt heißt Schach und kein Ausweg, Patt heißt kein Schach und kein Zug.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Die Kastenmethode in vier Schritten",
+    "ablauf": [
+     "Plakat „Matt mit Dame und König“ aufhängen. Am Lehrbrett E1: Die Dame stellt sich einen Springersprung vom König entfernt. Sie sperrt eine Linie und eine Reihe, der König sitzt in einem Kasten.",
+     "E2 und E3: Zieht der König, folgt die Dame wieder im Springersprung. Der Kasten wird kleiner, Schach ist dafür nicht nötig. Frage: „Warum gibt die Dame hier kein Schach?“",
+     "E4: Die Dame allein schafft kein Matt, der weiße König muss kommen. E5 und E6: zwei Mattbilder und die Pattfalle in derselben Stellung.",
+     "Merksatz: „Dame im Springersprung, Kasten klein, König holen, dann Matt. Vor jedem Damenzug fragen: Hat der König noch ein Feld?“"
+    ],
+    "kinder": "Ich erkläre die vier Schritte: Kasten bauen, Kasten verkleinern, König holen, mattsetzen.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Matt mit Dame und König",
+      "was": "damematt"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Kastenmethode E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Damenmatt zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A hat König e1 und Dame d1, Kind B nur den König e5. A setzt mit der Kastenmethode matt, B zählt die weißen Züge mit und ruft „Stopp!“, wenn ein Patt droht. Danach wechseln die Rollen.",
+     "Wer es geschafft hat, versucht es mit weniger Zügen. Frage zwischendurch: „Woran erkennst du, dass jetzt der weiße König kommen muss?“",
+     "Allein: Arbeitsblatt A1 bis A6. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich setze mit Dame und König matt, ohne Patt.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Matt mit Dame und König",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6 besprechen: Die ungedeckte Dame neben dem König wird geschlagen. Dauernd Schach geben vergrößert den Kasten. Ein zu kleiner Kasten ohne Schach ist Patt. Matt und Patt sehen ähnlich aus.",
+     "Bei jeder Aufgabe nachfragen: „Ist die Dame gedeckt?“ oder „Hat der König nach deinem Zug noch ein Feld?“"
+    ],
+    "kinder": "Ich kenne die typischen Fehler beim Damenmatt.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, lässt du einige am Brett das Damenmatt aus der Startstellung vorspielen und fragst: „Warum ziehst du die Dame dorthin?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich finde Kastenzug, Mattzug und Pattfalle ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Matt-Wettlauf“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Beide Paare bekommen dieselbe Startstellung (König e1, Dame d1 gegen König e5). Welches Paar setzt mit weniger weißen Zügen matt? Patt zählt als verloren. Danach wechseln die Rollen. Weitere Spielidee der Schulschachstiftung: Matt-Challenge (Video, vorher selbst ansehen).",
+     "Rückblick: „Welcher Schritt war für dich am schwersten?“ Aufräum-Ritual. Ausblick: Nächstes Mal ist Weihnachtsturnier, dort könnt ihr das Damenmatt in echten Partien einsetzen."
+    ],
+    "kinder": "Ich setze schnell und ohne Patt matt.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Matt mit Dame und König",
+      "was": "damematt"
+     },
+     {
+      "art": "video",
+      "label": "Spielidee „Matt-Challenge“ der Schulschachstiftung (Video)",
+      "url": "https://www.youtube.com/watch?v=pTEy2s2dwNA"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Mit dem Finger den Kasten auf dem Brett umfahren. Dann fragen: Wohin muss die Dame, damit der Kasten kleiner wird und der König noch ein Feld hat?",
+   "zusatz": "Damenmatt aus einer selbst gewählten Startstellung in höchstens zehn weißen Zügen. Oder: eine Stellung bauen, in der zwei Damenzüge mattsetzen und einer patt.",
+   "kuerzen": "Die Partnerübung auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, der Matt-Wettlauf hat nur eine Runde."
+  },
+  "nachher": "Wer setzt noch aus Versehen patt? Wer jagt den König mit Schachgeboten, statt ihn einzusperren? Das greifst du im Weihnachtsturnier (Woche 18) in der Partiebesprechung auf und übst es in Woche 33 mit dem Turm.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Wiederholung: Klicke alle Felder an, auf denen die Dame pattsetzen würde.",
+     "fen": "7k/8/5K2/8/8/8/8/6Q1",
+     "leer": true,
+     "pruef": {
+      "patt": "g1"
+     },
+     "targets": null,
+     "antwort": "g6. Die Dame deckt g8 und h7, der König f6 deckt g7. Kein Schach und kein Zug: Patt.",
+     "hilfe": [
+      "Welche Felder hat der schwarze König?",
+      "Von wo deckt die Dame sie, ohne Schach zu geben?"
+     ]
+    },
+    {
+     "frage": "Gleiche Stellung: Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "7k/8/5K2/8/8/8/8/6Q1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "g7. Die Dame gibt Schach und ist vom König f6 gedeckt.",
+     "hilfe": [
+      "Die Dame gibt Schach, der König hat kein Feld.",
+      "Wer deckt die Dame?"
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die die Dame d4 ziehen kann.",
+     "fen": "k7/8/8/8/3Q4/8/8/6K1",
+     "leer": true,
+     "pruef": {
+      "legal": "d4"
+     },
+     "targets": null,
+     "antwort": "Die ganze d-Linie, die 4. Reihe und beide Diagonalen bis zum Rand. Auf der Diagonale nach g1 steht der eigene König im Weg, deshalb nur e3 und f2.",
+     "hilfe": [
+      "Gerade wie der Turm, schräg wie der Läufer.",
+      "Wo steht eine eigene Figur im Weg?"
+     ]
+    },
+    {
+     "frage": "Schwarz ist am Zug. Markiere alle Felder, auf die der schwarze König ziehen kann. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "8/k7/2Q5/1K6/8/8/8/8",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "Nur b8. Dame und König sperren alle anderen Felder. Der König sitzt in einem sehr kleinen Kasten.",
+     "hilfe": [
+      "Prüfe a8, b8, b7, a6 und b6.",
+      "Welche weiße Figur greift jedes Feld an?"
+     ]
+    },
+    {
+     "frage": "Schwarz ist am Zug. Klicke die Figur an, die dem schwarzen König Schach gibt. Wenn keine, drücke „Prüfen“ ohne Markierung.",
+     "fen": "8/8/8/8/8/5K2/6Q1/7k",
+     "zug": "b",
+     "schach": true,
+     "pruef": {
+      "schachgeber": true
+     },
+     "targets": null,
+     "antwort": "Die Dame g2. Sie ist vom König f3 gedeckt, der schwarze König hat kein Feld: Matt.",
+     "hilfe": [
+      "Welche Figur greift h1 an?",
+      "Kann der König die Dame schlagen?"
+     ]
+    },
+    {
+     "frage": "Weiß setzt in einem Zug matt. Klicke alle Felder an, auf die die Dame dafür ziehen kann.",
+     "fen": "6k1/8/6K1/8/8/8/8/Q7",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a8 und g7. Auf a8 gibt die Dame Schach über die 8. Reihe, auf g7 ist sie vom König g6 gedeckt.",
+     "hilfe": [
+      "Der König g6 deckt f7, g7 und h7.",
+      "Es gibt zwei Lösungen."
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Die Dame steht einen Springersprung vom König entfernt. Schwarz ist am Zug. Markiere alle Felder, auf die der König ziehen kann.",
+     "fen": "8/8/8/3k4/5Q2/8/8/4K3",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "c6, e6 und c5. Die Dame sperrt die f-Linie und die 4. Reihe, dazu ihre Diagonalen. Der König sitzt in einem Kasten oben links.",
+     "hilfe": [
+      "Welche Linie und welche Reihe sperrt die Dame?",
+      "Prüfe alle acht Nachbarfelder."
+     ]
+    },
+    {
+     "frage": "Schwarz hat Ke6 gespielt. Die Dame folgt im Springersprung. Klicke das Feld an, auf dem der Kasten am kleinsten wird.",
+     "fen": "8/8/4k3/8/5Q2/8/8/4K3",
+     "targets": [
+      "d4"
+     ],
+     "antwort": "d4. Die Dame steht wieder einen Springersprung vom König entfernt und sperrt jetzt die d-Linie und die 4. Reihe. Der König bleibt oben rechts eingesperrt.",
+     "hilfe": [
+      "Die Felder im Springersprung vom König: d4, g5, c7, g7, c5, d8, f8.",
+      "Welches davon sperrt die meisten Felder, ohne Schach zu geben?"
+     ]
+    },
+    {
+     "frage": "Der Kasten ist schon klein. Klicke das Feld an, auf dem die Dame dem König nur noch zwei Felder lässt.",
+     "fen": "6k1/8/8/5Q2/8/8/8/4K3",
+     "targets": [
+      "f6"
+     ],
+     "antwort": "f6. Der König hat nur noch g8 und h7. Jetzt holt Weiß den eigenen König, bis die Dame mattsetzen kann.",
+     "hilfe": [
+      "Wieder im Springersprung.",
+      "Prüfe danach: Hat der König noch ein Feld? Sonst ist es Patt."
+     ]
+    },
+    {
+     "frage": "Kann die Dame allein mattsetzen? Klicke alle Felder an, auf denen die Dame mattsetzt. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "k7/8/8/2Q5/8/8/8/6K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "Keins. Die Dame allein schafft es nicht, der weiße König muss helfen. Vorsicht: Auf b6 oder c7 wäre es sogar Patt.",
+     "hilfe": [
+      "Wo ist der weiße König?",
+      "Ein Matt braucht hier zwei Figuren."
+     ]
+    },
+    {
+     "frage": "Der weiße König ist da. Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "3k4/8/3K4/8/8/7Q/8/8",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "d7 und h8. Auf d7 steht die Dame direkt vor dem König und ist vom König d6 gedeckt. Auf h8 gibt sie Schach am Rand, der König d6 deckt c7, d7 und e7.",
+     "hilfe": [
+      "Mattbild 1: Dame vor dem König, gedeckt.",
+      "Mattbild 2: Schach am Rand, die Könige stehen sich gegenüber."
+     ]
+    },
+    {
+     "frage": "Achtung Patt: Klicke alle Felder an, auf die die Dame in dieser Stellung nicht ziehen darf.",
+     "fen": "3k4/8/3K4/8/8/7Q/8/8",
+     "leer": true,
+     "pruef": {
+      "patt": "h3"
+     },
+     "targets": null,
+     "antwort": "e6. Von dort deckt die Dame c8, e8 und e7, der König d6 deckt c7 und d7. Der König hätte kein Feld und stünde nicht im Schach: Patt.",
+     "hilfe": [
+      "Welcher Damenzug nimmt alle Felder, ohne Schach zu geben?",
+      "Prüfe c8, e8, c7, d7 und e7."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Schwarz ist am Zug. Die Dame baut einen Kasten. Markiere alle Felder, auf die der schwarze König ziehen kann.",
+     "fen": "8/8/1k6/8/2Q5/8/8/6K1",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "a7, b7 und a5. Die Dame sperrt die c-Linie, die 4. Reihe und ihre Diagonalen.",
+     "hilfe": [
+      "Welche Linie und welche Reihe sperrt die Dame?",
+      "Prüfe alle Nachbarfelder von b6."
+     ]
+    },
+    {
+     "frage": "Klicke das Feld an, auf das die Dame zieht: einen Springersprung vom König entfernt und mit dem kleinsten Kasten.",
+     "fen": "8/8/8/6k1/8/2Q5/8/K7",
+     "targets": [
+      "f3"
+     ],
+     "antwort": "f3. Die Dame sperrt die f-Linie und die 3. Reihe, der König bleibt rechts oben eingesperrt.",
+     "hilfe": [
+      "Die Felder im Springersprung von g5: e4, f3, h3, e6, f7, h7.",
+      "Welches erreicht die Dame, und welches sperrt am meisten?"
+     ]
+    },
+    {
+     "frage": "Klicke alle Felder an, auf denen die Dame pattsetzen würde.",
+     "fen": "k7/2K5/8/8/8/8/8/5Q2",
+     "leer": true,
+     "pruef": {
+      "patt": "f1"
+     },
+     "targets": null,
+     "antwort": "f2 und g1. Von dort deckt die Dame a7, der König c7 deckt b7 und b8. Kein Schach und kein Zug: Patt.",
+     "hilfe": [
+      "Der König c7 deckt b7 und b8.",
+      "Welche Damenzüge decken a7, ohne Schach zu geben?"
+     ]
+    },
+    {
+     "frage": "Gleiche Stellung: Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "k7/2K5/8/8/8/8/8/5Q2",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a6 und a1. Die Dame gibt Schach über die a-Linie, der König c7 deckt b7 und b8.",
+     "hilfe": [
+      "Die Dame muss Schach geben.",
+      "Welche Felder deckt der König c7?"
+     ]
+    },
+    {
+     "frage": "Ein Kind sagt: „Matt!“ Markiere alle Felder, auf die der schwarze König ziehen kann. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "k7/1Q6/8/3K4/8/8/8/8",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "b7. Die Dame ist nicht gedeckt, der König schlägt sie. Kein Matt.",
+     "hilfe": [
+      "Wer deckt die Dame b7?",
+      "Ein König darf eine ungedeckte Figur schlagen."
+     ]
+    },
+    {
+     "frage": "Schwarz ist am Zug und kann nicht ziehen. Klicke die Figur an, die Schach gibt. Wenn keine, drücke „Prüfen“ ohne Markierung.",
+     "fen": "7k/5Q2/8/6K1/8/8/8/8",
+     "zug": "b",
+     "pruef": {
+      "schachgeber": true
+     },
+     "targets": null,
+     "antwort": "Keine. Kein Schach und kein Zug: Patt, also nur remis. Die Dame hätte dem König ein Feld lassen müssen.",
+     "hilfe": [
+      "Greift die Dame h8 an?",
+      "Kein Schach heißt kein Matt."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Die Dame gibt Schach. Ist das Matt? Markiere alle Felder, auf die der schwarze König ziehen kann. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "7k/6Q1/8/4K3/8/8/8/8",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "g7. Die Dame ist nicht gedeckt, der König schlägt sie. Fehler 1: Die Dame neben dem König braucht Deckung.",
+     "hilfe": [
+      "Wer deckt die Dame g7?",
+      "Darf der König schlagen?"
+     ]
+    },
+    {
+     "frage": "Fehler Patt: Klicke alle Felder an, auf denen die Dame pattsetzen würde.",
+     "fen": "7k/8/6K1/8/8/8/8/2Q5",
+     "leer": true,
+     "pruef": {
+      "patt": "c1"
+     },
+     "targets": null,
+     "antwort": "c4. Von dort deckt die Dame g8, der König g6 deckt g7 und h7. Kein Schach: Patt, nur remis.",
+     "hilfe": [
+      "Der König g6 deckt g7 und h7.",
+      "Welcher Damenzug deckt g8, ohne Schach zu geben?"
+     ]
+    },
+    {
+     "frage": "Gleiche Stellung: Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "7k/8/6K1/8/8/8/8/2Q5",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "c8. Schach über die 8. Reihe, der König g6 deckt g7 und h7.",
+     "hilfe": [
+      "Die Dame muss Schach geben.",
+      "Der König g6 hilft."
+     ]
+    },
+    {
+     "frage": "Ein Kind gibt mit der Dame dauernd Schach. Markiere alle Felder, auf die der schwarze König jetzt ziehen kann.",
+     "fen": "8/8/8/3k4/8/8/3Q4/4K3",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "c6, c5, c4, e6, e5 und e4. Sechs Felder: Das Schach hilft nicht, der König ist frei. Besser im Springersprung einsperren.",
+     "hilfe": [
+      "Die Dame greift nur die d-Linie und die Diagonalen an.",
+      "Zähle die freien Nachbarfelder."
+     ]
+    },
+    {
+     "frage": "Ein Kind sagt: „Das ist Patt.“ Markiere alle Felder, auf die der schwarze König ziehen kann. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "1k6/1Q6/1K6/8/8/8/8/8",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "Keins, aber der König steht im Schach: Matt, nicht Patt. Die Dame ist vom König b6 gedeckt.",
+     "hilfe": [
+      "Steht der König im Schach?",
+      "Patt gibt es nur ohne Schach."
+     ]
+    },
+    {
+     "frage": "Die Dame soll einsperren statt jagen. Klicke das Feld an, auf dem sie einen Springersprung vom König entfernt den kleinsten Kasten baut.",
+     "fen": "8/8/5k2/8/8/8/2Q5/K7",
+     "targets": [
+      "e4"
+     ],
+     "antwort": "e4. Die Dame sperrt die e-Linie und die 4. Reihe, der König bleibt rechts oben eingesperrt.",
+     "hilfe": [
+      "Die Felder im Springersprung von f6: e4, g4, d5, h5, d7, h7, e8, g8.",
+      "Welches davon erreicht die Dame von c2?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Schwarz ist am Zug. Markiere alle Felder, auf die der schwarze König im Kasten ziehen kann.",
+     "fen": "8/1k6/3Q4/8/8/8/8/K7",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "a8, c8 und a7. Die Dame sperrt die 6. Reihe, c7 und b8.",
+     "hilfe": [
+      "Prüfe alle Nachbarfelder von b7.",
+      "Welche greift die Dame an?"
+     ]
+    },
+    {
+     "frage": "Klicke das Feld an, auf das die Dame im Springersprung zum König zieht, damit der Kasten am kleinsten wird.",
+     "fen": "8/8/2k5/8/8/3Q4/8/6K1",
+     "targets": [
+      "d4"
+     ],
+     "antwort": "d4. Die Dame sperrt die d-Linie und die 4. Reihe, der König bleibt links oben eingesperrt.",
+     "hilfe": [
+      "Die Felder im Springersprung von c6: b4, d4, a5, e5, a7, e7, b8, d8.",
+      "Welches erreicht die Dame, ohne Schach zu geben?"
+     ]
+    },
+    {
+     "frage": "Achtung Patt: Klicke alle Felder an, auf die die Dame nicht ziehen darf.",
+     "fen": "3k4/8/3K4/8/8/8/8/7Q",
+     "leer": true,
+     "pruef": {
+      "patt": "h1"
+     },
+     "targets": null,
+     "antwort": "c6. Die Dame deckt c8 und e8, der König d6 deckt c7, d7 und e7. Kein Schach: Patt.",
+     "hilfe": [
+      "Welcher Damenzug nimmt alle Felder, ohne Schach zu geben?",
+      "Prüfe c8 und e8."
+     ]
+    },
+    {
+     "frage": "Gleiche Stellung: Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "3k4/8/3K4/8/8/8/8/7Q",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a8 und h8. Schach über die 8. Reihe, der König d6 deckt c7, d7 und e7.",
+     "hilfe": [
+      "Die Dame muss Schach geben.",
+      "Welche Reihe ist offen?"
+     ]
+    },
+    {
+     "frage": "Ist das Matt? Markiere alle Felder, auf die der schwarze König ziehen kann. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "k7/1Q6/2K5/8/8/8/8/8",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "Keins. Die Dame gibt Schach und ist vom König c6 gedeckt: Matt.",
+     "hilfe": [
+      "Steht der König im Schach?",
+      "Kann er die Dame schlagen?"
+     ]
+    },
+    {
+     "frage": "Schwarz ist am Zug. Klicke die Figur an, die dem König Schach gibt. Wenn keine, drücke „Prüfen“ ohne Markierung.",
+     "fen": "K7/8/8/8/8/8/5Q2/7k",
+     "zug": "b",
+     "pruef": {
+      "schachgeber": true
+     },
+     "targets": null,
+     "antwort": "Keine. Schwarz steht nicht im Schach und kann nicht ziehen: Patt, nur remis.",
+     "hilfe": [
+      "Greift die Dame h1 an?",
+      "Hat der König ein freies Feld?"
      ]
     }
    ]
