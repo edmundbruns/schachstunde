@@ -36,7 +36,8 @@ export const URLS={
  "lichessIntermezzo": "https://lichess.org/training/intermezzo",
  "lichessPractice": "https://lichess.org/practice",
  "lichessSacrifice": "https://lichess.org/training/sacrifice",
- "lichessBackRank": "https://lichess.org/training/backRankMate"
+ "lichessBackRank": "https://lichess.org/training/backRankMate",
+ "lichessPawnEndgame": "https://lichess.org/training/pawnEndgame"
 };
 export const FIXED={
  "1": {
@@ -19242,6 +19243,579 @@ export const FIXED={
      "hilfe": [
       "Welches Feld bleibt dem König h8?",
       "Nimmt der Turm es ohne Schach weg, ist es Patt."
+     ]
+    }
+   ]
+  }
+ },
+ "34": {
+  "thema": "Einfache Bauernendspiele",
+  "lernziel": "Ich kann mit der Opposition einen Bauern zur Umwandlung führen.",
+  "leitfrage": "Wann läuft ein Bauer allein durch, und wann braucht er die Hilfe seines Königs?",
+  "vorwissen": "Freibauern und Umwandlung (Woche 13), Patt (Woche 16), Matt mit einem Turm (Woche 33).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Quadratregel, Opposition und Schlüsselfelder in kindgerechter Form, Lichess-Puzzles rUGv4, FlNMo, aFQ6y, wKBg6, cA3yH, Mqw2G, QCASA, sNlgj, S3w68 und 8icmv (CC0, Thema „pawnEndgame“, über die Lichess-Schnittstelle abgerufen), übrige Aufgaben eigene Aufgaben. Quadrat und Opposition mit chess.js berechnet, Gewinn- und Remiszüge mit Stockfish geprüft",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Bauer gegen König",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6: Freibauer erkennen, das Quadrat des Bauern zeichnen, Opposition stellen, die Schlüsselfelder zeigen, ein Wettlauf aus einer echten Partie.",
+     "Bei W2 fragen: „Wie erkennst du, ohne zu zählen, ob der König den Bauern noch einholt?“ Ziel nennen: „Heute lernt ihr, wann ein Bauer durchläuft und wie der König ihm hilft.“"
+    ],
+    "kinder": "Ich erkenne mit dem Quadrat, ob ein König den Bauern einholt.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Quadrat, König vor den Bauern, Opposition, Schlüsselfelder",
+    "ablauf": [
+     "Plakat „Einfache Bauernendspiele“ aufhängen. Am Lehrbrett E1: Die Quadratregel. Nur der Königszug ins Quadrat hält den Bauern auf.",
+     "E2: Der König geht vor seinen Bauern, nicht dahinter. E3: Der Verteidiger hält mit der Opposition remis. Frage: „Warum muss der König genau gegenüber stehen und nicht daneben?“",
+     "E4: Erreicht der König ein Schlüsselfeld, gewinnt er. E5: Der Bauer läuft zur Umwandlung, wenn der König ihn begleitet. E6: eine echte Partie. Merksatz: „Erst der König, dann der Bauer. Wer die Opposition hat, entscheidet.“"
+    ],
+    "kinder": "Ich erkläre Quadrat, Opposition und Schlüsselfelder.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Einfache Bauernendspiele",
+      "was": "bauernendspiel"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Bauernendspiel E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "König und Bauer gegen König zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A hat König und einen Bauern auf e2, Kind B nur den König auf e8. Kind A versucht umzuwandeln, Kind B sucht die Opposition. Danach wechseln die Rollen. Wer gewinnt, und warum?",
+     "Allein: Arbeitsblatt A1 bis A6, darunter drei echte Aufgaben aus Lichess-Partien. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich führe einen Bauern mit dem König zur Umwandlung oder halte als Verteidiger remis.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Einfache Bauernendspiele",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6: Der Randbauer gewinnt nicht, die falsche Seite hat die Opposition, der Bauer läuft dem König davon. Dazu drei echte Partien.",
+     "Bei jeder Aufgabe fragen: „Wer hat hier die Opposition, und wer ist am Zug?“"
+    ],
+    "kinder": "Ich erkenne, wann ein Bauernendspiel remis ist.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, fragst du einige am Brett: „Läuft der Bauer allein durch, oder braucht er den König?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich löse einfache Bauernendspiele ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Wettlauf“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Jedes Kind hat König und zwei Bauern. Wer zuerst eine Dame bekommt, gewinnt. Vor jedem Bauernzug sagt das Kind laut, ob der gegnerische König im Quadrat steht. Danach wechseln die Rollen und die Farben.",
+     "Rückblick: „Was ist die Opposition, und wann brauchst du sie?“ Aufräum-Ritual. Ausblick: Nächstes Mal ist das Gold-Diplom mit Abschlusstest."
+    ],
+    "kinder": "Ich nutze Quadrat und Opposition in einer Partie.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Einfache Bauernendspiele",
+      "was": "bauernendspiel"
+     },
+     {
+      "art": "blatt",
+      "label": "Mehr Bauernendspiele auf Lichess (online)",
+      "url": "https://lichess.org/training/pawnEndgame"
+     },
+     {
+      "art": "blatt",
+      "label": "Ludgerus-Schachdiplom online (Gold)",
+      "url": "https://ludgerus-schachdiplom.netlify.app/"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Das Quadrat mit vier Bauernsteinen in den Ecken auf das Brett legen. Bei der Opposition ein Lineal zwischen die Könige legen: Genau ein Feld muss frei sein.",
+   "zusatz": "Die Stellung König e3, Bauer e2 gegen König e7 mit beiden Seiten am Zug durchspielen. Oder Lichess-Aufgaben zu Bauernendspielen lösen.",
+   "kuerzen": "Die Partnerübung auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
+  },
+  "nachher": "Wer zählt noch, statt das Quadrat zu nutzen? Wer zieht den Bauern zu früh? Das wiederholst du in Woche 35 vor dem Gold-Diplom.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Wiederholung Woche 13: Klicke den weißen Freibauern an.",
+     "fen": "6k1/7p/8/2p5/4P3/1P5P/8/6K1",
+     "pruef": {
+      "freibauer": "w"
+     },
+     "targets": null,
+     "antwort": "Der Bauer e4. b3 hält der Bauer c5 auf, h3 der Bauer h7.",
+     "hilfe": [
+      "Prüfe drei Linien: die eigene und die beiden daneben.",
+      "Nur Bauern vor ihm zählen."
+     ]
+    },
+    {
+     "frage": "Die Quadratregel: Klicke die vier Ecken des Quadrats für den Bauern a4 an.",
+     "fen": "8/8/8/8/P7/5k2/8/K7",
+     "leer": true,
+     "targets": [
+      "a4",
+      "a8",
+      "e4",
+      "e8"
+     ],
+     "antwort": "a4, e4, e8 und a8. Vom Bauern bis zum Umwandlungsfeld sind es vier Felder, also ist das Quadrat vier Felder breit.",
+     "hilfe": [
+      "Zähle die Felder bis zur 8. Reihe.",
+      "So breit ist auch das Quadrat."
+     ]
+    },
+    {
+     "frage": "Opposition: Klicke das Feld an, auf das der weiße König zieht, damit die Könige direkt gegenüberstehen.",
+     "fen": "8/4k3/8/8/4K3/8/8/8",
+     "leer": true,
+     "targets": [
+      "e5"
+     ],
+     "antwort": "e5. Zwischen den Königen ist genau ein Feld frei. Wer jetzt ziehen muss, muss ausweichen.",
+     "hilfe": [
+      "Auf welcher Linie steht der schwarze König?",
+      "Genau ein Feld Abstand."
+     ]
+    },
+    {
+     "frage": "Schlüsselfelder: Erreicht der weiße König eines dieser Felder, gewinnt er immer. Klicke die drei Schlüsselfelder des Bauern e4 an.",
+     "fen": "7k/8/8/8/4P3/8/4K3/8",
+     "leer": true,
+     "targets": [
+      "d6",
+      "e6",
+      "f6"
+     ],
+     "antwort": "d6, e6 und f6. Die Schlüsselfelder liegen zwei Reihen vor dem Bauern, auf seiner Linie und den beiden Nachbarlinien.",
+     "hilfe": [
+      "Zwei Reihen vor dem Bauern.",
+      "Drei Felder nebeneinander."
+     ]
+    },
+    {
+     "frage": "Schwarz am Zug. Markiere alle Felder, auf die der König ziehen kann und danach im Quadrat des Bauern b4 steht. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "8/8/8/8/1P6/8/7k/K7",
+     "zug": "b",
+     "leer": true,
+     "targets": [],
+     "antwort": "Keins. Das Quadrat reicht von b4 bis f8. Der König h2 erreicht die f-Linie nicht rechtzeitig, der Bauer läuft durch.",
+     "hilfe": [
+      "Zeichne das Quadrat b4, f4, f8, b8.",
+      "Kann der König mit einem Zug hineinziehen?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß gewinnt den Wettlauf. Klicke das Feld an, auf das der Bauer zieht.",
+     "fen": "8/6p1/8/1K4p1/P7/5k2/8/8",
+     "leer": true,
+     "quelle": "Lichess-Puzzle rUGv4 (CC0), https://lichess.org/training/rUGv4",
+     "targets": [
+      "a5"
+     ],
+     "antwort": "a5. Der schwarze König steht nicht im Quadrat des Bauern. So ging die Partie weiter: g4 a6 g3 a7 g2 a8D+.",
+     "hilfe": [
+      "Steht der schwarze König im Quadrat?",
+      "Wer wandelt zuerst um?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "1. Quadratregel: Schwarz am Zug. Klicke das Feld an, auf das der König zieht, um den Bauern a4 aufzuhalten.",
+     "fen": "8/8/8/8/P7/5k2/8/K7",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "e4"
+     ],
+     "antwort": "e4. Nur von e4 steht der König im Quadrat a4 bis e8 und holt den Bauern ein. Jeder andere Zug verliert. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Zeichne das Quadrat des Bauern.",
+      "Welches Königsfeld liegt darin?"
+     ]
+    },
+    {
+     "frage": "2. Erst der König: Weiß am Zug gewinnt. Markiere alle Felder, auf die der weiße König ziehen kann, damit Weiß gewinnt.",
+     "fen": "8/8/3k4/8/8/3K4/3P4/8",
+     "leer": true,
+     "targets": [
+      "c4",
+      "d4",
+      "e4"
+     ],
+     "antwort": "c4, d4 und e4. Der König geht vor seinen Bauern und erobert Platz. Bleibt er hinten, wird es remis. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Der König gehört vor den Bauern.",
+      "Welche Felder liegen vor dem Bauern?"
+     ]
+    },
+    {
+     "frage": "3. Opposition halten: Schwarz am Zug. Markiere alle Felder, auf die der schwarze König ziehen kann, damit Schwarz remis hält.",
+     "fen": "8/3k4/8/3PK3/8/8/8/8",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "e7"
+     ],
+     "antwort": "e7. Jetzt stehen sich die Könige gegenüber, Weiß muss ausweichen. Jeder andere Zug verliert. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Wo steht der weiße König?",
+      "Stell dich ihm genau gegenüber."
+     ]
+    },
+    {
+     "frage": "4. Schlüsselfelder: Weiß am Zug. Markiere alle Felder, auf die der weiße König ziehen kann, damit Weiß gewinnt.",
+     "fen": "4k3/8/8/4K3/4P3/8/8/8",
+     "leer": true,
+     "targets": [
+      "d6",
+      "e6",
+      "f6"
+     ],
+     "antwort": "d6, e6 und f6. Das sind die Schlüsselfelder des Bauern e4. Von dort gewinnt Weiß immer. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Welche Felder liegen zwei Reihen vor dem Bauern?",
+      "Erreicht der König eines davon?"
+     ]
+    },
+    {
+     "frage": "5. Zur Umwandlung: Weiß am Zug gewinnt. Klicke das Feld an, auf das Weiß zieht.",
+     "fen": "3k4/8/3PK3/8/8/8/8/8",
+     "leer": true,
+     "targets": [
+      "d7"
+     ],
+     "antwort": "d7. Der König e6 deckt den Bauern. Schwarz muss Kc7 spielen, dann folgt Ke7 und d8D. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Deckt der weiße König den Bauern auf d7?",
+      "Wohin kann der schwarze König?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz am Zug. Der König holt den weißen Bauern. Klicke das Feld an, auf das der König zieht.",
+     "fen": "4K3/8/4k3/7p/7P/8/8/8",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle FlNMo (CC0), https://lichess.org/training/FlNMo",
+     "targets": [
+      "f5"
+     ],
+     "antwort": "f5. Der König läuft zum Bauern h4. So ging die Partie weiter: Ke7 Kg4 Kd6 Kxh4, danach läuft der Bauer h5.",
+     "hilfe": [
+      "Welcher weiße Bauer ist ungeschützt?",
+      "Der König greift ihn an."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Klicke die vier Ecken des Quadrats für den schwarzen Bauern a6 an.",
+     "fen": "8/8/p7/6K1/8/1k5P/8/8",
+     "leer": true,
+     "targets": [
+      "a6",
+      "a1",
+      "f6",
+      "f1"
+     ],
+     "antwort": "a6, a1, f6 und f1. Der Bauer braucht fünf Züge bis a1, also ist das Quadrat fünf Felder breit.",
+     "hilfe": [
+      "Zähle die Felder bis zur 1. Reihe.",
+      "So breit ist auch das Quadrat."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz am Zug gewinnt den Wettlauf. Klicke das Feld an, auf das der Bauer zieht.",
+     "fen": "8/8/p7/6K1/8/1k5P/8/8",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle aFQ6y (CC0), https://lichess.org/training/aFQ6y",
+     "targets": [
+      "a5"
+     ],
+     "antwort": "a5. Der weiße König steht nicht im Quadrat. So ging die Partie weiter: h4 a4 h5 a3.",
+     "hilfe": [
+      "Steht der weiße König im Quadrat?",
+      "Wer ist schneller?"
+     ]
+    },
+    {
+     "frage": "Erst der König: Weiß am Zug gewinnt. Markiere alle Felder, auf die der weiße König ziehen kann, damit Weiß gewinnt.",
+     "fen": "8/8/4k3/8/8/4K3/4P3/8",
+     "leer": true,
+     "targets": [
+      "d4",
+      "e4",
+      "f4"
+     ],
+     "antwort": "d4, e4 und f4. Der König geht vor seinen Bauern. Nach Kd3 oder Kf3 hat Schwarz die Opposition. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Der König gehört vor den Bauern.",
+      "Welche Felder liegen auf der 4. Reihe?"
+     ]
+    },
+    {
+     "frage": "Opposition halten: Schwarz am Zug. Markiere alle Felder, auf die der schwarze König ziehen kann, damit Schwarz remis hält.",
+     "fen": "8/5k2/8/4KP2/8/8/8/8",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "e7"
+     ],
+     "antwort": "e7. Die Könige stehen sich gegenüber, Weiß kommt nicht weiter. Jeder andere Zug verliert. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Wo steht der weiße König?",
+      "Stell dich ihm gegenüber."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz am Zug. Der weiße König ist zu weit weg. Klicke das Feld an, auf das der Bauer zieht.",
+     "fen": "8/8/K4k2/6p1/8/1P6/8/8",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle wKBg6 (CC0), https://lichess.org/training/wKBg6",
+     "targets": [
+      "g4"
+     ],
+     "antwort": "g4. Der weiße König ist weit weg. So ging die Partie weiter: b4 g3 b5 g2 b6 g1D.",
+     "hilfe": [
+      "Wer wandelt zuerst um?",
+      "Zähle die Züge beider Bauern."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß gewinnt den Bauern h6. Klicke das Feld an, auf das der König zieht.",
+     "fen": "8/8/3k1K1p/3P2p1/6P1/8/8/8",
+     "leer": true,
+     "quelle": "Lichess-Puzzle cA3yH (CC0), https://lichess.org/training/cA3yH",
+     "targets": [
+      "g6"
+     ],
+     "antwort": "g6. Der König greift den ungedeckten Bauern h6 an. So ging die Partie weiter: Kxd5 Kxh6, danach fällt auch g5.",
+     "hilfe": [
+      "Welcher schwarze Bauer ist ungeschützt?",
+      "Der König greift ihn an."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Fehler 1: Der Randbauer. Weiß am Zug. Markiere alle Felder, auf die der weiße König ziehen kann, damit Weiß gewinnt. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "k7/8/1K6/P7/8/8/8/8",
+     "leer": true,
+     "targets": [],
+     "antwort": "Keins. Mit einem Randbauern kommt der schwarze König in die Ecke, Weiß kann nur remis spielen oder patt setzen. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Wohin kann der schwarze König fliehen?",
+      "Gibt es eine Ecke, aus der er nicht herauskommt?"
+     ]
+    },
+    {
+     "frage": "Fehler 2: Wer am Zug ist, entscheidet. Weiß am Zug. Markiere alle Felder, auf die der weiße König ziehen kann, damit Weiß gewinnt. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "8/8/4k3/8/4K3/4P3/8/8",
+     "leer": true,
+     "targets": [],
+     "antwort": "Keins. Schwarz hat die Opposition, Weiß muss ausweichen. Wäre Schwarz am Zug, würde Weiß gewinnen. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Wer hat die Opposition?",
+      "Was passiert, wenn Weiß ausweichen muss?"
+     ]
+    },
+    {
+     "frage": "Fehler 3: Der Bauer läuft vor dem König. Weiß am Zug. Markiere alle Felder, auf die Weiß ziehen kann, damit Weiß gewinnt. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "8/8/4k3/8/4P3/4K3/8/8",
+     "leer": true,
+     "targets": [],
+     "antwort": "Keins. Der Bauer steht vor dem eigenen König, Schwarz blockiert ihn. Erst der König, dann der Bauer. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Steht der König vor oder hinter dem Bauern?",
+      "Kann der schwarze König den Bauern blockieren?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz am Zug gewinnt einen Bauern. Klicke das Feld an, auf das der König zieht.",
+     "fen": "8/8/8/p1k2K1p/P6P/8/8/8",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle Mqw2G (CC0), https://lichess.org/training/Mqw2G",
+     "targets": [
+      "b4"
+     ],
+     "antwort": "b4. Der König greift a4 an und schlägt ihn im nächsten Zug. So ging die Partie weiter: Kg5 Kxa4.",
+     "hilfe": [
+      "Welcher weiße Bauer ist ungeschützt?",
+      "Der König greift ihn an."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz am Zug. Der weiße König steht nicht im Quadrat. Klicke das Feld an, auf das der Bauer zieht.",
+     "fen": "8/8/8/1K4p1/1P6/2P4k/P7/8",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle QCASA (CC0), https://lichess.org/training/QCASA",
+     "targets": [
+      "g4"
+     ],
+     "antwort": "g4. Der Bauer läuft durch, der weiße König kommt nicht rechtzeitig. So ging die Partie weiter: c4 g3 c5 g2 c6 g1D.",
+     "hilfe": [
+      "Steht der weiße König im Quadrat?",
+      "Zähle die Züge bis g1."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz am Zug. Klicke das Feld an, auf das der König zieht.",
+     "fen": "8/8/2K5/8/p7/Pk6/1P6/8",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle sNlgj (CC0), https://lichess.org/training/sNlgj",
+     "targets": [
+      "b2"
+     ],
+     "antwort": "b2. Der König schlägt den Bauern b2 und holt danach auch a3. Wer ungeschützte Bauern stehen lässt, verliert sie.",
+     "hilfe": [
+      "Welcher weiße Bauer ist ungeschützt?",
+      "Der König darf schlagen."
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Schwarz am Zug. Klicke das Feld an, auf das der König zieht, um den Bauern h4 aufzuhalten.",
+     "fen": "8/8/8/8/7P/2k5/8/K7",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "d4"
+     ],
+     "antwort": "d4. Nur von d4 steht der König im Quadrat h4 bis d8. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Zeichne das Quadrat des Bauern.",
+      "Welches Königsfeld liegt darin?"
+     ]
+    },
+    {
+     "frage": "Klicke die drei Schlüsselfelder des Bauern d4 an.",
+     "fen": "7k/8/8/8/3P4/8/3K4/8",
+     "leer": true,
+     "targets": [
+      "c6",
+      "d6",
+      "e6"
+     ],
+     "antwort": "c6, d6 und e6. Zwei Reihen vor dem Bauern, auf seiner Linie und den beiden Nachbarlinien.",
+     "hilfe": [
+      "Zwei Reihen vor dem Bauern.",
+      "Drei Felder nebeneinander."
+     ]
+    },
+    {
+     "frage": "Weiß am Zug gewinnt. Markiere alle Felder, auf die der weiße König ziehen kann, damit Weiß gewinnt.",
+     "fen": "8/8/2k5/8/8/2K5/2P5/8",
+     "leer": true,
+     "targets": [
+      "b4",
+      "c4",
+      "d4"
+     ],
+     "antwort": "b4, c4 und d4. Der König geht vor seinen Bauern. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Der König gehört vor den Bauern.",
+      "Welche Felder liegen auf der 4. Reihe?"
+     ]
+    },
+    {
+     "frage": "Schwarz am Zug. Markiere alle Felder, auf die der schwarze König ziehen kann, damit Schwarz remis hält.",
+     "fen": "8/2k5/8/1KP5/8/8/8/8",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "b7"
+     ],
+     "antwort": "b7. Die Könige stehen sich gegenüber. Jeder andere Zug verliert. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Wo steht der weiße König?",
+      "Stell dich ihm gegenüber."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß am Zug gewinnt den Wettlauf. Klicke das Feld an, auf das der Bauer zieht.",
+     "fen": "8/6k1/8/2P2pp1/8/5PK1/8/8",
+     "leer": true,
+     "quelle": "Lichess-Puzzle S3w68 (CC0), https://lichess.org/training/S3w68",
+     "targets": [
+      "c6"
+     ],
+     "antwort": "c6. Der schwarze König steht nicht im Quadrat. So ging die Partie weiter: Kf7 c7, und der Bauer wandelt um.",
+     "hilfe": [
+      "Steht der schwarze König im Quadrat?",
+      "Zähle die Züge bis c8."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz am Zug gewinnt einen Bauern. Klicke das Feld an, auf das der König zieht.",
+     "fen": "8/8/kp2K2p/6p1/P5P1/8/7P/8",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 8icmv (CC0), https://lichess.org/training/8icmv",
+     "targets": [
+      "a5"
+     ],
+     "antwort": "a5. Der König greift den Bauern a4 an. So ging die Partie weiter: Kd5 Kxa4.",
+     "hilfe": [
+      "Welcher weiße Bauer ist ungeschützt?",
+      "Der König greift ihn an."
      ]
     }
    ]
