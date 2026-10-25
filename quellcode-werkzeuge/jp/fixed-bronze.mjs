@@ -11112,6 +11112,556 @@ export const FIXED={
     }
    ]
   }
+ },
+ "20": {
+  "thema": "Turnierregeln, Schachuhr, Partie mitschreiben",
+  "lernziel": "Ich kann mit Uhr spielen und meine Partie mitschreiben.",
+  "leitfrage": "Was gilt im Turnier, wenn die Uhr läuft, und wie schreibe ich dabei meine Züge auf?",
+  "vorwissen": "Notation (Woche 19), Weihnachtsturnier und Fairplay (Woche 9 und 18), Patt und Remis (Woche 16).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "FIDE-Schachregeln (gültig seit 1. Januar 2023) in kindgerechter Form: berührt, geführt und „Ich rücke zurecht“ (Art. 4), Uhr mit derselben Hand drücken (Art. 6), Zeitüberschreitung und Mattmöglichkeit (Art. 6.9), illegaler Zug (Art. 7, im Schnellschach eine Minute Zeitgutschrift), Remisangebot (Art. 9), Mitschreiben (Art. 8). Brettaufgaben eigene Aufgaben, alle Lösungen mit chess.js nachgerechnet",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Notation aufwärmen",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6: Züge lesen und aufschreiben wie in Woche 19. Die Kinder zeigen erst mit dem Finger, dann wird geklickt oder aufgeschrieben.",
+     "Schachuhr zeigen und fragen: „Wozu braucht man im Turnier eine Uhr?“ Ziel nennen: „Heute spielt ihr mit Uhr und schreibt eure Partie mit, wie bei der Schulmeisterschaft.“"
+    ],
+    "kinder": "Ich lese und schreibe Züge sicher.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Die Uhr und die wichtigsten Turnierregeln",
+    "ablauf": [
+     "Plakat „Schachuhr und Turnierregeln“ aufhängen. Uhr vormachen: 5 Minuten für jedes Kind einstellen, Schwarz startet die Uhr von Weiß. Erst ziehen, dann mit derselben Hand die Uhr drücken. Ist die Zeit abgelaufen, ist die Partie verloren, außer der Gegner kann gar nicht mehr mattsetzen. Dann ist sie remis.",
+     "Am Lehrbrett E1 bis E6 die Regeln: berührt, geführt (vorher „Ich rücke zurecht“ sagen), illegaler Zug wird zurückgenommen und der Gegner bekommt eine Minute dazu, Remis erst ziehen, dann anbieten, dann Uhr drücken. Mitschreiben: erst ziehen, Uhr drücken, dann aufschreiben.",
+     "Frage bei E4: „Warum ist das remis, obwohl die Zeit von Weiß abgelaufen ist?“ Merksatz: „Ziehen, drücken, schreiben.“"
+    ],
+    "kinder": "Ich erkläre, wie man die Uhr bedient und was bei abgelaufener Zeit gilt.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Schachuhr und Turnierregeln",
+      "was": "schachuhr"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Turnierregeln E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Partie mit Uhr und Partieformular in Vierergruppen",
+    "ablauf": [
+     "In Vierergruppen: Zwei Kinder spielen mit 5 Minuten pro Kind und schreiben mit, so weit es geht. Zwei Kinder sind Schiedsrichter: eins achtet auf Uhr und „berührt, geführt“, eins liest am Ende das Partieformular vor. Danach wechseln die Rollen.",
+     "Ohne Uhr: Partie mit Partieformular, die Lehrkraft ruft alle 30 Sekunden „Zug!“. Wer fertig ist, löst das Arbeitsblatt A1 bis A6."
+    ],
+    "kinder": "Ich spiele mit Uhr, drücke mit derselben Hand und schreibe meine Züge mit.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Partieformular (zwei pro Blatt)",
+      "was": "partieformular"
+     },
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Turnierregeln und Mitschreiben",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Streitfälle mit Uhr klären",
+    "ablauf": [
+     "Stopp-Signal. Zwei Schiedsrichter berichten, was ihnen aufgefallen ist. Am Lehrbrett S1 bis S6 typische Streitfälle: illegaler Zug im Schach, Zeit abgelaufen gegen einen nackten König, berührter König, verlorenes Rochaderecht, falscher Mattruf, vergessenes Zeichen beim Mitschreiben.",
+     "Bei jedem Fall fragen: „Woran erkennst du, wer recht hat?“ Regel: Uhr anhalten, Hand heben, Stellung stehen lassen."
+    ],
+    "kinder": "Ich entscheide einen Streitfall mit der passenden Turnierregel.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Streitfälle S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, lässt du einzelne Kinder die Uhr bedienen: ziehen, mit derselben Hand drücken, den Zug aufschreiben. Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich wende Turnierregeln und Notation ohne Hilfe an.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Uhren-Bauernspiel“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: nur Könige und Bauern, 1 Minute pro Kind. Wer zuerst einen Bauern auf die letzte Reihe bringt oder wessen Gegner die Zeit überschreitet, gewinnt. Ziehen und drücken mit derselben Hand. Danach wechseln die Rollen und die Farben.",
+     "Rückblick: „Was war mit Uhr schwieriger als ohne?“ Aufräum-Ritual, Uhren auf 0 stellen. Ausblick: Nächstes Mal ist Schulmeisterschaft mit Uhr und Partieformular."
+    ],
+    "kinder": "Ich drücke die Uhr auch unter Zeitdruck richtig.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Schachuhr und Turnierregeln",
+      "was": "schachuhr"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Ohne genug Uhren: Uhr-App auf einem Tablet oder die Lehrkraft ruft „Zug!“. Unsichere Kinder spielen erst ohne Mitschreiben, ein Schiedsrichterkind schreibt für sie mit.",
+   "zusatz": "Partie mit 10 Minuten pro Kind und vollständigem Partieformular. Danach die Partie aus dem Formular nachspielen: Stimmt die Endstellung?",
+   "kuerzen": "Nur eine Partie in der Vierergruppe, die Erarbeitung auf E1, E3 und E4 kürzen. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
+  },
+  "nachher": "Wer drückt die Uhr mit der anderen Hand oder vor dem Zug? Wer kommt beim Mitschreiben nicht hinterher? Das greifst du vor der Schulmeisterschaft (Woche 21) noch einmal auf. Notation bleibt ein Dauerthema in jeder Spielphase.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Weiß spielt Sc3. Klicke die Figur an, die zieht.",
+     "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR",
+     "rechte": "KQkq",
+     "zuege": "d4 d5",
+     "targets": [
+      "b1"
+     ],
+     "antwort": "Der Springer b1.",
+     "hilfe": [
+      "S heißt Springer.",
+      "Welcher weiße Springer erreicht c3?"
+     ]
+    },
+    {
+     "frage": "Schwarz spielt exd4. Klicke den Bauern an, der schlägt.",
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/3PP3/8/PPP2PPP/RNBQKBNR",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 d4",
+     "targets": [
+      "e5"
+     ],
+     "antwort": "Der Bauer e5. Das e vor dem x nennt seine Linie.",
+     "hilfe": [
+      "x heißt schlägt.",
+      "Der Buchstabe vor dem x nennt die Linie."
+     ]
+    },
+    {
+     "frage": "Der Läufer c1 zieht nach g5. Schreibe den Zug auf.",
+     "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/2N5/PPP1PPPP/R1BQKBNR",
+     "zuege": "d4 d5 Nc3 Nf6",
+     "antwort": "Lg5. L für Läufer, g5 ist das Zielfeld.",
+     "hilfe": [
+      "Erst der Figurenbuchstabe.",
+      "Dann das Zielfeld."
+     ]
+    },
+    {
+     "frage": "Weiß spielt 0-0. Markiere die Felder, auf denen König und Turm danach stehen.",
+     "fen": "rnbqk2r/ppp1bppp/4pn2/3p4/3PP3/3B1N2/PPP2PPP/RNBQK2R",
+     "rechte": "KQkq",
+     "zuege": "e4 e6 d4 d5 Nf3 Nf6 Bd3 Be7",
+     "targets": [
+      "g1",
+      "f1"
+     ],
+     "antwort": "g1 und f1.",
+     "hilfe": [
+      "Zwei Nullen: kurze Rochade.",
+      "Der König zieht zwei Felder zum Turm."
+     ]
+    },
+    {
+     "frage": "Weiß spielt Dxf7#. Markiere Startfeld und Zielfeld.",
+     "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Bc4 Nc6 Qh5 Nf6",
+     "targets": [
+      "h5",
+      "f7"
+     ],
+     "antwort": "h5 und f7. Die Dame schlägt auf f7 und setzt matt, der Läufer c4 deckt sie. Das ist das Schäfermatt.",
+     "hilfe": [
+      "D heißt Dame, x schlägt, # Matt.",
+      "Wo steht die weiße Dame?"
+     ]
+    },
+    {
+     "frage": "Schwarz schlägt mit dem Bauern d5 den Bauern e4. Schreibe den Zug auf.",
+     "fen": "rnbqkbnr/ppp1pppp/8/3p4/4P3/2N5/PPPP1PPP/R1BQKBNR",
+     "zug": "b",
+     "zuege": "e4 d5 Nc3",
+     "antwort": "dxe4. Beim Bauern steht die Linie, von der er kommt, vor dem x.",
+     "hilfe": [
+      "Ein Bauer hat keinen Buchstaben.",
+      "Beim Schlagen schreibt man seine Linie davor."
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Berührt, geführt: Du hast den Läufer c1 berührt. Markiere alle Felder, auf die er ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR",
+     "rechte": "KQkq",
+     "zuege": "e4 e5",
+     "leer": true,
+     "pruef": {
+      "legal": "c1"
+     },
+     "targets": null,
+     "antwort": "Keins. Der Bauer d2 versperrt den Weg. Hat die berührte Figur keinen erlaubten Zug, darfst du ohne Strafe eine andere Figur ziehen.",
+     "hilfe": [
+      "Welche Felder sind frei?",
+      "Steht eine eigene Figur im Weg?"
+     ]
+    },
+    {
+     "frage": "Du hast versehentlich den Springer c6 deines Gegners berührt. Dann musst du ihn schlagen, wenn es geht. Klicke alle weißen Figuren an, die ihn schlagen können.",
+     "fen": "r1bqkbnr/1ppp1ppp/p1n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R",
+     "zuege": "e4 e5 Nf3 Nc6 Bb5 a6",
+     "targets": [
+      "b5"
+     ],
+     "antwort": "Der Läufer b5. Er muss Lxc6 spielen. Wer eine Figur nur zurechtrücken will, sagt vorher „Ich rücke zurecht“.",
+     "hilfe": [
+      "Welche weiße Figur greift c6 an?",
+      "Berührt man eine gegnerische Figur, muss man sie schlagen, wenn es geht."
+     ]
+    },
+    {
+     "frage": "Ein Kind will den König nach f2 ziehen. Markiere alle Felder, auf die der weiße König ziehen darf.",
+     "fen": "4k3/8/8/2b5/8/8/8/4K3",
+     "leer": true,
+     "pruef": {
+      "legal": "e1"
+     },
+     "targets": null,
+     "antwort": "d1, d2, e2 und f1. Das Feld f2 greift der Läufer c5 an. Wer trotzdem Kf2 spielt und die Uhr drückt, macht einen illegalen Zug: zurücknehmen, und der Gegner bekommt eine Minute dazu.",
+     "hilfe": [
+      "Welche Felder greift der Läufer c5 an?",
+      "Ein König darf nie auf ein angegriffenes Feld."
+     ]
+    },
+    {
+     "frage": "Die Zeit von Weiß ist abgelaufen. Schwarz hat nur noch König und Springer. Klicke die schwarzen Figuren an, mit denen Schwarz noch mattsetzen könnte. Wenn keine, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4k3/8/8/3n4/8/8/8/4K3",
+     "targets": [],
+     "antwort": "Keine. Mit König und Springer allein kann Schwarz nie mattsetzen. Deshalb ist die Partie remis, obwohl die Zeit von Weiß abgelaufen ist.",
+     "hilfe": [
+      "Reicht ein Springer zum Matt?",
+      "Zeit abgelaufen heißt nur verloren, wenn der Gegner noch mattsetzen könnte."
+     ]
+    },
+    {
+     "frage": "Zeitnot: Weiß will schnell mit der Dame ziehen. Klicke alle Felder an, auf denen die Dame pattsetzen würde.",
+     "fen": "k7/8/1K6/8/8/8/8/2Q5",
+     "leer": true,
+     "pruef": {
+      "patt": "c1"
+     },
+     "targets": null,
+     "antwort": "c7 und f4. Von dort deckt die Dame b8, der König b6 deckt a7 und b7. Kein Schach: Patt. Auch mit wenig Zeit erst prüfen!",
+     "hilfe": [
+      "Der König b6 deckt a7 und b7.",
+      "Welcher Damenzug deckt b8, ohne Schach zu geben?"
+     ]
+    },
+    {
+     "frage": "Weiß hat Lb5+ gespielt und die Uhr gedrückt. Klicke alle schwarzen Figuren an, die das Schach abwehren können.",
+     "fen": "rnbqkb1r/ppp1pppp/3p1n2/1B6/3PP3/8/PPP2PPP/RNBQK1NR",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 d6 d4 Nf6 Bb5+",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Der Springer b8 (Sc6 oder Sd7), der Läufer c8 (Ld7), die Dame d8 (Dd7), der Bauer c7 (c6) und der Springer f6 (Sfd7). Der König selbst hat kein freies Feld.",
+     "hilfe": [
+      "Woher kommt das Schach?",
+      "Wer kann sich dazwischenstellen?"
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Schwarz spielt Sxe4. Klicke die Figur an, die schlägt.",
+     "fen": "rnbqkb1r/pppp1ppp/5n2/4N3/4P3/8/PPPP1PPP/RNBQKB1R",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nf6 Nxe5",
+     "targets": [
+      "f6"
+     ],
+     "antwort": "Der Springer f6. Er schlägt den Bauern e4.",
+     "hilfe": [
+      "S heißt Springer.",
+      "Welcher schwarze Springer erreicht e4?"
+     ]
+    },
+    {
+     "frage": "Die weiße Dame d1 zieht nach e2. Schreibe den Zug auf.",
+     "fen": "rnbqkb1r/pppp1ppp/8/4N3/4n3/8/PPPP1PPP/RNBQKB1R",
+     "zuege": "e4 e5 Nf3 Nf6 Nxe5 Nxe4",
+     "antwort": "De2. D für Dame, e2 ist das Zielfeld.",
+     "hilfe": [
+      "Erst der Figurenbuchstabe.",
+      "Dann das Zielfeld."
+     ]
+    },
+    {
+     "frage": "Berührt, geführt: Du hast den Turm h1 berührt. Markiere alle Felder, auf die er ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nc6 Bc4 Bc5",
+     "leer": true,
+     "pruef": {
+      "legal": "h1"
+     },
+     "targets": null,
+     "antwort": "g1 und f1. Du musst mit dem Turm ziehen, weil er einen erlaubten Zug hat. Rochieren darfst du nicht mehr, wenn du zuerst den Turm berührt hast.",
+     "hilfe": [
+      "Welche Felder neben dem Turm sind frei?",
+      "Die Rochade beginnt man mit dem König."
+     ]
+    },
+    {
+     "frage": "Die Zeit von Schwarz ist abgelaufen. Weiß hat König und Turm. Klicke die weiße Figur an, mit der Weiß noch mattsetzen könnte.",
+     "fen": "4k3/8/8/8/8/8/8/R3K3",
+     "targets": [
+      "a1"
+     ],
+     "antwort": "Der Turm a1. Mit König und Turm kann Weiß mattsetzen. Deshalb gewinnt Weiß, weil die Zeit von Schwarz abgelaufen ist.",
+     "hilfe": [
+      "Reicht ein Turm zum Matt?",
+      "Zeit abgelaufen: verloren, wenn der Gegner noch mattsetzen könnte."
+     ]
+    },
+    {
+     "frage": "Schwarz steht im Schach. Markiere alle Felder, auf die der schwarze König ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4k3/8/8/1B6/8/8/8/4K3",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "d8, e7, f7 und f8. Das Feld d7 liegt auf der Diagonale des Läufers b5.",
+     "hilfe": [
+      "Woher kommt das Schach?",
+      "Prüfe alle Nachbarfelder."
+     ]
+    },
+    {
+     "frage": "Weiß setzt in einem Zug matt. Klicke das Zielfeld an. Wie schreibst du den Zug auf?",
+     "fen": "6k1/5ppp/8/8/8/8/5PPP/1R4K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "b8. Der Zug heißt Tb8#: T für Turm, b8 Zielfeld, # für Matt.",
+     "hilfe": [
+      "Der Turm muss auf die 8. Reihe.",
+      "Matt schreibt man mit #."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Ein Kind hat im Schach einen anderen Zug gemacht und die Uhr gedrückt. Der Zug wird zurückgenommen. Klicke alle weißen Figuren an, die das Schach richtig abwehren können.",
+     "fen": "4r1k1/8/8/8/8/3B4/8/R3K3",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Der König e1 (wegziehen) und der Läufer d3 (Le2 dazwischen). Der illegale Zug wird zurückgenommen, der Gegner bekommt eine Minute dazu.",
+     "hilfe": [
+      "Woher kommt das Schach?",
+      "Wegziehen, dazwischenstellen oder schlagen."
+     ]
+    },
+    {
+     "frage": "Die Zeit von Weiß ist abgelaufen. Schwarz hat nur noch den König. Klicke die schwarzen Figuren an, mit denen Schwarz noch mattsetzen könnte. Wenn keine, drücke „Prüfen“ ohne Markierung.",
+     "fen": "8/8/4k3/8/8/8/3QK3/8",
+     "targets": [],
+     "antwort": "Keine. Ein König allein kann nie mattsetzen. Die Partie ist remis, obwohl Weiß viel mehr Material hat.",
+     "hilfe": [
+      "Kann ein König allein mattsetzen?",
+      "Zeit abgelaufen heißt nur verloren, wenn der Gegner noch mattsetzen könnte."
+     ]
+    },
+    {
+     "frage": "Du hast deinen König berührt. Markiere alle Felder, auf die er ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "r3k3/8/8/8/8/8/3PPP2/3QK3",
+     "leer": true,
+     "pruef": {
+      "legal": "e1"
+     },
+     "targets": null,
+     "antwort": "Nur f1. Der Turm a8 ist weit weg, aber d1, d2, e2 und f2 sind von eigenen Figuren besetzt. Du musst Kf1 spielen.",
+     "hilfe": [
+      "Welche Nachbarfelder sind frei?",
+      "Greift Schwarz eines davon an?"
+     ]
+    },
+    {
+     "frage": "Der weiße König war schon auf f1 und ist zurück nach e1 gezogen. Markiere alle Felder, auf die er mit einer Rochade ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4k3/8/8/8/8/8/8/R3K2R",
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "Keins. Ein König, der schon einmal gezogen hat, darf nicht mehr rochieren, auch wenn er wieder auf e1 steht. Beim Mitschreiben sieht man das im Partieformular.",
+     "hilfe": [
+      "Hat der König schon gezogen?",
+      "Rochade nur, wenn König und Turm noch nie gezogen haben."
+     ]
+    },
+    {
+     "frage": "Ein Kind ruft „Matt!“ und hält die Uhr an. Markiere alle Felder, auf die der schwarze König ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "6k1/5p1p/6p1/8/8/8/8/3R2K1",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "f8, g7 und h8. Der König steht gar nicht im Schach, das ist kein Matt. Uhr wieder starten, die Partie geht weiter.",
+     "hilfe": [
+      "Steht der König im Schach?",
+      "Prüfe alle Nachbarfelder."
+     ]
+    },
+    {
+     "frage": "Beim Mitschreiben steht „Lf7“. Der Läufer hat aber geschlagen und Schach gegeben. Schreibe den Zug richtig auf.",
+     "fen": "r1bqkbnr/pppp1ppp/8/4p3/2BnP3/5N2/PPPP1PPP/RNBQK2R",
+     "zuege": "e4 e5 Nf3 Nc6 Bc4 Nd4",
+     "antwort": "Lxf7+. Das x zeigt das Schlagen, das + das Schach.",
+     "hilfe": [
+      "Was fehlt für das Schlagen?",
+      "Was fehlt für das Schach?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Schwarz spielt Lb4+. Markiere Startfeld und Zielfeld.",
+     "fen": "rnbqkbnr/pppp1ppp/4p3/8/2PP4/8/PP2PPPP/RNBQKBNR",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "d4 e6 c4",
+     "targets": [
+      "f8",
+      "b4"
+     ],
+     "antwort": "f8 und b4. Der Läufer gibt Schach.",
+     "hilfe": [
+      "L heißt Läufer.",
+      "Welcher schwarze Läufer erreicht b4?"
+     ]
+    },
+    {
+     "frage": "Der Springer g1 zieht nach f3. Schreibe den Zug auf.",
+     "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR",
+     "zuege": "d4 d5",
+     "antwort": "Sf3.",
+     "hilfe": [
+      "Erst der Figurenbuchstabe.",
+      "Dann das Zielfeld."
+     ]
+    },
+    {
+     "frage": "Berührt, geführt: Du hast den Bauern e2 berührt. Markiere alle Felder, auf die er ziehen darf.",
+     "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR",
+     "rechte": "KQkq",
+     "zuege": "d4 d5",
+     "leer": true,
+     "pruef": {
+      "legal": "e2"
+     },
+     "targets": null,
+     "antwort": "e3 und e4. Der Bauer darf vom Startfeld ein oder zwei Felder ziehen.",
+     "hilfe": [
+      "Wohin darf ein Bauer vom Startfeld?",
+      "Steht etwas im Weg?"
+     ]
+    },
+    {
+     "frage": "Die Zeit von Weiß ist abgelaufen. Schwarz hat König und Läufer. Klicke die schwarzen Figuren an, mit denen Schwarz noch mattsetzen könnte. Wenn keine, drücke „Prüfen“ ohne Markierung.",
+     "fen": "8/8/3k4/8/4b3/8/8/2K5",
+     "targets": [],
+     "antwort": "Keine. Mit König und Läufer allein kann man nicht mattsetzen: remis.",
+     "hilfe": [
+      "Reicht ein Läufer zum Matt?",
+      "Was gilt dann bei abgelaufener Zeit?"
+     ]
+    },
+    {
+     "frage": "Weiß steht im Schach. Klicke alle weißen Figuren an, die das Schach abwehren können.",
+     "fen": "4k3/8/8/b7/8/8/8/1N2K2R",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Der König e1 (wegziehen) und der Springer b1 (Sc3 oder Sd2 dazwischen).",
+     "hilfe": [
+      "Woher kommt das Schach?",
+      "Wer kann dazwischen?"
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der weiße König mit einer Rochade ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "r3k2r/8/8/8/8/7b/8/R3K2R",
+     "rechte": "KQkq",
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "Nur c1. Kurz geht nicht, weil der Läufer h3 das Feld f1 angreift.",
+     "hilfe": [
+      "Über welche Felder zieht der König?",
+      "Wen greift der Läufer h3 an?"
+     ]
+    }
+   ]
+  }
  }
 };
 export const YEAR=[["Brett, Figuren, Schach und Matt",[1,11]],["Sonderregeln, Notation und erste Taktik",[12,26]],["Mattführung, Eröffnung und Endspiel",[27,36]]];
