@@ -175,3 +175,5 @@ body:has(#teacherboard) .boardlead .boardturn{display:block;margin-top:18px;padd
 @media(max-width:640px){.boardframe{grid-template-columns:18px minmax(0,1fr) 18px;grid-template-rows:18px minmax(0,1fr) 18px}.file-labels,.rank-labels{font-size:11px}
 .yeartable,.yeartable tbody,.yeartable tr,.yeartable td{display:block;width:auto!important}.yeartable thead{display:none}.yeartable tr{border:1px solid #d5dcdd;border-radius:8px;background:#fff;margin:8px 0;padding:8px 12px}.yeartable td{border:0;padding:2px 0;text-align:left!important;overflow-wrap:anywhere;hyphens:auto}.yeartable td:first-child{font-size:12px;font-weight:700;color:var(--muted)}.yeartable td:first-child::before{content:'Woche '}.yeartable td:nth-child(2){font-weight:650}}
 @media(max-width:640px){.yeartable td button{text-align:left}}
+
+@media print{.ws-page,.printsection,.sheetwrap{zoom:1!important}}
