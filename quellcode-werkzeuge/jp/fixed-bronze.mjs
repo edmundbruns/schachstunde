@@ -30,7 +30,8 @@ export const URLS={
  "mattChallenge": "https://www.youtube.com/watch?v=pTEy2s2dwNA",
  "schachBingo": "https://www.youtube.com/watch?v=CDEEqAtAKdU",
  "lichessPin": "https://lichess.org/training/pin",
- "lichessFork": "https://lichess.org/training/fork"
+ "lichessFork": "https://lichess.org/training/fork",
+ "lichessSkewer": "https://lichess.org/training/skewer"
 };
 export const FIXED={
  "1": {
@@ -13374,6 +13375,560 @@ export const FIXED={
      "hilfe": [
       "Die Dame soll den König b8 und den Läufer f4 angreifen.",
       "Die Dame darf dabei sogar schlagen."
+     ]
+    }
+   ]
+  }
+ },
+ "24": {
+  "thema": "Der Spieß",
+  "lernziel": "Ich kann einen Spieß finden.",
+  "leitfrage": "Was passiert, wenn die wertvolle Figur vorne steht und hinter ihr noch eine Figur wartet?",
+  "vorwissen": "Fesselung (Woche 22), Gabel und Doppelangriff (Woche 23), Figurenwerte (Woche 7).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Lichess-Puzzles Z8QNk, qcVv4, SbNpB, IYNOS, PlUm1, dRRAu, XkEBd und 4q7nz (CC0, Thema „skewer“, über die Lichess-Schnittstelle abgerufen), übrige Brettaufgaben eigene Aufgaben. Spießzüge und gewonnene Figuren mit chess.js berechnet, eigene Spießstellungen zusätzlich mit Stockfish auf Materialgewinn geprüft, die Lichess-Lösungen stammen aus der Datenbank",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Fesselung und Gabel wiederholen",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6: Fesselung und Gabel aus Woche 22 und 23, Linien von Turm und Läufer.",
+     "Bei W6 fragen: „Der König muss weg. Was passiert dann mit der Figur dahinter?“ Ziel nennen: „Heute lernt ihr den Spieß: Die wertvolle Figur steht vorne, sie muss weichen, und die Figur dahinter geht verloren.“"
+    ],
+    "kinder": "Ich erinnere mich an Fesselung und Gabel.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Spieß mit Turm, Läufer und Dame",
+    "ablauf": [
+     "Plakat „Der Spieß“ aufhängen. Am Lehrbrett E1: Der Turm greift den König an, er muss weichen. Dahinter steht die Dame, die jetzt geschlagen wird.",
+     "E2 bis E4: Spieß herstellen mit Turm, Läufer und Dame. Frage: „Woran erkennst du den Unterschied zur Fesselung?“ (Beim Spieß steht die wertvollere Figur vorne, bei der Fesselung hinten.) E5: Fesselung oder Spieß?",
+     "E6: ein echter Spieß aus einer Lichess-Partie. Merksatz: „Wertvolle Figur vorne, Beute dahinter: Spieß. Sie muss weg, die hintere fällt.“"
+    ],
+    "kinder": "Ich erkläre den Spieß und den Unterschied zur Fesselung.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Der Spieß",
+      "was": "spiess"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Spieß E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Spieß bauen zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A stellt König und Dame des Gegners auf eine Linie oder Diagonale, mit Platz dazwischen. Kind B sucht mit Turm, Läufer oder Dame das Feld für den Spieß und zeigt, was danach verloren geht. Danach wechseln die Rollen.",
+     "Allein: Arbeitsblatt A1 bis A6, darunter vier echte Aufgaben aus Lichess-Partien. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich finde Spießfelder für Turm, Läufer und Dame.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Der Spieß",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6: Ein Spieß lohnt nicht, wenn die hintere Figur gedeckt und weniger wert ist. Die Spießfigur darf nicht geschlagen werden können. Fesselung und Spieß verwechseln. Auch der Gegner kann spießen.",
+     "Bei jeder Aufgabe fragen: „Was gewinnst du, nachdem die vordere Figur weggezogen ist?“"
+    ],
+    "kinder": "Ich prüfe, ob ein Spieß wirklich etwas gewinnt.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, fragst du einige am Brett: „Welche Figur steht vorne, welche dahinter, und was gewinnst du?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich finde und erkläre einen Spieß ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Spieß-Jagd“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Weiß hat König und Turm, Schwarz hat König und Dame. Weiß versucht, König und Dame auf eine Linie zu zwingen und zu spießen, Schwarz versucht es zu vermeiden. Nach fünf Minuten wechseln die Rollen.",
+     "Rückblick: „Spieß oder Fesselung, woran erkennst du es?“ Aufräum-Ritual. Ausblick: Nächstes Mal lernt ihr den Abzug und das Abzugsschach."
+    ],
+    "kinder": "Ich nutze einen Spieß in einer Partie.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Der Spieß",
+      "was": "spiess"
+     },
+     {
+      "art": "blatt",
+      "label": "Mehr Spießaufgaben auf Lichess (online)",
+      "url": "https://lichess.org/training/skewer"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Mit einem Stift die Linie vom Angreifer aus verlängern: Was steht als Erstes darauf, was als Zweites?",
+   "zusatz": "Eine Stellung bauen, in der ein Läufer gleichzeitig eine Figur fesselt und auf einer anderen Diagonale einen Spieß macht. Oder Lichess-Aufgaben zum Thema Spieß lösen.",
+   "kuerzen": "Die Partnerübung auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
+  },
+  "nachher": "Wer verwechselt noch Fesselung und Spieß? Wer prüft, ob die hintere Figur gedeckt ist? Das greifst du in Woche 25 beim Abzug wieder auf.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Wiederholung Fesselung: Klicke die gefesselte schwarze Figur an.",
+     "fen": "4k3/4r3/8/8/8/8/8/4R1K1",
+     "targets": [
+      "e7"
+     ],
+     "antwort": "Der Turm e7. Er steht zwischen dem Turm e1 und dem König e8 und darf die e-Linie nicht verlassen. Hinten steht die wertvollere Figur: Fesselung.",
+     "hilfe": [
+      "Was steht zwischen dem Turm e1 und dem König e8?",
+      "Darf diese Figur die e-Linie verlassen?"
+     ]
+    },
+    {
+     "frage": "Wiederholung Gabel: Klicke das Feld an, auf das der Springer zieht, um König und Dame anzugreifen.",
+     "fen": "4k3/8/8/1N1q4/8/8/8/6K1",
+     "leer": true,
+     "targets": [
+      "c7"
+     ],
+     "antwort": "c7. Der Springer gibt Schach und greift die Dame d5 an.",
+     "hilfe": [
+      "Welches Feld erreicht e8 und d5?",
+      "Ist das Feld sicher?"
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Läufer c1 ziehen kann.",
+     "fen": "4k3/8/8/8/8/8/1P6/2B1K3",
+     "leer": true,
+     "pruef": {
+      "legal": "c1"
+     },
+     "targets": null,
+     "antwort": "d2, e3, f4, g5 und h6. Nach b2 kommt er nicht, dort steht der eigene Bauer.",
+     "hilfe": [
+      "Der Läufer zieht schräg.",
+      "Wo steht eine eigene Figur im Weg?"
+     ]
+    },
+    {
+     "frage": "Weiß setzt in einem Zug matt. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "6k1/5ppp/8/8/8/8/6PP/R5K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a8. Der Turm gibt Schach über die 8. Reihe, die eigenen Bauern sperren den König ein.",
+     "hilfe": [
+      "Die eigenen Bauern sperren den König ein.",
+      "Der Turm muss auf die 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Klicke alle schwarzen Figuren an, die angegriffen und nicht gedeckt sind.",
+     "fen": "r3k3/8/8/1b6/8/8/8/1R2K3",
+     "pruef": {
+      "haengt": "b"
+     },
+     "targets": null,
+     "antwort": "Der Läufer b5. Der Turm b1 greift ihn an, und keine schwarze Figur deckt ihn.",
+     "hilfe": [
+      "Was greift der Turm b1 an?",
+      "Wer deckt den Läufer?"
+     ]
+    },
+    {
+     "frage": "Der Turm gibt Schach, der König muss weg. Klicke die Figur an, die dahinter auf derselben Linie steht und danach verloren geht.",
+     "fen": "2r5/8/8/2k5/8/8/8/2R3K1",
+     "zug": "b",
+     "schach": true,
+     "targets": [
+      "c8"
+     ],
+     "antwort": "Der Turm c8. Der König muss die c-Linie verlassen, danach schlägt der weiße Turm den Turm c8. Das ist ein Spieß.",
+     "hilfe": [
+      "Verlängere die Linie vom Turm über den König hinaus.",
+      "Was steht dort?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Der Turm e1 gibt Schach, der König e5 muss weichen. Klicke die schwarze Figur an, die Weiß danach schlägt.",
+     "fen": "4q3/8/8/4k3/8/8/8/4R1K1",
+     "zug": "b",
+     "schach": true,
+     "targets": [
+      "e8"
+     ],
+     "antwort": "Die Dame e8. Der König muss die e-Linie verlassen, danach schlägt der Turm die Dame.",
+     "hilfe": [
+      "Was steht hinter dem König auf der e-Linie?",
+      "Der König darf nicht auf der e-Linie bleiben."
+     ]
+    },
+    {
+     "frage": "Spieß mit dem Turm: Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "4q3/8/8/4k3/8/8/8/R5K1",
+     "leer": true,
+     "targets": [
+      "e1"
+     ],
+     "antwort": "e1. Der Turm gibt Schach auf der e-Linie, dahinter steht die Dame e8. Nach dem Königszug fällt die Dame.",
+     "hilfe": [
+      "Auf welcher Linie stehen König und Dame?",
+      "Der Turm muss auf diese Linie, vor den König."
+     ]
+    },
+    {
+     "frage": "Spieß mit dem Läufer: Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "8/8/B3k3/8/8/7r/1P6/6K1",
+     "leer": true,
+     "targets": [
+      "c8"
+     ],
+     "antwort": "c8. Der Läufer gibt Schach auf der Diagonale c8 bis h3, dahinter steht der Turm h3. Nach dem Königszug fällt der Turm.",
+     "hilfe": [
+      "Auf welcher Diagonale stehen König und Turm?",
+      "Der Läufer muss auf diese Diagonale, vor den König."
+     ]
+    },
+    {
+     "frage": "Spieß mit der Dame: Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "q7/8/8/7Q/4k3/8/8/6K1",
+     "leer": true,
+     "targets": [
+      "h1"
+     ],
+     "antwort": "h1. Die Dame gibt Schach auf der langen Diagonale, dahinter steht die Dame a8. Nach dem Königszug schlägt Weiß die Dame.",
+     "hilfe": [
+      "Auf welcher Diagonale stehen König und Dame?",
+      "Die Dame muss auf die andere Seite des Königs."
+     ]
+    },
+    {
+     "frage": "Spieß oder Fesselung? Hier steht die wertvollere Figur hinten: Das ist eine Fesselung. Klicke die gefesselte Figur an.",
+     "fen": "q6k/1r6/8/3B4/8/8/8/4K3",
+     "targets": [
+      "b7"
+     ],
+     "antwort": "Der Turm b7. Zieht er weg, schlägt der Läufer die Dame a8. Vorne die schwächere Figur, hinten die wertvollere: Fesselung.",
+     "hilfe": [
+      "Was steht vorne, was hinten?",
+      "Zieht die vordere Figur weg, fällt die hintere."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß spießt mit Schach. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "5R2/8/6K1/p5B1/q3k3/3p4/8/8",
+     "leer": true,
+     "quelle": "Lichess-Puzzle Z8QNk (CC0), https://lichess.org/training/Z8QNk",
+     "targets": [
+      "f4"
+     ],
+     "antwort": "f4. Der Turm gibt Schach auf der 4. Reihe, dahinter steht die Dame a4. So ging die Partie weiter: Kd5 Txa4.",
+     "hilfe": [
+      "Auf welcher Reihe stehen König und Dame?",
+      "Der Turm muss auf diese Reihe."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Klicke das Feld an, auf das der Turm zieht, um einen Spieß zu machen.",
+     "fen": "3r4/8/8/3k4/8/8/8/1R4K1",
+     "leer": true,
+     "targets": [
+      "d1"
+     ],
+     "antwort": "d1. Der Turm gibt Schach auf der d-Linie, dahinter steht der Turm d8. Nach dem Königszug fällt der Turm.",
+     "hilfe": [
+      "Auf welcher Linie stehen König und Turm?",
+      "Der Turm muss vor den König."
+     ]
+    },
+    {
+     "frage": "Klicke das Feld an, auf das der Läufer zieht, um einen Spieß zu machen.",
+     "fen": "7r/8/8/8/3k4/8/6P1/2B1K3",
+     "leer": true,
+     "targets": [
+      "b2"
+     ],
+     "antwort": "b2. Der Läufer gibt Schach auf der Diagonale b2 bis h8, dahinter steht der Turm h8.",
+     "hilfe": [
+      "Auf welcher Diagonale stehen König und Turm?",
+      "Steht der Läufer dort sicher?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz spießt mit Schach. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "4r1k1/8/6p1/3P1p2/1Q1K4/pP6/6PP/8",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle PlUm1 (CC0), https://lichess.org/training/PlUm1",
+     "targets": [
+      "e4"
+     ],
+     "antwort": "e4. Der Turm gibt Schach auf der 4. Reihe, dahinter steht die weiße Dame b4. So ging die Partie weiter: Kc3 Txb4.",
+     "hilfe": [
+      "Auf welcher Reihe stehen der weiße König und die Dame?",
+      "Der Turm muss auf diese Reihe."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß spießt mit Schach. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "8/1pR2p2/p3p1p1/8/1P3P1p/P2kB2P/2n2K2/3r4",
+     "leer": true,
+     "quelle": "Lichess-Puzzle qcVv4 (CC0), https://lichess.org/training/qcVv4",
+     "targets": [
+      "d7"
+     ],
+     "antwort": "d7. Der Turm gibt Schach auf der d-Linie, dahinter steht der Turm d1. So ging die Partie weiter: Ke4 Txd1.",
+     "hilfe": [
+      "Auf welcher Linie stehen König d3 und Turm d1?",
+      "Der Turm muss auf diese Linie."
+     ]
+    },
+    {
+     "frage": "Noch eine echte Partie: Weiß spießt mit Schach. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "6r1/p4p1p/1pp1p1k1/7R/P2P1P2/2P3P1/6K1/8",
+     "leer": true,
+     "quelle": "Lichess-Puzzle SbNpB (CC0), https://lichess.org/training/SbNpB",
+     "targets": [
+      "g5"
+     ],
+     "antwort": "g5. Der Turm gibt Schach auf der g-Linie, dahinter steht der Turm g8. So ging die Partie weiter: Kf6 Txg8.",
+     "hilfe": [
+      "Auf welcher Linie stehen König g6 und Turm g8?",
+      "Der Turm muss auf diese Linie."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz spießt mit Schach. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "q6r/b2Q2p1/p2Bppkp/8/P7/4P1P1/1P3P1P/2R2K2",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle IYNOS (CC0), https://lichess.org/training/IYNOS",
+     "targets": [
+      "h1"
+     ],
+     "antwort": "h1. Die Dame gibt Schach auf der 1. Reihe, dahinter steht der Turm c1. So ging die Partie weiter: Ke2 Dxc1.",
+     "hilfe": [
+      "Auf welcher Reihe stehen der weiße König und der Turm c1?",
+      "Die Dame muss auf diese Reihe."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Fehler 1: Lohnt der Spieß? Die hintere Figur ist gedeckt und weniger wert als der Turm. Klicke alle Felder an, auf denen der Turm einen lohnenden Spieß macht. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4b3/6n1/8/4k3/8/8/8/R5K1",
+     "leer": true,
+     "targets": [],
+     "antwort": "Keins. Hinter dem König steht der Läufer e8, und der Springer g7 deckt ihn. Ein Turm für einen Läufer ist kein Gewinn.",
+     "hilfe": [
+      "Was steht hinter dem König?",
+      "Wer deckt diese Figur?"
+     ]
+    },
+    {
+     "frage": "Fehler 2: Die Spießfigur steht unsicher. Schwarz ist am Zug. Klicke alle schwarzen Figuren an, die die weiße Dame schlagen können.",
+     "fen": "q6r/8/8/8/4k3/8/8/6KQ",
+     "zug": "b",
+     "schach": true,
+     "targets": [
+      "h8"
+     ],
+     "antwort": "Der Turm h8. Er schlägt die Dame h1, Weiß kann nur mit dem König zurückschlagen. Der Spieß ist dahin, Schwarz gewinnt die Dame für einen Turm.",
+     "hilfe": [
+      "Wer greift h1 an?",
+      "Lohnt sich das Schlagen für Schwarz?"
+     ]
+    },
+    {
+     "frage": "Nach dem Spieß: Schwarz muss den König retten. Markiere alle Felder, auf die der König ziehen darf.",
+     "fen": "7q/8/8/8/3k4/8/8/B5K1",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "c4, c5, d3, d5, e3 und e4. Der König verlässt die Diagonale a1 bis h8, danach schlägt der Läufer die Dame h8.",
+     "hilfe": [
+      "Woher kommt das Schach?",
+      "Der König darf nicht auf der Diagonale bleiben."
+     ]
+    },
+    {
+     "frage": "Auch der Gegner spießt. Schwarz ist am Zug. Klicke das Feld an, auf das der schwarze Turm zieht.",
+     "fen": "r6k/8/8/8/4K3/8/8/4Q3",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "e8"
+     ],
+     "antwort": "e8. Der schwarze Turm gibt Schach auf der e-Linie, dahinter steht die weiße Dame e1.",
+     "hilfe": [
+      "Auf welcher Linie stehen der weiße König und die Dame?",
+      "Der Turm muss vor den König."
+     ]
+    },
+    {
+     "frage": "Fehler 3: Fesselung oder Spieß? Die wertvollere Figur steht hinten. Klicke die gefesselte schwarze Figur an.",
+     "fen": "4k3/8/8/4q3/8/8/8/4R1K1",
+     "targets": [
+      "e5"
+     ],
+     "antwort": "Die Dame e5. Sie steht vor dem König e8 und darf die e-Linie nicht verlassen. Vorne die Dame, hinten der König: Fesselung, kein Spieß.",
+     "hilfe": [
+      "Was steht vorne, was hinten?",
+      "Vorne die Dame, hinten der König: Fesselung."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz spießt mit Schach. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "8/4B3/p5k1/6P1/P7/r4p2/2K2R2/8",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle dRRAu (CC0), https://lichess.org/training/dRRAu",
+     "targets": [
+      "a2"
+     ],
+     "antwort": "a2. Der Turm gibt Schach auf der 2. Reihe, dahinter steht der Turm f2. So ging die Partie weiter: Kb3 Txf2.",
+     "hilfe": [
+      "Auf welcher Linie stehen der weiße König und der Turm f2?",
+      "Der Turm muss auf diese Linie."
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Klicke das Feld an, auf das der Turm zieht, um einen Spieß zu machen.",
+     "fen": "1q6/8/8/1k6/8/8/4K3/7R",
+     "leer": true,
+     "targets": [
+      "b1"
+     ],
+     "antwort": "b1. Der Turm gibt Schach auf der b-Linie, dahinter steht die Dame b8. Der König kommt nicht mehr an die Dame heran.",
+     "hilfe": [
+      "Auf welcher Linie stehen König und Dame?",
+      "Der Turm muss vor den König."
+     ]
+    },
+    {
+     "frage": "Klicke das Feld an, auf das der Läufer zieht, um einen Spieß zu machen.",
+     "fen": "6r1/8/4k3/8/8/8/P3B3/7K",
+     "leer": true,
+     "targets": [
+      "c4"
+     ],
+     "antwort": "c4. Der Läufer gibt Schach auf der Diagonale c4 bis g8, dahinter steht der Turm g8. Der König kann den Turm nicht mehr decken.",
+     "hilfe": [
+      "Auf welcher Diagonale stehen König und Turm?",
+      "Der Läufer muss vor den König."
+     ]
+    },
+    {
+     "frage": "Der Läufer gibt Schach. Klicke die schwarze Figur an, die Weiß nach dem Königszug schlägt.",
+     "fen": "8/8/1q6/8/3k4/8/5B2/6K1",
+     "zug": "b",
+     "schach": true,
+     "targets": [
+      "b6"
+     ],
+     "antwort": "Die Dame b6. Der König muss die Diagonale verlassen, dann schlägt der Läufer die Dame.",
+     "hilfe": [
+      "Verlängere die Diagonale vom Läufer über den König hinaus.",
+      "Was steht dort?"
+     ]
+    },
+    {
+     "frage": "Der Turm gibt Schach. Markiere alle Felder, auf die der schwarze König ziehen darf.",
+     "fen": "r7/8/8/k7/8/8/8/R5K1",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "b4, b5 und b6. Danach schlägt der Turm a1 den Turm a8. Auch das ist ein Spieß.",
+     "hilfe": [
+      "Woher kommt das Schach?",
+      "Der König muss die a-Linie verlassen."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß spießt mit Schach. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "r7/P6R/1b2k3/3p4/3P4/2P1P3/3K4/8",
+     "leer": true,
+     "quelle": "Lichess-Puzzle XkEBd (CC0), https://lichess.org/training/XkEBd",
+     "targets": [
+      "h6"
+     ],
+     "antwort": "h6. Der Turm gibt Schach auf der 6. Reihe, dahinter steht der Läufer b6. So ging die Partie weiter: Ke7 Txb6.",
+     "hilfe": [
+      "Auf welcher Reihe stehen König e6 und Läufer b6?",
+      "Der Turm muss auf diese Reihe."
+     ]
+    },
+    {
+     "frage": "Noch eine echte Partie: Weiß spießt mit Schach. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "8/2p5/3p3R/pr4k1/6P1/5P2/8/6K1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 4q7nz (CC0), https://lichess.org/training/4q7nz",
+     "targets": [
+      "h5"
+     ],
+     "antwort": "h5. Der Turm gibt Schach auf der 5. Reihe, dahinter steht der Turm b5. So ging die Partie weiter: Kg6 Txb5.",
+     "hilfe": [
+      "Auf welcher Reihe stehen König g5 und Turm b5?",
+      "Der Turm muss auf diese Reihe."
      ]
     }
    ]
