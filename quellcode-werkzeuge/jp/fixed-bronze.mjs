@@ -32,7 +32,8 @@ export const URLS={
  "lichessPin": "https://lichess.org/training/pin",
  "lichessFork": "https://lichess.org/training/fork",
  "lichessSkewer": "https://lichess.org/training/skewer",
- "lichessDiscovered": "https://lichess.org/training/discoveredAttack"
+ "lichessDiscovered": "https://lichess.org/training/discoveredAttack",
+ "lichessIntermezzo": "https://lichess.org/training/intermezzo"
 };
 export const FIXED={
  "1": {
@@ -15088,6 +15089,566 @@ export const FIXED={
      "hilfe": [
       "Die Dame braucht eine Deckung.",
       "Welche Felder neben dem König f1 sind frei?"
+     ]
+    }
+   ]
+  }
+ },
+ "27": {
+  "thema": "Gegenangriff statt Flucht",
+  "lernziel": "Ich kann eine bedrohte Figur mit einem Gegenangriff retten.",
+  "leitfrage": "Meine Figur ist angegriffen. Muss sie einfach weglaufen, oder kann ich zurückschlagen, bevor der Gegner zuschlägt?",
+  "vorwissen": "Angreifen und decken (Woche 6), Figurenwerte (Woche 7), Fesselung, Gabel und Spieß (Woche 22 bis 24).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Ludgerus-Schachdiplom Gold 1 „Gegenangriff“ (Idee), Lichess-Puzzles QnBjC, nwSIs, HfeBs, aybFM, va3wY, AYLAr, jePqo und CPtae (CC0, Thema „intermezzo“, über die Lichess-Schnittstelle abgerufen), übrige Aufgaben eigene Aufgaben. Gefahr, sichere Felder und Fesselungen mit chess.js berechnet, die besten Züge mit Stockfish geprüft",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Angegriffen oder in Gefahr?",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6: angegriffene Figuren finden, Figuren in Gefahr erkennen, Gabel und Fesselung wiederholen, sichere Felder für einen bedrohten Springer suchen.",
+     "Bei W6 fragen: „Der Springer muss weg. Gibt es ein Feld, auf dem er sicher steht und selbst etwas angreift?“ Ziel nennen: „Heute lernt ihr den Gegenangriff. Eure Figur flieht nicht nur, sie greift dabei an.“"
+    ],
+    "kinder": "Ich erkenne, welche meiner Figuren wirklich in Gefahr ist.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Flucht mit Schach, Angriff auf die Dame, Angreifer fesseln",
+    "ablauf": [
+     "Plakat „Gegenangriff statt Flucht“ aufhängen. Am Lehrbrett E1 und E2: Die bedrohte Figur zieht mit Schach weg und greift dabei einen Turm an. Der Gegner muss zuerst den König retten.",
+     "E3: Die bedrohte Figur bleibt stehen, eine andere Figur fesselt den Angreifer. E4: Der Springer flieht und greift die Dame an. Frage: „Warum muss der Gegenangriff mindestens so viel wert sein wie meine bedrohte Figur?“",
+     "E5 und E6: echte Partien. Der Gegner hat geschlagen, aber zuerst kommt ein Schach mit Gewinn. Merksatz: „Erst Schach und Angriffe suchen, dann fliehen oder zurückschlagen.“"
+    ],
+    "kinder": "Ich erkläre drei Arten von Gegenangriff.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Gegenangriff statt Flucht",
+      "was": "gegenangriff"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Gegenangriff E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Gegenangriff suchen zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A stellt eine weiße Figur auf, die von einem schwarzen Bauern angegriffen wird, dazu den schwarzen König und einen schwarzen Turm. Kind B sucht ein Fluchtfeld mit Schach oder Angriff. Danach wechseln die Rollen.",
+     "Allein: Arbeitsblatt A1 bis A6, darunter zwei echte Aufgaben aus Lichess-Partien. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich finde Fluchtzüge, die gleichzeitig angreifen.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Gegenangriff",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Fehler klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6: Ein Gegenangriff auf eine schwächere Figur rettet die Dame nicht. Die angreifende Figur muss sicher stehen. Nicht jedes Schach hilft. Nicht jede angegriffene Figur ist in Gefahr.",
+     "Bei jeder Aufgabe fragen: „Woran erkennst du, dass dein Gegenangriff stärker ist als die Drohung des Gegners?“"
+    ],
+    "kinder": "Ich prüfe vor dem Gegenangriff Werte und Sicherheit.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fehler klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, fragst du einige am Brett: „Welche Figur ist bedroht, und was greifst du mit deinem Zug an?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich finde einen Gegenangriff ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Wer greift zurück?“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Jedes Kind hat König, Turm, Läufer, Springer und drei Bauern. Wer eine gegnerische Figur angreift, sagt „Angriff“. Der andere bekommt einen Punkt, wenn er mit einem Gegenangriff antwortet statt nur zu fliehen. Danach wechseln die Rollen.",
+     "Rückblick: „Wann ist Flucht besser, wann ein Gegenangriff?“ Aufräum-Ritual. Ausblick: Nächstes Mal setzt ihr mit zwei Türmen matt."
+    ],
+    "kinder": "Ich nutze einen Gegenangriff in einer Partie.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Gegenangriff statt Flucht",
+      "was": "gegenangriff"
+     },
+     {
+      "art": "blatt",
+      "label": "Mehr Zwischenzug-Aufgaben auf Lichess (online)",
+      "url": "https://lichess.org/training/intermezzo"
+     },
+     {
+      "art": "blatt",
+      "label": "Ludgerus-Schachdiplom online (Gold 1)",
+      "url": "https://ludgerus-schachdiplom.netlify.app/"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Zuerst nur die bedrohte Figur zeigen lassen. Dann gemeinsam alle Felder suchen, auf denen sie sicher steht. Erst danach fragen, was sie von dort angreift.",
+   "zusatz": "Eine Stellung bauen, in der ein Gegenangriff mit Schach zwei Figuren rettet. Oder Lichess-Aufgaben zum Thema Zwischenzug lösen.",
+   "kuerzen": "Die Partnerübung auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
+  },
+  "nachher": "Wer erkennt, ob eine Figur wirklich in Gefahr ist? Wer greift mit einer zu schwachen Figur zurück? Das wiederholst du in Woche 29 beim Verteidigen.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Klicke alle weißen Figuren an, die angegriffen werden.",
+     "fen": "6k1/5ppp/8/4p3/1b3B2/2N5/5PPP/R5K1",
+     "targets": [
+      "f4",
+      "c3"
+     ],
+     "antwort": "Der Springer c3 (vom Läufer b4) und der Läufer f4 (vom Bauern e5). Der Turm a1 wird nicht angegriffen.",
+     "hilfe": [
+      "Prüfe jede schwarze Figur: Was greift sie an?",
+      "Bauern greifen schräg nach vorn an."
+     ]
+    },
+    {
+     "frage": "Welche weißen Figuren sind wirklich in Gefahr? Klicke sie an.",
+     "fen": "3r2k1/5pp1/q6p/6B1/2BN4/2P5/5PPP/4R1K1",
+     "targets": [
+      "g5",
+      "c4"
+     ],
+     "antwort": "Der Läufer c4 (ungedeckt, von der Dame angegriffen) und der Läufer g5 (vom Bauern h6 angegriffen). Der Springer d4 ist vom Bauern c3 gedeckt, der Turm d8 ist mehr wert.",
+     "hilfe": [
+      "Angegriffen und ungedeckt heißt: Gefahr.",
+      "Greift eine billigere Figur an, ist es auch Gefahr."
+     ]
+    },
+    {
+     "frage": "Wiederholung Gabel: Klicke das Feld an, auf das der Springer zieht und König und Dame angreift.",
+     "fen": "3q3k/6pp/8/4N3/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "f7"
+     ],
+     "antwort": "f7. Sf7+ greift den König h8 und die Dame d8 an.",
+     "hilfe": [
+      "Welche Springerfelder greifen h8 an?",
+      "Welches davon greift auch d8 an?"
+     ]
+    },
+    {
+     "frage": "Wiederholung Fesselung: Klicke das Feld an, auf das der Läufer zieht, um den Springer zu fesseln.",
+     "fen": "4k3/8/2n5/8/8/8/5PPP/5BK1",
+     "leer": true,
+     "targets": [
+      "b5"
+     ],
+     "antwort": "b5. Der Läufer fesselt den Springer c6 an den König e8.",
+     "hilfe": [
+      "Auf welcher Diagonale stehen Springer und König?",
+      "Der Läufer muss vor den Springer."
+     ]
+    },
+    {
+     "frage": "Der Springer d4 wird vom Bauern e5 angegriffen. Markiere alle Felder, auf denen er sicher steht.",
+     "fen": "6k1/5pb1/8/4p3/3N4/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "b5",
+      "c6",
+      "f5",
+      "f3",
+      "e2",
+      "c2",
+      "b3"
+     ],
+     "antwort": "b3, b5, c2, c6, e2, f3 und f5. Auf e6 schlägt ihn der Bauer f7.",
+     "hilfe": [
+      "Zeige alle Springerfelder.",
+      "Welche davon greift eine schwarze Figur an?"
+     ]
+    },
+    {
+     "frage": "Der Springer d4 muss weg. Markiere alle Felder, auf denen er sicher steht und den Turm d8 angreift.",
+     "fen": "3r2k1/5ppp/8/4p3/3N4/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "c6"
+     ],
+     "antwort": "c6. Von dort greift der Springer den Turm d8 und den Bauern e5 an. Auf e6 schlägt ihn der Bauer f7.",
+     "hilfe": [
+      "Von welchen Feldern greift ein Springer d8 an?",
+      "Steht er dort sicher?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Der Springer f5 wird vom Bauern g6 angegriffen. Rette ihn mit einem Gegenangriff: Klicke das Feld an, auf das er zieht.",
+     "fen": "2r3k1/5p1p/6p1/5N2/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "e7"
+     ],
+     "antwort": "e7. Se7+ gibt Schach und greift den Turm c8 an. Nach dem Königszug schlägt der Springer den Turm.",
+     "hilfe": [
+      "Welches Springerfeld greift den König g8 an?",
+      "Greift es auch den Turm an?"
+     ]
+    },
+    {
+     "frage": "Der Läufer f3 wird vom Bauern g4 angegriffen. Rette ihn mit einem Gegenangriff: Klicke das Feld an, auf das er zieht.",
+     "fen": "6k1/6pp/8/8/6p1/5B2/r4PPP/6K1",
+     "leer": true,
+     "targets": [
+      "d5"
+     ],
+     "antwort": "d5. Ld5+ gibt Schach über e6 und f7 und greift den Turm a2 an. Nach dem Königszug schlägt der Läufer den Turm.",
+     "hilfe": [
+      "Von welchem Feld gibt der Läufer Schach?",
+      "Was greift er dort noch an?"
+     ]
+    },
+    {
+     "frage": "Der Turm d5 greift den Springer d2 an. Rette den Springer, ohne ihn zu ziehen: Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "6k1/8/8/3r4/8/8/3NB3/6K1",
+     "leer": true,
+     "targets": [
+      "c4"
+     ],
+     "antwort": "c4. Der Läufer fesselt den Turm d5 an den König g8. Der Turm darf den Springer nicht schlagen, und danach droht Lxd5.",
+     "hilfe": [
+      "Auf welcher Diagonale stehen Turm und König?",
+      "Der Läufer muss vor den Turm."
+     ]
+    },
+    {
+     "frage": "Der Springer c3 wird vom Bauern b4 angegriffen. Markiere alle Felder, auf denen er sicher steht und die Dame angreift.",
+     "fen": "6k1/4qppp/8/8/1p6/2N5/3Q1PPP/6K1",
+     "leer": true,
+     "targets": [
+      "d5"
+     ],
+     "antwort": "d5. Von dort greift der Springer die Dame e7 und den Bauern b4 an. Schwarz muss zuerst die Dame retten.",
+     "hilfe": [
+      "Von welchen Feldern greift ein Springer e7 an?",
+      "Welches davon erreicht der Springer c3?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz hat Dxd4 gespielt. Weiß schlägt nicht sofort zurück, sondern gibt zuerst Schach. Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "r3kb1r/pp2pppp/2n5/8/3q4/5B1P/P1P2PP1/R1BQK2R",
+     "leer": true,
+     "quelle": "Lichess-Puzzle QnBjC (CC0), https://lichess.org/training/QnBjC",
+     "targets": [
+      "c6"
+     ],
+     "antwort": "c6. Lxc6+ schlägt den Springer, der die Dame d4 gedeckt hat, mit Schach. So ging die Partie weiter: bxc6 Dxd4.",
+     "hilfe": [
+      "Wer deckt die schwarze Dame d4?",
+      "Kann der Läufer diese Figur mit Schach schlagen?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß hat Txe4 gespielt. Schwarz schlägt nicht sofort zurück, sondern gibt zuerst Schach. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "6k1/2p3Pp/2br1p2/1p3P2/4R3/pP3NP1/P1P5/3R2K1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle nwSIs (CC0), https://lichess.org/training/nwSIs",
+     "targets": [
+      "d1"
+     ],
+     "antwort": "d1. Txd1+ schlägt mit Schach den Turm d1. Danach schlägt der Läufer c6 den Turm e4. So ging die Partie weiter: Kf2 Lxe4.",
+     "hilfe": [
+      "Welche weiße Figur kann der Turm d6 mit Schach schlagen?",
+      "Erst Schach, dann zurückschlagen."
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Welche weißen Figuren sind wirklich in Gefahr? Klicke sie an.",
+     "fen": "3r2k1/8/8/4p3/1b3B2/2N5/1P1R2PP/6K1",
+     "targets": [
+      "f4"
+     ],
+     "antwort": "Nur der Läufer f4, ihn greift der Bauer e5 an. Den Springer c3 deckt der Bauer b2, den Turm d2 deckt der Läufer f4.",
+     "hilfe": [
+      "Angegriffen und ungedeckt oder von einer billigeren Figur angegriffen?",
+      "Prüfe für jede Figur: Wer greift an, wer deckt?"
+     ]
+    },
+    {
+     "frage": "Der Springer b5 wird vom Bauern a6 angegriffen. Rette ihn mit einem Gegenangriff: Klicke das Feld an, auf das er zieht.",
+     "fen": "r3k3/8/p7/1N6/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "c7"
+     ],
+     "antwort": "c7. Sc7+ gibt Schach und greift den Turm a8 an. Sd6+ gibt zwar auch Schach, gewinnt aber nichts.",
+     "hilfe": [
+      "Welche Springerfelder greifen den König e8 an?",
+      "Welches davon greift auch den Turm an?"
+     ]
+    },
+    {
+     "frage": "Der Springer e4 wird vom Bauern f5 angegriffen. Markiere alle Felder, auf denen er sicher steht und die Dame angreift.",
+     "fen": "6k1/1q4p1/1p5p/5p2/4N3/8/3Q1PPP/6K1",
+     "leer": true,
+     "targets": [
+      "d6"
+     ],
+     "antwort": "d6. Von dort greift der Springer die Dame b7 an. Auf c5 schlägt ihn der Bauer b6.",
+     "hilfe": [
+      "Von welchen Feldern greift ein Springer b7 an?",
+      "Steht er dort sicher?"
+     ]
+    },
+    {
+     "frage": "Der Springer e5 greift den Läufer d3 an. Rette den Läufer, ohne ihn zu ziehen: Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "1r2k3/8/5p2/4n3/8/3B4/5PPP/R5K1",
+     "leer": true,
+     "targets": [
+      "e1"
+     ],
+     "antwort": "e1. Der Turm fesselt den Springer e5 an den König e8. Der Springer darf den Läufer nicht schlagen.",
+     "hilfe": [
+      "Auf welcher Linie stehen Springer und König?",
+      "Der Turm muss auf diese Linie."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß hat Lxb8 gespielt. Schwarz schlägt nicht sofort zurück, sondern gibt zuerst Schach. Klicke das Feld an, auf das der Springer zieht.",
+     "fen": "1B2r1k1/p2b1pp1/2pp3p/8/8/1Pn4P/P1P1BPP1/R4RK1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle HfeBs (CC0), https://lichess.org/training/HfeBs",
+     "targets": [
+      "e2"
+     ],
+     "antwort": "e2. Sxe2+ schlägt den Läufer mit Schach. Danach schlägt der Turm e8 den Läufer b8. So ging die Partie weiter: Kh2 Txb8.",
+     "hilfe": [
+      "Welche weiße Figur kann der Springer mit Schach schlagen?",
+      "Erst Schach, dann zurückschlagen."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß hat Sxd5 gespielt. Schwarz schlägt nicht sofort zurück, sondern gibt zuerst Schach. Klicke das Feld an, auf das der Springer zieht.",
+     "fen": "6k1/5bpp/1p3p2/3N4/3P4/4PB2/1P1n2PP/6K1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle aybFM (CC0), https://lichess.org/training/aybFM",
+     "targets": [
+      "f3"
+     ],
+     "antwort": "f3. Sxf3+ schlägt den Läufer mit Schach. Danach schlägt der Läufer f7 den Springer d5. So ging die Partie weiter: gxf3 Lxd5.",
+     "hilfe": [
+      "Welche weiße Figur kann der Springer mit Schach schlagen?",
+      "Erst Schach, dann zurückschlagen."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Fehler 1: Die weiße Dame wird vom Bauern c5 angegriffen. Weiß hat mit Sb5 nur den Springer a7 angegriffen. Schwarz ist am Zug. Klicke die weiße Figur an, die Schwarz jetzt schlägt.",
+     "fen": "6k1/n4ppp/8/1Np5/3Q4/8/5PPP/6K1",
+     "zug": "b",
+     "targets": [
+      "d4"
+     ],
+     "antwort": "Die Dame d4. Der Gegenangriff auf einen Springer ist zu schwach: Die Dame ist viel mehr wert. Erst die Dame retten.",
+     "hilfe": [
+      "Was ist die Dame wert, was der Springer?",
+      "Wen greift der Bauer c5 an?"
+     ]
+    },
+    {
+     "frage": "Fehler 2: Die Figur muss sicher stehen. Markiere alle Felder, auf denen der Läufer e3 sicher steht und die Dame angreift. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "6k1/p1q2ppp/8/8/3p4/4B3/5PPP/R5K1",
+     "leer": true,
+     "targets": [],
+     "antwort": "Keins. Auf f4 schlägt die Dame den Läufer, auf b6 der Bauer a7. Hier ist Lxd4 besser: Der Läufer schlägt den Angreifer.",
+     "hilfe": [
+      "Wer greift f4 und b6 an?",
+      "Ein Angriff auf die Dame hilft nichts, wenn der Läufer verloren geht."
+     ]
+    },
+    {
+     "frage": "Fehler 3: Nicht jedes Schach hilft. Schwarz ist am Zug. Markiere alle Felder, auf denen der Springer Schach gibt und sicher steht.",
+     "fen": "4k2r/8/8/8/1n6/P7/2P2PPP/R3K3",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "c2"
+     ],
+     "antwort": "c2. Sxc2+ gibt Schach und greift den Turm a1 an. Auf d3 gibt der Springer auch Schach, aber dort schlägt ihn der Bauer c2.",
+     "hilfe": [
+      "Von welchen Feldern greift der Springer e1 an?",
+      "Wer kann ihn dort schlagen?"
+     ]
+    },
+    {
+     "frage": "Fehler 4: Nicht jede angegriffene Figur ist in Gefahr. Klicke alle weißen Figuren an, die wirklich in Gefahr sind. Wenn keine, drücke „Prüfen“ ohne Markierung.",
+     "fen": "3r2k1/5ppp/8/8/3N4/2P5/5PPP/6K1",
+     "targets": [],
+     "antwort": "Keine. Der Turm greift den Springer d4 an, aber der Bauer c3 deckt ihn. Schlägt der Turm, verliert Schwarz 5 gegen 3.",
+     "hilfe": [
+      "Wer deckt den Springer d4?",
+      "Was ist der Turm wert, was der Springer?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß hat Lxe6 gespielt. Schwarz schlägt nicht sofort zurück, sondern gibt zuerst Schach. Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "r2k3r/pppn1ppp/4Bb2/4p1B1/4P3/8/PPP2PPP/2KR2NR",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle va3wY (CC0), https://lichess.org/training/va3wY",
+     "targets": [
+      "g5"
+     ],
+     "antwort": "g5. Lxg5+ schlägt den Läufer g5 mit Schach. Danach schlägt der Bauer f7 den Läufer e6. So ging die Partie weiter: Kb1 fxe6.",
+     "hilfe": [
+      "Welche weiße Figur kann der Läufer f6 mit Schach schlagen?",
+      "Erst Schach, dann zurückschlagen."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz hat Txe2 gespielt. Weiß schlägt nicht sofort zurück, sondern gibt zuerst Schach. Klicke das Feld an, auf das der Springer zieht.",
+     "fen": "6k1/3N1pp1/p4q2/8/5b2/P7/4rPP1/4R1K1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle AYLAr (CC0), https://lichess.org/training/AYLAr",
+     "targets": [
+      "f6"
+     ],
+     "antwort": "f6. Sxf6+ schlägt die Dame mit Schach. Danach schlägt der Turm e1 den Turm e2. So ging die Partie weiter: gxf6 Txe2.",
+     "hilfe": [
+      "Welche schwarze Figur kann der Springer schlagen?",
+      "Erst Schach, dann zurückschlagen."
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Welche schwarzen Figuren sind wirklich in Gefahr? Klicke sie an.",
+     "fen": "3r2k1/5ppp/5n2/4P3/8/8/5PPP/3R2K1",
+     "zug": "b",
+     "targets": [
+      "d8",
+      "f6"
+     ],
+     "antwort": "Der Springer f6 (vom Bauern e5 angegriffen) und der Turm d8 (vom Turm d1 angegriffen und ungedeckt).",
+     "hilfe": [
+      "Angegriffen und ungedeckt oder von einer billigeren Figur angegriffen?",
+      "Prüfe den Bauern e5 und den Turm d1."
+     ]
+    },
+    {
+     "frage": "Der Läufer f6 wird vom Bauern g5 angegriffen. Rette ihn mit einem Gegenangriff: Klicke das Feld an, auf das er zieht.",
+     "fen": "6k1/R4ppp/5b2/6P1/8/8/6PP/6K1",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "d4"
+     ],
+     "antwort": "d4. Ld4+ gibt Schach über e3 und f2 und greift den Turm a7 an. Nach dem Königszug schlägt der Läufer den Turm.",
+     "hilfe": [
+      "Von welchem Feld gibt der Läufer Schach?",
+      "Was greift er dort noch an?"
+     ]
+    },
+    {
+     "frage": "Der Springer e4 greift den Läufer d6 an. Rette den Läufer, ohne ihn zu ziehen: Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "r5k1/5ppp/3b4/8/4N3/5P2/6PP/1R2K3",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "e8"
+     ],
+     "antwort": "e8. Der Turm fesselt den Springer e4 an den König e1. Der Springer darf den Läufer nicht schlagen.",
+     "hilfe": [
+      "Auf welcher Linie stehen Springer und König?",
+      "Der Turm muss auf diese Linie."
+     ]
+    },
+    {
+     "frage": "Der Springer c4 wird vom Bauern b3 angegriffen. Markiere alle Felder, auf denen er sicher steht und die Dame angreift.",
+     "fen": "6k1/2q2ppp/8/8/2n5/1P6/6PP/3Q2K1",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "e3",
+      "b2"
+     ],
+     "antwort": "b2 und e3. Von beiden Feldern greift der Springer die Dame d1 an, und keine weiße Figur kann ihn dort schlagen.",
+     "hilfe": [
+      "Von welchen Feldern greift ein Springer d1 an?",
+      "Steht er dort sicher?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß hat Lxe4 gespielt. Schwarz schlägt nicht sofort zurück, sondern gibt zuerst Schach. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "8/5kpp/R1br4/1p6/4B2P/4P1P1/5P2/6K1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle jePqo (CC0), https://lichess.org/training/jePqo",
+     "targets": [
+      "d1"
+     ],
+     "antwort": "d1. Td1+ gibt Schach, danach schlägt der Läufer c6 den Läufer e4. So ging die Partie weiter: Kh2 Lxe4.",
+     "hilfe": [
+      "Der Läufer c6 ist zweimal angegriffen.",
+      "Mit Schach gewinnt Schwarz die Zeit zum Zurückschlagen."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß hat Txb2 gespielt. Schwarz schlägt nicht sofort zurück, sondern gibt zuerst Schach. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "5rk1/6pp/2N2p2/1p1P4/4P3/r2nRP1P/1R4P1/6K1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle CPtae (CC0), https://lichess.org/training/CPtae",
+     "targets": [
+      "a1"
+     ],
+     "antwort": "a1. Ta1+ gibt Schach, danach schlägt der Springer d3 den Turm b2. So ging die Partie weiter: Kh2 Sxb2.",
+     "hilfe": [
+      "Welche schwarze Figur kann Schach geben?",
+      "Mit Schach gewinnt Schwarz die Zeit zum Zurückschlagen."
      ]
     }
    ]
