@@ -28,7 +28,8 @@ export const URLS={
  "routenplaner": "https://www.youtube.com/watch?v=b9sWS-2tGws",
  "achtBauern": "https://www.youtube.com/watch?v=XQmXNyh_bVw",
  "mattChallenge": "https://www.youtube.com/watch?v=pTEy2s2dwNA",
- "schachBingo": "https://www.youtube.com/watch?v=CDEEqAtAKdU"
+ "schachBingo": "https://www.youtube.com/watch?v=CDEEqAtAKdU",
+ "lichessPin": "https://lichess.org/training/pin"
 };
 export const FIXED={
  "1": {
@@ -12224,6 +12225,560 @@ export const FIXED={
      "hilfe": [
       "Umwandlung schreibt man mit dem Buchstaben der neuen Figur.",
       "Schach schreibt man mit +."
+     ]
+    }
+   ]
+  }
+ },
+ "22": {
+  "thema": "Die Fesselung",
+  "lernziel": "Ich kann eine Fesselung erkennen und herstellen.",
+  "leitfrage": "Warum kann eine Figur manchmal nicht ziehen, obwohl ihr Weg frei ist?",
+  "vorwissen": "Gangarten von Läufer, Turm und Dame (Woche 3 und 4), Angreifen und decken (Woche 6), Figurenwerte (Woche 7), Schach und Matt (Woche 8).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Lichess-Puzzles 0BJad und 08F97 (CC0, Thema „pin“), übrige Brettaufgaben eigene Aufgaben. Fesselungen, Zugmöglichkeiten und Fesselzüge mit chess.js berechnet, die Lichess-Lösungen stammen aus der Datenbank",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Wer steht auf der Linie?",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6 aufwärmen: Linien und Diagonalen von Läufer, Turm und Dame, dazu Angreifen und Decken.",
+     "Bei W2 fragen: „Der Springer c6 ist frei. Darf er ziehen?“ Kurz vermuten lassen, nicht auflösen. Ziel nennen: „Heute lernt ihr die Fesselung kennen. Sie ist das erste Taktikmotiv von Gold.“"
+    ],
+    "kinder": "Ich erkenne, welche Figuren auf einer Linie zwischen Angreifer und König stehen.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Gefesselt an den König oder an die Dame",
+    "ablauf": [
+     "Plakat „Die Fesselung“ aufhängen. Am Lehrbrett E1: Der Springer c6 steht zwischen Läufer b5 und König e8. Würde er ziehen, stünde der eigene König im Schach. Er ist an den König gefesselt und darf gar nicht ziehen.",
+     "E2 bis E4: Fesselung an die Dame (der Springer darf ziehen, aber dann geht die Dame verloren). Fesselung durch einen Turm. Ein gefesselter Turm darf auf seiner Linie weiterziehen.",
+     "E5 und E6: Fesselung herstellen und ausnutzen. Die gefesselte Figur mit einem Bauern angreifen, denn sie kann nicht weglaufen. Frage: „Warum ist ein Bauernangriff gegen eine gefesselte Figur so stark?“",
+     "Merksatz: „Angreifer, Figur, König auf einer Linie: Die Figur ist gefesselt. Greif sie noch einmal an!“"
+    ],
+    "kinder": "Ich erkläre, warum eine gefesselte Figur nicht oder nur eingeschränkt ziehen darf.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Die Fesselung",
+      "was": "fesselung"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Fesselung E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Fesselungen bauen zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A baut eine Stellung mit König, einer Figur davor und einem Läufer, Turm oder einer Dame des Gegners. Kind B sagt: gefesselt oder nicht, und zeigt die Linie mit dem Finger. Danach wechseln die Rollen.",
+     "Allein: Arbeitsblatt A1 bis A6, darunter eine echte Aufgabe aus einer Lichess-Partie. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich finde gefesselte Figuren und Züge, die eine Fesselung herstellen.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Die Fesselung",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Typische Irrtümer klären",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 bis S6: An die Dame gefesselt heißt, die Figur darf ziehen, es kostet nur Material. Ohne Angreifer hinter der Linie keine Fesselung. Ein gefesselter Bauer darf den Fesselnden manchmal schlagen. Der Fesselnde kann selbst angegriffen werden.",
+     "Bei jeder Aufgabe fragen: „Woran erkennst du, ob die Figur wirklich gefesselt ist?“"
+    ],
+    "kinder": "Ich unterscheide Fesselung an den König und an die Dame.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Irrtümer klären S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, fragst du einige am Brett: „Welche Figur ist gefesselt, und wer fesselt sie?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich erkenne und nutze Fesselungen ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Fessel-Jagd“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Jede Seite hat König, Läufer, Turm und drei Bauern auf ihren Startfeldern. Wer zuerst eine gegnerische Figur fesselt und sie dann gewinnt, bekommt einen Punkt. Danach wechseln die Rollen und die Farben.",
+     "Rückblick: „Woran erkennst du eine Fesselung?“ Aufräum-Ritual. Ausblick: Nächstes Mal greift eine Figur zwei Ziele gleichzeitig an, die Gabel."
+    ],
+    "kinder": "Ich stelle in einer Partie eine Fesselung her.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Die Fesselung",
+      "was": "fesselung"
+     },
+     {
+      "art": "blatt",
+      "label": "Mehr Fesselungsaufgaben auf Lichess (online)",
+      "url": "https://lichess.org/training/pin"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Mit einem Lineal oder Stift die Linie vom Angreifer zum König auf das Brett legen. Was liegt darunter?",
+   "zusatz": "Eine Stellung bauen, in der eine Figur doppelt gefesselt ist, an König und Dame. Oder Lichess-Aufgaben zum Thema Fesselung lösen.",
+   "kuerzen": "Die Partnerübung auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
+  },
+  "nachher": "Wer verwechselt noch Fesselung an den König und an die Dame? Wer nutzt die Fesselung schon mit einem Bauernangriff aus? Das greifst du in Woche 23 bei Gabel und Doppelangriff wieder auf.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Markiere alle Felder, auf die der Läufer b5 ziehen kann.",
+     "fen": "r1bqkb1r/ppp2ppp/2np1n2/1B2p3/4P3/3P1N2/PPP2PPP/RNBQK2R",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nc6 Bb5 Nf6 d3 d6",
+     "leer": true,
+     "pruef": {
+      "legal": "b5"
+     },
+     "targets": null,
+     "antwort": "a4, a6, c4 und c6. Auf c6 darf er den Springer schlagen.",
+     "hilfe": [
+      "Der Läufer zieht schräg.",
+      "Auf c6 darf er schlagen."
+     ]
+    },
+    {
+     "frage": "Klicke alle Figuren an, die auf der Diagonale zwischen dem Läufer b5 und dem schwarzen König e8 stehen.",
+     "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nc6 Bb5 d6",
+     "targets": [
+      "c6"
+     ],
+     "antwort": "Nur der Springer c6. Die Felder d7 und e8 dahinter: d7 ist leer, auf e8 steht der König. Der Springer steht also zwischen Läufer und König.",
+     "hilfe": [
+      "Fahre die Diagonale b5, c6, d7, e8 mit dem Finger ab.",
+      "Der Bauer d7 ist schon nach d6 gezogen."
+     ]
+    },
+    {
+     "frage": "Markiere alle Felder, auf die der Turm e1 ziehen kann.",
+     "fen": "4k3/8/4n3/8/8/8/8/4R1K1",
+     "leer": true,
+     "pruef": {
+      "legal": "e1"
+     },
+     "targets": null,
+     "antwort": "e2 bis e6 und auf der 1. Reihe a1 bis f1. Auf e6 schlägt er den Springer, dahinter kommt er nicht weiter.",
+     "hilfe": [
+      "Der Turm zieht gerade.",
+      "Auf e6 darf er schlagen."
+     ]
+    },
+    {
+     "frage": "Klicke alle schwarzen Figuren an, die angegriffen und nicht gedeckt sind.",
+     "fen": "r3k2r/ppp2ppp/2n5/1B1q4/8/2N5/PPP2PPP/R2QK2R",
+     "pruef": {
+      "haengt": "b"
+     },
+     "targets": null,
+     "antwort": "Die Dame d5. Der Springer c3 greift sie an, und keine schwarze Figur deckt sie.",
+     "hilfe": [
+      "Was greift der Springer c3 an?",
+      "Wer deckt die Dame?"
+     ]
+    },
+    {
+     "frage": "Weiß setzt in einem Zug matt. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "6k1/5ppp/8/8/8/8/5PPP/4R1K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "e8. Der Turm gibt Schach über die 8. Reihe, die eigenen Bauern sperren den König ein.",
+     "hilfe": [
+      "Die eigenen Bauern sperren den König ein.",
+      "Der Turm muss auf die 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Die Dame d1 greift auf der d-Linie an. Markiere alle Felder, auf die die Dame ziehen kann.",
+     "fen": "3k4/8/3n4/8/8/8/8/3QK3",
+     "leer": true,
+     "pruef": {
+      "legal": "d1"
+     },
+     "targets": null,
+     "antwort": "Die d-Linie bis zum Springer d6 (d2 bis d6), die 1. Reihe nach links (a1 bis c1) und die Diagonalen c2 bis a4 und e2 bis h5.",
+     "hilfe": [
+      "Gerade nach oben bis zur ersten Figur.",
+      "Seitlich und schräg ist auch erlaubt."
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Der Springer c6 steht zwischen Läufer b5 und König e8. Schwarz ist am Zug. Markiere alle Felder, auf die der Springer ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "r1bqkbnr/ppp2ppp/2np4/1B2p3/3PP3/5N2/PPP2PPP/RNBQK2R",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 Nf3 Nc6 Bb5 d6 d4",
+     "leer": true,
+     "pruef": {
+      "legal": "c6"
+     },
+     "targets": null,
+     "antwort": "Keins. Zieht der Springer weg, steht der König e8 im Schach durch den Läufer b5. Der Springer ist an den König gefesselt.",
+     "hilfe": [
+      "Was passiert mit dem König, wenn der Springer wegzieht?",
+      "Ein König darf nie im Schach stehen."
+     ]
+    },
+    {
+     "frage": "Der Läufer g5 fesselt eine schwarze Figur an die Dame d8. Klicke sie an.",
+     "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p2B1/2PP4/2N1P3/PP3PPP/R2QKBNR",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "d4 d5 c4 e6 Nc3 Nf6 Bg5 c6 e3",
+     "targets": [
+      "f6"
+     ],
+     "antwort": "Der Springer f6. Zieht er weg, schlägt der Läufer g5 die Dame d8. Er ist an die Dame gefesselt.",
+     "hilfe": [
+      "Fahre die Diagonale von g5 nach d8 ab.",
+      "Welche Figur steht dazwischen?"
+     ]
+    },
+    {
+     "frage": "Klicke die gefesselte schwarze Figur an.",
+     "fen": "4k3/8/4b3/8/8/8/8/4R1K1",
+     "targets": [
+      "e6"
+     ],
+     "antwort": "Der Läufer e6. Zieht er weg, steht der König e8 im Schach durch den Turm e1. Ein Läufer kann auf der e-Linie nicht bleiben.",
+     "hilfe": [
+      "Welche Linie greift der Turm e1 an?",
+      "Was steht zwischen Turm und König?"
+     ]
+    },
+    {
+     "frage": "Ein gefesselter Turm darf auf seiner Linie bleiben. Schwarz ist am Zug. Markiere alle Felder, auf die der Turm e5 ziehen darf.",
+     "fen": "4k3/8/8/4r3/8/8/8/4R1K1",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "legal": "e5"
+     },
+     "targets": null,
+     "antwort": "e6, e7, e4, e3, e2 und e1. Der Turm darf auf der e-Linie bleiben und den Fesselnden auf e1 sogar schlagen. Nur seitlich darf er nicht.",
+     "hilfe": [
+      "Darf der Turm die e-Linie verlassen?",
+      "Er darf sogar den Fesselnden schlagen."
+     ]
+    },
+    {
+     "frage": "Fesselung herstellen: Klicke alle Felder an, auf die der Läufer ziehen kann, um den Springer d7 an den König zu fesseln.",
+     "fen": "4k3/3n4/8/8/8/8/8/4KB2",
+     "leer": true,
+     "targets": [
+      "b5"
+     ],
+     "antwort": "b5. Von dort steht der Läufer auf der Diagonale b5, c6, d7, e8. Der Springer d7 ist dann an den König gefesselt.",
+     "hilfe": [
+      "Welche Diagonale führt über d7 zum König?",
+      "Der Läufer muss auf diese Diagonale."
+     ]
+    },
+    {
+     "frage": "Der Springer f6 ist an den König gefesselt. Klicke den weißen Bauern an, der ihn mit einem Zug angreifen kann.",
+     "fen": "7k/8/5n2/8/4P3/6P1/1B6/6K1",
+     "targets": [
+      "e4"
+     ],
+     "antwort": "Der Bauer e4. Nach e5 greift er den gefesselten Springer an, und der Springer kann nicht weglaufen.",
+     "hilfe": [
+      "Ein Bauer greift schräg nach vorn an.",
+      "Welcher Bauer kommt mit einem Schritt neben den Springer?"
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Diesmal ist eine weiße Figur gefesselt. Klicke sie an.",
+     "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR",
+     "rechte": "KQkq",
+     "zuege": "d4 Nf6 c4 e6 Nc3 Bb4",
+     "targets": [
+      "c3"
+     ],
+     "antwort": "Der Springer c3. Zieht er weg, steht der weiße König e1 im Schach durch den Läufer b4.",
+     "hilfe": [
+      "Welche Diagonale führt vom Läufer b4 zum weißen König?",
+      "Was steht dazwischen?"
+     ]
+    },
+    {
+     "frage": "Schwarz ist am Zug. Der Läufer c6 ist gefesselt. Markiere alle Felder, auf die er ziehen darf.",
+     "fen": "4k3/8/2b5/8/B7/8/8/4K3",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "legal": "c6"
+     },
+     "targets": null,
+     "antwort": "d7, b5 und a4. Der Läufer darf auf der Diagonale a4 bis e8 bleiben und den Fesselnden auf a4 schlagen.",
+     "hilfe": [
+      "Darf der Läufer die Diagonale a4 bis e8 verlassen?",
+      "Er darf auch den Fesselnden schlagen."
+     ]
+    },
+    {
+     "frage": "Klicke alle Felder an, auf die der Turm ziehen kann, um eine schwarze Figur an den König zu fesseln.",
+     "fen": "6k1/8/6b1/8/8/8/R7/7K",
+     "leer": true,
+     "targets": [
+      "g2"
+     ],
+     "antwort": "g2. Der Turm steht dann auf der g-Linie, der Läufer g6 ist an den König g8 gefesselt.",
+     "hilfe": [
+      "Auf welcher Linie stehen Läufer und König?",
+      "Der Turm muss auf diese Linie."
+     ]
+    },
+    {
+     "frage": "Klicke die schwarze Figur an, die an die Dame gefesselt ist.",
+     "fen": "r1b1kb1r/ppppqppp/2n5/8/2B1n3/5N2/PPPP1PPP/RNBQR1K1",
+     "targets": [
+      "e4"
+     ],
+     "antwort": "Der Springer e4. Zieht er weg, schlägt der Turm e1 die Dame e7.",
+     "hilfe": [
+      "Welche weiße Figur greift auf der e-Linie an?",
+      "Was steht vor der schwarzen Dame?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz hat Td5 gespielt. Weiß fesselt den Turm an den König. Klicke das Feld an, auf das der Läufer zieht.",
+     "fen": "6k1/2p5/3p4/3r3p/6bP/3B4/PPK1p3/4R3",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 0BJad (CC0), https://lichess.org/training/0BJad",
+     "targets": [
+      "c4"
+     ],
+     "antwort": "c4. Der Läufer steht auf der Diagonale c4, d5, e6, f7, g8. Der Turm d5 ist an den König gefesselt, Weiß gewinnt ihn im nächsten Zug. So ging die Partie weiter: Kg7 Lxd5.",
+     "hilfe": [
+      "Auf welcher Diagonale stehen Turm d5 und König g8?",
+      "Der Läufer d3 muss auf diese Diagonale."
+     ]
+    },
+    {
+     "frage": "Der Läufer d7 ist gefesselt. Klicke den weißen Bauern an, der ihn mit einem Zug angreifen kann.",
+     "fen": "4k3/3b4/8/1B2P3/8/8/8/4K3",
+     "targets": [
+      "e5"
+     ],
+     "antwort": "Der Bauer e5. Nach e6 greift er den gefesselten Läufer an, und der Läufer kann nicht weglaufen.",
+     "hilfe": [
+      "Ein Bauer greift schräg nach vorn an.",
+      "Welcher Bauer kommt neben den Läufer?"
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Fesselung an die Dame: Der Springer f6 darf trotzdem ziehen. Schwarz ist am Zug. Markiere alle Felder, auf die er ziehen darf.",
+     "fen": "rnbqkb1r/ppp2ppp/4pn2/3p2B1/2PP4/2N5/PP2PPPP/R2QKBNR",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "d4 d5 c4 e6 Nc3 Nf6 Bg5",
+     "leer": true,
+     "pruef": {
+      "legal": "f6"
+     },
+     "targets": null,
+     "antwort": "d7, e4, g4, h5 und zurück auf g8. Der Springer darf ziehen, weil hinter ihm die Dame steht und nicht der König. Danach schlägt der Läufer g5 aber die Dame.",
+     "hilfe": [
+      "Steht hinter dem Springer der König oder die Dame?",
+      "An die Dame gefesselt heißt: Ziehen ist erlaubt, kostet aber die Dame."
+     ]
+    },
+    {
+     "frage": "Klicke alle gefesselten schwarzen Figuren an. Wenn keine, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4k3/4n3/8/8/4P3/8/8/4RK2",
+     "targets": [],
+     "antwort": "Keine. Der Bauer e4 steht zwischen Turm und Springer. Ohne freie Linie gibt es keine Fesselung.",
+     "hilfe": [
+      "Steht zwischen Turm und Springer etwas?",
+      "Ohne freie Linie keine Fesselung."
+     ]
+    },
+    {
+     "frage": "Der Bauer d7 ist gefesselt. Schwarz ist am Zug. Markiere alle Felder, auf die er ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4k3/3p4/2B5/8/8/8/8/4K3",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "legal": "d7"
+     },
+     "targets": null,
+     "antwort": "c6. Der Bauer darf nur den Fesselnden schlagen, weil er dabei auf der Diagonale bleibt. d6 und d5 sind verboten.",
+     "hilfe": [
+      "Darf der Bauer die Diagonale c6 bis e8 verlassen?",
+      "Ein Bauer schlägt schräg."
+     ]
+    },
+    {
+     "frage": "Wer fesselt? Klicke die weiße Figur an, die eine schwarze Figur an den König fesselt.",
+     "fen": "4k3/8/4n3/8/8/2Q5/8/4R1K1",
+     "targets": [
+      "e1"
+     ],
+     "antwort": "Der Turm e1. Er fesselt den Springer e6 an den König. Die Dame c3 steht auf keiner Linie zum König.",
+     "hilfe": [
+      "Welche Figur ist gefesselt?",
+      "Wer steht auf derselben Linie dahinter?"
+     ]
+    },
+    {
+     "frage": "Der fesselnde Läufer b5 kann selbst angegriffen werden. Schwarz ist am Zug. Klicke alle schwarzen Figuren an, die ihn schlagen dürfen.",
+     "fen": "r1bqkbnr/1pp1pppp/p1np4/1B6/3PP3/5N2/PPP2PPP/RNBQK2R",
+     "zug": "b",
+     "rechte": "KQkq",
+     "zuege": "e4 d6 d4 a6 Nf3 Nc6 Bb5",
+     "targets": [
+      "a6"
+     ],
+     "antwort": "Der Bauer a6. Er greift den Läufer b5 an. Der gefesselte Springer c6 darf nicht schlagen, und er erreicht b5 auch gar nicht.",
+     "hilfe": [
+      "Wer greift b5 an?",
+      "Darf der gefesselte Springer schlagen?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Die schwarze Dame steht auf h5 vor ihrem König h8. Weiß fesselt sie. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "5nrk/p5r1/2R1p3/3pP2q/Q5P1/5P2/2R5/6K1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 08F97 (CC0), https://lichess.org/training/08F97",
+     "targets": [
+      "h2"
+     ],
+     "antwort": "h2. Der Turm steht dann auf der h-Linie, die Dame h5 ist an den König h8 gefesselt. So ging die Partie weiter: Dxh2+ Kxh2, Weiß gewinnt die Dame für einen Turm.",
+     "hilfe": [
+      "Auf welcher Linie stehen Dame und König?",
+      "Welcher Turm erreicht diese Linie?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Klicke die gefesselte schwarze Figur an.",
+     "fen": "3k4/8/3r4/8/8/8/8/3Q2K1",
+     "targets": [
+      "d6"
+     ],
+     "antwort": "Der Turm d6. Zieht er von der d-Linie weg, steht der König d8 im Schach durch die Dame d1.",
+     "hilfe": [
+      "Welche Linie greift die Dame an?",
+      "Was steht zwischen Dame und König?"
+     ]
+    },
+    {
+     "frage": "Schwarz ist am Zug. Markiere alle Felder, auf die der Springer d7 ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "4k3/3n4/8/1B6/8/8/8/4K3",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "legal": "d7"
+     },
+     "targets": null,
+     "antwort": "Keins. Der Springer steht zwischen Läufer b5 und König e8. Er kann nie auf der Diagonale bleiben, also darf er gar nicht ziehen.",
+     "hilfe": [
+      "Steht der Springer zwischen Läufer und König?",
+      "Ein gefesselter Springer kann nie auf der Linie bleiben."
+     ]
+    },
+    {
+     "frage": "Klicke alle Felder an, auf die der Läufer ziehen kann, um eine schwarze Figur an den König zu fesseln.",
+     "fen": "6k1/5r2/8/8/8/8/8/5B1K",
+     "leer": true,
+     "targets": [
+      "c4"
+     ],
+     "antwort": "c4. Der Läufer steht auf der Diagonale c4, d5, e6, f7, g8. Der Turm f7 ist an den König gefesselt.",
+     "hilfe": [
+      "Auf welcher Diagonale stehen Turm und König?",
+      "Der Läufer muss auf diese Diagonale."
+     ]
+    },
+    {
+     "frage": "Klicke die schwarze Figur an, die an die Dame gefesselt ist.",
+     "fen": "3qk3/8/3n4/8/8/8/8/3RK3",
+     "targets": [
+      "d6"
+     ],
+     "antwort": "Der Springer d6. Zieht er weg, schlägt der Turm d1 die Dame d8.",
+     "hilfe": [
+      "Welche Linie greift der Turm d1 an?",
+      "Was steht vor der Dame?"
+     ]
+    },
+    {
+     "frage": "Der Springer c6 ist gefesselt. Klicke den weißen Bauern an, der ihn mit einem Zug angreifen kann.",
+     "fen": "4k3/8/2n5/1B6/3P4/8/8/4K3",
+     "targets": [
+      "d4"
+     ],
+     "antwort": "Der Bauer d4. Nach d5 greift er den gefesselten Springer an.",
+     "hilfe": [
+      "Ein Bauer greift schräg nach vorn an.",
+      "Welcher Bauer kommt neben den Springer?"
+     ]
+    },
+    {
+     "frage": "Wer fesselt? Klicke die weiße Figur an, die eine schwarze Figur an den König fesselt.",
+     "fen": "6k1/5p2/8/8/8/1Q6/1B6/6K1",
+     "targets": [
+      "b3"
+     ],
+     "antwort": "Die Dame b3. Sie fesselt den Bauern f7 an den König g8. Der Läufer b2 fesselt nichts.",
+     "hilfe": [
+      "Welche Figur steht vor dem König?",
+      "Wer steht auf derselben Linie dahinter?"
      ]
     }
    ]
