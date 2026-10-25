@@ -20397,6 +20397,581 @@ export const FIXED={
     }
    ]
   }
+ },
+ "36": {
+  "thema": "Abschlussturnier und Urkunden",
+  "lernziel": "Ich kann ein Turnier fair spielen und meine Fortschritte zeigen.",
+  "leitfrage": "Was habe ich in diesem Schachjahr gelernt, und wie zeige ich es in einem Turnier?",
+  "vorwissen": "Alle Themen des Jahres, Turnierregeln und Schachuhr (Woche 20), Rutschsystem (Woche 18 und 21).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Turnierform Rutschsystem aus dem Praxiswissen (Spielphasen organisieren) wie in Woche 18 und 21, FIDE-Schachregeln 2023 in kindgerechter Form. Brettaufgaben aus den Themen des Jahres, alle Lösungen mit chess.js nachgerechnet, Bauernendspiele mit Stockfish geprüft",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Ankommen, Turnier aufbauen, Jahres-Aufwärmen",
+    "ablauf": [
+     "Stopp-Signal. Bretter in einer Reihe nummerieren, Brett 1 ist oben. Jedes Paar stellt die Uhr auf 5 Minuten pro Kind, die Startplätze werden gelost. Jedes Kind schreibt auf seine Turnierkarte ein persönliches Ziel.",
+     "Am Lehrbrett W1 bis W6 ein Aufwärmen durch das ganze Jahr: zwei Aufgaben aus Bronze, zwei aus Silber, zwei aus Gold. Ziel nennen: „Heute spielt ihr das Abschlussturnier und bekommt eure Jahresurkunde.“"
+    ],
+    "kinder": "Ich baue Brett und Uhr selbstständig auf und setze mir ein Turnierziel.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Jahres-Aufwärmen W1 bis W6",
+      "set": "W"
+     },
+     {
+      "art": "druck",
+      "label": "Turnierkarten Abschlussturnier (vier pro Blatt)",
+      "was": "turnierkarte"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Sechs Turnier-Tipps aus dem Jahr",
+    "ablauf": [
+     "Kurz erinnern: Rutschsystem. Sieg ein Brett nach oben, Niederlage eins nach unten, Remis oder nicht fertig: Weiß nach oben, Schwarz nach unten.",
+     "Am Lehrbrett E1 bis E6 sechs Tipps, die in jeder Partie helfen: Was droht? Hängt eine Figur? Gegenangriff statt Flucht. Matt geht vor. Kein Patt mit großem Vorteil. Im Endspiel erst der König.",
+     "Frage: „Warum schaust du vor jedem eigenen Zug zuerst auf den Zug des Gegners?“"
+    ],
+    "kinder": "Ich kenne sechs Tipps, die mir in der Turnierpartie helfen.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Schachuhr und Turnierregeln",
+      "was": "schachuhr"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Turnier-Tipps E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Runde 1 und Runde 2",
+    "ablauf": [
+     "Runde 1 und Runde 2 im Rutschsystem, je 5 Minuten pro Kind. Vor der Partie Hand geben, nach der Partie Ergebnis auf der Turnierkarte eintragen und an der Turnierliste melden. In Runde 2 wechseln die Farben, danach wechseln die Rollen beim Melden und Aufbauen.",
+     "Wer früh fertig ist, löst die Jahresrätsel A1 bis A6. Du führst die Turnierliste und schaust bei Streit an das Brett."
+    ],
+    "kinder": "Ich spiele fair mit Uhr und melde mein Ergebnis.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Turnierliste für die Lehrkraft",
+      "was": "meisterliste"
+     },
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Jahresrätsel",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Jahresrätsel A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Halbzeit-Stopp: Streitfälle klären",
+    "ablauf": [
+     "Stopp-Signal, alle Uhren anhalten. Frage: „Was war bisher schwierig?“ Am Lehrbrett S1 bis S6 Streitfälle aus dem ganzen Jahr: Rochade, Patt, en passant, Umwandlung, berührt und geführt, illegaler Königszug.",
+     "Bei jedem Fall nachfragen: „Woran erkennst du, wer recht hat?“"
+    ],
+    "kinder": "Ich entscheide Streitfälle mit der passenden Regel.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Streitfälle S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Finalrunde und Jahres-Lerncheck",
+    "ablauf": [
+     "Runde 3 ist die Finalrunde, 5 Minuten pro Kind. Wer an Brett 1 gewinnt, gewinnt das Abschlussturnier. Du beobachtest: Hand geben, Uhr mit derselben Hand, Partie fair zu Ende spielen.",
+     "Wer fertig ist, löst den Jahres-Lerncheck L1 bis L6 allein: je eine Aufgabe aus Bronze und Silber, vier aus Gold. Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich spiele meine Finalpartie fair zu Ende und löse Aufgaben aus dem ganzen Jahr.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel: Jahres-Lerncheck",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Siegerehrung, Jahresurkunden, Rückblick",
+    "ablauf": [
+     "Siegerehrung: Das Kind an Brett 1 bekommt die Siegerurkunde, alle anderen eine Teilnahmeurkunde. Danach bekommt jedes Kind seine Jahresurkunde mit den erreichten Diplomen. Keine Gesamtrangliste vorlesen.",
+     "Rückblick im Kreis: Jedes Kind nennt seinen schönsten Schachmoment des Jahres und trägt ihn auf der Urkunde ein. Aufräum-Ritual, Uhren auf 0. Ausblick: In den Ferien weiterspielen, zum Beispiel mit den Aufgaben auf Lichess oder im Ludgerus-Schachdiplom online."
+    ],
+    "kinder": "Ich weiß, was ich in diesem Jahr gelernt habe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Urkunden: Turniersieg und Teilnahme",
+      "was": "meisterurkunde"
+     },
+     {
+      "art": "druck",
+      "label": "Jahresurkunden mit Diplomen (zwei pro Blatt)",
+      "was": "jahresurkunde"
+     },
+     {
+      "art": "blatt",
+      "label": "Ludgerus-Schachdiplom online",
+      "url": "https://ludgerus-schachdiplom.netlify.app/"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Unsichere Kinder spielen ohne Uhr, ein Schiedsrichterkind hilft beim Melden. Fehlen Uhren, rufst du nach 10 Minuten das Rundenende aus.",
+   "zusatz": "Wer an Brett 1 gewinnt, darf ein Simultan gegen zwei Teams spielen. Wer früh fertig ist, sucht im Raster sein stärkstes Thema und erklärt es einem anderen Kind.",
+   "kuerzen": "Nur zwei Runden spielen, die zweite ist die Finalrunde. Die Erarbeitung auf E1, E2 und E4 kürzen. Lerncheck, Siegerehrung, Jahresurkunden und Aufräumen bleiben."
+  },
+  "nachher": "Welche Kinder haben welches Diplom erreicht? Welche Themen sollen im nächsten Schuljahr wiederholt werden? Das Lernfortschrittsraster kannst du als Excel-Datei speichern und für die neue Gruppe mitnehmen.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Bronze: Klicke alle Felder an, auf denen der Turm mattsetzt.",
+     "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a8. Ta8 ist Matt, die eigenen Bauern sperren den König ein.",
+     "hilfe": [
+      "Die 8. Reihe ist offen.",
+      "Kann der König nach vorn fliehen?"
+     ]
+    },
+    {
+     "frage": "Bronze: Schach! Markiere alle Felder, auf die der weiße König fliehen kann.",
+     "fen": "4k3/8/8/8/8/8/8/r3K3",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "d2, e2 und f2. Die 1. Reihe greift der Turm an, der König muss auf die 2. Reihe.",
+     "hilfe": [
+      "Welche Reihe greift der Turm an?",
+      "Prüfe alle Nachbarfelder von e1."
+     ]
+    },
+    {
+     "frage": "Silber: Markiere alle Felder, auf die der weiße König mit einer Rochade ziehen darf.",
+     "fen": "4k3/8/8/8/2b5/8/8/R3K2R",
+     "rechte": "KQ",
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "Nur c1. Der Läufer c4 greift f1 an, kurz rochieren ist verboten.",
+     "hilfe": [
+      "Welche Felder greift der Läufer an?",
+      "Der König darf nicht über ein angegriffenes Feld."
+     ]
+    },
+    {
+     "frage": "Silber: Schwarz hat gerade d7–d5 gespielt. Klicke alle weißen Bauern an, die jetzt en passant schlagen dürfen.",
+     "fen": "rnbqkbnr/1pp1pppp/p7/3pP3/8/8/PPPP1PPP/RNBQKBNR",
+     "ep": "d6",
+     "zuege": "e4 a6 e5 d5",
+     "pruef": {
+      "epschlaeger": true
+     },
+     "targets": null,
+     "antwort": "Der Bauer e5. Er steht neben d5 und darf sofort nach d6 schlagen.",
+     "hilfe": [
+      "Wer steht neben d5?",
+      "En passant geht nur sofort."
+     ]
+    },
+    {
+     "frage": "Gold: Schwarz am Zug. Klicke das Feld an, auf das der König zieht, um den Bauern h4 aufzuhalten.",
+     "fen": "8/8/8/8/7P/2k5/8/K7",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "d4"
+     ],
+     "antwort": "d4. Nur von d4 steht der König im Quadrat. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Zeichne das Quadrat des Bauern.",
+      "Welches Königsfeld liegt darin?"
+     ]
+    },
+    {
+     "frage": "Gold: Weiß setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame im ersten Zug zieht.",
+     "fen": "3r2k1/5ppp/8/8/4Q3/8/5PPP/4R1K1",
+     "leer": true,
+     "targets": [
+      "e8"
+     ],
+     "antwort": "e8. De8+ Txe8 Txe8#. Die Dame lockt den Wächter weg.",
+     "hilfe": [
+      "Wer bewacht die Grundreihe?",
+      "Wie lockt man ihn weg?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Tipp 1, was droht? Klicke das Feld an, auf dem Schwarz mattsetzen würde.",
+     "fen": "1r4k1/5ppp/8/8/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "b1"
+     ],
+     "antwort": "b1. Erst die Drohung sehen, dann den eigenen Zug planen.",
+     "hilfe": [
+      "Was würde Schwarz tun, wenn es noch einmal ziehen dürfte?",
+      "Schau auf die 1. Reihe."
+     ]
+    },
+    {
+     "frage": "Tipp 2, hängt eine Figur? Klicke alle weißen Figuren an, die wirklich in Gefahr sind.",
+     "fen": "2r3k1/5ppp/8/3B4/1p6/2N5/5PPP/2R3K1",
+     "targets": [
+      "c3"
+     ],
+     "antwort": "Der Springer c3, ihn greift der Bauer b4 an.",
+     "hilfe": [
+      "Angegriffen und ungedeckt oder von einer billigeren Figur angegriffen?",
+      "Prüfe jede weiße Figur."
+     ]
+    },
+    {
+     "frage": "Tipp 3, Gegenangriff: Der Springer d4 wird vom Bauern e5 angegriffen. Markiere alle Felder, auf denen er sicher steht und die Dame angreift.",
+     "fen": "6k1/2q2ppp/8/4p3/3N4/8/3Q1PPP/6K1",
+     "leer": true,
+     "targets": [
+      "b5"
+     ],
+     "antwort": "b5. Von dort greift der Springer die Dame c7 an und steht sicher.",
+     "hilfe": [
+      "Von welchen Feldern greift ein Springer c7 an?",
+      "Steht er dort sicher?"
+     ]
+    },
+    {
+     "frage": "Tipp 4, Matt geht vor: Schwarz droht Txd1#, aber Weiß ist am Zug. Klicke alle Felder an, auf denen Weiß mattsetzt.",
+     "fen": "3r2k1/5ppp/8/8/8/8/5PPP/3R2K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "d8. Txd8 ist Matt. Wer zuerst mattsetzt, braucht sich nicht zu verteidigen.",
+     "hilfe": [
+      "Prüfe zuerst eigene Mattzüge.",
+      "Die 8. Reihe ist offen."
+     ]
+    },
+    {
+     "frage": "Tipp 5, kein Patt: Klicke alle Felder an, auf die der Turm nicht ziehen darf, weil Schwarz sonst patt wäre.",
+     "fen": "7k/5K2/8/8/8/8/8/6R1",
+     "leer": true,
+     "pruef": {
+      "patt": "g1"
+     },
+     "targets": null,
+     "antwort": "g7. Dann hat Schwarz keinen Zug und steht nicht im Schach: Patt. Richtig ist Th1, das ist Matt.",
+     "hilfe": [
+      "Welches Feld bleibt dem König h8?",
+      "Nimmt der Turm es ohne Schach weg, ist es Patt."
+     ]
+    },
+    {
+     "frage": "Tipp 6, im Endspiel erst der König: Weiß am Zug gewinnt. Markiere alle Felder, auf die der weiße König ziehen kann, damit Weiß gewinnt.",
+     "fen": "8/8/4k3/8/8/4K3/4P3/8",
+     "leer": true,
+     "targets": [
+      "d4",
+      "e4",
+      "f4"
+     ],
+     "antwort": "d4, e4 und f4. Der König geht vor seinen Bauern. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Der König gehört vor den Bauern.",
+      "Welche Felder liegen auf der 4. Reihe?"
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Jahresrätsel Bronze: Welche schwarze Figur sollte Weiß schlagen? Klicke sie an.",
+     "fen": "6k1/8/2r5/8/4q3/8/1B6/4R1K1",
+     "pruef": {
+      "beste": "w"
+     },
+     "targets": null,
+     "antwort": "Die Dame e4. Sie ist ungedeckt und am meisten wert.",
+     "hilfe": [
+      "Welche schwarzen Figuren kann Weiß schlagen?",
+      "Welche ist am meisten wert?"
+     ]
+    },
+    {
+     "frage": "Jahresrätsel Silber: Klicke das Feld an, auf das der Springer zieht und König und Dame gleichzeitig angreift.",
+     "fen": "3q3k/6pp/8/4N3/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "f7"
+     ],
+     "antwort": "f7. Sf7+ gabelt König h8 und Dame d8.",
+     "hilfe": [
+      "Welche Springerfelder greifen h8 an?",
+      "Welches davon greift auch d8 an?"
+     ]
+    },
+    {
+     "frage": "Jahresrätsel Silber: Klicke das Feld an, auf das der Läufer zieht, um einen Spieß zu machen.",
+     "fen": "6q1/8/8/3k4/8/8/8/3B3K",
+     "leer": true,
+     "targets": [
+      "b3"
+     ],
+     "antwort": "b3. Lb3+ gibt Schach, nach dem Königszug fällt die Dame g8.",
+     "hilfe": [
+      "Auf welcher Diagonale stehen König und Dame?",
+      "Der Läufer muss vor den König, aber nicht direkt daneben."
+     ]
+    },
+    {
+     "frage": "Jahresrätsel Silber: Klicke die gefesselte schwarze Figur an.",
+     "fen": "4k3/3n4/8/8/B7/8/8/6K1",
+     "targets": [
+      "d7"
+     ],
+     "antwort": "Der Springer d7. Zieht er weg, steht der König e8 im Schach durch den Läufer a4.",
+     "hilfe": [
+      "Was steht zwischen Läufer und König?",
+      "Darf diese Figur wegziehen?"
+     ]
+    },
+    {
+     "frage": "Jahresrätsel Gold: Klicke alle Felder an, auf denen der Turm mattsetzt.",
+     "fen": "3k4/8/3K4/8/8/8/8/7R",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "h8. Die Könige stehen sich gegenüber, der Turm setzt am Rand matt.",
+     "hilfe": [
+      "Wer deckt die 7. Reihe?",
+      "Der Turm braucht die 8. Reihe."
+     ]
+    },
+    {
+     "frage": "Jahresrätsel Gold: Der Turm a4 ist Wächter. Klicke das Feld an, auf das der Jäger zieht.",
+     "fen": "8/8/8/3k4/R7/8/8/6RK",
+     "leer": true,
+     "targets": [
+      "g5"
+     ],
+     "antwort": "g5. Tg5+ gibt Schach auf der 5. Reihe, der König muss nach oben.",
+     "hilfe": [
+      "Der Jäger gibt Schach auf der Reihe des Königs.",
+      "Der Wächter bleibt stehen."
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Streitfall Rochade: Markiere alle Felder, auf die der weiße König mit einer Rochade ziehen darf.",
+     "fen": "5rk1/8/8/8/8/8/8/R3K2R",
+     "rechte": "KQ",
+     "leer": true,
+     "pruef": {
+      "rochade": true
+     },
+     "targets": null,
+     "antwort": "Nur c1. Der Turm f8 greift f1 an. Über ein angegriffenes Feld darf der König bei der Rochade nicht ziehen.",
+     "hilfe": [
+      "Welche Linie greift der Turm f8 an?",
+      "Welche Felder überquert der König?"
+     ]
+    },
+    {
+     "frage": "Streitfall Patt: Schwarz ist am Zug und steht nicht im Schach. Markiere alle Felder, auf die der schwarze König ziehen darf. Wenn keins, drücke „Prüfen“ ohne Markierung.",
+     "fen": "7k/5Q2/6K1/8/8/8/8/8",
+     "zug": "b",
+     "leer": true,
+     "pruef": {
+      "legal": "h8"
+     },
+     "targets": null,
+     "antwort": "Keins. Das ist Patt und damit remis, auch wenn Weiß viel mehr Material hat.",
+     "hilfe": [
+      "Steht der König im Schach?",
+      "Prüfe g8, g7 und h7."
+     ]
+    },
+    {
+     "frage": "Streitfall en passant: Schwarz hat d7–d5 schon früher gespielt, gerade eben a6–a5. Klicke alle weißen Bauern an, die jetzt en passant schlagen dürfen. Wenn keine, drücke „Prüfen“ ohne Markierung.",
+     "fen": "rnbqkbnr/1pp1pppp/8/p2pP3/8/7P/PPPP1PP1/RNBQKBNR",
+     "zuege": "e4 d5 e5 a6 h3 a5",
+     "pruef": {
+      "epschlaeger": true
+     },
+     "targets": null,
+     "antwort": "Keine. En passant geht nur direkt nach dem Doppelschritt.",
+     "hilfe": [
+      "Welcher Bauer hat gerade gezogen?",
+      "Hat er einen Doppelschritt neben einem weißen Bauern gemacht?"
+     ]
+    },
+    {
+     "frage": "Streitfall Umwandlung: Welche weißen Bauern können im nächsten Zug umgewandelt werden? Klicke sie an.",
+     "fen": "1n1r4/P2P2k1/8/7P/8/8/8/4K3",
+     "pruef": {
+      "umwandeln": true
+     },
+     "targets": null,
+     "antwort": "Nur a7. Er zieht nach a8 oder schlägt den Springer b8. d7 ist blockiert und hat nichts zu schlagen.",
+     "hilfe": [
+      "Welche Bauern stehen auf der 7. Reihe?",
+      "Ist das Feld davor frei, oder kann er schräg schlagen?"
+     ]
+    },
+    {
+     "frage": "Streitfall berührt, geführt: Du hast den Springer b1 berührt. Markiere alle Felder, auf die er ziehen darf.",
+     "fen": "rnbqkbnr/ppp2ppp/8/3pp3/3PP3/8/PPP2PPP/RNBQKBNR",
+     "rechte": "KQkq",
+     "zuege": "e4 e5 d4 d5",
+     "leer": true,
+     "pruef": {
+      "legal": "b1"
+     },
+     "targets": null,
+     "antwort": "a3, c3 und d2. Den berührten Springer musst du ziehen, wenn er einen erlaubten Zug hat.",
+     "hilfe": [
+      "Welche Springerfelder sind frei?",
+      "Steht eine eigene Figur im Weg?"
+     ]
+    },
+    {
+     "frage": "Streitfall illegaler Königszug: Markiere alle Felder, auf die der weiße König ziehen darf.",
+     "fen": "4k3/8/8/2b5/8/8/8/4K3",
+     "leer": true,
+     "pruef": {
+      "legal": "e1"
+     },
+     "targets": null,
+     "antwort": "d1, d2, e2 und f1. Das Feld f2 greift der Läufer an. Ein Königszug dorthin ist illegal und wird zurückgenommen.",
+     "hilfe": [
+      "Welche Felder greift der Läufer c5 an?",
+      "Ein König darf nie auf ein angegriffenes Feld."
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Bronze: Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "6k1/5ppp/8/8/8/8/5PPP/3Q2K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "d8. Dd8 ist Matt über die Grundreihe.",
+     "hilfe": [
+      "Welche Reihe ist offen?",
+      "Hat der König Luft?"
+     ]
+    },
+    {
+     "frage": "Silber: Klicke das Feld an, auf das der Läufer zieht, damit Läufer und Turm gleichzeitig Schach geben.",
+     "fen": "7k/8/8/8/7B/8/8/6KR",
+     "leer": true,
+     "targets": [
+      "f6"
+     ],
+     "antwort": "f6. Der Läufer gibt Schach über g7, der Turm auf der h-Linie: Doppelschach.",
+     "hilfe": [
+      "Der Läufer muss die h-Linie verlassen.",
+      "Von welchem Feld greift er h8 an?"
+     ]
+    },
+    {
+     "frage": "Gold: Schwarz droht Te1#. Markiere alle Felder, auf die ein weißer Bauer ziehen kann, damit der König ein sicheres Fluchtfeld bekommt.",
+     "fen": "4r1k1/5ppp/1b6/8/8/8/5PPP/6K1",
+     "leer": true,
+     "targets": [
+      "g3",
+      "g4",
+      "h3",
+      "h4"
+     ],
+     "antwort": "g3, g4, h3 und h4. Nach f3 oder f4 greift der Läufer b6 das Feld f2 an.",
+     "hilfe": [
+      "Welches Feld greift der Läufer b6 an?",
+      "Ist das neue Fluchtfeld sicher?"
+     ]
+    },
+    {
+     "frage": "Gold: Weiß setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame im ersten Zug zieht.",
+     "fen": "2r3k1/5ppp/8/8/3Q4/8/5PPP/3R2K1",
+     "leer": true,
+     "targets": [
+      "d8"
+     ],
+     "antwort": "d8. Dd8+ Txd8 Txd8#. Die Dame lockt den Turm c8 weg.",
+     "hilfe": [
+      "Wer bewacht die 8. Reihe?",
+      "Wie lockt man ihn weg?"
+     ]
+    },
+    {
+     "frage": "Gold: Klicke das Feld an, auf das der Turm zieht, damit der Kasten kleiner wird und der Turm sicher steht.",
+     "fen": "8/8/2k5/8/8/3R4/8/6K1",
+     "leer": true,
+     "targets": [
+      "d4"
+     ],
+     "antwort": "d4. Der Kasten schrumpft, und der König kann den Turm nicht schlagen.",
+     "hilfe": [
+      "Zähle die Felder im Kasten.",
+      "Kann der König den Turm danach schlagen?"
+     ]
+    },
+    {
+     "frage": "Gold: Schwarz am Zug. Markiere alle Felder, auf die der schwarze König ziehen kann, damit Schwarz remis hält.",
+     "fen": "8/2k5/8/1KP5/8/8/8/8",
+     "zug": "b",
+     "leer": true,
+     "targets": [
+      "b7"
+     ],
+     "antwort": "b7. Die Könige stehen sich gegenüber. Jeder andere Zug verliert. Gewinn- und Remiszüge mit Stockfish geprüft.",
+     "hilfe": [
+      "Wo steht der weiße König?",
+      "Stell dich ihm gegenüber."
+     ]
+    }
+   ]
+  }
  }
 };
 export const YEAR=[["Brett, Figuren, Schach und Matt",[1,11]],["Sonderregeln, Notation und erste Taktik",[12,26]],["Mattführung, Eröffnung und Endspiel",[27,36]]];
