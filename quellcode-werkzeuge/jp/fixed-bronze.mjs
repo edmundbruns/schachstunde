@@ -34,7 +34,8 @@ export const URLS={
  "lichessSkewer": "https://lichess.org/training/skewer",
  "lichessDiscovered": "https://lichess.org/training/discoveredAttack",
  "lichessIntermezzo": "https://lichess.org/training/intermezzo",
- "lichessPractice": "https://lichess.org/practice"
+ "lichessPractice": "https://lichess.org/practice",
+ "lichessSacrifice": "https://lichess.org/training/sacrifice"
 };
 export const FIXED={
  "1": {
@@ -17452,6 +17453,584 @@ export const FIXED={
      "hilfe": [
       "Welche schwarzen Figuren greifen f2 an?",
       "Sperren oder decken."
+     ]
+    }
+   ]
+  }
+ },
+ "31": {
+  "thema": "Opfer und Damiano-Matt",
+  "lernziel": "Ich kann ein Opfer finden, das zum Matt führt.",
+  "leitfrage": "Wann lohnt es sich, eine wertvolle Figur herzugeben?",
+  "vorwissen": "Matt mit zwei Türmen (Woche 28), ein Matt abwehren (Woche 29), Figurenwerte (Woche 7).",
+  "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
+  "quelle": "Damiano-Matt nach dem Ludgerus-Schachdiplom Gold 3, Lichess-Puzzles KTG1C, QcFWa, mRlp5, PBECq, kD8Y4, HRMBt, 2HvGT, zDDUp, q4W9v, aujMM, PJqZB, g1VTr, 6vWJG und 6yCNH (CC0, Thema „sacrifice“, über die Lichess-Schnittstelle abgerufen), übrige Aufgaben eigene Aufgaben. Alle Mattführungen mit chess.js vollständig durchgerechnet, die Lichess-Lösungen sind jeweils der einzige Weg zum Matt in zwei Zügen",
+  "phasen": [
+   {
+    "name": "Einstieg",
+    "titel": "Das Mattbild zuerst",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett W1 bis W6: das Damiano-Matt, der Keilbauer, ein Grundreihenmatt, ein erzwungenes Schlagen und ein Matt nach dem Damenopfer.",
+     "Bei W5 fragen: „Weiß hat gerade die Dame hergegeben. Ist das ein Fehler?“ Ziel nennen: „Heute lernt ihr Opfer, die zum Matt führen, und das Damiano-Matt.“"
+    ],
+    "kinder": "Ich erkenne das Damiano-Matt und das Grundreihenmatt.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Aufwärmen W1 bis W6",
+      "set": "W"
+     }
+    ]
+   },
+   {
+    "name": "Erarbeitung",
+    "titel": "Opfer mit Folgezug, Damiano-Matt mit Turmopfer",
+    "ablauf": [
+     "Plakat „Opfer und Damiano-Matt“ aufhängen. Am Lehrbrett E1: Die Dame opfert sich auf e8, der Turm setzt matt. Ein Opfer ist nur richtig, wenn danach zwingend Matt oder Gewinn folgt.",
+     "E2 und E3: das Damiano-Matt. Der Turm opfert sich auf h8, der König muss schlagen. Die Dame kommt mit Schach auf die h-Linie und setzt auf h7 matt, gedeckt vom Keilbauern g6. Frage: „Warum muss Schwarz den Turm schlagen?“",
+     "E4 bis E6: echte Partien mit Damen-, Springer- und Turmopfer. Merksatz: „Erst das Mattbild sehen, dann das Opfer suchen, dann bis zum Matt rechnen.“"
+    ],
+    "kinder": "Ich finde ein Opfer und den Mattzug danach.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Opfer und Damiano-Matt",
+      "was": "opfer"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Opfer E1 bis E6",
+      "set": "E"
+     }
+    ]
+   },
+   {
+    "name": "Übung",
+    "titel": "Opfer-Rätsel zu zweit, dann Arbeitsblatt allein",
+    "ablauf": [
+     "Zu zweit: Kind A baut das Damiano-Bild auf (schwarzer König g8, Turm f8, Bauern f7 und g7, weißer Bauer g6) und gibt Weiß Dame und Turm. Kind B führt die Mattfolge mit Turmopfer aus, Kind A verteidigt. Danach wechseln die Rollen.",
+     "Allein: Arbeitsblatt A1 bis A6, darunter vier echte Aufgaben aus Lichess-Partien. Vergleich am Lehrbrett."
+    ],
+    "kinder": "Ich führe ein Opfer bis zum Matt aus.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Arbeitsblatt: Opfer und Damiano-Matt",
+      "was": "feld:A"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Arbeitsblatt A1 bis A6",
+      "set": "A"
+     }
+    ]
+   },
+   {
+    "name": "Sicherung",
+    "titel": "Opfer prüfen",
+    "ablauf": [
+     "Stopp-Signal. Am Lehrbrett S1 und S2: Ein Opfer scheitert, wenn der König Luft hat oder das Opfer nicht annehmen muss. S3 bis S6: echte Partien, in denen das Opfer bis zum Matt gerechnet war.",
+     "Bei jeder Aufgabe fragen: „Woran erkennst du, dass der Gegner das Opfer annehmen muss?“"
+    ],
+    "kinder": "Ich prüfe vor einem Opfer, ob es wirklich zum Matt führt.",
+    "links": [
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Opfer prüfen S1 bis S6",
+      "set": "S"
+     }
+    ]
+   },
+   {
+    "name": "Lerncheck",
+    "titel": "Sechs Aufgaben allein",
+    "ablauf": [
+     "Jedes Kind löst L1 bis L6 allein.",
+     "Während die Kinder arbeiten, fragst du einige am Brett: „Was gibst du her, und wie setzt du danach matt?“ Danach Lösungen am Lehrbrett."
+    ],
+    "kinder": "Ich finde ein Opfer mit Matt ohne Hilfe.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Lerncheck-Zettel",
+      "was": "feld:L"
+     },
+     {
+      "art": "feld",
+      "label": "Lehrbrett: Lerncheck L1 bis L6",
+      "set": "L"
+     }
+    ]
+   },
+   {
+    "name": "Abschluss und Ausblick",
+    "titel": "Minispiel „Opfer-Detektiv“, Rückblick, Aufräumen",
+    "ablauf": [
+     "Minispiel zu zweit: Kind A stellt eine Grundreihen- oder Damiano-Stellung auf, Kind B hat eine Minute für das Opfer mit Matt. Gelingt es, gibt es zwei Punkte, findet A danach eine Verteidigung, einen Punkt für A. Danach wechseln die Rollen.",
+     "Rückblick: „Welches Opfer hat dich heute am meisten überrascht?“ Aufräum-Ritual. Ausblick: Nächstes Mal geht es um das Grundreihenmatt."
+    ],
+    "kinder": "Ich erkläre ein Opfer, das zum Matt führt.",
+    "links": [
+     {
+      "art": "druck",
+      "label": "Plakat: Opfer und Damiano-Matt",
+      "was": "opfer"
+     },
+     {
+      "art": "blatt",
+      "label": "Mehr Opferaufgaben auf Lichess (online)",
+      "url": "https://lichess.org/training/sacrifice"
+     },
+     {
+      "art": "blatt",
+      "label": "Ludgerus-Schachdiplom online (Gold 3)",
+      "url": "https://ludgerus-schachdiplom.netlify.app/"
+     }
+    ]
+   }
+  ],
+  "hinweise": {
+   "hilfe": "Zuerst nur das Mattbild zeigen lassen: Wo könnte die Dame mattsetzen? Dann fragen, welche gegnerische Figur dieses Feld noch deckt und wie man sie weglockt.",
+   "zusatz": "Die vollständige Damiano-Führung mit zwei Turmopfern spielen: Th8+, Kxh8, Th1+, Kg8, Th8+, Kxh8, Dh1+, Kg8, Dh7#. Oder Lichess-Aufgaben zum Thema Opfer lösen.",
+   "kuerzen": "Die Partnerübung auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
+  },
+  "nachher": "Wer opfert schon, ohne bis zum Matt zu rechnen? Wer erkennt den Keilbauern? Das Grundreihenmatt in Woche 32 greift das Damenopfer auf der Grundreihe wieder auf.",
+  "feld": {
+   "W": [
+    {
+     "frage": "Das Damiano-Matt: Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "5rk1/5pp1/6P1/8/8/8/8/6KQ",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "h7. Die Dame setzt direkt vor dem König matt. Der Keilbauer g6 deckt sie, f8, f7 und g7 sind von eigenen Figuren besetzt.",
+     "hilfe": [
+      "Welches Feld deckt der Bauer g6?",
+      "Die Dame setzt direkt vor dem König matt."
+     ]
+    },
+    {
+     "frage": "Schwarz ist matt. Klicke die weiße Figur an, die die Dame deckt. Sie heißt Keilbauer.",
+     "fen": "5rk1/5ppQ/6P1/8/8/8/8/6K1",
+     "zug": "b",
+     "schach": true,
+     "targets": [
+      "g6"
+     ],
+     "antwort": "Der Bauer g6. Er deckt die Dame auf h7, deshalb kann der König sie nicht schlagen.",
+     "hilfe": [
+      "Wer greift das Feld h7 außer der Dame an?",
+      "Bauern schlagen schräg nach vorn."
+     ]
+    },
+    {
+     "frage": "Wiederholung Grundreihenmatt: Klicke alle Felder an, auf denen Weiß mattsetzt.",
+     "fen": "6k1/5ppp/8/8/8/8/5PPP/3R2K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "d8. Td8 ist Matt, die eigenen Bauern sperren den König ein.",
+     "hilfe": [
+      "Die 8. Reihe ist offen.",
+      "Hat der König ein Fluchtfeld?"
+     ]
+    },
+    {
+     "frage": "Weiß hat den Turm nach h8 geopfert. Markiere alle Felder, auf die der schwarze König ziehen darf.",
+     "fen": "5rkR/5pp1/6P1/8/8/8/8/1K4Q1",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "Nur h8. Der König muss den Turm schlagen, h7 deckt der Bauer g6. Das Opfer lockt den König in die Ecke.",
+     "hilfe": [
+      "Welche Felder um g8 sind frei?",
+      "Welches greift der Bauer g6 an?"
+     ]
+    },
+    {
+     "frage": "Weiß hat die Dame nach e8 geopfert. Klicke alle schwarzen Figuren an, die das Schach abwehren können.",
+     "fen": "3rQ1k1/5ppp/8/8/8/8/5PPP/4R1K1",
+     "zug": "b",
+     "schach": true,
+     "pruef": {
+      "abwehr": true
+     },
+     "targets": null,
+     "antwort": "Nur der Turm d8. Der König darf die Dame nicht schlagen, weil der Turm e1 sie deckt.",
+     "hilfe": [
+      "Wer kann die Dame schlagen?",
+      "Ist die Dame gedeckt?"
+     ]
+    },
+    {
+     "frage": "Schwarz hat die Dame geschlagen. Klicke alle Felder an, auf denen Weiß jetzt mattsetzt.",
+     "fen": "4r1k1/5ppp/8/8/8/8/5PPP/4R1K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "e8. Txe8 ist Matt. Das Damenopfer hat den Turm d8 weggelockt.",
+     "hilfe": [
+      "Welche Figur kann jetzt auf die 8. Reihe?",
+      "Hat der König ein Fluchtfeld?"
+     ]
+    }
+   ],
+   "E": [
+    {
+     "frage": "Opfer mit Folgezug: Weiß setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame im ersten Zug zieht.",
+     "fen": "3r2k1/5ppp/8/8/4Q3/8/5PPP/4R1K1",
+     "leer": true,
+     "targets": [
+      "e8"
+     ],
+     "antwort": "e8. De8+ Txe8 Txe8#. Die Dame lockt den Turm d8 weg, danach ist die Grundreihe offen.",
+     "hilfe": [
+      "Welches Feld ist das Mattfeld für den Turm?",
+      "Wer bewacht es?"
+     ]
+    },
+    {
+     "frage": "Damiano-Matt, Schritt 1: Weiß setzt in drei Zügen matt. Klicke das Feld an, auf das der Turm im ersten Zug zieht.",
+     "fen": "5rk1/5pp1/6P1/8/8/8/8/1K4QR",
+     "leer": true,
+     "targets": [
+      "h8"
+     ],
+     "antwort": "h8. Th8+ Kxh8, dann Dh1+ oder Dh2+ Kg8 und Dh7#. Der Turm lockt den König in die Ecke und öffnet der Dame die h-Linie.",
+     "hilfe": [
+      "Was passiert, wenn der Turm mit Schach geopfert wird?",
+      "Wohin muss danach die Dame?"
+     ]
+    },
+    {
+     "frage": "Damiano-Matt, Schritt 2: Schwarz hat den Turm geschlagen. Weiß setzt in zwei Zügen matt. Klicke alle Felder an, auf die die Dame im ersten Zug ziehen kann.",
+     "fen": "5r1k/5pp1/6P1/8/8/8/8/1K4Q1",
+     "leer": true,
+     "targets": [
+      "h2",
+      "h1"
+     ],
+     "antwort": "h1 und h2. Dh1+ oder Dh2+ Kg8, dann Dh7#. Der Bauer g6 deckt die Dame.",
+     "hilfe": [
+      "Die Dame braucht die h-Linie.",
+      "Wo setzt sie danach matt?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß opfert die Dame und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame im ersten Zug zieht.",
+     "fen": "3r3k/p5rp/1pp1pNp1/2q1P3/5P2/4p3/PP5Q/K6R",
+     "leer": true,
+     "quelle": "Lichess-Puzzle KTG1C (CC0), https://lichess.org/training/KTG1C",
+     "targets": [
+      "h7"
+     ],
+     "antwort": "h7. Dxh7+ Txh7 Txh7#. Der Springer f6 sperrt g8, der Turm setzt in der Ecke matt.",
+     "hilfe": [
+      "Welche Linie öffnet sich nach dem Damenopfer?",
+      "Wer deckt g8 und g7?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß opfert den Springer und setzt in zwei Zügen matt. Klicke das Feld an, auf das der Springer im ersten Zug zieht.",
+     "fen": "r1bq1rk1/ppp2pb1/4p2p/6p1/2PpN1Pn/P2Q1N2/1PB2P1P/R3K2R",
+     "leer": true,
+     "quelle": "Lichess-Puzzle QcFWa (CC0), https://lichess.org/training/QcFWa",
+     "targets": [
+      "f6"
+     ],
+     "antwort": "f6. Sf6+ Lxf6, dann Dh7#. Der Springer räumt die Diagonale b1 bis h7 für Dame und Läufer.",
+     "hilfe": [
+      "Was steht der Dame auf dem Weg nach h7 im Weg?",
+      "Wie verschwindet diese Figur mit Schach?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß opfert einen Turm und setzt in zwei Zügen matt. Klicke das Feld an, auf das der Turm im ersten Zug zieht.",
+     "fen": "7k/1rN2Rnn/p2p2B1/1p2b3/6b1/P5P1/6PK/5R2",
+     "leer": true,
+     "quelle": "Lichess-Puzzle mRlp5 (CC0), https://lichess.org/training/mRlp5",
+     "targets": [
+      "f8"
+     ],
+     "antwort": "f8. Tf8+ Sxf8, dann Txf8#. Der Springer h7 muss schlagen und gibt h7 frei, doch dieses Feld deckt der Läufer g6.",
+     "hilfe": [
+      "Welche schwarze Figur muss das Opfer schlagen?",
+      "Was ist danach frei?"
+     ]
+    }
+   ],
+   "A": [
+    {
+     "frage": "Damiano-Matt mit Läufer: Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "5rk1/5pp1/8/8/8/3B4/8/6KQ",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "h7. Dh7 ist Matt, der Läufer d3 deckt die Dame über die Diagonale d3 bis h7.",
+     "hilfe": [
+      "Welche Figur deckt das Feld h7?",
+      "Die Dame setzt direkt vor dem König matt."
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß opfert die Dame und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "r5k1/pp3ppp/8/q1p5/4Q3/8/1P3PPP/4R1K1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle PBECq (CC0), https://lichess.org/training/PBECq",
+     "targets": [
+      "e8"
+     ],
+     "antwort": "e8. De8+ Txe8 Txe8#. Die Grundreihe ist danach offen.",
+     "hilfe": [
+      "Wer bewacht die 8. Reihe?",
+      "Wie lockt man ihn weg?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Die schwarze Grundreihe ist schwach. Mit welchem Damenopfer setzt Weiß in zwei Zügen matt? Klicke das Zielfeld der Dame an.",
+     "fen": "1r4k1/p4ppp/1p2p3/3pq3/8/3P2PP/PPQ1PP1K/2R5",
+     "leer": true,
+     "quelle": "Lichess-Puzzle kD8Y4 (CC0), https://lichess.org/training/kD8Y4",
+     "targets": [
+      "c8"
+     ],
+     "antwort": "c8. Dc8+ Txc8 Txc8#. Der Turm b8 muss die Dame schlagen, dann schlägt der Turm c1 mit Matt zurück.",
+     "hilfe": [
+      "Welche Linie gehört dem Turm c1?",
+      "Was passiert nach Dc8+?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß schlägt mit der Dame den Wächter von d8 und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "2r3k1/1Q3ppp/p1p1b3/8/5n2/2P5/q4PPP/3R2K1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle HRMBt (CC0), https://lichess.org/training/HRMBt",
+     "targets": [
+      "c8"
+     ],
+     "antwort": "c8. Dxc8+ Lxc8 Td8#. Die Dame schlägt den Turm c8, der d8 bewacht hat. Danach ist d8 frei für den Turm.",
+     "hilfe": [
+      "Welche schwarze Figur deckt d8?",
+      "Wie wird sie weggelockt?"
+     ]
+    },
+    {
+     "frage": "Schwarz hat den Turm auf a8 geschlagen. Weiß setzt in zwei Zügen matt. Klicke alle Felder an, auf die die Dame im ersten Zug ziehen kann.",
+     "fen": "k1r5/1pp5/1P6/8/8/8/8/4Q1K1",
+     "leer": true,
+     "targets": [
+      "a5",
+      "a1"
+     ],
+     "antwort": "a1 und a5. Da1+ oder Da5+ Kb8, dann Da7#. Der Keilbauer b6 deckt die Dame.",
+     "hilfe": [
+      "Die Dame braucht die a-Linie.",
+      "Wo setzt sie danach matt?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz opfert einen Turm und setzt in zwei Zügen matt. Klicke das Feld an, auf das der Turm zieht.",
+     "fen": "6k1/8/p4p2/2p2Q2/1p2P1pP/1Pqr4/P5P1/2B3RK",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 2HvGT (CC0), https://lichess.org/training/2HvGT",
+     "targets": [
+      "h3"
+     ],
+     "antwort": "h3. Th3+ gxh3, dann Dxh3#. Der Turm öffnet der Dame den Weg zum König.",
+     "hilfe": [
+      "Welche weiße Figur deckt h3?",
+      "Was ist nach dem Opfer offen?"
+     ]
+    }
+   ],
+   "S": [
+    {
+     "frage": "Opfer prüfen 1: Weiß hat De8+ Txe8 Txe8+ gespielt. Aber Schwarz hatte Luft. Markiere alle Felder, auf die der schwarze König fliehen kann.",
+     "fen": "4R1k1/5pp1/7p/8/8/8/5PPP/6K1",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "h7. Der Bauer h6 hat dem König Luft gemacht. Das Damenopfer war ein Fehler, Weiß hat nur einen Turm gegen eine Dame getauscht.",
+     "hilfe": [
+      "Welches Feld neben dem König ist frei?",
+      "Wer hat es frei gemacht?"
+     ]
+    },
+    {
+     "frage": "Opfer prüfen 2: Ohne Keilbauer. Weiß hat Dh7+ gespielt. Markiere alle Felder, auf die der schwarze König ziehen darf.",
+     "fen": "5rk1/5ppQ/8/8/8/8/8/6K1",
+     "zug": "b",
+     "schach": true,
+     "leer": true,
+     "pruef": {
+      "flucht": true
+     },
+     "targets": null,
+     "antwort": "h7. Der König schlägt die Dame, denn kein weißer Bauer auf g6 deckt sie. Ohne Keilbauer gibt es kein Damiano-Matt.",
+     "hilfe": [
+      "Wer deckt die Dame auf h7?",
+      "Darf der König sie schlagen?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß opfert die Dame und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "1k5r/ppp2pp1/5rq1/3P3p/3n4/2P5/P1P1Q1PP/1R2R2K",
+     "leer": true,
+     "quelle": "Lichess-Puzzle zDDUp (CC0), https://lichess.org/training/zDDUp",
+     "targets": [
+      "e8"
+     ],
+     "antwort": "e8. De8+ Txe8 Txe8#. Schwarz muss annehmen, weil die Dame von Te1 gedeckt ist und sonst nur Schach bleibt.",
+     "hilfe": [
+      "Wer deckt die Dame auf e8?",
+      "Was steht nach dem Schlagen auf der e-Linie?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Hinter der Dame steht schon ein Turm bereit. Weiß setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "3r2k1/p4ppp/1b5r/8/3pQP2/1P4Pq/PB2R2P/5RK1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle q4W9v (CC0), https://lichess.org/training/q4W9v",
+     "targets": [
+      "e8"
+     ],
+     "antwort": "e8. De8+ Txe8 Txe8#. Der Turm e2 steht schon hinter der Dame bereit.",
+     "hilfe": [
+      "Welche weiße Figur steht hinter der Dame auf der e-Linie?",
+      "Hat der König Luft?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz opfert die Dame und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "2q3k1/5ppp/1Q2p3/p2rPb2/P3p3/B3P3/5PPP/2R3K1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle aujMM (CC0), https://lichess.org/training/aujMM",
+     "targets": [
+      "c1"
+     ],
+     "antwort": "c1. Dxc1+ Lxc1, dann Td1#. Der Läufer a3 muss die Grundreihe decken und wird weggelockt.",
+     "hilfe": [
+      "Welche weiße Figur deckt d1?",
+      "Wie wird sie weggelockt?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz schlägt den einzigen Verteidiger der Grundreihe und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "r2q3k/p4B2/1pP2nQ1/2p1r1p1/8/2N5/PP3PPP/3R2K1",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle PJqZB (CC0), https://lichess.org/training/PJqZB",
+     "targets": [
+      "d1"
+     ],
+     "antwort": "d1. Dxd1+ Sxd1, dann Te1#. Der Turm d1 war der einzige Verteidiger der Grundreihe.",
+     "hilfe": [
+      "Wer verteidigt die 1. Reihe?",
+      "Was passiert, wenn er geschlagen wird?"
+     ]
+    }
+   ],
+   "L": [
+    {
+     "frage": "Klicke alle Felder an, auf denen die Dame mattsetzt.",
+     "fen": "1kr5/1pp5/1P6/8/8/8/8/Q5K1",
+     "leer": true,
+     "pruef": {
+      "matt": true
+     },
+     "targets": null,
+     "antwort": "a7. Da7 ist Matt. Der Keilbauer b6 deckt die Dame, c8, b7 und c7 sind von eigenen Figuren besetzt.",
+     "hilfe": [
+      "Welches Feld deckt der Bauer b6?",
+      "Die Dame setzt direkt vor dem König matt."
+     ]
+    },
+    {
+     "frage": "Schwarz ist matt. Klicke die weiße Figur an, die die Dame deckt.",
+     "fen": "1kr5/Qpp5/1P6/8/8/8/8/6K1",
+     "zug": "b",
+     "schach": true,
+     "targets": [
+      "b6"
+     ],
+     "antwort": "Der Bauer b6, der Keilbauer. Er deckt die Dame auf a7.",
+     "hilfe": [
+      "Wer greift a7 außer der Dame an?",
+      "Bauern schlagen schräg nach vorn."
+     ]
+    },
+    {
+     "frage": "Weiß setzt in drei Zügen matt. Klicke das Feld an, auf das der Turm im ersten Zug zieht.",
+     "fen": "1kr5/1pp5/1P6/8/8/8/8/RQ4K1",
+     "leer": true,
+     "targets": [
+      "a8"
+     ],
+     "antwort": "a8. Ta8+ Kxa8, dann Da1+ oder Da2+ Kb8 und Da7#. Das ist das Damiano-Matt am Damenflügel.",
+     "hilfe": [
+      "Was passiert nach einem Turmopfer mit Schach?",
+      "Wohin muss danach die Dame?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß opfert die Dame und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "3r2k1/p4ppp/1b3q2/3p4/1P3P2/P1p3rP/4Q1P1/2R1R2K",
+     "leer": true,
+     "quelle": "Lichess-Puzzle g1VTr (CC0), https://lichess.org/training/g1VTr",
+     "targets": [
+      "e8"
+     ],
+     "antwort": "e8. De8+ Txe8 Txe8#. Der Turm d8 muss schlagen, dann ist die Grundreihe offen.",
+     "hilfe": [
+      "Wer deckt die Dame auf e8?",
+      "Hat der König Luft?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Schwarz opfert die Dame und setzt in zwei Zügen matt. Klicke das Feld an, auf das die Dame zieht.",
+     "fen": "r4rk1/2p3p1/1p5p/3R4/1P6/1QP5/P4qPP/R6K",
+     "zug": "b",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 6vWJG (CC0), https://lichess.org/training/6vWJG",
+     "targets": [
+      "f1"
+     ],
+     "antwort": "f1. Df1+ Txf1 Txf1#. Der Turm a1 muss die Dame schlagen, dann schlägt der Turm f8 mit Matt zurück.",
+     "hilfe": [
+      "Welche weiße Figur deckt f1?",
+      "Was steht hinter der Dame auf der f-Linie?"
+     ]
+    },
+    {
+     "frage": "Echte Partie: Weiß opfert den Springer und setzt in zwei Zügen matt. Klicke das Feld an, auf das der Springer zieht.",
+     "fen": "3r1rk1/p1p1qppp/1p5n/6N1/1nPpNPb1/3Q2P1/PP2P1BP/3RR1K1",
+     "leer": true,
+     "quelle": "Lichess-Puzzle 6yCNH (CC0), https://lichess.org/training/6yCNH",
+     "targets": [
+      "f6"
+     ],
+     "antwort": "f6. Sf6+ gxf6, dann Dxh7#. Der Springer e4 räumt die Diagonale der Dame nach h7, der Springer g5 deckt h7.",
+     "hilfe": [
+      "Was versperrt der Dame den Weg nach h7?",
+      "Wer deckt h7 außer der Dame?"
      ]
     }
    ]
