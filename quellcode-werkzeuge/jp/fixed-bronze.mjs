@@ -4314,13 +4314,14 @@ export const FIXED={
    },
    {
     "name": "Übung",
-    "titel": "Schach-Retter zu zweit, dann Arbeitsblatt allein",
+    "titel": "Schach-Retter und Matt-Bauen zu zweit, dann Arbeitsblatt allein",
     "ablauf": [
      "Zu zweit: Kind A stellt einen weißen König und eine schwarze Figur, die Schach gibt, dazu eine weitere weiße Figur. Kind B findet alle Rettungen und nennt die Art: wegziehen, dazwischenstellen oder schlagen. Danach wechseln die Rollen.",
      "Frage zwischendurch: „Warum kann man sich gegen ein Springerschach nicht dazwischenstellen?“",
+     "Matt-Bauen zu zweit: Kind A stellt den schwarzen König an den Rand, dazu einen weißen König und einen weißen Turm. Kind B sucht den Turmzug, der mattsetzt, und begründet mit dem Merksatz, warum keine Rettung bleibt. Gibt es kein Matt, baut Kind A um. Danach wechseln die Rollen.",
      "Allein: Arbeitsblatt A1 bis A6. Vergleich am Lehrbrett."
     ],
-    "kinder": "Ich finde alle Rettungen aus dem Schach und löse das Arbeitsblatt.",
+    "kinder": "Ich finde alle Rettungen aus dem Schach und ein Matt in einem Zug.",
     "links": [
      {
       "art": "druck",
@@ -5483,7 +5484,7 @@ export const FIXED={
     "name": "Übung",
     "titel": "Partien in der Aufsteiger-Runde",
     "ablauf": [
-     "Zwei oder drei Partien mit Handschlag. Nach jeder Partie rückt, wer gewonnen hat, einen Tisch nach rechts, wer verloren hat, einen Tisch nach links. Danach wechseln die Rollen: In der nächsten Partie spielt jedes Kind die andere Farbe.",
+     "Zwei oder drei Partien mit Handschlag. Die Bretter sind nummeriert, Brett 1 ist oben. Nach jeder Partie rückt, wer gewonnen hat, ein Brett nach oben, wer verloren hat, eins nach unten. Bei Remis rückt Weiß nach oben, Schwarz nach unten. Danach wechseln die Rollen: In der nächsten Partie spielt jedes Kind die andere Farbe.",
      "Jedes Kind trägt sein Ergebnis in die Ergebnisliste ein. Wer früh fertig ist, löst das Arbeitsblatt A1 bis A6."
     ],
     "kinder": "Ich spiele meine Partien zu Ende und trage das Ergebnis ein.",
@@ -15647,7 +15648,7 @@ export const FIXED={
   "thema": "Matt mit zwei Türmen",
   "lernziel": "Ich kann mit zwei Türmen nach dem Treppenprinzip mattsetzen.",
   "leitfrage": "Wie treiben zwei Türme den König Reihe für Reihe an den Rand, ohne dass der eigene König hilft?",
-  "vorwissen": "Matt mit Dame und König (Woche 17), Patt (Woche 16), Gegenangriff und sichere Felder (Woche 27).",
+  "vorwissen": "Matt mit Dame und König (Woche 17), Patt (Woche 16).",
   "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
   "quelle": "Treppenmatt (Wächter und Jäger) nach dem Ludgerus-Schachdiplom Gold 1, Lichess-Puzzles YOCba, HJ8H0, Lq8xP und Bsz5p (CC0, Thema „rookEndgame“, über die Lichess-Schnittstelle abgerufen), übrige Aufgaben eigene Aufgaben. Matt, Patt, Fluchtfelder und Treppenschritte mit chess.js berechnet, die Lichess-Lösungen mit Stockfish bestätigt",
   "phasen": [
@@ -18158,7 +18159,7 @@ export const FIXED={
    "zusatz": "Eine Stellung bauen, in der ein Wächter zwei Grundreihen-Felder gleichzeitig bewachen muss. Oder Lichess-Aufgaben zum Thema Grundreihenmatt lösen.",
    "kuerzen": "Die Partnerübung auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde."
   },
-  "nachher": "Wer macht von selbst rechtzeitig Luft? Wer schlägt lieber eine Figur und vergisst die eigene Grundreihe? Diese Kinder prüfen in Woche 33 vor jedem Zug laut die Grundreihe.",
+  "nachher": "Wer macht von selbst rechtzeitig Luft? Wer schlägt lieber eine Figur und vergisst die eigene Grundreihe? Diese Kinder prüfen in Woche 35 in der Generalprobe vor dem Gold-Test laut ihre Grundreihe.",
   "feld": {
    "W": [
     {

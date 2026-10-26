@@ -130,7 +130,7 @@ F[32]={thema:'Das Grundreihenmatt',
  hinweise:{hilfe:'Die drei Bauern vor dem König mit einem Finger abdecken: Wohin kann der König jetzt? Dann fragen, welche gegnerische Figur auf die Grundreihe kommt.',
   zusatz:'Eine Stellung bauen, in der ein Wächter zwei Grundreihen-Felder gleichzeitig bewachen muss. Oder Lichess-Aufgaben zum Thema Grundreihenmatt lösen.',
   kuerzen:'Die Partnerübung auf eine Runde kürzen, das Arbeitsblatt als Hausaufgabe mitgeben. Lerncheck und Aufräumen bleiben, das Minispiel hat nur eine Runde.'},
- nachher:'Wer macht von selbst rechtzeitig Luft? Wer schlägt lieber eine Figur und vergisst die eigene Grundreihe? Diese Kinder prüfen in Woche 33 vor jedem Zug laut die Grundreihe.',
+ nachher:'Wer macht von selbst rechtzeitig Luft? Wer schlägt lieber eine Figur und vergisst die eigene Grundreihe? Diese Kinder prüfen in Woche 35 in der Generalprobe vor dem Gold-Test laut ihre Grundreihe.',
  feld:{
  W:[P('Klicke alle Felder an, auf denen Weiß mattsetzt.','6k1/5ppp/8/8/8/8/5PPP/R5K1','a8. Ta8 ist Matt. Die eigenen Bauern f7, g7 und h7 sperren den König ein.',['Die 8. Reihe ist offen.','Kann der König nach vorn fliehen?'],{matt:true},{leer:true}),
   P('Markiere alle Felder, auf die der schwarze König ziehen darf.','6k1/5ppp/8/8/8/8/5PPP/R5K1 b - - 0 1','f8 und h8. Nach vorn stehen eigene Bauern. Der König kann nur auf der Grundreihe hin und her.',['Welche Nachbarfelder sind frei?','Die eigenen Bauern versperren den Weg.'],{legal:'g8'},{leer:true}),

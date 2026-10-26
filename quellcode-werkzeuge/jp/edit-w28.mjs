@@ -78,7 +78,7 @@ function weg(g,von,abstand=3){const opp=g.turn()==='w'?'b':'w',k=ksq(g,opp),out=
 F[28]={thema:'Matt mit zwei Türmen',
  lernziel:'Ich kann mit zwei Türmen nach dem Treppenprinzip mattsetzen.',
  leitfrage:'Wie treiben zwei Türme den König Reihe für Reihe an den Rand, ohne dass der eigene König hilft?',
- vorwissen:'Matt mit Dame und König (Woche 17), Patt (Woche 16), Gegenangriff und sichere Felder (Woche 27).',
+ vorwissen:'Matt mit Dame und König (Woche 17), Patt (Woche 16).',
  umfang:'Der Inhalt ist für ca. 45 Minuten ausgelegt.',
  quelle:'Treppenmatt (Wächter und Jäger) nach dem Ludgerus-Schachdiplom Gold 1, Lichess-Puzzles YOCba, HJ8H0, Lq8xP und Bsz5p (CC0, Thema „rookEndgame“, über die Lichess-Schnittstelle abgerufen), übrige Aufgaben eigene Aufgaben. Matt, Patt, Fluchtfelder und Treppenschritte mit chess.js berechnet, die Lichess-Lösungen mit Stockfish bestätigt',
  phasen:[
