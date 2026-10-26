@@ -29,7 +29,7 @@ const GS='rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1';
 F[19]={thema:'Notation: Züge lesen und schreiben',
  lernziel:'Ich kann Züge in Notation lesen und aufschreiben.',
  leitfrage:'Wie schreibe ich einen Zug so auf, dass jeder ihn nachspielen kann?',
- vorwissen:'Feldnamen (Woche 2), alle Figuren (Woche 3 bis 5), Rochade und Umwandlung (Woche 13 und 14), Weihnachtsturnier (Woche 18).',
+ vorwissen:'Feldnamen (Woche 2), alle Figuren (Woche 3 bis 5), Umwandlung und Rochade (Woche 13 und 14), Weihnachtsturnier (Woche 18).',
  umfang:'Der Inhalt ist für ca. 45 Minuten ausgelegt.',
  quelle:'Deutsche Kurznotation nach den FIDE-Regeln (Anhang C, Figurenbuchstaben K, D, T, L, S) in kindgerechter Form, Methode Schachdiktat aus „Methoden kennenlernen“. Brettaufgaben eigene Aufgaben, jeder Zug mit chess.js nachgespielt',
  phasen:[

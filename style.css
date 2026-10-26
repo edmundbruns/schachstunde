@@ -181,3 +181,4 @@ body:has(#teacherboard) .boardlead .boardturn{display:block;margin-top:18px;padd
 a.pdflink{display:inline-block;cursor:pointer;background:#176575;color:white;border:1px solid #176575;border-radius:8px;padding:9px 16px;text-decoration:none;font-weight:600}a.pdflink:hover,a.pdflink:focus-visible{background:#0f4f5c}
 @media print{a.pdflink{display:none}}
 a.pdflink.second{background:white;color:#176575}a.pdflink.second:hover,a.pdflink.second:focus-visible{background:#edf4f3}
+.pdfrow{margin:8px 0 14px;gap:8px;flex-wrap:wrap}

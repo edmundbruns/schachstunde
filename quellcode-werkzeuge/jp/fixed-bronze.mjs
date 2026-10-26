@@ -509,16 +509,14 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Zeige e4, a8 und g2.",
+     "frage": "Klicke das helle Eckfeld an, das rechts unten liegt, wenn du Weiß spielst.",
      "targets": [
-      "e4",
-      "a8",
-      "g2"
+      "h1"
      ],
-     "antwort": "e4: Linie e, Reihe 4. a8: oben links. g2: Linie g, Reihe 2.",
+     "antwort": "Rechts unten ist hell. So liegt das Brett richtig.",
      "hilfe": [
-      "Erst der Buchstabe, dann die Zahl.",
-      "a8 liegt in einer Ecke."
+      "Weiß sitzt unten.",
+      "Schau in die Ecke rechts unten."
      ]
     },
     {
@@ -537,57 +535,44 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Markiere die 3. Reihe.",
+     "frage": "Klicke die beiden Damen an.",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
      "targets": [
-      "a3",
-      "b3",
-      "c3",
-      "d3",
-      "e3",
-      "f3",
-      "g3",
-      "h3"
+      "d1",
+      "d8"
      ],
-     "antwort": "a3 bis h3.",
+     "antwort": "d1 und d8. Die weiße Dame steht auf dem hellen, die schwarze auf dem dunklen Feld.",
      "hilfe": [
-      "Eine Reihe liegt waagerecht.",
-      "Klicke auf die Zahl 3 am Rand."
+      "Die Dame steht auf ihrer Farbe.",
+      "Sie steht neben dem König."
      ]
     },
     {
-     "frage": "Markiere die lange Diagonale von h1 nach a8.",
+     "frage": "Klicke alle vier Springer an.",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
      "targets": [
-      "h1",
-      "g2",
-      "f3",
-      "e4",
-      "d5",
-      "c6",
-      "b7",
-      "a8"
+      "b1",
+      "g1",
+      "b8",
+      "g8"
      ],
-     "antwort": "h1, g2, f3, e4, d5, c6, b7, a8. Alle Felder sind hell.",
+     "antwort": "b1, g1, b8 und g8. Die Springer stehen neben den Türmen.",
      "hilfe": [
-      "Eine Diagonale läuft schräg.",
-      "Von h1 immer ein Feld nach links und eins nach oben."
+      "Die Pferde wohnen bei den Türmen.",
+      "Schau neben die Ecken."
      ]
     },
     {
-     "frage": "Markiere die c-Linie.",
+     "frage": "Klicke die beiden Könige an.",
+     "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR",
      "targets": [
-      "c1",
-      "c2",
-      "c3",
-      "c4",
-      "c5",
-      "c6",
-      "c7",
-      "c8"
+      "e1",
+      "e8"
      ],
-     "antwort": "c1 bis c8.",
+     "antwort": "e1 und e8. Die Könige stehen sich genau gegenüber.",
      "hilfe": [
-      "Eine Linie steht senkrecht.",
-      "Klicke auf das c am Rand."
+      "Der König steht neben der Dame.",
+      "Er hat ein Kreuz auf der Krone."
      ]
     }
    ]
@@ -4525,7 +4510,7 @@ export const FIXED={
       "zwischen": true
      },
      "targets": null,
-     "antwort": "e2 und e6. Dort steht der Läufer zwischen Turm und König.",
+     "antwort": "e2 und e6. Dort steht der Läufer zwischen Turm und König. Sicher ist nur e2, dort deckt ihn der König. Auf e6 schlägt der Turm den Läufer.",
      "hilfe": [
       "Der Läufer muss auf die e-Linie.",
       "Welche Felder der e-Linie erreicht er?"
@@ -4622,7 +4607,7 @@ export const FIXED={
       "zwischen": true
      },
      "targets": null,
-     "antwort": "e4. Der Springer sperrt die e-Linie. Auch der König könnte wegziehen.",
+     "antwort": "e4. Der Springer sperrt die e-Linie. Aber Vorsicht: Dort ist er ungedeckt, der Turm schlägt ihn mit Schach. Besser zieht hier der König weg.",
      "hilfe": [
       "Der Springer muss auf die e-Linie.",
       "Welche Springerfelder liegen auf der e-Linie?"
@@ -4823,7 +4808,7 @@ export const FIXED={
       "zwischen": true
      },
      "targets": null,
-     "antwort": "d1 und f1. Der Springer sperrt die 1. Reihe.",
+     "antwort": "d1 und f1. Der Springer sperrt die 1. Reihe. Das Matt ist damit nur aufgeschoben: Der Turm schlägt den ungedeckten Springer, und es ist trotzdem Matt.",
      "hilfe": [
       "Der Springer muss auf die 1. Reihe.",
       "Welche Springerfelder liegen dort?"
@@ -6549,7 +6534,7 @@ export const FIXED={
       "zwischen": true
      },
      "targets": null,
-     "antwort": "c3. Der Turm sperrt die Diagonale. Der König könnte auch wegziehen.",
+     "antwort": "c3. Der Turm sperrt die Diagonale. Aber dort schlägt ihn der Läufer mit Schach. Besser zieht der König weg.",
      "hilfe": [
       "Welche Felder liegen zwischen a5 und e1?",
       "Welches davon erreicht der Turm?"
@@ -9996,7 +9981,7 @@ export const FIXED={
   "thema": "Weihnachtsturnier",
   "lernziel": "Ich kann ein Turnier fair zu Ende spielen.",
   "leitfrage": "Wie spiele ich mehrere Partien hintereinander ruhig, fair und bis zum Schluss?",
-  "vorwissen": "Fairplay (Woche 9), Aufsteiger-Runde (Woche 10), Rochade, en passant, Patt und Damenmatt (Woche 14 bis 17).",
+  "vorwissen": "Fairplay (Woche 9), Aufsteiger-Runde im Rutschsystem (Woche 10), Rochade, en passant, Patt und Damenmatt (Woche 14 bis 17).",
   "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
   "quelle": "Turnierform Rutschsystem und Wertung ohne Rangliste aus dem Praxiswissen (Spielphasen organisieren), FIDE-Regeln in kindgerechter Form (berührt, geführt; Patt; Rochade; en passant). Brettaufgaben eigene Aufgaben, alle Lösungen mit chess.js nachgerechnet",
   "phasen": [
@@ -10571,7 +10556,7 @@ export const FIXED={
   "thema": "Notation: Züge lesen und schreiben",
   "lernziel": "Ich kann Züge in Notation lesen und aufschreiben.",
   "leitfrage": "Wie schreibe ich einen Zug so auf, dass jeder ihn nachspielen kann?",
-  "vorwissen": "Feldnamen (Woche 2), alle Figuren (Woche 3 bis 5), Rochade und Umwandlung (Woche 13 und 14), Weihnachtsturnier (Woche 18).",
+  "vorwissen": "Feldnamen (Woche 2), alle Figuren (Woche 3 bis 5), Umwandlung und Rochade (Woche 13 und 14), Weihnachtsturnier (Woche 18).",
   "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
   "quelle": "Deutsche Kurznotation nach den FIDE-Regeln (Anhang C, Figurenbuchstaben K, D, T, L, S) in kindgerechter Form, Methode Schachdiktat aus „Methoden kennenlernen“. Brettaufgaben eigene Aufgaben, jeder Zug mit chess.js nachgespielt",
   "phasen": [
@@ -12944,7 +12929,7 @@ export const FIXED={
     "name": "Abschluss und Ausblick",
     "titel": "Minispiel „Springer-Gabel“, Rückblick, Aufräumen",
     "ablauf": [
-     "Minispiel zu zweit: Weiß hat König und Springer, Schwarz hat König, Turm und Dame, aber Schwarz darf nicht schlagen. Weiß versucht in fünf Zügen eine Gabel zu finden, die Dame oder Turm angreift. Danach wechseln die Rollen.",
+     "Minispiel zu zweit: Weiß hat König und Springer, Schwarz hat König, Turm und Dame, aber Schwarz darf weder schlagen noch Schach geben. Weiß versucht in fünf Zügen eine Gabel zu finden, die Dame oder Turm angreift. Danach wechseln die Rollen.",
      "Rückblick: „Welche Figur gabelt am liebsten?“ Aufräum-Ritual. Ausblick: Nächstes Mal lernt ihr den Spieß und den Abzugsangriff."
     ],
     "kinder": "Ich finde in einer Partie eine Gabel.",
@@ -13494,7 +13479,7 @@ export const FIXED={
     "name": "Abschluss und Ausblick",
     "titel": "Minispiel „Spieß-Jagd“, Rückblick, Aufräumen",
     "ablauf": [
-     "Minispiel zu zweit: Weiß hat König und Turm, Schwarz hat König und Dame. Weiß versucht, König und Dame auf eine Linie zu zwingen und zu spießen, Schwarz versucht es zu vermeiden. Nach fünf Minuten wechseln die Rollen.",
+     "Minispiel zu zweit: Weiß hat König und Turm, Schwarz hat König und Dame. Die Dame darf weder schlagen noch Schach geben. Weiß versucht, König und Dame auf eine Linie zu zwingen und zu spießen, Schwarz versucht es zu vermeiden. Nach fünf Minuten wechseln die Rollen.",
      "Rückblick: „Spieß oder Fesselung, woran erkennst du es?“ Aufräum-Ritual. Ausblick: Nächstes Mal lernt ihr den Abzug und das Abzugsschach."
     ],
     "kinder": "Ich nutze einen Spieß in einer Partie.",
@@ -16238,7 +16223,7 @@ export const FIXED={
   "thema": "Verteidigen: fünf Möglichkeiten, ein Matt abwehren",
   "lernziel": "Ich kann eine Drohung erkennen und die passende Verteidigung wählen.",
   "leitfrage": "Der Gegner droht Matt. Welche fünf Möglichkeiten habe ich, und welche passt hier?",
-  "vorwissen": "Schach abwehren (Woche 8), Gegenangriff (Woche 27), Matt mit Dame und Turm (Woche 17 und 28).",
+  "vorwissen": "Schach abwehren (Woche 8), Gegenangriff (Woche 27), Damenmatt und Matt mit zwei Türmen (Woche 17 und 28).",
   "umfang": "Der Inhalt ist für ca. 45 Minuten ausgelegt.",
   "quelle": "Fünf Abwehrmöglichkeiten in kindgerechter Form, Lichess-Partien zu den Puzzles Ua9A6, LJSkx, F8dll, 13z8b, G82gS, 2vcoA, tOkbo und aA6wL (CC0, jeweils die Stellung vor dem Fehler, über die Lichess-Schnittstelle abgerufen), übrige Aufgaben eigene Aufgaben. Drohungen und Abwehrzüge mit chess.js berechnet",
   "phasen": [
@@ -16439,18 +16424,17 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Schwarz droht Te1#. Markiere alle Felder, auf die der Turm a3 ziehen kann, um das Matt zu verhindern.",
+     "frage": "Schwarz droht Te1#. Markiere alle Felder, auf die der Turm a3 ziehen kann, um das Matt zu verhindern, ohne den Turm zu verlieren.",
      "fen": "4r1k1/5ppp/8/8/8/R7/5PPP/6K1",
      "leer": true,
      "targets": [
-      "a8",
-      "e3",
-      "a1"
+      "a1",
+      "e3"
      ],
-     "antwort": "a1, a8 und e3. Auf a1 deckt der Turm das Mattfeld, auf e3 stellt er sich dazwischen, auf a8 fesselt er den Turm e8 an den König.",
+     "antwort": "a1 und e3. Auf a1 deckt der Turm das Mattfeld, auf e3 stellt er sich dazwischen, gedeckt vom Bauern f2. Ta8 hält das Matt zwar auch auf, aber der gefesselte Turm e8 darf auf seiner Linie bleiben und schlägt Txa8.",
      "hilfe": [
       "Welche Felder decken e1?",
-      "Wo sperrt der Turm die e-Linie?"
+      "Wo sperrt der Turm die e-Linie, und ist er dort gedeckt?"
      ]
     }
    ],
@@ -16632,15 +16616,15 @@ export const FIXED={
    "S": [
     {
      "frage": "Fehler 1: Dazwischenziehen, aber sicher. Schwarz droht Te1#. Klicke das Feld an, auf dem sich der Springer sicher dazwischenstellt.",
-     "fen": "4r1k1/5ppp/8/8/3N4/8/5PPP/6K1",
+     "fen": "4r1k1/5ppp/8/8/2BN4/8/5PPP/6K1",
      "leer": true,
      "targets": [
       "e2"
      ],
-     "antwort": "e2. Auf e6 schlägt der Bauer f7 den Springer, dann droht Te1# wieder.",
+     "antwort": "e2. Dort deckt der Läufer c4 den Springer: Schlägt der Turm, schlägt der Läufer zurück. Auf e6 schlägt der Bauer f7 den Springer, dann droht Te1# wieder.",
      "hilfe": [
       "Welche Felder der e-Linie erreicht der Springer?",
-      "Wer kann ihn dort schlagen?"
+      "Wer kann ihn dort schlagen, und wer schlägt zurück?"
      ]
     },
     {
@@ -20158,17 +20142,17 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Test: Schwarz droht Td1#. Markiere alle Felder, auf die der Springer b3 ziehen kann, um das Matt zu verhindern.",
+     "frage": "Test: Schwarz droht Td1#. Sd2 oder Sd4 verliert den Springer. Klicke alle Bauern an, die dem König mit einem Zug Luft machen.",
      "fen": "3r2k1/5ppp/8/8/8/1N6/5PPP/6K1",
-     "leer": true,
      "targets": [
-      "d4",
-      "d2"
+      "f2",
+      "g2",
+      "h2"
      ],
-     "antwort": "d2 und d4. Der Springer stellt sich auf der d-Linie dazwischen.",
+     "antwort": "f2, g2 und h2. Nach f3, g3 oder h3 hat der König ein Fluchtfeld, Td1+ ist kein Matt mehr. Auf d2 oder d4 schlägt der Turm den ungedeckten Springer, dann droht Td1# wieder.",
      "hilfe": [
-      "Welche Felder liegen zwischen d8 und d1?",
-      "Welche erreicht der Springer b3?"
+      "Welches Feld neben dem König wird frei, wenn ein Bauer zieht?",
+      "Wird dieses Feld vom Turm angegriffen?"
      ]
     },
     {

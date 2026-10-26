@@ -151,7 +151,7 @@ window.MethodCards=[
     "what": "Ein vereinfachtes Spiel übt einen einzelnen Aspekt des Schachs.",
     "how": "Start, Ziel und Sonderregeln am Brett zeigen. Zwei Kinder planen und prüfen abwechselnd einen Zug. Nach einem Versuch Rollen wechseln und einen besseren Weg suchen.",
     "attention": "Sonderregeln und Spielziel deutlich erklären.",
-    "material": "Spielblatt „Turm auf Besuch“ und ein Stift pro Paar; ein Brett, ein weißer Turm und ein weißer Bauer als Hindernis pro Paar.",
+    "material": "Spielblatt „Turm auf Besuch“ und ein Stift pro Paar; ein Brett und ein weißer Turm pro Paar.",
     "example": "Ein Turm startet auf a1 und soll nacheinander a4 und d4 besuchen. Das Kind nennt vor jedem Zug das Zielfeld.",
     "group": "Spiel und Bewegung",
     "source": [],
@@ -232,7 +232,6 @@ window.MethodCards=[
       "Erarbeitung"
     ],
     "functions": [
-      "Vorwissen aktivieren",
       "Kooperative Arbeitsformen",
       "Verstehen / Analysieren"
     ],
@@ -425,7 +424,6 @@ window.MethodCards=[
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
-      "Vorwissen aktivieren",
       "Wiederholen/Üben",
       "Verstehen / Analysieren"
     ],
@@ -490,7 +488,7 @@ window.MethodCards=[
     "what": "Eigene Ideen werden zunächst getrennt notiert und dann zu einer Gruppenantwort zusammengeführt.",
     "how": "Vier Kinder schreiben oder zeichnen zunächst im eigenen Außenfeld. Anschließend stellen alle ihre Ideen vor und prüfen sie am Brett. Einigt euch auf drei gemeinsame Ideen für die Mitte.",
     "attention": "Erst jede Person schreiben oder zeichnen lassen.",
-    "material": "Placemat-Vorlage pro Vierergruppe (Seite 1 mit Springer e5 und Bauer d6, Seite 2 leer für ein eigenes Thema), vier Stifte; ein Brett mit weißem Springer e5 und schwarzem Bauern d6. Für mehr Schreibfläche am Kopierer auf A3 vergrößern (141 %).",
+    "material": "Placemat-Vorlage pro Vierergruppe, vier Stifte; ein Brett mit weißem Springer e5 und schwarzem Bauern d6. Seite 2 ist leer für ein eigenes Thema. Für mehr Platz auf A3 vergrößern.",
     "example": "Der weiße Springer e5 wird vom schwarzen Bauern d6 angegriffen. Vier Kinder sammeln Ideen und prüfen sie am Brett. In die Mitte kommt zum Beispiel: auf ein sicheres Feld wegziehen, etwa nach f3. Decken reicht nicht, denn der Bauer ist weniger wert.",
     "group": "Denken und Austausch",
     "source": [
@@ -505,9 +503,8 @@ window.MethodCards=[
       "Erarbeitung"
     ],
     "functions": [
-      "Vorwissen aktivieren",
       "Kooperative Arbeitsformen",
-      "Kreativität fördern"
+      "Vorwissen aktivieren"
     ],
     "audiences": [
       "Grundschule",
@@ -536,7 +533,6 @@ window.MethodCards=[
     ],
     "functions": [
       "Kooperative Arbeitsformen",
-      "Verstehen / Analysieren",
       "Reflektieren / Rückmelden"
     ],
     "audiences": [
@@ -656,8 +652,7 @@ window.MethodCards=[
     ],
     "functions": [
       "Kooperative Arbeitsformen",
-      "Wiederholen/Üben",
-      "Reflektieren / Rückmelden"
+      "Wiederholen/Üben"
     ],
     "audiences": [
       "Grundschule",
@@ -874,8 +869,7 @@ window.MethodCards=[
     ],
     "functions": [
       "Vorwissen aktivieren",
-      "Verstehen / Analysieren",
-      "Reflektieren / Rückmelden"
+      "Verstehen / Analysieren"
     ],
     "audiences": [
       "Grundschule",
@@ -980,7 +974,6 @@ window.MethodCards=[
     ],
     "functions": [
       "Kooperative Arbeitsformen",
-      "Wiederholen/Üben",
       "Reflektieren / Rückmelden"
     ],
     "audiences": [
@@ -1381,8 +1374,7 @@ window.MethodCards=[
     ],
     "functions": [
       "Vorwissen aktivieren",
-      "Wiederholen/Üben",
-      "Reflektieren / Rückmelden"
+      "Wiederholen/Üben"
     ],
     "audiences": [
       "Grundschule",
@@ -1411,9 +1403,8 @@ window.MethodCards=[
       "Erarbeitung"
     ],
     "functions": [
-      "Vorwissen aktivieren",
       "Kooperative Arbeitsformen",
-      "Kreativität fördern"
+      "Vorwissen aktivieren"
     ],
     "audiences": [
       "Grundschule",
@@ -1582,8 +1573,7 @@ window.MethodCards=[
       "Wiederholen/Üben"
     ],
     "audiences": [
-      "Grundschule",
-      "Weiterführende Schulen"
+      "Grundschule"
     ],
     "prerequisite": "Feldnamen wurden eingeführt; Ansagen sind mündlich möglich."
   },
@@ -1603,7 +1593,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Einstieg",
       "Ergebnissicherung/Reflexion"
@@ -1634,7 +1623,6 @@ window.MethodCards=[
     ],
     "group": "Rückmeldung",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Einstieg",
       "Ergebnissicherung/Reflexion"
@@ -1665,7 +1653,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Einstieg"
     ],
@@ -1699,7 +1686,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "Brainwriting 6–3–5 6-3-5",
-    "isNew": true,
     "phases": [
       "Einstieg",
       "Erarbeitung"
@@ -1730,14 +1716,12 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Einstieg",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
       "Vorwissen aktivieren",
-      "Kreativität fördern",
       "Verstehen / Analysieren"
     ],
     "audiences": [
@@ -1762,7 +1746,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Einstieg"
     ],
@@ -1792,7 +1775,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Einstieg"
     ],
@@ -1801,8 +1783,7 @@ window.MethodCards=[
       "Kreativität fördern"
     ],
     "audiences": [
-      "Grundschule",
-      "Weiterführende Schulen"
+      "Grundschule"
     ],
     "prerequisite": "Keine besonderen Schachkenntnisse nötig; Erfahrungen können mündlich oder bildlich eingebracht werden."
   },
@@ -1812,8 +1793,8 @@ window.MethodCards=[
     "what": "Zwei Personen lernen einander durch kurze Fragen kennen.",
     "how": "Paare befragen sich abwechselnd und stellen einander anschließend kurz vor.",
     "attention": "Nur freiwillig mitgeteilte Antworten vorstellen.",
-    "material": "Interviewblatt und ein Stift pro Paar; die Antworten dürfen auch nur mündlich vorgestellt werden.",
-    "example": "„Wo spielst du Schach? Welche Figur magst du? Was möchtest du lernen?“",
+    "material": "Interviewblatt und ein Stift pro Paar, ein Brett mit Figuren zum Zeigen; die Antworten dürfen auch nur mündlich vorgestellt werden.",
+    "example": "„Welche Figur magst du am liebsten? Zeig mir am Brett, wie sie zieht.“ Danach stellt jedes Kind die Lieblingsfigur seines Partners mit einem Beispielzug vor.",
     "source": [
       {
         "label": "Methodenkartei Oldenburg/Vechta: Partnerinterview",
@@ -1822,14 +1803,12 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Einstieg"
     ],
     "functions": [
       "Vorwissen aktivieren",
-      "Kooperative Arbeitsformen",
-      "Reflektieren / Rückmelden"
+      "Kooperative Arbeitsformen"
     ],
     "audiences": [
       "Grundschule",
@@ -1853,13 +1832,11 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "Doppelkreis, Partnerwechsel, Kugellager",
-    "isNew": true,
     "phases": [
       "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
-      "Vorwissen aktivieren",
       "Kooperative Arbeitsformen",
       "Wiederholen/Üben"
     ],
@@ -1885,13 +1862,11 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "Bienenkorb, Murmelphase",
-    "isNew": true,
     "phases": [
       "Einstieg",
       "Erarbeitung"
     ],
     "functions": [
-      "Vorwissen aktivieren",
       "Kooperative Arbeitsformen",
       "Verstehen / Analysieren"
     ],
@@ -1917,14 +1892,12 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "Aquarium, Innenkreis Außenkreis",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
-      "Verstehen / Analysieren",
-      "Reflektieren / Rückmelden"
+      "Verstehen / Analysieren"
     ],
     "audiences": [
       "Weiterführende Schulen"
@@ -1947,13 +1920,11 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "Schneeball, Pyramide",
-    "isNew": true,
     "phases": [
       "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
-      "Vorwissen aktivieren",
       "Kooperative Arbeitsformen",
       "Verstehen / Analysieren"
     ],
@@ -1979,13 +1950,11 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "Ecken, Positionierung",
-    "isNew": true,
     "phases": [
       "Einstieg"
     ],
     "functions": [
       "Vorwissen aktivieren",
-      "Verstehen / Analysieren",
       "Reflektieren / Rückmelden"
     ],
     "audiences": [
@@ -2010,7 +1979,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "Positionslinie, Barometer",
-    "isNew": true,
     "phases": [
       "Einstieg"
     ],
@@ -2040,7 +2008,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "Punkte kleben, Abstimmung",
-    "isNew": true,
     "phases": [
       "Einstieg",
       "Ergebnissicherung/Reflexion"
@@ -2071,7 +2038,6 @@ window.MethodCards=[
     ],
     "group": "Spiel und Bewegung",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Ergebnissicherung/Reflexion"
     ],
@@ -2101,7 +2067,6 @@ window.MethodCards=[
     ],
     "group": "Spiel und Bewegung",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Ergebnissicherung/Reflexion"
     ],
@@ -2130,13 +2095,11 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Einstieg",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
-      "Vorwissen aktivieren",
       "Wiederholen/Üben",
       "Verstehen / Analysieren"
     ],
@@ -2162,7 +2125,6 @@ window.MethodCards=[
     ],
     "group": "Spiel und Bewegung",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Einstieg",
       "Ergebnissicherung/Reflexion"
@@ -2193,7 +2155,6 @@ window.MethodCards=[
     ],
     "group": "Spiel und Bewegung",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Ergebnissicherung/Reflexion"
     ],
@@ -2223,7 +2184,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
@@ -2252,7 +2212,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
@@ -2282,7 +2241,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
@@ -2312,7 +2270,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
@@ -2342,7 +2299,6 @@ window.MethodCards=[
     ],
     "group": "Kreativ darstellen",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Einstieg"
     ],
@@ -2372,7 +2328,6 @@ window.MethodCards=[
     ],
     "group": "Kreativ darstellen",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Einstieg"
     ],
@@ -2381,8 +2336,7 @@ window.MethodCards=[
       "Kreativität fördern"
     ],
     "audiences": [
-      "Grundschule",
-      "Weiterführende Schulen"
+      "Grundschule"
     ],
     "prerequisite": "Die Kinder kennen die Zugweise des Turms."
   },
@@ -2402,7 +2356,6 @@ window.MethodCards=[
     ],
     "group": "Kreativ darstellen",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung",
       "Ergebnissicherung/Reflexion"
@@ -2433,14 +2386,12 @@ window.MethodCards=[
     ],
     "group": "Kreativ darstellen",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
-      "Kreativität fördern",
-      "Reflektieren / Rückmelden"
+      "Kreativität fördern"
     ],
     "audiences": [
       "Grundschule",
@@ -2464,7 +2415,6 @@ window.MethodCards=[
     ],
     "group": "Kreativ darstellen",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung",
       "Ergebnissicherung/Reflexion"
@@ -2474,8 +2424,7 @@ window.MethodCards=[
       "Verstehen / Analysieren"
     ],
     "audiences": [
-      "Grundschule",
-      "Weiterführende Schulen"
+      "Grundschule"
     ],
     "prerequisite": "Die Kinder kennen die Springerzüge; Feldnamen können vorgelesen werden."
   },
@@ -2495,7 +2444,6 @@ window.MethodCards=[
     ],
     "group": "Kreativ darstellen",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Ergebnissicherung/Reflexion"
     ],
@@ -2525,7 +2473,6 @@ window.MethodCards=[
     ],
     "group": "Kreativ darstellen",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Ergebnissicherung/Reflexion"
     ],
@@ -2555,7 +2502,6 @@ window.MethodCards=[
     ],
     "group": "Rückmeldung",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Einstieg",
       "Ergebnissicherung/Reflexion"
@@ -2585,7 +2531,6 @@ window.MethodCards=[
     ],
     "group": "Rückmeldung",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Ergebnissicherung/Reflexion"
     ],
@@ -2614,7 +2559,6 @@ window.MethodCards=[
     ],
     "group": "Rückmeldung",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Ergebnissicherung/Reflexion"
     ],
@@ -2635,7 +2579,7 @@ window.MethodCards=[
     "how": "Scheibe in beschriftete Bereiche teilen. Bedeutung der Ringe erklären, Punkte setzen und das Bild besprechen.",
     "attention": "Die Mitte eindeutig als hohe Zustimmung erklären; keine Kinder vergleichen.",
     "material": "Abstimmungs- bzw. Zielscheibenvorlage, Klebepunkte oder Stifte.",
-    "example": "Bereiche heißen „Aufträge verstanden“, „selbst gespielt“ und „fair zusammengearbeitet“.",
+    "example": "Bereiche heißen „Ich finde ein Matt in 1“, „Ich prüfe vor dem Zug, was droht“, „Ich spiele fair“ und „Ich habe etwas Neues gelernt“. Wer einen Punkt außen setzt, zeigt danach eine Aufgabe, die noch schwer war.",
     "source": [
       {
         "label": "Methodenkartei Oldenburg/Vechta: Zielscheibe",
@@ -2644,7 +2588,6 @@ window.MethodCards=[
     ],
     "group": "Rückmeldung",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Ergebnissicherung/Reflexion"
     ],
@@ -2673,7 +2616,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "Weltcafé, Tischgruppen",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
@@ -2702,7 +2644,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung",
       "Ergebnissicherung/Reflexion"
@@ -2733,7 +2674,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
@@ -2761,7 +2701,6 @@ window.MethodCards=[
     ],
     "group": "Kreativ darstellen",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Ergebnissicherung/Reflexion"
     ],
@@ -2791,7 +2730,6 @@ window.MethodCards=[
     ],
     "group": "Rückmeldung",
     "aliases": "Portfolio, Sammelmappe",
-    "isNew": true,
     "phases": [
       "Ergebnissicherung/Reflexion"
     ],
@@ -2811,7 +2749,7 @@ window.MethodCards=[
     "how": "Fragen sammeln, auswählen, die Person befragen und wichtige Antworten festhalten.",
     "attention": "Fragen verständlich formulieren und Zeit zum Nachfragen lassen.",
     "material": "Fragebogen, eingeladene Schachperson oder Gerät für ein Gespräch; Stifte für Notizen.",
-    "example": "Die AG fragt eine Vereinsspielerin, wie sie sich auf Turniere vorbereitet und mit Nervosität umgeht.",
+    "example": "Die AG fragt eine Vereinsspielerin, wie sie das Matt mit Dame und König geübt hat, und lässt es sich am Brett zeigen. Danach probieren die Kinder es zu zweit.",
     "source": [
       {
         "label": "Methodenkartei Oldenburg/Vechta: Expertenbefragung",
@@ -2820,7 +2758,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
@@ -2849,7 +2786,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
@@ -2878,7 +2814,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "Laufdiktat, Bewegung",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
@@ -2908,7 +2843,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Einstieg"
     ],
@@ -2938,7 +2872,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
@@ -2968,7 +2901,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "Mystery einfaches Hinweisrätsel Patt",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
@@ -2998,15 +2930,13 @@ window.MethodCards=[
     ],
     "group": "Kreativ darstellen",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
-      "Kooperative Arbeitsformen",
       "Kreativität fördern",
-      "Reflektieren / Rückmelden"
+      "Verstehen / Analysieren"
     ],
     "audiences": [
       "Grundschule",
@@ -3030,14 +2960,12 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "Debatte, Streitgespräch",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
-      "Verstehen / Analysieren",
-      "Reflektieren / Rückmelden"
+      "Verstehen / Analysieren"
     ],
     "audiences": [
       "Weiterführende Schulen"
@@ -3060,7 +2988,6 @@ window.MethodCards=[
     ],
     "group": "Kreativ darstellen",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
@@ -3090,7 +3017,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung"
     ],
@@ -3118,7 +3044,6 @@ window.MethodCards=[
     ],
     "group": "Rückmeldung",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Ergebnissicherung/Reflexion"
     ],
@@ -3147,7 +3072,6 @@ window.MethodCards=[
     ],
     "group": "Denken und Austausch",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Ergebnissicherung/Reflexion"
     ],
@@ -3176,14 +3100,12 @@ window.MethodCards=[
     ],
     "group": "Kreativ darstellen",
     "aliases": "",
-    "isNew": true,
     "phases": [
       "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
-      "Kreativität fördern",
       "Wiederholen/Üben"
     ],
     "audiences": [

@@ -21,7 +21,7 @@ const X=(k,frage,pos,antwort,hilfe,extra)=>T(frage,pos,null,A[k]||antwort,hilfe,
 F[18]={thema:'Weihnachtsturnier',
  lernziel:'Ich kann ein Turnier fair zu Ende spielen.',
  leitfrage:'Wie spiele ich mehrere Partien hintereinander ruhig, fair und bis zum Schluss?',
- vorwissen:'Fairplay (Woche 9), Aufsteiger-Runde (Woche 10), Rochade, en passant, Patt und Damenmatt (Woche 14 bis 17).',
+ vorwissen:'Fairplay (Woche 9), Aufsteiger-Runde im Rutschsystem (Woche 10), Rochade, en passant, Patt und Damenmatt (Woche 14 bis 17).',
  umfang:'Der Inhalt ist für ca. 45 Minuten ausgelegt.',
  quelle:'Turnierform Rutschsystem und Wertung ohne Rangliste aus dem Praxiswissen (Spielphasen organisieren), FIDE-Regeln in kindgerechter Form (berührt, geführt; Patt; Rochade; en passant). Brettaufgaben eigene Aufgaben, alle Lösungen mit chess.js nachgerechnet',
  phasen:[

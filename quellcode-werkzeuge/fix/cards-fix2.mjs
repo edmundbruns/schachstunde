@@ -1,0 +1,20 @@
+// Zweite Überarbeitung der Methodenkarten (Prüfbericht 26.10.2026). © Dr. Edmund Bruns
+import fs from 'node:fs';
+const P='/home/claude/work/SchachStunde/website/method-cards.js';
+const src=fs.readFileSync(P,'utf8');const head=src.slice(0,src.indexOf('window.MethodCards='));
+const C=JSON.parse(src.slice(src.indexOf('[')).trim().replace(/;\s*$/,''));const by=Object.fromEntries(C.map(c=>[c.id,c]));
+const set=(id,o)=>{if(!by[id])throw Error(id);Object.assign(by[id],o)};
+const V='Vorwissen aktivieren',K='Kooperative Arbeitsformen',KR='Kreativität fördern',W='Wiederholen/Üben',R='Reflektieren / Rückmelden',U='Verstehen / Analysieren';
+const F={tps:[K,U],sort:[W,U],placemat:[K,V],gallery:[K,R],coach:[K,W],vote:[V,U],peercheck:[K,R],'koffer-tedtest':[V,W],'koffer-schreibkonferenz':[K,V],'inspiration-5':[V,U],'inspiration-8':[V,K],'inspiration-9':[K,W],'inspiration-10':[K,U],'inspiration-11':[K,U],'inspiration-12':[K,U],'inspiration-13':[V,R],'inspiration-18':[W,U],'inspiration-28':[K,KR],'inspiration-47':[KR,U],'inspiration-48':[K,U],'inspiration-53':[K,W]};
+for(const [id,f] of Object.entries(F))set(id,{functions:f});
+for(const c of C)if(c.functions.length>2)throw Error('noch >2 Funktionen: '+c.id);
+const GS=['Grundschule'],WS=['Weiterführende Schulen'];
+for(const id of ['inspiration-26','inspiration-7','koffer-feldbild','inspiration-29'])set(id,{audiences:GS});
+set('mini',{material:'Spielblatt „Turm auf Besuch“ und ein Stift pro Paar; ein Brett und ein weißer Turm pro Paar.'});
+set('placemat',{material:'Placemat-Vorlage pro Vierergruppe, vier Stifte; ein Brett mit weißem Springer e5 und schwarzem Bauern d6. Seite 2 ist leer für ein eigenes Thema. Für mehr Platz auf A3 vergrößern.'});
+set('inspiration-35',{example:'Bereiche heißen „Ich finde ein Matt in 1“, „Ich prüfe vor dem Zug, was droht“, „Ich spiele fair“ und „Ich habe etwas Neues gelernt“. Wer einen Punkt außen setzt, zeigt danach eine Aufgabe, die noch schwer war.'});
+set('inspiration-8',{example:'„Welche Figur magst du am liebsten? Zeig mir am Brett, wie sie zieht.“ Danach stellt jedes Kind die Lieblingsfigur seines Partners mit einem Beispielzug vor.',material:'Interviewblatt und ein Stift pro Paar, ein Brett mit Figuren zum Zeigen; die Antworten dürfen auch nur mündlich vorgestellt werden.'});
+set('inspiration-41',{example:'Die AG fragt eine Vereinsspielerin, wie sie das Matt mit Dame und König geübt hat, und lässt es sich am Brett zeigen. Danach probieren die Kinder es zu zweit.'});
+for(const c of C)delete c.isNew;
+fs.writeFileSync(P,head+'window.MethodCards='+JSON.stringify(C,null,2)+';\n');
+const cnt=a=>C.filter(c=>c.audiences.includes(a)).length;console.log('Karten',C.length,'GS',cnt('Grundschule'),'WS',cnt('Weiterführende Schulen'));

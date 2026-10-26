@@ -115,6 +115,12 @@ F[3]={thema:'Turm und Läufer',
   T('Welche schwarzen Figuren kann der Turm schlagen? Klicke sie an.',{d4:'R',d8:'b',h4:'n',a4:'r',b4:'P',d2:'p',d1:'n'},null,'d8, h4 und d2. Den Turm auf a4 nicht, der eigene Bauer auf b4 ist im Weg. Den Springer auf d1 nicht, der Bauer auf d2 steht davor.',['Prüfe alle vier Richtungen.','In jeder Richtung zählt nur die erste Figur.'],{pruef:{schlaege:['d4']}}),
   T('Kann der Läufer auf f1 jemals nach f8 kommen? Wenn ja, markiere ein Feld, über das er geht. Wenn nein, markiere nichts und begründe.',{f1:'B'},[],'Nein. f1 ist hell, f8 ist dunkel. Ein Läufer bleibt immer auf seiner Farbe.',['Welche Farbe haben f1 und f8?','Ein Läufer wechselt nie die Farbe.'],{leer:true}),
   T('Markiere das Feld, auf das sowohl der Turm als auch der Läufer ziehen können.',{c2:'R',f5:'B'},null,'c8. Der Turm kommt über die c-Linie hin, der Läufer über e6 und d7.',['Markiere in Gedanken zuerst die Felder des Turms.','Welches davon liegt auch auf einer Diagonale des Läufers?'],{leer:true,pruef:{beide:['c2','f5']}})]}};
+// Lerncheck Woche 1: nur Grundstellung, Feldnamen kommen erst in Woche 2
+{const G='rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR',L=F[1].feld.L;
+ L[1]={frage:'Klicke das helle Eckfeld an, das rechts unten liegt, wenn du Weiß spielst.',targets:['h1'],antwort:'Rechts unten ist hell. So liegt das Brett richtig.',hilfe:['Weiß sitzt unten.','Schau in die Ecke rechts unten.']};
+ L[3]={frage:'Klicke die beiden Damen an.',fen:G,targets:['d1','d8'],antwort:'d1 und d8. Die weiße Dame steht auf dem hellen, die schwarze auf dem dunklen Feld.',hilfe:['Die Dame steht auf ihrer Farbe.','Sie steht neben dem König.']};
+ L[4]={frage:'Klicke alle vier Springer an.',fen:G,targets:['b1','g1','b8','g8'],antwort:'b1, g1, b8 und g8. Die Springer stehen neben den Türmen.',hilfe:['Die Pferde wohnen bei den Türmen.','Schau neben die Ecken.']};
+ L[5]={frage:'Klicke die beiden Könige an.',fen:G,targets:['e1','e8'],antwort:'e1 und e8. Die Könige stehen sich genau gegenüber.',hilfe:['Der König steht neben der Dame.','Er hat ein Kreuz auf der Krone.']};}
 // ---------- schreiben ----------
 const rest=src.slice(src.indexOf('export const YEAR='));
 const out=src.slice(0,src.indexOf('export const URLS='))+'export const URLS='+JSON.stringify(URLS,null,1)+';\nexport const FIXED='+JSON.stringify(F,null,1)+';\n'+rest;
