@@ -221,10 +221,10 @@ const S0={diplom:'Bronze 1',leit:'Wie bauen wir das Brett richtig auf?',merk:'Re
  rows:{
  E:{t:'Begrüßen, Namen. Brett zeigen: {0}. Frage: Liegt es richtig?',l:'Namen sagen. Brett anschauen.',ids:[0,9,7,8,4,3]},
  A:{t:'Gemeinsam aufbauen. {1} und {2}: Fehler finden.',l:'Mitbauen. Fehler zeigen.',ids:[0,1,2,3,4,5]},
- R:{t:'Rituale: Hand geben, ruhig warten, Figuren einräumen.',l:'Rituale einmal üben.',ids:[0,7,8,9,10,11]},
+ R:{t:'Drei Rituale einüben: Stopp-Signal (Hand hoch, Hände weg von den Figuren, Blick nach vorn), Aufbau-Ritual (rechts unten hell, Dame auf ihre Farbe, Partner kontrolliert), Aufräum-Ritual (je 16 Figuren zählen, dann einsortieren).',l:'Jedes Ritual einmal üben.',ids:[0,7,8,9,10,11]},
  U:{t:'Bauernkrieg vormachen: Bauern ziehen ein Feld gerade, vom Start auch zwei, und schlagen schräg. Wer zuerst die letzte Reihe erreicht, gewinnt. Wer nicht ziehen kann, verliert. Bei Zeitnot entfällt das Spiel.',l:'Zu zweit Bauernkrieg spielen, nach jeder Partie Farben tauschen und Hand geben.',ids:[0,3,4,7,8,11],m:'Bretter in Startstellung „Bauernkrieg“'},
  L:{t:'Ein Kind baut die Grundstellung allein auf, der Partner prüft. Dann {6} zeigen.',l:'Allein aufbauen, Partner prüft. Dann wechseln.',ids:[6,1,2,5,3,4],m:'Bretter, Lehrbrett'},
- O:{t:'Was war heute neu? Aufräumen nach Ritual.',l:'Einen Satz sagen. Figuren einräumen.',ids:[9,7,8,10,11,0]}}};
+ O:{t:'Was war heute neu? Aufräum-Ritual: je 16 Figuren zählen, dann einsortieren.',l:'Einen Satz sagen. Figuren zählen und einräumen.',ids:[9,7,8,10,11,0]}}};
 
 // Leitfragen der Diplom-Stunden auch für Rückblick und Abschluss übernehmen.
 for(const [k,v] of Object.entries(L))if(window.LessonRefinement?.rows?.[k])window.LessonRefinement.rows[k][0]=v.leit;
@@ -257,6 +257,7 @@ function one(plan,st,s,si){{const topic=s.topic||st.topic;if(Array.isArray(s.exe
   let ids=(row.ids||[]).map(pos).filter(i=>i>=0&&i<revStart);
   if(role==='O')ids=rev&&!isS0?Array.from({length:6},(_,j)=>revStart+j):ids;
   for(let k=0;ids.length<6&&k<revStart;k++)if(!ids.includes(k))ids.push(k);
+  if(ids.length>1)ids=[ids[0],...ids.slice(1).sort((x,y)=>x-y)];// erste Aufgabe der Phase bleibt vorn, der Rest in Nummernfolge
   ph.exerciseIds=ids;ph.puzzleIds=[];delete ph.contrast;
   let teacher=fill(role==='E'&&base&&!isS0&&ent!==base.entry?GENERIC_E[ent].replace('Kurzes Spiel','Kurzes Spiel „'+gameTitle+'“'):row.t);let learners=fill(row.l);
   if(role==='E'&&!isS0)teacher+=' Leitfrage an die Tafel: „'+(short?.leit||(base||maze).leit)+'“';

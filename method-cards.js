@@ -6,7 +6,7 @@ window.MethodCards=[
     "what": "Die Gruppe untersucht eine Stellung im gemeinsamen Gespräch.",
     "how": "Stellung zeigen und die Frage vorlesen. Erst jedes Kind still denken lassen, dann zwei Antworten anhören. Antworten am Brett prüfen und einen richtigen Grund festhalten.",
     "attention": "Erst Denkzeit geben; auch stille Kinder beteiligen.",
-    "material": "Druckvorlage mit Turm auf d4, Stift oder Markiersteine; zum Zeigen ein Brett und ein weißer Turm pro Paar.",
+    "material": "Vorlage „Was kann der Turm?“ pro Paar, Stift oder Markiersteine; ein Brett mit weißem Turm d4 pro Paar und ein Demobrett zum Zeigen.",
     "example": "Beim Turm auf d4 sammeln Kinder erreichbare Felder und zeigen ihre Vorschläge am Brett.",
     "group": "Denken und Austausch",
     "source": [],
@@ -83,10 +83,9 @@ window.MethodCards=[
     "example": "Ein Kind schlägt für den Springer b1 das Feld c3 vor; das andere prüft die Zugweise.",
     "group": "Denken und Austausch",
     "source": [],
-    "aliases": "Einer erklärt, einer prüft",
+    "aliases": "Einer erklärt, einer prüft, Partnerarbeit, Tandem",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -108,10 +107,9 @@ window.MethodCards=[
     "example": "Station 1: Felder benennen. Station 2: Springerziele finden. Station 3: Grundstellung aufbauen.",
     "group": "Denken und Austausch",
     "source": [],
-    "aliases": "Drei Aufgabenplätze besuchen",
+    "aliases": "Drei Aufgabenplätze besuchen, Lernzirkel, Lerntheke, Stationen",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -129,14 +127,13 @@ window.MethodCards=[
     "what": "Eine klar gestellte Schachfrage wird selbstständig gelöst.",
     "how": "Aufgabe zeigen. Jedes Kind sucht zunächst selbst Springerziele, zeigt sie und erklärt die Zugweise. Erst danach mit der Kontrollkarte vergleichen.",
     "attention": "Aufgabe an das Vorwissen anpassen; Hilfen erst bei Bedarf geben.",
-    "material": "Druckvorlage mit Springer, ein Brett und ein weißer Springer pro Paar; Stifte oder Markiersteine.",
+    "material": "Vorlage „Finde die Springerziele“ pro Kind, Stift oder Markiersteine; ein Brett und ein weißer Springer pro Paar.",
     "example": "Auf einem leeren Übungsbrett steht ein Springer auf b1. Welche Felder erreicht er? a3, c3 und d2.",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Eine Schachaufgabe lösen",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben",
@@ -154,14 +151,13 @@ window.MethodCards=[
     "what": "Ein vereinfachtes Spiel übt einen einzelnen Aspekt des Schachs.",
     "how": "Start, Ziel und Sonderregeln am Brett zeigen. Zwei Kinder planen und prüfen abwechselnd einen Zug. Nach einem Versuch Rollen wechseln und einen besseren Weg suchen.",
     "attention": "Sonderregeln und Spielziel deutlich erklären.",
-    "material": "Druckvorlage, ein Brett und ein weißer Turm pro Paar; für Hindernisse zusätzlich ein eigener Bauer. Stifte oder Markiersteine.",
+    "material": "Spielblatt „Turm auf Besuch“ und ein Stift pro Paar; ein Brett, ein weißer Turm und ein weißer Bauer als Hindernis pro Paar.",
     "example": "Ein Turm startet auf a1 und soll nacheinander a4 und d4 besuchen. Das Kind nennt vor jedem Zug das Zielfeld.",
     "group": "Spiel und Bewegung",
     "source": [],
     "aliases": "Ein kleines Spiel mit wenigen Figuren",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben"
@@ -185,8 +181,7 @@ window.MethodCards=[
     "aliases": "Figurenwege mit Schritten zeigen",
     "phases": [
       "Einstieg",
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben"
@@ -209,7 +204,6 @@ window.MethodCards=[
     "source": [],
     "aliases": "Gemeinsam richtige Antworten sammeln",
     "phases": [
-      "Einstieg",
       "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
@@ -228,15 +222,14 @@ window.MethodCards=[
     "what": "Alle denken erst allein, vergleichen zu zweit und teilen ihre Ergebnisse.",
     "how": "Alle entscheiden 30 Sekunden allein. Paare vergleichen ihre Gründe eine Minute lang. Zwei Paare erklären der Gruppe ihre Entscheidung am Brett.",
     "attention": "Die Einzeldenkzeit nicht überspringen.",
-    "material": "Druckvorlage mit Springer, ein Brett und ein weißer Springer pro Paar; Stifte oder Markiersteine.",
+    "material": "Vorlage „Erst ich · dann wir · dann alle“ und ein Stift pro Kind; ein Brett mit weißem Springer pro Paar. Die Kontrollseite bleibt bei der Lehrkraft.",
     "example": "Jedes Kind überlegt, wohin ein Springer von b1 ziehen kann. Paare vergleichen, anschließend zeigt ein Paar die Felder.",
     "group": "Denken und Austausch",
     "source": [],
-    "aliases": "Erst allein, dann zu zweit, dann gemeinsam",
+    "aliases": "Erst allein, dann zu zweit, dann gemeinsam, Denken, Austauschen, Vorstellen, Partnerarbeit",
     "phases": [
       "Einstieg",
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Vorwissen aktivieren",
@@ -264,10 +257,9 @@ window.MethodCards=[
         "url": "https://www.methodenkartei.uni-oldenburg.de/methode/gruppenpuzzle/"
       }
     ],
-    "aliases": "Eine Aufgabe lernen und anderen erklären Expertenpuzzle Expert*innenrunde",
+    "aliases": "Eine Aufgabe lernen und anderen erklären Expertenpuzzle Expert*innenrunde, Expertenpuzzle, Expertengruppen, Gruppenarbeit",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -283,16 +275,15 @@ window.MethodCards=[
     "id": "comment",
     "name": "Kommentierte Zugfolge",
     "what": "Eine Zugfolge wird schrittweise mit ihren Ideen besprochen.",
-    "how": "Nur die Anfangsstellung der Aufgabe zeigen. Vor jedem Lösungszug stoppen und einen Vorschlag mit Grund sammeln. Gespeicherten Zug zeigen und seine Wirkung erklären lassen.",
+    "how": "Nur die Anfangsstellung der Aufgabe zeigen. Vor jedem Lösungszug stoppen und einen Vorschlag mit Grund sammeln. Dann den Lösungszug zeigen und seine Wirkung erklären lassen.",
     "attention": "Nur wenige Züge wählen und Kinder mitdenken lassen.",
-    "material": "Druckvorlage und ein vollständiges Schachspiel pro Paar; bei Einzelaufträgen pro Kind. Kontrollbild erst zum Vergleichen nutzen.",
+    "material": "Vorlage „Zugfolge mit Denkpausen“ und ein vollständiges Schachspiel pro Paar; die Hinweisseite bleibt bei der Lehrkraft.",
     "example": "Aus der Grundstellung werden e4 und e5 gespielt. Die Kinder erklären, welche Figuren nun freie Wege haben.",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Vor jedem Zug kurz nachdenken",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Verstehen / Analysieren"
@@ -309,7 +300,7 @@ window.MethodCards=[
     "what": "Lernende erfinden eine eigene Aufgabe für andere.",
     "how": "Eine Aufgabe der Stunde aufbauen. Paare verändern eine Figur und schreiben eine passende Frage dazu. Anderes Paar prüft die Frage und den Lösungsvorschlag; Unklares gemeinsam klären.",
     "attention": "Die Aufgabe und die vorgeschlagene Antwort vor dem Weitergeben prüfen.",
-    "material": "Leere Brettvorlage, ein Brett mit Turm und Bauer pro Paar; Stifte. Für den Galeriegang zusätzlich Rückmeldezettel und Klebematerial.",
+    "material": "Leere Brettvorlage und ein Stift pro Paar; ein Brett mit Turm und eigenem Bauern.",
     "example": "Ein Paar stellt einen Turm und einen eigenen Bauern auf und fragt: „Welche Wege sind frei?“",
     "group": "Denken und Austausch",
     "source": [],
@@ -334,14 +325,13 @@ window.MethodCards=[
     "what": "Kurze Partien werden mit einer gemeinsamen Beobachtungsfrage verbunden.",
     "how": "Paarungen, Startstellung und ein Beobachtungsziel vereinbaren. In kurzen Runden spielen; bei Matt oder Remis neu beginnen und Farben tauschen. Bei Zeitende stoppen, eine Entscheidung erklären und Partner wechseln.",
     "attention": "Paarungen und Regeln erklären; das Lernen nicht auf die Rangliste reduzieren.",
-    "material": "Ein vollständiges Schachspiel pro Paar und die Paarungs-/Fairplay-Vorlage; Stift für die Einträge.",
-    "example": "Nach jeder Partie nennt jedes Kind einen fairen Umgang mit einem Fehler oder einer Niederlage.",
+    "material": "Ein vollständiges Schachspiel pro Paar und die Vorlage „Paarungen und Beobachtungsfrage“; ein Stift für die Einträge.",
+    "example": "Beobachtungsfrage für alle Partien: Wann hat jede Seite rochiert? Nach jeder Partie trägt das Paar die Zugnummer ein, zum Beispiel „Weiß im 6. Zug, Schwarz gar nicht“, und bespricht, welcher König sicherer stand.",
     "group": "Spiel und Bewegung",
     "source": [],
     "aliases": "Kurze Partien mit Lernauftrag",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben",
@@ -351,7 +341,7 @@ window.MethodCards=[
       "Grundschule",
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Grundstellung, legale Züge sowie Schach, Matt und Patt sind bekannt."
+    "prerequisite": "Grundstellung, legale Züge, Rochade sowie Schach, Matt und Patt sind bekannt."
   },
   {
     "id": "exit",
@@ -359,7 +349,7 @@ window.MethodCards=[
     "what": "Eine kurze Einzelantwort zeigt Erkenntnisse oder offene Fragen.",
     "how": "Eine überschaubare Frage stellen. Alle antworten für sich, mündlich oder als Minutenpapier. Antworten einsammeln und offene Punkte aufgreifen.",
     "attention": "Nur eine klare Frage stellen und die Antworten für die nächste Stunde nutzen.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
+    "material": "Zettel „Abschlussfrage“ aus der Vorlage und ein Stift pro Kind; Antworten dürfen auch gezeichnet oder mündlich gegeben werden.",
     "example": "„Was weißt du jetzt über den Springer? Was möchtest du noch wissen?“ Kinder notieren einen Satz oder zeichnen einen Zug.",
     "group": "Rückmeldung",
     "source": [
@@ -368,7 +358,7 @@ window.MethodCards=[
         "url": "https://www.methodenkartei.uni-oldenburg.de/methode/one-minute-paper/"
       }
     ],
-    "aliases": "Zum Schluss eine Aufgabe allein lösen Exit-Ticket Minutenpapier",
+    "aliases": "Zum Schluss eine Aufgabe allein lösen Exit-Ticket Minutenpapier, Exit-Ticket, Minutenpapier, Abschluss",
     "phases": [
       "Ergebnissicherung/Reflexion"
     ],
@@ -387,7 +377,7 @@ window.MethodCards=[
     "what": "Ähnliche Beispiele werden auf Gemeinsamkeiten und Unterschiede untersucht.",
     "how": "Zwei ähnliche Stellungen nacheinander zeigen. Kinder entscheiden jeweils und begründen ihre Entscheidung. Den entscheidenden Unterschied an konkreten Feldern erklären lassen.",
     "attention": "Die entscheidende Veränderung muss gut sichtbar sein.",
-    "material": "Druckvorlage, ein Brett und ein weißer Turm pro Paar; für Hindernisse zusätzlich ein eigener Bauer. Stifte oder Markiersteine.",
+    "material": "Vergleichsblatt mit zwei Brettbildern und ein Stift pro Paar; zum Nachstellen ein Brett, ein weißer Turm und ein weißer Bauer.",
     "example": "Ein Turm auf a1 hat einmal freie Bahn nach a5; im zweiten Bild steht ein eigener Bauer auf a3.",
     "group": "Denken und Austausch",
     "source": [],
@@ -403,8 +393,7 @@ window.MethodCards=[
       }
     ],
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Verstehen / Analysieren"
@@ -421,7 +410,7 @@ window.MethodCards=[
     "what": "Beispiele oder Aussagen werden geordnet und begründet zugeordnet.",
     "how": "Zwei Spalten „richtig“ und „falsch“ vorbereiten. Kinder ordnen vorgegebene Züge oder Aussagen zur Aufgabe zu. Jede Zuordnung am Brett begründen und bei Bedarf umsortieren.",
     "attention": "Grenzfälle gemeinsam klären; die Begründung ist wichtiger als das Ablegen.",
-    "material": "Druckvorlage, ein Brett und ein weißer Turm pro Paar; für Hindernisse zusätzlich ein eigener Bauer. Stifte oder Markiersteine.",
+    "material": "Ausschneidekarten und Sortierfläche aus der Vorlage, Schere; ein leeres Brett mit Turm, Läufer und Springer zum Prüfen. Seite 3 ist die Kontrolle für die Lehrkraft.",
     "example": "Turm a1–a4, Läufer c1–h6 und Springer b1–c3 kommen zu „erlaubt“, Turm a1–c3, Läufer c1–c4 und Springer b1–b3 zu „verboten“. Jede Karte wird am leeren Übungsbrett gezeigt.",
     "group": "Denken und Austausch",
     "source": [
@@ -432,7 +421,6 @@ window.MethodCards=[
     ],
     "aliases": "Züge in erlaubt und verboten sortieren Züge sortieren Passt passt nicht Ideensalat",
     "phases": [
-      "Einstieg",
       "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
@@ -478,14 +466,13 @@ window.MethodCards=[
     "what": "Lernende erklären einander einen Inhalt und fragen gezielt nach.",
     "how": "Ein Kind erklärt die Idee der Aufgabe. Das andere stellt eine Warum-Frage dazu. Am Brett prüfen und bei der nächsten Aufgabe Rollen tauschen.",
     "attention": "Nachfragen als Hilfe behandeln, nicht als Prüfung durch das stärkere Kind.",
-    "material": "Druckvorlage, ein Brett und ein weißer Läufer pro Paar; Stifte oder Markiersteine.",
+    "material": "Vorlage „Erklären und nachfragen“ pro Paar; ein Brett und ein weißer Läufer pro Paar.",
     "example": "Ein Kind erklärt den Läuferzug; das andere fragt: „Kann er die Feldfarbe wechseln?“",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Abwechselnd erklären und nachfragen",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -501,10 +488,10 @@ window.MethodCards=[
     "id": "placemat",
     "name": "Placemat",
     "what": "Eigene Ideen werden zunächst getrennt notiert und dann zu einer Gruppenantwort zusammengeführt.",
-    "how": "Vier Kinder schreiben oder zeichnen zunächst im eigenen Außenfeld. Anschließend stellen alle ihre Ideen vor. Vergleicht die Vorschläge und einigt euch auf drei konkrete Regeln für die Mitte.",
+    "how": "Vier Kinder schreiben oder zeichnen zunächst im eigenen Außenfeld. Anschließend stellen alle ihre Ideen vor und prüfen sie am Brett. Einigt euch auf drei gemeinsame Ideen für die Mitte.",
     "attention": "Erst jede Person schreiben oder zeichnen lassen.",
-    "material": "Eine Placemat-Vorlage pro Vierergruppe und vier Stifte. Die Vorlage ist für A4 quer gesetzt. Für mehr Schreibfläche am Kopierer auf A3 vergrößern (141 %) oder im Druckdialog Papierformat A3 und „An Seite anpassen“ wählen.",
-    "example": "Vier Kinder sammeln auf ihren Außenfeldern Regeln für faires Spielen; drei gemeinsame Regeln stehen in der Mitte.",
+    "material": "Placemat-Vorlage pro Vierergruppe (Seite 1 mit Springer e5 und Bauer d6, Seite 2 leer für ein eigenes Thema), vier Stifte; ein Brett mit weißem Springer e5 und schwarzem Bauern d6. Für mehr Schreibfläche am Kopierer auf A3 vergrößern (141 %).",
+    "example": "Der weiße Springer e5 wird vom schwarzen Bauern d6 angegriffen. Vier Kinder sammeln Ideen und prüfen sie am Brett. In die Mitte kommt zum Beispiel: auf ein sicheres Feld wegziehen, etwa nach f3. Decken reicht nicht, denn der Bauer ist weniger wert.",
     "group": "Denken und Austausch",
     "source": [
       {
@@ -512,11 +499,10 @@ window.MethodCards=[
         "url": "https://www.methodenkartei.uni-oldenburg.de/methode/placemat/"
       }
     ],
-    "aliases": "Erst eigene Ideen, dann eine Gruppenantwort Gemeinsame Denkfläche",
+    "aliases": "Erst eigene Ideen, dann eine Gruppenantwort Gemeinsame Denkfläche, Platzdeckchen, Gruppenarbeit",
     "phases": [
       "Einstieg",
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Vorwissen aktivieren",
@@ -527,7 +513,7 @@ window.MethodCards=[
       "Grundschule",
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Keine besonderen Schachkenntnisse nötig; Erfahrungen können mündlich oder bildlich eingebracht werden."
+    "prerequisite": "Die Zugweisen von Springer und Bauer sowie die Figurenwerte sind bekannt."
   },
   {
     "id": "gallery",
@@ -546,7 +532,6 @@ window.MethodCards=[
     ],
     "aliases": "Lösungen ausstellen und prüfen Museumsrundgang Markt der Ergebnisse",
     "phases": [
-      "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
@@ -566,14 +551,13 @@ window.MethodCards=[
     "what": "Alle arbeiten eine kurze Zeit konzentriert für sich.",
     "how": "Stellung zeigen, eine Minute Ruhe vereinbaren. Alle notieren ihre Entscheidung und einen Beleg, ohne Figuren zu ziehen. Erst danach vergleichen und am Brett prüfen.",
     "attention": "Ruhe vereinbaren und ausreichend Denkzeit lassen.",
-    "material": "Druckvorlage mit Turm auf d4, Stift oder Markiersteine; zum Zeigen ein Brett und ein weißer Turm pro Paar.",
+    "material": "Vorlage „Meine stillen Turmwege“ und ein Stift pro Kind; ein Brett mit weißem Turm d4 zum anschließenden Prüfen.",
     "example": "Jedes Kind zeichnet ohne Zuruf die möglichen Turmwege von d4 auf ein leeres Brettbild.",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "In Ruhe allein nachdenken",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Verstehen / Analysieren"
@@ -614,14 +598,13 @@ window.MethodCards=[
     "what": "Ein Bild regt Beobachtungen und eigene Fragen an.",
     "how": "Ein Brettbild zunächst ohne Erklärung zeigen. Kinder äußern Beobachtungen und entwickeln eine Frage, die sich am Brett prüfen lässt.",
     "attention": "Erst beschreiben lassen, danach deuten.",
-    "material": "Druckvorlage, ein Brett und ein weißer Läufer pro Paar; Stifte oder Markiersteine.",
+    "material": "Brettbild „Was fällt dir auf?“ groß zeigen oder pro Paar ausdrucken; ein Brett und ein weißer Läufer pro Paar.",
     "example": "Ein Brettbild zeigt nur einen Läufer auf c1. Die Kinder fragen, welche Felder er erreichen kann.",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Genau hinschauen und eine Frage finden Stummer Impuls",
     "phases": [
-      "Einstieg",
-      "Erarbeitung"
+      "Einstieg"
     ],
     "functions": [
       "Vorwissen aktivieren",
@@ -643,9 +626,8 @@ window.MethodCards=[
     "example": "„Heute habe ich den Springerzug verstanden. Bei der Rochade bin ich noch unsicher.“",
     "group": "Rückmeldung",
     "source": [],
-    "aliases": "Eine Zugidee kurz festhalten",
+    "aliases": "Eine Zugidee kurz festhalten, Lerntagebuch, Tagebuch",
     "phases": [
-      "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
@@ -664,14 +646,13 @@ window.MethodCards=[
     "what": "Eine Person unterstützt durch Fragen, während die andere selbst entscheidet.",
     "how": "Ein Kind entscheidet, das andere darf nur Fragen stellen. Hilfsfrage nutzen, zum Beispiel: „Was droht?“ oder „Was war der letzte Zug?“ Entscheidung am Brett prüfen, bei der nächsten Aufgabe Rollen tauschen.",
     "attention": "Keine Züge vorsagen und Rollen regelmäßig tauschen.",
-    "material": "Druckvorlage, ein Brett und ein weißer Turm pro Paar; für Hindernisse zusätzlich ein eigener Bauer. Stifte oder Markiersteine.",
+    "material": "Vorlage „Fragen helfen beim Denken“ pro Paar; ein Brett mit weißem Turm a1 und weißem Bauern a3.",
     "example": "Beim Turm a1 mit eigenem Bauern a3 fragt der Coach: „Welche Felder sind frei? Wo steht etwas im Weg?“",
     "group": "Denken und Austausch",
     "source": [],
-    "aliases": "Mit Fragen helfen, ohne vorzusagen",
+    "aliases": "Mit Fragen helfen, ohne vorzusagen, Tandem, Partnerarbeit",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -690,7 +671,7 @@ window.MethodCards=[
     "what": "Bekanntes wird ohne Vorlage aus dem Gedächtnis abgerufen.",
     "how": "Regel oder Merksatz abdecken und die Aufgabe zeigen. Jedes Kind nennt die Regel aus dem Gedächtnis und wendet sie an. Mit der Lösung abgleichen und einen fehlenden Punkt ergänzen.",
     "attention": "Erst selbst erinnern lassen, dann die Vorlage zeigen.",
-    "material": "Druckvorlage und ein vollständiges Schachspiel pro Paar; bei Einzelaufträgen pro Kind. Kontrollbild erst zum Vergleichen nutzen.",
+    "material": "Ein vollständiges Schachspiel pro Kind oder Paar; die Kontrollseite „Grundstellung“ erst nach dem Aufbau zeigen.",
     "example": "Die Grundstellung wird ohne Bild aufgebaut und anschließend gemeinsam kontrolliert.",
     "group": "Denken und Austausch",
     "source": [],
@@ -715,14 +696,13 @@ window.MethodCards=[
     "what": "Zwei Vorschläge werden mit Gründen und Gegenargumenten verglichen.",
     "how": "Zwei Zugvorschläge sammeln. Je ein Paar erklärt einen Vorschlag und die mögliche Gegenantwort. Beide Züge prüfen und gemeinsam eine begründete Entscheidung treffen.",
     "attention": "Eine begründete Vorliebe ist kein Beweis für einen einzig richtigen Zug.",
-    "material": "Druckvorlage und ein vollständiges Schachspiel pro Paar; bei Einzelaufträgen pro Kind. Kontrollbild erst zum Vergleichen nutzen.",
+    "material": "Vorlage „Zwei Ideen für den Partieanfang“ und ein Stift pro Paar; ein vollständiges Schachspiel pro Paar.",
     "example": "Zwei Gruppen erklären, was in der Grundstellung für e4 beziehungsweise d4 spricht.",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Zwei Zugideen gegeneinander prüfen",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -740,7 +720,7 @@ window.MethodCards=[
     "what": "Hilfen werden schrittweise angeboten, damit möglichst viel selbst gelöst wird.",
     "how": "Aufgabe zuerst ohne Tipp versuchen lassen. Bei Bedarf eine Beobachtungsfrage geben, danach erst einen Figurenhinweis. Nach jedem Tipp erneut selbst lösen lassen; Musterlösung zuletzt zeigen.",
     "attention": "Nur die gerade benötigte Hilfe geben.",
-    "material": "Druckvorlage mit Springer, ein Brett und ein weißer Springer pro Paar; Stifte oder Markiersteine.",
+    "material": "Aufgabenblatt „Springer b1“ pro Paar und die Hilfekarten von Seite 2, ausgeschnitten und verdeckt; ein Brett mit weißem Springer pro Paar.",
     "example": "Beim Springerweg gibt es zuerst „Suche eine L-Form“, danach ein markiertes Startfeld und zuletzt ein Beispiel.",
     "group": "Denken und Austausch",
     "source": [],
@@ -763,15 +743,14 @@ window.MethodCards=[
     "what": "Lernende formulieren selbst eine Frage zu einem Lerngegenstand.",
     "how": "Stellung ohne vorgegebene Frage zeigen. Jedes Paar formuliert eine Frage, die sich am Brett prüfen lässt. Ein anderes Paar beantwortet sie mit einem konkreten Zugbeleg.",
     "attention": "Fragen wählen, die sich mit dem vorhandenen Wissen untersuchen lassen.",
-    "material": "Druckvorlage, ein Brett und ein weißer Läufer pro Paar; Stifte oder Markiersteine.",
+    "material": "Vorlage „Meine Frage an das Brett“ und ein Stift pro Paar; ein Brett und ein weißer Läufer pro Paar.",
     "example": "Zu einem Läufer auf c1 fragt ein Kind: „Kann er jemals auf einem weißen Feld stehen?“",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Eine eigene Frage zur Stellung stellen",
     "phases": [
       "Einstieg",
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Vorwissen aktivieren",
@@ -789,14 +768,13 @@ window.MethodCards=[
     "what": "Eine kurze Liste führt durch eine wiederkehrende Prüfung.",
     "how": "Die Prüfpunkte des Denkwegs nennen. Kinder prüfen jeden Punkt und zeigen den Beleg. Sobald ein Punkt nicht erfüllt ist, die Entscheidung mit diesem Grund erklären.",
     "attention": "Wenige verständliche Punkte verwenden; nicht nur mechanisch abhaken.",
-    "material": "Ein vollständiges Schachspiel pro Paar und die passende Druckvorlage; beim Würfelschach zusätzlich ein Würfel.",
+    "material": "Zugcheck-Karten aus der Vorlage, ausgeschnitten, eine pro Paar; ein vollständiges Schachspiel pro Paar.",
     "example": "Vor dem Ziehen prüfen Kinder: Zugweise erlaubt? Weg frei? Eigener König sicher?",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Mit einer kurzen Prüfliste entscheiden",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben",
@@ -814,14 +792,13 @@ window.MethodCards=[
     "what": "Zwei fast gleiche Beispiele machen ein entscheidendes Merkmal sichtbar.",
     "how": "Zwei Stellungen zeigen, die sich in genau einem Merkmal unterscheiden. Erst einzeln entscheiden lassen. Kinder erklären, welches Merkmal den Unterschied macht.",
     "attention": "Möglichst nur ein Merkmal verändern.",
-    "material": "Druckvorlage, ein Brett und ein weißer Turm pro Paar; für Hindernisse zusätzlich ein eigener Bauer. Stifte oder Markiersteine.",
+    "material": "Kontrastblatt mit zwei Brettbildern und ein Stift pro Paar; zum Nachstellen ein Brett, ein weißer Turm und ein weißer Bauer.",
     "example": "Turm a1 soll nach a5. Einmal ist a3 frei, einmal steht dort ein eigener Bauer.",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Den entscheidenden Unterschied entdecken",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Verstehen / Analysieren"
@@ -838,7 +815,7 @@ window.MethodCards=[
     "what": "Ein Inhalt wird ohne Vorlage in eigenen Worten zurückerklärt.",
     "how": "Ein Kind liest die Regel und legt die Vorlage weg. Es erklärt dem Partner die Regel an der Aufgabe. Partner führt den Zug aus und fragt bei Unklarheit nach; danach wechseln.",
     "attention": "Eigene Worte zulassen und Missverständnisse freundlich klären.",
-    "material": "Druckvorlage mit Turm auf d4, Stift oder Markiersteine; zum Zeigen ein Brett und ein weißer Turm pro Paar.",
+    "material": "Vorlage „Ohne Vorlage erklären“ pro Paar; ein Brett und ein weißer Turm pro Paar.",
     "example": "Ein Kind erklärt ohne Vorlage die Wege des Turms von d4. Der Partner zeigt einen passenden Zug.",
     "group": "Denken und Austausch",
     "source": [],
@@ -862,14 +839,13 @@ window.MethodCards=[
     "what": "In einer vorgemachten Lösung wird ein fehlender Schritt ergänzt.",
     "how": "Am freien Übungsbrett den fehlenden Grund ergänzen: „Der Turm kann von a1 nach a5, weil …“. Weg und Zielfeld zeigen. Anschließend den Turm nach b1 stellen und den Weg nach b5 selbst prüfen.",
     "attention": "Nur einen überschaubaren Schritt auslassen.",
-    "material": "Druckvorlage, ein Brett und ein weißer Turm pro Paar; für Hindernisse zusätzlich ein eigener Bauer. Stifte oder Markiersteine.",
+    "material": "Vorlage „Ergänze den fehlenden Gedanken“ und ein Stift pro Kind; ein Brett und ein weißer Turm pro Paar.",
     "example": "Auf dem leeren Übungsbrett: „Der Turm kann von a1 nach a5, weil er senkrecht zieht und Weg sowie Zielfeld frei sind.“",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Einen fehlenden Lösungsschritt ergänzen",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben",
@@ -894,7 +870,6 @@ window.MethodCards=[
     "aliases": "Erst entscheiden, dann noch einmal prüfen",
     "phases": [
       "Einstieg",
-      "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
@@ -914,14 +889,13 @@ window.MethodCards=[
     "what": "Von einem gewünschten Ergebnis wird rückwärts ein Beispiel entwickelt.",
     "how": "Ein Ergebnis vorgeben, das die Stellung zeigen soll. Paare bauen eine passende Stellung oder verändern genau eine Figur. Anderes Paar testet den Entwurf; die Veränderung erklären lassen.",
     "attention": "Das gebaute Beispiel gemeinsam kontrollieren.",
-    "material": "Druckvorlage, ein Brett und ein weißer Turm pro Paar; für Hindernisse zusätzlich ein eigener Bauer. Stifte oder Markiersteine.",
+    "material": "Vorlage „Baue das Hindernis“ und ein Stift pro Paar; ein Brett, ein weißer Turm und ein weißer Bauer pro Paar.",
     "example": "„Baue eine Stellung, in der ein eigener Bauer den Turmweg a1–a5 versperrt.“",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Vom gewünschten Ergebnis rückwärts bauen",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kreativität fördern",
@@ -939,7 +913,7 @@ window.MethodCards=[
     "what": "Eine Erkenntnis wird mit einem kurzen Satz und einem passenden Beispiel festgehalten.",
     "how": "Am schon bearbeiteten Beispiel einen Regelsatz sammeln. Ein Kind zeigt einen konkreten Beleg für den Satz. Alle übernehmen die geprüfte Regel als Satz oder Zeichnung.",
     "attention": "Regelsätze nur so allgemein formulieren, wie sie wirklich gelten.",
-    "material": "Druckvorlage, ein Brett und ein weißer Läufer pro Paar; Stifte oder Markiersteine.",
+    "material": "Vorlage „Regel und Beispiel“ und ein Stift pro Kind; ein Brett und ein weißer Läufer pro Paar.",
     "example": "„Der Läufer bleibt auf seiner Feldfarbe.“ Dazu zeigen Kinder den Weg c1–h6.",
     "group": "Denken und Austausch",
     "source": [],
@@ -979,8 +953,7 @@ window.MethodCards=[
       }
     ],
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Verstehen / Analysieren"
@@ -997,7 +970,7 @@ window.MethodCards=[
     "what": "Lernende geben einander Rückmeldung anhand vereinbarter Kriterien.",
     "how": "Beide lösen erst allein. Lösungen tauschen und mit den genannten Kriterien prüfen: Entscheidung richtig? Beleg am Brett nachvollziehbar? Eine begründete Rückmeldung geben; jedes Kind verbessert seine eigene Antwort.",
     "attention": "Kriterien vorher erklären; die eigene Arbeit verbessert jedes Kind selbst.",
-    "material": "Druckvorlage und ein vollständiges Schachspiel pro Paar; bei Einzelaufträgen pro Kind. Kontrollbild erst zum Vergleichen nutzen.",
+    "material": "Prüfkarte „Wir prüfen die Grundstellung“ pro Paar und ein vollständiges Schachspiel pro Kind.",
     "example": "Paare prüfen ihre Grundstellungen: rechts unten hell? Damen auf eigener Farbe?",
     "group": "Rückmeldung",
     "source": [],
@@ -1022,7 +995,7 @@ window.MethodCards=[
     "what": "Eine eigene falsche Idee wird untersucht und überarbeitet.",
     "how": "Eine eigene oder typische falsche Vermutung auswählen. Kinder zeigen am Brett, warum sie nicht stimmt. Einen richtigen Zug zeigen und die korrigierte Regel sagen.",
     "attention": "Fehler als Lerngelegenheit nutzen, nicht bewerten oder vorführen.",
-    "material": "Druckvorlage, ein Brett und ein weißer Turm pro Paar; für Hindernisse zusätzlich ein eigener Bauer. Stifte oder Markiersteine.",
+    "material": "Vorlage „Meine Idee verbessern“ und ein Stift pro Kind; ein Brett und ein weißer Turm pro Paar.",
     "example": "Ein Kind wollte mit dem Turm diagonal ziehen. Es erklärt den Irrtum und zeigt einen geraden Zug.",
     "group": "Denken und Austausch",
     "source": [],
@@ -1047,7 +1020,7 @@ window.MethodCards=[
     "what": "Eine bekannte Regel wird auf ein verändertes Beispiel angewendet.",
     "how": "An die zuvor geprüfte Aufgabe erinnern. Eine veränderte Aufgabe allein prüfen lassen. Notieren oder sagen: „Was bleibt gleich, was ändert die Entscheidung?“",
     "attention": "Nur so viel verändern, dass die bekannte Regel erkennbar bleibt.",
-    "material": "Druckvorlage mit Turm auf d4, Stift oder Markiersteine; zum Zeigen ein Brett und ein weißer Turm pro Paar.",
+    "material": "Vorlage „Gleiche Regel, anderes Feld“ und ein Stift pro Kind; ein Brett mit weißem Turm pro Paar zum Prüfen.",
     "example": "Nach dem Turm auf a1 werden freie Turmwege von d4 aus gesucht.",
     "group": "Denken und Austausch",
     "source": [],
@@ -1071,7 +1044,7 @@ window.MethodCards=[
     "what": "Lernende vergleichen ihre gefühlte Sicherheit mit einer überprüften Antwort.",
     "how": "Vor dem Aufbau einschätzen: sicher, unsicher oder brauche Hilfe. Grundstellung ohne Vorlage aufbauen und mit der Kontrollkarte prüfen. Danach erneut einschätzen und einen konkreten Fortschritt nennen.",
     "attention": "Selbsteinschätzung ist keine Note und ersetzt keine fachliche Prüfung.",
-    "material": "Druckvorlage und ein vollständiges Schachspiel pro Paar; bei Einzelaufträgen pro Kind. Kontrollbild erst zum Vergleichen nutzen.",
+    "material": "Blatt „Grundstellung · Vorher und nachher“ und ein Stift pro Kind; ein vollständiges Schachspiel pro Kind. Die Kontrollseite bleibt bei der Lehrkraft.",
     "example": "Vor und nach dem Aufbau der Grundstellung zeigen Kinder „sicher“, „unsicher“ oder „brauche Hilfe“.",
     "group": "Rückmeldung",
     "source": [
@@ -1100,14 +1073,13 @@ window.MethodCards=[
     "what": "Eine Figur sucht unter vereinbarten Hindernisregeln einen Weg zum Ziel.",
     "how": "Start, Ziel und Hinderniszeichen gemeinsam klären. Ein Kind plant einen Weg, das andere prüft jeden Abschnitt. Weg nachspielen, Rollen tauschen und einen kürzeren Weg suchen.",
     "attention": "Hindernisse und verbotene Landefelder unterscheiden; Sackgassen sind erlaubt.",
-    "material": "Druckvorlage, ein Brett und ein weißer Turm pro Paar; für Hindernisse zusätzlich ein eigener Bauer. Stifte oder Markiersteine.",
+    "material": "Labyrinthblatt „Turmweg mit Hindernis“ und ein Stift pro Paar; ein Brett, ein weißer Turm und Markiersteine für die Sperrfelder.",
     "example": "Ein Turm soll von a1 nach c3; b1 ist gesperrt. Kinder finden den Weg über a3 und prüfen beide Teilzüge.",
     "group": "Spiel und Bewegung",
     "source": [],
     "aliases": "Einen erlaubten Figurenweg finden",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben"
@@ -1124,14 +1096,13 @@ window.MethodCards=[
     "what": "Ein Zug wird vorgestellt, bevor er am Brett ausgeführt wird.",
     "how": "Stellung betrachten, Figuren stehen lassen. Einen Zug nur vorstellen; Zielfeld und neue Wirkung sagen. Zug am Brett ausführen und die Vorstellung kontrollieren.",
     "attention": "Mit einem Halbzug beginnen; die Ausgangsstellung darf sichtbar bleiben.",
-    "material": "Druckvorlage mit Springer, ein Brett und ein weißer Springer pro Paar; Stifte oder Markiersteine.",
+    "material": "Vorlage „Ein Zug im Kopf“ pro Paar; ein Brett mit weißem Springer b1 zum Kontrollieren.",
     "example": "Springer b1–c3 wird nur angesagt. Danach zeigt ein Kind, wo die Figur stehen müsste.",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Einen Zug im Kopf ausführen",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben"
@@ -1148,14 +1119,13 @@ window.MethodCards=[
     "what": "Ein kurz betrachtetes Bild wird aus dem Gedächtnis nachgebaut.",
     "how": "Vorlage 20 Sekunden zeigen und dann abdecken. Paare bauen die Stellung auf einem zweiten Brett nach. Vorlage aufdecken, vergleichen und eine hilfreiche Merkhilfe nennen.",
     "attention": "Mit wenigen Figuren beginnen und genügend Betrachtungszeit geben.",
-    "material": "Vorlage mit König a1, Turm d2 und schwarzem König h8; Brett und diese drei Figuren pro Paar, Papier zum Abdecken.",
+    "material": "Vorlage „Drei Figuren“, Blatt „Mein nachgebautes Schachbild“ und Papier zum Abdecken; pro Paar ein Brett mit weißem König, weißem Turm und schwarzem König.",
     "example": "Drei Figuren stehen auf a1, d2 und h8. Nach dem Abdecken baut das Paar sie nach.",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Eine Stellung aus dem Gedächtnis aufbauen",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben"
@@ -1172,14 +1142,13 @@ window.MethodCards=[
     "what": "Eine Person beschreibt eine Stellung, eine andere baut sie nach.",
     "how": "Ein Kind sieht das Diagramm, das andere nur ein leeres Brett. Mit Farbe, Figur und Feld diktieren; nach jeder Ansage kurz warten. Bretter vergleichen, fehlende Angaben ergänzen und Rollen tauschen.",
     "attention": "Farbe, Figur und Feld immer vollständig nennen.",
-    "material": "Vorlage mit König a1, Turm d2 und schwarzem König h8; Brett und diese drei Figuren pro Paar, Papier zum Abdecken.",
+    "material": "Vorlage „Drei Figuren“ für das diktierende Kind; für das bauende Kind ein leeres Brett mit weißem König, weißem Turm und schwarzem König.",
     "example": "„Weißer König a1, weißer Turm d2, schwarzer König h8.“ Danach vergleichen die Kinder ihre Bretter.",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Eine Stellung ansagen und aufbauen",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -1201,10 +1170,9 @@ window.MethodCards=[
     "example": "Zwei Zweierteams spielen; vor jedem Zug trägt jedes Teammitglied eine Idee bei.",
     "group": "Denken und Austausch",
     "source": [],
-    "aliases": "Zu zweit ein Team bilden",
+    "aliases": "Zu zweit ein Team bilden, Teamschach, Beratung, Gruppenarbeit",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -1222,14 +1190,13 @@ window.MethodCards=[
     "what": "Eine laufende Partie wird kurz für eine bewusste Beobachtung angehalten.",
     "how": "Von der Aufgabenstellung aus spielen; Stopps vorher vereinbaren. Nach zwei Halbzügen fragen: „Was greift der Gegner an?“ Eine Antwort prüfen, dann weiterspielen; nach dem zweiten Stopp auswerten.",
     "attention": "Stopps vorher vereinbaren und nicht nach jedem Zug unterbrechen.",
-    "material": "Ein vollständiges Schachspiel pro Paar und die passende Druckvorlage; beim Würfelschach zusätzlich ein Würfel.",
+    "material": "Denkstopp-Karten aus der Vorlage, ausgeschnitten, und ein vollständiges Schachspiel pro Paar.",
     "example": "Nach einigen Zügen stoppen beide Kinder und suchen die Angriffe des zuletzt gezogenen Steins.",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Beim Spielen kurz stoppen und prüfen",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Verstehen / Analysieren",
@@ -1267,7 +1234,7 @@ window.MethodCards=[
   },
   {
     "id": "koffer-figurenrechnen",
-    "name": "Figurenwerte zusammenrechnen",
+    "name": "Figurenwerte rechnen",
     "what": "Figurenwerte werden spielerisch addiert und verglichen.",
     "how": "Lege einen weißen Turm, Läufer und zwei Bauern neben das Brett. Werte: Bauer 1, Springer 3, Läufer 3, Turm 5, Dame 9; der König bekommt keinen Tauschwert. Rechne die Werte zusammen. Stelle mit anderen Figuren dieselbe Summe dar. Vergleicht die Darstellungen: gleicher Rechenwert bedeutet nicht gleich starke Stellung.",
     "attention": "Punktwerte sind Richtwerte und ersetzen keine Stellungsbewertung.",
@@ -1275,10 +1242,9 @@ window.MethodCards=[
     "example": "Turm, Läufer und zwei Bauern ergeben 5 + 3 + 1 + 1 = 10.",
     "group": "Spiel und Bewegung",
     "source": [],
-    "aliases": "Figurenwerte zusammenrechnen",
+    "aliases": "Figurenwerte zusammenrechnen, Punktwerte",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben"
@@ -1295,7 +1261,7 @@ window.MethodCards=[
     "what": "Eine Frage wird ins Gegenteil verkehrt und schlechte Ideen werden anschließend verbessert.",
     "how": "Die Ausgangsfrage umkehren. Schlechte Ideen sammeln und daraus hilfreiche Vorschläge für die ursprüngliche Frage ableiten.",
     "attention": "Die schlechten Ideen ausdrücklich wieder in hilfreiche Vorschläge umwandeln.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
+    "material": "Vorlage „Wie verschenke ich möglichst viele Figuren?“ und Stifte pro Gruppe; ein Brett, um die verbesserten Ideen zu zeigen.",
     "example": "„Wie verliere ich möglichst schnell Figuren?“ Aus „ungedeckt stehen lassen“ wird „vor dem Zug die Deckung prüfen“.",
     "group": "Denken und Austausch",
     "source": [
@@ -1306,8 +1272,7 @@ window.MethodCards=[
     ],
     "aliases": "Erst einen schlechten Plan finden, dann verbessern Kopfstand",
     "phases": [
-      "Einstieg",
-      "Erarbeitung"
+      "Einstieg"
     ],
     "functions": [
       "Kreativität fördern"
@@ -1320,7 +1285,7 @@ window.MethodCards=[
   },
   {
     "id": "koffer-blindfinish",
-    "name": "Die letzten Züge einer Kurzpartie im Kopf finden",
+    "name": "Partieende im Kopf",
     "what": "Das Ende einer bekannten Zugfolge wird im Kopf ergänzt.",
     "how": "Eine kurze bekannte Partie nachspielen und vor dem letzten Zug stoppen. Kinder nennen ihre Fortsetzung zunächst ohne zu ziehen; danach am Brett vergleichen.",
     "attention": "Ein Halbzug genügt am Anfang; niemand muss das Brett verdecken.",
@@ -1328,10 +1293,9 @@ window.MethodCards=[
     "example": "Nach e4 e5 Lc4 Sc6 Dh5 Sf6 wird Dxf7# zunächst nur angesagt und dann nachgespielt.",
     "group": "Spiel und Bewegung",
     "source": [],
-    "aliases": "Die letzten Züge einer Kurzpartie im Kopf finden",
+    "aliases": "Blindschach, die letzten Züge einer Kurzpartie im Kopf finden",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben"
@@ -1373,7 +1337,7 @@ window.MethodCards=[
   },
   {
     "id": "koffer-motivewurf",
-    "name": "Ein Motiv auslosen und eine Stellung dazu bauen",
+    "name": "Motivwürfel",
     "what": "Ein Zufallsauslöser regt eigene Schachbeispiele an.",
     "how": "Würfelzahlen bekannten Schachmotiven zuordnen. Ein Motiv auslosen, ein eigenes Beispiel bauen und von einem anderen Paar prüfen lassen.",
     "attention": "Nur bekannte Motive auslosen und die Konstruktion überprüfen.",
@@ -1383,8 +1347,7 @@ window.MethodCards=[
     "source": [],
     "aliases": "Ein Motiv auslosen und eine Stellung dazu bauen",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kreativität fördern",
@@ -1411,7 +1374,7 @@ window.MethodCards=[
         "url": "https://www.methodenkartei.uni-oldenburg.de/methode/ampelquiz/"
       }
     ],
-    "aliases": "Zu einer Schachbehauptung abstimmen TED-Test",
+    "aliases": "Zu einer Schachbehauptung abstimmen TED-Test, TED, Ampelkarten, Abstimmung",
     "phases": [
       "Einstieg",
       "Ergebnissicherung/Reflexion"
@@ -1433,9 +1396,9 @@ window.MethodCards=[
     "what": "Gedanken werden ohne Sprechen schriftlich ausgetauscht und ergänzt.",
     "how": "Eine Frage auf ein großes Blatt schreiben. Alle notieren still ihre Gedanken und ergänzen die Beiträge der anderen. Anschließend gemeinsam lesen.",
     "attention": "Das ist ein Schreibgespräch; eine Schreibkonferenz überarbeitet dagegen einen fertigen Text.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
-    "example": "Auf dem Blatt steht „Wie spielen wir fair?“ Kinder schreiben Vorschläge und reagieren schriftlich aufeinander.",
-    "group": "Spiel und Bewegung",
+    "material": "Ein großes Blatt (Vorlage, auf A3 vergrößert) pro Vierergruppe und ein Stift je Kind; ein Brett mit zwei weißen Springern zum Nachprüfen.",
+    "example": "Auf dem Blatt steht: „Ist ein Springer am Rand schlecht?“ mit Springern auf a4 und d4. Ein Kind schreibt „a4 hat nur 4 Ziele“, ein anderes ergänzt „d4 hat 8“, ein drittes fragt „Und auf a1?“.",
+    "group": "Denken und Austausch",
     "source": [
       {
         "label": "Methodenkartei Oldenburg/Vechta: Schreibgespräch",
@@ -1445,8 +1408,7 @@ window.MethodCards=[
     "aliases": "Eine Stellung gemeinsam schriftlich untersuchen Stille Diskussion",
     "phases": [
       "Einstieg",
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Vorwissen aktivieren",
@@ -1457,11 +1419,11 @@ window.MethodCards=[
       "Grundschule",
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Erste Erfahrungen beim gemeinsamen Schachspielen. Lesen und Schreiben erforderlich, oder eine Person schreibt diktierte Ideen auf."
+    "prerequisite": "Die Springerzüge sind bekannt. Lesen und Schreiben erforderlich, oder eine Person schreibt diktierte Ideen auf."
   },
   {
     "id": "koffer-rundreise",
-    "name": "Von Aussage zu Aussage gehen und prüfen",
+    "name": "Rundreise mit Behauptungen",
     "what": "Verteilte Aussagen werden beim Rundgang gelesen und überprüft.",
     "how": "Hänge die vier Aussagen aus der Vorlage im Raum auf: Der Springer darf über Figuren springen. Der Läufer kann seine Feldfarbe wechseln. Bauern schlagen gerade nach vorn. Ein Turm zieht waagerecht oder senkrecht. Jedes Paar geht mit einem Antwortzettel alle Plätze ab, notiert „stimmt“ oder „stimmt nicht“ und prüft am Brett. Nach zwei Minuten zum nächsten Platz. Zum Schluss gemeinsam auflösen und jede falsche Aussage richtig formulieren.",
     "attention": "Genug Abstand zwischen den Stationen lassen und Aussagen gemeinsam auflösen.",
@@ -1469,9 +1431,8 @@ window.MethodCards=[
     "example": "Am Platz „Der Läufer kann seine Feldfarbe wechseln“ stellt ein Paar einen Läufer auf c1, zieht ihn zweimal und notiert: stimmt nicht, er bleibt auf Schwarz.",
     "group": "Spiel und Bewegung",
     "source": [],
-    "aliases": "Von Aussage zu Aussage gehen und prüfen",
+    "aliases": "Rundgang, Stationen, von Aussage zu Aussage gehen und prüfen",
     "phases": [
-      "Einstieg",
       "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
@@ -1487,7 +1448,7 @@ window.MethodCards=[
   },
   {
     "id": "koffer-simultan",
-    "name": "Eine Lehrkraft spielt an mehreren Brettern",
+    "name": "Simultanspiel",
     "what": "Eine Person spielt abwechselnd gegen mehrere Bretter.",
     "how": "Beginne mit zwei oder drei Brettern und vereinbare: Die Kinder ziehen erst, wenn du am Brett stehst. Gehe reihum. Lass dir eine Zugidee erklären, spiele eine legale Antwort und gehe zum nächsten Brett. Nach zehn Minuten stoppen, ohne unfertige Partien zu werten. Jede Gruppe zeigt eine lehrreiche Entscheidung.",
     "attention": "Kinder ziehen erst, wenn die Lehrkraft an ihrem Brett steht.",
@@ -1495,10 +1456,9 @@ window.MethodCards=[
     "example": "Die Lehrkraft geht zwischen drei Brettern umher und lässt sich vor ihrer Antwort eine Zugidee erklären.",
     "group": "Spiel und Bewegung",
     "source": [],
-    "aliases": "Eine Lehrkraft spielt an mehreren Brettern",
+    "aliases": "Simultan, eine Lehrkraft spielt an mehreren Brettern",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben"
@@ -1511,7 +1471,7 @@ window.MethodCards=[
   },
   {
     "id": "koffer-mattwettkampf",
-    "name": "Mattaufgaben lösen und die Begründung vergleichen",
+    "name": "Mattwettkampf",
     "what": "Kleine Teams lösen dieselben Mattaufgaben und vergleichen ihre Begründungen.",
     "how": "Jedes Paar erhält dieselben drei Matt-in-eins-Aufgaben und acht Minuten Zeit. Richtiger Mattzug zählt einen Punkt, korrekte Erklärung einen weiteren. Alle denken erst allein, dann vergleicht das Paar. Prüft nach dem Zug Flucht, Schlagen und Dazwischenziehen. Nach acht Minuten gemeinsam auswerten. Ziel ist eine gründliche Lösung; Schnelligkeit gibt keine Zusatzpunkte.",
     "attention": "Gründlichkeit belohnen; keine öffentliche Rangliste nötig.",
@@ -1519,10 +1479,9 @@ window.MethodCards=[
     "example": "Paare untersuchen drei Matt-in-eins-Bilder; Zug und Mattbegründung zählen jeweils einen Punkt.",
     "group": "Spiel und Bewegung",
     "source": [],
-    "aliases": "Mattaufgaben lösen und die Begründung vergleichen",
+    "aliases": "Mattaufgaben lösen und die Begründung vergleichen, Wettbewerb",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -1536,7 +1495,7 @@ window.MethodCards=[
   },
   {
     "id": "koffer-schachpuzzlebild",
-    "name": "Ein zerschnittenes Schachbild zusammensetzen",
+    "name": "Brettpuzzle",
     "what": "Ein zerschnittenes Bild wird anhand seiner Merkmale zusammengesetzt.",
     "how": "Ein Brettbild in wenige große Teile schneiden. Paare setzen es zusammen und vergleichen mit der vollständigen Vorlage.",
     "attention": "Mit wenigen großen Teilen beginnen.",
@@ -1544,10 +1503,9 @@ window.MethodCards=[
     "example": "Ein Brettbild wird in vier Teile geschnitten; Kinder orientieren sich an Feldfarben und Koordinaten.",
     "group": "Spiel und Bewegung",
     "source": [],
-    "aliases": "Ein zerschnittenes Schachbild zusammensetzen",
+    "aliases": "Ein zerschnittenes Schachbild zusammensetzen, Puzzle",
     "phases": [
-      "Einstieg",
-      "Erarbeitung"
+      "Einstieg"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -1561,7 +1519,7 @@ window.MethodCards=[
   },
   {
     "id": "koffer-knuffel",
-    "name": "Mit Figurenwürfeln Punkte sammeln",
+    "name": "Figurenkniffel",
     "what": "Ein Würfelspiel verbindet Sammeln, Entscheiden und Figurenwerte.",
     "how": "Fünf Würfel stehen für Figurenwerte: 1 Bauer, 2 Springer, 3 Läufer, 4 Turm, 5 Dame, 6 Joker. Pro Runde bis zu dreimal würfeln und passende Würfel behalten. Eine noch freie Figurenkategorie werten; Joker zählen als diese Figur. Nach fünf Runden die Punkte addieren.",
     "attention": "Zuordnung und Wertung vorher vereinbaren; dies ist eine vereinfachte eigene Spielvariante.",
@@ -1569,10 +1527,9 @@ window.MethodCards=[
     "example": "In einer eigenen Knuffel-Variante zählen drei als Turm gewertete Würfel zusammen 15 Punkte.",
     "group": "Spiel und Bewegung",
     "source": [],
-    "aliases": "Mit Figurenwürfeln Punkte sammeln",
+    "aliases": "Kniffel, Knuffel, Würfelspiel, mit Figurenwürfeln Punkte sammeln",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben"
@@ -1585,18 +1542,17 @@ window.MethodCards=[
   },
   {
     "id": "koffer-wuerfelschach",
-    "name": "Die Figurenart für den nächsten Zug würfeln",
+    "name": "Würfelschach",
     "what": "Ein Würfel bestimmt, welche Figurenart als Nächstes ziehen soll.",
     "how": "Zahlen zuordnen: 1 Bauer, 2 Springer, 3 Läufer, 4 Turm, 5 Dame, 6 König. Vor dem Zug würfeln und einen legalen Zug mit dieser Figurenart wählen. Die normalen Schachregeln gelten; die Ausnahmen zum Würfeln stehen unten.",
     "attention": "Ist kein Zug dieser Art möglich, neu würfeln. Bei Schach eine beliebige legale Abwehr spielen; Matt und Patt gelten normal.",
-    "material": "Ein vollständiges Schachspiel pro Paar und die passende Druckvorlage; beim Würfelschach zusätzlich ein Würfel.",
+    "material": "Ein vollständiges Schachspiel und ein Würfel pro Paar, dazu die Regelkarte „Würfelschach“ aus der Vorlage.",
     "example": "Die 2 steht für Springer. In der Grundstellung wählt das Kind einen legalen Springerzug.",
     "group": "Spiel und Bewegung",
     "source": [],
     "aliases": "Die Figurenart für den nächsten Zug würfeln",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben"
@@ -1609,7 +1565,7 @@ window.MethodCards=[
   },
   {
     "id": "koffer-feldbild",
-    "name": "Nach Feldnamen ein Muster ausmalen",
+    "name": "Feldbild ausmalen",
     "what": "Angesagte Felder ergeben beim Markieren ein Muster.",
     "how": "Gib ein leeres Diagramm mit Feldnamen aus. Lies langsam a1, b2, c3, d4, e5, f6, g7, h8 vor. Kinder markieren jedes Feld. Nach je zwei Feldern kurz vergleichen. Das entstehende Muster benennen. Danach diktiert ein Kind eine andere Linie.",
     "attention": "Feldnamen langsam ansagen und Zwischenkontrollen ermöglichen.",
@@ -1617,10 +1573,9 @@ window.MethodCards=[
     "example": "a1, b2, c3, d4, e5, f6, g7, h8 werden ausgemalt: eine Diagonale entsteht.",
     "group": "Spiel und Bewegung",
     "source": [],
-    "aliases": "Nach Feldnamen ein Muster ausmalen",
+    "aliases": "Nach Feldnamen ein Muster ausmalen, Koordinaten",
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kreativität fördern",
@@ -1700,7 +1655,7 @@ window.MethodCards=[
     "what": "Viele Ideen werden zunächst ohne Bewertung gesammelt.",
     "how": "Eine offene Frage stellen, Einfälle notieren und erst danach ordnen und prüfen.",
     "attention": "Sammlung und Bewertung deutlich trennen.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
+    "material": "Sammelblatt „Wie merken wir uns die Grundstellung?“ oder die Tafel; ein Brett, um die Merkhilfen auszuprobieren.",
     "example": "„Wie können wir uns an die Grundstellung erinnern?“ Die Gruppe sammelt Merkhilfen.",
     "source": [
       {
@@ -1712,8 +1667,7 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Einstieg",
-      "Erarbeitung"
+      "Einstieg"
     ],
     "functions": [
       "Vorwissen aktivieren",
@@ -1731,8 +1685,8 @@ window.MethodCards=[
     "what": "Ideen werden still aufgeschrieben und von anderen weiterentwickelt.",
     "how": "Alle notieren Ideen. Blätter weitergeben, lesen und ergänzen. Zum Schluss gemeinsam auswählen.",
     "attention": "Wenige Ideen und Runden genügen. Die klassische 6–3–5-Variante nutzt sechs Personen, drei Ideen und fünf Minuten je Runde.",
-    "material": "Brainwriting-Blatt pro Kind und Stifte; für Schreibanfänger eine Person, die diktierte Ideen notiert.",
-    "example": "Kinder sammeln schriftlich Ideen für ein freundliches Schachturnier und ergänzen die Vorschläge anderer.",
+    "material": "Brainwriting-Blatt „Wie bringen wir die Türme ins Spiel?“ pro Kind und Stifte; für Schreibanfänger eine Person, die diktierte Ideen notiert.",
+    "example": "Zur Frage „Wie kommt der Turm h1 ins Spiel?“ schreibt ein Kind: „Springer g1 und Läufer f1 entwickeln.“ Das nächste ergänzt: „Dann rochieren, der Turm steht auf f1.“ Ein drittes: „Eine Linie öffnen, damit der Turm wirkt.“",
     "source": [
       {
         "label": "Methodenkartei Oldenburg/Vechta: Brainwriting / 6–3–5",
@@ -1758,7 +1712,7 @@ window.MethodCards=[
       "Grundschule",
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Keine besonderen Schachkenntnisse nötig; Erfahrungen können mündlich oder bildlich eingebracht werden. Lesen und Schreiben erforderlich, oder eine Person schreibt diktierte Ideen auf."
+    "prerequisite": "Grundstellung, Zugweisen und Rochade sind bekannt. Lesen und Schreiben erforderlich, oder eine Person schreibt diktierte Ideen auf."
   },
   {
     "id": "inspiration-5",
@@ -1766,7 +1720,7 @@ window.MethodCards=[
     "what": "Ein Thema wird als verzweigte Übersicht geordnet.",
     "how": "Thema in die Mitte schreiben. Hauptäste und passende Unterbegriffe ergänzen.",
     "attention": "Kurze Wörter und übersichtliche Äste verwenden.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
+    "material": "Mindmap-Vorlage „Was gehört zum Schach?“ und Stifte pro Paar oder Gruppe.",
     "example": "Zur Mitte „Schach“ entstehen Äste für Figuren, Regeln und faires Verhalten.",
     "source": [
       {
@@ -1779,7 +1733,6 @@ window.MethodCards=[
     "isNew": true,
     "phases": [
       "Einstieg",
-      "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
@@ -1799,7 +1752,7 @@ window.MethodCards=[
     "what": "Spontane Einfälle zu einem Thema werden als Netz verbunden.",
     "how": "Ein Wort einkreisen, Assoziationen darum notieren und verwandte Begriffe verbinden.",
     "attention": "Zunächst frei sammeln; eine feste Hierarchie ist nicht nötig.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
+    "material": "Cluster-Vorlage „Gedanken zum König“ und ein Stift pro Kind.",
     "example": "Um „König“ stehen Schach, Fluchtfeld, Rochade und Matt; Kinder zeichnen passende Verbindungen.",
     "source": [
       {
@@ -1811,8 +1764,7 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Einstieg",
-      "Erarbeitung"
+      "Einstieg"
     ],
     "functions": [
       "Vorwissen aktivieren",
@@ -1842,8 +1794,7 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Einstieg",
-      "Erarbeitung"
+      "Einstieg"
     ],
     "functions": [
       "Vorwissen aktivieren",
@@ -1861,7 +1812,7 @@ window.MethodCards=[
     "what": "Zwei Personen lernen einander durch kurze Fragen kennen.",
     "how": "Paare befragen sich abwechselnd und stellen einander anschließend kurz vor.",
     "attention": "Nur freiwillig mitgeteilte Antworten vorstellen.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
+    "material": "Interviewblatt und ein Stift pro Paar; die Antworten dürfen auch nur mündlich vorgestellt werden.",
     "example": "„Wo spielst du Schach? Welche Figur magst du? Was möchtest du lernen?“",
     "source": [
       {
@@ -1873,9 +1824,7 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Einstieg",
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Einstieg"
     ],
     "functions": [
       "Vorwissen aktivieren",
@@ -1903,10 +1852,9 @@ window.MethodCards=[
       }
     ],
     "group": "Denken und Austausch",
-    "aliases": "",
+    "aliases": "Doppelkreis, Partnerwechsel, Kugellager",
     "isNew": true,
     "phases": [
-      "Einstieg",
       "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
@@ -1927,7 +1875,7 @@ window.MethodCards=[
     "what": "Kleine Nachbargruppen tauschen sich kurz und leise aus.",
     "how": "Eine Frage stellen, kurze Beratung zulassen und anschließend wenige Gedanken zusammentragen.",
     "attention": "Eine überschaubare Frage wählen und ein Stoppsignal vereinbaren.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
+    "material": "Murmelblatt „Vor meinem nächsten Zug“ und ein Stift pro Kleingruppe; ein vereinbartes Stoppsignal.",
     "example": "„Woran denkt ihr vor eurem nächsten Zug?“ Zwei oder drei Kinder tauschen ihre Ideen aus.",
     "source": [
       {
@@ -1936,12 +1884,11 @@ window.MethodCards=[
       }
     ],
     "group": "Denken und Austausch",
-    "aliases": "",
+    "aliases": "Bienenkorb, Murmelphase",
     "isNew": true,
     "phases": [
       "Einstieg",
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Vorwissen aktivieren",
@@ -1960,8 +1907,8 @@ window.MethodCards=[
     "what": "Eine kleine Runde diskutiert, während die übrigen beobachten und sich zeitweise beteiligen können.",
     "how": "Innenkreis und Außenkreis bilden. Einen freien Stuhl für Beiträge aus dem Außenkreis lassen; anschließend Beobachtungen besprechen.",
     "attention": "Wechselregeln und Zuhörauftrag klären.",
-    "material": "Stühle für Innen- und Außenkreis sowie ein freier Wechselstuhl; Frage- und Beobachtungskarten aus der Vorlage.",
-    "example": "Im Innenkreis wird besprochen, wie die AG fair mit Zuspätkommen beim Turnier umgehen kann.",
+    "material": "Stühle für Innen- und Außenkreis und ein freier Wechselstuhl; im Innenkreis ein Brett mit der Stellung aus der Vorlage, dazu die Beobachtungskarte für den Außenkreis.",
+    "example": "Weiß: Kg1, Te1. Schwarz: Kg8, Bauern f7, g7, h7. Der Innenkreis prüft, ob Te8 Matt ist, und danach, was sich ändert, wenn der Bauer auf h6 statt h7 steht. Der Außenkreis achtet darauf, wer seine Antwort am Brett begründet.",
     "source": [
       {
         "label": "bpb: Methoden-Kiste, 9. Auflage (2020), S. 26",
@@ -1969,11 +1916,10 @@ window.MethodCards=[
       }
     ],
     "group": "Denken und Austausch",
-    "aliases": "",
+    "aliases": "Aquarium, Innenkreis Außenkreis",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -1983,7 +1929,7 @@ window.MethodCards=[
     "audiences": [
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Erste Erfahrungen beim gemeinsamen Schachspielen."
+    "prerequisite": "Schach, Matt und die drei Abwehrarten sind bekannt."
   },
   {
     "id": "inspiration-12",
@@ -1991,8 +1937,8 @@ window.MethodCards=[
     "what": "Ideen werden in zunehmend größeren Gruppen ausgewählt und verdichtet.",
     "how": "Erst allein sammeln, zu zweit auswählen, dann in Vierergruppen auf gemeinsame Vorschläge einigen.",
     "attention": "Minderheitenideen anhören; nicht nur die lauteste Person entscheiden lassen.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
-    "example": "Aus persönlichen Fairplay-Ideen werden zu zweit zwei Regeln und zu viert drei gemeinsame AG-Regeln.",
+    "material": "Vorlage „Unsere Denkregeln vor dem Zug“ und Stifte pro Vierergruppe; ein Brett, um jede Regel an einem Zug zu zeigen.",
+    "example": "Allein schreibt ein Kind „Ist meine Figur danach gedeckt?“. Zu zweit kommt „Was droht der Gegner?“ dazu. Zu viert einigen sich die Kinder auf drei Denkregeln und zeigen jede an einem Zug am Brett.",
     "source": [
       {
         "label": "Methodenkartei Oldenburg/Vechta: Schneeballverfahren",
@@ -2000,10 +1946,9 @@ window.MethodCards=[
       }
     ],
     "group": "Denken und Austausch",
-    "aliases": "",
+    "aliases": "Schneeball, Pyramide",
     "isNew": true,
     "phases": [
-      "Einstieg",
       "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
@@ -2016,7 +1961,7 @@ window.MethodCards=[
       "Grundschule",
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Keine besonderen Schachkenntnisse nötig; Erfahrungen können mündlich oder bildlich eingebracht werden."
+    "prerequisite": "Zugweisen, Angreifen und Decken sind bekannt."
   },
   {
     "id": "inspiration-13",
@@ -2033,12 +1978,10 @@ window.MethodCards=[
       }
     ],
     "group": "Denken und Austausch",
-    "aliases": "",
+    "aliases": "Ecken, Positionierung",
     "isNew": true,
     "phases": [
-      "Einstieg",
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Einstieg"
     ],
     "functions": [
       "Vorwissen aktivieren",
@@ -2066,11 +2009,10 @@ window.MethodCards=[
       }
     ],
     "group": "Denken und Austausch",
-    "aliases": "",
+    "aliases": "Positionslinie, Barometer",
     "isNew": true,
     "phases": [
-      "Einstieg",
-      "Ergebnissicherung/Reflexion"
+      "Einstieg"
     ],
     "functions": [
       "Vorwissen aktivieren",
@@ -2097,7 +2039,7 @@ window.MethodCards=[
       }
     ],
     "group": "Denken und Austausch",
-    "aliases": "",
+    "aliases": "Punkte kleben, Abstimmung",
     "isNew": true,
     "phases": [
       "Einstieg",
@@ -2131,7 +2073,6 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Einstieg",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
@@ -2162,7 +2103,6 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
@@ -2193,7 +2133,6 @@ window.MethodCards=[
     "isNew": true,
     "phases": [
       "Einstieg",
-      "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
@@ -2256,7 +2195,6 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Einstieg",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
@@ -2275,7 +2213,7 @@ window.MethodCards=[
     "what": "Eine Person spricht ihre Überlegungen während einer Aufgabe aus.",
     "how": "Eine kurze Aufgabe geben. Das Kind denkt hörbar; die anderen hören zu und fragen anschließend nach.",
     "attention": "Den Denkfluss nicht ständig korrigierend unterbrechen.",
-    "material": "Druckvorlage, ein Brett und ein weißer Turm pro Paar; für Hindernisse zusätzlich ein eigener Bauer. Stifte oder Markiersteine.",
+    "material": "Vorlage „Ich denke laut“ pro Paar; ein Brett, ein weißer Turm und ein weißer Bauer als Hindernis.",
     "example": "„Ich möchte den Turm ziehen. Zuerst schaue ich, ob der Weg frei ist.“",
     "source": [
       {
@@ -2287,8 +2225,7 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Verstehen / Analysieren"
@@ -2305,7 +2242,7 @@ window.MethodCards=[
     "what": "Lernende finden nach einer Einzelaufgabe einen Partner mit ähnlichem Arbeitstempo.",
     "how": "Alle bearbeiten einen Auftrag allein. Fertige Kinder treffen sich an einem vereinbarten Ort und vergleichen zu zweit.",
     "attention": "Kein Wettrennen daraus machen; zusätzliche ruhige Aufgaben bereithalten.",
-    "material": "Druckvorlage und ein vollständiges Schachspiel pro Paar; bei Einzelaufträgen pro Kind. Kontrollbild erst zum Vergleichen nutzen.",
+    "material": "Ein vollständiges Schachspiel pro Kind und das Blatt „Partnercheck“; das Schild „Treffpunkt“ aus der Vorlage an einen festen Ort legen.",
     "example": "Wer seine Grundstellung aufgebaut hat, findet ein ebenfalls fertiges Kind zum gegenseitigen Prüfen.",
     "source": [
       {
@@ -2317,8 +2254,7 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -2336,7 +2272,7 @@ window.MethodCards=[
     "what": "Kleine Aufgaben werden sichtbar auf die Gruppenmitglieder verteilt.",
     "how": "Rollen erklären, Karten verteilen und nach einer Aufgabe wechseln.",
     "attention": "Rollen sind Aufgaben, keine festen Zuschreibungen an Kinder.",
-    "material": "Druckvorlage und ein vollständiges Schachspiel pro Paar; bei Einzelaufträgen pro Kind. Kontrollbild erst zum Vergleichen nutzen.",
+    "material": "Rollenkarten zum Ausschneiden und das Blatt mit der Zugfolge 1. e4 e5 2. Sf3 Sc6; ein vollständiges Schachspiel pro Dreiergruppe.",
     "example": "Beim Nachspielen einer Partie liest ein Kind die Züge, eines zieht und eines prüft die Stellung.",
     "source": [
       {
@@ -2348,8 +2284,7 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -2409,8 +2344,7 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Einstieg",
-      "Erarbeitung"
+      "Einstieg"
     ],
     "functions": [
       "Vorwissen aktivieren",
@@ -2428,7 +2362,7 @@ window.MethodCards=[
     "what": "Eine kurze Geschichte weckt eine Frage zum Thema.",
     "how": "Eine kleine Szene erzählen und an einer offenen Frage stoppen. Ideen sammeln und am Brett erproben.",
     "attention": "Erzählung kurz halten; Fantasie und echte Schachregeln unterscheiden.",
-    "material": "Druckvorlage, ein Brett und ein weißer Turm pro Paar; für Hindernisse zusätzlich ein eigener Bauer. Stifte oder Markiersteine.",
+    "material": "Vorlesetext mit Brettbild „Eine kleine Turmgeschichte“ für die Lehrkraft; pro Paar ein Brett und ein weißer Turm.",
     "example": "„Der Turm möchte zu seinem Freund auf d4, startet aber auf a1.“ Kinder suchen einen Weg in zwei geraden Zügen.",
     "source": [
       {
@@ -2458,7 +2392,7 @@ window.MethodCards=[
     "what": "Ein Sachverhalt wird aus der Sicht einer Figur erzählt.",
     "how": "Eine Figur auswählen und ihre Gedanken als Sprechblase oder kurzen Ich-Text formulieren.",
     "attention": "Die erfundene Stimme darf keine falsche Schachregel nahelegen.",
-    "material": "Druckvorlage, ein Brett und ein weißer Läufer pro Paar; Stifte oder Markiersteine.",
+    "material": "Vorlage „Der Läufer erzählt“ und ein Stift pro Kind; ein Brett mit weißem Läufer c1 zum Prüfen.",
     "example": "Ein Läufer auf c1 sagt: „Ich bleibe immer auf dunklen Feldern.“ Kinder zeigen seinen Weg nach h6.",
     "source": [
       {
@@ -2486,11 +2420,11 @@ window.MethodCards=[
   {
     "id": "inspiration-28",
     "name": "Rollenspiel",
-    "what": "Eine Alltagssituation wird in verteilten Rollen erprobt und anschließend besprochen.",
+    "what": "Eine Situation am Brett wird kurz nachgespielt und gemeinsam ausgewertet.",
     "how": "Situation und Rollen nennen, kurz spielen lassen und gemeinsam hilfreiche Verhaltensweisen sammeln.",
     "attention": "Freiwillige Rollenwahl ermöglichen und am Ende aus den Rollen aussteigen.",
-    "material": "Situations- oder Rollenkarten aus der Vorlage und eine freie Spielfläche.",
-    "example": "Ein Kind verliert eine Partie, das andere gewinnt. Beide erproben einen respektvollen Abschluss.",
+    "material": "Rollenkarten „Berührt, geführt“ aus der Vorlage, ein vollständiges Schachspiel und eine freie Spielfläche.",
+    "example": "Nach 1. e4 e5 berührt ein Kind den Springer g1, will dann aber den Läufer f1 ziehen. Das Kind in der Rolle der Schiedsrichterin erklärt „Berührt, geführt“: Der Springer muss ziehen. Danach besprechen alle, wie man das freundlich anspricht.",
     "source": [
       {
         "label": "bpb: Methoden-Kiste, 9. Auflage (2020), S. 36",
@@ -2501,8 +2435,7 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -2513,7 +2446,7 @@ window.MethodCards=[
       "Grundschule",
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Keine besonderen Schachkenntnisse nötig; Erfahrungen können mündlich oder bildlich eingebracht werden."
+    "prerequisite": "Grundstellung und Zugweisen sind bekannt; die Regel „Berührt, geführt“ wird im Rollenspiel erklärt."
   },
   {
     "id": "inspiration-29",
@@ -2552,7 +2485,7 @@ window.MethodCards=[
     "what": "Wichtige Erkenntnisse werden auf einem übersichtlichen Plakat dargestellt.",
     "how": "Ein Thema und wenige Kernaussagen auswählen, mit Bildern darstellen und anderen erklären.",
     "attention": "Lesbarkeit und richtige Aussagen sind wichtiger als Schmuck.",
-    "material": "Druckvorlage und ein vollständiges Schachspiel pro Paar; bei Einzelaufträgen pro Kind. Kontrollbild erst zum Vergleichen nutzen.",
+    "material": "Plakatvorlage „Die Grundstellung“, auf A3 vergrößert, und dicke Stifte; ein aufgebautes Brett als Vorbild.",
     "example": "„Die Grundstellung“ wird mit einem Brettbild und den Hinweisen „rechts unten hell“ und „Dame auf eigener Farbe“ gezeigt.",
     "source": [
       {
@@ -2594,7 +2527,6 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
@@ -2643,7 +2575,7 @@ window.MethodCards=[
     "what": "Fünf Finger stehen für fünf kurze Rückmeldungen.",
     "how": "Daumen: gut; Zeigefinger: gelernt; Mittelfinger: schwierig; Ringfinger: behalten; kleiner Finger: zu kurz. Passende Antworten sammeln.",
     "attention": "Die Bedeutung vorher erklären; Rückmeldungen dürfen ausfallen.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
+    "material": "Fünf-Finger-Vorlage pro Kind oder als Plakat; die eigene Hand reicht auch.",
     "example": "Nach der Schach-AG: „Gelernt: Springerzüge. Schwierig: Rochade. Zu kurz: freie Partien.“",
     "source": [
       {
@@ -2672,7 +2604,7 @@ window.MethodCards=[
     "what": "Zwei gelungene Aspekte und ein Verbesserungswunsch strukturieren eine Rückmeldung.",
     "how": "Nach einer Arbeit zwei konkrete Stärken nennen und einen freundlichen Wunsch ergänzen.",
     "attention": "Auf beobachtbares Verhalten beziehen, nicht auf die Person.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
+    "material": "Feedbackkarten „Zwei Sterne und ein Wunsch“ aus der Vorlage (zwei pro Blatt), Schere und Stift.",
     "example": "„Du hast langsam erklärt und die Felder gezeigt. Ich wünsche mir, dass ich den Zug danach selbst ausprobieren darf.“",
     "source": [
       {
@@ -2714,7 +2646,6 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Einstieg",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
@@ -2732,8 +2663,8 @@ window.MethodCards=[
     "what": "Kleine Gruppen entwickeln Gedanken an wechselnden Gesprächstischen weiter.",
     "how": "Tische mit verschiedenen Fragen vorbereiten. Gruppen wechseln; eine gastgebende Person erläutert jeweils die bisherigen Ideen.",
     "attention": "Wenige klare Fragen wählen; Ergebnisse zum Schluss zusammenführen.",
-    "material": "Drei Tische, Tischfragen aus der Vorlage und große Papierbögen; mehrere Stifte pro Tisch.",
-    "example": "Tische sammeln Vorschläge zu fairen Paarungen, angenehmer Lautstärke und Hilfen für Schachneulinge.",
+    "material": "Drei Tische mit je einem Tischblatt aus der Vorlage und einem Schachbrett, große Papierbögen und mehrere Stifte pro Tisch.",
+    "example": "An Tisch 1 sammeln Kinder Eröffnungsideen wie „mit e4 das Zentrum besetzen“ und „Springer und Läufer früh entwickeln“. Die nächste Gruppe prüft eine Idee am Brett und ergänzt eine eigene.",
     "source": [
       {
         "label": "Methodenkartei Oldenburg/Vechta: World-Café",
@@ -2741,10 +2672,9 @@ window.MethodCards=[
       }
     ],
     "group": "Denken und Austausch",
-    "aliases": "",
+    "aliases": "Weltcafé, Tischgruppen",
     "isNew": true,
     "phases": [
-      "Einstieg",
       "Erarbeitung"
     ],
     "functions": [
@@ -2754,7 +2684,7 @@ window.MethodCards=[
     "audiences": [
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Erste Erfahrungen beim gemeinsamen Schachspielen."
+    "prerequisite": "Eröffnungsregeln, Rochade und Figurenwerte wurden eingeführt; erste Partien sind gespielt."
   },
   {
     "id": "inspiration-37",
@@ -2793,8 +2723,8 @@ window.MethodCards=[
     "what": "Ein Vorschlag wird mit Gründen und einer Handlungsidee übersichtlich dargestellt.",
     "how": "Problem, Vorschlag, Begründung und nächsten Schritt auf einem Blatt verbinden.",
     "attention": "Argumente prüfen und Gegenargumente zulassen.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
-    "example": "„In der AG ist es laut. Wir vereinbaren ein Signal, damit Erklärungen hörbar sind. Heute probieren wir Handheben.“",
+    "material": "Vorlage „Soll ich früh rochieren?“ und ein Stift pro Kind oder Paar; ein vollständiges Schachspiel zum Nachspielen.",
+    "example": "Nach 1. e4 e5 2. Sf3 Sc6 3. Lc4 Lc5: IST, der König steht noch auf e1. SOLL, er steht hinter Bauern sicher. WARUM, nach 4. 0-0 ist er geschützt und der Turm kommt nach f1. APPELL: „In meiner nächsten Partie rochiere ich früh.“",
     "source": [
       {
         "label": "bpb: Methoden-Kiste, 9. Auflage (2020), S. 32",
@@ -2805,8 +2735,7 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Verstehen / Analysieren"
@@ -2814,7 +2743,7 @@ window.MethodCards=[
     "audiences": [
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Keine besonderen Schachkenntnisse nötig; Erfahrungen können mündlich oder bildlich eingebracht werden."
+    "prerequisite": "Rochade und Eröffnungsregeln sind bekannt; erste Partien sind gespielt."
   },
   {
     "id": "inspiration-39",
@@ -2822,7 +2751,7 @@ window.MethodCards=[
     "what": "Ein Gedanke wird in einem Gedicht aus elf Wörtern verdichtet.",
     "how": "Fünf Zeilen mit ein, zwei, drei, vier und einem Wort schreiben und vorlesen.",
     "attention": "Kein Reim nötig; bei Bedarf gemeinsam formulieren.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
+    "material": "Elfchen-Vorlage und ein Stift pro Kind.",
     "example": "Schach / Zwei Spieler / Denken vor Ziehen / Ich prüfe meine Idee / Los!",
     "source": [
       {
@@ -2861,10 +2790,9 @@ window.MethodCards=[
       }
     ],
     "group": "Rückmeldung",
-    "aliases": "",
+    "aliases": "Portfolio, Sammelmappe",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
@@ -2923,8 +2851,7 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Wiederholen/Üben"
@@ -2941,7 +2868,7 @@ window.MethodCards=[
     "what": "Informationen werden an einem entfernten Ort gemerkt und am Arbeitsplatz wiedergegeben.",
     "how": "Vorlage im Raum aufhängen. Kinder gehen hin, merken sich einen Abschnitt und schreiben oder bauen ihn am Platz nach.",
     "attention": "Gehen statt Rennen; kurze Abschnitte wählen.",
-    "material": "Vorlage mit König a1, Turm d2 und schwarzem König h8; Brett und diese drei Figuren pro Paar, Papier zum Abdecken.",
+    "material": "Vorlage „Drei Figuren“ einmal im Raum aufhängen; pro Paar am Platz ein Brett mit weißem König, weißem Turm und schwarzem König.",
     "example": "Auf der Vorlage stehen „weißer König a1“ und „weißer Turm d2“. Kinder merken sich die Angaben und bauen die Stellung schrittweise auf.",
     "source": [
       {
@@ -2950,11 +2877,10 @@ window.MethodCards=[
       }
     ],
     "group": "Denken und Austausch",
-    "aliases": "",
+    "aliases": "Laufdiktat, Bewegung",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -2972,7 +2898,7 @@ window.MethodCards=[
     "what": "Eine Menge wird erst geschätzt und anschließend überprüft.",
     "how": "Eine klare Mengenfrage stellen, Schätzungen sammeln und danach zählen oder messen.",
     "attention": "Schätzen nicht als Wissenstest bewerten.",
-    "material": "Druckvorlage mit Turm auf d4, Stift oder Markiersteine; zum Zeigen ein Brett und ein weißer Turm pro Paar.",
+    "material": "Vorlage „Erst schätzen, dann zählen“ und ein Stift pro Paar; ein Brett, ein weißer Turm und 14 Markiersteine pro Paar.",
     "example": "„Wie viele Felder erreicht ein Turm von d4 auf leerem Brett?“ Nach dem Schätzen markieren und zählen die Kinder: 14.",
     "source": [
       {
@@ -2984,8 +2910,7 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Einstieg",
-      "Erarbeitung"
+      "Einstieg"
     ],
     "functions": [
       "Vorwissen aktivieren",
@@ -3003,7 +2928,7 @@ window.MethodCards=[
     "what": "Gruppenaufgaben werden über Nummern verteilt und gemeinsam verantwortet.",
     "how": "Mitglieder nummerieren, jeder Nummer einen Auftrag geben und die Ergebnisse zusammenführen. Rollen später wechseln.",
     "attention": "Alle sollen das gemeinsame Ergebnis erklären können.",
-    "material": "Druckvorlage und ein vollständiges Schachspiel pro Paar; bei Einzelaufträgen pro Kind. Kontrollbild erst zum Vergleichen nutzen.",
+    "material": "Vier Nummernkarten aus der Vorlage und ein vollständiges Schachspiel pro Vierergruppe.",
     "example": "Bei der Grundstellung prüft Nummer 1 die Brettausrichtung, Nummer 2 die Türme, Nummer 3 die Damen; danach erklären alle das Gesamtbild.",
     "source": [
       {
@@ -3015,8 +2940,7 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -3064,8 +2988,8 @@ window.MethodCards=[
     "what": "Eine Situation wird ohne Bewegung und Worte dargestellt.",
     "how": "Eine kleine Gruppe stellt eine Szene mit Körperhaltung dar. Andere beschreiben ihre Beobachtungen; anschließend wird die Darstellung erklärt.",
     "attention": "Keine unangenehmen Posen oder Berührungen verlangen.",
-    "material": "Situations- oder Rollenkarten aus der Vorlage und eine freie Spielfläche.",
-    "example": "Kinder stellen eine Turnierszene dar: Eine Person jubelt, eine schaut enttäuscht, eine bietet einen Handschlag an. Die Gruppe bespricht Fairness.",
+    "material": "Rollenkarten aus der Vorlage, Kreide oder Klebeband für ein Stück e-Linie und eine freie Fläche.",
+    "example": "Drei Kinder stellen auf einem Bodenbrett dar: Der schwarze Turm e8 gibt dem weißen König e1 Schach, der weiße Läufer stellt sich auf e2 dazwischen. Die Gruppe beschreibt das Bild und benennt die Abwehrart: dazwischenstellen.",
     "source": [
       {
         "label": "Methodenkartei Oldenburg/Vechta: Standbild",
@@ -3088,7 +3012,7 @@ window.MethodCards=[
       "Grundschule",
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Keine besonderen Schachkenntnisse nötig; Erfahrungen können mündlich oder bildlich eingebracht werden."
+    "prerequisite": "Schach und die drei Abwehrarten sind bekannt."
   },
   {
     "id": "inspiration-48",
@@ -3096,8 +3020,8 @@ window.MethodCards=[
     "what": "Eine strittige Frage wird aus zwei Positionen mit Argumenten beleuchtet.",
     "how": "Zwei Gruppen sammeln Gründe, tragen sie abwechselnd vor und hören Gegenargumente. Danach bildet jedes Kind sein eigenes Urteil.",
     "attention": "Für abwägbare Fragen verwenden, nicht für eindeutig festgelegte Zugregeln.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
-    "example": "„Soll unser AG-Turnier mit Schachuhr stattfinden?“ Gruppen diskutieren Planbarkeit und möglichen Zeitdruck.",
+    "material": "Vorlage „Soll Weiß früh mit der Dame angreifen?“ und ein Stift pro Gruppe; ein vollständiges Schachspiel zum Zeigen der Züge.",
+    "example": "Nach 1. e4 e5 2. Dh5 sammelt die Pro-Gruppe: „Die Dame greift e5 und f7 an.“ Die Contra-Gruppe zeigt 2. ... Sc6 3. Lc4 g6: Die Dame muss wieder ziehen und verliert Zeit. Danach urteilt jedes Kind selbst.",
     "source": [
       {
         "label": "Methodenkartei Oldenburg/Vechta: Pro-Contra Debatte",
@@ -3105,11 +3029,10 @@ window.MethodCards=[
       }
     ],
     "group": "Denken und Austausch",
-    "aliases": "",
+    "aliases": "Debatte, Streitgespräch",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -3119,7 +3042,7 @@ window.MethodCards=[
     "audiences": [
       "Weiterführende Schulen"
     ],
-    "prerequisite": "Erste Erfahrungen beim gemeinsamen Schachspielen."
+    "prerequisite": "Eröffnungsregeln und Zugnotation sind bekannt."
   },
   {
     "id": "inspiration-49",
@@ -3128,7 +3051,7 @@ window.MethodCards=[
     "how": "Vorhaben vereinbaren, Aufgaben verteilen, umsetzen und gemeinsam auswerten.",
     "attention": "Umfang klein halten und echte Entscheidungen der Kinder ermöglichen.",
     "material": "Projektblatt und Stifte; für den Schnuppertag zusätzlich Einladungsmaterial und vollständige Schachspiele je Spielplatz.",
-    "example": "Die AG gestaltet einen Schach-Schnuppertag: Kinder übernehmen Einladung, Figurenstation und Spielregelerklärung.",
+    "example": "Die AG gestaltet einen Schach-Schnuppertag: Ein Team schreibt die Einladung, an der Figurenstation zeigen zwei Kinder den Gästen den Springerzug b1–c3, ein drittes Team erklärt die Grundstellung.",
     "source": [
       {
         "label": "Methodenkartei Oldenburg/Vechta: Projektarbeit",
@@ -3139,8 +3062,7 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
-      "Ergebnissicherung/Reflexion"
+      "Erarbeitung"
     ],
     "functions": [
       "Kooperative Arbeitsformen",
@@ -3186,8 +3108,8 @@ window.MethodCards=[
     "what": "Lernende benennen, was sie behalten und was sie künftig verändern möchten.",
     "how": "Zwei Bereiche zeichnen. Beiträge zu „mitnehmen“ und „hinter sich lassen“ sammeln und kurz besprechen.",
     "attention": "Personen nicht bewerten; es geht um Erfahrungen und Verhaltensweisen.",
-    "material": "Passende Druckvorlage und Stifte; Antworten dürfen auch mündlich gegeben oder gezeigt werden.",
-    "example": "In den Koffer kommt „vor dem Zug nachdenken“, in die Tonne „nach einer Niederlage Figuren umwerfen“.",
+    "material": "Vorlage „Meine Gewohnheiten am Brett“ und ein Stift pro Kind.",
+    "example": "In den Koffer kommt „vor jedem Zug fragen: Was droht?“. In die Tonne kommt „Figuren ungedeckt stehen lassen“, etwa einen Läufer auf c4, den der Bauer d5 schlagen kann.",
     "source": [
       {
         "label": "Methodenkartei Oldenburg/Vechta: Tonne und Koffer",
@@ -3227,7 +3149,6 @@ window.MethodCards=[
     "aliases": "",
     "isNew": true,
     "phases": [
-      "Erarbeitung",
       "Ergebnissicherung/Reflexion"
     ],
     "functions": [
@@ -3245,7 +3166,7 @@ window.MethodCards=[
     "what": "Ein selbst verfasster Text wird mit Rückmeldungen anderer verbessert.",
     "how": "Text vorlesen oder tauschen, Verständlichkeit und Richtigkeit besprechen, anschließend selbst überarbeiten.",
     "attention": "Wenige Kriterien vereinbaren und freundlich rückmelden.",
-    "material": "Druckvorlage, ein Brett und ein weißer Turm pro Paar; für Hindernisse zusätzlich ein eigener Bauer. Stifte oder Markiersteine.",
+    "material": "Schreibblatt „Meine Erklärung des Turmzuges“ und ein Stift pro Kind; ein Brett mit Turm, um die Erklärungen zu prüfen.",
     "example": "Ein Kind schreibt eine Erklärung des Turmzuges. Andere prüfen, ob „gerade“ verständlich ist und der Hinweis auf blockierte Wege fehlt.",
     "source": [
       {

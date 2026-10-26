@@ -16590,7 +16590,7 @@ export const FIXED={
      "targets": [
       "f5"
      ],
-     "antwort": "f5. Der Läufer sperrt die Diagonale d3 bis h7. Auch die Bauernzüge f5 und g6 sperren sie.",
+     "antwort": "f5. Der Läufer sperrt die Diagonale d3 bis h7. Aber Vorsicht: Auf f5 ist er ungedeckt, Weiß schlägt Dxf5. Besser ist der Bauernzug g6. Er sperrt die Diagonale, ohne eine Figur zu verlieren.",
      "hilfe": [
       "Welche Felder liegen zwischen d3 und h7?",
       "Welches erreicht der Läufer c8?"
@@ -17250,7 +17250,7 @@ export const FIXED={
      "targets": [
       "e6"
      ],
-     "antwort": "e6. Le6 sperrt die Diagonale c4 bis f7 und greift die Dame an. In der Partie folgte nach Sd7 Df7#.",
+     "antwort": "e6. Le6 sperrt die Diagonale c4 bis f7 und verhindert das Matt. Aber Vorsicht: Der Läufer ist ungedeckt, Weiß schlägt Dxe6+. Besser verteidigt De7, die Dame deckt dann f7. In der Partie folgte nach Sd7 Df7#.",
      "hilfe": [
       "Welche Felder liegen zwischen c4 und f7?",
       "Welches erreicht der Läufer c8?"

@@ -1,0 +1,42 @@
+unit-stunde0|Ich kann das Brett richtig hinlegen, die Grundstellung mit Partnerkontrolle aufbauen und kenne die Rituale der AG.
+unit-coordinates|Ich kann vier von fünf Feldern richtig benennen und finde sie auch auf dem gedrehten Brett.
+unit-moves|Ich kann erlaubte und unerlaubte Figurenwege unterscheiden und zwei Entscheidungen begründen.
+unit-pawn|Ich kann an zwei Beispielen den Unterschied zwischen Bauernzug und Bauernschlag erklären.
+unit-defend|Ich kann eine angegriffene Figur zeigen und prüfen, ob sie gedeckt ist.
+unit-check|Ich kann ein Schachgebot erkennen und eine legale Abwehr finden.
+unit-mateIn1|Ich kann einen Mattzug finden und alle drei Abwehrarten ausschließen.
+unit-fairplay|Ich kann eine Zugidee erklären und eine strittige Situation mit einer vereinbarten Regel klären.
+unit-hangingPiece|Ich kann eine ungenügend gedeckte Figur finden und vor dem Schlagen die Antwort prüfen.
+unit-fork|Ich kann einen Doppelangriff erkennen und beide angegriffenen Ziele benennen.
+unit-pin|Ich kann an einer Stellung eine absolute von einer relativen Fesselung unterscheiden.
+unit-opening|Ich kann zwei Entwicklungszüge mit Zentrum, Entwicklung oder Königssicherheit begründen.
+unit-endgame|Ich kann in einer einfachen Stellung prüfen, ob der König einen Freibauern einholt.
+unit-discoveredAttack|Ich kann nach einem Abzug die Wirkung der ziehenden und der freigelegten Figur erklären.
+unit-mateIn2|Ich kann einen Schlüsselzug, die wichtige Gegenwehr und den Mattzug berechnen.
+unit-calculation|Ich kann zwei Kandidaten anhand konkreter Gegenantworten vergleichen.
+unit-planning|Ich kann einen kurzen Plan formulieren und ihn gegen eine konkrete gegnerische Drohung prüfen.
+unit-rookend|Ich kann zwei Turmzüge nach Aktivität und konkreter gegnerischer Antwort vergleichen.
+series-start|Ich kann Felder sicher finden, Figuren regelgerecht ziehen und ein einfaches Matt erklären.
+series-tactics|Ich kann Schlagziele, Doppelangriffe und Fesselungen erkennen und vor dem Zug die Antwort prüfen.
+series-calculate|Ich kann Kandidaten vergleichen, die gegnerische Gegenwehr berechnen und meine Entscheidung erklären.
+unit-castling|Ich kann eine Rochade anhand aller Voraussetzungen prüfen und zwei Entscheidungen begründen.
+unit-promotion|Ich kann eine legale Umwandlung ausführen und alle vier möglichen Figuren benennen.
+unit-stalemate|Ich kann anhand von Schachgebot und legalen Zügen Patt, Matt und laufende Partie unterscheiden.
+unit-notation|Ich kann eine kurze Zugfolge lesen und drei Züge mit Figur und Zielfeld korrekt notieren.
+unit-rookmate|Ich kann mit König und Turm nach der Kastenmethode mattsetzen.
+unit-backrank|Ich kann ein Grundreihenmatt finden und meinen eigenen König mit Luft oder Deckung schützen.
+unit-sacrifice|Ich kann ein Opfer finden, das zum Matt führt, und das Damiano-Matt erkennen.
+unit-matedefense|Ich kann eine Mattdrohung erkennen und sie auf eine der fünf Arten abwehren: schlagen, decken, dazwischenziehen, Luft machen, König wegziehen.
+unit-tworooks|Ich kann mit zwei Türmen nach dem Treppenprinzip mattsetzen: Ein Turm sperrt, der andere gibt Schach.
+unit-counter|Ich kann eine bedrohte Figur mit einem Gegenangriff retten: Flucht mit Schach oder Angriff, Schach vor dem Zurückschlagen oder Fesseln des Angreifers.
+unit-skewer|Ich kann einen Spieß finden: Ich greife eine wertvolle Figur an, hinter der auf derselben Linie eine weitere Figur steht.
+unit-legal|Ich kann erlaubte und verbotene Züge unterscheiden und erkennen, wann eine Figur stark oder schwach steht.
+unit-passed|Ich kann einen Freibauern erkennen, ihn sicher zur Umwandlung bringen und gegnerische Freibauern aufhalten.
+unit-queenmate|Ich kann mit Dame und König gegen den König mattsetzen, ohne Patt.
+unit-clock|Ich kann die wichtigsten Turnierregeln anwenden: berührt, geführt, illegaler Zug, Zeit und Remisangebot.
+unit-enpassant|Ich kann einen erlaubten En-passant-Schlag erkennen und den Zeitpunkt sowie den entfernten Bauern erklären.
+unit-doublecheck|Ich kann beide Schachgeber zeigen und eine legale Königsantwort finden.
+unit-exchange|Ich kann bei einem einfachen Abtausch den Materialsaldo berechnen und die Rücknahme prüfen.
+unit-maze-basic|Ich kann einen erlaubten Turmweg um Sperrfelder finden und zwei Richtungswechsel erklären.
+unit-maze-build|Ich kann Sperr- und Landeverbote unterscheiden und die Wege von Linienfiguren und Springer vergleichen.
+unit-maze-deep|Ich kann einen möglichst kurzen Weg planen und berücksichtigen, wie ein erlaubter Schlag neue Wege öffnet.
