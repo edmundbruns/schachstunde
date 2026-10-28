@@ -13027,32 +13027,34 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Klicke alle schwarzen Figuren an, die der Springer d3 angreift. Welche davon kann Schwarz retten?",
-     "fen": "6k1/5ppp/8/2r5/5q2/3N3P/5PP1/6K1",
+     "frage": "Klicke alle schwarzen Figuren an, die der Springer c7 angreift. Welche davon kann Schwarz retten?",
+     "fen": "q3k3/2N2ppp/8/8/8/8/5PPP/6K1",
      "zug": "b",
+     "schach": true,
      "targets": [
-      "c5",
-      "f4"
+      "a8",
+      "e8"
      ],
-     "antwort": "Der Turm c5 und die Dame f4. Schwarz kann nur eine Figur retten, am besten die Dame. Dann schlägt der Springer den Turm.",
+     "antwort": "Der König e8 und die Dame a8. Retten kann Schwarz nur den König, denn er steht im Schach. Danach schlägt der Springer die Dame.",
      "hilfe": [
-      "Zeige alle Sprungfelder von d3.",
-      "Wo stehen schwarze Figuren?"
+      "Zeige alle Sprungfelder von c7.",
+      "Was muss Schwarz bei Schach zuerst tun?"
      ]
     }
    ],
    "E": [
     {
-     "frage": "Der Springer f3 greift zwei Figuren gleichzeitig an. Klicke sie an.",
-     "fen": "6k1/5ppp/8/4r3/7q/5N1P/5PP1/6K1",
+     "frage": "Der Springer d5 greift zwei Figuren gleichzeitig an. Klicke sie an.",
+     "fen": "8/2q1kppp/8/3N4/8/8/5PPP/6K1",
      "zug": "b",
+     "schach": true,
      "targets": [
-      "e5",
-      "h4"
+      "c7",
+      "e7"
      ],
-     "antwort": "Der Turm e5 und die Dame h4. Schwarz kann nur eine Figur retten, am besten die Dame. Dann schlägt der Springer den Turm.",
+     "antwort": "Der König e7 und die Dame c7. Schwarz muss zuerst den König retten. Danach schlägt der Springer die Dame.",
      "hilfe": [
-      "Zeige alle Sprungfelder von f3.",
+      "Zeige alle Sprungfelder von d5.",
       "Wo stehen schwarze Figuren?"
      ]
     },
@@ -13076,7 +13078,7 @@ export const FIXED={
      "targets": [
       "d5"
      ],
-     "antwort": "d5. Der Bauer greift den Springer c6 und den Läufer e6 an, der Bauer e4 deckt ihn. Schwarz kann nur eine Figur retten.",
+     "antwort": "d5. Der Bauer greift den Springer c6 und den Läufer e6 an, der Bauer e4 deckt ihn. Schwarz kann nur eine Figur retten und bekommt für die andere höchstens den Bauern.",
      "hilfe": [
       "Ein Bauer greift schräg nach vorn an.",
       "Wohin muss er, damit c6 und e6 schräg vor ihm liegen?"
@@ -13144,7 +13146,7 @@ export const FIXED={
      "targets": [
       "e4"
      ],
-     "antwort": "e4. Der Bauer greift Springer d5 und Läufer f5 an. Der Bauer d3 deckt ihn, er steht dort sicher.",
+     "antwort": "e4. Der Bauer greift Springer d5 und Läufer f5 an. Der Bauer d3 deckt ihn. Schwarz verliert eine Figur und bekommt höchstens den Bauern dafür.",
      "hilfe": [
       "Wohin muss der Bauer, damit d5 und f5 schräg vor ihm liegen?",
       "Steht er dort sicher?"
@@ -13308,7 +13310,7 @@ export const FIXED={
      "targets": [
       "c4"
      ],
-     "antwort": "c4. Der Bauer greift Läufer b5 und Springer d5 an, der Bauer b3 deckt ihn. Vom Startfeld darf er zwei Felder ziehen.",
+     "antwort": "c4. Der Bauer greift Läufer b5 und Springer d5 an, der Bauer b3 deckt ihn. Schwarz verliert eine Figur und bekommt höchstens den Bauern. Vom Startfeld darf der Bauer zwei Felder ziehen.",
      "hilfe": [
       "Wohin muss der Bauer, damit b5 und d5 schräg vor ihm liegen?",
       "Ein Bauer zieht vom Startfeld auch zwei Felder."
@@ -14233,15 +14235,15 @@ export const FIXED={
    ],
    "A": [
     {
-     "frage": "Abzug mit Gewinn: Auf welches Feld zieht der Springer, damit der Turm Abzugsschach gibt und der Springer den Turm f8 angreift? Klicke es an.",
-     "fen": "3k1r2/8/8/8/3N4/8/8/3R3K",
+     "frage": "Abzug mit Gewinn: Auf welches Feld zieht der Springer, damit der Turm Abzugsschach gibt und der Springer den Turm g7 angreift? Klicke es an.",
+     "fen": "3k4/6r1/8/5P2/3N4/8/8/3R3K",
      "leer": true,
      "targets": [
       "e6"
      ],
-     "antwort": "e6. Der Turm d1 gibt Abzugsschach, und der Springer gibt selbst auch Schach. Der König muss ziehen, danach schlägt der Springer den Turm f8.",
+     "antwort": "e6. Der Turm d1 gibt Abzugsschach, und der Springer gibt selbst auch Schach. Der König muss ziehen, danach schlägt der Springer den Turm g7.",
      "hilfe": [
-      "Welches Springerfeld greift f8 an?",
+      "Welches Springerfeld greift g7 an?",
       "Der Springer muss die d-Linie verlassen."
      ]
     },
@@ -14779,15 +14781,15 @@ export const FIXED={
     },
     {
      "frage": "Generalprobe Gabel: Klicke das Feld an, auf das der Springer zieht und zwei Figuren angreift.",
-     "fen": "2r1k3/8/8/1N6/8/8/8/4K3",
+     "fen": "3k3r/8/8/6N1/8/8/8/3K4",
      "leer": true,
      "targets": [
-      "d6"
+      "f7"
      ],
-     "antwort": "d6. Sd6+ gibt Schach und greift den Turm c8 an. Der Springer steht dort sicher.",
+     "antwort": "f7. Sf7+ gibt Schach und greift den Turm h8 an. Der Springer steht dort sicher. Nach dem Königszug schlägt er den Turm.",
      "hilfe": [
-      "Welche Felder greifen den König e8 an?",
-      "Welches davon greift auch den Turm c8 an?"
+      "Welche Felder greifen den König d8 an?",
+      "Welches davon greift auch den Turm h8 an?"
      ]
     },
     {
