@@ -13027,30 +13027,32 @@ export const FIXED={
      ]
     },
     {
-     "frage": "Klicke alle schwarzen Figuren an, die der Springer d6 angreift. Welche davon kann Schwarz retten?",
-     "fen": "k1r1q3/8/3N4/8/8/8/8/6K1",
+     "frage": "Klicke alle schwarzen Figuren an, die der Springer d3 angreift. Welche davon kann Schwarz retten?",
+     "fen": "6k1/5ppp/8/2r5/5q2/3N3P/5PP1/6K1",
+     "zug": "b",
      "targets": [
-      "c8",
-      "e8"
+      "c5",
+      "f4"
      ],
-     "antwort": "Der Turm c8 und die Dame e8. Schwarz kann nur eine Figur retten, am besten die Dame. Dann schlägt der Springer den Turm.",
+     "antwort": "Der Turm c5 und die Dame f4. Schwarz kann nur eine Figur retten, am besten die Dame. Dann schlägt der Springer den Turm.",
      "hilfe": [
-      "Zeige alle Sprungfelder von d6.",
+      "Zeige alle Sprungfelder von d3.",
       "Wo stehen schwarze Figuren?"
      ]
     }
    ],
    "E": [
     {
-     "frage": "Der Springer d5 greift zwei Figuren gleichzeitig an. Klicke sie an.",
-     "fen": "4k3/2r1q3/8/3N4/8/8/8/6K1",
+     "frage": "Der Springer f3 greift zwei Figuren gleichzeitig an. Klicke sie an.",
+     "fen": "6k1/5ppp/8/4r3/7q/5N1P/5PP1/6K1",
+     "zug": "b",
      "targets": [
-      "c7",
-      "e7"
+      "e5",
+      "h4"
      ],
-     "antwort": "Der Turm c7 und die Dame e7. Schwarz rettet die Dame, dann schlägt der Springer den Turm.",
+     "antwort": "Der Turm e5 und die Dame h4. Schwarz kann nur eine Figur retten, am besten die Dame. Dann schlägt der Springer den Turm.",
      "hilfe": [
-      "Zeige alle Sprungfelder von d5.",
+      "Zeige alle Sprungfelder von f3.",
       "Wo stehen schwarze Figuren?"
      ]
     },
@@ -13069,12 +13071,12 @@ export const FIXED={
     },
     {
      "frage": "Bauerngabel: Klicke das Feld an, auf das der Bauer zieht, um zwei Figuren anzugreifen.",
-     "fen": "4k3/8/2n1r3/8/3P4/8/8/6K1",
+     "fen": "6k1/5ppp/2n1b3/8/3PP3/8/5PPP/6K1",
      "leer": true,
      "targets": [
       "d5"
      ],
-     "antwort": "d5. Der Bauer greift den Springer c6 und den Turm e6 an. Nur eine Figur kann weg.",
+     "antwort": "d5. Der Bauer greift den Springer c6 und den Läufer e6 an, der Bauer e4 deckt ihn. Schwarz kann nur eine Figur retten.",
      "hilfe": [
       "Ein Bauer greift schräg nach vorn an.",
       "Wohin muss er, damit c6 und e6 schräg vor ihm liegen?"
@@ -13095,7 +13097,7 @@ export const FIXED={
     },
     {
      "frage": "Auch der König kann gabeln. Klicke das Feld an, auf das der König zieht, um beide schwarzen Figuren anzugreifen.",
-     "fen": "8/8/8/8/2n1n3/8/2K5/k7",
+     "fen": "6k1/5ppp/8/8/2n5/8/2K1n3/8",
      "leer": true,
      "targets": [
       "d3"
@@ -13103,7 +13105,7 @@ export const FIXED={
      "antwort": "d3. Der König greift beide Springer an, keiner ist gedeckt. Schwarz kann nur einen retten.",
      "hilfe": [
       "Der König greift alle Nachbarfelder an.",
-      "Welches Feld grenzt an c4 und e4?"
+      "Welches Feld grenzt an c4 und e2?"
      ]
     },
     {
@@ -13137,29 +13139,28 @@ export const FIXED={
     },
     {
      "frage": "Bauerngabel: Klicke das Feld an, auf das der Bauer zieht.",
-     "fen": "4k3/8/8/3r1n2/8/4P3/8/4K3",
+     "fen": "6k1/5ppp/8/3n1b2/8/3PP3/5PPP/6K1",
      "leer": true,
      "targets": [
       "e4"
      ],
-     "antwort": "e4. Der Bauer greift Turm d5 und Springer f5 an und steht dort sicher.",
+     "antwort": "e4. Der Bauer greift Springer d5 und Läufer f5 an. Der Bauer d3 deckt ihn, er steht dort sicher.",
      "hilfe": [
       "Wohin muss der Bauer, damit d5 und f5 schräg vor ihm liegen?",
       "Steht er dort sicher?"
      ]
     },
     {
-     "frage": "Damengabel: Klicke alle Felder an, auf die die Dame zieht, um zwei Figuren mit Gewinn anzugreifen.",
-     "fen": "1k6/8/8/n6b/8/8/8/4Q1K1",
+     "frage": "Damengabel: Klicke das Feld an, auf das die Dame zieht, um mit Schach eine ungedeckte Figur anzugreifen.",
+     "fen": "1k6/1p6/6b1/n7/8/7P/4QPP1/6K1",
      "leer": true,
      "targets": [
-      "b4",
       "e5"
      ],
-     "antwort": "b4 und e5. Von dort gibt die Dame Schach und greift den ungedeckten Springer a5 an.",
+     "antwort": "e5. Die Dame gibt Schach und greift den ungedeckten Springer a5 an. Nach dem Königszug schlägt sie den Springer.",
      "hilfe": [
       "Welche schwarzen Figuren sind ungedeckt?",
-      "Von welchem Feld greift die Dame beide an?"
+      "Von welchem Feld greift die Dame König und Springer an?"
      ]
     },
     {
@@ -13302,12 +13303,12 @@ export const FIXED={
     },
     {
      "frage": "Bauerngabel: Klicke das Feld an, auf das der Bauer zieht.",
-     "fen": "4k3/8/8/1r1n4/8/2P5/8/4K3",
+     "fen": "6k1/5ppp/8/1b1n4/8/1P6/2P2PPP/6K1",
      "leer": true,
      "targets": [
       "c4"
      ],
-     "antwort": "c4. Der Bauer greift Turm b5 und Springer d5 an. Vom Startfeld darf er zwei Felder ziehen.",
+     "antwort": "c4. Der Bauer greift Läufer b5 und Springer d5 an, der Bauer b3 deckt ihn. Vom Startfeld darf er zwei Felder ziehen.",
      "hilfe": [
       "Wohin muss der Bauer, damit b5 und d5 schräg vor ihm liegen?",
       "Ein Bauer zieht vom Startfeld auch zwei Felder."
@@ -14232,16 +14233,15 @@ export const FIXED={
    ],
    "A": [
     {
-     "frage": "Abzug mit Gewinn: Auf welchen Feldern gibt der Turm Abzugsschach und der Springer greift den Turm g7 an? Klicke sie an.",
-     "fen": "3k4/6r1/8/8/3N4/8/8/3R3K",
+     "frage": "Abzug mit Gewinn: Auf welches Feld zieht der Springer, damit der Turm Abzugsschach gibt und der Springer den Turm f8 angreift? Klicke es an.",
+     "fen": "3k1r2/8/8/8/3N4/8/8/3R3K",
      "leer": true,
      "targets": [
-      "e6",
-      "f5"
+      "e6"
      ],
-     "antwort": "e6 und f5. Der Turm d1 gibt Abzugsschach, der Springer greift den Turm g7 an.",
+     "antwort": "e6. Der Turm d1 gibt Abzugsschach, und der Springer gibt selbst auch Schach. Der König muss ziehen, danach schlägt der Springer den Turm f8.",
      "hilfe": [
-      "Welche Springerfelder greifen g7 an?",
+      "Welches Springerfeld greift f8 an?",
       "Der Springer muss die d-Linie verlassen."
      ]
     },
