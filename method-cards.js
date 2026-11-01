@@ -274,8 +274,8 @@ window.MethodCards=[
     "id": "comment",
     "name": "Kommentierte Zugfolge",
     "what": "Eine Zugfolge wird schrittweise mit ihren Ideen besprochen.",
-    "how": "Nur die Anfangsstellung der Aufgabe zeigen. Vor jedem Lösungszug stoppen und einen Vorschlag mit Grund sammeln. Dann den Lösungszug zeigen und seine Wirkung erklären lassen.",
-    "attention": "Nur wenige Züge wählen und Kinder mitdenken lassen.",
+    "how": "Anfangsstellung zeigen und den nächsten Partiezug verdecken. Alle suchen eine Zugidee mit Begründung. Erst dann den gespielten Zug aufdecken, seine Wirkung prüfen und mit den Vorschlägen vergleichen. Wenige Züge genügen.",
+    "attention": "Der gespielte Zug ist nicht automatisch der einzig gute. Gute Alternativen anerkennen.",
     "material": "Vorlage „Zugfolge mit Denkpausen“ und ein vollständiges Schachspiel pro Paar; die Hinweisseite bleibt bei der Lehrkraft.",
     "example": "Aus der Grundstellung werden e4 und e5 gespielt. Die Kinder erklären, welche Figuren nun freie Wege haben.",
     "group": "Denken und Austausch",
@@ -761,10 +761,10 @@ window.MethodCards=[
     "id": "checklist",
     "name": "Regelcheck mit Prüfliste",
     "what": "Eine kurze Liste führt durch eine wiederkehrende Prüfung.",
-    "how": "Die Prüfpunkte des Denkwegs nennen. Kinder prüfen jeden Punkt und zeigen den Beleg. Sobald ein Punkt nicht erfüllt ist, die Entscheidung mit diesem Grund erklären.",
-    "attention": "Wenige verständliche Punkte verwenden; nicht nur mechanisch abhaken.",
+    "how": "Zwei Prüfungen unterscheiden. Regelcheck: Passt die Zugweise? Ist der Weg frei? Ist das Zielfeld nicht von mir besetzt? Ist mein König danach sicher? Sicherheitscheck: Was droht mir? Kann meine Figur nach dem Zug geschlagen werden? Am Brett zeigen, wie die Antworten den Zug verändern.",
+    "attention": "Der Springer darf überspringen, für ihn entfällt „Weg frei“. Ein erlaubter Zug ist nicht automatisch ein guter Zug. Nicht mechanisch abhaken.",
     "material": "Zugcheck-Karten aus der Vorlage, ausgeschnitten, eine pro Paar; ein vollständiges Schachspiel pro Paar.",
-    "example": "Vor dem Ziehen prüfen Kinder: Zugweise erlaubt? Weg frei? Eigener König sicher?",
+    "example": "Ein Kind will den Läufer nach c4 ziehen. Regelcheck: diagonal, Weg frei, erlaubt. Sicherheitscheck: Der schwarze Bauer d5 könnte c4 schlagen. Also ein anderes Feld wählen.",
     "group": "Denken und Austausch",
     "source": [],
     "aliases": "Mit einer kurzen Prüfliste entscheiden",
@@ -3113,5 +3113,104 @@ window.MethodCards=[
       "Weiterführende Schulen"
     ],
     "prerequisite": "Die Kinder kennen die Zugweise des Turms."
+  },
+  {
+    "id": "themenpartie",
+    "name": "Themenpartie",
+    "what": "Zwei Kinder spielen eine vorbereitete Lernstellung gegen echte Gegenwehr aus, wiederholen sie und tauschen die Farben.",
+    "how": "Stellung aufbauen und für beide Seiten ein Ziel nennen, zum Beispiel „Weiß setzt matt, Schwarz wehrt sich so lange wie möglich“. Paare spielen aus. Klappt es nicht, zurück zur Ausgangsstellung und mit einem konkreten Hinweis neu versuchen. Danach Farben tauschen. Zum Schluss vergleichen, was geholfen hat. Variante: In einer laufenden Partie an einer Stelle das Brett drehen und mit der anderen Farbe weiterspielen.",
+    "attention": "Das Verfahren vorher einführen. Eine Zugzahl als Grenze vereinbaren. Patt immer als Remis werten und besprechen. Beide Farben gleich oft spielen lassen.",
+    "material": "Vorlage „Themenpartie“ mit Brettbild, Ergebnistabelle und Lehrkrafthinweis; ein Brett mit Figuren pro Paar.",
+    "example": "Weiß: König e1, Dame d1. Schwarz: König e8. Weiß zieht zuerst und setzt in höchstens 15 Zügen matt. Klappt es nicht, Hinweis holen und neu beginnen. Danach Farbwechsel.",
+    "source": [],
+    "group": "Spiel und Bewegung",
+    "aliases": "Stellung ausspielen, thematische Partie, Endspiel wiederholen, Seitenwechsel, Farbwechsel",
+    "phases": [
+      "Erarbeitung",
+      "Ergebnissicherung/Reflexion"
+    ],
+    "functions": [
+      "Wiederholen/Üben",
+      "Verstehen / Analysieren"
+    ],
+    "audiences": [
+      "Grundschule",
+      "Weiterführende Schulen"
+    ],
+    "prerequisite": "Die Kinder kennen Matt und Patt. Für das Beispiel ist das Mattsetzen mit Dame und König eingeführt."
+  },
+  {
+    "id": "partieanalyse",
+    "name": "Eigene Partie untersuchen",
+    "what": "Eine Stellung aus einer eigenen Partie wird zu zweit genauer angeschaut und verbessert.",
+    "how": "Nach der Partie eine spannende Stellung auswählen und aufbauen. Ein Foto ersetzt die Notation. Beide erzählen, was sie damals vorhatten. Eine andere Möglichkeit suchen, am Brett ausprobieren und ein paar Züge weiterspielen. Auch einen gelungenen Zug festhalten.",
+    "attention": "Eine Stellung genügt. Fehler freundlich untersuchen, ohne zu bewerten. Die Lehrkraft fragt nach, statt die Lösung zu sagen.",
+    "material": "Vorlage „Meine Partie untersuchen“ pro Paar; ein Brett mit Figuren; bei Bedarf ein Tablet für das Brettfoto.",
+    "example": "In ihrer Partie hat Lena den Läufer c4 stehen lassen, der Bauer d5 hat ihn geschlagen. Sie baut die Stellung vor ihrem Zug auf. Gemeinsam finden die Kinder Lxd5+ oder einen Rückzug nach b3 oder d3.",
+    "source": [],
+    "group": "Denken und Austausch",
+    "aliases": "Partieanalyse, Nachbesprechung, Fehleranalyse, Brettfoto",
+    "phases": [
+      "Erarbeitung",
+      "Ergebnissicherung/Reflexion"
+    ],
+    "functions": [
+      "Reflektieren / Rückmelden",
+      "Verstehen / Analysieren"
+    ],
+    "audiences": [
+      "Grundschule",
+      "Weiterführende Schulen"
+    ],
+    "prerequisite": "Die Kinder können eine Partie regelgerecht spielen. Notation ist nicht nötig."
+  },
+  {
+    "id": "angriff-deckung",
+    "name": "Angriffs- und Deckungsdetektive",
+    "what": "Kinder finden heraus, welche Figuren angegriffen und welche gedeckt sind, und prüfen, was ein Zug daran ändert.",
+    "how": "Eine Stellung mit wenigen Figuren aufbauen. Für jede Figur zeigen: Wer greift sie an? Wer deckt sie? Ist sie sicher? Dann einen Zug ausführen und vergleichen, welche Angriffe und Deckungen neu sind oder verschwunden sind.",
+    "attention": "Gedeckt heißt nicht automatisch sicher. Greift eine billigere Figur an, geht trotzdem Material verloren. Mit drei bis fünf Figuren beginnen.",
+    "material": "Vorlage „Angriff und Deckung“ mit Brettbild und Tabelle pro Paar; ein Brett mit Figuren; Lösungsseite für die Lehrkraft.",
+    "example": "Der weiße Springer d5 ist vom Bauern e4 gedeckt, wird aber vom Bauern c6 angegriffen. Nach cxd5 exd5 hätte Weiß einen Springer gegen einen Bauern getauscht. Er muss also weg, etwa nach b6 oder e3.",
+    "source": [],
+    "group": "Denken und Austausch",
+    "aliases": "Angriff, Deckung, gedeckt, ungedeckt, hängende Figur, Sicherheit",
+    "phases": [
+      "Erarbeitung"
+    ],
+    "functions": [
+      "Verstehen / Analysieren",
+      "Wiederholen/Üben"
+    ],
+    "audiences": [
+      "Grundschule",
+      "Weiterführende Schulen"
+    ],
+    "prerequisite": "Die Kinder kennen alle Zugweisen und das Schlagen. Die Figurenwerte sind eingeführt."
+  },
+  {
+    "id": "motive",
+    "name": "Taktikmotive wiedererkennen",
+    "what": "Ein taktisches Muster wird an mehreren kurzen Aufgaben erkannt und später gemischt mit anderen Mustern wiederholt.",
+    "how": "Drei bis fünf kurze Aufgaben zu einem eingeführten Motiv lösen. Zuerst das Muster benennen, dann den Zug zeigen. In einer späteren Stunde ähnliche Aufgaben wiederholen. Danach Aufgaben mit anderen Motiven und auch Stellungen ohne Gewinn beimischen.",
+    "attention": "Muster erklären lassen, nicht Lösungszüge auswendig lernen. Beim Einstieg kein Zeitdruck. Nicht jede Stellung enthält einen Gewinn.",
+    "material": "Vorlage „Gabel erkennen“ mit drei Aufgaben pro Kind; Lösungsseite für die Lehrkraft; ein Brett zum Prüfen pro Paar.",
+    "example": "Weiß: König g1, Springer d5. Schwarz: König g8, Turm c8. Se7+ gibt Schach und greift den Turm an. Schwarz muss den König ziehen, dann schlägt der Springer den Turm.",
+    "source": [],
+    "group": "Denken und Austausch",
+    "aliases": "Mustererkennung, Taktik, Gabel, Fesselung, Spieß, gemischtes Üben, verteiltes Üben",
+    "phases": [
+      "Erarbeitung",
+      "Ergebnissicherung/Reflexion"
+    ],
+    "functions": [
+      "Wiederholen/Üben",
+      "Verstehen / Analysieren"
+    ],
+    "audiences": [
+      "Grundschule",
+      "Weiterführende Schulen"
+    ],
+    "prerequisite": "Die Kinder kennen Springerzüge und die Schachabwehr. Das Motiv Gabel ist eingeführt."
   }
 ];

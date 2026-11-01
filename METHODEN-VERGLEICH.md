@@ -129,3 +129,11 @@ Die Methodenkarten zeigen statt eines allgemeinen Ablaufbildes jetzt ein Bild de
 ## Kartendruck DIN A5 / DIN A4
 
 Eigenständiger Kartendruck in `method-print.js`: A4 hoch mit zwei A5-Querformatkarten und gestrichelter Schnittlinie. Inhalt wird mit 11-Punkt-Textschrift gemessen; Karten, die nicht in die A5-Fläche passen, erhalten eine eigene A4-Seite. Eine ungerade letzte A5-Karte lässt die zweite Hälfte frei. Druckbar sind eine geöffnete Karte, markierte Karten oder alle gefilterten Karten. Kopiervorlagen bleiben unverändert. Getestet: 116 Karten ohne Überlauf, A5-Paarbildung, A4-Ausweichformat, Markierung und erneutes Öffnen der heruntergeladenen Druckdatei. Druckeinstellung: A4 hoch, 100 Prozent, Browser-Kopf-/Fußzeilen aus.
+
+## Ergänzung vom 01.11.2026
+
+Vier neue Karten im bestehenden Kartenformat: Themenpartie (Stellung ausspielen, bei Problemen mit Hinweis neu beginnen, Farben tauschen; Variante Seitenwechsel in laufender Partie), Eigene Partie untersuchen, Angriffs- und Deckungsdetektive, Taktikmotive wiedererkennen. Jede Karte hat eine Kopiervorlage, drei davon mit Lösungsseite. Alle Stellungen mit der Regel-Engine geprüft, die Gabeln sind erzwungen.
+
+Überarbeitet: Regelcheck mit Prüfliste (Regelcheck und Sicherheitscheck getrennt, auch auf der Kopiervorlage) und Kommentierte Zugfolge (nächsten Zug verdecken; der gespielte Zug ist nicht automatisch der einzig gute).
+
+Bewusst nicht übernommen: Ablaufbilder und Brettdiagramme auf den Karten, Filter „Schachspezifisch“, eigene Karte „Endspiel wiederholen“ (in der Themenpartie enthalten). Konkrete Stellungen bleiben in den Kopiervorlagen.
